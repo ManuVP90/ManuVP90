@@ -2,9 +2,37 @@ import type { Match, PlayerState, RoundReport } from '../engine/match.js';
 import { activeSynergies, getCharacter } from '../engine/team.js';
 import { loadContent } from '../shared/content.js';
 import type { ClientMsg, Loc, ServerMsg } from '../shared/protocol.js';
-import type { Unit } from '../shared/types.js';
+import type { CharacterDef, Unit } from '../shared/types.js';
 
 const content = loadContent();
+
+/** Iniciales para el placeholder de retrato: "Charlotte Linlin (Big Mom)" → "CL". */
+function initials(name: string): string {
+  return name
+    .replace(/\(.*\)/, '')
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((w) => w[0]?.toUpperCase() ?? '')
+    .join('');
+}
+
+/** Contenido visual de una carta: retrato placeholder, nombre y datos. Todo con texto, sin imágenes de la serie. */
+function cardArt(def: CharacterDef, star = 0): HTMLElement[] {
+  const portrait = document.createElement('span');
+  portrait.className = 'portrait';
+  portrait.textContent = initials(def.name);
+  const name = document.createElement('span');
+  name.className = 'name';
+  name.textContent = def.name;
+  const meta = document.createElement('span');
+  meta.className = 'meta';
+  meta.textContent = `${def.cost} oro · ${def.faction}`;
+  const stars = document.createElement('span');
+  stars.className = 'stars';
+  stars.textContent = star > 0 ? '★'.repeat(star) : '';
+  return [portrait, name, meta, stars];
+}
 const $ = (id: string) => document.getElementById(id) as HTMLElement;
 const WS_URL = `ws://${location.hostname}:8080`;
 
@@ -81,16 +109,8 @@ function slotButton(unit: Unit | null, loc: Loc): HTMLButtonElement {
     btn.textContent = '—';
   } else {
     const def = getCharacter(content, unit.defId);
-    const name = document.createElement('span');
-    name.className = 'name';
-    name.textContent = def.name;
-    const meta = document.createElement('span');
-    meta.className = 'meta';
-    meta.textContent = `Coste ${def.cost} · ${def.faction}`;
-    const stars = document.createElement('span');
-    stars.className = 'stars';
-    stars.textContent = '★'.repeat(unit.star);
-    btn.append(name, meta, stars);
+    btn.dataset.faction = def.faction;
+    btn.append(...cardArt(def, unit.star));
   }
   if (selected && selected.zone === loc.zone && selected.index === loc.index) btn.classList.add('selected');
   btn.addEventListener('click', () => onSlotClick(loc));
@@ -120,13 +140,8 @@ function shopButton(defId: string | null, index: number, gold: number): HTMLButt
     return btn;
   }
   const def = getCharacter(content, defId);
-  const name = document.createElement('span');
-  name.className = 'name';
-  name.textContent = def.name;
-  const meta = document.createElement('span');
-  meta.className = 'meta';
-  meta.textContent = `${def.cost} oro · ${def.faction}`;
-  btn.append(name, meta);
+  btn.dataset.faction = def.faction;
+  btn.append(...cardArt(def));
   btn.disabled = gold < def.cost;
   btn.addEventListener('click', () => send({ type: 'buy', shopIndex: index }));
   return btn;

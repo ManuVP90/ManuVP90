@@ -1,30 +1,55 @@
+/* Paleta de docs/design/arte.md: pergamino sobre mar profundo. */
 :root {
-  --bg: #f4f1ea;
-  --fg: #1d1b18;
-  --card: #ffffff;
-  --accent: #c8102e;
-  --muted: #6b665e;
-  --line: #d6d0c4;
+  --bg: #f4ecd8;
+  --fg: #2b2118;
+  --card: #fffaf0;
+  --accent: #b3262e;
+  --gold: #b8860b;
+  --muted: #6b5f4d;
+  --line: #cbbf9f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #14161c;
-    --fg: #ece8df;
-    --card: #1f2330;
-    --accent: #ff5a6e;
-    --muted: #9aa0ad;
-    --line: #333a4d;
+    --bg: #0f2a3a;
+    --fg: #f4ecd8;
+    --card: #1d4e6b;
+    --accent: #d4a02a;
+    --gold: #d4a02a;
+    --muted: #b8c4cc;
+    --line: #2f6a8a;
   }
 }
 
 :root[data-theme='dark'] {
-  --bg: #14161c;
-  --fg: #ece8df;
-  --card: #1f2330;
-  --accent: #ff5a6e;
-  --muted: #9aa0ad;
-  --line: #333a4d;
+  --bg: #0f2a3a;
+  --fg: #f4ecd8;
+  --card: #1d4e6b;
+  --accent: #d4a02a;
+  --gold: #d4a02a;
+  --muted: #b8c4cc;
+  --line: #2f6a8a;
+}
+
+/* Colores de facción (borde y retrato). */
+.card[data-faction='strawhat'] { --faction: #e0523b; }
+.card[data-faction='marine'] { --faction: #1f3a68; }
+.card[data-faction='yonko'] { --faction: #6a3d9a; }
+.card[data-faction='revolutionary'] { --faction: #8c3b2e; }
+.card[data-faction='fishman'] { --faction: #1f8a8a; }
+.card[data-faction='shichibukai'] { --faction: #3a3a3a; }
+.card[data-faction] { border-left: 6px solid var(--faction, var(--line)); }
+
+.portrait {
+  display: grid;
+  place-items: center;
+  height: 40px;
+  border-radius: 6px;
+  background: var(--faction, var(--line));
+  color: #fffaf0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 * { box-sizing: border-box; }
