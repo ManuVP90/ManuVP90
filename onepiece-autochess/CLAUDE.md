@@ -24,20 +24,25 @@ onepiece-autochess/
 ├── docs/
 │   ├── vision.md          ← visión, público y alcance del MVP
 │   ├── workflow.md        ← cómo colaboran los agentes
-│   └── design/            ← documentos de diseño por sistema (economía, sinergias, rondas…)
-├── data/                  ← fuente de verdad del contenido (JSON)
-│   ├── characters/
-│   ├── synergies/
-│   ├── items/
-│   └── economy.json
+│   └── design/reglas.md   ← reglas que el motor implementa hoy (fuente de verdad del diseño)
+├── data/                  ← contenido (JSON validado al cargar)
+│   ├── characters.json    ← personajes
+│   ├── synergies.json     ← facciones y tiers
+│   └── economy.json       ← economía, tienda, combate
 ├── src/
-│   ├── shared/            ← tipos y reglas puras compartidas cliente/servidor
-│   ├── engine/            ← simulador de combate determinista (sin DOM ni red)
-│   ├── server/            ← partidas, matchmaking, autoridad de estado
-│   └── client/            ← UI web (tablero, tienda, banquillo)
-├── tests/
+│   ├── shared/            ← tipos, RNG con semilla, carga de contenido, protocolo cliente-servidor
+│   ├── engine/            ← tienda, economía, fusión, sinergias y simulador de combate (puro)
+│   ├── server/            ← servidor WebSocket autoritativo (una sala, una partida)
+│   └── client/            ← interfaz web en Vite + TypeScript
+├── tests/                 ← Vitest: motor, contenido, RNG
+├── scripts/validate-data.ts
 └── .claude/agents/        ← definición de los agentes especializados
 ```
+
+## Stack
+
+TypeScript estricto en ESM, Node 22, `ws` para el servidor, Vite para el cliente, Vitest para los tests.
+Decisiones de pila: el motor no depende de DOM ni de red; el servidor es la única fuente de verdad de la partida.
 
 ## Reglas para todos los agentes
 
@@ -51,9 +56,11 @@ onepiece-autochess/
   hasta acordar su origen.
 - Commits pequeños en español o inglés, con prefijo por área: `engine:`, `client:`, `server:`, `data:`, `docs:`.
 
-## Comandos previstos (se fijarán en el scaffold)
+## Comandos
 
 - `npm install`
-- `npm run dev` — cliente y servidor en local
-- `npm test` — tests del motor y de reglas
-- `npm run validate:data` — valida el JSON de `data/` contra los esquemas
+- `npm run dev:server` — servidor en `ws://localhost:8080`
+- `npm run dev:client` — cliente en `http://localhost:5173`
+- `npm run typecheck` — comprobación de tipos
+- `npm test` — tests del motor, contenido y RNG
+- `npm run validate:data` — valida el JSON de `data/`

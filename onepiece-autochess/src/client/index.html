@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece Autochess</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>☠ One Piece Autochess</h1>
+      <div id="status"></div>
+    </header>
+
+    <section id="lobby" hidden>
+      <form id="join-form">
+        <input id="name" placeholder="Nombre de tu tripulación" maxlength="20" autocomplete="off" />
+        <button type="submit">Unirse</button>
+      </form>
+      <div id="lobby-players"></div>
+      <button id="start" type="button">Zarpar (empezar partida)</button>
+    </section>
+
+    <main id="game" hidden>
+      <div class="stats">
+        <span>Ronda <b id="round"></b></span>
+        <span>Oro <b id="gold"></b></span>
+        <span>Nivel <b id="level"></b></span>
+        <span>Vida <b id="hp"></b></span>
+      </div>
+
+      <h2>Tienda</h2>
+      <div id="shop" class="row"></div>
+
+      <h2>Tablero <small>(máx. <span id="cap"></span>)</small></h2>
+      <div id="board" class="grid"></div>
+
+      <h2>Banquillo</h2>
+      <div id="bench" class="row"></div>
+
+      <div class="actions">
+        <button id="reroll" type="button">Resetear tienda</button>
+        <button id="levelup" type="button">Subir nivel</button>
+        <button id="ready" type="button">Listo</button>
+        <button id="sell" type="button" disabled>Vender seleccionada</button>
+      </div>
+      <p id="hint">Selecciona una pieza y luego una casilla para moverla.</p>
+
+      <h2>Sinergias</h2>
+      <ul id="synergies"></ul>
+
+      <h2>Última ronda</h2>
+      <ul id="log"></ul>
+
+      <h2>Tripulaciones</h2>
+      <ul id="players"></ul>
+    </main>
+
+    <p id="error" role="alert"></p>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

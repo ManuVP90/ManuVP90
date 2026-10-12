@@ -1,0 +1,31 @@
+{
+  "name": "onepiece-autochess",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Autochess web por rondas ambientado en One Piece",
+  "type": "module",
+  "scripts": {
+    "dev:server": "tsx watch src/server/index.ts",
+    "dev:client": "vite --config src/client/vite.config.ts",
+    "dev": "npm run dev:server & npm run dev:client",
+    "build": "vite build --config src/client/vite.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "start": "tsx src/server/index.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "ws": "8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/ws": "8.5.13",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vitest": "2.1.9"
+  }
+}

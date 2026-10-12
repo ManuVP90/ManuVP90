@@ -1,0 +1,32 @@
+{
+  "startHp": 100,
+  "startLevel": 1,
+  "maxLevel": 6,
+  "shopSize": 5,
+  "benchSize": 9,
+  "boardSlots": 8,
+  "boardColumns": 4,
+  "baseIncome": 5,
+  "interestPer10": 1,
+  "maxInterest": 5,
+  "winStreakBonus": [0, 0, 1, 1, 2, 3],
+  "rerollCost": 2,
+  "levelUpCost": { "2": 4, "3": 8, "4": 16, "5": 32, "6": 48 },
+  "copiesByCost": { "1": 18, "2": 15, "3": 13, "4": 11, "5": 9 },
+  "shopOdds": {
+    "1": [100, 0, 0, 0, 0],
+    "2": [70, 30, 0, 0, 0],
+    "3": [45, 35, 20, 0, 0],
+    "4": [20, 35, 30, 15, 0],
+    "5": [10, 20, 35, 25, 10],
+    "6": [5, 15, 30, 30, 20]
+  },
+  "starMultiplier": [1, 1.8, 3.2],
+  "combat": {
+    "tickLimit": 120,
+    "manaPerAttack": 10,
+    "manaPerHit": 5,
+    "gridColumns": 4,
+    "gridRows": 4
+  }
+}

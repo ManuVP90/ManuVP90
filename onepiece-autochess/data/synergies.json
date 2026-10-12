@@ -1,0 +1,40 @@
+{
+  "strawhat": {
+    "name": "Sombrero de Paja",
+    "tiers": [
+      { "count": 2, "bonus": { "attackPct": 10 } },
+      { "count": 4, "bonus": { "attackPct": 20, "hpPct": 10 } },
+      { "count": 6, "bonus": { "attackPct": 35, "hpPct": 20, "cooldownPct": 15 } }
+    ]
+  },
+  "marine": {
+    "name": "Marina",
+    "tiers": [
+      { "count": 2, "bonus": { "armor": 1 } },
+      { "count": 4, "bonus": { "armor": 2, "hpPct": 15 } },
+      { "count": 6, "bonus": { "armor": 3, "hpPct": 30 } }
+    ]
+  },
+  "yonko": {
+    "name": "Yonkō",
+    "tiers": [
+      { "count": 2, "bonus": { "hpPct": 15 } },
+      { "count": 3, "bonus": { "hpPct": 30, "attackPct": 15 } }
+    ]
+  },
+  "revolutionary": {
+    "name": "Revolucionarios",
+    "tiers": [
+      { "count": 2, "bonus": { "cooldownPct": 10 } },
+      { "count": 3, "bonus": { "cooldownPct": 20, "attackPct": 10 } },
+      { "count": 4, "bonus": { "cooldownPct": 30, "attackPct": 20 } }
+    ]
+  },
+  "fishman": {
+    "name": "Hombres Pez",
+    "tiers": [
+      { "count": 2, "bonus": { "hpPct": 10 } },
+      { "count": 3, "bonus": { "hpPct": 20, "armor": 1 } }
+    ]
+  }
+}
