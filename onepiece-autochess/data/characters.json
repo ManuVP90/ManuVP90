@@ -48,5 +48,15 @@
   { "id": "kaido", "name": "Kaido", "faction": "yonko", "cost": 5, "hp": 230, "attack": 21, "armor": 3, "range": 1, "cooldown": 2,
     "ability": { "name": "Dragón Celestial", "kind": "bonus_damage", "amount": 120, "manaCost": 110 } },
   { "id": "bigmom", "name": "Charlotte Linlin (Big Mom)", "faction": "yonko", "cost": 5, "hp": 220, "attack": 18, "armor": 2, "range": 2, "cooldown": 3,
-    "ability": { "name": "Kiseki Pastel", "kind": "heal_ally", "amount": 110, "manaCost": 110 } }
+    "ability": { "name": "Kiseki Pastel", "kind": "heal_ally", "amount": 110, "manaCost": 110 } },
+  { "id": "brook", "name": "Brook", "faction": "strawhat", "cost": 2, "hp": 75, "attack": 8, "armor": 0, "range": 1, "cooldown": 3,
+    "ability": { "name": "Soul Solid", "kind": "bonus_damage", "amount": 30, "manaCost": 50 } },
+  { "id": "marco", "name": "Marco", "faction": "yonko", "cost": 3, "hp": 120, "attack": 12, "armor": 1, "range": 2, "cooldown": 3,
+    "ability": { "name": "Fénix Azul", "kind": "heal_ally", "amount": 45, "manaCost": 70 } },
+  { "id": "crocodile", "name": "Crocodile", "faction": "shichibukai", "cost": 4, "hp": 140, "attack": 14, "armor": 2, "range": 2, "cooldown": 2,
+    "ability": { "name": "Arena de Arena", "kind": "bonus_damage", "amount": 70, "manaCost": 90 } },
+  { "id": "doflamingo", "name": "Donquixote Doflamingo", "faction": "shichibukai", "cost": 4, "hp": 135, "attack": 14, "armor": 1, "range": 3, "cooldown": 2,
+    "ability": { "name": "Hilos Celestiales", "kind": "bonus_damage", "amount": 70, "manaCost": 90 } },
+  { "id": "mihawk", "name": "Dracule Mihawk", "faction": "shichibukai", "cost": 5, "hp": 190, "attack": 22, "armor": 2, "range": 1, "cooldown": 1,
+    "ability": { "name": "Corte Negro", "kind": "bonus_damage", "amount": 115, "manaCost": 110 } }
 ]

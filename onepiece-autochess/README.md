@@ -51,6 +51,9 @@ Definidos en [`.claude/agents/`](.claude/agents/) y descritos en [`docs/workflow
 
 ## Estado
 
-MVP en construcción. Hecho: motor completo de una ronda y de la partida, servidor con partida
-en tiempo real, interfaz mínima jugable y 29 tests. Pendiente: ampliar a 30 personajes, mejorar la interfaz
-(arrastrar y soltar, animaciones del combate), bots y reconexión de jugadores.
+MVP en construcción. Hecho: 30 personajes en 6 facciones, motor completo, servidor en tiempo real con
+bots que completan hasta 8 jugadores, interfaz mínima jugable, simulación de partidas (`npm run simulate`)
+y 32 tests.
+
+Pendiente: revisar el equilibrio (la facción Sombrero de Paja gana cerca del 70 % de las partidas de bots),
+mejorar la interfaz (arrastrar y soltar, animaciones del combate), reconexión de jugadores y revisión de lore.

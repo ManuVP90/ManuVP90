@@ -12,11 +12,15 @@ import {
   startRound,
   type Match,
 } from '../engine/match.js';
+import { playBotTurn } from '../engine/bot.js';
 import { loadContent } from '../shared/content.js';
 import type { ClientMsg, ServerMsg } from '../shared/protocol.js';
 
 const PORT = Number(process.env.PORT ?? 8080);
-const MIN_PLAYERS = 2;
+/** Un solo humano basta: los bots completan la partida hasta MATCH_SIZE. */
+const MIN_HUMANS = 1;
+const MATCH_SIZE = 8;
+const BOT_NAMES = ['Barbanegra', 'Kuro', 'Hody', 'Buggy', 'Crocodile', 'Doflamingo', 'Enel', 'Foxy'];
 
 const content = loadContent();
 
@@ -47,6 +51,16 @@ function broadcastState() {
   broadcast({ type: 'state', match, ready: [...ready] });
 }
 
+/** Los bots juegan su turno de preparación y quedan listos. */
+function playBots() {
+  if (!match) return;
+  for (const p of match.players) {
+    if (!p.id.startsWith('bot-') || !p.alive) continue;
+    playBotTurn(content, match, p.id);
+    ready.add(p.id);
+  }
+}
+
 /** Cuando todos los jugadores vivos están listos, se resuelve el combate y empieza la siguiente ronda. */
 function maybeResolve() {
   if (!match || match.phase !== 'prep') return;
@@ -56,7 +70,12 @@ function maybeResolve() {
   const report = resolveRound(content, match);
   ready.clear();
   broadcast({ type: 'round', report });
-  if (match.phase === 'prep') startRound(content, match);
+  if (match.phase === 'prep') {
+    startRound(content, match);
+    playBots();
+    // Si no quedan humanos vivos, nadie más pulsará "Listo": la partida avanza sola.
+    maybeResolve();
+  }
   broadcastState();
 }
 
@@ -69,11 +88,16 @@ function handle(seat: Seat, msg: ClientMsg) {
   }
   if (msg.type === 'start') {
     if (match) throw new ActionError('La partida ya ha empezado');
-    if (seats.size < MIN_PLAYERS) throw new ActionError(`Hacen falta al menos ${MIN_PLAYERS} jugadores`);
-    const players = [...seats.values()].map((s) => ({ id: s.id, name: s.name }));
+    if (seats.size < MIN_HUMANS) throw new ActionError('Hace falta al menos un jugador');
+    const humans = [...seats.values()].map((s) => ({ id: s.id, name: s.name }));
+    const bots = Array.from({ length: Math.max(0, MATCH_SIZE - humans.length) }, (_, i) => ({
+      id: `bot-${i}`,
+      name: `🤖 ${BOT_NAMES[i % BOT_NAMES.length]}`,
+    }));
     // La semilla se fija aquí, en el servidor; el motor es determinista a partir de ella.
-    match = createMatch(content, players, Math.floor(Math.random() * 0xffffffff));
+    match = createMatch(content, [...humans, ...bots], Math.floor(Math.random() * 0xffffffff));
     startRound(content, match);
+    playBots();
     broadcastState();
     return;
   }

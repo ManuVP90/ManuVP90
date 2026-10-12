@@ -12,7 +12,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "validate:data": "tsx scripts/validate-data.ts",
-    "start": "tsx src/server/index.ts"
+    "start": "tsx src/server/index.ts",
+    "simulate": "tsx scripts/simulate.ts"
   },
   "engines": {
     "node": ">=22"

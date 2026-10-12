@@ -25,3 +25,9 @@ describe('contenido', () => {
     expect(() => validateContent(broken)).toThrow(/suma 50/);
   });
 });
+
+describe('alcance del MVP', () => {
+  it('hay 30 personajes', () => {
+    expect(content.characters).toHaveLength(30);
+  });
+});

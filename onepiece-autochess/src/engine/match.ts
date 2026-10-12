@@ -46,6 +46,9 @@ export interface RoundReport {
   eliminated: string[];
 }
 
+/** Daño base que recibe el perdedor de un combate, además de los supervivientes del ganador. */
+const BASE_LOSS_DAMAGE = 6;
+
 export class ActionError extends Error {}
 
 function fail(msg: string): never {
@@ -260,7 +263,7 @@ export function resolveRound(content: Content, match: Match): RoundReport {
 
     if (winner && loser) {
       const winnerSurvivors = winner === a ? survivors[0] : survivors[1];
-      const dmg = 1 + winnerSurvivors;
+      const dmg = BASE_LOSS_DAMAGE + winnerSurvivors;
       loser.hp -= dmg;
       damage[loser.id] = dmg;
       winner.streak = winner.streak > 0 ? winner.streak + 1 : 1;

@@ -51,8 +51,15 @@ aquí y registra el cambio en `docs/design/balance-log.md`.
 - Límite de **120 ticks**. Gana el bando con más supervivientes; con igual número, empate.
 - No hay aleatoriedad en el combate: el mismo tablero da siempre el mismo log.
 
+## Bots
+
+- Los huecos hasta 8 jugadores se llenan con bots. Un bot compra primero las piezas que ya tiene, luego las
+  baratas; sube de nivel con 20 de oro o más y llena el tablero hasta el límite de nivel.
+- Los bots usan las mismas acciones que los jugadores y nunca saltan reglas.
+
 ## Daño entre jugadores
 
-- Al perder un combate, el jugador pierde **1 + supervivientes del ganador** de vida.
+- Al perder un combate, el jugador pierde **6 + supervivientes del ganador** de vida (`BASE_LOSS_DAMAGE` en `match.ts`).
+  Con este valor, una partida de 8 bots dura de media unas 34 rondas (`npm run simulate`).
 - Empate: nadie recibe daño.
 - En cada ronda los jugadores vivos se emparejan en orden aleatorio con semilla. Con número impar, uno descansa.

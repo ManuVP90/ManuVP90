@@ -36,5 +36,12 @@
       { "count": 2, "bonus": { "hpPct": 10 } },
       { "count": 3, "bonus": { "hpPct": 20, "armor": 1 } }
     ]
+  },
+  "shichibukai": {
+    "name": "Shichibukai",
+    "tiers": [
+      { "count": 2, "bonus": { "hpPct": 10, "attackPct": 5 } },
+      { "count": 3, "bonus": { "hpPct": 20, "attackPct": 15, "armor": 1 } }
+    ]
   }
 }
