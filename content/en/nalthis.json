@@ -183,22 +183,21 @@
     "category": "nalthis",
     "difficulty": 1,
     "work": "warbreaker",
-    "q": "Which Shard's power is present on Nalthis?",
-    "a": "Endowment",
+    "q": "Which mercenary leader works for Vivenna in T'Telir?",
+    "a": "Denth",
     "wrong": [
-      "Devotion",
-      "Preservation",
-      "Cultivation"
+      "Vasher",
+      "Parlin",
+      "Bluefingers"
     ],
-    "explain": "Endowment is the Shard credited with sending the Returned back to life.",
+    "explain": "Denth seems a friendly hireling, but he is secretly working to start the war.",
     "terms": [
-      "Shard",
-      "Nalthis",
-      "Endowment",
-      "Devotion",
-      "Preservation",
-      "Cultivation",
-      "Returned"
+      "Vivenna",
+      "T'Telir",
+      "Denth",
+      "Vasher",
+      "Parlin",
+      "Bluefingers"
     ],
     "source": "Warbreaker"
   },
@@ -532,7 +531,7 @@
     "id": "nalthis-025",
     "category": "nalthis",
     "difficulty": 2,
-    "work": "words-of-radiance",
+    "work": "wob",
     "q": "On Roshar, Vasher goes by Zahel. What does he do for Adolin?",
     "a": "Teaches him swordplay",
     "wrong": [
@@ -550,7 +549,7 @@
       "ardent",
       "Kholin"
     ],
-    "source": "Words of Radiance"
+    "source": "Words of Radiance; Words of Brandon"
   },
   {
     "id": "nalthis-026",
@@ -581,7 +580,7 @@
     "id": "nalthis-027",
     "category": "nalthis",
     "difficulty": 2,
-    "work": "words-of-radiance",
+    "work": "oathbringer",
     "q": "Who receives Nightblood at the end of Words of Radiance?",
     "a": "Szeth",
     "wrong": [
@@ -589,7 +588,7 @@
       "Adolin",
       "Dalinar"
     ],
-    "explain": "The Herald Nale gives the sword to Szeth after reviving him.",
+    "explain": "The Herald Nale gives the talking sword to Szeth after reviving him, though Szeth does not know its name.",
     "terms": [
       "Nightblood",
       "Words of Radiance",
@@ -815,7 +814,7 @@
     "id": "nalthis-037",
     "category": "nalthis",
     "difficulty": 3,
-    "work": "warbreaker",
+    "work": "wob",
     "q": "Who is the Vessel of the Shard Endowment?",
     "a": "Edgli",
     "wrong": [
@@ -835,7 +834,7 @@
       "Tears of Edgli",
       "Hallandren"
     ],
-    "source": "Warbreaker"
+    "source": "Words of Brandon"
   },
   {
     "id": "nalthis-038",

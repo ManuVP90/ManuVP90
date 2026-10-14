@@ -226,7 +226,7 @@
       "Syl",
       "Timbre"
     ],
-    "explain": "Wyndle was a chair designer in Shadesmar before he bonded Lift.",
+    "explain": "Wyndle was a renowned gardener of chairs in Shadesmar before he was asked to bond Lift.",
     "terms": [
       "Lift",
       "cultivationspren",
@@ -442,17 +442,16 @@
     "category": "roshar",
     "difficulty": 1,
     "work": "way-of-kings",
-    "q": "What do the Alethi call the Listeners of the Shattered Plains?",
+    "q": "What do the Alethi call the people they fight on the Shattered Plains?",
     "a": "Parshendi",
     "wrong": [
       "Herdazians",
       "Iriali",
       "Shin"
     ],
-    "explain": "The Listeners grow carapace armor and sing in rhythms.",
+    "explain": "The Parshendi grow carapace armor and sing as they go into battle.",
     "terms": [
       "Alethi",
-      "Listeners",
       "Shattered Plains",
       "Parshendi",
       "Herdazians",
@@ -473,7 +472,7 @@
       "Wikim",
       "Jushu"
     ],
-    "explain": "Helaran was an initiate of the Skybreakers when he died.",
+    "explain": "Helaran bore a Shardblade and Shardplate when Kaladin killed him while saving Amaram.",
     "terms": [
       "Shallan",
       "Shardbearer",
@@ -483,7 +482,8 @@
       "Balat",
       "Wikim",
       "Jushu",
-      "Skybreakers"
+      "Shardblade",
+      "Shardplate"
     ],
     "source": "Words of Radiance"
   },
@@ -496,17 +496,20 @@
     "a": "Ivory",
     "wrong": [
       "Glys",
-      "Timbre",
+      "Wyndle",
       "Syl"
     ],
-    "explain": "Ivory took a name contradicting the black color of inkspren as an act of defiance.",
+    "explain": "Ivory's bond makes Jasnah an Elsecaller, letting her travel into Shadesmar.",
     "terms": [
       "Jasnah Kholin",
       "inkspren",
       "Ivory",
       "Glys",
-      "Timbre",
-      "Syl"
+      "Wyndle",
+      "Syl",
+      "Jasnah",
+      "Elsecaller",
+      "Shadesmar"
     ],
     "source": "Oathbringer"
   },
@@ -623,7 +626,7 @@
     ],
     "explain": "In Yeddaw, Lift befriends Stump, a woman who runs an orphanage.",
     "terms": [
-      "Tashikk",
+      "Tashikki",
       "Edgedancer",
       "Yeddaw",
       "Azimir",
@@ -832,7 +835,7 @@
       "Mraize",
       "Raboniel"
     ],
-    "explain": "Taravangian takes up the Shard after Rayse is killed with Nightblood.",
+    "explain": "Taravangian kills the previous Vessel and takes up the Shard himself.",
     "terms": [
       "Vessel",
       "Odium",
@@ -841,9 +844,7 @@
       "Moash",
       "Mraize",
       "Raboniel",
-      "Shard",
-      "Rayse",
-      "Nightblood"
+      "Shard"
     ],
     "source": "Rhythm of War"
   },
@@ -870,7 +871,7 @@
     "id": "roshar-038",
     "category": "roshar",
     "difficulty": 2,
-    "work": "oathbringer",
+    "work": "rhythm-of-war",
     "q": "What are the flying Fused called?",
     "a": "Heavenly Ones",
     "wrong": [
@@ -888,7 +889,7 @@
       "Leshwi",
       "Voidlight"
     ],
-    "source": "Oathbringer"
+    "source": "Oathbringer; Rhythm of War"
   },
   {
     "id": "roshar-039",
@@ -1001,7 +1002,7 @@
       "Battar",
       "Shalash"
     ],
-    "explain": "The Palanaeum of Kharbranth is named after her.",
+    "explain": "Pailiah, also called Pali, is the Herald linked to the Truthwatchers and to the Essence of knowledge.",
     "terms": [
       "Herald",
       "Truthwatchers",
@@ -1009,8 +1010,8 @@
       "Chanarach",
       "Battar",
       "Shalash",
-      "Palanaeum",
-      "Kharbranth"
+      "Pali",
+      "Essence"
     ],
     "source": "Oathbringer"
   },
@@ -1026,7 +1027,7 @@
       "Gavilar",
       "Jezrien"
     ],
-    "explain": "After his death, his sons divided his empire, which soon collapsed.",
+    "explain": "The Sunmaker's vast empire fell apart soon after his death.",
     "terms": [
       "Alethi",
       "Sunmaker",
@@ -1042,7 +1043,7 @@
     "category": "roshar",
     "difficulty": 3,
     "work": "rhythm-of-war",
-    "q": "Which Unmade did the Bondsmith Melishi plan to trap in a perfect gem?",
+    "q": "Which Unmade did the Bondsmith Melishi trap in a perfect gem?",
     "a": "Ba-Ado-Mishram",
     "wrong": [
       "Sja-anat",
@@ -1103,7 +1104,7 @@
     ],
     "explain": "Akinah is guarded by the Sleepless, who keep its secrets hidden.",
     "terms": [
-      "Aimia",
+      "Aimian",
       "Rysn",
       "Dawnshard",
       "Akinah",

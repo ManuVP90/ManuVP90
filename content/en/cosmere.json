@@ -91,6 +91,7 @@
       "Cultivation",
       "Ruin",
       "Autonomy",
+      "Splintered",
       "Stormfather"
     ],
     "source": "The Way of Kings; Oathbringer"
@@ -107,7 +108,7 @@
       "Devotion and Dominion",
       "Odium and Ruin"
     ],
-    "explain": "Their cooperation required Ruin to be imprisoned, which Preservation achieved at great cost.",
+    "explain": "Ruin agreed in exchange for being allowed to destroy the world later, but Preservation betrayed and imprisoned him at great cost to himself.",
     "terms": [
       "Shard",
       "Scadrial",
@@ -125,27 +126,27 @@
     "id": "cosmere-006",
     "category": "cosmere",
     "difficulty": 1,
-    "work": "hero-of-ages",
-    "q": "Who takes up both Ruin and Preservation at the end of The Hero of Ages?",
-    "a": "Sazed",
+    "work": "rhythm-of-war",
+    "q": "Stormlight is the Investiture of which Shard?",
+    "a": "Honor",
     "wrong": [
-      "Vin",
-      "Elend",
-      "Spook"
+      "Cultivation",
+      "Odium",
+      "Preservation"
     ],
-    "explain": "Holding both Shards at once, Sazed remade the broken world of Scadrial.",
+    "explain": "Cultivation's power appears as Lifelight and Odium's as Voidlight.",
     "terms": [
-      "Ruin",
-      "Preservation",
-      "The Hero of Ages",
-      "Sazed",
-      "Vin",
-      "Elend",
-      "Spook",
+      "Stormlight",
+      "Investiture",
       "Shard",
-      "Scadrial"
+      "Honor",
+      "Cultivation",
+      "Odium",
+      "Preservation",
+      "Lifelight",
+      "Voidlight"
     ],
-    "source": "The Hero of Ages"
+    "source": "Rhythm of War"
   },
   {
     "id": "cosmere-007",
@@ -159,16 +160,14 @@
       "Marsh",
       "Kelsier"
     ],
-    "explain": "Vin and Ruin's Vessel, Ati, destroyed each other in their final clash.",
+    "explain": "Vin and Ruin destroyed each other in their final clash.",
     "terms": [
       "Preservation",
       "Ruin",
       "Vin",
       "Elend",
       "Marsh",
-      "Kelsier",
-      "Vessel",
-      "Ati"
+      "Kelsier"
     ],
     "source": "The Hero of Ages"
   },
@@ -200,26 +199,27 @@
     "id": "cosmere-009",
     "category": "cosmere",
     "difficulty": 1,
-    "work": "way-of-kings",
+    "work": "words-of-radiance",
     "q": "On Roshar, what is the Cognitive Realm commonly called?",
     "a": "Shadesmar",
     "wrong": [
       "The Tranquiline Halls",
-      "Braize",
+      "The Origin",
       "Damnation"
     ],
-    "explain": "Jasnah and Shallan both enter Shadesmar long before others learn how to travel there.",
+    "explain": "Jasnah and Shallan can glimpse and even slip into Shadesmar through Soulcasting.",
     "terms": [
       "Roshar",
       "Cognitive Realm",
       "Shadesmar",
       "Tranquiline Halls",
-      "Braize",
+      "Origin",
       "Damnation",
       "Jasnah",
-      "Shallan"
+      "Shallan",
+      "Soulcasting"
     ],
-    "source": "The Way of Kings"
+    "source": "The Way of Kings; Words of Radiance"
   },
   {
     "id": "cosmere-010",
@@ -292,7 +292,7 @@
     "id": "cosmere-013",
     "category": "cosmere",
     "difficulty": 1,
-    "work": "words-of-radiance",
+    "work": "oathbringer",
     "q": "Which sentient sword from Nalthis ends up on Roshar?",
     "a": "Nightblood",
     "wrong": [
@@ -351,7 +351,7 @@
       "The Diagram",
       "The Envisagers"
     ],
-    "explain": "The Ghostbloods are a worldhopper-linked group with interests far beyond Roshar.",
+    "explain": "In Words of Radiance, Mraize has Shallan, disguised as Veil, spy on Amaram's Sons of Honor.",
     "terms": [
       "Mraize",
       "Shallan",
@@ -359,7 +359,8 @@
       "Sons of Honor",
       "Diagram",
       "Envisagers",
-      "Roshar"
+      "Veil",
+      "Amaram"
     ],
     "source": "Words of Radiance"
   },
@@ -435,7 +436,7 @@
     "id": "cosmere-019",
     "category": "cosmere",
     "difficulty": 1,
-    "work": "words-of-radiance",
+    "work": "oathbringer",
     "q": "The Stormfather is a remnant of which Shard?",
     "a": "Honor",
     "wrong": [
@@ -556,26 +557,25 @@
     "id": "cosmere-024",
     "category": "cosmere",
     "difficulty": 2,
-    "work": "rhythm-of-war",
-    "q": "Who becomes the new Vessel of Odium at the end of Rhythm of War?",
-    "a": "Taravangian",
+    "work": "hero-of-ages",
+    "q": "Allomancy draws its power from which Shard?",
+    "a": "Preservation",
     "wrong": [
-      "Moash",
-      "Dalinar",
-      "Raboniel"
+      "Ruin",
+      "Honor",
+      "Endowment"
     ],
-    "explain": "Taravangian killed the previous Vessel and took up the Shard himself.",
+    "explain": "The metals only act as a catalyst for Preservation's power, while Hemalurgy is tied to Ruin.",
     "terms": [
-      "Vessel",
-      "Odium",
-      "Rhythm of War",
-      "Taravangian",
-      "Moash",
-      "Dalinar",
-      "Raboniel",
-      "Shard"
+      "Allomancy",
+      "Shard",
+      "Preservation",
+      "Ruin",
+      "Honor",
+      "Endowment",
+      "Hemalurgy"
     ],
-    "source": "Rhythm of War"
+    "source": "The Hero of Ages"
   },
   {
     "id": "cosmere-025",
@@ -608,14 +608,14 @@
     "category": "cosmere",
     "difficulty": 2,
     "work": "lost-metal",
-    "q": "In The Lost Metal, which group led by Kelsier works with Marasi?",
+    "q": "In The Lost Metal, which group led by Kelsier invites Marasi to join it?",
     "a": "The Ghostbloods",
     "wrong": [
       "The Set",
       "The Seventeenth Shard",
       "The Steel Ministry"
     ],
-    "explain": "Marasi meets offworld agents of the Ghostbloods, including Moonlight.",
+    "explain": "Marasi works with the Ghostblood agents Moonlight and TwinSoul, but turns down Kelsier's offer.",
     "terms": [
       "The Lost Metal",
       "Kelsier",
@@ -624,7 +624,8 @@
       "the Set",
       "Seventeenth Shard",
       "Steel Ministry",
-      "Moonlight"
+      "Moonlight",
+      "TwinSoul"
     ],
     "source": "The Lost Metal"
   },
@@ -687,7 +688,7 @@
       "Sel",
       "Scadrial"
     ],
-    "explain": "Khriss appears in White Sand on Taldain's Dayside before becoming a worldhopper.",
+    "explain": "Khriss is a Darksider who travels to Taldain's Dayside in White Sand.",
     "terms": [
       "Khriss",
       "Taldain",
@@ -695,6 +696,7 @@
       "Sel",
       "Scadrial",
       "White Sand",
+      "Darksider",
       "Dayside"
     ],
     "source": "White Sand"
@@ -881,17 +883,17 @@
     "q": "On Scadrial, which place is Preservation's Perpendicularity?",
     "a": "The Well of Ascension",
     "wrong": [
-      "The Pits of Hathsin",
+      "Fadrex City",
       "Kredik Shaw",
       "The Conventical of Seran"
     ],
-    "explain": "In Secret History, Kelsier is drawn toward the Well, where Preservation's power gathers.",
+    "explain": "In Secret History, the dead Kelsier spends years by the Well, where Preservation's power pools.",
     "terms": [
       "Scadrial",
       "Preservation",
       "Perpendicularity",
       "Well of Ascension",
-      "Pits of Hathsin",
+      "Fadrex City",
       "Kredik Shaw",
       "Conventical of Seran",
       "Secret History",
@@ -911,7 +913,7 @@
       "The Oathpact traps him",
       "The Everstorm anchors him"
     ],
-    "explain": "This binding is why Odium needs a champion and a contest to win his freedom.",
+    "explain": "Odium seeks a contest of champions as a way to escape this binding.",
     "terms": [
       "Odium",
       "Roshar",
@@ -1088,7 +1090,8 @@
       "Ambition",
       "Devotion",
       "Mercy",
-      "Valor"
+      "Valor",
+      "Splintered"
     ],
     "source": "Arcanum Unbounded, Threnodite system essay"
   },
@@ -1142,7 +1145,7 @@
     "id": "cosmere-048",
     "category": "cosmere",
     "difficulty": 3,
-    "work": "rhythm-of-war",
+    "work": "oathbringer",
     "q": "In which region of Roshar is Cultivation's Perpendicularity?",
     "a": "The Horneater Peaks",
     "wrong": [
@@ -1161,7 +1164,7 @@
       "Frostlands",
       "Unkalaki"
     ],
-    "source": "Oathbringer; Rhythm of War"
+    "source": "Oathbringer"
   },
   {
     "id": "cosmere-049",
