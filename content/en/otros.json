@@ -53,7 +53,7 @@
       "A cat",
       "A ferret"
     ],
-    "explain": "Huck is a talking rat Tress meets aboard a smuggling ship, and he secretly serves the Sorceress.",
+    "explain": "Huck is a cursed talking rat who secretly spies for the Sorceress.",
     "terms": [
       "Huck",
       "Tress",
@@ -213,25 +213,24 @@
     "category": "otros",
     "difficulty": 3,
     "work": "tress",
-    "q": "What is the true name of the Sorceress of the Midnight Sea?",
-    "a": "Riina",
+    "q": "What is the name of the new ship Tress and her crew buy at the end of the story?",
+    "a": "The Two Cups",
     "wrong": [
-      "Xisis",
-      "Khriss",
-      "Vivenna"
+      "The Emerald Crown",
+      "The Midnight Rose",
+      "The Silver Gull"
     ],
-    "explain": "Riina is an Elantrian worldhopper who first appeared in Mistborn: Secret History.",
+    "explain": "Pardoned by the king, the crew sell the Crow's Song and buy the Two Cups, with Charlie aboard as valet, storyteller and musician.",
     "terms": [
-      "Sorceress",
-      "Midnight Sea",
-      "Riina",
-      "Xisis",
-      "Khriss",
-      "Vivenna",
-      "Elantrian",
-      "Mistborn: Secret History"
+      "Tress",
+      "Two Cups",
+      "Emerald Crown",
+      "Midnight Rose",
+      "Silver Gull",
+      "Crow's Song",
+      "Charlie"
     ],
-    "source": "Tress of the Emerald Sea; Coppermind: Riina"
+    "source": "Tress of the Emerald Sea; Coppermind: Two Cups"
   },
   {
     "id": "otros-012",
@@ -245,7 +244,7 @@
       "The Rose Sea",
       "The Sapphire Sea"
     ],
-    "explain": "Xisis comes from the planet Yolen and fears only the Sorceress.",
+    "explain": "Xisis is a dragon originally from Yolen who, for a time, made his home in the Crimson Sea.",
     "terms": [
       "Lumar",
       "Xisis",
@@ -253,8 +252,7 @@
       "Midnight Sea",
       "Rose Sea",
       "Sapphire Sea",
-      "Yolen",
-      "Sorceress"
+      "Yolen"
     ],
     "source": "Tress of the Emerald Sea; Coppermind: Xisis"
   },
@@ -313,14 +311,13 @@
       "Spren",
       "Aviar"
     ],
-    "explain": "Nightmares seep out of the shroud to feed on the fear of Kilahito's people.",
+    "explain": "Nightmares seep out of the shroud, and painters trap them by painting them into harmless images.",
     "terms": [
       "Painter",
       "Shades",
       "Spren",
       "Aviar",
-      "shroud",
-      "Kilahito"
+      "shroud"
     ],
     "source": "Yumi and the Nightmare Painter"
   },
@@ -380,7 +377,7 @@
       "A wall of storms",
       "A rain of spores"
     ],
-    "explain": "The shroud keeps Kilahito in constant darkness, held back only by hion.",
+    "explain": "Under the shroud Kilahito lives in constant darkness, lit by glowing hion lines.",
     "terms": [
       "Kilahito",
       "shroud",
@@ -400,11 +397,10 @@
       "Green and violet",
       "White and orange"
     ],
-    "explain": "Hion lines provide light and power and push back the shroud.",
+    "explain": "Hion lines run through the city, providing both light and power.",
     "terms": [
       "Kilahito",
-      "hion",
-      "shroud"
+      "hion"
     ],
     "source": "Yumi and the Nightmare Painter"
   },
@@ -467,7 +463,7 @@
       "A Returned",
       "A shade"
     ],
-    "explain": "Masaka was recruited by Design to help map the planet beyond the shroud.",
+    "explain": "Masaka hides her true nature and later helps Yumi and Design map the lands beyond the shroud.",
     "terms": [
       "Masaka",
       "Sleepless",
@@ -475,7 +471,8 @@
       "Returned",
       "shade",
       "Design",
-      "shroud"
+      "shroud",
+      "Yumi"
     ],
     "source": "Yumi and the Nightmare Painter; Coppermind: Masaka"
   },
@@ -626,7 +623,7 @@
       "The Sorceress",
       "Taravangian"
     ],
-    "explain": "The Cinder King forces captives to fight, sending the losers out to die in the sun.",
+    "explain": "The Cinder King commands the Charred, people enslaved by a corrupted sunheart driven into their chests.",
     "terms": [
       "Nomad",
       "Rain",
@@ -634,7 +631,9 @@
       "Cinder King",
       "Lord Ruler",
       "Sorceress",
-      "Taravangian"
+      "Taravangian",
+      "Charred",
+      "sunheart"
     ],
     "source": "The Sunlit Man"
   },
@@ -693,7 +692,7 @@
       "A seon",
       "An Aviar"
     ],
-    "explain": "Auxiliary, or Aux, is bonded to Nomad and accompanies him across worlds.",
+    "explain": "Aux was nearly destroyed by the Dawnshard Nomad once held and survives as a voice in Nomad's head.",
     "terms": [
       "Auxiliary",
       "Nomad",
@@ -701,7 +700,8 @@
       "seon",
       "Aviar",
       "Aux",
-      "spren"
+      "spren",
+      "Dawnshard"
     ],
     "source": "The Sunlit Man"
   },
@@ -839,7 +839,7 @@
     "id": "otros-039",
     "category": "otros",
     "difficulty": 3,
-    "work": "white-sand",
+    "work": "arcanum",
     "q": "Which Shard Invests Taldain through its blazing larger star?",
     "a": "Autonomy",
     "wrong": [
@@ -856,7 +856,7 @@
       "Endowment",
       "Cultivation"
     ],
-    "source": "Coppermind: Taldain system"
+    "source": "Arcanum Unbounded, Taldain system essay; Coppermind: Taldain system"
   },
   {
     "id": "otros-040",
@@ -892,7 +892,7 @@
       "Sleepless",
       "Larkin"
     ],
-    "explain": "Aviar gain their talents only after visiting the island of Patji.",
+    "explain": "Young Aviar must visit the island of Patji to gain their talents.",
     "terms": [
       "First of the Sun",
       "Aviar",
@@ -935,12 +935,11 @@
       "Brother",
       "Grandfather"
     ],
-    "explain": "Dusk trained on Sori, the smallest and tamest island of the Pantheon, before facing Patji.",
+    "explain": "Trappers like Dusk treat the deadly island of Patji with wary reverence, as a stern father.",
     "terms": [
       "Patji",
       "Pantheon",
-      "Dusk",
-      "Sori"
+      "Dusk"
     ],
     "source": "Sixth of the Dusk"
   },
@@ -956,7 +955,7 @@
       "Other people's thoughts",
       "Hidden treasure"
     ],
-    "explain": "Sak's corpse visions warn Dusk of danger ahead; no other Aviar has this talent.",
+    "explain": "Sak's corpse visions warn Dusk of danger ahead; her talent was unknown among Aviar before her.",
     "terms": [
       "Dusk",
       "Aviar",

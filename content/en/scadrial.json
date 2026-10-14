@@ -39,7 +39,8 @@
     "explain": "Coinshots use steel Pushes to fling coins or launch themselves through the air.",
     "terms": [
       "Allomancer",
-      "Coinshot"
+      "Coinshot",
+      "Push"
     ],
     "source": "The Final Empire"
   },
@@ -94,7 +95,7 @@
     "a": "Luthadel",
     "wrong": [
       "Fadrex",
-      "Elendel",
+      "Fellise",
       "Tathingdwen"
     ],
     "explain": "Luthadel is home to the Great Houses and the Lord Ruler's palace.",
@@ -102,7 +103,7 @@
       "Final Empire",
       "Luthadel",
       "Fadrex",
-      "Elendel",
+      "Fellise",
       "Tathingdwen",
       "Lord Ruler"
     ],
@@ -248,7 +249,7 @@
     "a": "Metalminds",
     "wrong": [
       "Spikes",
-      "Lerasium beads",
+      "Atium beads",
       "Medallions"
     ],
     "explain": "Sazed wears metalminds as bracers, rings and earrings to store memories, weight and more.",
@@ -256,9 +257,9 @@
       "Feruchemist",
       "metalmind",
       "spike",
-      "lerasium",
       "medallion",
-      "Sazed"
+      "Sazed",
+      "atium"
     ],
     "source": "The Final Empire"
   },
@@ -337,7 +338,7 @@
     "id": "scadrial-016",
     "category": "scadrial",
     "difficulty": 2,
-    "work": "final-empire",
+    "work": "well-of-ascension",
     "q": "What was the Lord Ruler's real name?",
     "a": "Rashek",
     "wrong": [
@@ -457,7 +458,7 @@
       "Tindwyl",
       "Valette"
     ],
-    "explain": "Mare was a Tineye who was sent to the Pits along with Kelsier.",
+    "explain": "Mare, a Tineye, was imprisoned in the Pits along with Kelsier and died there.",
     "terms": [
       "Kelsier",
       "Mare",
@@ -608,7 +609,7 @@
     "category": "scadrial",
     "difficulty": 3,
     "work": "well-of-ascension",
-    "q": "Who was the man destined to be the Hero, whose place the Lord Ruler stole?",
+    "q": "Who was the man believed to be the Hero of Ages, whose place the Lord Ruler stole?",
     "a": "Alendi",
     "wrong": [
       "Kwaan",
@@ -631,7 +632,7 @@
     "id": "scadrial-029",
     "category": "scadrial",
     "difficulty": 3,
-    "work": "well-of-ascension",
+    "work": "final-empire",
     "q": "What does burning aluminum do to an Allomancer?",
     "a": "Empties their metal reserves",
     "wrong": [
@@ -647,7 +648,7 @@
       "Push",
       "Inquisitor"
     ],
-    "source": "The Well of Ascension"
+    "source": "The Final Empire"
   },
   {
     "id": "scadrial-030",
@@ -684,7 +685,7 @@
       "Fadrex",
       "New Seran"
     ],
-    "explain": "Elendel is the capital of the Basin, named after Elend Venture.",
+    "explain": "Elendel is the capital of the Elendel Basin, named after Elend Venture.",
     "terms": [
       "Elendel",
       "Luthadel",
@@ -817,15 +818,16 @@
       "Telsin Ladrian",
       "Lord Harms"
     ],
-    "explain": "Mister Suit, a leader of the Set, is Wax's own uncle.",
+    "explain": "Mister Suit, the man behind Miles and the Vanishers, is Wax's own uncle.",
     "terms": [
       "Mister Suit",
       "Edwarn Ladrian",
       "Miles Hundredlives",
       "Telsin Ladrian",
       "Lord Harms",
-      "Set",
-      "Wax"
+      "Wax",
+      "Miles",
+      "Vanishers"
     ],
     "source": "The Alloy of Law"
   },
@@ -858,20 +860,21 @@
     "id": "scadrial-039",
     "category": "scadrial",
     "difficulty": 2,
-    "work": "alloy-of-law",
-    "q": "What do followers of Pathianism wear as a sign of their faith?",
+    "work": "shadows-of-self",
+    "q": "What do followers of the Path wear while they pray?",
     "a": "An earring",
     "wrong": [
       "A bracelet",
       "A hat",
-      "A spike"
+      "A veil"
     ],
-    "explain": "Pathianism is a faith built on the teachings of Harmony.",
+    "explain": "Wax, a Pathian, often touches his earring when praying or thinking things over.",
     "terms": [
-      "Pathianism",
-      "Harmony"
+      "Path",
+      "Wax",
+      "Pathian"
     ],
-    "source": "The Alloy of Law"
+    "source": "Shadows of Self; Coppermind: The Path"
   },
   {
     "id": "scadrial-040",
@@ -885,7 +888,7 @@
       "Marasi",
       "MeLaan"
     ],
-    "explain": "Ranette has a habit of shooting at Wayne whenever he visits.",
+    "explain": "Ranette has threatened to shoot Wayne on sight, and has actually shot him more than once.",
     "terms": [
       "Wax",
       "Wayne",
@@ -1095,7 +1098,7 @@
     "wrong": [
       "Earrings",
       "Spikes",
-      "Bracers"
+      "Vials"
     ],
     "explain": "The medallions are unkeyed metalminds, usable by people with no powers of their own.",
     "terms": [
@@ -1112,7 +1115,7 @@
     "category": "scadrial",
     "difficulty": 3,
     "work": "lost-metal",
-    "q": "Which Inquisitor from era 1 is known in era 2 as Ironeyes?",
+    "q": "Which era 1 character is known in era 2 as Ironeyes?",
     "a": "Marsh",
     "wrong": [
       "Spook",
