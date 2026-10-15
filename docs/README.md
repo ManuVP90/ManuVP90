@@ -17,6 +17,10 @@ Para tenerla siempre disponible basta con publicar la carpeta `app/` en cualquie
 estático con HTTPS (GitHub Pages, Netlify, Cloudflare Pages…).
 
 ### Modos
+- **Nivel de dificultad** (partidas clásica y rápida): Fácil, Normal, Difícil o Experto.
+- **Comodines** (uno de cada por jugador y partida, no válidos en la pregunta final):
+  **Atium** elimina dos respuestas incorrectas; **Luz tormentosa**, activada antes de responder,
+  permite reintentar si fallas; **Aliento** cambia la pregunta por otra de la misma categoría.
 - **Partida clásica** (1–6 jugadores o equipos): ruleta con 6 mundos + comodín. Dos aciertos en un
   mundo infunden su gema; con las seis, pregunta final. Si la ruleta cae en una gema ya infundida,
   cuenta como comodín.
@@ -28,14 +32,15 @@ estático con HTTPS (GitHub Pages, Netlify, Cloudflare Pages…).
 
 | Mundo | Preguntas |
 |---|---|
-| Roshar | 50 |
-| Scadrial | 50 |
-| Sel | 50 |
-| Nalthis | 40 |
-| Otros mundos | 50 |
-| El Cosmere | 50 |
+| Roshar | 80 |
+| Scadrial | 80 |
+| Sel | 80 |
+| Nalthis | 60 |
+| Otros mundos | 80 |
+| El Cosmere | 80 |
 
-290 preguntas por idioma, 3 niveles de dificultad, cada una etiquetada con el libro más tardío
+460 preguntas por idioma, 4 niveles de dificultad (fácil, media, difícil y experto), repartidas a partes iguales
+(Nalthis: 16/16/16/12). En los mundos-planeta, las cuatro opciones de cada pregunta son siempre del mismo planeta; y cada una etiquetada con el libro más tardío
 que hace falta para conocer la respuesta.
 
 **Nombres**: en cada idioma se usan los de la edición oficial publicada en ese idioma
@@ -56,6 +61,7 @@ tools/build.mjs     valida el contenido y genera app/data/questions.<lang>.json
 tools/terms.mjs     términos de las preguntas que faltan en el glosario
 tools/check-terms.mjs  coherencia terminológica de las traducciones
 tools/merge-glossary.mjs  integra las revisiones de cada idioma en el glosario
+tools/changed-ids.mjs  ids nuevas o cambiadas desde una revisión (para traductores)
 tools/smoke.mjs     prueba de extremo a extremo en móvil emulado (Playwright)
 ```
 
