@@ -1,0 +1,552 @@
+[
+  {
+    "id": "scadrial-001",
+    "q": "Quel personnage est surnommé le Survivant de Hathsin ?",
+    "a": "Kelsier",
+    "wrong": [
+      "Dockson",
+      "Marsh",
+      "Brise"
+    ],
+    "explain": "Kelsier doit ce titre à son évasion des Fosses de Hathsin, où les prisonniers du Seigneur Maître extrayaient l’atium."
+  },
+  {
+    "id": "scadrial-002",
+    "q": "Quel métal permet à un allomancien de pousser les métaux proches ?",
+    "a": "L’acier",
+    "wrong": [
+      "Le fer",
+      "L’étain",
+      "Le laiton"
+    ],
+    "explain": "Les Lance-pièces poussent sur l’acier pour projeter des pièces ou se propulser dans les airs."
+  },
+  {
+    "id": "scadrial-003",
+    "q": "Que renforce le potin chez un allomancien qui le brûle ?",
+    "a": "La force et l’endurance physiques",
+    "wrong": [
+      "Les sens",
+      "Les émotions d’autrui",
+      "La vitesse de pensée"
+    ],
+    "explain": "Les Cogneurs, ou Biceps, brûlent du potin pour se battre et encaisser des blessures qui arrêteraient n’importe qui."
+  },
+  {
+    "id": "scadrial-004",
+    "q": "Comment s’appelle le frère aîné de Vin, qui l’a élevée dans la rue ?",
+    "a": "Reen",
+    "wrong": [
+      "Camon",
+      "Ulef",
+      "Elend"
+    ],
+    "explain": "Reen a appris à Vin à ne faire confiance à personne, une leçon qu’elle a du mal à désapprendre."
+  },
+  {
+    "id": "scadrial-005",
+    "q": "Quelle est la capitale de l’Empire ultime ?",
+    "a": "Luthadel",
+    "wrong": [
+      "Fadrex",
+      "Fellise",
+      "Tathingdwen"
+    ],
+    "explain": "Luthadel abrite les Grandes Maisons et le palais du Seigneur Maître."
+  },
+  {
+    "id": "scadrial-006",
+    "q": "Comment appelle-t-on les serviteurs du Seigneur Maître aux yeux transpercés de pointes de métal ?",
+    "a": "Les Inquisiteurs d’Acier",
+    "wrong": [
+      "Les obligateurs",
+      "Les kandras",
+      "Les Gardiens"
+    ],
+    "explain": "Les Inquisiteurs tirent leurs pouvoirs de l’hémalurgie, grâce aux pointes plantées dans leur corps."
+  },
+  {
+    "id": "scadrial-007",
+    "q": "À quelle maison noble Elend appartient-il ?",
+    "a": "La maison Venture",
+    "wrong": [
+      "La maison Renoux",
+      "La maison Lekal",
+      "La maison Hasting"
+    ],
+    "explain": "La maison Venture était l’une des plus puissantes Grandes Maisons de Luthadel."
+  },
+  {
+    "id": "scadrial-008",
+    "q": "Sazed est un Gardien issu de quel peuple ?",
+    "a": "Les Terrisiens",
+    "wrong": [
+      "Les skaa",
+      "Les Khlenni",
+      "Les Malwish"
+    ],
+    "explain": "Les Gardiens terrisiens sont des ferrochimistes qui conservent la mémoire des religions et des savoirs perdus."
+  },
+  {
+    "id": "scadrial-009",
+    "q": "De quelle couleur est la peau d’un koloss ?",
+    "a": "Bleue",
+    "wrong": [
+      "Grise",
+      "Rouge",
+      "Verte"
+    ],
+    "explain": "La peau bleue d’un koloss ne grandit pas avec son corps : elle se tend et se déchire à mesure que la créature grossit."
+  },
+  {
+    "id": "scadrial-010",
+    "q": "Quel membre de la bande de Kelsier est un Apaiseur ?",
+    "a": "Brise",
+    "wrong": [
+      "Ham",
+      "Clampin",
+      "Dockson"
+    ],
+    "explain": "Brise brûle du laiton pour calmer et orienter les émotions de son entourage."
+  },
+  {
+    "id": "scadrial-011",
+    "q": "Quel métal permet à un allomancien de voir quelques secondes dans le futur ?",
+    "a": "L’atium",
+    "wrong": [
+      "L’or",
+      "L’électrum",
+      "Le bronze"
+    ],
+    "explain": "L’atium montre les ombres de ce que les gens s’apprêtent à faire, ce qui rend son utilisateur presque invincible au combat."
+  },
+  {
+    "id": "scadrial-012",
+    "q": "Comment appelle-t-on les objets de métal où les ferrochimistes stockent leurs attributs ?",
+    "a": "Des cerveaux métalliques",
+    "wrong": [
+      "Des pointes",
+      "Des perles d’atium",
+      "Des médaillons"
+    ],
+    "explain": "Sazed porte ses cerveaux métalliques en bracelets, bagues et boucles d’oreilles pour stocker souvenirs, poids et bien plus."
+  },
+  {
+    "id": "scadrial-013",
+    "q": "Qui libère Ravage au Puits de l’Ascension ?",
+    "a": "Vin",
+    "wrong": [
+      "Elend",
+      "Sazed",
+      "Zane"
+    ],
+    "explain": "Ravage a dupé Vin pour qu’elle relâche le pouvoir du Puits au lieu de s’en emparer, le libérant de sa prison."
+  },
+  {
+    "id": "scadrial-014",
+    "q": "Qui devient Harmonie à la fin du Héros des Siècles ?",
+    "a": "Sazed",
+    "wrong": [
+      "Vin",
+      "Elend",
+      "Spectre"
+    ],
+    "explain": "En réunissant Ravage et Sauvegarde, Sazed devient le détenteur d’Éclat appelé Harmonie."
+  },
+  {
+    "id": "scadrial-015",
+    "q": "Qui a donné à Vin la boucle d’oreille qu’elle porte toujours ?",
+    "a": "Sa mère",
+    "wrong": [
+      "Reen",
+      "Kelsier",
+      "Elend"
+    ],
+    "explain": "La boucle d’oreille était en fait une pointe hémalurgique qui permettait à Ravage de murmurer à Vin."
+  },
+  {
+    "id": "scadrial-016",
+    "q": "Quel était le véritable nom du Seigneur Maître ?",
+    "a": "Rashek",
+    "wrong": [
+      "Alendi",
+      "Kwaan",
+      "Gemmel"
+    ],
+    "explain": "Rashek était un porteur terrisien qui s’est approprié le pouvoir du Puits de l’Ascension."
+  },
+  {
+    "id": "scadrial-017",
+    "q": "Quel kandra a secrètement pris la place d’OreSeur auprès de Vin ?",
+    "a": "TenSoon",
+    "wrong": [
+      "MeLaan",
+      "KanPaar",
+      "VenDell"
+    ],
+    "explain": "Zane a ordonné à TenSoon de tuer OreSeur et de prendre sa place pour espionner Vin."
+  },
+  {
+    "id": "scadrial-018",
+    "q": "Pour imiter quelqu’un, un kandra digère un cadavre puis utilise quoi ?",
+    "a": "Ses os",
+    "wrong": [
+      "Son sang",
+      "Ses cheveux",
+      "Ses dents"
+    ],
+    "explain": "Le kandra reconstitue la chair autour du squelette et copie ainsi l’apparence de la personne."
+  },
+  {
+    "id": "scadrial-019",
+    "q": "Où le Puits de l’Ascension se trouvait-il finalement ?",
+    "a": "Sous Luthadel",
+    "wrong": [
+      "Dans les montagnes de Terris",
+      "Sous Fadrex",
+      "Dans les Fosses de Hathsin"
+    ],
+    "explain": "Tous le cherchaient dans les montagnes de Terris, mais il se trouvait dans une caverne sous la capitale."
+  },
+  {
+    "id": "scadrial-020",
+    "q": "Quel métal divin peut transformer une personne ordinaire en Fils-des-Brumes ?",
+    "a": "Le lérasium",
+    "wrong": [
+      "L’atium",
+      "L’harmonium",
+      "L’électrum"
+    ],
+    "explain": "Le lérasium est la forme métallique du pouvoir de Sauvegarde."
+  },
+  {
+    "id": "scadrial-021",
+    "q": "Comment s’appelait l’épouse de Kelsier, morte dans les Fosses de Hathsin ?",
+    "a": "Mare",
+    "wrong": [
+      "Shan",
+      "Tindwyl",
+      "Valette"
+    ],
+    "explain": "Mare, une Œil-d’étain, a été emprisonnée dans les Fosses avec Kelsier et y est morte."
+  },
+  {
+    "id": "scadrial-022",
+    "q": "Comment appelle-t-on un Brumant qui ne peut brûler que du fer ?",
+    "a": "Un Aimant",
+    "wrong": [
+      "Un Lance-pièces",
+      "Un Traqueur",
+      "Un Œil-d’étain"
+    ],
+    "explain": "Un Aimant tire sur les métaux : il les attire à lui, ou s’attire vers eux."
+  },
+  {
+    "id": "scadrial-023",
+    "q": "Si un allomancien brûle du duralumin avec un autre métal, qu’arrive-t-il à ce métal ?",
+    "a": "Il brûle d’un seul coup",
+    "wrong": [
+      "Il dure deux fois plus longtemps",
+      "Il devient invisible aux Traqueurs",
+      "Il soigne l’utilisateur"
+    ],
+    "explain": "Vin utilise des salves de duralumin pour obtenir des pics de puissance énormes mais brefs."
+  },
+  {
+    "id": "scadrial-024",
+    "q": "Que révèle le malatium, le Onzième Métal, quand on le brûle ?",
+    "a": "Le passé d’une personne",
+    "wrong": [
+      "L’avenir d’une personne",
+      "Les émotions d’une personne",
+      "Les métaux cachés"
+    ],
+    "explain": "Vin l’a brûlé face au Seigneur Maître et a entrevu l’homme qu’il avait été."
+  },
+  {
+    "id": "scadrial-025",
+    "q": "Comment s’appelle le palais du Seigneur Maître à Luthadel ?",
+    "a": "Kredik Shaw",
+    "wrong": [
+      "La forteresse Venture",
+      "La forteresse Hasting",
+      "Le Conventicule de Seran"
+    ],
+    "explain": "Son nom signifie « la Colline aux Mille Flèches »."
+  },
+  {
+    "id": "scadrial-026",
+    "q": "Quelle Terrisienne apprend à Elend à se comporter en roi ?",
+    "a": "Tindwyl",
+    "wrong": [
+      "Allrianne",
+      "Shan Elariel",
+      "Kliss"
+    ],
+    "explain": "Tindwyl est une Gardienne fascinée par les grands dirigeants de l’histoire."
+  },
+  {
+    "id": "scadrial-027",
+    "q": "Quel seigneur de guerre, le propre père d’Elend, assiège Luthadel ?",
+    "a": "Straff Venture",
+    "wrong": [
+      "Ashweather Cett",
+      "Jastes Lekal",
+      "Ferson Penrod"
+    ],
+    "explain": "Straff était l’un des seigneurs de guerre qui encerclaient Luthadel en même temps."
+  },
+  {
+    "id": "scadrial-028",
+    "q": "Quel homme, que l’on croyait être le Héros des Siècles, s’est fait voler sa place par le Seigneur Maître ?",
+    "a": "Alendi",
+    "wrong": [
+      "Kwaan",
+      "Rashek",
+      "Gemmel"
+    ],
+    "explain": "Rashek a tué Alendi en route vers le Puits et s’est emparé du pouvoir."
+  },
+  {
+    "id": "scadrial-029",
+    "q": "Quel est l’effet de l’aluminium sur l’allomancien qui le brûle ?",
+    "a": "Il vide ses réserves de métal",
+    "wrong": [
+      "Il lui fait sentir la ferrochimie",
+      "Il double ses poussées",
+      "Il lui montre son passé"
+    ],
+    "explain": "Les Inquisiteurs utilisaient l’aluminium pour priver de leurs pouvoirs les allomanciens capturés."
+  },
+  {
+    "id": "scadrial-030",
+    "q": "À partir de quelles créatures les kandras ont-ils été créés ?",
+    "a": "Des spectres des brumes",
+    "wrong": [
+      "Des koloss",
+      "Des humains",
+      "Des seons"
+    ],
+    "explain": "Le Seigneur Maître a planté des pointes hémalurgiques dans des spectres des brumes, leur donnant la conscience."
+  },
+  {
+    "id": "scadrial-031",
+    "q": "Dans quelle ville se déroule l’essentiel de L’Alliage de la justice ?",
+    "a": "Elendel",
+    "wrong": [
+      "Luthadel",
+      "Fadrex",
+      "Nouvelle-Seran"
+    ],
+    "explain": "Elendel, nommée d’après Elend Venture, est la capitale du Bassin d’Elendel."
+  },
+  {
+    "id": "scadrial-032",
+    "q": "Pour quel talent Wayne est-il célèbre ?",
+    "a": "Les accents et les déguisements",
+    "wrong": [
+      "Le lancer de couteaux",
+      "Le crochetage de serrures",
+      "Le tir au pistolet"
+    ],
+    "explain": "Wayne collectionne chapeaux et objets pour se glisser dans la peau d’un nouveau personnage."
+  },
+  {
+    "id": "scadrial-033",
+    "q": "Avec qui Wax se fiance-t-il dans L’Alliage de la justice ?",
+    "a": "Steris",
+    "wrong": [
+      "Marasi",
+      "Ranette",
+      "MeLaan"
+    ],
+    "explain": "Steris aborde les fiançailles comme une transaction, contrat détaillé à l’appui."
+  },
+  {
+    "id": "scadrial-034",
+    "q": "Quelle religion de la deuxième ère vénère Kelsier ?",
+    "a": "Le survivantisme",
+    "wrong": [
+      "Le pathianisme",
+      "Le Ministère d’Acier",
+      "Le trellisme"
+    ],
+    "explain": "Les survivantistes vénèrent Kelsier comme le Survivant qui a renversé le Seigneur Maître."
+  },
+  {
+    "id": "scadrial-035",
+    "q": "De qui les Bracelets des Larmes seraient-ils les cerveaux métalliques ?",
+    "a": "Du Seigneur Maître",
+    "wrong": [
+      "De Kelsier",
+      "De Sazed",
+      "De Vin"
+    ],
+    "explain": "Selon la légende, ils conféreraient tous les pouvoirs du Seigneur Maître à qui les porterait."
+  },
+  {
+    "id": "scadrial-036",
+    "q": "Fils-des-Brumes : l’histoire secrète raconte la vie après la mort de quel personnage ?",
+    "a": "Kelsier",
+    "wrong": [
+      "Vin",
+      "Elend",
+      "Marsh"
+    ],
+    "explain": "Kelsier s’est accroché au Royaume cognitif et a continué d’agir en coulisses pendant la première ère."
+  },
+  {
+    "id": "scadrial-037",
+    "q": "Qui se cache derrière Monsieur Costume ?",
+    "a": "Edwarn Ladrian",
+    "wrong": [
+      "Miles Hundredlives",
+      "Telsin Ladrian",
+      "Lord Harms"
+    ],
+    "explain": "Monsieur Costume, l’homme derrière Miles et les Évanouisseurs, n’est autre que l’oncle de Wax."
+  },
+  {
+    "id": "scadrial-038",
+    "q": "Qui se révèle être le tueur surnommé le Saigneur ?",
+    "a": "Lessie",
+    "wrong": [
+      "Steris",
+      "MeLaan",
+      "Telsin"
+    ],
+    "explain": "Lessie, la bien-aimée de Wax, était depuis toujours la kandra Paalm."
+  },
+  {
+    "id": "scadrial-039",
+    "q": "Que portent les fidèles de la Voie pendant leurs prières ?",
+    "a": "Une boucle d’oreille",
+    "wrong": [
+      "Un bracelet",
+      "Un chapeau",
+      "Un voile"
+    ],
+    "explain": "Wax, qui est pathien, touche souvent sa boucle d’oreille quand il prie ou réfléchit."
+  },
+  {
+    "id": "scadrial-040",
+    "q": "Quelle armurière, vieille amie de Wax et Wayne, leur fabrique des armes ?",
+    "a": "Ranette",
+    "wrong": [
+      "Steris",
+      "Marasi",
+      "MeLaan"
+    ],
+    "explain": "Ranette a juré de tirer sur Wayne à vue, et l’a d’ailleurs fait plus d’une fois."
+  },
+  {
+    "id": "scadrial-041",
+    "q": "Quel métal Wax utilise-t-il en tant que ferrochimiste pour changer de poids ?",
+    "a": "Le fer",
+    "wrong": [
+      "L’acier",
+      "Le potin",
+      "L’étain"
+    ],
+    "explain": "Wax est un Double-Fils, Lance-pièces et Écrémeur à la fois, et combine ces deux pouvoirs pour voler."
+  },
+  {
+    "id": "scadrial-042",
+    "q": "Dans la deuxième ère, quel personnage de la première ère est vénéré comme la Guerrière Ascendante ?",
+    "a": "Vin",
+    "wrong": [
+      "Tindwyl",
+      "Allrianne",
+      "Mare"
+    ],
+    "explain": "Pendant la deuxième ère, Elend est le Dernier Empereur et Spectre le Seigneur Fils-des-Brumes."
+  },
+  {
+    "id": "scadrial-043",
+    "q": "Quel personnage majeur meurt dans Le Métal perdu ?",
+    "a": "Wayne",
+    "wrong": [
+      "Wax",
+      "Marasi",
+      "Steris"
+    ],
+    "explain": "Wayne donne sa vie pour arrêter la bombe du Cercle, une perte terrible pour Wax et Marasi."
+  },
+  {
+    "id": "scadrial-044",
+    "q": "Sous quel nom les habitants d’Elendel connaissent-ils les kandras ?",
+    "a": "Les Immortels sans visage",
+    "wrong": [
+      "Les Traqueurs",
+      "Les survivantistes",
+      "Les Ascendants"
+    ],
+    "explain": "La plupart des habitants d’Elendel voient les kandras comme des serviteurs à demi légendaires d’Harmonie."
+  },
+  {
+    "id": "scadrial-045",
+    "q": "Quel dieu le Cercle sert-il ?",
+    "a": "Trell",
+    "wrong": [
+      "Ravage",
+      "Abjection",
+      "Sauvegarde"
+    ],
+    "explain": "Trell est en réalité un avatar d’Autonomie, un Éclat venu d’au-delà de Scadrial."
+  },
+  {
+    "id": "scadrial-046",
+    "q": "De quelle nation du Sud vient le pilote Allik ?",
+    "a": "Des Malwish",
+    "wrong": [
+      "Des Terrisiens",
+      "Des Khlenni",
+      "Des Sang-koloss"
+    ],
+    "explain": "Comme les autres Malwish, Allik porte un masque et utilise des médaillons pour accéder aux Arts métalliques."
+  },
+  {
+    "id": "scadrial-047",
+    "q": "Dans Le Onzième Métal, qui forme Kelsier à l’allomancie ?",
+    "a": "Gemmel",
+    "wrong": [
+      "Dockson",
+      "Sazed",
+      "Marsh"
+    ],
+    "explain": "Gemmel est un Fils-des-Brumes excentrique, apparemment fou."
+  },
+  {
+    "id": "scadrial-048",
+    "q": "Quel intendant terrisien édite les récits de Jak l’Allomancien ?",
+    "a": "Handerwym",
+    "wrong": [
+      "Sazed",
+      "Tindwyl",
+      "Rashek"
+    ],
+    "explain": "Les notes de bas de page de Handerwym mettent poliment en doute les affirmations les plus folles de Jak."
+  },
+  {
+    "id": "scadrial-049",
+    "q": "Qu’utilisent les Scadriens du Sud pour permettre à n’importe qui d’accéder à la ferrochimie ?",
+    "a": "Des médaillons",
+    "wrong": [
+      "Des boucles d’oreilles",
+      "Des pointes",
+      "Des fioles"
+    ],
+    "explain": "Les médaillons sont des cerveaux métalliques sans clé, utilisables par des gens dépourvus de pouvoirs."
+  },
+  {
+    "id": "scadrial-050",
+    "q": "Quel personnage de la première ère est connu pendant la deuxième sous le nom de Yeux-de-Fer ?",
+    "a": "Marsh",
+    "wrong": [
+      "Spectre",
+      "TenSoon",
+      "Elend"
+    ],
+    "explain": "Des siècles plus tard, Marsh sert toujours Harmonie et inspire une crainte légendaire."
+  }
+]

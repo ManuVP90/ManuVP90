@@ -1,0 +1,552 @@
+[
+  {
+    "id": "scadrial-001",
+    "q": "¿Qué personaje es conocido como el Superviviente de Hathsin?",
+    "a": "Kelsier",
+    "wrong": [
+      "Dockson",
+      "Marsh",
+      "Brisa"
+    ],
+    "explain": "Kelsier se ganó el título al escapar de los Pozos de Hathsin, donde los prisioneros del lord Legislador extraían atium."
+  },
+  {
+    "id": "scadrial-002",
+    "q": "¿Qué metal permite a un alomántico empujar los metales cercanos?",
+    "a": "El acero",
+    "wrong": [
+      "El hierro",
+      "El estaño",
+      "El latón"
+    ],
+    "explain": "Los lanzamonedas empujan con acero para disparar monedas o lanzarse por los aires."
+  },
+  {
+    "id": "scadrial-003",
+    "q": "¿Qué potencia el peltre en un alomántico que lo quema?",
+    "a": "La fuerza física y la resistencia",
+    "wrong": [
+      "Los sentidos",
+      "Las emociones ajenas",
+      "La velocidad de pensamiento"
+    ],
+    "explain": "Los violentos, o brazos de peltre, queman peltre para luchar y aguantar heridas que tumbarían a cualquiera."
+  },
+  {
+    "id": "scadrial-004",
+    "q": "¿Cómo se llama el hermano mayor de Vin, que la crio en la calle?",
+    "a": "Reen",
+    "wrong": [
+      "Camon",
+      "Ulef",
+      "Elend"
+    ],
+    "explain": "Reen enseñó a Vin a no confiar en nadie, una lección que a ella le cuesta olvidar."
+  },
+  {
+    "id": "scadrial-005",
+    "q": "¿Cuál es la capital del Imperio Final?",
+    "a": "Luthadel",
+    "wrong": [
+      "Fadrex",
+      "Fellise",
+      "Tathingdwen"
+    ],
+    "explain": "En Luthadel se alzan las Grandes Casas y el palacio del lord Legislador."
+  },
+  {
+    "id": "scadrial-006",
+    "q": "¿Cómo se llaman los servidores del lord Legislador con clavos de metal atravesándoles los ojos?",
+    "a": "Inquisidores de Acero",
+    "wrong": [
+      "Obligadores",
+      "Kandra",
+      "Guardadores"
+    ],
+    "explain": "Los Inquisidores obtienen sus poderes mediante la hemalurgia, con clavos hincados en el cuerpo."
+  },
+  {
+    "id": "scadrial-007",
+    "q": "¿A qué casa noble pertenece Elend?",
+    "a": "A la Casa Venture",
+    "wrong": [
+      "A la Casa Renoux",
+      "A la Casa Lekal",
+      "A la Casa Hasting"
+    ],
+    "explain": "La Casa Venture era una de las Grandes Casas más poderosas de Luthadel."
+  },
+  {
+    "id": "scadrial-008",
+    "q": "Sazed es un Guardador. ¿De qué pueblo?",
+    "a": "Terris",
+    "wrong": [
+      "Skaa",
+      "Khlenni",
+      "Malwish"
+    ],
+    "explain": "Los Guardadores de Terris son feruquimistas que almacenan recuerdos de religiones y saberes perdidos."
+  },
+  {
+    "id": "scadrial-009",
+    "q": "¿De qué color es la piel de un koloss?",
+    "a": "Azul",
+    "wrong": [
+      "Gris",
+      "Roja",
+      "Verde"
+    ],
+    "explain": "La piel azul de un koloss no crece con su cuerpo, así que se estira y se desgarra a medida que la criatura crece."
+  },
+  {
+    "id": "scadrial-010",
+    "q": "¿Qué miembro de la banda de Kelsier es un aplacador?",
+    "a": "Brisa",
+    "wrong": [
+      "Ham",
+      "Clubs",
+      "Dockson"
+    ],
+    "explain": "Brisa quema latón para calmar y empujar con sutileza las emociones de quienes le rodean."
+  },
+  {
+    "id": "scadrial-011",
+    "q": "¿Qué metal permite a un alomántico ver unos segundos del futuro?",
+    "a": "El atium",
+    "wrong": [
+      "El oro",
+      "El electro",
+      "El bronce"
+    ],
+    "explain": "El atium muestra sombras de lo que la gente está a punto de hacer, lo que vuelve casi invencible a quien lo quema."
+  },
+  {
+    "id": "scadrial-012",
+    "q": "¿Cómo se llaman los objetos de metal en los que los feruquimistas almacenan atributos?",
+    "a": "Mentes de metal",
+    "wrong": [
+      "Clavos",
+      "Cuentas de atium",
+      "Medallones"
+    ],
+    "explain": "Sazed lleva mentes de metal en forma de brazaletes, anillos y pendientes para guardar recuerdos, peso y más."
+  },
+  {
+    "id": "scadrial-013",
+    "q": "¿Quién libera a Ruina en el Pozo de la Ascensión?",
+    "a": "Vin",
+    "wrong": [
+      "Elend",
+      "Sazed",
+      "Zane"
+    ],
+    "explain": "Ruina engañó a Vin para que liberara el poder del Pozo en lugar de tomarlo, lo que lo sacó de su prisión."
+  },
+  {
+    "id": "scadrial-014",
+    "q": "¿Quién se convierte en Armonía al final de El Héroe de las Eras?",
+    "a": "Sazed",
+    "wrong": [
+      "Vin",
+      "Elend",
+      "Fantasma"
+    ],
+    "explain": "Al asumir a la vez Ruina y Conservación, Sazed se convierte en el portador de la Esquirla llamada Armonía."
+  },
+  {
+    "id": "scadrial-015",
+    "q": "¿Quién le dio a Vin el pendiente que siempre lleva?",
+    "a": "Su madre",
+    "wrong": [
+      "Reen",
+      "Kelsier",
+      "Elend"
+    ],
+    "explain": "El pendiente era en realidad un clavo hemalúrgico que permitía a Ruina susurrarle a Vin."
+  },
+  {
+    "id": "scadrial-016",
+    "q": "¿Cuál era el verdadero nombre del lord Legislador?",
+    "a": "Rashek",
+    "wrong": [
+      "Alendi",
+      "Kwaan",
+      "Gemmel"
+    ],
+    "explain": "Rashek era un porteador terrisano que tomó para sí el poder del Pozo de la Ascensión."
+  },
+  {
+    "id": "scadrial-017",
+    "q": "¿Qué kandra ocupó en secreto el lugar de OreSeur junto a Vin?",
+    "a": "TenSoon",
+    "wrong": [
+      "MeLaan",
+      "KanPaar",
+      "VenDell"
+    ],
+    "explain": "Zane ordenó a TenSoon matar a OreSeur y suplantarlo para espiar a Vin."
+  },
+  {
+    "id": "scadrial-018",
+    "q": "Los kandra imitan a las personas digiriendo un cadáver y usando después... ¿qué?",
+    "a": "Sus huesos",
+    "wrong": [
+      "Su sangre",
+      "Su pelo",
+      "Sus dientes"
+    ],
+    "explain": "El kandra reconstruye la carne alrededor del esqueleto y copia el aspecto de la persona."
+  },
+  {
+    "id": "scadrial-019",
+    "q": "¿Dónde se encontró por fin el Pozo de la Ascensión?",
+    "a": "Bajo Luthadel",
+    "wrong": [
+      "En las Montañas de Terris",
+      "Bajo Fadrex",
+      "En los Pozos de Hathsin"
+    ],
+    "explain": "Todos lo buscaban en las Montañas de Terris, pero estaba en una caverna bajo la capital."
+  },
+  {
+    "id": "scadrial-020",
+    "q": "¿Qué metal divino puede convertir a una persona corriente en nacida de la bruma?",
+    "a": "El lerasio",
+    "wrong": [
+      "El atium",
+      "El armonio",
+      "El electro"
+    ],
+    "explain": "El lerasio es la forma metálica del poder de Conservación."
+  },
+  {
+    "id": "scadrial-021",
+    "q": "¿Cómo se llamaba la esposa de Kelsier, que murió en los Pozos de Hathsin?",
+    "a": "Mare",
+    "wrong": [
+      "Shan",
+      "Tindwyl",
+      "Valette"
+    ],
+    "explain": "Mare, una ojo de estaño, fue encerrada en los Pozos junto a Kelsier y murió allí."
+  },
+  {
+    "id": "scadrial-022",
+    "q": "¿Cómo se llama el brumoso que solo puede quemar hierro?",
+    "a": "Atraedor",
+    "wrong": [
+      "Lanzamonedas",
+      "Buscador",
+      "Ojo de estaño"
+    ],
+    "explain": "Un atraedor tira de los metales, atrayéndolos hacia sí o atrayéndose él hacia ellos."
+  },
+  {
+    "id": "scadrial-023",
+    "q": "Si un alomántico quema duraluminio junto con otro metal, ¿qué le ocurre a ese metal?",
+    "a": "Se quema de golpe",
+    "wrong": [
+      "Dura el doble",
+      "Se oculta a los buscadores",
+      "Cura al usuario"
+    ],
+    "explain": "Vin usa estallidos de duraluminio para obtener enormes descargas de poder muy breves."
+  },
+  {
+    "id": "scadrial-024",
+    "q": "¿Qué revela quemar malatio, el Undécimo Metal?",
+    "a": "El pasado de una persona",
+    "wrong": [
+      "El futuro de una persona",
+      "Las emociones de una persona",
+      "Metales ocultos"
+    ],
+    "explain": "Vin lo quemó sobre el lord Legislador y vislumbró al hombre que había sido."
+  },
+  {
+    "id": "scadrial-025",
+    "q": "¿Cómo se llama el palacio del lord Legislador en Luthadel?",
+    "a": "Kredik Shaw",
+    "wrong": [
+      "La Fortaleza Venture",
+      "La Fortaleza Hasting",
+      "El Conventículo de Seran"
+    ],
+    "explain": "Su nombre significa «la Colina de las Mil Agujas»."
+  },
+  {
+    "id": "scadrial-026",
+    "q": "¿Qué mujer terrisana enseña a Elend a comportarse como un rey?",
+    "a": "Tindwyl",
+    "wrong": [
+      "Allrianne",
+      "Shan Elariel",
+      "Kliss"
+    ],
+    "explain": "Tindwyl es una Guardadora fascinada por los líderes de la historia."
+  },
+  {
+    "id": "scadrial-027",
+    "q": "¿Qué señor de la guerra, el propio padre de Elend, asedia Luthadel?",
+    "a": "Straff Venture",
+    "wrong": [
+      "Ashweather Cett",
+      "Jastes Lekal",
+      "Ferson Penrod"
+    ],
+    "explain": "Straff fue uno de los varios señores de la guerra que rodearon Luthadel a la vez."
+  },
+  {
+    "id": "scadrial-028",
+    "q": "¿Quién era el hombre al que se creía el Héroe de las Eras, cuyo lugar usurpó el lord Legislador?",
+    "a": "Alendi",
+    "wrong": [
+      "Kwaan",
+      "Rashek",
+      "Gemmel"
+    ],
+    "explain": "Rashek mató a Alendi durante el viaje al Pozo y tomó el poder para sí."
+  },
+  {
+    "id": "scadrial-029",
+    "q": "¿Qué le ocurre a un alomántico que quema aluminio?",
+    "a": "Vacía sus reservas de metal",
+    "wrong": [
+      "Percibe la feruquimia",
+      "Duplica sus empujones",
+      "Ve su propio pasado"
+    ],
+    "explain": "Los Inquisidores usaban aluminio para despojar de sus poderes a los alománticos capturados."
+  },
+  {
+    "id": "scadrial-030",
+    "q": "¿A partir de qué criaturas se crearon originalmente los kandra?",
+    "a": "Espectros de la bruma",
+    "wrong": [
+      "Koloss",
+      "Humanos",
+      "Seones"
+    ],
+    "explain": "El lord Legislador clavó clavos hemalúrgicos a los espectros de la bruma y así les dio consciencia."
+  },
+  {
+    "id": "scadrial-031",
+    "q": "¿En qué ciudad transcurre la mayor parte de Aleación de ley?",
+    "a": "Elendel",
+    "wrong": [
+      "Luthadel",
+      "Fadrex",
+      "Nueva Seran"
+    ],
+    "explain": "Elendel es la capital de la Cuenca de Elendel, llamada así por Elend Venture."
+  },
+  {
+    "id": "scadrial-032",
+    "q": "¿Por qué habilidad es famoso Wayne?",
+    "a": "Los acentos y disfraces",
+    "wrong": [
+      "El lanzamiento de cuchillos",
+      "Abrir cerraduras",
+      "Las pistolas"
+    ],
+    "explain": "Wayne colecciona sombreros y otros objetos que le ayudan a meterse en un nuevo personaje."
+  },
+  {
+    "id": "scadrial-033",
+    "q": "¿Con qué mujer se compromete Wax en Aleación de ley?",
+    "a": "Steris",
+    "wrong": [
+      "Marasi",
+      "Ranette",
+      "MeLaan"
+    ],
+    "explain": "Steris aborda el compromiso como un negocio, con un contrato detallado incluido."
+  },
+  {
+    "id": "scadrial-034",
+    "q": "¿Qué religión de la segunda era venera a Kelsier?",
+    "a": "El supervivencialismo",
+    "wrong": [
+      "La Senda",
+      "El Ministerio del Acero",
+      "El trellismo"
+    ],
+    "explain": "Los supervivencialistas veneran a Kelsier como el Superviviente que derrocó al lord Legislador."
+  },
+  {
+    "id": "scadrial-035",
+    "q": "Se dice que los Brazales de Duelo eran las mentes de metal de... ¿quién?",
+    "a": "El lord Legislador",
+    "wrong": [
+      "Kelsier",
+      "Sazed",
+      "Vin"
+    ],
+    "explain": "Según las leyendas, otorgaban todos los poderes del lord Legislador a quien los llevara."
+  },
+  {
+    "id": "scadrial-036",
+    "q": "¿Qué personaje protagoniza Historia secreta, que narra lo que hizo tras su muerte?",
+    "a": "Kelsier",
+    "wrong": [
+      "Vin",
+      "Elend",
+      "Marsh"
+    ],
+    "explain": "Kelsier se aferró al Reino Cognitivo y siguió actuando entre bastidores durante la primera era."
+  },
+  {
+    "id": "scadrial-037",
+    "q": "¿Quién es el hombre conocido como el Señor Traje?",
+    "a": "Edwarn Ladrian",
+    "wrong": [
+      "Miles Cienvidas",
+      "Telsin Ladrian",
+      "Lord Harms"
+    ],
+    "explain": "El Señor Traje, el hombre detrás de Miles y los Desvanecedores, es el tío de Wax."
+  },
+  {
+    "id": "scadrial-038",
+    "q": "¿Quién resulta ser el asesino conocido como el Sangrador?",
+    "a": "Lessie",
+    "wrong": [
+      "Steris",
+      "MeLaan",
+      "Telsin"
+    ],
+    "explain": "La amada Lessie de Wax había sido la kandra Paalm desde el principio."
+  },
+  {
+    "id": "scadrial-039",
+    "q": "¿Qué llevan los seguidores de la Senda mientras rezan?",
+    "a": "Un pendiente",
+    "wrong": [
+      "Una pulsera",
+      "Un sombrero",
+      "Un velo"
+    ],
+    "explain": "Wax, seguidor de la Senda, se toca a menudo el pendiente cuando reza o reflexiona."
+  },
+  {
+    "id": "scadrial-040",
+    "q": "¿Qué armera, vieja amiga de Wax y Wayne, les fabrica sus armas?",
+    "a": "Ranette",
+    "wrong": [
+      "Steris",
+      "Marasi",
+      "MeLaan"
+    ],
+    "explain": "Ranette ha amenazado con disparar a Wayne en cuanto lo vea, y de hecho le ha disparado más de una vez."
+  },
+  {
+    "id": "scadrial-041",
+    "q": "¿Qué metal usa Wax como feruquimista para cambiar su peso?",
+    "a": "El hierro",
+    "wrong": [
+      "El acero",
+      "El peltre",
+      "El estaño"
+    ],
+    "explain": "Wax es un nacidoble: lanzamonedas y ajustador, y combina ambos poderes para volar."
+  },
+  {
+    "id": "scadrial-042",
+    "q": "En la segunda era, ¿qué personaje de la primera era es venerado como la Guerrera Ascendente?",
+    "a": "Vin",
+    "wrong": [
+      "Tindwyl",
+      "Allrianne",
+      "Mare"
+    ],
+    "explain": "En la segunda era, Elend es el Último Emperador y Fantasma, el lord Nacido de la Bruma."
+  },
+  {
+    "id": "scadrial-043",
+    "q": "¿Qué personaje principal muere en El metal perdido?",
+    "a": "Wayne",
+    "wrong": [
+      "Wax",
+      "Marasi",
+      "Steris"
+    ],
+    "explain": "Wayne da la vida para detener la bomba del Grupo, una pérdida terrible para Wax y Marasi."
+  },
+  {
+    "id": "scadrial-044",
+    "q": "¿Con qué nombre conoce la gente de Elendel a los kandra?",
+    "a": "Los Inmortales sin Rostro",
+    "wrong": [
+      "Los Buscadores",
+      "Los Supervivencialistas",
+      "Los Ascendentes"
+    ],
+    "explain": "Para la mayoría de los habitantes de Elendel, los kandra son servidores casi míticos de Armonía."
+  },
+  {
+    "id": "scadrial-045",
+    "q": "¿A qué dios sirve el Grupo?",
+    "a": "A Trell",
+    "wrong": [
+      "A Ruina",
+      "A Odium",
+      "A Conservación"
+    ],
+    "explain": "Trell es en realidad una máscara de Autonomía, una Esquirla ajena a Scadrial."
+  },
+  {
+    "id": "scadrial-046",
+    "q": "¿A qué pueblo del sur pertenece el piloto Allik?",
+    "a": "A los malwish",
+    "wrong": [
+      "A los terrisanos",
+      "A los khlenni",
+      "A los de sangre koloss"
+    ],
+    "explain": "Como otros malwish, Allik lleva máscara y usa medallones para acceder a las Artes Metálicas."
+  },
+  {
+    "id": "scadrial-047",
+    "q": "En El undécimo metal, ¿quién entrena a Kelsier en la alomancia?",
+    "a": "Gemmel",
+    "wrong": [
+      "Dockson",
+      "Sazed",
+      "Marsh"
+    ],
+    "explain": "Gemmel es un nacido de la bruma excéntrico y, en apariencia, loco."
+  },
+  {
+    "id": "scadrial-048",
+    "q": "¿Quién es el mayordomo terrisano que edita los relatos del Alomante Jak?",
+    "a": "Handerwym",
+    "wrong": [
+      "Sazed",
+      "Tindwyl",
+      "Rashek"
+    ],
+    "explain": "Las notas al pie de Handerwym ponen en duda con educación las afirmaciones más disparatadas de Jak."
+  },
+  {
+    "id": "scadrial-049",
+    "q": "¿Qué usan los scadrianos del sur para que cualquiera pueda acceder a la feruquimia?",
+    "a": "Medallones",
+    "wrong": [
+      "Pendientes",
+      "Clavos",
+      "Viales"
+    ],
+    "explain": "Los medallones son mentes de metal sin llave que puede usar gente sin poderes propios."
+  },
+  {
+    "id": "scadrial-050",
+    "q": "¿Qué personaje de la primera era es conocido en la segunda como Ojos de Hierro?",
+    "a": "Marsh",
+    "wrong": [
+      "Fantasma",
+      "TenSoon",
+      "Elend"
+    ],
+    "explain": "Siglos después, Marsh sigue sirviendo a Armonía y se le teme como a una figura de leyenda."
+  }
+]

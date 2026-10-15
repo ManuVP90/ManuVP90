@@ -926,22 +926,25 @@
     "category": "scadrial",
     "difficulty": 2,
     "work": "alloy-of-law",
-    "q": "By what title is Vin revered in era 2?",
-    "a": "The Ascendant Warrior",
+    "q": "In era 2, which era 1 character is revered as the Ascendant Warrior?",
+    "a": "Vin",
     "wrong": [
-      "The Last Emperor",
-      "The Lord Mistborn",
-      "The Survivor"
+      "Tindwyl",
+      "Allrianne",
+      "Mare"
     ],
     "explain": "In era 2 Elend is the Last Emperor and Spook is the Lord Mistborn.",
     "terms": [
-      "Vin",
+      "Allrianne",
       "Ascendant Warrior",
+      "Elend",
       "Last Emperor",
       "Lord Mistborn",
+      "Mare",
+      "Spook",
       "Survivor",
-      "Elend",
-      "Spook"
+      "Tindwyl",
+      "Vin"
     ],
     "source": "The Alloy of Law"
   },

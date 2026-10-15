@@ -1,0 +1,2701 @@
+{
+ "Oathgate": {
+  "es": "Puerta Jurada",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/179653 (page «Puerta Jurada»)",
+   "https://es.wikipedia.org/wiki/Palabras_radiantes (\"descubre y activa la Puerta Jurada\")"
+  ],
+  "notes": "Glossary had \"Juramentoportal\" (unverified). CHANGED from \"Juramentoportal\" (no hits for that word anywhere). Plural \"Puertas Juradas\". Feminine."
+ },
+ "Oathpact": {
+  "es": "Juramento",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/207515 (page «Juramento» = Oathpact)"
+  ],
+  "notes": "Glossary had \"Pacto del Juramento\" (unverified). CHANGED from \"Pacto del Juramento\". Used as \"el Juramento\"."
+ },
+ "Lifelight": {
+  "es": "luz de vida",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/179142 (page «Luces»: luz tormentosa, luz del vacío, luz de vida, luz de guerra, luz de torre)"
+  ],
+  "notes": "Glossary had \"luz vital\" (unverified). CHANGED from \"luz vital\". Lowercase."
+ },
+ "Towerlight": {
+  "es": "luz de torre",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/179142 (page «Luces»: luz tormentosa, luz del vacío, luz de vida, luz de guerra, luz de torre)"
+  ],
+  "notes": "Glossary had \"luz de la torre\" (unverified). CHANGED from \"luz de la torre\". Lowercase."
+ },
+ "Voidlight": {
+  "es": "luz del vacío",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/179142 (page «Luces»: luz tormentosa, luz del vacío, luz de vida, luz de guerra, luz de torre)"
+  ],
+  "notes": "Lowercase."
+ },
+ "Warlight": {
+  "es": "luz de guerra",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/179142 (page «Luces»: luz tormentosa, luz del vacío, luz de vida, luz de guerra, luz de torre)"
+  ],
+  "notes": "Lowercase."
+ },
+ "Sleepless": {
+  "es": "Insomnes",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/135180 (page «Insomne»)"
+  ],
+  "notes": "Singular \"Insomne\"."
+ },
+ "Sons of Honor": {
+  "es": "Hijos de Honor",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/185602 (page «Hijos de Honor»)"
+  ],
+  "notes": ""
+ },
+ "Sibling": {
+  "es": "Hermano",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/133635 (page «El Hermano»)"
+  ],
+  "notes": "Used as \"el Hermano\"."
+ },
+ "Soulcasting": {
+  "es": "moldear almas",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/134104 (page «Moldear almas»)"
+  ],
+  "notes": "Glossary had \"moldeado de almas\" (unverified). CHANGED from \"moldeado de almas\": the Spanish edition uses the infinitive \"moldear almas\"."
+ },
+ "Soulcaster": {
+  "es": "moldeador de almas",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/134104 (page «Moldear almas»)"
+  ],
+  "notes": ""
+ },
+ "gemheart": {
+  "es": "corazón gema",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/93621 (Llanuras Quebradas: abismoides, corazones gema)"
+  ],
+  "notes": "Plural \"corazones gema\"."
+ },
+ "chasmfiend": {
+  "es": "abismoide",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/93621 (Llanuras Quebradas: abismoides, corazones gema)"
+  ],
+  "notes": ""
+ },
+ "Bridge Four": {
+  "es": "Puente Cuatro",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/83618 (page «Puente Cuatro»)"
+  ],
+  "notes": ""
+ },
+ "Bridge Two": {
+  "es": "Puente Dos",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/83618 (page «Puente Cuatro»)"
+  ],
+  "notes": "By analogy with Puente Cuatro."
+ },
+ "Bridge Seventeen": {
+  "es": "Puente Diecisiete",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/83618 (page «Puente Cuatro»)"
+  ],
+  "notes": "By analogy with Puente Cuatro."
+ },
+ "Bridge Eighteen": {
+  "es": "Puente Dieciocho",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/83618 (page «Puente Cuatro»)"
+  ],
+  "notes": "By analogy with Puente Cuatro."
+ },
+ "Raboniel": {
+  "es": "Rabeniel",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/159481 (page «Rabeniel»)"
+  ],
+  "notes": "Glossary had \"Raboniel\" (unchanged). CHANGED (glossary: unchanged \"Raboniel\"): es.coppermind titles the page «Rabeniel», presumably following the Spanish edition of El ritmo de la guerra. Worth a check against the book."
+ },
+ "Pits of Hathsin": {
+  "es": "Pozos de Hathsin",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/179790 (page «Pozos de Hathsin»)",
+   "https://www.penguinrandomhouse.com/books/853210/mistborn-historia-secreta--mistborn-secret-history-by-brandon-sanderson/ (Nova blurb: \"Pozos de Hathsin\")"
+  ],
+  "notes": "Glossary had \"Fosos de Hathsin\" (unverified). CHANGED from \"Fosos de Hathsin\"."
+ },
+ "Survivor of Hathsin": {
+  "es": "Superviviente de Hathsin",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/179790 (page «Pozos de Hathsin»)"
+  ],
+  "notes": ""
+ },
+ "Steel Ministry": {
+  "es": "Ministerio del Acero",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/97675 (page «Ministerio del Acero»)"
+  ],
+  "notes": ""
+ },
+ "Set": {
+  "es": "el Grupo",
+  "status": "official",
+  "sources": [
+   "https://www.lecturalia.com/libro/109168/el-metal-perdido (Nova synopsis: \"la sombría organización llamada el Grupo\"; \"Armonía\")"
+  ],
+  "notes": ""
+ },
+ "the Set": {
+  "es": "el Grupo",
+  "status": "official",
+  "sources": [
+   "https://www.lecturalia.com/libro/109168/el-metal-perdido (Nova synopsis: \"la sombría organización llamada el Grupo\"; \"Armonía\")"
+  ],
+  "notes": ""
+ },
+ "Harmony": {
+  "es": "Armonía",
+  "status": "official",
+  "sources": [
+   "https://www.lecturalia.com/libro/109168/el-metal-perdido (Nova synopsis: \"la sombría organización llamada el Grupo\"; \"Armonía\")"
+  ],
+  "notes": ""
+ },
+ "Twinborn": {
+  "es": "nacidoble",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Waxillium_Ladrian (\"un chocador, un nacidoble ... lanzamonedas ... ferrin de hierro (ajustador)\")"
+  ],
+  "notes": "Glossary had \"nacido doble\" (unverified). CHANGED from \"nacido doble\". Plural \"nacidobles\"."
+ },
+ "Skimmer": {
+  "es": "ajustador",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Waxillium_Ladrian (\"un chocador, un nacidoble ... lanzamonedas ... ferrin de hierro (ajustador)\")"
+  ],
+  "notes": "Glossary had \"desnatador\" (unverified). CHANGED from \"desnatador\". Iron Ferring."
+ },
+ "Clubs": {
+  "es": "Clubs",
+  "status": "unchanged",
+  "sources": [
+   "https://nacidos-de-la-bruma.fandom.com/es/wiki/Banda_de_Kelsier (Clubs, ahumador; Ham, brazo de peltre o violento; Fantasma)"
+  ],
+  "notes": "Glossary had \"Mazos\" (unverified). CHANGED from \"Mazos\": the Spanish edition keeps \"Clubs\"."
+ },
+ "Pewterarm": {
+  "es": "brazo de peltre",
+  "status": "official",
+  "sources": [
+   "https://nacidos-de-la-bruma.fandom.com/es/wiki/Banda_de_Kelsier (Clubs, ahumador; Ham, brazo de peltre o violento; Fantasma)"
+  ],
+  "notes": ""
+ },
+ "Keeper": {
+  "es": "Guardador",
+  "status": "official",
+  "sources": [
+   "https://mistborn.fandom.com/wiki/Sazed?oldid=3713 ; https://es.coppermind.net/wiki/Sazed?oldid=8264 (Guardadores de Terris)"
+  ],
+  "notes": "Glossary had \"Guardián\" (unverified). CHANGED from \"Guardián\". Fem. \"Guardadora\"; \"Guardadores de Terris\"."
+ },
+ "Blushweaver": {
+  "es": "Tejesonrojos",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/75941 (page «Tejesonrojos»)"
+  ],
+  "notes": "Glossary had \"Tejerrubor\" (unverified). CHANGED from \"Tejerrubor\"."
+ },
+ "Manywar": {
+  "es": "Multiguerra",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/181172 (page «La Multiguerra»)",
+   "https://es.coppermind.net/wiki/El_aliento_de_los_dioses (sinvida, Multiguerra)"
+  ],
+  "notes": "Glossary had \"Guerra de los Múltiples\" (unverified). CHANGED from \"Guerra de los Múltiples\". \"la Multiguerra\"."
+ },
+ "Five Scholars": {
+  "es": "Cinco Sabios",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/150218 (page «Los Cinco Sabios»)"
+  ],
+  "notes": "Glossary had \"Cinco Eruditos\" (unverified). CHANGED from \"Cinco Eruditos\". \"los Cinco Sabios\"."
+ },
+ "Lifeless": {
+  "es": "sinvida",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/El_aliento_de_los_dioses (sinvida, Multiguerra)"
+  ],
+  "notes": "Glossary had \"Sinvida\" (official). Invariable: \"un sinvida\", \"los sinvida\"."
+ },
+ "Heightening": {
+  "es": "Elevación",
+  "status": "official",
+  "sources": [
+   "https://eligeunlibro.blogspot.com/2016/12/aliento-dioses.html (reader review: \"primera elevación\", \"despertadores\", \"corte de los dioses\")"
+  ],
+  "notes": ""
+ },
+ "Tenth Heightening": {
+  "es": "Décima Elevación",
+  "status": "official",
+  "sources": [
+   "https://eligeunlibro.blogspot.com/2016/12/aliento-dioses.html (reader review: \"primera elevación\", \"despertadores\", \"corte de los dioses\")"
+  ],
+  "notes": ""
+ },
+ "Awakener": {
+  "es": "despertador",
+  "status": "official",
+  "sources": [
+   "https://eligeunlibro.blogspot.com/2016/12/aliento-dioses.html (reader review: \"primera elevación\", \"despertadores\", \"corte de los dioses\")"
+  ],
+  "notes": ""
+ },
+ "Court of Gods": {
+  "es": "Corte de los Dioses",
+  "status": "official",
+  "sources": [
+   "https://eligeunlibro.blogspot.com/2016/12/aliento-dioses.html (reader review: \"primera elevación\", \"despertadores\", \"corte de los dioses\")"
+  ],
+  "notes": ""
+ },
+ "Allomancer Jak": {
+  "es": "Alomante Jak",
+  "status": "official",
+  "sources": [
+   "https://tercerafundacion.net/biblioteca/ver/ficha/33522/ ; https://archive.org/details/arcanum-ilimitado-brandon-sanderson_202208 (Arcanum ilimitado contents: Treno, Primero del Sol)",
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/68193 (page «Alomante Jak y los Pozos de Eltania»)"
+  ],
+  "notes": "Glossary had \"Jak el Alomántico\" (unverified). CHANGED from \"Jak el Alomántico\". Story title \"Alomante Jak y los Pozos de Eltania\" (Arcanum ilimitado)."
+ },
+ "Threnody": {
+  "es": "Treno",
+  "status": "official",
+  "sources": [
+   "https://tercerafundacion.net/biblioteca/ver/ficha/33522/ ; https://archive.org/details/arcanum-ilimitado-brandon-sanderson_202208 (Arcanum ilimitado contents: Treno, Primero del Sol)",
+   "https://es.coppermind.net/wiki/Sombras_por_Silencio_en_los_bosques_del_infierno (Treno, Silencio Montane)"
+  ],
+  "notes": "Glossary had \"Threnody\" (unchanged). CHANGED (glossary: unchanged \"Threnody\")."
+ },
+ "Silence": {
+  "es": "Silencio",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sombras_por_Silencio_en_los_bosques_del_infierno (Treno, Silencio Montane)"
+  ],
+  "notes": "Glossary had \"Silence\" (unverified). CHANGED from \"Silence\": the Spanish title \"Sombras por Silencio...\" translates her name."
+ },
+ "Silence Montane": {
+  "es": "Silencio Montane",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sombras_por_Silencio_en_los_bosques_del_infierno (Treno, Silencio Montane)"
+  ],
+  "notes": "Glossary had \"Silence Montane\" (unverified). CHANGED."
+ },
+ "shades": {
+  "es": "umbras",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/190527 (page «Umbra»)"
+  ],
+  "notes": "Glossary had \"sombras\" (unverified). CHANGED from \"sombras\" (Threnody). Singular \"umbra\", feminine."
+ },
+ "shade": {
+  "es": "umbra",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/190527 (page «Umbra»)"
+  ],
+  "notes": "Glossary had \"sombra\" (unverified). CHANGED from \"sombra\"."
+ },
+ "Forests of Hell": {
+  "es": "bosques del infierno",
+  "status": "official",
+  "sources": [
+   "https://tercerafundacion.net/biblioteca/ver/ficha/33522/ ; https://archive.org/details/arcanum-ilimitado-brandon-sanderson_202208 (Arcanum ilimitado contents: Treno, Primero del Sol)",
+   "https://es.coppermind.net/wiki/Sombras_por_Silencio_en_los_bosques_del_infierno (Treno, Silencio Montane)"
+  ],
+  "notes": ""
+ },
+ "First of the Sun": {
+  "es": "Primero del Sol",
+  "status": "official",
+  "sources": [
+   "https://tercerafundacion.net/biblioteca/ver/ficha/33522/ ; https://archive.org/details/arcanum-ilimitado-brandon-sanderson_202208 (Arcanum ilimitado contents: Treno, Primero del Sol)",
+   "https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/ (Sexto del Ocaso, trampero, Patji, aviares, Primero del Sol)"
+  ],
+  "notes": ""
+ },
+ "Sixth of the Dusk": {
+  "es": "Sexto del Ocaso",
+  "status": "official",
+  "sources": [
+   "https://tercerafundacion.net/biblioteca/ver/ficha/33522/ ; https://archive.org/details/arcanum-ilimitado-brandon-sanderson_202208 (Arcanum ilimitado contents: Treno, Primero del Sol)",
+   "https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/ (Sexto del Ocaso, trampero, Patji, aviares, Primero del Sol)"
+  ],
+  "notes": ""
+ },
+ "Aviar": {
+  "es": "aviar",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/ (Sexto del Ocaso, trampero, Patji, aviares, Primero del Sol)"
+  ],
+  "notes": "Plural \"aviares\"."
+ },
+ "Crow's Song": {
+  "es": "Canto del Cuervo",
+  "status": "official",
+  "sources": [
+   "https://criticasfrikis.com/critica-de-trenza-del-mar-esmeralda/ ; https://entreteclasytinta.com/2023/05/12/resena-trenza-del-mar-esmeralda-de-brandon-sanderson/ (\"Canto del Cuervo\", capitana Cuervo, tazas)"
+  ],
+  "notes": "Glossary had \"Canción del Cuervo\" (unverified). CHANGED from \"Canción del Cuervo\"."
+ },
+ "Crow": {
+  "es": "Cuervo",
+  "status": "official",
+  "sources": [
+   "https://criticasfrikis.com/critica-de-trenza-del-mar-esmeralda/ ; https://entreteclasytinta.com/2023/05/12/resena-trenza-del-mar-esmeralda-de-brandon-sanderson/ (\"Canto del Cuervo\", capitana Cuervo, tazas)"
+  ],
+  "notes": "\"la capitana Cuervo\"."
+ },
+ "Sorceress": {
+  "es": "Hechicera",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/735885/trenza-del-mar-esmeralda--tress-of-the-emerald-sea-by-brandon-sanderson-manuel-viciano-delibano-tr-howard-lyon-ils/ (tazas; hechicera del mar de Medianoche)"
+  ],
+  "notes": ""
+ },
+ "Midnight Sea": {
+  "es": "mar de Medianoche",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/735885/trenza-del-mar-esmeralda--tress-of-the-emerald-sea-by-brandon-sanderson-manuel-viciano-delibano-tr-howard-lyon-ils/ (tazas; hechicera del mar de Medianoche)"
+  ],
+  "notes": ""
+ },
+ "Tress": {
+  "es": "Trenza",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/735885/trenza-del-mar-esmeralda--tress-of-the-emerald-sea-by-brandon-sanderson-manuel-viciano-delibano-tr-howard-lyon-ils/ (tazas; hechicera del mar de Medianoche)"
+  ],
+  "notes": ""
+ },
+ "Night Brigade": {
+  "es": "Brigada Nocturna",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/752354/el-hombre-iluminado--the-sunlit-man-by-brandon-sanderson/ (Nómada, Brigada Nocturna)"
+  ],
+  "notes": ""
+ },
+ "Nomad": {
+  "es": "Nómada",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/752354/el-hombre-iluminado--the-sunlit-man-by-brandon-sanderson/ (Nómada, Brigada Nocturna)"
+  ],
+  "notes": ""
+ },
+ "Canticle": {
+  "es": "Cántico",
+  "status": "official",
+  "sources": [
+   "https://boywithletters.blogspot.com/2024/01/resena-el-hombre-iluminado.html (Cántico) ; https://lapiedradesisifo.com/2023/12/20/resena-de-el-hombre-iluminado/ (\"Rey de Ceniza\")"
+  ],
+  "notes": ""
+ },
+ "Cinder King": {
+  "es": "Rey de Ceniza",
+  "status": "community",
+  "sources": [
+   "https://boywithletters.blogspot.com/2024/01/resena-el-hombre-iluminado.html (Cántico) ; https://lapiedradesisifo.com/2023/12/20/resena-de-el-hombre-iluminado/ (\"Rey de Ceniza\")"
+  ],
+  "notes": "Glossary had \"Rey Ceniza\" (unverified). CHANGED from \"Rey Ceniza\"; one Spanish review only, provisional."
+ },
+ "shroud": {
+  "es": "mortaja",
+  "status": "community",
+  "sources": [
+   "https://entreteclasytinta.com/2023/07/27/resena-yumi-y-el-pintor-de-pesadillas-de-brandon-sanderson/ (\"una mortaja de oscuridad\", yoki-hijo, Pintor)"
+  ],
+  "notes": "Glossary had \"sudario\" (unverified). CHANGED from \"sudario\"; a Spanish review of the Nova edition says \"una mortaja de oscuridad\". Provisional."
+ },
+ "Painter": {
+  "es": "Pintor",
+  "status": "official",
+  "sources": [
+   "https://entreteclasytinta.com/2023/07/27/resena-yumi-y-el-pintor-de-pesadillas-de-brandon-sanderson/ (\"una mortaja de oscuridad\", yoki-hijo, Pintor)",
+   "https://es.coppermind.net/wiki/Resumen:Yumi_y_el_pintor_de_pesadillas"
+  ],
+  "notes": ""
+ },
+ "Nightmare painter": {
+  "es": "pintor de pesadillas",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/178347 (page «Yumi y el pintor de pesadillas»)"
+  ],
+  "notes": ""
+ },
+ "Sand Master": {
+  "es": "maestro de la arena",
+  "status": "community",
+  "sources": [
+   "https://anikaentrelibros.com/arena-blanca-novela-grafica (maestros de la arena, Diem, \"ladoscura\")"
+  ],
+  "notes": "Glossary had \"Maestro de la Arena\" (unverified). Lowercase in the Spanish blurb."
+ },
+ "Sand Masters": {
+  "es": "maestros de la arena",
+  "status": "community",
+  "sources": [
+   "https://anikaentrelibros.com/arena-blanca-novela-grafica (maestros de la arena, Diem, \"ladoscura\")"
+  ],
+  "notes": "Glossary had \"Maestros de la Arena\" (unverified). "
+ },
+ "Darksider": {
+  "es": "ladoscura",
+  "status": "community",
+  "sources": [
+   "https://anikaentrelibros.com/arena-blanca-novela-grafica (maestros de la arena, Diem, \"ladoscura\")"
+  ],
+  "notes": "Glossary had \"habitante del Lado Oscuro\" (unverified). CHANGED from \"habitante del Lado Oscuro\": Spanish blurb of Arena blanca calls Khriss a \"ladoscura\". Provisional; Darkside/Dayside themselves kept as \"Lado Oscuro\"/\"Lado Diurno\" (unverified)."
+ },
+ "Forgery": {
+  "es": "Forja",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/12674 (Resumen: El alma del emperador: árbitros, la Forjadora, forja, marca de esencia)"
+  ],
+  "notes": ""
+ },
+ "Forger": {
+  "es": "Forjadora",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/12674 (Resumen: El alma del emperador: árbitros, la Forjadora, forja, marca de esencia)"
+  ],
+  "notes": "Masc. \"Forjador\"."
+ },
+ "Essence Mark": {
+  "es": "marca de esencia",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/12674 (Resumen: El alma del emperador: árbitros, la Forjadora, forja, marca de esencia)"
+  ],
+  "notes": "Glossary had \"Marca de Esencia\" (unverified). Lowercase."
+ },
+ "Alethi": {
+  "es": "alezi",
+  "status": "official",
+  "sources": [
+   "https://es.wikipedia.org/wiki/Juramentada (Alezkar, alezi)"
+  ],
+  "notes": "Alethkar = Alezkar. Spot-check OK."
+ },
+ "honorspren": {
+  "es": "honorspren",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/153468 (Kaladin page; \"honorspren\" kept untranslated)"
+  ],
+  "notes": "Spot-check OK: kept untranslated."
+ },
+ "Fused": {
+  "es": "Fusionados",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/90270 (page «Fusionado»)"
+  ],
+  "notes": ""
+ },
+ "Feruchemist": {
+  "es": "feruquimista",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/86624 (page «Feruquimia»)"
+  ],
+  "notes": ""
+ },
+ "Feruchemy": {
+  "es": "Feruquimia",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/86624 (page «Feruquimia»)"
+  ],
+  "notes": ""
+ },
+ "metalmind": {
+  "es": "mente de metal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary had \"mentemetal\" (unverified). CHANGED from \"mentemetal\": I recall the Nova editions using \"mente de metal\" (plural \"mentes de metal\"); not confirmed online. QA should check against El Héroe de las Eras / Aleación de ley."
+ },
+ "Survivorism": {
+  "es": "supervivencialismo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary had \"superviviencismo\" (unverified). Glossary had the typo \"superviviencismo\". Could not find the Nova term online; \"supervivencialismo\" used provisionally."
+ },
+ "Survivorist": {
+  "es": "supervivencialista",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary had \"supervivencista\" (unverified). Provisional, consistent with Survivorism."
+ },
+ "Path": {
+  "es": "la Senda",
+  "status": "unverified",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/110715 (lists the religion, untranslated)"
+  ],
+  "notes": "Nova term not found online. Used \"la Senda\" and \"seguidor de la Senda\" for Pathian, avoiding coined adjectives."
+ },
+ "Pathian": {
+  "es": "seguidor de la Senda",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary had \"pathiano\" (unverified). Glossary \"pathiano\" (inconsistent with \"patianismo\"). Provisional."
+ },
+ "Pathianism": {
+  "es": "la Senda",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary had \"patianismo\" (unverified). Glossary \"patianismo\". Provisional; rendered as the religion's name \"la Senda\"."
+ },
+ "Two Cups": {
+  "es": "Dos Tazas",
+  "status": "unverified",
+  "sources": [
+   "https://criticasfrikis.com/critica-de-trenza-del-mar-esmeralda/ (Tress collects \"tazas\" in the Spanish edition)"
+  ],
+  "notes": "Glossary had \"Dos Copas\" (unverified). CHANGED from \"Dos Copas\": in the Spanish edition Trenza collects \"tazas\", so the ship named after them is almost certainly \"Dos Tazas\"; exact ship name not confirmed."
+ },
+ "ichor-alcohol": {
+  "es": "alcohol de ícor",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/150218 (Los Cinco Sabios page, search snippet)"
+  ],
+  "notes": "Glossary had \"alcohol icor\" (unverified). CHANGED from \"alcohol icor\"."
+ },
+ "Lord Ruler": {
+  "es": "lord Legislador",
+  "status": "official",
+  "sources": [
+   "glossary (official)"
+  ],
+  "notes": "Glossary had \"Lord Legislador\" (official). Glossary has \"Lord Legislador\"; I lowercase the honorific (\"el lord Legislador\"), matching the glossary's own \"lord Nacido de la Bruma\" and Spanish usage. Capitalization only."
+ },
+ "Miles Hundredlives": {
+  "es": "Miles Cienvidas",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary had \"Miles Hundredlives\" (unchanged). CHANGED from unchanged \"Miles Hundredlives\": I recall \"Miles Cienvidas\" in Aleación de ley (cf. Italian \"Miles Centovite\"). Not confirmed online."
+ },
+ "Auxiliary": {
+  "es": "Auxiliar",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Short form \"Aux\"."
+ },
+ "Drab": {
+  "es": "apagado",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary had \"Apagado\" (unverified). Lowercase common noun (plural \"apagados\")."
+ },
+ "Dusk": {
+  "es": "Sexto del Ocaso",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/"
+  ],
+  "notes": "Glossary had \"Ocaso\" (unverified). The character is called \"Sexto del Ocaso\" / \"Sexto\" in Spanish blurbs; glossary short form \"Ocaso\" avoided."
+ },
+ "Wit": {
+  "es": "Sagaz",
+  "status": "official",
+  "sources": [
+   "glossary (official)"
+  ],
+  "notes": "King's Wit = \"Sagaz del rey\"."
+ },
+ "Lightsong": {
+  "es": "Sondeluz",
+  "status": "official",
+  "sources": [
+   "https://quelibroleo.com/el-aliento-de-los-dioses (reader review: \"sondeluz\")"
+  ],
+  "notes": "Nickname for Llarimar \"Scoot\" left in English: Spanish rendering not verified."
+ },
+ "Laughing Ann": {
+  "es": "Ann la Risueña",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value."
+ },
+ "Veil": {
+  "es": "Velo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; widely used by Spanish readers but not confirmed online in this pass."
+ },
+ "Warbreaker": {
+  "es": "El aliento de los dioses",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/589093/el-aliento-de-los-dioses--warbreaker-by-brandon-sanderson/9791387652074"
+  ],
+  "notes": "Glossary had \"Warbreaker\" (unverified). CHANGED from \"Warbreaker\" when it refers to the book (Spanish title). As Vasher's epithet (not used in the questions) it is unverified."
+ },
+ "White Sand": {
+  "es": "Arena blanca",
+  "status": "official",
+  "sources": [
+   "https://www.lecturalia.com/libro/98436/arena-blanca"
+  ],
+  "notes": ""
+ },
+ "The Emperor's Soul": {
+  "es": "El alma del emperador",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/12674"
+  ],
+  "notes": ""
+ },
+ "Eleventh Metal": {
+  "es": "undécimo metal",
+  "status": "official",
+  "sources": [
+   "https://archive.org/details/arcanum-ilimitado-brandon-sanderson_202208 (\"El undécimo metal\")"
+  ],
+  "notes": "Glossary had \"Undécimo Metal\" (unverified). Title \"El undécimo metal\"; as the metal name \"el Undécimo Metal\"."
+ },
+ "Isles of the Emberdark": {
+  "es": "Islas de la Ascuaoscura",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/"
+  ],
+  "notes": "Not a question term; recorded for WORK_TITLES. Emberdark = \"Ascuaoscura\"."
+ },
+ "Adhesion": {
+  "es": "Adhesión",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Aimian": {
+  "es": "aimiano",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Allmother": {
+  "es": "Madre de Todos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Allomancer": {
+  "es": "alomántico",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Allomancy": {
+  "es": "Alomancia",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Ambition": {
+  "es": "Ambición",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Anti-Stormlight": {
+  "es": "antiluz tormentosa",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Aon": {
+  "es": "aon",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "AonDor": {
+  "es": "AonDor",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Arcanum Unbounded": {
+  "es": "Arcanum ilimitado",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Ascendant Warrior": {
+  "es": "Guerrera Ascendente",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Assassin in White": {
+  "es": "Asesino de Blanco",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Austrism": {
+  "es": "austrismo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Autonomy": {
+  "es": "Autonomía",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Awaken": {
+  "es": "despertar",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Awakened": {
+  "es": "despertado",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Awakening": {
+  "es": "Despertar",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Azure": {
+  "es": "Azure",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Bands of Mourning": {
+  "es": "Brazales de duelo",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Beyond": {
+  "es": "el Más Allá",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Blackbane": {
+  "es": "perdición negra",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Bleeder": {
+  "es": "Sangrador",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Bloodsealer": {
+  "es": "Sellador de Sangre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Bloodsealing": {
+  "es": "sellado de sangre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Bluefingers": {
+  "es": "Dedosazules",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Bondsmith": {
+  "es": "Forjador de Vínculos",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Bondsmiths": {
+  "es": "Forjadores de Vínculos",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Breath": {
+  "es": "Aliento",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Breeze": {
+  "es": "Brisa",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Charred": {
+  "es": "Calcinados",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Clod": {
+  "es": "Terrón",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Cognitive Realm": {
+  "es": "Reino Cognitivo",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Cognitive Shadow": {
+  "es": "sombra cognitiva",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Coinshot": {
+  "es": "lanzamonedas",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Command": {
+  "es": "Orden",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Conventical of Seran": {
+  "es": "Conventículo de Seran",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Cosmere": {
+  "es": "Cosmere",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Crimson Sea": {
+  "es": "Mar Carmesí",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Crimson spores": {
+  "es": "esporas carmesí",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Cryptic": {
+  "es": "críptico",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Cultivation": {
+  "es": "Cultivación",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Damnation": {
+  "es": "Condenación",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Darkside": {
+  "es": "Lado Oscuro",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Dawnshard": {
+  "es": "Esquirla del Amanecer",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Dayside": {
+  "es": "Lado Diurno",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Deepest Ones": {
+  "es": "Más Profundos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Derethi": {
+  "es": "derethi",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Design": {
+  "es": "Diseño",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Devotion": {
+  "es": "Devoción",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Diagram": {
+  "es": "el Diagrama",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Divine Breath": {
+  "es": "Aliento Divino",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Division": {
+  "es": "División",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Dominion": {
+  "es": "Dominio",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Dor": {
+  "es": "Dor",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Dustbringers": {
+  "es": "Portadores del Polvo",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Edgedancer": {
+  "es": "Danzante del Filo",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Edgedancers": {
+  "es": "Danzantes del Filo",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Elantrian": {
+  "es": "elantrino",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Elendel Basin": {
+  "es": "Cuenca de Elendel",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Elsecaller": {
+  "es": "Nominador de lo Otro",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Elsecallers": {
+  "es": "Nominadores de lo Otro",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Emerald": {
+  "es": "Esmeralda",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Emerald Crown": {
+  "es": "Corona Esmeralda",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Emerald Sea": {
+  "es": "mar Esmeralda",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Endowment": {
+  "es": "Dotación",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Envisagers": {
+  "es": "Visionarios",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Essence": {
+  "es": "Esencia",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Everstorm": {
+  "es": "tormenta eterna",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Evil": {
+  "es": "el Mal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Faceless Immortals": {
+  "es": "Inmortales Sin Rostro",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Fadrex City": {
+  "es": "Ciudad Fadrex",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Final Empire": {
+  "es": "Imperio Final",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Firemoss": {
+  "es": "musgo de fuego",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "First Ideal": {
+  "es": "Primer Ideal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Formless": {
+  "es": "Sinforma",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Frostlands": {
+  "es": "Tierras Heladas",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Ghostbloods": {
+  "es": "Sangre Espectral",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Glory Faction": {
+  "es": "Facción de la Gloria",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "God King": {
+  "es": "Dios Rey",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Gravitation": {
+  "es": "Gravitación",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Heavenly Ones": {
+  "es": "Celestiales",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Hemalurgy": {
+  "es": "Hemalurgia",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Herald": {
+  "es": "Heraldo",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Herdazian": {
+  "es": "herdaziano",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Herdazians": {
+  "es": "herdazianos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Heritage Faction": {
+  "es": "Facción del Legado",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Hero of Ages": {
+  "es": "Héroe de las Eras",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Homeland": {
+  "es": "la Patria",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Honor": {
+  "es": "Honor",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Honorblade": {
+  "es": "Hoja de Honor",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Horneater": {
+  "es": "comecuernos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Horneater Peaks": {
+  "es": "Picos Comecuernos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "House Hasting": {
+  "es": "Casa Hasting",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "House Lekal": {
+  "es": "Casa Lekal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "House Renoux": {
+  "es": "Casa Renoux",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "House Venture": {
+  "es": "Casa Venture",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Ideal": {
+  "es": "Ideal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Idrian": {
+  "es": "idriano",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Illumination": {
+  "es": "Iluminación",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Imperial Fool": {
+  "es": "Bufón Imperial",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Inquisitor": {
+  "es": "Inquisidor",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Intent": {
+  "es": "Intención",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Investiture": {
+  "es": "Investidura",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Ironeyes": {
+  "es": "Ojos de Hierro",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Ivory": {
+  "es": "Marfil",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Jesker": {
+  "es": "jesker",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Jeskeri Mysteries": {
+  "es": "Misterios jeskeri",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Kalad's Phantoms": {
+  "es": "Fantasmas de Kalad",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Keep Hasting": {
+  "es": "Fortaleza Hasting",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Keep Venture": {
+  "es": "Fortaleza Venture",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Knights Radiant": {
+  "es": "Caballeros Radiantes",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Knobweed": {
+  "es": "hierba nudosa",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Koloss-blooded": {
+  "es": "sangre de koloss",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Korathi": {
+  "es": "korathi",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Lady of Wishes": {
+  "es": "Dama de los Deseos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Lashing": {
+  "es": "Lanzamiento",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Last Emperor": {
+  "es": "Último Emperador",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Lightweaver": {
+  "es": "Tejedor de Luz",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Lightweavers": {
+  "es": "Tejedores de Luz",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Lord Mistborn": {
+  "es": "lord Nacido de la Bruma",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Lurcher": {
+  "es": "atraedor",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Magnified Ones": {
+  "es": "Magnificados",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Masked Ones": {
+  "es": "Enmascarados",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Mateform": {
+  "es": "forma de pareja",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Mercy": {
+  "es": "Piedad",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Mercystar": {
+  "es": "Estrella Piadosa",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Metallic Arts": {
+  "es": "Artes Metálicas",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Midnight Mother": {
+  "es": "Madre Medianoche",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Midnight Rose": {
+  "es": "Rosa de Medianoche",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Midnight spores": {
+  "es": "esporas de medianoche",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Mistborn": {
+  "es": "nacido de la bruma",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Mistborn: Secret History": {
+  "es": "Nacidos de la bruma: Historia secreta",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Mister Suit": {
+  "es": "Señor Traje",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Misting": {
+  "es": "brumoso",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Moon Scepter": {
+  "es": "Cetro Lunar",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Moonlight": {
+  "es": "Moonlight",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Nalthian": {
+  "es": "nalthiano",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "New Elantris": {
+  "es": "Nueva Elantris",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "New Seran": {
+  "es": "Nueva Seran",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Nightblood": {
+  "es": "Sangre Nocturna",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Nightwatcher": {
+  "es": "Vigilante Nocturna",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Oathbringer": {
+  "es": "Juramentada",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Obligator": {
+  "es": "obligador",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Odium": {
+  "es": "Odium",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Origin": {
+  "es": "Origen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Pantheon": {
+  "es": "Panteón",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Parshendi": {
+  "es": "parshendi",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Pattern": {
+  "es": "Patrón",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Peacegiver": {
+  "es": "Dador de Paz",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Perpendicularity": {
+  "es": "perpendicularidad",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Physical Realm": {
+  "es": "Reino Físico",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Preservation": {
+  "es": "Conservación",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Purelake": {
+  "es": "Lagopuro",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Push": {
+  "es": "empujar",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Radiant": {
+  "es": "Radiante",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Rain": {
+  "es": "Rain",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Reacher": {
+  "es": "alcanzador",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Reod": {
+  "es": "Reod",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Returned": {
+  "es": "Retornado",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Rhythm of War": {
+  "es": "El ritmo de la guerra",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Rock": {
+  "es": "Roca",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Rose Empire": {
+  "es": "Imperio de la Rosa",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Rose Sea": {
+  "es": "mar Rosa",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Roseite spores": {
+  "es": "esporas roseíta",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Royal Locks": {
+  "es": "Cabellos Reales",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Ruby": {
+  "es": "Rubí",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Ruin": {
+  "es": "Ruina",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Sapphire": {
+  "es": "Zafiro",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Sapphire Sea": {
+  "es": "mar Zafiro",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Scadrian": {
+  "es": "scadriano",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Secret History": {
+  "es": "Historia secreta",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Seeker": {
+  "es": "buscador",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Seventeenth Shard": {
+  "es": "Decimoséptima Esquirla",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Shaod": {
+  "es": "Shaod",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Shard": {
+  "es": "Esquirla",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Shardbearer": {
+  "es": "portador de esquirlas",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Shardblade": {
+  "es": "hoja esquirlada",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Shardplate": {
+  "es": "armadura esquirlada",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Shattered Plains": {
+  "es": "Llanuras Quebradas",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Shattering": {
+  "es": "Fragmentación",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Silver Gull": {
+  "es": "Gaviota Plateada",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Skaze": {
+  "es": "skaze",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Skybreaker": {
+  "es": "Rompedor del Cielo",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Skybreakers": {
+  "es": "Rompedores del Cielo",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Sliver": {
+  "es": "Fragmento",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Soother": {
+  "es": "aplacador",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Spanreed": {
+  "es": "vinculacañas",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Spiritual Realm": {
+  "es": "Reino Espiritual",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Splinter": {
+  "es": "Astilla",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Splintered": {
+  "es": "astillado",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Spook": {
+  "es": "Fantasma",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Steel Inquisitor": {
+  "es": "Inquisidor de Acero",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Stonewards": {
+  "es": "Custodios de Piedra",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Stormfather": {
+  "es": "Padre Tormenta",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Stormform": {
+  "es": "forma de tormenta",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Stormlight": {
+  "es": "luz tormentosa",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Stormwarden": {
+  "es": "guardatormentas",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Striker": {
+  "es": "Golpeador",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Stump": {
+  "es": "Tocón",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Sunmaker": {
+  "es": "Hacedor de Soles",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Sunraiser": {
+  "es": "Levantasoles",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Surge": {
+  "es": "Potencia",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Survivor": {
+  "es": "Superviviente",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Tears of Edgli": {
+  "es": "Lágrimas de Edgli",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Tension": {
+  "es": "Tensión",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Terris Mountains": {
+  "es": "Montañas de Terris",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Thaylen City": {
+  "es": "Ciudad Thaylen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Thaylen Field": {
+  "es": "Campo Thaylen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "The Final Empire": {
+  "es": "El imperio final",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "The Lost Metal": {
+  "es": "El metal perdido",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "The Sunlit Man": {
+  "es": "El hombre iluminado",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "The Way of Kings": {
+  "es": "El camino de los reyes",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Third Ideal": {
+  "es": "Tercer Ideal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Thrill": {
+  "es": "la Emoción",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Thug": {
+  "es": "violento",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Timbre": {
+  "es": "Timbre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Tineye": {
+  "es": "ojo de estaño",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Topaz": {
+  "es": "Topacio",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Torment": {
+  "es": "Tormento",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Tranquiline Halls": {
+  "es": "Salones Tranquilinos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Transformation": {
+  "es": "Transformación",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Trellism": {
+  "es": "trellismo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Tress of the Emerald Sea": {
+  "es": "Trenza del mar Esmeralda",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Truths": {
+  "es": "Verdades",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Truthwatchers": {
+  "es": "Vigilantes de la Verdad",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "TwinSoul": {
+  "es": "AlmaGemela",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Unmade": {
+  "es": "Deshechos",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Valley": {
+  "es": "el Valle",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Valor": {
+  "es": "Valor",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Vanishers": {
+  "es": "Desvanecedores",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Vessel": {
+  "es": "Recipiente",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Virtuosity": {
+  "es": "Virtuosismo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Vorin": {
+  "es": "vorin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Wall Guard": {
+  "es": "Guardia de la Muralla",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Wandersail": {
+  "es": "Wandersail",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Warform": {
+  "es": "forma de guerra",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Weeping": {
+  "es": "el Llanto",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Well of Ascension": {
+  "es": "Pozo de la Ascensión",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Whimsy": {
+  "es": "Capricho",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "White Fox": {
+  "es": "Zorro Blanco",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Whitespine": {
+  "es": "espinablanca",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Willshaper": {
+  "es": "Escultor de Voluntad",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Willshapers": {
+  "es": "Escultores de Voluntad",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Wind and Truth": {
+  "es": "Viento y verdad",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Windrunner": {
+  "es": "Corredor del Viento",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Windrunners": {
+  "es": "Corredores del Viento",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Words of Radiance": {
+  "es": "Palabras Radiantes",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Workform": {
+  "es": "forma de trabajo",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "Zephyr spores": {
+  "es": "esporas céfiro",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "aether": {
+  "es": "éter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "aluminum": {
+  "es": "aluminio",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "ardent": {
+  "es": "fervoroso",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "axehound": {
+  "es": "sabueso hacha",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "babsk": {
+  "es": "babsk",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "broam": {
+  "es": "broam",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "chull": {
+  "es": "chull",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "crem": {
+  "es": "crem",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "cultivationspren": {
+  "es": "cultivacispren",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "duralumin": {
+  "es": "duraluminio",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "electrum": {
+  "es": "electro",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "fabrial": {
+  "es": "fabrial",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "greatshell": {
+  "es": "gran caparazón",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "gyorn": {
+  "es": "gyorn",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "harmonium": {
+  "es": "armonio",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "highprince": {
+  "es": "alto príncipe",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "highstorm": {
+  "es": "alta tormenta",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "highstorms": {
+  "es": "altas tormentas",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "hion": {
+  "es": "hion",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "inkspren": {
+  "es": "tintaspren",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "larkin": {
+  "es": "larkin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "lerasium": {
+  "es": "lerasio",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "malatium": {
+  "es": "malatio",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "medallion": {
+  "es": "medallón",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "mistwraith": {
+  "es": "espectro de la bruma",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "parshmen": {
+  "es": "parshmenios",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "safehand": {
+  "es": "mano segura",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "sand mastery": {
+  "es": "maestría de la arena",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "seon": {
+  "es": "seon",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "singer": {
+  "es": "cantor",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "skyeel": {
+  "es": "anguila celeste",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "soulstamp": {
+  "es": "sello de alma",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "spike": {
+  "es": "clavo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "spren": {
+  "es": "spren",
+  "status": "official",
+  "sources": [
+   "glossary (status official)"
+  ],
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "sunheart": {
+  "es": "corazón de sol",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ },
+ "verdant spores": {
+  "es": "esporas verdes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass."
+ }
+}
