@@ -56,16 +56,16 @@
     "a": "T'Telir",
     "wrong": [
       "Bevalis",
-      "Kholinar",
-      "Elendel"
+      "Yarn Dred",
+      "Tedradel"
     ],
     "explain": "T'Telir is a colorful coastal city that houses the Court of Gods.",
     "terms": [
       "Hallandren",
       "T'Telir",
       "Bevalis",
-      "Kholinar",
-      "Elendel",
+      "Yarn Dred",
+      "Tedradel",
       "Court of Gods"
     ],
     "source": "Warbreaker"
@@ -560,8 +560,8 @@
     "a": "Azure",
     "wrong": [
       "Zahel",
-      "Jasnah",
-      "Ialai"
+      "Talaxin",
+      "Jewels"
     ],
     "explain": "As Azure, she commands the Wall Guard defending Kholinar.",
     "terms": [
@@ -570,8 +570,8 @@
       "Oathbringer",
       "Azure",
       "Zahel",
-      "Jasnah",
-      "Ialai",
+      "Talaxin",
+      "Jewels",
       "Wall Guard"
     ],
     "source": "Oathbringer"
@@ -580,7 +580,7 @@
     "id": "nalthis-027",
     "category": "nalthis",
     "difficulty": 2,
-    "work": "oathbringer",
+    "work": "words-of-radiance",
     "q": "Who receives Nightblood at the end of Words of Radiance?",
     "a": "Szeth",
     "wrong": [
@@ -588,7 +588,7 @@
       "Adolin",
       "Dalinar"
     ],
-    "explain": "The Herald Nale gives the talking sword to Szeth after reviving him, though Szeth does not know its name.",
+    "explain": "The Herald Nale gives the talking sword to Szeth after reviving him.",
     "terms": [
       "Nightblood",
       "Words of Radiance",
@@ -599,7 +599,7 @@
       "Herald",
       "Nale"
     ],
-    "source": "Words of Radiance"
+    "source": "Words of Radiance, final Szeth chapter"
   },
   {
     "id": "nalthis-028",
@@ -888,7 +888,7 @@
     "wrong": [
       "T'Telir",
       "Yarn Dred",
-      "Kholinar"
+      "Tedradel"
     ],
     "explain": "Bevalis is a small city in a mountain valley, modest beside Hallandren's capital.",
     "terms": [
@@ -896,9 +896,459 @@
       "Bevalis",
       "T'Telir",
       "Yarn Dred",
-      "Kholinar",
+      "Tedradel",
       "Hallandren"
     ],
     "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-041",
+    "category": "nalthis",
+    "difficulty": 3,
+    "work": "warbreaker",
+    "q": "Vasher, Shashara, Arsteel and Yesteel were four of the Five Scholars. Who was the fifth?",
+    "a": "Denth",
+    "wrong": [
+      "Llarimar",
+      "Lemex",
+      "Tonk Fah"
+    ],
+    "explain": "Denth, Shashara's brother, was also a Returned and one of the Five Scholars.",
+    "terms": [
+      "Vasher",
+      "Shashara",
+      "Arsteel",
+      "Yesteel",
+      "Five Scholars",
+      "Denth",
+      "Llarimar",
+      "Lemex",
+      "Tonk Fah",
+      "Returned"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-042",
+    "category": "nalthis",
+    "difficulty": 3,
+    "work": "warbreaker",
+    "q": "What color do Siri's Royal Locks turn when she is frightened?",
+    "a": "White",
+    "wrong": [
+      "Red",
+      "Black",
+      "Yellow"
+    ],
+    "explain": "Red shows anger or embarrassment, and black is the calm, controlled color Idrian royals are trained to keep.",
+    "terms": [
+      "Siri",
+      "Royal Locks",
+      "Idrian"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-043",
+    "category": "nalthis",
+    "difficulty": 3,
+    "work": "warbreaker",
+    "q": "Lightsong holds the Command phrases for how many of Hallandren's Lifeless?",
+    "a": "Ten thousand",
+    "wrong": [
+      "One thousand",
+      "Five thousand",
+      "Fifty thousand"
+    ],
+    "explain": "Each of four gods holds the phrases for a quarter of the Lifeless army.",
+    "terms": [
+      "Lightsong",
+      "Command",
+      "Hallandren",
+      "Lifeless"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-044",
+    "category": "nalthis",
+    "difficulty": 3,
+    "work": "warbreaker",
+    "q": "Which Command lets an Awakener take back the Breath stored in an object they Awakened?",
+    "a": "Your Breath to mine",
+    "wrong": [
+      "My life to yours",
+      "Return to me",
+      "Awaken no more"
+    ],
+    "explain": "The Awakener must touch the object; \"My life to yours, my Breath become yours\" is the Command that gives Breath away.",
+    "terms": [
+      "Command",
+      "Awakener",
+      "Breath",
+      "Awakened"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-045",
+    "category": "nalthis",
+    "difficulty": 3,
+    "work": "warbreaker",
+    "q": "Why is the palace scribe Havarseth known as Bluefingers?",
+    "a": "His fingers are stained with ink",
+    "wrong": [
+      "He handles the Tears of Edgli dyes",
+      "He lost his fingers to frostbite",
+      "He paints the gods' portraits"
+    ],
+    "explain": "The Pahn Kahl head scribe is rarely seen without his ledger.",
+    "terms": [
+      "Havarseth",
+      "Bluefingers",
+      "Tears of Edgli",
+      "Pahn Kahl"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-046",
+    "category": "nalthis",
+    "difficulty": 3,
+    "work": "warbreaker",
+    "q": "Which colors do Lightsong, his priests and his servants wear?",
+    "a": "Red and gold",
+    "wrong": [
+      "Green and silver",
+      "Blue and white",
+      "Black and purple"
+    ],
+    "explain": "Each Returned god of Hallandren has their own colors, worn by everyone in their service.",
+    "terms": [
+      "Lightsong",
+      "Returned",
+      "Hallandren"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-047",
+    "category": "nalthis",
+    "difficulty": 3,
+    "work": "warbreaker",
+    "q": "On what basis do the kings of Idris claim the right to rule Hallandren?",
+    "a": "They are its royal line from before the Manywar",
+    "wrong": [
+      "They hold Peacegiver's treasure of Breath",
+      "Austre crowned them after the Manywar",
+      "They defeated Kalad's Phantoms"
+    ],
+    "explain": "The royal family fled to the highlands when Hallandren chose to be ruled by the Returned.",
+    "terms": [
+      "Idris",
+      "Hallandren",
+      "Manywar",
+      "Peacegiver",
+      "Breath",
+      "Austre",
+      "Kalad's Phantoms",
+      "Returned"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-048",
+    "category": "nalthis",
+    "difficulty": 3,
+    "work": "warbreaker",
+    "q": "Lightsong gives his Lifeless Command phrases to another Returned, who surprises him by handing over her own. Who?",
+    "a": "Allmother",
+    "wrong": [
+      "Blushweaver",
+      "Mercystar",
+      "Hopefinder"
+    ],
+    "explain": "With both sets of phrases, Lightsong suddenly controls half of Hallandren's Lifeless army.",
+    "terms": [
+      "Lightsong",
+      "Lifeless",
+      "Command",
+      "Returned",
+      "Allmother",
+      "Blushweaver",
+      "Mercystar",
+      "Hopefinder",
+      "Hallandren"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-049",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "Which Heightening grants perfect pitch?",
+    "a": "The Second",
+    "wrong": [
+      "The First",
+      "The Fourth",
+      "The Seventh"
+    ],
+    "explain": "It takes about 200 Breaths; the Third Heightening adds perfect color recognition.",
+    "terms": [
+      "Heightening",
+      "Breath",
+      "Third Heightening"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-050",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "At which Heightening can an Awakener use basic Commands instinctively, without any training?",
+    "a": "The Sixth",
+    "wrong": [
+      "The Third",
+      "The Fourth",
+      "The Eighth"
+    ],
+    "explain": "The Sixth Heightening requires about 3,500 Breaths.",
+    "terms": [
+      "Heightening",
+      "Awakener",
+      "Command",
+      "Sixth Heightening",
+      "Breath"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-051",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "Roughly how many Breaths are needed to reach the First Heightening?",
+    "a": "Fifty",
+    "wrong": [
+      "Ten",
+      "Twenty",
+      "One hundred"
+    ],
+    "explain": "The First Heightening grants aura recognition and a stronger life sense.",
+    "terms": [
+      "Breath",
+      "First Heightening"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-052",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "How many Breaths went into Awakening Nightblood?",
+    "a": "One thousand",
+    "wrong": [
+      "Two hundred",
+      "Ten thousand",
+      "Fifty thousand"
+    ],
+    "explain": "Shashara and Talaxin forged the Breaths into a plain steel sword with the Command \"Destroy evil\".",
+    "terms": [
+      "Breath",
+      "Awakening",
+      "Nightblood",
+      "Shashara",
+      "Talaxin",
+      "Command"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-053",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "Lightsong keeps dreaming of a red panther. What was the Red Panther in his former life?",
+    "a": "His brother's sailboat",
+    "wrong": [
+      "His family's crest",
+      "A tavern he owned",
+      "A pet he kept"
+    ],
+    "explain": "Stennimar drowned after a wave swept his niece Tatara off the boat during a storm.",
+    "terms": [
+      "Lightsong",
+      "Red Panther",
+      "Stennimar",
+      "Tatara"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-054",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "Who was the first Returned, who proclaimed the Five Visions and died again a week later?",
+    "a": "Vo",
+    "wrong": [
+      "Kalad",
+      "Stennimar",
+      "Arsteel"
+    ],
+    "explain": "Hoid tells his story at the Court of Gods; the Five Visions became the core of Austrism.",
+    "terms": [
+      "Returned",
+      "Five Visions",
+      "Vo",
+      "Kalad",
+      "Stennimar",
+      "Arsteel",
+      "Hoid",
+      "Court of Gods",
+      "Austrism"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-055",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "According to Hoid's tale, who was chosen as the first monarch after Vo, beginning the line of the Idrian royals?",
+    "a": "Vo's wife",
+    "wrong": [
+      "Vo's brother",
+      "Vo's eldest son",
+      "The ship's captain"
+    ],
+    "explain": "Vo's crew founded a kingdom and chose his wife to rule it, which is why Siri's family claims divine descent.",
+    "terms": [
+      "Hoid",
+      "Vo",
+      "Idrian",
+      "Siri"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-056",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "Hopefinder the Just is the Hallandren god of what?",
+    "a": "Innocence and beauty",
+    "wrong": [
+      "Justice and law",
+      "Peace and mercy",
+      "Health and harvest"
+    ],
+    "explain": "Hopefinder is one of the four gods who hold the Command phrases of the Lifeless army.",
+    "terms": [
+      "Hopefinder",
+      "Hallandren",
+      "Command",
+      "Lifeless"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-057",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "Kalad the Usurper, whose name lives on in Kalad's Phantoms, was actually whom?",
+    "a": "Vasher",
+    "wrong": [
+      "Denth",
+      "Arsteel",
+      "Yesteel"
+    ],
+    "explain": "Vasher, then also called Talaxin, seized power as Kalad during the Manywar before becoming known as Peacegiver.",
+    "terms": [
+      "Kalad",
+      "Kalad's Phantoms",
+      "Vasher",
+      "Denth",
+      "Arsteel",
+      "Yesteel",
+      "Talaxin",
+      "Manywar",
+      "Peacegiver"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-058",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "What do Idrians call the body of water that Hallandren calls the Bright Sea?",
+    "a": "The Inner Sea",
+    "wrong": [
+      "The Grey Sea",
+      "The Northern Sea",
+      "The Still Sea"
+    ],
+    "explain": "Landlocked Idris downplays the sea that lets T'Telir thrive as a port.",
+    "terms": [
+      "Idrian",
+      "Hallandren",
+      "Bright Sea",
+      "Inner Sea",
+      "Idris",
+      "T'Telir"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "nalthis-059",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "What is the name of the Hallandren religion that worships the Returned as gods?",
+    "a": "The Iridescent Tones",
+    "wrong": [
+      "Austrism",
+      "The Five Visions",
+      "The Voice of Endowment"
+    ],
+    "explain": "The Iridescent Tones teach that only those who die exemplifying a great virtue are sent back as Returned.",
+    "terms": [
+      "Hallandren",
+      "Returned",
+      "Iridescent Tones",
+      "Austrism",
+      "Five Visions",
+      "Endowment"
+    ],
+    "source": "Warbreaker, ch. 3"
+  },
+  {
+    "id": "nalthis-060",
+    "category": "nalthis",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "What is the real name of the Pahn Kahl scribe known as Bluefingers?",
+    "a": "Havarseth",
+    "wrong": [
+      "Gendren",
+      "Treledees",
+      "Lemex"
+    ],
+    "explain": "He introduces himself to Siri by this name, adding that everyone calls him Bluefingers.",
+    "terms": [
+      "Pahn Kahl",
+      "Bluefingers",
+      "Havarseth",
+      "Gendren",
+      "Treledees",
+      "Lemex",
+      "Siri"
+    ],
+    "source": "Warbreaker, ch. 6"
   }
 ]

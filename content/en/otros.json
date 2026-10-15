@@ -307,17 +307,15 @@
     "q": "What does Painter hunt and capture with his brush and ink?",
     "a": "Nightmares",
     "wrong": [
-      "Shades",
-      "Spren",
-      "Aviar"
+      "Hijo",
+      "Ghosts",
+      "Demons"
     ],
     "explain": "Nightmares seep out of the shroud, and painters trap them by painting them into harmless images.",
     "terms": [
       "Painter",
-      "Shades",
-      "Spren",
-      "Aviar",
-      "shroud"
+      "shroud",
+      "hijo"
     ],
     "source": "Yumi and the Nightmare Painter"
   },
@@ -330,16 +328,16 @@
     "a": "Yoki-hijo",
     "wrong": [
       "Nightmare painter",
-      "Sand Master",
-      "Lightweaver"
+      "Kihomaban",
+      "Hion engineer"
     ],
     "explain": "A yoki-hijo summons spirits for her people at great cost to her own freedom.",
     "terms": [
       "Yumi",
       "Yoki-hijo",
       "Nightmare painter",
-      "Sand Master",
-      "Lightweaver"
+      "Kihomaban",
+      "hion"
     ],
     "source": "Yumi and the Nightmare Painter"
   },
@@ -352,16 +350,16 @@
     "a": "Nikaro",
     "wrong": [
       "Tojin",
-      "Kenton",
-      "Sigzil"
+      "Namakudo",
+      "Izumakamo"
     ],
     "explain": "Nikaro usually goes by Painter, after his job as a nightmare painter.",
     "terms": [
       "Painter",
       "Nikaro",
       "Tojin",
-      "Kenton",
-      "Sigzil"
+      "Namakudo",
+      "Izumakamo"
     ],
     "source": "Yumi and the Nightmare Painter"
   },
@@ -373,9 +371,9 @@
     "q": "What hangs permanently over the city of Kilahito?",
     "a": "A shroud of darkness",
     "wrong": [
-      "A ring of particles",
-      "A wall of storms",
-      "A rain of spores"
+      "A cloud of volcanic ash",
+      "A dome of glass",
+      "A ring of floating stones"
     ],
     "explain": "Under the shroud Kilahito lives in constant darkness, lit by glowing hion lines.",
     "terms": [
@@ -414,7 +412,7 @@
     "wrong": [
       "Akane",
       "Masaka",
-      "Salay"
+      "Izumakamo"
     ],
     "explain": "Liyun oversees Yumi's rigid daily rituals as a yoki-hijo.",
     "terms": [
@@ -422,8 +420,8 @@
       "Liyun",
       "Akane",
       "Masaka",
-      "Salay",
-      "yoki-hijo"
+      "yoki-hijo",
+      "Izumakamo"
     ],
     "source": "Yumi and the Nightmare Painter"
   },
@@ -436,18 +434,18 @@
     "a": "Akane",
     "wrong": [
       "Liyun",
-      "Vathi",
-      "Rebeke"
+      "Chaeyung",
+      "Namakudo"
     ],
     "explain": "Painter meets Akane and Tojin on patrol at the city's western edge.",
     "terms": [
       "Kilahito",
       "Akane",
       "Liyun",
-      "Vathi",
-      "Rebeke",
       "Painter",
-      "Tojin"
+      "Tojin",
+      "Chaeyung",
+      "Namakudo"
     ],
     "source": "Yumi and the Nightmare Painter, ch. 1"
   },
@@ -459,20 +457,19 @@
     "q": "What is Masaka, who works as a nightmare painter, secretly?",
     "a": "A Sleepless",
     "wrong": [
-      "A kandra",
-      "A Returned",
-      "A shade"
+      "A hijo",
+      "A nightmare",
+      "A Cryptic"
     ],
     "explain": "Masaka hides her true nature and later helps Yumi and Design map the lands beyond the shroud.",
     "terms": [
       "Masaka",
       "Sleepless",
-      "kandra",
-      "Returned",
-      "shade",
       "Design",
       "shroud",
-      "Yumi"
+      "Yumi",
+      "hijo",
+      "Cryptic"
     ],
     "source": "Yumi and the Nightmare Painter; Coppermind: Masaka"
   },
@@ -484,7 +481,7 @@
     "q": "Which Shard Splintered herself on Komashi?",
     "a": "Virtuosity",
     "wrong": [
-      "Autonomy",
+      "Cultivation",
       "Devotion",
       "Endowment"
     ],
@@ -493,10 +490,10 @@
       "Shard",
       "Komashi",
       "Virtuosity",
-      "Autonomy",
       "Devotion",
       "Endowment",
-      "Investiture"
+      "Investiture",
+      "Cultivation"
     ],
     "source": "Yumi and the Nightmare Painter"
   },
@@ -531,13 +528,12 @@
     "a": "To outrun the deadly sunrise",
     "wrong": [
       "To follow migrating herds",
-      "To escape highstorms",
+      "To escape rising floods",
       "To stay near the ocean"
     ],
     "explain": "Anyone caught in Canticle's direct sunlight is burned to ash.",
     "terms": [
-      "Canticle",
-      "highstorms"
+      "Canticle"
     ],
     "source": "The Sunlit Man"
   },
@@ -549,19 +545,19 @@
     "q": "Who is the woman Nomad befriends and helps on Canticle?",
     "a": "Rebeke",
     "wrong": [
-      "Salay",
-      "Vathi",
-      "Akane"
+      "Compassion",
+      "Contemplation",
+      "Zeal"
     ],
     "explain": "Rebeke becomes Nomad's key ally in standing against the Cinder King.",
     "terms": [
       "Nomad",
       "Canticle",
       "Rebeke",
-      "Salay",
-      "Vathi",
-      "Akane",
-      "Cinder King"
+      "Cinder King",
+      "Compassion",
+      "Contemplation",
+      "Zeal"
     ],
     "source": "The Sunlit Man"
   },
@@ -597,17 +593,17 @@
     "q": "Which group hunts Nomad from world to world?",
     "a": "The Night Brigade",
     "wrong": [
-      "The Ghostbloods",
-      "The Sons of Honor",
-      "The Diem"
+      "The Charred",
+      "The Greater Good",
+      "The Beaconites"
     ],
     "explain": "Nomad keeps Skipping between planets to stay ahead of the Night Brigade.",
     "terms": [
       "Nomad",
       "Night Brigade",
-      "Ghostbloods",
-      "Sons of Honor",
-      "Diem"
+      "Charred",
+      "Greater Good",
+      "Beaconites"
     ],
     "source": "The Sunlit Man"
   },
@@ -619,9 +615,9 @@
     "q": "Which tyrant do Nomad and Rebeke oppose on Canticle?",
     "a": "The Cinder King",
     "wrong": [
-      "The Lord Ruler",
-      "The Sorceress",
-      "Taravangian"
+      "Zeal",
+      "The Lodestar",
+      "The Greater Good"
     ],
     "explain": "The Cinder King commands the Charred, people enslaved by a corrupted sunheart driven into their chests.",
     "terms": [
@@ -629,11 +625,11 @@
       "Rebeke",
       "Canticle",
       "Cinder King",
-      "Lord Ruler",
-      "Sorceress",
-      "Taravangian",
       "Charred",
-      "sunheart"
+      "sunheart",
+      "Zeal",
+      "Lodestar",
+      "Greater Good"
     ],
     "source": "The Sunlit Man"
   },
@@ -665,18 +661,18 @@
     "q": "What is the cause of Nomad's Torment?",
     "a": "He once held a Dawnshard",
     "wrong": [
-      "A curse from the Sorceress",
+      "A corrupted sunheart",
       "A broken Ideal",
-      "Drinking lerasium"
+      "Exposure to Canticle's sun"
     ],
     "explain": "Holding a Dawnshard leaves a lasting mark on whoever carried it.",
     "terms": [
       "Nomad",
       "Torment",
       "Dawnshard",
-      "Sorceress",
       "Ideal",
-      "lerasium"
+      "sunheart",
+      "Canticle"
     ],
     "source": "The Sunlit Man"
   },
@@ -688,20 +684,20 @@
     "q": "What kind of being is Auxiliary, Nomad's talking companion?",
     "a": "A spren-like being",
     "wrong": [
-      "A kandra",
-      "A seon",
-      "An Aviar"
+      "A Cognitive Shadow",
+      "A living sunheart",
+      "A Charred"
     ],
     "explain": "Aux was nearly destroyed by the Dawnshard Nomad once held and survives as a voice in Nomad's head.",
     "terms": [
       "Auxiliary",
       "Nomad",
-      "kandra",
-      "seon",
-      "Aviar",
       "Aux",
       "spren",
-      "Dawnshard"
+      "Dawnshard",
+      "Cognitive Shadow",
+      "sunheart",
+      "Charred"
     ],
     "source": "The Sunlit Man"
   },
@@ -820,8 +816,8 @@
     "a": "The Diem",
     "wrong": [
       "The Kerztians",
-      "The Ghostbloods",
-      "The Night Brigade"
+      "The Taishin",
+      "The Kelzin"
     ],
     "explain": "Kenton eventually becomes Lord Mastrell, leader of the Diem.",
     "terms": [
@@ -829,9 +825,9 @@
       "Kenton",
       "Diem",
       "Kerztians",
-      "Ghostbloods",
-      "Night Brigade",
-      "Lord Mastrell"
+      "Lord Mastrell",
+      "Taishin",
+      "Kelzin"
     ],
     "source": "White Sand"
   },
@@ -843,7 +839,7 @@
     "q": "Which Shard Invests Taldain through its blazing larger star?",
     "a": "Autonomy",
     "wrong": [
-      "Virtuosity",
+      "Honor",
       "Endowment",
       "Cultivation"
     ],
@@ -852,9 +848,9 @@
       "Shard",
       "Taldain",
       "Autonomy",
-      "Virtuosity",
       "Endowment",
-      "Cultivation"
+      "Cultivation",
+      "Honor"
     ],
     "source": "Arcanum Unbounded, Taldain system essay; Coppermind: Taldain system"
   },
@@ -888,18 +884,18 @@
     "q": "What are the talent-granting birds of First of the Sun called?",
     "a": "Aviar",
     "wrong": [
-      "Shades",
-      "Sleepless",
-      "Larkin"
+      "Nightmaws",
+      "Deepwalkers",
+      "Eelakin"
     ],
     "explain": "Young Aviar must visit the island of Patji to gain their talents.",
     "terms": [
       "First of the Sun",
       "Aviar",
-      "Shades",
-      "Sleepless",
-      "Larkin",
-      "Patji"
+      "Patji",
+      "Nightmaws",
+      "Deepwalkers",
+      "Eelakin"
     ],
     "source": "Sixth of the Dusk"
   },
@@ -1075,15 +1071,671 @@
     "wrong": [
       "She was buried in the Homeland",
       "Her body was never found",
-      "She returned as a kandra"
+      "She was burned on a pyre"
     ],
     "explain": "Silence's grandmother came from the Homeland before it fell to the Evil.",
     "terms": [
       "Silence",
       "Homeland",
-      "kandra",
       "Evil"
     ],
     "source": "Shadows for Silence in the Forests of Hell; Coppermind: Silence's grandmother"
+  },
+  {
+    "id": "otros-051",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "tress",
+    "q": "What job does Tress take on aboard the Crow's Song?",
+    "a": "Sprouter",
+    "wrong": [
+      "Helmswoman",
+      "Carpenter",
+      "Quartermaster"
+    ],
+    "explain": "As the ship's sprouter, Tress handles its spores, learning the basics from Ann and Ulaam.",
+    "terms": [
+      "Tress",
+      "Crow's Song",
+      "sprouter",
+      "Ann",
+      "Ulaam"
+    ],
+    "source": "Tress of the Emerald Sea; Coppermind: Ulaam"
+  },
+  {
+    "id": "otros-052",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "tress",
+    "q": "What is Dr. Ulaam, the Crow's Song's surgeon, secretly?",
+    "a": "A kandra",
+    "wrong": [
+      "A dragon",
+      "An aether",
+      "A cursed rat"
+    ],
+    "explain": "Ulaam is a kandra from Scadrial who had joined the crew about a year before Tress arrived.",
+    "terms": [
+      "Ulaam",
+      "Crow's Song",
+      "kandra",
+      "aether",
+      "Scadrial",
+      "Tress"
+    ],
+    "source": "Tress of the Emerald Sea; Coppermind: Ulaam"
+  },
+  {
+    "id": "otros-053",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "tress",
+    "q": "Why did Ann originally sign on to the Crow's Song as its carpenter?",
+    "a": "To avoid being drafted into the king's army",
+    "wrong": [
+      "To pay off her family's debts",
+      "To hunt down the Sorceress",
+      "To search for a lost brother"
+    ],
+    "explain": "Ann later volunteered to serve as the ship's assistant cannonmaster.",
+    "terms": [
+      "Ann",
+      "Crow's Song",
+      "Sorceress"
+    ],
+    "source": "Tress of the Emerald Sea; Coppermind: Ann"
+  },
+  {
+    "id": "otros-054",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "tress",
+    "q": "What do roseite spores do when they touch water?",
+    "a": "Grow into crystal",
+    "wrong": [
+      "Grow sharp red spines",
+      "Release a burst of air",
+      "Turn into a thick foam"
+    ],
+    "explain": "Sprouters use roseite crystal to patch damaged hulls; roseite also resists silver better than most spores.",
+    "terms": [
+      "roseite spores",
+      "sprouters"
+    ],
+    "source": "Tress of the Emerald Sea; Coppermind: Aether spores"
+  },
+  {
+    "id": "otros-055",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "tress",
+    "q": "What lowly position does Hoid hold aboard the Crow's Song?",
+    "a": "Cabin boy",
+    "wrong": [
+      "Quartermaster",
+      "Surgeon",
+      "Helmsman"
+    ],
+    "explain": "Hoid, the book's narrator, mops the Crow's Song's decks while under the Sorceress's curse.",
+    "terms": [
+      "Hoid",
+      "Crow's Song",
+      "Sorceress"
+    ],
+    "source": "Tress of the Emerald Sea"
+  },
+  {
+    "id": "otros-056",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "yumi",
+    "q": "What did the father machine turn most of Torio's people into?",
+    "a": "Nightmares",
+    "wrong": [
+      "Hijo",
+      "Stone statues",
+      "Living hion lines"
+    ],
+    "explain": "Built to harvest Investiture from the hijo, the machine created the shroud and held the dead captive as Cognitive Shadows.",
+    "terms": [
+      "father machine",
+      "Torio",
+      "hijo",
+      "hion",
+      "Investiture",
+      "shroud",
+      "Cognitive Shadows"
+    ],
+    "source": "Yumi and the Nightmare Painter; Coppermind: Father machine"
+  },
+  {
+    "id": "otros-057",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "yumi",
+    "q": "What had really been happening to Yumi before she was linked to Painter?",
+    "a": "She relived the same day over and over, her memory reset each time",
+    "wrong": [
+      "She slept frozen inside a shrine",
+      "She was trapped in Painter's dreams",
+      "She was a spirit bound inside a stone stack"
+    ],
+    "explain": "Killed by the father machine, Yumi was trapped in a simulation of her old life for some seventeen centuries.",
+    "terms": [
+      "Yumi",
+      "Painter",
+      "father machine"
+    ],
+    "source": "Yumi and the Nightmare Painter; Coppermind: Yumi"
+  },
+  {
+    "id": "otros-058",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "yumi",
+    "q": "What did the Cryptic Design open in Kilahito while Hoid was frozen in time?",
+    "a": "A noodle shop",
+    "wrong": [
+      "A painting school",
+      "A tea house",
+      "A bookshop"
+    ],
+    "explain": "Design ran the Noodle Pupil with the cook Namakudo and later left it to Yumi and Painter, who renamed it the Noodle Princess.",
+    "terms": [
+      "Cryptic",
+      "Design",
+      "Kilahito",
+      "Hoid",
+      "Noodle Pupil",
+      "Namakudo",
+      "Yumi",
+      "Painter",
+      "Noodle Princess"
+    ],
+    "source": "Yumi and the Nightmare Painter; Coppermind: Noodle Pupil"
+  },
+  {
+    "id": "otros-059",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "yumi",
+    "q": "What are the hijo, the spirits that yoki-hijo summon on Komashi?",
+    "a": "Splinters of Virtuosity",
+    "wrong": [
+      "Cognitive Shadows of the dead",
+      "Fragments of the shroud",
+      "Sparks of living hion"
+    ],
+    "explain": "Hijo live underground and are drawn to thoughts, emotions and art, such as carefully stacked stones.",
+    "terms": [
+      "hijo",
+      "yoki-hijo",
+      "Komashi",
+      "Virtuosity",
+      "Cognitive Shadows",
+      "shroud",
+      "hion"
+    ],
+    "source": "Yumi and the Nightmare Painter; Coppermind: Hijo"
+  },
+  {
+    "id": "otros-060",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "yumi",
+    "q": "Which of these women served as one of Yumi's attendants under Liyun?",
+    "a": "Hwanji",
+    "wrong": [
+      "Akane",
+      "Masaka",
+      "Izumakamo"
+    ],
+    "explain": "Hwanji, known for humming as she worked, had previously attended another yoki-hijo, Dwookim.",
+    "terms": [
+      "Yumi",
+      "Liyun",
+      "Hwanji",
+      "Akane",
+      "Masaka",
+      "Izumakamo",
+      "yoki-hijo",
+      "Dwookim"
+    ],
+    "source": "Yumi and the Nightmare Painter, ch. 2; Coppermind: Hwanji"
+  },
+  {
+    "id": "otros-061",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "sunlit-man",
+    "q": "Where do Canticle's sunhearts come from?",
+    "a": "The Investiture of people who die there",
+    "wrong": [
+      "Meteorites that fall at dawn",
+      "Crystals mined in the darkness",
+      "The ashes of burned forests"
+    ],
+    "explain": "On Canticle a dead person's Investiture becomes a sunheart rather than a shade, and sunhearts power the flying cities.",
+    "terms": [
+      "Canticle",
+      "sunhearts",
+      "Investiture",
+      "shade"
+    ],
+    "source": "The Sunlit Man; Coppermind: Canticle"
+  },
+  {
+    "id": "otros-062",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "sunlit-man",
+    "q": "Nomad and Aux conclude that Canticle's people descend from settlers from which planet?",
+    "a": "Threnody",
+    "wrong": [
+      "Scadrial",
+      "Roshar",
+      "Taldain"
+    ],
+    "explain": "Canticle is a Threnodite settlement; the Cinder King and Elegy are both Threnodites.",
+    "terms": [
+      "Nomad",
+      "Aux",
+      "Canticle",
+      "Threnody",
+      "Scadrial",
+      "Roshar",
+      "Taldain",
+      "Threnodite",
+      "Cinder King",
+      "Elegy"
+    ],
+    "source": "The Sunlit Man; Coppermind: Cinder King"
+  },
+  {
+    "id": "otros-063",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "sunlit-man",
+    "q": "What title does each city on Canticle give to its elected chief navigator and leader?",
+    "a": "Lodestar",
+    "wrong": [
+      "Greater Good",
+      "Sunlit One",
+      "Prospector"
+    ],
+    "explain": "In Beacon, the Greater Good council voted to name Elegy as the new Lodestar.",
+    "terms": [
+      "Canticle",
+      "Lodestar",
+      "Greater Good",
+      "Sunlit One",
+      "Beacon",
+      "Elegy"
+    ],
+    "source": "The Sunlit Man; Coppermind: Canticle"
+  },
+  {
+    "id": "otros-064",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "sunlit-man",
+    "q": "What are Canticle's flying cities, such as Beacon, built from?",
+    "a": "Many smaller ships linked together",
+    "wrong": [
+      "A single hollowed-out mountain",
+      "Platforms riding on rails",
+      "Floating islands of rock"
+    ],
+    "explain": "The linked ships can be steered as one, kept aloft by sunhearts.",
+    "terms": [
+      "Canticle",
+      "Beacon",
+      "sunhearts"
+    ],
+    "source": "The Sunlit Man; Coppermind: Beacon"
+  },
+  {
+    "id": "otros-065",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "sunlit-man",
+    "q": "How is Elegy, the Lodestar of Beacon, related to Rebeke?",
+    "a": "She is her sister",
+    "wrong": [
+      "She is her mother",
+      "She is her aunt",
+      "She is her grandmother"
+    ],
+    "explain": "Rebeke and Elegy, along with their brother Divinity, belong to the Salvage family.",
+    "terms": [
+      "Elegy",
+      "Lodestar",
+      "Beacon",
+      "Rebeke",
+      "Divinity",
+      "Salvage"
+    ],
+    "source": "The Sunlit Man; Coppermind: Elegy Salvage"
+  },
+  {
+    "id": "otros-066",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "white-sand",
+    "q": "Besides sand mastery, what else turns Taldain's white sand black?",
+    "a": "Contact with water",
+    "wrong": [
+      "Exposure to darkness",
+      "Being trodden on",
+      "Strong wind"
+    ],
+    "explain": "Wet sand glows and blackens, just like sand that has been mastered, until sunlight recharges it.",
+    "terms": [
+      "sand mastery",
+      "Taldain"
+    ],
+    "source": "White Sand; Coppermind: Sand mastery"
+  },
+  {
+    "id": "otros-067",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "arcanum",
+    "q": "What gives Taldain's Invested sand its white color?",
+    "a": "A microorganism living on the grains",
+    "wrong": [
+      "Salt crusted on the grains",
+      "Ground-up bone",
+      "Sunlight trapped inside the glass"
+    ],
+    "explain": "The organism draws on the light of Taldain's larger sun; when its Investiture is spent, the sand turns black.",
+    "terms": [
+      "Taldain",
+      "Investiture"
+    ],
+    "source": "Arcanum Unbounded, The Taldain System; Coppermind: Sand mastery"
+  },
+  {
+    "id": "otros-068",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "white-sand",
+    "q": "How many Taisha sit on the Taishin, the ruling council of Lossand?",
+    "a": "Eight",
+    "wrong": [
+      "Five",
+      "Seven",
+      "Twelve"
+    ],
+    "explain": "Each Taisha heads one of Lossand's Professions; the Lord Mastrell speaks for the Diem.",
+    "terms": [
+      "Taisha",
+      "Taishin",
+      "Lossand",
+      "Professions",
+      "Lord Mastrell",
+      "Diem"
+    ],
+    "source": "White Sand; Coppermind: Taishin"
+  },
+  {
+    "id": "otros-069",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "white-sand",
+    "q": "What did Kenton do during his run of the Mastrell's Path that was thought impossible?",
+    "a": "Killed the deep sandling that guarded it",
+    "wrong": [
+      "Finished it without using sand mastery",
+      "Completed it in a single night",
+      "Crossed it without any water"
+    ],
+    "explain": "Killing the sandling destroyed the Path forever, and Undermastrell Elorin ruled that Kenton had ruined the test.",
+    "terms": [
+      "Kenton",
+      "Mastrell's Path",
+      "sandling",
+      "sand mastery",
+      "Undermastrell",
+      "Elorin"
+    ],
+    "source": "White Sand; Coppermind: Kenton"
+  },
+  {
+    "id": "otros-070",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "white-sand",
+    "q": "During which event do the Kerztian warrior-priests attack the Diem?",
+    "a": "An advancement ceremony",
+    "wrong": [
+      "The Lord Mastrell's funeral",
+      "A meeting of the Taishin",
+      "A sandling hunt"
+    ],
+    "explain": "Almost every Sand Master is killed, and Kenton believes he is the only survivor.",
+    "terms": [
+      "Kerztian",
+      "Diem",
+      "Lord Mastrell",
+      "Taishin",
+      "sandling",
+      "Sand Master",
+      "Kenton"
+    ],
+    "source": "White Sand; Coppermind: Kenton"
+  },
+  {
+    "id": "otros-071",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "shadows-for-silence",
+    "q": "Which notorious highwayman does Silence hunt to pay off her debts?",
+    "a": "Chesterton Divide",
+    "wrong": [
+      "Red Young",
+      "Daggon",
+      "Theopolis"
+    ],
+    "explain": "As the White Fox, Silence tracks Chesterton and his crew through the Forests of Hell.",
+    "terms": [
+      "Silence",
+      "Chesterton Divide",
+      "Red Young",
+      "Daggon",
+      "Theopolis",
+      "White Fox",
+      "Forests of Hell"
+    ],
+    "source": "Shadows for Silence in the Forests of Hell; Coppermind: Silence Montane"
+  },
+  {
+    "id": "otros-072",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "shadows-for-silence",
+    "q": "Who is the creditor threatening to take over Silence's waystop?",
+    "a": "Theopolis",
+    "wrong": [
+      "Chesterton Divide",
+      "Daggon",
+      "Dob"
+    ],
+    "explain": "Theopolis warns Silence that he will seize the waystop if she cannot pay her debts.",
+    "terms": [
+      "Silence",
+      "Theopolis",
+      "Chesterton Divide",
+      "Daggon",
+      "Dob"
+    ],
+    "source": "Shadows for Silence in the Forests of Hell, ch. 1"
+  },
+  {
+    "id": "otros-073",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "shadows-for-silence",
+    "q": "Who is the stableman at Silence's waystop?",
+    "a": "Dob",
+    "wrong": [
+      "Daggon",
+      "Theopolis",
+      "Red Young"
+    ],
+    "explain": "In the first chapter Silence sends Dob on his break so she can water the horses herself.",
+    "terms": [
+      "Silence",
+      "Dob",
+      "Daggon",
+      "Theopolis",
+      "Red Young"
+    ],
+    "source": "Shadows for Silence in the Forests of Hell, ch. 1"
+  },
+  {
+    "id": "otros-074",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "shadows-for-silence",
+    "q": "Who is Red Young?",
+    "a": "A bounty hunter from the forts",
+    "wrong": [
+      "A member of Chesterton's crew",
+      "Silence's late husband",
+      "A traveling silver merchant"
+    ],
+    "explain": "Red Young is one of the bounty hunters working out of the forts on Threnody.",
+    "terms": [
+      "Red Young",
+      "Chesterton",
+      "Silence",
+      "Threnody"
+    ],
+    "source": "Shadows for Silence in the Forests of Hell; Coppermind: Red Young"
+  },
+  {
+    "id": "otros-075",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "arcanum",
+    "q": "According to Khriss's essay, how many continents does Threnody have?",
+    "a": "Two",
+    "wrong": [
+      "One",
+      "Three",
+      "Five"
+    ],
+    "explain": "The larger continent was overrun by the Evil, while the smaller, forested one became the Forests of Hell.",
+    "terms": [
+      "Khriss",
+      "Threnody",
+      "Evil",
+      "Forests of Hell"
+    ],
+    "source": "Arcanum Unbounded, The Threnodite System"
+  },
+  {
+    "id": "otros-076",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "sixth-of-the-dusk",
+    "q": "How do the Eelakin regard the islands of the Pantheon?",
+    "a": "As gods",
+    "wrong": [
+      "As cursed lands",
+      "As the tombs of their ancestors",
+      "As the property of their king"
+    ],
+    "explain": "Each trapper serves as a kind of priest of the island he traps.",
+    "terms": [
+      "Eelakin",
+      "Pantheon"
+    ],
+    "source": "Sixth of the Dusk; Coppermind: Pantheon"
+  },
+  {
+    "id": "otros-077",
+    "category": "otros",
+    "difficulty": 3,
+    "work": "sixth-of-the-dusk",
+    "q": "What is the trading company's machine from the Ones Above meant to do on Patji?",
+    "a": "Locate all of the island's Aviar",
+    "wrong": [
+      "Drain the island's poisons",
+      "Drive off the nightmaws",
+      "Map the ocean floor"
+    ],
+    "explain": "Dusk and Vathi race to stop it, and Dusk realizes the Ones Above are spreading their technology to gain control of his world.",
+    "terms": [
+      "Ones Above",
+      "Patji",
+      "Aviar",
+      "nightmaws",
+      "Dusk",
+      "Vathi"
+    ],
+    "source": "Sixth of the Dusk; Coppermind: Sixth of the Dusk (character)"
+  },
+  {
+    "id": "otros-078",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "sixth-of-the-dusk",
+    "q": "What actually grants the Aviar their talents?",
+    "a": "A parasite they pick up on the islands",
+    "wrong": [
+      "Minerals in the island springs",
+      "The songs of older birds",
+      "Their bond with a trapper"
+    ],
+    "explain": "Sak, raised on the mainland, gained her talent only after Dusk brought her to Patji, where she ate the parasites.",
+    "terms": [
+      "Aviar",
+      "Sak",
+      "Dusk",
+      "Patji"
+    ],
+    "source": "Sixth of the Dusk; Coppermind: Aviar"
+  },
+  {
+    "id": "otros-079",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "sixth-of-the-dusk",
+    "q": "Who was Dusk's mentor as a trapper?",
+    "a": "His uncle",
+    "wrong": [
+      "His father",
+      "His grandfather",
+      "His older brother"
+    ],
+    "explain": "After his uncle died on a trip to Patji, Dusk became a trapper of that island alone, as tradition demanded.",
+    "terms": [
+      "Dusk",
+      "Patji"
+    ],
+    "source": "Sixth of the Dusk; Coppermind: Sixth of the Dusk (character)"
+  },
+  {
+    "id": "otros-080",
+    "category": "otros",
+    "difficulty": 4,
+    "work": "sixth-of-the-dusk",
+    "q": "What is a deepwalker?",
+    "a": "A huge sea predator that hunts by sensing minds",
+    "wrong": [
+      "A venomous jungle insect",
+      "A trapper who works alone",
+      "A diving ship of the Ones Above"
+    ],
+    "explain": "A deepwalker appears to have wrecked the trading company's camp on Patji.",
+    "terms": [
+      "deepwalker",
+      "Ones Above",
+      "Patji"
+    ],
+    "source": "Sixth of the Dusk; Coppermind: Deepwalker"
   }
 ]
