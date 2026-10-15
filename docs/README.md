@@ -40,8 +40,8 @@ estático con HTTPS (GitHub Pages, Netlify, Cloudflare Pages…).
 | El Cosmere | 80 |
 
 460 preguntas por idioma, 4 niveles de dificultad (fácil, media, difícil y experto), repartidas a partes iguales
-(Nalthis: 16/16/16/12). En los mundos-planeta, las cuatro opciones de cada pregunta son siempre del mismo planeta; y cada una etiquetada con el libro más tardío
-que hace falta para conocer la respuesta.
+(Nalthis: 16/16/16/12). Cada pregunta está etiquetada con el libro más tardío que hace falta para
+conocer la respuesta. En los mundos-planeta, las cuatro opciones son siempre del mismo planeta.
 
 **Nombres**: en cada idioma se usan los de la edición oficial publicada en ese idioma
 (p. ej. *Hoja esquirlada* / *Lame d'éclat* / *Splitterklinge* / *Stratolama*; *Sagaz*, *Sondeluz*,
@@ -55,7 +55,7 @@ término están en `content/glossary.json` (`official`, `community`, `unchanged`
 app/                PWA (HTML/CSS/JS sin dependencias) — ver docs/ENGINE.md
 content/en/*.json   preguntas canónicas (inglés)
 content/<lang>/     traducciones + revisión terminológica + títulos oficiales
-content/glossary.json  glosario de ~830 términos en 5 idiomas
+content/glossary.json  glosario de ~1.100 términos en 5 idiomas
 docs/SPEC.md        especificación y formato de datos
 tools/build.mjs     valida el contenido y genera app/data/questions.<lang>.json
 tools/terms.mjs     términos de las preguntas que faltan en el glosario
