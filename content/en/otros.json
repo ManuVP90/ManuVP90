@@ -437,7 +437,7 @@
     "wrong": [
       "Liyun",
       "Vathi",
-      "Rain"
+      "Rebeke"
     ],
     "explain": "Painter meets Akane and Tojin on patrol at the city's western edge.",
     "terms": [
@@ -445,7 +445,7 @@
       "Akane",
       "Liyun",
       "Vathi",
-      "Rain",
+      "Rebeke",
       "Painter",
       "Tojin"
     ],
@@ -547,17 +547,17 @@
     "difficulty": 1,
     "work": "sunlit-man",
     "q": "Who is the woman Nomad befriends and helps on Canticle?",
-    "a": "Rain",
+    "a": "Rebeke",
     "wrong": [
       "Salay",
       "Vathi",
       "Akane"
     ],
-    "explain": "Rain becomes Nomad's key ally in standing against the Cinder King.",
+    "explain": "Rebeke becomes Nomad's key ally in standing against the Cinder King.",
     "terms": [
       "Nomad",
       "Canticle",
-      "Rain",
+      "Rebeke",
       "Salay",
       "Vathi",
       "Akane",
@@ -616,7 +616,7 @@
     "category": "otros",
     "difficulty": 2,
     "work": "sunlit-man",
-    "q": "Which tyrant do Nomad and Rain oppose on Canticle?",
+    "q": "Which tyrant do Nomad and Rebeke oppose on Canticle?",
     "a": "The Cinder King",
     "wrong": [
       "The Lord Ruler",
@@ -626,7 +626,7 @@
     "explain": "The Cinder King commands the Charred, people enslaved by a corrupted sunheart driven into their chests.",
     "terms": [
       "Nomad",
-      "Rain",
+      "Rebeke",
       "Canticle",
       "Cinder King",
       "Lord Ruler",
