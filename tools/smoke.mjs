@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 // End-to-end smoke test (Playwright + Chromium) on a phone viewport.
 // Usage: node tools/smoke.mjs        (SCREENSHOT_DIR=/some/dir to choose where PNGs go)
-// Plays a full classic game with 2 players to victory, checks resume after reload,
-// cycles through all 5 languages, plays a quick game to the end, opens practice,
-// stats and about, and checks the app loads offline. Fails on any console error.
+// Plays a full classic game with 2 players to victory on "Difícil" using each lifeline once,
+// checks resume after reload, cycles through all 5 languages, plays a quick game on "Fácil",
+// practices difficulty 4 (fallback while there is no expert data), opens stats and about,
+// migrates a v1 save, and checks the app loads offline. Fails on any console error.
 import { createRequire } from 'node:module';
 import { execSync } from 'node:child_process';
 import { mkdirSync, readFileSync } from 'node:fs';
@@ -25,11 +26,18 @@ const LANGS = ['es', 'en', 'fr', 'de', 'it'];
 const strings = Object.fromEntries(LANGS.map((l) => [l, JSON.parse(readFileSync(join(APP_DIR, 'i18n', `${l}.json`), 'utf8'))]));
 // Correct answer for each question text, per language (o[0] is always correct).
 const answers = {};
+const diffOf = {}; // question text -> difficulty
+let maxDiff = 0;
 for (const l of LANGS) {
   try {
-    for (const q of JSON.parse(readFileSync(join(APP_DIR, 'data', `questions.${l}.json`), 'utf8'))) answers[q.q] = q.o[0];
+    for (const q of JSON.parse(readFileSync(join(APP_DIR, 'data', `questions.${l}.json`), 'utf8'))) {
+      answers[q.q] = q.o[0];
+      diffOf[q.q] = q.d;
+      maxDiff = Math.max(maxDiff, q.d);
+    }
   } catch { /* missing language file */ }
 }
+const hasD4 = maxDiff >= 4;
 
 const server = await startServer(0);
 const BASE = `http://127.0.0.1:${server.address().port}/`;
@@ -54,7 +62,7 @@ async function answer(correct = true) {
   const qtext = (await page.textContent('.qtext')).trim();
   const right = answers[qtext];
   assert(right, `unknown question text: ${qtext}`);
-  const opts = page.locator('.qcard .option');
+  const opts = page.locator('.qcard .option:not([disabled])'); // skip options removed by lifelines
   const texts = await opts.locator('.option-text').allTextContents();
   let idx = texts.findIndex((t) => (t.trim() === right) === correct);
   if (idx < 0) idx = 0;
@@ -62,6 +70,11 @@ async function answer(correct = true) {
   await page.waitForSelector('.qcard .continue:not([hidden])');
   return correct;
 }
+
+const qText = async () => (await page.textContent('.qtext')).trim();
+const qId = async () => page.getAttribute('.qtext', 'id');
+const enabledOptions = () => page.locator('.qcard .option:not([disabled])').count();
+const lifelineBtn = (kind) => page.locator(`.qcard .lifeline-${kind}`);
 
 try {
   // ---------------------------------------------------------------- home (auto-detected es)
@@ -79,17 +92,29 @@ try {
   await page.fill('#pname-0', 'Shallan');
   await page.fill('#pname-1', 'Vin');
   await page.click('.setup-player >> nth=1 >> .swatch >> nth=4'); // amethyst for player 2
+  assert(await page.getAttribute('.level-opt[data-level="normal"]', 'aria-checked') === 'true', 'level defaults to Normal');
+  await page.click('.level-opt[data-level="hard"]');
+  assert(await page.getAttribute('.level-opt[data-level="hard"]', 'aria-checked') === 'true', 'Difícil selected');
+  await page.locator('.level-card').scrollIntoViewIfNeeded();
+  await shot('02-setup-level');
+  await page.evaluate(() => window.scrollTo(0, 0));
   await shot('02-setup');
   await page.click('.sticky-actions .btn-primary');
-  log('classic setup with 2 players');
+  log('classic setup with 2 players on "Difícil"');
 
   // ---------------------------------------------------------------- classic: play to victory
   let questions = 0;
   let firstSpinShot = false;
   let wrongDone = false;
+  let badgeChecked = false;
+  const usedLifelines = new Set();
   for (let guard = 0; guard < 400; guard++) {
     await page.waitForSelector('.handoff, .spin, .choose, .final-intro, .question, .victory');
     if (await page.$('.victory')) break;
+    if (!badgeChecked && await page.$('.level-badge')) {
+      assert((await page.textContent('.level-badge-text')).trim() === T('es', 'level.hard'), 'game bar shows the level');
+      badgeChecked = true;
+    }
     if (await page.$('.handoff')) {
       if (questions === 0) await shot('03-handoff');
       await page.click('.handoff .btn-primary');
@@ -113,10 +138,66 @@ try {
       await page.click('.final-intro .btn-final');
     } else if (await page.$('.question')) {
       const isFinal = !!(await page.$('.qcard.final'));
-      if (questions === 0) await shot('07-question');
+      const d = diffOf[await qText()];
+      if (isFinal) {
+        assert(!(await page.$('.qcard .lifelines')), 'no lifelines on the final question');
+        assert(d === (hasD4 ? 4 : 3), `final question on Difícil is difficulty 4, or the nearest available (got ${d})`);
+      } else {
+        assert(d >= 2, `Difícil draws difficulty 2-4 (got ${d})`);
+        assert(await page.$('.qcard .lifelines'), 'lifeline row under the question');
+      }
+      if (questions === 0) {
+        await shot('07-question');
+        await page.click('.lifeline-help-btn');
+        await page.waitForSelector('.lifeline-help:not([hidden])');
+        await shot('07b-lifeline-help');
+        await page.click('.lifeline-help-btn');
+      }
       if (isFinal) {
         await shot('10-final-question');
         await page.emulateMedia({ reducedMotion: 'no-preference' });
+      }
+      if (questions === 0) {
+        // Stormlight (Shallan): armed before answering, a wrong pick is struck and she chooses again.
+        await lifelineBtn('stormlight').click();
+        await page.waitForSelector('.qcard .lifeline-stormlight.armed');
+        await shot('07c-stormlight-armed');
+        const right = answers[await qText()];
+        const texts = await page.locator('.qcard .option .option-text').allTextContents();
+        await page.locator('.qcard .option').nth(texts.findIndex((x) => x.trim() !== right)).click();
+        await page.waitForSelector('.qcard .option.struck');
+        assert(await page.locator('.qcard .continue').isHidden(), 'Stormlight: no reveal after the first wrong pick');
+        assert(!(await page.$('.qcard .option.correct')), 'Stormlight: correct answer not revealed');
+        assert(await enabledOptions() === 3, 'Stormlight: 3 options left to choose from');
+        assert(await lifelineBtn('stormlight').evaluate((b) => b.classList.contains('used')), 'Stormlight shown as used');
+        await shot('07d-stormlight-retry');
+        usedLifelines.add('stormlight');
+      }
+      if (questions === 1) {
+        // Breath (Vin): the question is swapped for another of the same category and difficulty.
+        const before = await qId();
+        const beforeD = diffOf[await qText()];
+        const beforeCat = await page.textContent('.qcard .cat-pill');
+        await lifelineBtn('breath').click();
+        await page.waitForFunction((id) => document.querySelector('.qtext')?.id !== id, before);
+        assert(diffOf[await qText()] === beforeD, 'Breath keeps the difficulty');
+        assert(await page.textContent('.qcard .cat-pill') === beforeCat, 'Breath keeps the category');
+        assert(await lifelineBtn('breath').evaluate((b) => b.disabled && b.classList.contains('used')), 'Breath shown as used');
+        usedLifelines.add('breath');
+        // Atium: two wrong answers removed, two options left.
+        await lifelineBtn('atium').click();
+        await page.waitForSelector('.qcard .option.eliminated');
+        assert(await page.locator('.qcard .option.eliminated').count() === 2, 'Atium removes two options');
+        assert(await enabledOptions() === 2, 'Atium leaves 2 options');
+        const right = answers[await qText()];
+        const left = await page.locator('.qcard .option:not([disabled]) .option-text').allTextContents();
+        assert(left.some((x) => x.trim() === right), 'Atium keeps the correct answer');
+        await shot('07e-atium');
+        usedLifelines.add('atium');
+      }
+      if (questions === 2) {
+        const used = await page.locator('.qcard .lifeline.used').count();
+        assert(used === 2 || used === 1, `lifelines stay spent for the rest of the game (used: ${used})`);
       }
       // First answer is wrong on purpose (turn must pass to player 2), then always right.
       const correct = wrongDone ? true : (wrongDone = true, false);
@@ -139,7 +220,8 @@ try {
   await page.waitForTimeout(900);
   await shot('12-victory');
   assert((await page.textContent('.victory-title')).includes('Vin'), 'player 2 (Vin) wins after player 1 missed');
-  log(`classic game won by Vin after ${questions} questions (wrong answer passed the turn)`);
+  assert(usedLifelines.size === 3, 'each lifeline used once');
+  log(`classic game on Difícil won by Vin after ${questions} questions (Stormlight retry, Breath swap, Atium 2 options)`);
   await page.click('.victory .btn-ghost');
   await page.waitForSelector('.home');
   assert(!(await page.$('.menu-continue')), 'finished game is no longer resumable');
@@ -176,9 +258,21 @@ try {
   // ---------------------------------------------------------------- quick game
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.click('.menu-btn >> nth=1');
+  await page.waitForSelector('.quick-intro');
+  assert(await page.getAttribute('.level-opt[data-level="hard"]', 'aria-checked') === 'true', 'last level choice remembered');
+  await page.click('.level-opt[data-level="easy"]');
+  await shot('17a-quick-intro');
+  await page.click('.quick-intro .sticky-actions .btn-primary');
   for (let i = 0; ; i++) {
     await page.waitForSelector('.quick .qcard, .quick-result');
     if (await page.$('.quick-result')) break;
+    if (i === 0) assert((await page.textContent('.level-badge-text')).trim() === T('es', 'level.easy'), 'quick game shows level');
+    assert(diffOf[await qText()] === 1, 'Fácil draws difficulty 1');
+    if (i === 2) { // one lifeline in quick mode
+      await lifelineBtn('atium').click();
+      assert(await enabledOptions() === 2, 'Atium in quick game');
+    }
+    if (i === 3) assert(await lifelineBtn('atium').evaluate((b) => b.disabled), 'quick game: one Atium per game');
     await answer(i % 4 !== 3);
     if (i === 1) await shot('17-quick-question');
     await page.click('.qcard .continue');
@@ -188,16 +282,26 @@ try {
   await shot('18-quick-result');
   const scoreText = await page.textContent('.result-score');
   assert(/\d/.test(scoreText), 'quick score shown');
-  log(`quick game finished: ${scoreText.trim()}`);
+  log(`quick game on Fácil finished: ${scoreText.trim()}`);
   await page.click('.quick-result .btn-ghost');
 
   // ---------------------------------------------------------------- practice
   await page.click('.menu-btn >> nth=2');
   await page.waitForSelector('.practice-setup');
   await page.click('.chips >> nth=0 >> .chip >> nth=1');
-  await page.click('.chips >> nth=1 >> .chip >> nth=3');
+  assert(await page.locator('.chips >> nth=1 >> .chip').count() === 5, 'practice offers any + 4 difficulties');
+  await page.click('.chips >> nth=1 >> .chip >> nth=4'); // Experto
+  if (!hasD4) {
+    await page.waitForSelector('.practice-note:not([hidden])');
+    assert((await page.textContent('.practice-note')).includes(T('es', 'difficulty.4')), 'fallback message names Experto');
+  }
+  assert(await page.isEnabled('.practice-setup .sticky-actions .btn-primary'), 'practice can start (with fallback)');
   await shot('19-practice-setup');
   await page.click('.practice-setup .sticky-actions .btn-primary');
+  await page.waitForSelector('.practice .qcard');
+  assert(diffOf[await qText()] === (hasD4 ? 4 : 3), 'practice difficulty 4 (or nearest available)');
+  assert(!(await page.$('.qcard .lifelines')), 'no lifelines in practice');
+  assert(await page.locator('.qcard .pips i').count() === 4, 'difficulty pips show 4 levels');
   await answer(false);
   await shot('20-practice-question');
   assert(await page.$('.explain'), 'practice shows explanation');
@@ -206,16 +310,21 @@ try {
   await page.click('.topbar .icon-btn');
   await page.waitForSelector('.practice-setup');
   await page.click('.topbar .icon-btn');
-  log('practice mode');
+  log(`practice difficulty 4 (${hasD4 ? 'expert questions' : 'no expert data yet: fallback message + nearest difficulty'})`);
 
   // ---------------------------------------------------------------- stats & about
   await page.click('.small-btn >> nth=0');
   await page.waitForSelector('.stats .bar-row');
+  const llUses = (await page.locator('.lifeline-stats-value').allTextContents()).map(Number);
+  assert(llUses.length === 3 && llUses[0] >= 2 && llUses[1] >= 1 && llUses[2] >= 1, `lifeline uses counted (${llUses})`);
   await shot('21-stats');
   await page.click('.topbar .icon-btn');
   await page.click('.small-btn >> nth=2');
   await page.waitForSelector('.about .disclaimer');
+  assert(await page.locator('.about-lifelines li').count() === 3, 'about explains the 3 lifelines');
   await shot('22-about');
+  await page.locator('#about-lifelines').scrollIntoViewIfNeeded();
+  await shot('22b-about-lifelines');
   await page.click('.topbar .icon-btn');
   log('stats and about');
 
@@ -242,6 +351,27 @@ try {
   await page.click('.small-btn >> nth=1');
   await page.click('.btn-row .btn >> nth=0'); // select all again
   await page.click('.topbar .icon-btn');
+
+  // ---------------------------------------------------------------- v1 save migration
+  const anyQ = pool.find((q) => q.d <= 3);
+  await page.evaluate((q) => {
+    localStorage.setItem('cosmere-trivia:classic', JSON.stringify({
+      v: 1, players: [{ name: 'Kelsier', color: 'scadrial', charges: { scadrial: 1 } }], current: 0, phase: 'question', timer: false,
+      categories: ['roshar', 'scadrial', 'sel', 'nalthis', 'otros', 'cosmere'], used: {}, pending: { id: q.id, cat: q.c, order: [0, 1, 2, 3], final: false },
+      asked: 3, winner: null, startedAt: Date.now(),
+    }));
+  }, anyQ);
+  await page.reload();
+  await page.waitForSelector('.home .menu-continue');
+  await page.click('.home .menu-continue');
+  await page.waitForSelector('.question .qcard');
+  assert((await page.textContent('.level-badge-text')).trim() === T('es', 'level.normal'), 'v1 save migrates to Normal');
+  assert(await page.locator('.qcard .lifeline:not([disabled])').count() === 3, 'v1 save gets lifelines');
+  assert(await page.evaluate(() => JSON.parse(localStorage.getItem('cosmere-trivia:classic')).v) === 2, 'save upgraded to v2');
+  await page.evaluate(() => localStorage.removeItem('cosmere-trivia:classic'));
+  await page.click('.topbar .icon-btn');
+  await page.waitForSelector('.home');
+  log('v1 saved game migrated (level Normal, full lifelines)');
 
   // ---------------------------------------------------------------- offline
   await page.evaluate(() => navigator.serviceWorker.ready);

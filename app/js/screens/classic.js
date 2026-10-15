@@ -3,24 +3,27 @@ import { h, svg } from '../dom.js';
 import { ICONS, gemSvg } from '../icons.js';
 import { t } from '../i18n.js';
 import {
-  app, go, screen, topBar, iconButton, toggle, toast, makePool, recordAnswer,
-  updateStats, catStyle, setBack, onCleanup,
+  app, go, screen, topBar, iconButton, toggle, toast, makePool, recordAnswer, recordLifeline,
+  updateStats, catStyle, setBack, onCleanup, levelPicker, levelBadge,
 } from '../core.js';
 import * as store from '../storage.js';
-import { CATEGORIES, MIN_PLAYERS, MAX_PLAYERS } from '../config.js';
-import { newClassicGame, isValidState, applyAnswer, startPhase, isInfused } from '../game.js';
+import { CATEGORIES, MIN_PLAYERS, MAX_PLAYERS, LEVELS, levelOrDefault, fullLifelines } from '../config.js';
+import { newClassicGame, isValidState, migrateState, applyAnswer, startPhase, isInfused } from '../game.js';
 import { shuffledOrder } from '../data.js';
 import { fx, confetti } from '../fx.js';
 import { questionView } from '../components/question.js';
 import { wheel, WILDCARD } from '../components/wheel.js';
-import { board, avatar, gemRow } from '../components/board.js';
+import { board, avatar, gemRow, lifelinesLeft } from '../components/board.js';
 
 const SAVE_KEY = 'classic';
 let state = null; // current classic game (in memory)
 
 export function loadSavedGame() {
-  const s = store.load(SAVE_KEY, null);
+  const raw = store.load(SAVE_KEY, null);
+  const oldVersion = raw?.v;
+  const s = migrateState(raw);
   if (!isValidState(s) || s.phase === 'won') return null;
+  if (oldVersion !== s.v) store.save(SAVE_KEY, s); // keep the upgraded save
   return s;
 }
 
@@ -38,6 +41,7 @@ export function setupScreen(params = {}) {
     color: CATEGORIES.includes(p.color) ? p.color : CATEGORIES[i],
   }));
   let timer = params.timer ?? app.settings.timer;
+  let level = levelOrDefault(params.level ?? app.settings.level);
 
   const list = h('ol', { class: 'setup-players' });
   const countLabel = h('output', { class: 'stepper-value', 'aria-live': 'polite' });
@@ -96,7 +100,7 @@ export function setupScreen(params = {}) {
     if (!categories.length) { toast(t('errors.noQuestions')); return; }
     const named = players.map((p, i) => ({ name: (p.name || '').trim() || t('setup.namePlaceholder', { n: i + 1 }), color: p.color }));
     store.save('lastPlayers', players.map((p) => ({ name: (p.name || '').trim(), color: p.color })));
-    state = newClassicGame({ players: named, timer, categories });
+    state = newClassicGame({ players: named, timer, categories, level });
     save();
     fx.tap();
     go('classic');
@@ -108,6 +112,7 @@ export function setupScreen(params = {}) {
       h('span', { class: 'row-label', id: 'pcount' }, t('setup.playerCount')),
       h('div', { class: 'stepper', role: 'group', 'aria-labelledby': 'pcount' }, minus, countLabel, plus)),
     list,
+    levelPicker(level, (l) => { level = l; }),
     h('section', { class: 'card' }, toggle(t('setup.timer'), timer, (v) => { timer = v; }, { hint: t('setup.timerHint') })),
     h('div', { class: 'sticky-actions' },
       h('button', { type: 'button', class: 'btn btn-primary btn-block', onclick: start }, svg(ICONS.play), t('setup.start'))),
@@ -135,7 +140,7 @@ function leave() {
 }
 
 function gameBar(title) {
-  return topBar(title, { back: leave, backIcon: 'home', backLabel: t('classic.leave') });
+  return topBar(title, { back: leave, backIcon: 'home', backLabel: t('classic.leave'), right: levelBadge(state.level) });
 }
 
 export function classicScreen() {
@@ -163,6 +168,7 @@ function handoffView() {
       avatar(p.color, p.name, 96),
       h('h1', { class: 'handoff-name' }, p.name),
       gemRow(state, p, 26),
+      lifelinesLeft(p, 26),
       h('p', { class: 'muted' }, t('turn.noPeek'))),
     h('div', { class: 'sticky-actions' },
       h('button', {
@@ -234,7 +240,7 @@ function finalIntroView() {
         type: 'button', class: 'btn btn-primary btn-block btn-final', 'data-autofocus': '',
         onclick: () => {
           fx.tap();
-          const q = makePool(state.used).drawFinal(state.categories);
+          const q = makePool(state.used).drawFinal(state.categories, LEVELS[levelOrDefault(state.level)].final);
           if (!q) { toast(t('errors.noQuestions')); return; }
           state.pending = { id: q.id, cat: q.c, order: shuffledOrder(), final: true };
           state.phase = 'question';
@@ -245,7 +251,7 @@ function finalIntroView() {
 }
 
 function setPending(cat, final) {
-  const q = makePool(state.used).draw(cat);
+  const q = makePool(state.used).drawLeveled(cat, state.level);
   if (!q) { state.phase = 'spin'; return; }
   state.pending = { id: q.id, cat, order: shuffledOrder(), final };
   state.phase = 'question';
@@ -256,7 +262,8 @@ function questionPhase() {
   let q = state.pending && pool.get(state.pending.id);
   if (!q) { // question vanished (filter/data changed): draw again
     const final = !!state.pending?.final;
-    q = final ? pool.drawFinal(state.categories) : pool.draw(state.pending?.cat || state.categories[0]);
+    q = final ? pool.drawFinal(state.categories, LEVELS[levelOrDefault(state.level)].final)
+      : pool.drawLeveled(state.pending?.cat || state.categories[0], state.level);
     if (!q) { state.pending = null; state.phase = 'spin'; save(); return spinView(); }
     state.pending = { id: q.id, cat: q.c, order: shuffledOrder(), final };
     save();
@@ -264,9 +271,29 @@ function questionPhase() {
   const p = cur();
   const pend = state.pending;
   const top = h('div', { class: 'q-top' }, avatar(p.color, p.name, 28), h('span', { class: 'q-top-name' }, p.name));
+  // Lifelines: one of each per player and game; never on the final question (SPEC v2).
+  p.lifelines ||= fullLifelines();
+  const lifelines = pend.final ? null : {
+    left: p.lifelines,
+    breathOk: pool.hasAlternative(q),
+    fx: (pend.fx ||= { removed: [], struck: [], armed: false }),
+    onUse: (kind) => {
+      p.lifelines[kind] = Math.max(0, (p.lifelines[kind] || 0) - 1);
+      recordLifeline(kind);
+      if (kind === 'breath') {
+        const alt = pool.drawAlternative(q);
+        if (alt) state.pending = { id: alt.id, cat: alt.c, order: shuffledOrder(), final: false, fx: { removed: [], struck: [], armed: false } };
+        save();
+        go('classic');
+        return;
+      }
+      save();
+    },
+    onChange: save,
+  };
   return screen('question', gameBar(pend.final ? t('question.final') : t('turn.turnOf', { name: p.name })),
     questionView({
-      question: q, order: pend.order, timer: state.timer, final: pend.final, top,
+      question: q, order: pend.order, timer: state.timer, final: pend.final, top, lifelines,
       onAnswer: ({ correct }) => {
         recordAnswer(q.c, correct);
         const res = applyAnswer(state, correct);
@@ -313,8 +340,9 @@ function victoryView() {
         onclick: () => {
           const players = state.players.map((p) => ({ name: p.name, color: p.color }));
           const timer = state.timer;
+          const level = state.level;
           state = null;
-          go('classic-setup', { players, timer });
+          go('classic-setup', { players, timer, level });
         },
       }, t('common.playAgain')),
       h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: () => { state = null; go('home'); } }, t('common.home'))));

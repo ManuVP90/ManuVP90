@@ -47,7 +47,47 @@
     "1": "Facile",
     "2": "Media",
     "3": "Difficile",
-    "label": "Difficoltà: {level}"
+    "label": "Difficoltà: {level}",
+    "4": "Esperto"
+  },
+  "level": {
+    "title": "Livello di difficoltà",
+    "easy": "Facile",
+    "normal": "Normale",
+    "hard": "Difficile",
+    "expert": "Esperto",
+    "easyDesc": "Solo domande facili.",
+    "normalDesc": "Un mix di domande facili e medie, con qualche difficile.",
+    "hardDesc": "Domande medie, difficili e da esperti.",
+    "expertDesc": "Solo domande difficili e da esperti, per chi rilegge.",
+    "badge": "Livello: {level}"
+  },
+  "lifeline": {
+    "title": "Aiuti",
+    "help": "Come funzionano gli aiuti",
+    "rules": "Ogni giocatore ha un aiuto di ciascun tipo per partita (anche nella partita veloce). Non si possono usare nella domanda finale né in allenamento.",
+    "used": "{name} (già usato)",
+    "atium": {
+      "name": "Atium",
+      "desc": "Elimina due risposte sbagliate.",
+      "long": "Brucia l’atium e intravedi il futuro: due risposte sbagliate vengono eliminate.",
+      "done": "Atium: eliminate due risposte sbagliate.",
+      "removed": "{option} (eliminata dall’atium)"
+    },
+    "stormlight": {
+      "name": "Folgoluce",
+      "desc": "Attivala prima di rispondere: se sbagli, scegli di nuovo.",
+      "long": "Attivala prima di rispondere. Se scegli una risposta sbagliata, viene segnata e scegli di nuovo, senza che venga rivelata quella giusta. Il tempo continua a scorrere.",
+      "armed": "Folgoluce attiva: se sbagli, potrai scegliere di nuovo.",
+      "saved": "La Folgoluce ti guarisce! Non era quella: scegli un’altra risposta.",
+      "struck": "{option} (sbagliata)"
+    },
+    "breath": {
+      "name": "Soffio",
+      "desc": "Cambia la domanda con un’altra dello stesso mondo e della stessa difficoltà.",
+      "long": "Cambia la domanda con un’altra dello stesso mondo e della stessa difficoltà. Se non ne restano, non si può usare.",
+      "none": "Nessun’altra domanda dello stesso mondo e della stessa difficoltà."
+    }
   },
   "setup": {
     "title": "Nuova partita",
@@ -121,7 +161,10 @@
     "newRecord": "Nuovo record!",
     "finished": "Risultati",
     "seeResults": "Vedi i risultati",
-    "quitConfirm": "Abbandonare la partita veloce? Perderai il punteggio."
+    "quitConfirm": "Abbandonare la partita veloce? Perderai il punteggio.",
+    "intro": "{n} domande su tutti i mondi, {s} secondi ciascuna. Più rispondi in fretta, più punti fai.",
+    "introLifelines": "Hai un aiuto di ciascun tipo: Atium, Folgoluce e Soffio.",
+    "start": "Inizia"
   },
   "practice": {
     "title": "Allenamento",
@@ -132,7 +175,9 @@
     "available": "Domande disponibili: {n}",
     "start": "Inizia l'allenamento",
     "end": "Termina",
-    "tally": "{correct} su {total}"
+    "tally": "{correct} su {total}",
+    "fallback": "Non ci sono ancora domande di difficoltà {level} qui: ti allenerai con quelle di difficoltà {fallback}.",
+    "empty": "Non ci sono ancora domande di difficoltà {level} qui."
   },
   "stats": {
     "title": "Statistiche",
@@ -143,7 +188,8 @@
     "accuracy": "Precisione",
     "byCategory": "Precisione per mondo",
     "none": "Nessuna risposta per ora. Inizia a giocare!",
-    "of": "{correct} su {total}"
+    "of": "{correct} su {total}",
+    "lifelines": "Aiuti usati"
   },
   "settings": {
     "title": "Impostazioni",
@@ -176,7 +222,10 @@
     "rule4": "Infondi tutte le gemme, poi rispondi correttamente alla domanda finale per vincere.",
     "offline": "Funziona offline dopo il primo caricamento. Tutti i dati restano su questo dispositivo.",
     "disclaimer": "Progetto amatoriale non ufficiale, non affiliato a Brandon Sanderson né a Dragonsteel. Il Cosmoverso e tutti i nomi correlati appartengono ai rispettivi proprietari.",
-    "version": "Versione {v}"
+    "version": "Versione {v}",
+    "levels": "Livelli di difficoltà",
+    "levelsFinal": "Nella partita classica la domanda finale è media in Facile, difficile in Normale e da esperti in Difficile ed Esperto.",
+    "lifelines": "Aiuti"
   },
   "errors": {
     "load": "Impossibile caricare le domande. Controlla la connessione e ricarica la pagina.",

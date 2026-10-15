@@ -3,12 +3,12 @@ import { h, svg } from './dom.js';
 import { ICONS } from './icons.js';
 import { t } from './i18n.js';
 import * as store from './storage.js';
-import { CATEGORIES, CAT_COLORS, CAT_INK } from './config.js';
+import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, levelOrDefault } from './config.js';
 import { Pool } from './data.js';
 import { setFxPrefs, fx } from './fx.js';
 
 // ---------- settings & stats ----------
-const DEFAULT_SETTINGS = { lang: null, theme: 'dark', sound: true, vibration: true, timer: true, disabledWorks: [] };
+const DEFAULT_SETTINGS = { lang: null, theme: 'dark', sound: true, vibration: true, timer: true, disabledWorks: [], level: DEFAULT_LEVEL };
 
 export const app = {
   settings: { ...DEFAULT_SETTINGS },
@@ -21,6 +21,7 @@ export function loadSettings() {
   const s = store.load('settings', {});
   app.settings = { ...DEFAULT_SETTINGS, ...(s && typeof s === 'object' ? s : {}) };
   if (!Array.isArray(app.settings.disabledWorks)) app.settings.disabledWorks = [];
+  app.settings.level = levelOrDefault(app.settings.level);
   applySettings();
 }
 
@@ -41,13 +42,14 @@ function applySettings() {
 const emptyStats = () => ({
   classicGames: 0, quickGames: 0, bestQuick: 0,
   cats: Object.fromEntries(CATEGORIES.map((c) => [c, { a: 0, c: 0 }])),
+  lifelines: Object.fromEntries(LIFELINES.map((k) => [k, 0])),
 });
 
 export function getStats() {
   const s = store.load('stats', null);
   const base = emptyStats();
   if (!s || typeof s !== 'object') return base;
-  return { ...base, ...s, cats: { ...base.cats, ...(s.cats || {}) } };
+  return { ...base, ...s, cats: { ...base.cats, ...(s.cats || {}) }, lifelines: { ...base.lifelines, ...(s.lifelines || {}) } };
 }
 
 export function updateStats(fn) {
@@ -63,6 +65,10 @@ export function recordAnswer(cat, correct) {
     c.a++;
     if (correct) c.c++;
   });
+}
+
+export function recordLifeline(kind) {
+  updateStats((s) => { s.lifelines[kind] = (s.lifelines[kind] || 0) + 1; });
 }
 
 /** A pool over the loaded questions respecting the spoiler filter. */
@@ -148,7 +154,57 @@ export function catPill(cat, extra = '') {
 export function diffPips(d) {
   const label = t('difficulty.label', { level: t(`difficulty.${d}`) });
   return h('span', { class: 'pips', role: 'img', 'aria-label': label, title: label },
-    [1, 2, 3].map((i) => h('i', { class: i <= d ? 'on' : '' })));
+    DIFFICULTIES.map((i) => h('i', { class: i <= d ? 'on' : '' })));
+}
+
+/** Pips lit for a level's meter: 1 (easy) to 4 (expert). */
+const levelTop = (l) => LEVEL_IDS.indexOf(l) + 1;
+
+/** Compact badge with the game level (game bar / quick game). */
+export function levelBadge(level) {
+  const l = levelOrDefault(level);
+  const label = t('level.badge', { level: t(`level.${l}`) });
+  return h('span', { class: `level-badge level-${l}`, title: label },
+    h('span', { class: 'pips', 'aria-hidden': 'true' }, DIFFICULTIES.map((i) => h('i', { class: i <= levelTop(l) ? 'on' : '' }))),
+    h('span', { class: 'sr-only' }, label),
+    h('span', { class: 'level-badge-text', 'aria-hidden': 'true' }, t(`level.${l}`)));
+}
+
+/** Radio group to choose the game level; remembers the choice in settings. */
+export function levelPicker(value, onchange) {
+  let cur = levelOrDefault(value);
+  const id = `lvl-${Math.random().toString(36).slice(2, 8)}`;
+  const desc = h('p', { class: 'level-desc muted', id: `${id}-desc`, 'aria-live': 'polite' }, t(`level.${cur}Desc`));
+  const buttons = LEVEL_IDS.map((l) => h('button', {
+    type: 'button', role: 'radio', class: `level-opt level-${l}`, 'aria-checked': String(l === cur), dataset: { level: l },
+    tabindex: l === cur ? '0' : '-1', 'aria-describedby': `${id}-desc`,
+    onclick: () => select(l, false),
+    onkeydown: (e) => {
+      const k = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+      if (!k) return;
+      e.preventDefault();
+      select(LEVEL_IDS[(LEVEL_IDS.indexOf(cur) + k + LEVEL_IDS.length) % LEVEL_IDS.length], true);
+    },
+  },
+  h('span', { class: 'pips', 'aria-hidden': 'true' }, DIFFICULTIES.map((i) => h('i', { class: i <= levelTop(l) ? 'on' : '' }))),
+  h('span', { class: 'level-name' }, t(`level.${l}`))));
+  function select(l, focus) {
+    cur = l;
+    buttons.forEach((b) => {
+      const on = b.dataset.level === l;
+      b.setAttribute('aria-checked', String(on));
+      b.setAttribute('tabindex', on ? '0' : '-1');
+      if (on && focus) b.focus();
+    });
+    desc.textContent = t(`level.${l}Desc`);
+    fx.tap();
+    updateSettings({ level: l });
+    onchange(l);
+  }
+  return h('section', { class: 'card level-card' },
+    h('h2', { class: 'section-title', id }, t('level.title')),
+    h('div', { class: 'level-group', role: 'radiogroup', 'aria-labelledby': id }, buttons),
+    desc);
 }
 
 /** Accessible on/off switch. */

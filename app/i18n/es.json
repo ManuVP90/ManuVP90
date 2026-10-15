@@ -47,7 +47,47 @@
     "1": "Fácil",
     "2": "Media",
     "3": "Difícil",
-    "label": "Dificultad: {level}"
+    "label": "Dificultad: {level}",
+    "4": "Experto"
+  },
+  "level": {
+    "title": "Nivel de dificultad",
+    "easy": "Fácil",
+    "normal": "Normal",
+    "hard": "Difícil",
+    "expert": "Experto",
+    "easyDesc": "Solo preguntas fáciles.",
+    "normalDesc": "Mezcla de preguntas fáciles y medias, con alguna difícil.",
+    "hardDesc": "Preguntas medias, difíciles y de experto.",
+    "expertDesc": "Solo preguntas difíciles y de experto, para quienes releen.",
+    "badge": "Nivel: {level}"
+  },
+  "lifeline": {
+    "title": "Comodines",
+    "help": "Cómo funcionan los comodines",
+    "rules": "Cada jugador tiene uno de cada por partida (también en la partida rápida). No se pueden usar en la pregunta final ni en práctica.",
+    "used": "{name} (ya usado)",
+    "atium": {
+      "name": "Atium",
+      "desc": "Elimina dos respuestas incorrectas.",
+      "long": "Quema atium y atisba el futuro: se eliminan dos respuestas incorrectas.",
+      "done": "Atium: se han eliminado dos respuestas incorrectas.",
+      "removed": "{option} (eliminada por el atium)"
+    },
+    "stormlight": {
+      "name": "Luz tormentosa",
+      "desc": "Actívala antes de responder: si fallas, vuelves a elegir.",
+      "long": "Actívala antes de responder. Si eliges una respuesta incorrecta, se marca y vuelves a elegir, sin que se revele la correcta. El tiempo sigue corriendo.",
+      "armed": "Luz tormentosa activa: si fallas, podrás volver a elegir.",
+      "saved": "¡La luz tormentosa te sana! Esa no era: elige otra respuesta.",
+      "struck": "{option} (incorrecta)"
+    },
+    "breath": {
+      "name": "Aliento",
+      "desc": "Cambia la pregunta por otra del mismo mundo y dificultad.",
+      "long": "Cambia la pregunta por otra del mismo mundo y la misma dificultad. Si no queda ninguna, no se puede usar.",
+      "none": "No hay otra pregunta del mismo mundo y dificultad."
+    }
   },
   "setup": {
     "title": "Nueva partida",
@@ -121,7 +161,10 @@
     "newRecord": "¡Nuevo récord!",
     "finished": "Resultados",
     "seeResults": "Ver resultados",
-    "quitConfirm": "¿Abandonar la partida rápida? Perderás la puntuación."
+    "quitConfirm": "¿Abandonar la partida rápida? Perderás la puntuación.",
+    "intro": "{n} preguntas de todos los mundos, {s} segundos cada una. Cuanto antes aciertes, más puntos.",
+    "introLifelines": "Tienes un comodín de cada tipo: Atium, Luz tormentosa y Aliento.",
+    "start": "Empezar"
   },
   "practice": {
     "title": "Práctica",
@@ -132,7 +175,9 @@
     "available": "Preguntas disponibles: {n}",
     "start": "Empezar a practicar",
     "end": "Terminar",
-    "tally": "{correct} de {total} aciertos"
+    "tally": "{correct} de {total} aciertos",
+    "fallback": "Aún no hay preguntas de dificultad {level} aquí: practicarás con las de dificultad {fallback}.",
+    "empty": "Aún no hay preguntas de dificultad {level} aquí."
   },
   "stats": {
     "title": "Estadísticas",
@@ -143,7 +188,8 @@
     "accuracy": "Aciertos",
     "byCategory": "Aciertos por mundo",
     "none": "Aún no has respondido nada. ¡A jugar!",
-    "of": "{correct} de {total}"
+    "of": "{correct} de {total}",
+    "lifelines": "Comodines usados"
   },
   "settings": {
     "title": "Ajustes",
@@ -176,7 +222,10 @@
     "rule4": "Infunde todas las gemas y acierta la pregunta final para ganar.",
     "offline": "Funciona sin conexión una vez cargado. Todo se guarda solo en este dispositivo.",
     "disclaimer": "Proyecto de fans no oficial, sin relación con Brandon Sanderson ni con Dragonsteel. El Cosmere y todos los nombres relacionados pertenecen a sus respectivos propietarios.",
-    "version": "Versión {v}"
+    "version": "Versión {v}",
+    "levels": "Niveles de dificultad",
+    "levelsFinal": "La pregunta final de la partida clásica es media en Fácil, difícil en Normal y de experto en Difícil y Experto.",
+    "lifelines": "Comodines"
   },
   "errors": {
     "load": "No se han podido cargar las preguntas. Comprueba la conexión y recarga.",

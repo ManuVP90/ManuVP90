@@ -47,7 +47,47 @@
     "1": "Facile",
     "2": "Moyenne",
     "3": "Difficile",
-    "label": "Difficulté : {level}"
+    "label": "Difficulté : {level}",
+    "4": "Expert"
+  },
+  "level": {
+    "title": "Niveau de difficulté",
+    "easy": "Facile",
+    "normal": "Normal",
+    "hard": "Difficile",
+    "expert": "Expert",
+    "easyDesc": "Uniquement des questions faciles.",
+    "normalDesc": "Un mélange de questions faciles et moyennes, avec quelques difficiles.",
+    "hardDesc": "Des questions moyennes, difficiles et de niveau expert.",
+    "expertDesc": "Uniquement des questions difficiles et de niveau expert, pour ceux qui relisent.",
+    "badge": "Niveau : {level}"
+  },
+  "lifeline": {
+    "title": "Aides",
+    "help": "Comment fonctionnent les aides",
+    "rules": "Chaque joueur dispose d’une aide de chaque type par partie (partie rapide comprise). Elles ne peuvent servir ni pour la question finale ni en entraînement.",
+    "used": "{name} (déjà utilisée)",
+    "atium": {
+      "name": "Atium",
+      "desc": "Élimine deux mauvaises réponses.",
+      "long": "Brûlez de l’atium et entrevoyez l’avenir : deux mauvaises réponses sont éliminées.",
+      "done": "Atium : deux mauvaises réponses éliminées.",
+      "removed": "{option} (éliminée par l’atium)"
+    },
+    "stormlight": {
+      "name": "Fulgiflamme",
+      "desc": "À activer avant de répondre : si vous vous trompez, vous choisissez à nouveau.",
+      "long": "Activez-la avant de répondre. Si vous choisissez une mauvaise réponse, elle est marquée et vous choisissez à nouveau, sans que la bonne soit révélée. Le chrono continue de tourner.",
+      "armed": "Fulgiflamme active : si vous vous trompez, vous pourrez choisir à nouveau.",
+      "saved": "La Fulgiflamme vous guérit ! Ce n’était pas celle-là : choisissez une autre réponse.",
+      "struck": "{option} (incorrecte)"
+    },
+    "breath": {
+      "name": "Souffle",
+      "desc": "Remplace la question par une autre du même monde et de même difficulté.",
+      "long": "Remplace la question par une autre du même monde et de même difficulté. S’il n’en reste aucune, il ne peut pas être utilisé.",
+      "none": "Aucune autre question du même monde et de même difficulté."
+    }
   },
   "setup": {
     "title": "Nouvelle partie",
@@ -121,7 +161,10 @@
     "newRecord": "Nouveau record !",
     "finished": "Résultats",
     "seeResults": "Voir les résultats",
-    "quitConfirm": "Abandonner la partie rapide ? Votre score sera perdu."
+    "quitConfirm": "Abandonner la partie rapide ? Votre score sera perdu.",
+    "intro": "{n} questions sur tous les mondes, {s} secondes chacune. Plus vous répondez vite, plus vous marquez de points.",
+    "introLifelines": "Vous disposez d’une aide de chaque type : Atium, Fulgiflamme et Souffle.",
+    "start": "Commencer"
   },
   "practice": {
     "title": "Entraînement",
@@ -132,7 +175,9 @@
     "available": "Questions disponibles : {n}",
     "start": "Commencer",
     "end": "Terminer",
-    "tally": "{correct} sur {total}"
+    "tally": "{correct} sur {total}",
+    "fallback": "Pas encore de questions de difficulté {level} ici : vous vous entraînerez avec celles de difficulté {fallback}.",
+    "empty": "Pas encore de questions de difficulté {level} ici."
   },
   "stats": {
     "title": "Statistiques",
@@ -143,7 +188,8 @@
     "accuracy": "Réussite",
     "byCategory": "Réussite par monde",
     "none": "Aucune réponse pour l'instant. À vous de jouer !",
-    "of": "{correct} sur {total}"
+    "of": "{correct} sur {total}",
+    "lifelines": "Aides utilisées"
   },
   "settings": {
     "title": "Réglages",
@@ -176,7 +222,10 @@
     "rule4": "Infusez toutes les gemmes, puis réussissez la question finale pour gagner.",
     "offline": "Fonctionne hors ligne une fois chargé. Tout est enregistré uniquement sur cet appareil.",
     "disclaimer": "Projet de fans non officiel, sans lien avec Brandon Sanderson ni Dragonsteel. Le Cosmère et tous les noms associés appartiennent à leurs propriétaires respectifs.",
-    "version": "Version {v}"
+    "version": "Version {v}",
+    "levels": "Niveaux de difficulté",
+    "levelsFinal": "La question finale de la partie classique est moyenne en Facile, difficile en Normal et de niveau expert en Difficile et Expert.",
+    "lifelines": "Aides"
   },
   "errors": {
     "load": "Impossible de charger les questions. Vérifiez votre connexion et rechargez la page.",

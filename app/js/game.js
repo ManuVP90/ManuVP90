@@ -1,22 +1,40 @@
 // Classic-mode rules (SPEC §2), kept free of DOM code.
-import { CHARGES_TO_INFUSE } from './config.js';
+import { CHARGES_TO_INFUSE, LIFELINES, fullLifelines, levelOrDefault } from './config.js';
 
-export const STATE_VERSION = 1;
+// v2 adds the game level and per-player lifelines; v1 saves are migrated on load.
+export const STATE_VERSION = 2;
 
-export function newClassicGame({ players, timer, categories }) {
+export function newClassicGame({ players, timer, categories, level }) {
   return {
     v: STATE_VERSION,
-    players: players.map((p) => ({ name: p.name, color: p.color, charges: {} })),
+    players: players.map((p) => ({ name: p.name, color: p.color, charges: {}, lifelines: fullLifelines() })),
     current: 0,
     phase: players.length > 1 ? 'handoff' : 'spin',
     timer: !!timer,
+    level: levelOrDefault(level),
     categories,
     used: {},
-    pending: null, // { id, cat, order, final }
+    pending: null, // { id, cat, order, final, fx: { removed, struck, armed } }
     asked: 0,
     winner: null,
     startedAt: Date.now(),
   };
+}
+
+/** Upgrades an older saved game in place (v1 → v2: level Normal, full lifelines). */
+export function migrateState(s) {
+  if (!s || typeof s !== 'object') return s;
+  if (s.v === 1) s.v = 2;
+  if (s.v !== STATE_VERSION) return s;
+  s.level = levelOrDefault(s.level);
+  if (Array.isArray(s.players)) {
+    for (const p of s.players) {
+      if (!p || typeof p !== 'object') continue;
+      if (!p.lifelines || typeof p.lifelines !== 'object') p.lifelines = fullLifelines();
+      for (const k of LIFELINES) if (!Number.isInteger(p.lifelines[k]) || p.lifelines[k] < 0) p.lifelines[k] = 0;
+    }
+  }
+  return s;
 }
 
 export function isValidState(s) {

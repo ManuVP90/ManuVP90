@@ -1,8 +1,8 @@
 import { h } from '../dom.js';
-import { gemSvg } from '../icons.js';
+import { gemSvg, lifelineSvg } from '../icons.js';
 import { t, num } from '../i18n.js';
 import { screen, topBar, getStats, catStyle } from '../core.js';
-import { CATEGORIES } from '../config.js';
+import { CATEGORIES, LIFELINES } from '../config.js';
 
 const pct = (c, a) => (a ? Math.round((c / a) * 100) : 0);
 
@@ -33,5 +33,11 @@ export function statsScreen() {
           h('span', { class: 'bar-track', role: 'img', 'aria-label': `${t(`cat.${c}`)}: ${p} % (${t('stats.of', { correct: ok, total: a })})` },
             h('span', { class: 'bar-fill', style: { width: `${p}%` } })),
           h('span', { class: 'bar-value', 'aria-hidden': 'true' }, a ? `${p} %` : '—'));
-      }))));
+      }))),
+    h('section', { class: 'card' },
+      h('h2', { class: 'section-title' }, t('stats.lifelines')),
+      h('ul', { class: 'lifeline-stats' }, LIFELINES.map((k) => h('li', {},
+        h('span', { class: 'lifeline-stats-art', 'aria-hidden': 'true', html: lifelineSvg(k, 28) }),
+        h('span', { class: 'lifeline-stats-value' }, num(s.lifelines?.[k] || 0)),
+        h('span', { class: 'lifeline-stats-label' }, t(`lifeline.${k}.name`)))))));
 }

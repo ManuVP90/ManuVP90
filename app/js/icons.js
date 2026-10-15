@@ -24,6 +24,7 @@ export const ICONS = {
   moon: stroke('<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>'),
   phone: stroke('<rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/>'),
   sparkle: stroke('<path d="M12 3l1.8 5.6L19.5 10l-5.7 1.6L12 17l-1.8-5.4L4.5 10l5.7-1.4z"/><path d="M19 16l.7 2 2 .7-2 .6L19 21l-.7-1.7-2-.6 2-.7z"/>'),
+  help: stroke('<circle cx="12" cy="12" r="9"/><path d="M9.4 9.4a2.7 2.7 0 0 1 5.2 1c0 1.9-2.6 2.3-2.6 3.9"/><path d="M12 17.2v.01"/>'),
   globe: stroke('<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/>'),
 };
 
@@ -63,4 +64,60 @@ export function gemSvg(cat, { charges = 2, size = 24, color } = {}) {
   }
   return `<svg viewBox="0 0 24 24" width="${size}" height="${size}" focusable="false">${fill}`
     + `<polygon points="${s.outer}" fill="none" stroke="${c}" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
+}
+
+// ---------- lifeline art (SPEC "Comodines (v2)"), viewBox 0 0 32 32 ----------
+let lifeSeq = 0;
+
+// Breath: a spiral of color (BioChroma), split into hue segments from the center outward.
+const SWIRL_COLORS = ['#9b59b6', '#3b82f6', '#22c55e', '#facc15', '#f97316', '#ef4444'];
+const SWIRL = (() => {
+  const pts = [];
+  const turns = 2.15;
+  const steps = 96;
+  for (let i = 0; i <= steps; i++) {
+    const th = (i / steps) * turns * 2 * Math.PI;
+    const r = 1.2 + (11.6 * i) / steps;
+    pts.push([16 + r * Math.cos(th + 0.6), 16 + r * Math.sin(th + 0.6)]);
+  }
+  const seg = Math.ceil(steps / SWIRL_COLORS.length);
+  return SWIRL_COLORS.map((c, k) => {
+    const part = pts.slice(k * seg, Math.min(pts.length, (k + 1) * seg + 1));
+    const d = part.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(2)} ${y.toFixed(2)}`).join('');
+    return `<path d="${d}" stroke="${c}" stroke-width="${(1.6 + k * 0.32).toFixed(2)}"/>`;
+  }).join('');
+})();
+
+/** Inline SVG for a lifeline: 'atium' (dark metal bead), 'stormlight' (glowing sphere), 'breath' (color swirl). */
+export function lifelineSvg(kind, size = 32) {
+  const id = `ll${++lifeSeq}`;
+  const open = `<svg viewBox="0 0 32 32" width="${size}" height="${size}" focusable="false">`;
+  if (kind === 'atium') {
+    return `${open}<defs>`
+      + `<radialGradient id="${id}" cx="36%" cy="30%" r="75%"><stop offset="0" stop-color="#f5f7fc"/><stop offset=".16" stop-color="#a6abb8"/><stop offset=".48" stop-color="#3b3f4a"/><stop offset=".85" stop-color="#0e0f14"/><stop offset="1" stop-color="#050609"/></radialGradient>`
+      + `<radialGradient id="${id}r" cx="60%" cy="85%" r="55%"><stop offset="0" stop-color="#cbb8ff" stop-opacity=".55"/><stop offset="1" stop-color="#cbb8ff" stop-opacity="0"/></radialGradient>`
+      + `</defs>`
+      + `<ellipse cx="16" cy="27.6" rx="8" ry="1.6" fill="#000" fill-opacity=".35"/>`
+      + `<ellipse cx="16" cy="16" rx="10.6" ry="10" fill="url(#${id})"/>`
+      + `<ellipse cx="16" cy="16" rx="10.6" ry="10" fill="url(#${id}r)"/>`
+      + `<ellipse cx="16" cy="16" rx="10.6" ry="10" fill="none" stroke="#d9dde8" stroke-opacity=".5" stroke-width=".8"/>`
+      + `<ellipse cx="12.4" cy="11.2" rx="3.4" ry="1.9" fill="#fff" fill-opacity=".8" transform="rotate(-28 12.4 11.2)"/>`
+      + `<circle cx="20.8" cy="20.6" r=".9" fill="#fff" fill-opacity=".45"/></svg>`;
+  }
+  if (kind === 'stormlight') {
+    return `${open}<defs>`
+      + `<radialGradient id="${id}"><stop offset="0" stop-color="#f2fbff" stop-opacity=".95"/><stop offset=".42" stop-color="#8fd3ff" stop-opacity=".55"/><stop offset="1" stop-color="#5fb2f0" stop-opacity="0"/></radialGradient>`
+      + `<radialGradient id="${id}g" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#ffffff" stop-opacity=".5"/><stop offset="1" stop-color="#9fd8ff" stop-opacity=".12"/></radialGradient>`
+      + `</defs>`
+      + `<circle cx="16" cy="16" r="15.5" fill="url(#${id})"/>`
+      + `<circle cx="16" cy="16" r="9.6" fill="url(#${id}g)" stroke="#e8f7ff" stroke-opacity=".9" stroke-width="1"/>`
+      + `<polygon points="16,9.6 21,13.8 16,22.4 11,13.8" fill="#f4fbff"/>`
+      + `<polygon points="16,9.6 18.1,13.8 16,22.4 13.9,13.8" fill="#6cc0ff" fill-opacity=".7"/>`
+      + `<path d="M11 13.8h10" stroke="#4a9fe0" stroke-width=".8"/>`
+      + `<path d="M10.2 12.2a6.6 6.6 0 0 1 4-4" stroke="#fff" stroke-opacity=".85" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg>`;
+  }
+  // breath
+  return `${open}<defs><radialGradient id="${id}"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>`
+    + `<circle cx="16" cy="16" r="9" fill="url(#${id})"/>`
+    + `<g fill="none" stroke-linecap="round" stroke-linejoin="round">${SWIRL}</g></svg>`;
 }

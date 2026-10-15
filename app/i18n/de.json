@@ -47,7 +47,47 @@
     "1": "Leicht",
     "2": "Mittel",
     "3": "Schwer",
-    "label": "Schwierigkeit: {level}"
+    "label": "Schwierigkeit: {level}",
+    "4": "Experte"
+  },
+  "level": {
+    "title": "Schwierigkeitsstufe",
+    "easy": "Leicht",
+    "normal": "Normal",
+    "hard": "Schwer",
+    "expert": "Experte",
+    "easyDesc": "Nur leichte Fragen.",
+    "normalDesc": "Eine Mischung aus leichten und mittleren Fragen, dazu ein paar schwere.",
+    "hardDesc": "Mittlere, schwere und Expertenfragen.",
+    "expertDesc": "Nur schwere und Expertenfragen – für alle, die die Bücher mehrmals gelesen haben.",
+    "badge": "Stufe: {level}"
+  },
+  "lifeline": {
+    "title": "Hilfen",
+    "help": "So funktionieren die Hilfen",
+    "rules": "Jeder Spieler hat pro Partie jede Hilfe einmal (auch im schnellen Spiel). Bei der Finalfrage und beim Üben gibt es keine Hilfen.",
+    "used": "{name} (schon benutzt)",
+    "atium": {
+      "name": "Atium",
+      "desc": "Entfernt zwei falsche Antworten.",
+      "long": "Verbrenne Atium und blicke in die Zukunft: Zwei falsche Antworten verschwinden.",
+      "done": "Atium: Zwei falsche Antworten wurden entfernt.",
+      "removed": "{option} (durch Atium entfernt)"
+    },
+    "stormlight": {
+      "name": "Sturmlicht",
+      "desc": "Vor dem Antworten aktivieren: Liegst du falsch, darfst du noch einmal wählen.",
+      "long": "Aktiviere es vor dem Antworten. Wählst du eine falsche Antwort, wird sie markiert und du darfst noch einmal wählen – die richtige wird nicht verraten. Die Zeit läuft weiter.",
+      "armed": "Sturmlicht aktiv: Liegst du falsch, darfst du noch einmal wählen.",
+      "saved": "Das Sturmlicht heilt dich! Die war es nicht – wähle eine andere Antwort.",
+      "struck": "{option} (falsch)"
+    },
+    "breath": {
+      "name": "Hauch",
+      "desc": "Tauscht die Frage gegen eine andere aus derselben Welt mit gleicher Schwierigkeit.",
+      "long": "Tauscht die Frage gegen eine andere aus derselben Welt mit gleicher Schwierigkeit. Ist keine mehr übrig, kannst du ihn nicht einsetzen.",
+      "none": "Keine andere Frage aus derselben Welt mit gleicher Schwierigkeit."
+    }
   },
   "setup": {
     "title": "Neues Spiel",
@@ -121,7 +161,10 @@
     "newRecord": "Neuer Rekord!",
     "finished": "Ergebnis",
     "seeResults": "Ergebnis anzeigen",
-    "quitConfirm": "Schnelles Spiel abbrechen? Deine Punkte gehen verloren."
+    "quitConfirm": "Schnelles Spiel abbrechen? Deine Punkte gehen verloren.",
+    "intro": "{n} Fragen aus allen Welten, je {s} Sekunden. Je schneller du antwortest, desto mehr Punkte gibt es.",
+    "introLifelines": "Du hast jede Hilfe einmal: Atium, Sturmlicht und Hauch.",
+    "start": "Los geht’s"
   },
   "practice": {
     "title": "Üben",
@@ -132,7 +175,9 @@
     "available": "Verfügbare Fragen: {n}",
     "start": "Üben starten",
     "end": "Beenden",
-    "tally": "{correct} von {total} richtig"
+    "tally": "{correct} von {total} richtig",
+    "fallback": "Hier gibt es noch keine Fragen der Stufe {level}: Du übst mit Fragen der Stufe {fallback}.",
+    "empty": "Hier gibt es noch keine Fragen der Stufe {level}."
   },
   "stats": {
     "title": "Statistik",
@@ -143,7 +188,8 @@
     "accuracy": "Trefferquote",
     "byCategory": "Trefferquote nach Welt",
     "none": "Noch keine Antworten. Auf geht's!",
-    "of": "{correct} von {total}"
+    "of": "{correct} von {total}",
+    "lifelines": "Benutzte Hilfen"
   },
   "settings": {
     "title": "Einstellungen",
@@ -176,7 +222,10 @@
     "rule4": "Lade alle Edelsteine auf und beantworte dann die Finalfrage richtig, um zu gewinnen.",
     "offline": "Funktioniert nach dem ersten Laden auch offline. Alle Daten bleiben auf diesem Gerät.",
     "disclaimer": "Inoffizielles Fanprojekt, nicht verbunden mit Brandon Sanderson oder Dragonsteel. Das Kosmeer und alle zugehörigen Namen gehören ihren jeweiligen Inhabern.",
-    "version": "Version {v}"
+    "version": "Version {v}",
+    "levels": "Schwierigkeitsstufen",
+    "levelsFinal": "Die Finalfrage im klassischen Spiel ist bei Leicht mittelschwer, bei Normal schwer und bei Schwer und Experte eine Expertenfrage.",
+    "lifelines": "Hilfen"
   },
   "errors": {
     "load": "Die Fragen konnten nicht geladen werden. Prüfe deine Verbindung und lade die Seite neu.",

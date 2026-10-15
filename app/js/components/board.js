@@ -1,6 +1,7 @@
 // Player board: each player's gems with 0/1/2 charges.
 import { h } from '../dom.js';
-import { gemSvg } from '../icons.js';
+import { gemSvg, lifelineSvg } from '../icons.js';
+import { LIFELINES } from '../config.js';
 import { t } from '../i18n.js';
 import { charges, infusedCount } from '../game.js';
 
@@ -28,4 +29,14 @@ export function board(state, { compact = false } = {}) {
       h('span', { class: 'board-name' }, p.name,
         h('span', { class: 'sr-only' }, ` — ${t('classic.gemCount', { n: infusedCount(state, p), total: state.categories.length })}`)),
       gemRow(state, p, compact ? 18 : 22))))));
+}
+
+/** Small read-only row with the lifelines a player has left (used ones are faded). */
+export function lifelinesLeft(player, size = 22) {
+  return h('ul', { class: 'lifelines-left', role: 'list', 'aria-label': t('lifeline.title') }, LIFELINES.map((k) => {
+    const left = (player.lifelines?.[k] || 0) > 0;
+    const name = t(`lifeline.${k}.name`);
+    const label = left ? name : t('lifeline.used', { name });
+    return h('li', { class: left ? '' : 'used', title: label, 'aria-label': label, html: lifelineSvg(k, size) });
+  }));
 }

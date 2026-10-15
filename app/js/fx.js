@@ -46,6 +46,8 @@ export const fx = {
   correct() { tone(659, 0, 0.12); tone(988, 0.1, 0.25); vibrate(35); },
   wrong() { tone(220, 0, 0.25, 'sawtooth', 0.06); tone(165, 0.12, 0.3, 'sawtooth', 0.05); vibrate([80, 50, 80]); },
   infuse() { [523, 659, 784, 1047].forEach((f, i) => tone(f, i * 0.07, 0.25, 'triangle', 0.08)); vibrate([30, 40, 30]); },
+  lifeline() { [880, 1175, 1568].forEach((f, i) => tone(f, i * 0.05, 0.22, 'sine', 0.06)); vibrate(25); },
+  saved() { tone(392, 0, 0.14, 'triangle', 0.07); tone(587, 0.1, 0.22, 'triangle', 0.07); vibrate([40, 30, 40]); },
   victory() { [523, 659, 784, 1047, 784, 1047].forEach((f, i) => tone(f, i * 0.12, 0.35, 'triangle', 0.09)); vibrate([60, 60, 60, 60, 160]); },
 };
 

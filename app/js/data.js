@@ -1,6 +1,6 @@
 // Question loading and drawing.
 // Generated format (tools/build.mjs): { id, c, d, w, q, o: [correct, wrong, wrong, wrong], x }
-import { CATEGORIES } from './config.js';
+import { CATEGORIES, DIFFICULTIES, LEVELS, levelOrDefault } from './config.js';
 
 const loaded = new Map();
 
@@ -98,11 +98,83 @@ export class Pool {
     return this.draw(pick(eligible), f);
   }
 
-  /** Final question: random category, difficulty 3 if any exists, otherwise the highest available. */
-  drawFinal(cats = this.categories()) {
-    let maxD = 0;
-    for (const c of cats) for (const q of this.byCat[c]) maxD = Math.max(maxD, q.d);
-    if (!maxD) return null;
-    return this.drawAny(maxD, cats);
+  /**
+   * Draws a question in `cat` for a game difficulty level (SPEC v2): a target difficulty is
+   * picked by the level's weights; if that difficulty has no unused question in the category,
+   * the nearest difficulty that does is used (preferring ones inside the level, at most one
+   * step outside it). When those are used up, already-asked questions come back.
+   */
+  drawLeveled(cat, level) {
+    const list = this.byCat[cat] || [];
+    if (!list.length) return null;
+    const { weights } = LEVELS[levelOrDefault(level)];
+    const usedIds = new Set(this.used[cat] || []);
+    const fresh = {};
+    const all = {};
+    for (const q of list) {
+      all[q.d] = (all[q.d] || 0) + 1;
+      if (!usedIds.has(q.id)) fresh[q.d] = (fresh[q.d] || 0) + 1;
+    }
+    // Unused questions may come from one step outside the level (Easy → 2, Expert → 2);
+    // past that, the level's own questions are recycled instead.
+    const ds = Object.keys(weights).map(Number);
+    const lo = Math.min(...ds) - 1;
+    const hi = Math.max(...ds) + 1;
+    const near = Object.fromEntries(Object.entries(fresh).filter(([d]) => d >= lo && d <= hi));
+    const counts = Object.keys(near).length ? near : all;
+    const d = nearestDifficulty(weightedPick(weights), counts, weights);
+    return d ? this.draw(cat, (q) => q.d === d) : null;
   }
+
+  /** Any available category, drawn for a level. */
+  drawAnyLeveled(level, cats = this.categories()) {
+    const eligible = cats.filter((c) => this.byCat[c].length);
+    return eligible.length ? this.drawLeveled(pick(eligible), level) : null;
+  }
+
+  /** Is there another question with the same category and difficulty (for the Breath lifeline)? */
+  hasAlternative(q) {
+    return (this.byCat[q.c] || []).some((x) => x.d === q.d && x.id !== q.id);
+  }
+
+  /** Another question of the same category and difficulty, or null. */
+  drawAlternative(q) {
+    return this.hasAlternative(q) ? this.draw(q.c, (x) => x.d === q.d && x.id !== q.id) : null;
+  }
+
+  /**
+   * Final question: random category, difficulty `target` (by level) if any category has it,
+   * otherwise the nearest difficulty available (preferring the harder one on ties).
+   */
+  drawFinal(cats = this.categories(), target = 3) {
+    const counts = {};
+    for (const c of cats) for (const q of this.byCat[c]) counts[q.d] = (counts[q.d] || 0) + 1;
+    const d = nearestDifficulty(target, counts, null, true);
+    return d ? this.drawAny(d, cats) : null;
+  }
+}
+
+/** Picks a key of `weights` with probability proportional to its value. */
+function weightedPick(weights) {
+  const entries = Object.entries(weights);
+  let r = Math.random() * entries.reduce((s, [, w]) => s + w, 0);
+  for (const [d, w] of entries) { if ((r -= w) < 0) return Number(d); }
+  return Number(entries[entries.length - 1][0]);
+}
+
+/**
+ * The difficulty closest to `target` with counts[d] > 0. Ties go to a difficulty inside
+ * `preferred` (the level's weights), then to the harder one if `preferHarder`, else random.
+ */
+export function nearestDifficulty(target, counts, preferred = null, preferHarder = false) {
+  const avail = DIFFICULTIES.filter((d) => counts[d] > 0);
+  if (!avail.length) return null;
+  const best = Math.min(...avail.map((d) => Math.abs(d - target)));
+  let cands = avail.filter((d) => Math.abs(d - target) === best);
+  if (cands.length > 1 && preferred) {
+    const inLevel = cands.filter((d) => preferred[d]);
+    if (inLevel.length) cands = inLevel;
+  }
+  if (cands.length > 1 && preferHarder) return Math.max(...cands);
+  return pick(cands);
 }

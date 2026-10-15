@@ -3,11 +3,12 @@
 import { h, svg } from '../dom.js';
 import { ICONS } from '../icons.js';
 import { t, num } from '../i18n.js';
-import { go, screen, topBar, makePool, recordAnswer, updateStats, getStats, toast, setBack, confirmDialog } from '../core.js';
-import { QUICK_LENGTH, TIMER_SECONDS } from '../config.js';
-import { shuffle } from '../data.js';
+import { app, go, screen, topBar, makePool, recordAnswer, recordLifeline, updateStats, getStats, toast, setBack, confirmDialog, levelPicker, levelBadge } from '../core.js';
+import { QUICK_LENGTH, TIMER_SECONDS, fullLifelines, levelOrDefault } from '../config.js';
+import { shuffle, shuffledOrder } from '../data.js';
 import { fx, confetti } from '../fx.js';
 import { questionView } from '../components/question.js';
+import { lifelinesLeft } from '../components/board.js';
 
 let run = null;
 
@@ -15,7 +16,7 @@ export function pointsFor(correct, remaining) {
   return correct ? 100 + Math.round((100 * remaining) / TIMER_SECONDS) : 0;
 }
 
-function newRun() {
+function newRun(level) {
   const pool = makePool();
   const cats = pool.categories();
   if (!cats.length) return null;
@@ -24,11 +25,34 @@ function newRun() {
   const plan = [];
   while (plan.length < total) plan.push(...shuffle(cats));
   plan.length = total;
-  return { pool, plan, index: 0, score: 0, correct: 0, total };
+  // current: the question on screen { id, order, fx } so a re-render (or Breath) keeps control of it.
+  return { pool, plan, index: 0, score: 0, correct: 0, total, level: levelOrDefault(level), lifelines: fullLifelines(), current: null };
+}
+
+/** Start screen: rules, level choice (remembered) and best score. */
+function introView() {
+  let level = levelOrDefault(app.settings.level);
+  const best = getStats().bestQuick || 0;
+  return screen('quick-intro',
+    topBar(t('quick.title')),
+    h('section', { class: 'card quick-intro-card' },
+      svg(ICONS.bolt, 'quick-intro-icon'),
+      h('p', { class: 'lead' }, t('quick.intro', { n: QUICK_LENGTH, s: TIMER_SECONDS })),
+      lifelinesLeft({ lifelines: fullLifelines() }, 28),
+      h('p', { class: 'muted' }, t('quick.introLifelines')),
+      best ? h('p', { class: 'muted' }, `${t('quick.best')}: ${num(best)}`) : null),
+    levelPicker(level, (l) => { level = l; }),
+    h('div', { class: 'sticky-actions' },
+      h('button', {
+        type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '',
+        onclick: () => { fx.tap(); go('quick', { start: level }); },
+      }, svg(ICONS.play), t('quick.start'))));
 }
 
 export function quickScreen(params = {}) {
-  if (params.restart || !run || run.finished) run = newRun();
+  if (params.start) run = newRun(params.start);
+  else if (params.restart && run) run = newRun(run.level);
+  else if (!run || run.finished) { run = null; return introView(); }
   if (!run) { setTimeout(() => go('home')); toast(t('errors.noQuestions')); return screen('', h('h1', {}, t('quick.title'))); }
   if (run.index >= run.total) return resultView();
 
@@ -36,7 +60,12 @@ export function quickScreen(params = {}) {
     if (await confirmDialog(t('quick.quitConfirm'))) { run = null; go('home'); }
   };
   setBack(quit);
-  const q = run.pool.draw(run.plan[run.index]) || run.pool.drawAny();
+  let q = run.current && run.pool.get(run.current.id);
+  if (!q) {
+    q = run.pool.drawLeveled(run.plan[run.index], run.level) || run.pool.drawAnyLeveled(run.level);
+    run.current = { id: q.id, order: shuffledOrder(), fx: { removed: [], struck: [], armed: false } };
+  }
+  const cur = run.current;
   const scoreEl = h('span', { class: 'score-value' }, num(run.score));
   const top = h('div', { class: 'q-top quick-top' },
     h('span', { class: 'progress-label' }, t('question.progress', { n: run.index + 1, total: run.total })),
@@ -45,11 +74,26 @@ export function quickScreen(params = {}) {
   const bar = h('div', { class: 'progress', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(run.total), 'aria-valuenow': String(run.index), 'aria-label': t('quick.title') },
     h('span', { style: { width: `${(run.index / run.total) * 100}%` } }));
 
+  const lifelines = {
+    left: run.lifelines,
+    breathOk: run.pool.hasAlternative(q),
+    fx: cur.fx,
+    onUse: (kind) => {
+      run.lifelines[kind] = Math.max(0, run.lifelines[kind] - 1);
+      recordLifeline(kind);
+      if (kind === 'breath') {
+        const alt = run.pool.drawAlternative(q);
+        if (alt) run.current = { id: alt.id, order: shuffledOrder(), fx: { removed: [], struck: [], armed: false } };
+        go('quick');
+      }
+    },
+  };
+
   return screen('question quick',
-    topBar(t('quick.title'), { back: quit }),
+    topBar(t('quick.title'), { back: quit, right: levelBadge(run.level) }),
     bar,
     questionView({
-      question: q, timer: true, top,
+      question: q, order: cur.order, timer: true, top, lifelines,
       continueLabel: run.index + 1 >= run.total ? t('quick.seeResults') : t('common.next'),
       onAnswer: ({ correct, remaining }) => {
         recordAnswer(q.c, correct);
@@ -57,6 +101,7 @@ export function quickScreen(params = {}) {
         run.score += pts;
         if (correct) run.correct++;
         run.index++;
+        run.current = null;
         scoreEl.textContent = num(run.score);
         return correct ? h('p', { class: 'points' }, t('quick.points', { n: num(pts) })) : null;
       },

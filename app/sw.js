@@ -1,7 +1,7 @@
 // Service worker: precaches the app shell, serves same-origin GETs cache-first while
 // refreshing the cache in the background (stale-while-revalidate).
 // Bump CACHE_VERSION whenever any shell file changes so clients pick up the new version.
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const CACHE = `cosmere-trivia-${CACHE_VERSION}`;
 
 const SHELL = [
@@ -21,6 +21,7 @@ const SHELL = [
   'js/storage.js',
   'js/works.js',
   'js/components/board.js',
+  'js/components/lifelines.js',
   'js/components/question.js',
   'js/components/wheel.js',
   'js/screens/about.js',
