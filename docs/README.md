@@ -13,7 +13,7 @@ node tools/serve.mjs 8080        # o: python3 -m http.server -d app 8080
 ```
 
 Abre `http://<tu-ip>:8080` en el móvil (misma red) y usa *Añadir a pantalla de inicio*.
-Publicada en GitHub Pages: **https://manuvp90.github.io/manuvp90/** (se despliega sola con
+Publicada en GitHub Pages: **https://manuvp90.github.io/ManuVP90/** (se despliega sola con
 `.github/workflows/pages.yml` en cada cambio de `app/` en `main`; requiere *Settings → Pages →
 Source: GitHub Actions*). Ábrela en el móvil y usa *Añadir a pantalla de inicio*.
 
