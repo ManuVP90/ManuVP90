@@ -50,14 +50,14 @@ for (const cat of CATEGORIES) {
   const en = load(enPath);
   if (!en) { warn(`content/en/${cat}.json: missing`); continue; }
   const ids = new Set();
-  stats[cat] = { total: en.length, d1: 0, d2: 0, d3: 0 };
+  stats[cat] = { total: en.length, d1: 0, d2: 0, d3: 0, d4: 0 };
   for (const [i, item] of en.entries()) {
     const where = `en/${cat}[${i}] ${item.id ?? '?'}`;
     if (!/^[a-z]+-\d{3}$/.test(item.id ?? '') || !item.id.startsWith(`${cat}-`)) err(`${where}: bad id`);
     if (ids.has(item.id)) err(`${where}: duplicate id`);
     ids.add(item.id);
     if (item.category !== cat) err(`${where}: category must be ${cat}`);
-    if (![1, 2, 3].includes(item.difficulty)) err(`${where}: difficulty must be 1-3`);
+    if (![1, 2, 3, 4].includes(item.difficulty)) err(`${where}: difficulty must be 1-4`);
     else stats[cat][`d${item.difficulty}`]++;
     if (!WORKS.includes(item.work)) err(`${where}: unknown work "${item.work}"`);
     if (!Array.isArray(item.terms)) err(`${where}: terms must be an array`);

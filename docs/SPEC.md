@@ -35,6 +35,27 @@ se pasa el móvil entre jugadores). Funciona sin conexión.
 2. **Partida rápida** (solo): 15 preguntas de categorías mezcladas, puntuación por acierto y tiempo; récord guardado.
 3. **Práctica**: elige categoría y dificultad, sin puntuación, muestra la explicación de cada respuesta.
 
+### Nivel de dificultad de la partida (v2)
+Al empezar una partida clásica o rápida se elige un nivel (por defecto **Normal**):
+| Nivel | Preguntas | Pregunta final (clásica) |
+|---|---|---|
+| Fácil | dificultad 1 (si se agota, 2) | dificultad 2 |
+| Normal | 1, 2 y 3 (pesos 40/40/20) | dificultad 3 |
+| Difícil | 2, 3 y 4 (pesos 20/40/40) | dificultad 4 |
+| Experto | 3 y 4 (pesos 30/70) | dificultad 4 |
+Si un nivel agota su pool en una categoría, se toma la dificultad más cercana disponible.
+Práctica permite elegir cualquiera de las 4 dificultades.
+
+### Comodines (v2)
+Cada jugador tiene **1 de cada** por partida clásica; en partida rápida, 1 de cada por partida.
+No se pueden usar en la pregunta final. En práctica no hay comodines.
+| Comodín | Efecto |
+|---|---|
+| **Atium** | Elimina dos respuestas incorrectas. |
+| **Luz tormentosa** | Se activa antes de responder: si fallas, la opción fallada se marca y vuelves a elegir (sin revelar la correcta). |
+| **Aliento** | Cambia la pregunta por otra de la misma categoría y dificultad. |
+Nombres oficiales: atium (igual en los 5 idiomas), Stormlight → luz tormentosa / Fulgiflamme / Sturmlicht / Folgoluce, Breath → Aliento / Souffle / Hauch / Soffio.
+
 ### Filtro de spoilers
 En ajustes el jugador marca qué obras ha leído. Solo salen preguntas cuyo `work` esté marcado
 (por defecto: todas). Si el pool de una categoría queda vacío, la ruleta la sustituye por otra
@@ -59,9 +80,10 @@ y el juego exige infundir solo las categorías disponibles.
   }
 ]
 ```
-- `difficulty`: 1 fácil (lectores casuales), 2 media (lectores atentos), 3 difícil (fans de la Coppermind).
+- `difficulty`: 1 fácil (lectores casuales), 2 media (lectores atentos), 3 difícil (fans que releen), 4 experto (detalles rebuscados: epígrafes, Ars Arcanum, interludios, nombres secundarios, cifras exactas, detalles de las novelas cortas; siempre comprobables en el texto publicado).
 - `a`: respuesta correcta; `wrong`: exactamente 3 distractores plausibles, del mismo tipo que la respuesta y únicos.
 - `explain`: 1 frase, se muestra tras responder.
+- **Coherencia de mundo (v2)**: en las categorías de planeta (`roshar`, `scadrial`, `sel`, `nalthis`), la respuesta y los 3 distractores pertenecen al **mismo planeta** que la pregunta. En `otros`, al mismo mundo/obra de la pregunta (no mezclar Lumar con Komashi). En `cosmere`, que trata lo transversal, se permite mezclar mundos, pero las 4 opciones deben ser del mismo tipo.
 - `terms`: **todos** los nombres propios y términos acuñados que aparecen en `q`, `a`, `wrong` o `explain`, escritos tal cual en inglés. Sirve para el glosario.
 - `work`: id de la obra **más tardía** necesaria para conocer la respuesta (para el filtro de spoilers). Ver §4.
 - Prohibido: preguntas que dependan del idioma (número de letras, juegos de palabras, iniciales, rimas), respuestas tipo "todas las anteriores", hechos no canónicos o discutidos, fechas de publicación de ediciones de un país concreto.
