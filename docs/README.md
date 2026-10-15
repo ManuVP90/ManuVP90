@@ -13,8 +13,9 @@ node tools/serve.mjs 8080        # o: python3 -m http.server -d app 8080
 ```
 
 Abre `http://<tu-ip>:8080` en el móvil (misma red) y usa *Añadir a pantalla de inicio*.
-Para tenerla siempre disponible basta con publicar la carpeta `app/` en cualquier hosting
-estático con HTTPS (GitHub Pages, Netlify, Cloudflare Pages…).
+Publicada en GitHub Pages: **https://manuvp90.github.io/manuvp90/** (se despliega sola con
+`.github/workflows/pages.yml` en cada cambio de `app/` en `main`; requiere *Settings → Pages →
+Source: GitHub Actions*). Ábrela en el móvil y usa *Añadir a pantalla de inicio*.
 
 ### Modos
 - **Nivel de dificultad** (partidas clásica y rápida): Fácil, Normal, Difícil o Experto.
