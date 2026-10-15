@@ -324,10 +324,10 @@
     "a": "Des spectres des brumes",
     "wrong": [
       "Des koloss",
-      "Des humains",
-      "Des seons"
+      "Des esprits des brumes",
+      "Des Inquisiteurs d’Acier"
     ],
-    "explain": "Le Seigneur Maître a planté des pointes hémalurgiques dans des spectres des brumes, leur donnant la conscience."
+    "explain": "Les kandras sont des spectres des brumes dotés de conscience par des pointes hémalurgiques appelées Bénédictions."
   },
   {
     "id": "scadrial-031",
@@ -489,10 +489,10 @@
     "a": "Trell",
     "wrong": [
       "Ravage",
-      "Abjection",
+      "Harmonie",
       "Sauvegarde"
     ],
-    "explain": "Trell est en réalité un avatar d’Autonomie, un Éclat venu d’au-delà de Scadrial."
+    "explain": "Les dirigeants du Cercle vénèrent Trell, un ancien dieu de Scadrial, et œuvrent contre les plans d’Harmonie."
   },
   {
     "id": "scadrial-046",
@@ -548,5 +548,335 @@
       "Elend"
     ],
     "explain": "Des siècles plus tard, Marsh sert toujours Harmonie et inspire une crainte légendaire."
+  },
+  {
+    "id": "scadrial-051",
+    "q": "Quel nom Spectre portait-il avant que Kelsier ne lui donne son surnom ?",
+    "a": "Lestibournes",
+    "wrong": [
+      "Cladent",
+      "Hammond",
+      "Ladrian"
+    ],
+    "explain": "Kelsier a rebaptisé le jeune Lestibournes « Spectre » peu après son arrivée dans la bande."
+  },
+  {
+    "id": "scadrial-052",
+    "q": "Qui gouverne Fadrex quand l’armée d’Elend l’assiège dans Le Héros des Siècles ?",
+    "a": "Aradan Yomen",
+    "wrong": [
+      "Quellion",
+      "Ashweather Cett",
+      "Ferson Penrod"
+    ],
+    "explain": "Yomen, un obligateur qui est en secret un Voyant de l’atium, s’est proclamé roi après le départ de Cett pour Luthadel."
+  },
+  {
+    "id": "scadrial-053",
+    "q": "Quel type de Brumant Marasi est-elle ?",
+    "a": "Une Indolente",
+    "wrong": [
+      "Une Glisseuse",
+      "Une Enfumeuse",
+      "Une Traqueuse"
+    ],
+    "explain": "Marasi brûle du cadmium pour ralentir le temps dans une bulle autour d’elle, un pouvoir qu’elle juge presque inutile."
+  },
+  {
+    "id": "scadrial-054",
+    "q": "Quel métal Wayne brûle-t-il en tant que Glisseur ?",
+    "a": "Le cerrobend",
+    "wrong": [
+      "Le cadmium",
+      "Le chrome",
+      "L’électrum"
+    ],
+    "explain": "Brûler du cerrobend permet à Wayne d’accélérer le temps dans une bulle autour de lui."
+  },
+  {
+    "id": "scadrial-055",
+    "q": "Dans L’Empire ultime, qui joue le rôle du seigneur Renoux, le prétendu oncle de Vin ?",
+    "a": "OreSeur",
+    "wrong": [
+      "TenSoon",
+      "Dockson",
+      "Kelsier"
+    ],
+    "explain": "OreSeur, un kandra engagé par Kelsier, portait les os du seigneur Renoux pendant que Vin se faisait passer pour Valette Renoux."
+  },
+  {
+    "id": "scadrial-056",
+    "q": "Les épigraphes des chapitres du Puits de l’Ascension reproduisent les paroles de quel homme ?",
+    "a": "Kwaan",
+    "wrong": [
+      "Alendi",
+      "Sazed",
+      "Rashek"
+    ],
+    "explain": "Elles proviennent de l’inscription laissée par Kwaan avant sa mort, que Sazed a trouvée au Conventicule de Seran."
+  },
+  {
+    "id": "scadrial-057",
+    "q": "Qui dirigeait la rébellion skaa qui a engagé la bande de Kelsier ?",
+    "a": "Yeden",
+    "wrong": [
+      "Demoux",
+      "Goradel",
+      "Camon"
+    ],
+    "explain": "Yeden a ensuite lancé trop tôt l’armée rebelle contre la garnison de Holstep, et il est mort lors de son écrasement."
+  },
+  {
+    "id": "scadrial-058",
+    "q": "Quelle ville était la capitale de la Domination de Terris et le siège du Synode des Gardiens ?",
+    "a": "Tathingdwen",
+    "wrong": [
+      "Urteau",
+      "Fellise",
+      "Fadrex"
+    ],
+    "explain": "Les Gardiens y revenaient régulièrement mettre à jour leurs cerveaux de cuivre, jusqu’à ce que des Inquisiteurs et des koloss l’incendient."
+  },
+  {
+    "id": "scadrial-059",
+    "q": "Dans quelle ville des Rocailles Wax faisait-il régner l’ordre avant de revenir à Elendel ?",
+    "a": "Weathering",
+    "wrong": [
+      "Bilming",
+      "Nouvelle-Seran",
+      "Fadrex"
+    ],
+    "explain": "Wax, Wayne, Lessie et des adjoints comme Barl maintenaient l’ordre à Weathering et dans ses environs."
+  },
+  {
+    "id": "scadrial-060",
+    "q": "Comment s’appelle l’étrange métal lié au dieu Trell ?",
+    "a": "Le trellium",
+    "wrong": [
+      "L’harmonium",
+      "Le malatium",
+      "Le lérasium"
+    ],
+    "explain": "Le trellium et l’harmonium se repoussent, et les forcer l’un contre l’autre peut déclencher une explosion dévastatrice."
+  },
+  {
+    "id": "scadrial-061",
+    "q": "À quelle Génération de kandras TenSoon appartient-il ?",
+    "a": "La Troisième",
+    "wrong": [
+      "La Première",
+      "La Deuxième",
+      "La Cinquième"
+    ],
+    "explain": "Kandra de la Troisième Génération, TenSoon est plus âgé que la plupart des siens, mais au-dessous de la Deuxième Génération qui gouverne."
+  },
+  {
+    "id": "scadrial-062",
+    "q": "Quelle Bénédiction kandra confère une force accrue ?",
+    "a": "La Bénédiction de Puissance",
+    "wrong": [
+      "La Bénédiction de Présence",
+      "La Bénédiction de Lucidité",
+      "La Bénédiction de Stabilité"
+    ],
+    "explain": "TenSoon a été créé avec la Bénédiction de Présence et a plus tard pris la Bénédiction de Puissance d’OreSeur."
+  },
+  {
+    "id": "scadrial-063",
+    "q": "Dans son inscription, Kwaan se présente comme un philosophe, un érudit et quoi d’autre ?",
+    "a": "Un traître",
+    "wrong": [
+      "Un prophète",
+      "Un héros",
+      "Un Gardien"
+    ],
+    "explain": "Kwaan a d’abord proclamé Alendi Héros des Siècles, avant de le trahir pour mettre fin à sa quête."
+  },
+  {
+    "id": "scadrial-064",
+    "q": "Sur quoi Kwaan a-t-il consigné son dernier témoignage ?",
+    "a": "Une plaque d’acier",
+    "wrong": [
+      "Un mur de pierre",
+      "Un rouleau de vélin",
+      "Une tablette d’argile"
+    ],
+    "explain": "Kwaan a écrit sur l’acier car, selon lui, on ne peut se fier à rien de ce qui n’est pas gravé dans le métal."
+  },
+  {
+    "id": "scadrial-065",
+    "q": "Qui s’est révélé être le père de Vin ?",
+    "a": "Tevidian",
+    "wrong": [
+      "Kar",
+      "Tresting",
+      "Straff Venture"
+    ],
+    "explain": "Tevidian était le Seigneur Prélan du Ministère d’Acier ; le Seigneur Maître a laissé les Inquisiteurs le tuer une fois la vérité révélée."
+  },
+  {
+    "id": "scadrial-066",
+    "q": "D’après le journal d’Alendi, quel membre de son groupe a été poignardé par un esprit des brumes ?",
+    "a": "Fedik",
+    "wrong": [
+      "Rashek",
+      "Kwaan",
+      "Gemmel"
+    ],
+    "explain": "Fedik a survécu à l’attaque, et Rashek a fait courir le bruit qu’Alendi lui-même en était l’auteur."
+  },
+  {
+    "id": "scadrial-067",
+    "q": "Miles Hundredlives est un Double-Fils au même métal en allomancie et en ferrochimie. Lequel ?",
+    "a": "L’or",
+    "wrong": [
+      "Le potin",
+      "Le cerrobend",
+      "Le fer"
+    ],
+    "explain": "À la fois Augure et Sang-Neuf, Miles peut composer l’or et guérir presque n’importe quelle blessure en un instant."
+  },
+  {
+    "id": "scadrial-068",
+    "q": "Dans le prologue de L’Alliage de la justice, quel hors-la-loi Wax et Lessie traquent-ils à Feltrel ?",
+    "a": "Tan le Sanglant",
+    "wrong": [
+      "Miles Hundredlives",
+      "Monsieur Costume",
+      "Le Saigneur"
+    ],
+    "explain": "Tan a attiré Lessie sur la trajectoire de la balle de Wax, et Wax l’a abattu."
+  },
+  {
+    "id": "scadrial-069",
+    "q": "Sous quel autre nom l’harmonium est-il connu sur Scadrial ?",
+    "a": "L’ettmetal",
+    "wrong": [
+      "Le trellium",
+      "Le malatium",
+      "Le duralumin"
+    ],
+    "explain": "L’harmonium est le métal divin d’Harmonie ; il réagit violemment au contact de l’eau."
+  },
+  {
+    "id": "scadrial-070",
+    "q": "Que stocke un ferrochimiste dans le cadmium ?",
+    "a": "Le souffle",
+    "wrong": [
+      "La fortune",
+      "La détermination",
+      "L’identité"
+    ],
+    "explain": "Un Insuffleur hyperventile pendant qu’il stocke, et peut ensuite se passer de respirer pendant longtemps."
+  },
+  {
+    "id": "scadrial-071",
+    "q": "D’après l’Ars Arcanum, que vole une pointe hémalurgique de potin ?",
+    "a": "Les pouvoirs ferrochimiques physiques",
+    "wrong": [
+      "Les pouvoirs allomantiques physiques",
+      "La force humaine",
+      "Les sens humains"
+    ],
+    "explain": "Les pointes d’acier volent les pouvoirs allomantiques physiques, celles de fer la force et celles d’étain les sens."
+  },
+  {
+    "id": "scadrial-072",
+    "q": "Quel pouvoir allomantique Quellion, le Citoyen d’Urteau, tenait-il d’une pointe hémalurgique cachée ?",
+    "a": "Celui d’un Traqueur",
+    "wrong": [
+      "Celui d’un Apaiseur",
+      "Celui d’un Exalteur",
+      "Celui d’un Cogneur"
+    ],
+    "explain": "Quellion se servait d’une pointe de bronze pour repérer des allomanciens qu’il pouvait faire chanter pour les obliger à travailler pour lui."
+  },
+  {
+    "id": "scadrial-073",
+    "q": "Combien de pointes hémalurgiques faut-il pour créer un koloss ?",
+    "a": "Quatre",
+    "wrong": [
+      "Deux",
+      "Trois",
+      "Sept"
+    ],
+    "explain": "Les pointes sont prélevées sur quatre personnes et plantées dans une cinquième, qui devient le koloss."
+  },
+  {
+    "id": "scadrial-074",
+    "q": "Comment appelle-t-on un Brumant qui brûle de l’électrum ?",
+    "a": "Un Oracle",
+    "wrong": [
+      "Un Augure",
+      "Une Sangsue",
+      "Un Nicrobrûleur"
+    ],
+    "explain": "Un Oracle entrevoit ses propres avenirs possibles, quelques secondes à l’avance."
+  },
+  {
+    "id": "scadrial-075",
+    "q": "Comment appelle-t-on un ferrochimiste qui stocke la vitesse mentale dans le zinc ?",
+    "a": "Une Étincelle",
+    "wrong": [
+      "Un Sifflevent",
+      "Un Ardent",
+      "Une Sentinelle"
+    ],
+    "explain": "Une Étincelle peut ensuite puiser dans ce zinc pour penser bien plus vite que la normale."
+  },
+  {
+    "id": "scadrial-076",
+    "q": "Combien la rébellion skaa de Yeden a-t-elle accepté de payer la bande de Kelsier ?",
+    "a": "Trente mille boxings",
+    "wrong": [
+      "Dix mille boxings",
+      "Trois mille boxings",
+      "Cent mille boxings"
+    ],
+    "explain": "La moitié devait être versée d’avance et le reste une fois le travail accompli ; les rebelles avaient économisé cette somme pendant des années."
+  },
+  {
+    "id": "scadrial-077",
+    "q": "Dans Le Onzième Métal, quel noble Fils-des-Brumes Kelsier affronte-t-il et tue-t-il dans sa forteresse de Mantiz ?",
+    "a": "Lord Shezler",
+    "wrong": [
+      "Lord Tresting",
+      "Lord Hasting",
+      "Lord Tekiel"
+    ],
+    "explain": "Kelsier s’empare du carnet d’Antillius Shezler, rempli de recherches sur un éventuel onzième métal."
+  },
+  {
+    "id": "scadrial-078",
+    "q": "Dans Jak l’Allomancien et les fosses d’Eltania, que contient finalement le Trésor du Survivant ?",
+    "a": "Des pointes de koloss",
+    "wrong": [
+      "Des perles d’atium",
+      "Une perle de lérasium",
+      "Les Bracelets des Larmes"
+    ],
+    "explain": "Jak a plongé dans les fosses et en a remonté un coffre plein de pointes de koloss ; le coffre lui-même était en aluminium."
+  },
+  {
+    "id": "scadrial-079",
+    "q": "Dans Fils-des-Brumes : l’histoire secrète, qu’est-ce qui empêche Kelsier de passer dans l’Au-delà après sa mort ?",
+    "a": "Le pouvoir du Puits de l’Ascension",
+    "wrong": [
+      "Une pointe hémalurgique",
+      "La boucle d’oreille de Vin",
+      "Les cerveaux de cuivre de Sazed"
+    ],
+    "explain": "Kelsier a poussé Sauvegarde à révéler que le Puits était tout proche, et son pouvoir l’a retenu sous forme d’ombre cognitive."
+  },
+  {
+    "id": "scadrial-080",
+    "q": "Quel Canton du Ministère d’Acier abritait le Conventicule de Seran ?",
+    "a": "Le Canton de l’Inquisition",
+    "wrong": [
+      "Le Canton de l’Orthodoxie",
+      "Le Canton des Ressources",
+      "Le Canton des Finances"
+    ],
+    "explain": "Le Conventicule était la forteresse des Inquisiteurs, et l’inscription d’acier de Kwaan reposait dans ses profondeurs."
   }
 ]

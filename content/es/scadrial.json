@@ -214,7 +214,7 @@
     "a": "El lerasio",
     "wrong": [
       "El atium",
-      "El armonio",
+      "El armonium",
       "El electro"
     ],
     "explain": "El lerasio es la forma metálica del poder de Conservación."
@@ -270,7 +270,7 @@
     "wrong": [
       "La Fortaleza Venture",
       "La Fortaleza Hasting",
-      "El Conventículo de Seran"
+      "El Convento de Seran"
     ],
     "explain": "Su nombre significa «la Colina de las Mil Agujas»."
   },
@@ -320,14 +320,14 @@
   },
   {
     "id": "scadrial-030",
-    "q": "¿A partir de qué criaturas se crearon originalmente los kandra?",
+    "q": "¿A partir de qué criaturas se crean los kandra?",
     "a": "Espectros de la bruma",
     "wrong": [
       "Koloss",
-      "Humanos",
-      "Seones"
+      "Espíritus de la bruma",
+      "Inquisidores de Acero"
     ],
-    "explain": "El lord Legislador clavó clavos hemalúrgicos a los espectros de la bruma y así les dio consciencia."
+    "explain": "Los kandra son espectros de la bruma que han recibido consciencia gracias a clavos hemalúrgicos llamados Bendiciones."
   },
   {
     "id": "scadrial-031",
@@ -397,14 +397,14 @@
   },
   {
     "id": "scadrial-037",
-    "q": "¿Quién es el hombre conocido como el Señor Traje?",
+    "q": "¿Quién es el hombre conocido como el Señor Conjunto?",
     "a": "Edwarn Ladrian",
     "wrong": [
       "Miles Cienvidas",
       "Telsin Ladrian",
       "Lord Harms"
     ],
-    "explain": "El Señor Traje, el hombre detrás de Miles y los Desvanecedores, es el tío de Wax."
+    "explain": "El Señor Conjunto, el hombre detrás de Miles y los Desvanecedores, es el tío de Wax."
   },
   {
     "id": "scadrial-038",
@@ -489,10 +489,10 @@
     "a": "A Trell",
     "wrong": [
       "A Ruina",
-      "A Odium",
+      "A Armonía",
       "A Conservación"
     ],
-    "explain": "Trell es en realidad una máscara de Autonomía, una Esquirla ajena a Scadrial."
+    "explain": "Los líderes del Grupo adoran a Trell, un antiguo dios de Scadrial, y conspiran contra los planes de Armonía."
   },
   {
     "id": "scadrial-046",
@@ -548,5 +548,335 @@
       "Elend"
     ],
     "explain": "Siglos después, Marsh sigue sirviendo a Armonía y se le teme como a una figura de leyenda."
+  },
+  {
+    "id": "scadrial-051",
+    "q": "¿Qué nombre tenía Fantasma antes de que Kelsier le diera su apodo?",
+    "a": "Lestibournes",
+    "wrong": [
+      "Cladent",
+      "Hammond",
+      "Ladrian"
+    ],
+    "explain": "Kelsier rebautizó al joven Lestibournes como «Fantasma» poco después de que se uniera a la banda."
+  },
+  {
+    "id": "scadrial-052",
+    "q": "¿Quién gobierna Ciudad Fadrex cuando el ejército de Elend la asedia en El Héroe de las Eras?",
+    "a": "Aradan Yomen",
+    "wrong": [
+      "Quellion",
+      "Ashweather Cett",
+      "Ferson Penrod"
+    ],
+    "explain": "Yomen, un obligador que es en secreto brumoso de atium, se proclamó rey después de que Cett partiera hacia Luthadel."
+  },
+  {
+    "id": "scadrial-053",
+    "q": "¿Qué tipo de brumoso es Marasi?",
+    "a": "Pulsadora",
+    "wrong": [
+      "Deslizadora",
+      "Ahumadora",
+      "Buscadora"
+    ],
+    "explain": "Marasi quema cadmio para ralentizar el tiempo en una burbuja a su alrededor, un poder que considera casi inútil."
+  },
+  {
+    "id": "scadrial-054",
+    "q": "¿Qué metal quema Wayne como deslizador?",
+    "a": "Bendaleo",
+    "wrong": [
+      "Cadmio",
+      "Cromo",
+      "Electro"
+    ],
+    "explain": "Quemar bendaleo permite a Wayne acelerar el tiempo en una burbuja a su alrededor."
+  },
+  {
+    "id": "scadrial-055",
+    "q": "¿Quién interpreta a lord Renoux, el supuesto tío de Vin, en El imperio final?",
+    "a": "OreSeur",
+    "wrong": [
+      "TenSoon",
+      "Dockson",
+      "Kelsier"
+    ],
+    "explain": "OreSeur, un kandra contratado por Kelsier, llevaba los huesos de lord Renoux mientras Vin se hacía pasar por Valette Renoux."
+  },
+  {
+    "id": "scadrial-056",
+    "q": "Los epígrafes de los capítulos de El Pozo de la Ascensión reproducen las palabras de un hombre. ¿De quién?",
+    "a": "De Kwaan",
+    "wrong": [
+      "De Alendi",
+      "De Sazed",
+      "De Rashek"
+    ],
+    "explain": "Proceden de la inscripción que dejó Kwaan antes de morir y que Sazed encontró en el Convento de Seran."
+  },
+  {
+    "id": "scadrial-057",
+    "q": "¿Quién era el líder de la rebelión skaa que contrató a la banda de Kelsier?",
+    "a": "Yeden",
+    "wrong": [
+      "Demoux",
+      "Goradel",
+      "Camon"
+    ],
+    "explain": "Yeden lanzó demasiado pronto al ejército rebelde contra la guarnición de Holstep y murió cuando lo aplastaron."
+  },
+  {
+    "id": "scadrial-058",
+    "q": "¿Qué ciudad era la capital del Dominio de Terris y la sede del Sínodo de los Guardadores?",
+    "a": "Tathingdwen",
+    "wrong": [
+      "Urteau",
+      "Fellise",
+      "Ciudad Fadrex"
+    ],
+    "explain": "Los Guardadores volvían allí periódicamente para actualizar sus mentecobres, hasta que Inquisidores y koloss la arrasaron."
+  },
+  {
+    "id": "scadrial-059",
+    "q": "¿En qué pueblo de los Áridos mantenía Wax el orden antes de volver a Elendel?",
+    "a": "Weathering",
+    "wrong": [
+      "Bilming",
+      "Nueva Seran",
+      "Ciudad Fadrex"
+    ],
+    "explain": "Wax, Wayne, Lessie y ayudantes como Barl mantenían el orden en Weathering y sus alrededores."
+  },
+  {
+    "id": "scadrial-060",
+    "q": "¿Cómo se llama el extraño metal ligado al dios Trell?",
+    "a": "Trellium",
+    "wrong": [
+      "Armonium",
+      "Malatio",
+      "Lerasio"
+    ],
+    "explain": "El trellium y el armonium se repelen, y forzarlos a unirse puede provocar una explosión devastadora."
+  },
+  {
+    "id": "scadrial-061",
+    "q": "¿A qué Generación kandra pertenece TenSoon?",
+    "a": "A la Tercera",
+    "wrong": [
+      "A la Primera",
+      "A la Segunda",
+      "A la Quinta"
+    ],
+    "explain": "Como kandra de la Tercera Generación, TenSoon es más antiguo que la mayoría de los suyos, pero está por debajo de la Segunda, que gobierna."
+  },
+  {
+    "id": "scadrial-062",
+    "q": "¿Qué Bendición kandra otorga a su portador más fuerza?",
+    "a": "La Bendición de la Potencia",
+    "wrong": [
+      "La Bendición de la Presencia",
+      "La Bendición de la Consciencia",
+      "La Bendición de la Estabilidad"
+    ],
+    "explain": "TenSoon fue creado con la Bendición de la Presencia y más tarde tomó la Bendición de la Potencia de OreSeur."
+  },
+  {
+    "id": "scadrial-063",
+    "q": "En su inscripción, Kwaan se describe como filósofo, erudito y... ¿qué más?",
+    "a": "Traidor",
+    "wrong": [
+      "Profeta",
+      "Héroe",
+      "Guardador"
+    ],
+    "explain": "Kwaan proclamó primero a Alendi Héroe de las Eras y después lo traicionó para detener su búsqueda."
+  },
+  {
+    "id": "scadrial-064",
+    "q": "¿Sobre qué dejó Kwaan su relato final?",
+    "a": "Una plancha de acero",
+    "wrong": [
+      "Un muro de piedra",
+      "Un rollo de vitela",
+      "Una tablilla de arcilla"
+    ],
+    "explain": "Kwaan escribió en acero porque, según dice, no se puede confiar en nada que no esté grabado en metal."
+  },
+  {
+    "id": "scadrial-065",
+    "q": "¿Quién resultó ser el padre de Vin?",
+    "a": "Tevidian",
+    "wrong": [
+      "Kar",
+      "Tresting",
+      "Straff Venture"
+    ],
+    "explain": "Tevidian era el lord Prelan del Ministerio del Acero; el lord Legislador permitió que los Inquisidores lo mataran cuando se supo la verdad."
+  },
+  {
+    "id": "scadrial-066",
+    "q": "Según el diario de Alendi, ¿a qué miembro de su grupo apuñaló un espíritu de la bruma?",
+    "a": "A Fedik",
+    "wrong": [
+      "A Rashek",
+      "A Kwaan",
+      "A Gemmel"
+    ],
+    "explain": "Fedik sobrevivió al ataque, y Rashek difundió el rumor de que el agresor había sido el propio Alendi."
+  },
+  {
+    "id": "scadrial-067",
+    "q": "Miles Cienvidas es un nacidoble con el mismo metal en Alomancia y Feruquimia. ¿Cuál?",
+    "a": "Oro",
+    "wrong": [
+      "Peltre",
+      "Bendaleo",
+      "Hierro"
+    ],
+    "explain": "Como augur y hacedor de sangre, Miles puede componer oro y curar casi cualquier herida al instante."
+  },
+  {
+    "id": "scadrial-068",
+    "q": "En el prólogo de Aleación de ley, ¿a qué forajido persiguen Wax y Lessie en Feltrel?",
+    "a": "A Sangriento Tan",
+    "wrong": [
+      "A Miles Cienvidas",
+      "Al Señor Conjunto",
+      "Al Sangrador"
+    ],
+    "explain": "Tan puso a Lessie en la trayectoria de la bala de Wax, y Wax lo mató de un disparo."
+  },
+  {
+    "id": "scadrial-069",
+    "q": "¿Con qué otro nombre se conoce el armonium en Scadrial?",
+    "a": "Ettmetal",
+    "wrong": [
+      "Trellium",
+      "Malatio",
+      "Duraluminio"
+    ],
+    "explain": "El armonium es el metal divino de Armonía y reacciona violentamente con el agua."
+  },
+  {
+    "id": "scadrial-070",
+    "q": "¿Qué almacena un feruquimista en el cadmio?",
+    "a": "Aliento",
+    "wrong": [
+      "Fortuna",
+      "Determinación",
+      "Identidad"
+    ],
+    "explain": "Un susurrante hiperventila mientras almacena y después puede pasar largos ratos sin necesidad de respirar."
+  },
+  {
+    "id": "scadrial-071",
+    "q": "Según el Ars Arcanum, ¿qué roba un clavo hemalúrgico de peltre?",
+    "a": "Poderes feruquímicos físicos",
+    "wrong": [
+      "Poderes alománticos físicos",
+      "Fuerza humana",
+      "Sentidos humanos"
+    ],
+    "explain": "Los clavos de acero roban poderes alománticos físicos; los de hierro, fuerza, y los de estaño, sentidos."
+  },
+  {
+    "id": "scadrial-072",
+    "q": "¿Qué poder alomántico obtuvo Quellion, el Ciudadano de Urteau, gracias a un clavo hemalúrgico oculto?",
+    "a": "El de buscador",
+    "wrong": [
+      "El de aplacador",
+      "El de encendedor",
+      "El de violento"
+    ],
+    "explain": "Quellion usaba un clavo de bronce para encontrar alománticos a los que chantajear para que trabajaran para él."
+  },
+  {
+    "id": "scadrial-073",
+    "q": "¿Cuántos clavos hemalúrgicos se usan para crear un koloss?",
+    "a": "Cuatro",
+    "wrong": [
+      "Dos",
+      "Tres",
+      "Siete"
+    ],
+    "explain": "Los clavos se extraen de cuatro personas y se clavan en una quinta, que se convierte en el koloss."
+  },
+  {
+    "id": "scadrial-074",
+    "q": "¿Cómo se llama el brumoso que quema electro?",
+    "a": "Oráculo",
+    "wrong": [
+      "Augur",
+      "Sanguijuela",
+      "Nicroestallante"
+    ],
+    "explain": "Un oráculo ve sus propios futuros posibles con unos segundos de antelación."
+  },
+  {
+    "id": "scadrial-075",
+    "q": "¿Cómo se llama el feruquimista que almacena velocidad mental en zinc?",
+    "a": "Chispeante",
+    "wrong": [
+      "Susurravientos",
+      "Alma de fuego",
+      "Centinela"
+    ],
+    "explain": "Un chispeante puede recurrir después a ese zinc para pensar mucho más rápido de lo normal."
+  },
+  {
+    "id": "scadrial-076",
+    "q": "¿Cuánto acordó pagar la rebelión skaa de Yeden a la banda de Kelsier?",
+    "a": "Treinta mil cuartos",
+    "wrong": [
+      "Diez mil cuartos",
+      "Tres mil cuartos",
+      "Cien mil cuartos"
+    ],
+    "explain": "La mitad se pagaría por adelantado y la otra mitad al terminar el trabajo; los rebeldes llevaban años ahorrando."
+  },
+  {
+    "id": "scadrial-077",
+    "q": "En El undécimo metal, ¿contra qué nacido de la bruma noble lucha Kelsier hasta matarlo en su fortaleza de Mantiz?",
+    "a": "Lord Shezler",
+    "wrong": [
+      "Lord Tresting",
+      "Lord Hasting",
+      "Lord Tekiel"
+    ],
+    "explain": "Kelsier se llevó el cuaderno de Antillius Shezler, lleno de investigaciones sobre un posible undécimo metal."
+  },
+  {
+    "id": "scadrial-078",
+    "q": "En Alomante Jak y los Pozos de Eltania, ¿qué contiene en realidad el Tesoro del Superviviente?",
+    "a": "Clavos de koloss",
+    "wrong": [
+      "Perlas de atium",
+      "Una perla de lerasio",
+      "Los Brazales de duelo"
+    ],
+    "explain": "Jak se sumergió en los pozos y sacó un cofre lleno de clavos de koloss; el propio cofre resultó ser de aluminio."
+  },
+  {
+    "id": "scadrial-079",
+    "q": "En Historia secreta, ¿qué impide a Kelsier pasar al Más Allá tras su muerte?",
+    "a": "El poder del Pozo de la Ascensión",
+    "wrong": [
+      "Un clavo hemalúrgico",
+      "El pendiente de Vin",
+      "Las mentecobres de Sazed"
+    ],
+    "explain": "Kelsier engañó a Conservación para que le revelara que el Pozo estaba cerca, y su poder lo retuvo como sombra cognitiva."
+  },
+  {
+    "id": "scadrial-080",
+    "q": "¿Qué Cantón del Ministerio del Acero controlaba el Convento de Seran?",
+    "a": "El Cantón de la Inquisición",
+    "wrong": [
+      "El Cantón de la Ortodoxia",
+      "El Cantón de Recursos",
+      "El Cantón de Finanzas"
+    ],
+    "explain": "El Convento era la fortaleza de los Inquisidores, y la inscripción en acero de Kwaan estaba en sus profundidades."
   }
 ]

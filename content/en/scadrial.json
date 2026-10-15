@@ -655,21 +655,22 @@
     "category": "scadrial",
     "difficulty": 3,
     "work": "hero-of-ages",
-    "q": "From which creatures were the kandra originally created?",
+    "q": "From which creatures are kandra created?",
     "a": "Mistwraiths",
     "wrong": [
       "Koloss",
-      "Humans",
+      "Mist spirits",
       "Steel Inquisitors"
     ],
-    "explain": "The Lord Ruler gave Hemalurgic spikes to mistwraiths, granting them sentience.",
+    "explain": "Kandra are mistwraiths granted sentience by Hemalurgic spikes known as Blessings.",
     "terms": [
       "kandra",
       "mistwraith",
       "koloss",
+      "mist spirit",
       "Steel Inquisitor",
-      "Lord Ruler",
-      "Hemalurgy"
+      "Hemalurgy",
+      "Blessing"
     ],
     "source": "The Hero of Ages"
   },
@@ -1005,15 +1006,13 @@
       "Harmony",
       "Preservation"
     ],
-    "explain": "Trell is in fact a guise of Autonomy, a Shard from beyond Scadrial.",
+    "explain": "The Set's leaders worship Trell, an ancient god of Scadrial, and work against Harmony's plans.",
     "terms": [
       "Set",
       "Trell",
       "Ruin",
       "Harmony",
       "Preservation",
-      "Autonomy",
-      "Shard",
       "Scadrial"
     ],
     "source": "The Lost Metal"
@@ -1142,21 +1141,21 @@
     "category": "scadrial",
     "difficulty": 3,
     "work": "final-empire",
-    "q": "What is Spook's real name?",
+    "q": "What name did Spook go by before Kelsier gave him his nickname?",
     "a": "Lestibournes",
     "wrong": [
       "Cladent",
       "Hammond",
       "Ladrian"
     ],
-    "explain": "He was born Lestibournes; Kelsier gave him the nickname Spook.",
+    "explain": "Kelsier renamed the young Lestibournes \"Spook\" soon after he joined the crew.",
     "terms": [
       "Spook",
+      "Kelsier",
       "Lestibournes",
       "Cladent",
       "Hammond",
-      "Ladrian",
-      "Kelsier"
+      "Ladrian"
     ],
     "source": "The Final Empire"
   },
@@ -1297,14 +1296,15 @@
       "Goradel",
       "Camon"
     ],
-    "explain": "Yeden was sceptical of Kelsier at first, but later came to believe the rebel army was invincible.",
+    "explain": "Yeden later led the rebel army against the Holstep garrison too early, and he died when it was crushed.",
     "terms": [
       "skaa",
       "Kelsier",
       "Yeden",
       "Demoux",
       "Goradel",
-      "Camon"
+      "Camon",
+      "Holstep"
     ],
     "source": "The Final Empire"
   },
@@ -1417,7 +1417,7 @@
       "The Blessing of Awareness",
       "The Blessing of Stability"
     ],
-    "explain": "Potency is made from a pair of iron spikes; TenSoon received it from OreSeur.",
+    "explain": "TenSoon was created with the Blessing of Presence and later took OreSeur's Blessing of Potency.",
     "terms": [
       "kandra",
       "Blessing",
@@ -1616,7 +1616,7 @@
     "id": "scadrial-071",
     "category": "scadrial",
     "difficulty": 4,
-    "work": "alloy-of-law",
+    "work": "hero-of-ages",
     "q": "According to the Ars Arcanum, what does a Hemalurgic spike of pewter steal?",
     "a": "Physical Feruchemical powers",
     "wrong": [
@@ -1631,7 +1631,7 @@
       "Feruchemy",
       "Allomancy"
     ],
-    "source": "Ars Arcanum (era 2), Hemalurgy table"
+    "source": "The Hero of Ages, Ars Arcanum (Hemalurgy table)"
   },
   {
     "id": "scadrial-072",
@@ -1786,7 +1786,7 @@
       "A bead of lerasium",
       "The Bands of Mourning"
     ],
-    "explain": "The strongbox held enough iron spikes to make dozens of koloss, which pleased the koloss enough for Jak to slip away.",
+    "explain": "Jak dove into the pits and brought up a chest full of koloss spikes; the chest itself turned out to be made of aluminum.",
     "terms": [
       "Allomancer Jak and the Pits of Eltania",
       "Survivor's Treasure",
@@ -1794,7 +1794,8 @@
       "atium",
       "lerasium",
       "Bands of Mourning",
-      "Jak"
+      "Jak",
+      "aluminum"
     ],
     "source": "Allomancer Jak and the Pits of Eltania"
   },
@@ -1829,7 +1830,7 @@
     "id": "scadrial-080",
     "category": "scadrial",
     "difficulty": 4,
-    "work": "final-empire",
+    "work": "well-of-ascension",
     "q": "Which Canton of the Steel Ministry held the Conventical of Seran?",
     "a": "The Canton of Inquisition",
     "wrong": [

@@ -563,7 +563,7 @@
       "Talaxin",
       "Jewels"
     ],
-    "explain": "As Azure, she commands the Wall Guard defending Kholinar.",
+    "explain": "Vivenna travelled to Roshar and, in Kholinar, became known as the swordswoman Azure.",
     "terms": [
       "Vivenna",
       "Kholinar",
@@ -572,7 +572,7 @@
       "Zahel",
       "Talaxin",
       "Jewels",
-      "Wall Guard"
+      "Roshar"
     ],
     "source": "Oathbringer"
   },
@@ -580,26 +580,26 @@
     "id": "nalthis-027",
     "category": "nalthis",
     "difficulty": 2,
-    "work": "words-of-radiance",
-    "q": "Who receives Nightblood at the end of Words of Radiance?",
-    "a": "Szeth",
+    "work": "warbreaker",
+    "q": "Which Awakener created Nightblood together with Vasher?",
+    "a": "Shashara",
     "wrong": [
-      "Kaladin",
-      "Adolin",
-      "Dalinar"
+      "Yesteel",
+      "Denth",
+      "Vivenna"
     ],
-    "explain": "The Herald Nale gives the talking sword to Szeth after reviving him.",
+    "explain": "The two Awakened the sword together; Vasher later killed Shashara with it to keep the method of Awakening steel secret.",
     "terms": [
+      "Awakener",
       "Nightblood",
-      "Words of Radiance",
-      "Szeth",
-      "Kaladin",
-      "Adolin",
-      "Dalinar",
-      "Herald",
-      "Nale"
+      "Vasher",
+      "Shashara",
+      "Yesteel",
+      "Denth",
+      "Vivenna",
+      "Awakened"
     ],
-    "source": "Words of Radiance, final Szeth chapter"
+    "source": "Warbreaker"
   },
   {
     "id": "nalthis-028",
@@ -913,7 +913,7 @@
       "Lemex",
       "Tonk Fah"
     ],
-    "explain": "Denth, Shashara's brother, was also a Returned and one of the Five Scholars.",
+    "explain": "Denth, who later led a band of mercenaries in T'Telir, was also a Returned and one of the Five Scholars.",
     "terms": [
       "Vasher",
       "Shashara",
@@ -924,7 +924,8 @@
       "Llarimar",
       "Lemex",
       "Tonk Fah",
-      "Returned"
+      "Returned",
+      "T'Telir"
     ],
     "source": "Warbreaker"
   },
@@ -995,19 +996,16 @@
     "category": "nalthis",
     "difficulty": 3,
     "work": "warbreaker",
-    "q": "Why is the palace scribe Havarseth known as Bluefingers?",
+    "q": "Why is the palace scribe Bluefingers given that nickname?",
     "a": "His fingers are stained with ink",
     "wrong": [
-      "He handles the Tears of Edgli dyes",
+      "He handles the palace's blue dyes",
       "He lost his fingers to frostbite",
       "He paints the gods' portraits"
     ],
-    "explain": "The Pahn Kahl head scribe is rarely seen without his ledger.",
+    "explain": "His fingers seem permanently stained with blue ink, and he is rarely seen without his ledger.",
     "terms": [
-      "Havarseth",
-      "Bluefingers",
-      "Tears of Edgli",
-      "Pahn Kahl"
+      "Bluefingers"
     ],
     "source": "Warbreaker"
   },
@@ -1155,14 +1153,11 @@
       "Ten thousand",
       "Fifty thousand"
     ],
-    "explain": "Shashara and Talaxin forged the Breaths into a plain steel sword with the Command \"Destroy evil\".",
+    "explain": "Awakening steel required forging the Breaths into the blade along with an extremely difficult visualization.",
     "terms": [
       "Breath",
       "Awakening",
-      "Nightblood",
-      "Shashara",
-      "Talaxin",
-      "Command"
+      "Nightblood"
     ],
     "source": "Warbreaker"
   },
@@ -1172,18 +1167,18 @@
     "difficulty": 4,
     "work": "warbreaker",
     "q": "Lightsong keeps dreaming of a red panther. What was the Red Panther in his former life?",
-    "a": "His brother's sailboat",
+    "a": "A sailboat",
     "wrong": [
       "His family's crest",
       "A tavern he owned",
       "A pet he kept"
     ],
-    "explain": "Stennimar drowned after a wave swept his niece Tatara off the boat during a storm.",
+    "explain": "Llarimar borrowed the Red Panther for a family trip, and Lightsong later uses its name as a Command phrase.",
     "terms": [
       "Lightsong",
       "Red Panther",
-      "Stennimar",
-      "Tatara"
+      "Llarimar",
+      "Command"
     ],
     "source": "Warbreaker"
   },
@@ -1221,16 +1216,16 @@
     "q": "According to Hoid's tale, who was chosen as the first monarch after Vo, beginning the line of the Idrian royals?",
     "a": "Vo's wife",
     "wrong": [
+      "Vo's sister",
       "Vo's brother",
-      "Vo's eldest son",
       "The ship's captain"
     ],
-    "explain": "Vo's crew founded a kingdom and chose his wife to rule it, which is why Siri's family claims divine descent.",
+    "explain": "Vo's shipmates founded a kingdom and made his wife, who carried his child, their queen; her line later ruled Idris.",
     "terms": [
       "Hoid",
       "Vo",
       "Idrian",
-      "Siri"
+      "Idris"
     ],
     "source": "Warbreaker"
   },
@@ -1267,7 +1262,7 @@
       "Arsteel",
       "Yesteel"
     ],
-    "explain": "Vasher, then also called Talaxin, seized power as Kalad during the Manywar before becoming known as Peacegiver.",
+    "explain": "As Kalad, Vasher created the Phantoms during the Manywar, long before he was revered as Peacegiver.",
     "terms": [
       "Kalad",
       "Kalad's Phantoms",
@@ -1275,7 +1270,6 @@
       "Denth",
       "Arsteel",
       "Yesteel",
-      "Talaxin",
       "Manywar",
       "Peacegiver"
     ],
@@ -1332,7 +1326,7 @@
     "category": "nalthis",
     "difficulty": 4,
     "work": "warbreaker",
-    "q": "What is the real name of the Pahn Kahl scribe known as Bluefingers?",
+    "q": "What is the real name of the palace scribe known as Bluefingers?",
     "a": "Havarseth",
     "wrong": [
       "Gendren",
@@ -1341,7 +1335,6 @@
     ],
     "explain": "He introduces himself to Siri by this name, adding that everyone calls him Bluefingers.",
     "terms": [
-      "Pahn Kahl",
       "Bluefingers",
       "Havarseth",
       "Gendren",

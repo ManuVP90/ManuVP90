@@ -1216,19 +1216,19 @@
     "a": "Karata",
     "wrong": [
       "Galladon",
-      "Aanden",
+      "Daora",
       "Mareshe"
     ],
-    "explain": "Karata falls defending Raoden during the Dakhor attack, just before Elantris is restored.",
+    "explain": "Karata is beheaded fighting the Fjordell soldiers who try to stop Raoden, moments before Elantris is restored.",
     "terms": [
       "Raoden",
       "Chasm Line",
       "Elantris",
       "Karata",
       "Galladon",
-      "Aanden",
+      "Daora",
       "Mareshe",
-      "Dakhor"
+      "Fjordell"
     ],
     "source": "Elantris"
   },
@@ -1307,7 +1307,7 @@
       "Fjon",
       "Hrathen"
     ],
-    "explain": "Father Omin, the Korathi priest of Kae, explains the Widow's Trial to Sarene and performs her wedding.",
+    "explain": "Father Omin, the absent-minded Korathi priest of Kae, explains the Widow's Trial to Sarene and officiates her weddings.",
     "terms": [
       "Korathi",
       "Kae",
@@ -1332,7 +1332,7 @@
       "JinDo",
       "Duladel"
     ],
-    "explain": "Jalla is Svordish; she shelters in Kiin's mansion with the children during the Dakhor attack.",
+    "explain": "Jalla is Svordish; she met Lukel while they were both studying at the Svordish university.",
     "terms": [
       "Jalla",
       "Lukel",
@@ -1340,9 +1340,7 @@
       "Hrovell",
       "JinDo",
       "Duladel",
-      "Svordish",
-      "Kiin",
-      "Dakhor"
+      "Svordish"
     ],
     "source": "Elantris"
   },
@@ -1406,7 +1404,7 @@
       "Grador",
       "Ragnat"
     ],
-    "explain": "Dorven officially serve the gradors; an arteth is the lowest rank that can lead a chapel alone.",
+    "explain": "Dorven are the lowest Derethi priests and officially serve the gradors.",
     "terms": [
       "Derethi",
       "dorven",
@@ -1428,11 +1426,11 @@
       "Twelve",
       "Forty"
     ],
-    "explain": "There are only twenty gyorns, and Hrathen, in his forties, is considered young for the rank.",
+    "explain": "There are only twenty gyorns, and in nations that follow Shu-Dereth even kings bow to them.",
     "terms": [
       "gyorn",
       "Fjordell",
-      "Hrathen"
+      "Shu-Dereth"
     ],
     "source": "Elantris"
   },
@@ -1536,7 +1534,7 @@
       "The Fold",
       "The Cradle"
     ],
-    "explain": "The Roost is the nursery of New Elantris, where about fifty children live in her care.",
+    "explain": "The Roost is the nursery of New Elantris, where Matisse helps care for the children.",
     "terms": [
       "The Hope of Elantris",
       "Matisse",
@@ -1716,14 +1714,14 @@
     "category": "sel",
     "difficulty": 4,
     "work": "emperors-soul",
-    "q": "Which warrior people trained Shai for the fighting skills of her Essence Mark Shaizan?",
+    "q": "In the forged past that Shai's Essence Mark Shaizan gives her, which warrior people trained her in martial arts?",
     "a": "Teullu",
     "wrong": [
       "Mulla'dil",
       "Dzhamar",
       "MaiPon"
     ],
-    "explain": "The Teullu, holders of advanced martial arts, provided the training that Shai built into Shaizan.",
+    "explain": "The Shaizan Mark rewrites Shai's past so that she spent years training with the Teullu, masters of the martial arts.",
     "terms": [
       "Shai",
       "Essence Mark",
@@ -1768,10 +1766,11 @@
       "Three",
       "Ten"
     ],
-    "explain": "Each of her five Essence Marks took years to craft, which is why the arbiters use them as her payment.",
+    "explain": "Shai's Essence Marks took years of work to create; each rewrites her past to give her different skills, such as Shaizan's fighting ability.",
     "terms": [
       "Essence Mark",
-      "Shai"
+      "Shai",
+      "Shaizan"
     ],
     "source": "The Emperor's Soul"
   },

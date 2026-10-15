@@ -1327,7 +1327,7 @@
       "Scadrial",
       "Yolen"
     ],
-    "explain": "Khriss notes that Nazh is a Threnodite himself and guided her through the Forests of Hell.",
+    "explain": "Khriss notes that Nazh is himself a native of Threnody, the world of the Forests of Hell.",
     "terms": [
       "Nazh",
       "worldhopper",
@@ -1353,7 +1353,7 @@
       "Lasting Integrity",
       "Kholinar"
     ],
-    "explain": "Silverlight lies entirely in the Cognitive Realm and is home to scholars such as Khriss.",
+    "explain": "Silverlight lies in the Cognitive Realm and serves as a meeting point for worldhoppers and scholars of the Realms.",
     "terms": [
       "Cognitive Realm",
       "worldhopper",
@@ -1361,7 +1361,7 @@
       "Celebrant",
       "Lasting Integrity",
       "Kholinar",
-      "Khriss"
+      "Realm"
     ],
     "source": "Arcanum Unbounded"
   },
@@ -1375,7 +1375,7 @@
     "wrong": [
       "Imprison Odium",
       "Forge the Honorblades",
-      "Create the Realms"
+      "Bind the Unmade"
     ],
     "explain": "The Dawnshards are the four primal Commands that created all things, later turned against Adonalsium itself.",
     "terms": [
@@ -1384,7 +1384,7 @@
       "Adonalsium",
       "Odium",
       "Honorblade",
-      "Realm",
+      "Unmade",
       "Command"
     ],
     "source": "Dawnshard"
@@ -1393,26 +1393,23 @@
     "id": "cosmere-058",
     "category": "cosmere",
     "difficulty": 3,
-    "work": "hero-of-ages",
-    "q": "Lerasium is the physical form of which Shard's power?",
-    "a": "Preservation",
+    "work": "dawnshard",
+    "q": "The Sleepless are hive minds made up of swarms of which small creatures?",
+    "a": "Hordelings",
     "wrong": [
-      "Ruin",
-      "Harmony",
-      "Autonomy"
+      "Cremlings",
+      "Larkins",
+      "Rotspren"
     ],
-    "explain": "Just as atium is Ruin's body, lerasium is concentrated Preservation and can make a person Mistborn.",
+    "explain": "A Sleepless spreads its mind across countless hordelings and can replace lost ones, letting it live for ages.",
     "terms": [
-      "Lerasium",
-      "Shard",
-      "Preservation",
-      "Ruin",
-      "Harmony",
-      "Autonomy",
-      "atium",
-      "Mistborn"
+      "Sleepless",
+      "Hordelings",
+      "Cremlings",
+      "Larkins",
+      "Rotspren"
     ],
-    "source": "The Hero of Ages"
+    "source": "Dawnshard"
   },
   {
     "id": "cosmere-059",
@@ -1537,7 +1534,7 @@
       "Kelsier",
       "obligator"
     ],
-    "source": "Mistborn: The Final Empire, ch. 19"
+    "source": "Mistborn: The Final Empire"
   },
   {
     "id": "cosmere-064",
@@ -1595,7 +1592,7 @@
     "wrong": [
       "A larkin",
       "A skyeel",
-      "A chicken"
+      "An Awakened bird"
     ],
     "explain": "Mraize's bird is an aviar, one of the talent-granting birds of First of the Sun.",
     "terms": [
@@ -1603,6 +1600,7 @@
       "aviar",
       "larkin",
       "skyeel",
+      "Awakened",
       "First of the Sun"
     ],
     "source": "Rhythm of War; Wind and Truth"
@@ -1665,14 +1663,14 @@
       "The Fox and the Moon",
       "The Boy Who Stole the Wind"
     ],
-    "explain": "With Design's help, Wit tells of a dog who wanted to be a dragon and became a hero instead.",
+    "explain": "With Design creating illusions, Wit tells of a dog who wanted to become a dragon.",
     "terms": [
       "Wit",
       "Kaladin",
       "Rhythm of War",
       "Design"
     ],
-    "source": "Rhythm of War, ch. 80"
+    "source": "Rhythm of War"
   },
   {
     "id": "cosmere-070",
@@ -1698,26 +1696,25 @@
     "id": "cosmere-071",
     "category": "cosmere",
     "difficulty": 4,
-    "work": "oathbringer",
-    "q": "In Oathbringer, which force in Kholinar does Vivenna command under the name Azure?",
-    "a": "The Wall Guard",
+    "work": "secret-history",
+    "q": "In Secret History, what does Nazh give Kelsier before they part ways?",
+    "a": "His knife",
     "wrong": [
-      "The Cobalt Guard",
-      "The Palace Guard",
-      "The Sons of Honor"
+      "His map of the Final Empire",
+      "A bead of lerasium",
+      "A vial of metals"
     ],
-    "explain": "As Highmarshal Azure, Vivenna leads the Wall Guard defending the city.",
+    "explain": "Nazh also points Kelsier toward the Ire, and Kelsier later uses the knife to smash their device and take up Preservation's power.",
     "terms": [
-      "Oathbringer",
-      "Kholinar",
-      "Vivenna",
-      "Azure",
-      "Wall Guard",
-      "Cobalt Guard",
-      "Sons of Honor",
-      "Highmarshal"
+      "Secret History",
+      "Nazh",
+      "Kelsier",
+      "Final Empire",
+      "lerasium",
+      "Ire",
+      "Preservation"
     ],
-    "source": "Oathbringer"
+    "source": "Mistborn: Secret History"
   },
   {
     "id": "cosmere-072",
@@ -1754,7 +1751,7 @@
       "Harmonium",
       "Trellium"
     ],
-    "explain": "Raysium draws in Investiture; Odium's forces use it in weapons that drain Stormlight.",
+    "explain": "Presumably named after Rayse, Odium's first Vessel, raysium has long been used by Odium's forces in their weapons.",
     "terms": [
       "god metal",
       "Odium",
@@ -1762,8 +1759,8 @@
       "Lerasium",
       "Harmonium",
       "Trellium",
-      "Investiture",
-      "Stormlight"
+      "Rayse",
+      "Vessel"
     ],
     "source": "Rhythm of War"
   },
@@ -1771,7 +1768,7 @@
     "id": "cosmere-074",
     "category": "cosmere",
     "difficulty": 4,
-    "work": "way-of-kings",
+    "work": "words-of-radiance",
     "q": "What symbol must every member of the Ghostbloods have tattooed?",
     "a": "Three overlapping diamonds",
     "wrong": [
@@ -1779,13 +1776,13 @@
       "A broken spear",
       "A closed eye"
     ],
-    "explain": "Jasnah finds this symbol tattooed on the inside of Kabsal's arm.",
+    "explain": "Jasnah later finds this symbol tattooed on Kabsal's arm.",
     "terms": [
       "Ghostbloods",
       "Jasnah",
       "Kabsal"
     ],
-    "source": "The Way of Kings"
+    "source": "Words of Radiance"
   },
   {
     "id": "cosmere-075",
@@ -1820,7 +1817,7 @@
       "Nazh",
       "Mraize"
     ],
-    "explain": "Hoid rescued Sigzil from trouble and travelled Roshar with him as his master.",
+    "explain": "Sigzil travelled with his master Hoid, training as a Worldsinger, before ending up in Bridge Four.",
     "terms": [
       "worldhopper",
       "Sigzil",
@@ -1829,7 +1826,7 @@
       "Vasher",
       "Nazh",
       "Mraize",
-      "Roshar"
+      "Bridge Four"
     ],
     "source": "The Way of Kings; Words of Radiance"
   },
@@ -1914,23 +1911,24 @@
     "category": "cosmere",
     "difficulty": 4,
     "work": "tress",
-    "q": "In Tress of the Emerald Sea, who cursed Hoid so that he speaks only nonsense?",
-    "a": "The Sorceress",
+    "q": "In Tress of the Emerald Sea, which Selish magic does Hoid use to block the Sorceress's curse aimed at Tress?",
+    "a": "AonDor",
     "wrong": [
-      "Crow",
-      "Xisis",
-      "Ulaam"
+      "Forgery",
+      "ChayShan",
+      "Dakhor"
     ],
-    "explain": "Hoid, cursed by the Sorceress of the Midnight Sea, spends much of the story aboard the Crow's Song unable to think clearly.",
+    "explain": "The Sorceress was casting her curse with AonDor, and Hoid burst into her tower and blocked it with an Aon of his own.",
     "terms": [
       "Tress of the Emerald Sea",
       "Hoid",
       "Sorceress",
-      "Crow",
-      "Xisis",
-      "Ulaam",
-      "Midnight Sea",
-      "Crow's Song"
+      "Tress",
+      "AonDor",
+      "Forgery",
+      "ChayShan",
+      "Dakhor",
+      "Aon"
     ],
     "source": "Tress of the Emerald Sea"
   }

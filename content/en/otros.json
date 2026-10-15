@@ -328,7 +328,7 @@
     "a": "Yoki-hijo",
     "wrong": [
       "Nightmare painter",
-      "Kihomaban",
+      "Shroud warden",
       "Hion engineer"
     ],
     "explain": "A yoki-hijo summons spirits for her people at great cost to her own freedom.",
@@ -336,7 +336,7 @@
       "Yumi",
       "Yoki-hijo",
       "Nightmare painter",
-      "Kihomaban",
+      "shroud",
       "hion"
     ],
     "source": "Yumi and the Nightmare Painter"
@@ -461,13 +461,12 @@
       "A nightmare",
       "A Cryptic"
     ],
-    "explain": "Masaka hides her true nature and later helps Yumi and Design map the lands beyond the shroud.",
+    "explain": "Masaka, whose Sleepless name is Chinikdakordich, poses as an ordinary nightmare painter in Kilahito.",
     "terms": [
       "Masaka",
       "Sleepless",
-      "Design",
-      "shroud",
-      "Yumi",
+      "Chinikdakordich",
+      "Kilahito",
       "hijo",
       "Cryptic"
     ],
@@ -542,7 +541,7 @@
     "category": "otros",
     "difficulty": 1,
     "work": "sunlit-man",
-    "q": "Who is the woman Nomad befriends and helps on Canticle?",
+    "q": "Which native of Canticle becomes Nomad's main ally in The Sunlit Man?",
     "a": "Rebeke",
     "wrong": [
       "Compassion",
@@ -551,8 +550,9 @@
     ],
     "explain": "Rebeke becomes Nomad's key ally in standing against the Cinder King.",
     "terms": [
-      "Nomad",
       "Canticle",
+      "Nomad",
+      "The Sunlit Man",
       "Rebeke",
       "Cinder King",
       "Compassion",
@@ -684,18 +684,18 @@
     "q": "What kind of being is Auxiliary, Nomad's talking companion?",
     "a": "A spren-like being",
     "wrong": [
-      "A Cognitive Shadow",
+      "A shade",
       "A living sunheart",
       "A Charred"
     ],
-    "explain": "Aux was nearly destroyed by the Dawnshard Nomad once held and survives as a voice in Nomad's head.",
+    "explain": "Aux was nearly consumed by the Dawnshard Nomad once held and survives as a voice in Nomad's head.",
     "terms": [
       "Auxiliary",
       "Nomad",
       "Aux",
       "spren",
       "Dawnshard",
-      "Cognitive Shadow",
+      "shade",
       "sunheart",
       "Charred"
     ],
@@ -1073,11 +1073,11 @@
       "Her body was never found",
       "She was burned on a pyre"
     ],
-    "explain": "Silence's grandmother came from the Homeland before it fell to the Evil.",
+    "explain": "Silence trapped the shade of her strict grandmother in the waystop's shrine, and later unleashes it on Theopolis.",
     "terms": [
       "Silence",
       "Homeland",
-      "Evil"
+      "Theopolis"
     ],
     "source": "Shadows for Silence in the Forests of Hell; Coppermind: Silence's grandmother"
   },
@@ -1093,13 +1093,12 @@
       "Carpenter",
       "Quartermaster"
     ],
-    "explain": "As the ship's sprouter, Tress handles its spores, learning the basics from Ann and Ulaam.",
+    "explain": "As the ship's sprouter, Tress handles the aether spores the crew uses to fight and to repair the ship.",
     "terms": [
       "Tress",
       "Crow's Song",
       "sprouter",
-      "Ann",
-      "Ulaam"
+      "aether spores"
     ],
     "source": "Tress of the Emerald Sea; Coppermind: Ulaam"
   },
@@ -1115,14 +1114,13 @@
       "An aether",
       "A cursed rat"
     ],
-    "explain": "Ulaam is a kandra from Scadrial who had joined the crew about a year before Tress arrived.",
+    "explain": "Ulaam is a kandra from Scadrial working as the ship's surgeon.",
     "terms": [
       "Ulaam",
       "Crow's Song",
       "kandra",
       "aether",
-      "Scadrial",
-      "Tress"
+      "Scadrial"
     ],
     "source": "Tress of the Emerald Sea; Coppermind: Ulaam"
   },
@@ -1215,13 +1213,13 @@
     "difficulty": 3,
     "work": "yumi",
     "q": "What had really been happening to Yumi before she was linked to Painter?",
-    "a": "She relived the same day over and over, her memory reset each time",
+    "a": "She was trapped in a simulation of her old life",
     "wrong": [
       "She slept frozen inside a shrine",
-      "She was trapped in Painter's dreams",
+      "She was lost in Painter's dreams",
       "She was a spirit bound inside a stone stack"
     ],
-    "explain": "Killed by the father machine, Yumi was trapped in a simulation of her old life for some seventeen centuries.",
+    "explain": "After it killed her, the father machine hid Yumi in a simulation of her former life and patched over her memories to keep her complacent.",
     "terms": [
       "Yumi",
       "Painter",
@@ -1316,12 +1314,11 @@
       "Crystals mined in the darkness",
       "The ashes of burned forests"
     ],
-    "explain": "On Canticle a dead person's Investiture becomes a sunheart rather than a shade, and sunhearts power the flying cities.",
+    "explain": "Sunhearts form from people who perish in Canticle's Invested sunlight, and they power the flying cities.",
     "terms": [
       "Canticle",
       "sunhearts",
-      "Investiture",
-      "shade"
+      "Investiture"
     ],
     "source": "The Sunlit Man; Coppermind: Canticle"
   },
@@ -1330,25 +1327,21 @@
     "category": "otros",
     "difficulty": 4,
     "work": "sunlit-man",
-    "q": "Nomad and Aux conclude that Canticle's people descend from settlers from which planet?",
+    "q": "Canticle's people descend from settlers who came from which planet?",
     "a": "Threnody",
     "wrong": [
       "Scadrial",
       "Roshar",
       "Taldain"
     ],
-    "explain": "Canticle is a Threnodite settlement; the Cinder King and Elegy are both Threnodites.",
+    "explain": "Canticle's people are Threnodites, though they remember their old homeworld as Hell.",
     "terms": [
-      "Nomad",
-      "Aux",
       "Canticle",
       "Threnody",
       "Scadrial",
       "Roshar",
       "Taldain",
-      "Threnodite",
-      "Cinder King",
-      "Elegy"
+      "Threnodite"
     ],
     "source": "The Sunlit Man; Coppermind: Cinder King"
   },
@@ -1357,20 +1350,20 @@
     "category": "otros",
     "difficulty": 4,
     "work": "sunlit-man",
-    "q": "What title does each city on Canticle give to its elected chief navigator and leader?",
+    "q": "What title does Elegy Salvage receive when the Greater Good chooses her to lead the city of Beacon?",
     "a": "Lodestar",
     "wrong": [
       "Greater Good",
       "Sunlit One",
       "Prospector"
     ],
-    "explain": "In Beacon, the Greater Good council voted to name Elegy as the new Lodestar.",
+    "explain": "Naming Elegy Beacon's Lodestar ended the practice of sacrificing the city's eldest members.",
     "terms": [
-      "Canticle",
-      "Lodestar",
+      "Elegy Salvage",
       "Greater Good",
-      "Sunlit One",
       "Beacon",
+      "Lodestar",
+      "Sunlit One",
       "Elegy"
     ],
     "source": "The Sunlit Man; Coppermind: Canticle"
@@ -1400,7 +1393,7 @@
     "category": "otros",
     "difficulty": 4,
     "work": "sunlit-man",
-    "q": "How is Elegy, the Lodestar of Beacon, related to Rebeke?",
+    "q": "How is Elegy Salvage, who comes to lead the city of Beacon, related to Rebeke?",
     "a": "She is her sister",
     "wrong": [
       "She is her mother",
@@ -1409,10 +1402,10 @@
     ],
     "explain": "Rebeke and Elegy, along with their brother Divinity, belong to the Salvage family.",
     "terms": [
-      "Elegy",
-      "Lodestar",
+      "Elegy Salvage",
       "Beacon",
       "Rebeke",
+      "Elegy",
       "Divinity",
       "Salvage"
     ],
@@ -1423,14 +1416,14 @@
     "category": "otros",
     "difficulty": 3,
     "work": "white-sand",
-    "q": "Besides sand mastery, what else turns Taldain's white sand black?",
+    "q": "Besides sand mastery, what else uses up the power of Taldain's white sand?",
     "a": "Contact with water",
     "wrong": [
       "Exposure to darkness",
       "Being trodden on",
       "Strong wind"
     ],
-    "explain": "Wet sand glows and blackens, just like sand that has been mastered, until sunlight recharges it.",
+    "explain": "Wet sand glows and turns black, just like sand that has been mastered, until sunlight recharges it.",
     "terms": [
       "sand mastery",
       "Taldain"
@@ -1491,14 +1484,12 @@
       "Completed it in a single night",
       "Crossed it without any water"
     ],
-    "explain": "Killing the sandling destroyed the Path forever, and Undermastrell Elorin ruled that Kenton had ruined the test.",
+    "explain": "Kenton used his sword to kill the sandling at the heart of the Path, destroying the Path forever.",
     "terms": [
       "Kenton",
       "Mastrell's Path",
       "sandling",
-      "sand mastery",
-      "Undermastrell",
-      "Elorin"
+      "sand mastery"
     ],
     "source": "White Sand; Coppermind: Kenton"
   },
@@ -1555,14 +1546,14 @@
     "category": "otros",
     "difficulty": 3,
     "work": "shadows-for-silence",
-    "q": "Who is the creditor threatening to take over Silence's waystop?",
+    "q": "Which tax collector from the forts threatens to claim Silence's waystop?",
     "a": "Theopolis",
     "wrong": [
       "Chesterton Divide",
       "Daggon",
       "Dob"
     ],
-    "explain": "Theopolis warns Silence that he will seize the waystop if she cannot pay her debts.",
+    "explain": "Theopolis warns Silence that the fort will take her waystop if she does not pay her taxes within a few days.",
     "terms": [
       "Silence",
       "Theopolis",
@@ -1667,14 +1658,13 @@
       "Drive off the nightmaws",
       "Map the ocean floor"
     ],
-    "explain": "Dusk and Vathi race to stop it, and Dusk realizes the Ones Above are spreading their technology to gain control of his world.",
+    "explain": "The machine was never meant to run: the Ones Above hoped its technology would hurry the Eelakin's progress so they could get around laws forbidding trade.",
     "terms": [
       "Ones Above",
       "Patji",
       "Aviar",
       "nightmaws",
-      "Dusk",
-      "Vathi"
+      "Eelakin"
     ],
     "source": "Sixth of the Dusk; Coppermind: Sixth of the Dusk (character)"
   },
@@ -1690,7 +1680,7 @@
       "The songs of older birds",
       "Their bond with a trapper"
     ],
-    "explain": "Sak, raised on the mainland, gained her talent only after Dusk brought her to Patji, where she ate the parasites.",
+    "explain": "Sak, a mainland bird, only gained her talent after Dusk took her to Patji.",
     "terms": [
       "Aviar",
       "Sak",
@@ -1730,11 +1720,11 @@
       "A trapper who works alone",
       "A diving ship of the Ones Above"
     ],
-    "explain": "A deepwalker appears to have wrecked the trading company's camp on Patji.",
+    "explain": "A deepwalker wiped out Vathi's scouting team after it camped too close to the beach.",
     "terms": [
       "deepwalker",
       "Ones Above",
-      "Patji"
+      "Vathi"
     ],
     "source": "Sixth of the Dusk; Coppermind: Deepwalker"
   }

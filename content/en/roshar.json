@@ -1301,7 +1301,7 @@
       "Thresh",
       "Tozbek"
     ],
-    "explain": "Vstim later becomes Queen Fen's Minister of Trade.",
+    "explain": "Rysn travels with Vstim as his apprentice, learning the art of trade.",
     "terms": [
       "Rysn",
       "babsk",
@@ -1309,10 +1309,9 @@
       "Vstim",
       "Kylrm",
       "Thresh",
-      "Tozbek",
-      "Fen"
+      "Tozbek"
     ],
-    "source": "The Way of Kings, interlude I-5"
+    "source": "The Way of Kings, interlude I-4"
   },
   {
     "id": "roshar-056",
@@ -1335,7 +1334,7 @@
       "Frostlands",
       "Unclaimed Hills"
     ],
-    "source": "The Way of Kings, interlude"
+    "source": "The Way of Kings, interlude I-1"
   },
   {
     "id": "roshar-057",
@@ -1388,24 +1387,25 @@
     "category": "roshar",
     "difficulty": 3,
     "work": "words-of-radiance",
-    "q": "Which Ghostblood agent posed as an ardent to court Shallan in Kharbranth?",
+    "q": "Which ardent in Kharbranth, secretly a Ghostblood agent, courted Shallan?",
     "a": "Kabsal",
     "wrong": [
       "Vathah",
       "Gaz",
       "Tvlakv"
     ],
-    "explain": "Kabsal tried to poison Jasnah with bread and jam but died of the poison himself.",
+    "explain": "Kabsal tried to poison Jasnah with bread, but died when Jasnah Soulcast the antidote, believing it was the poison.",
     "terms": [
-      "Ghostblood",
       "ardent",
-      "Shallan",
       "Kharbranth",
+      "Ghostblood",
+      "Shallan",
       "Kabsal",
       "Vathah",
       "Gaz",
       "Tvlakv",
-      "Jasnah"
+      "Jasnah",
+      "Soulcast"
     ],
     "source": "The Way of Kings; Words of Radiance"
   },
@@ -1433,7 +1433,7 @@
     "id": "roshar-061",
     "category": "roshar",
     "difficulty": 4,
-    "work": "words-of-radiance",
+    "work": "way-of-kings",
     "q": "In the Ars Arcanum's table of the Ten Essences, which Essence corresponds to Jezrien and the sapphire?",
     "a": "Zephyr",
     "wrong": [
@@ -1458,7 +1458,7 @@
     "id": "roshar-062",
     "category": "roshar",
     "difficulty": 4,
-    "work": "words-of-radiance",
+    "work": "way-of-kings",
     "q": "Which Herald is associated with the divine attributes Brave and Obedient?",
     "a": "Chanarach",
     "wrong": [
@@ -1466,14 +1466,13 @@
       "Battar",
       "Shalash"
     ],
-    "explain": "Chanarach, patron of the Dustbringers, is linked to the number Chach, the ruby and the Essence Spark.",
+    "explain": "Chanarach is linked to the number Chach, the ruby and the Essence Spark.",
     "terms": [
       "Herald",
       "Chanarach",
       "Vedeledev",
       "Battar",
       "Shalash",
-      "Dustbringers",
       "Chach",
       "Essence",
       "Spark"
@@ -1484,7 +1483,7 @@
     "id": "roshar-063",
     "category": "roshar",
     "difficulty": 4,
-    "work": "words-of-radiance",
+    "work": "way-of-kings",
     "q": "According to the Ars Arcanum, which gemstone is associated with the Herald Talenel?",
     "a": "Topaz",
     "wrong": [
@@ -1529,7 +1528,7 @@
     "category": "roshar",
     "difficulty": 4,
     "work": "rhythm-of-war",
-    "q": "Which Bridge Four member, who never speaks, is contacted by the Sibling during the occupation of Urithiru?",
+    "q": "Which Bridge Four member, who cannot draw Stormlight, is contacted by the Sibling during the occupation of Urithiru?",
     "a": "Dabbid",
     "wrong": [
       "Leyten",
@@ -1539,6 +1538,7 @@
     "explain": "The Sibling asks Dabbid to swap a spanreed gem so it can communicate with Navani.",
     "terms": [
       "Bridge Four",
+      "Stormlight",
       "Sibling",
       "Urithiru",
       "Dabbid",
@@ -1571,14 +1571,14 @@
       "Natan",
       "Reshi"
     ],
-    "source": "The Way of Kings, interlude I-8"
+    "source": "The Way of Kings, interlude I-5"
   },
   {
     "id": "roshar-067",
     "category": "roshar",
     "difficulty": 4,
-    "work": "words-of-radiance",
-    "q": "Which kind of spren does the ardent Geranid study on her Reshi island?",
+    "work": "way-of-kings",
+    "q": "Which kind of spren does the ardent Geranid study on her island in the Reshi Sea?",
     "a": "Flamespren",
     "wrong": [
       "Windspren",
@@ -1590,13 +1590,13 @@
       "ardent",
       "Geranid",
       "spren",
-      "Reshi",
+      "Reshi Sea",
       "Flamespren",
       "Windspren",
       "Creationspren",
       "Gloryspren"
     ],
-    "source": "Words of Radiance, interlude I-8"
+    "source": "The Way of Kings, interlude I-8"
   },
   {
     "id": "roshar-068",
@@ -1625,7 +1625,7 @@
     "category": "roshar",
     "difficulty": 4,
     "work": "way-of-kings",
-    "q": "In her first Way of Kings interlude, to which land does Rysn travel with Vstim to trade?",
+    "q": "In her Way of Kings interlude, to which land does Rysn travel with Vstim to trade?",
     "a": "Shinovar",
     "wrong": [
       "The Reshi Isles",
@@ -1645,14 +1645,14 @@
       "Shin",
       "Thresh"
     ],
-    "source": "The Way of Kings, interlude I-5"
+    "source": "The Way of Kings, interlude I-4"
   },
   {
     "id": "roshar-070",
     "category": "roshar",
     "difficulty": 4,
     "work": "way-of-kings",
-    "q": "According to what Rysn learns in Shinovar, which occupation do the Shin hold in the highest esteem?",
+    "q": "During her trading trip with Vstim, which occupation does Rysn learn the Shin hold in the highest esteem?",
     "a": "Farmers",
     "wrong": [
       "Warriors",
@@ -1661,11 +1661,11 @@
     ],
     "explain": "To Rysn's surprise, soldiers are considered the lowliest of men among the Shin.",
     "terms": [
+      "Vstim",
       "Rysn",
-      "Shinovar",
       "Shin"
     ],
-    "source": "The Way of Kings, interlude I-5"
+    "source": "The Way of Kings, interlude I-4"
   },
   {
     "id": "roshar-071",
@@ -1700,15 +1700,14 @@
       "Makabakam",
       "Sela Tales"
     ],
-    "explain": "Alethela fragmented and its lands were later reunited into Alethkar under the Sunmaker.",
+    "explain": "Alethela was one of the ten Silver Kingdoms, and its lands later became Alethkar.",
     "terms": [
       "Silver Kingdom",
       "Alethkar",
       "Alethela",
       "Natanatan",
       "Makabakam",
-      "Sela Tales",
-      "Sunmaker"
+      "Sela Tales"
     ],
     "source": "Oathbringer"
   },
@@ -1724,7 +1723,7 @@
       "Graves",
       "Kabsal"
     ],
-    "explain": "Taravangian takes a test every morning, and Mrall and the stormwardens decide what he may do that day.",
+    "explain": "Taravangian takes an intelligence test every morning, and Mrall and the stormwardens decide what he may do that day.",
     "terms": [
       "Taravangian",
       "Mrall",
@@ -1733,7 +1732,7 @@
       "Kabsal",
       "stormwarden"
     ],
-    "source": "Words of Radiance, interlude I-12"
+    "source": "Words of Radiance, interludes"
   },
   {
     "id": "roshar-074",
@@ -1790,24 +1789,23 @@
     "category": "roshar",
     "difficulty": 4,
     "work": "dawnshard",
-    "q": "What is the name of the ship Vstim gives Rysn for her expedition in Dawnshard?",
+    "q": "Which ship carries Rysn's expedition to Akinah in Dawnshard?",
     "a": "Wandersail",
     "wrong": [
       "Wind's Pleasure",
       "First Dreams",
       "Fourth Bridge"
     ],
-    "explain": "Captained by Drlwan, the Wandersail carries Rysn's crew to Akinah.",
+    "explain": "Captained by Drlwan, the Wandersail breaches the strange storm surrounding Akinah.",
     "terms": [
-      "Vstim",
       "Rysn",
+      "Akinah",
       "Dawnshard",
       "Wandersail",
       "Wind's Pleasure",
       "First Dreams",
       "Fourth Bridge",
-      "Drlwan",
-      "Akinah"
+      "Drlwan"
     ],
     "source": "Dawnshard"
   },
@@ -1839,7 +1837,7 @@
     "id": "roshar-078",
     "category": "roshar",
     "difficulty": 4,
-    "work": "oathbringer",
+    "work": "rhythm-of-war",
     "q": "Under which name does the Herald Ishar rule Tukar as god-priest?",
     "a": "Tezim",
     "wrong": [
@@ -1860,7 +1858,7 @@
       "Sesemalex Dar",
       "Dalinar"
     ],
-    "source": "Oathbringer"
+    "source": "Oathbringer; Rhythm of War"
   },
   {
     "id": "roshar-079",
@@ -1911,6 +1909,6 @@
       "Book of Endless Pages",
       "Vanrial"
     ],
-    "source": "The Way of Kings"
+    "source": "The Way of Kings; Words of Radiance"
   }
 ]
