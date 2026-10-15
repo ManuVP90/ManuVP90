@@ -1,0 +1,186 @@
+{
+  "app": {
+    "title": "Cosmere Trivia",
+    "tagline": "How well do you know the Cosmere?"
+  },
+  "common": {
+    "back": "Back",
+    "home": "Home",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "continue": "Continue",
+    "next": "Next question",
+    "loading": "Loading…",
+    "playAgain": "Play again"
+  },
+  "home": {
+    "continue": "Continue game",
+    "continueDesc": "In progress: {players}",
+    "classic": "Classic game",
+    "classicDesc": "1–6 players · infuse all six gems",
+    "quick": "Quick game",
+    "quickDesc": "15 questions against the clock",
+    "practice": "Practice",
+    "practiceDesc": "Pick a world and a difficulty",
+    "stats": "Stats",
+    "settings": "Settings",
+    "about": "About",
+    "newGameConfirm": "Starting a new game will discard the game in progress. Continue?"
+  },
+  "cat": {
+    "roshar": "Roshar",
+    "scadrial": "Scadrial",
+    "sel": "Sel",
+    "nalthis": "Nalthis",
+    "otros": "Other Worlds",
+    "cosmere": "The Cosmere"
+  },
+  "gem": {
+    "roshar": "Sapphire",
+    "scadrial": "Ruby",
+    "sel": "Emerald",
+    "nalthis": "Heliodor",
+    "otros": "Amethyst",
+    "cosmere": "Diamond"
+  },
+  "difficulty": {
+    "1": "Easy",
+    "2": "Medium",
+    "3": "Hard",
+    "label": "Difficulty: {level}"
+  },
+  "setup": {
+    "title": "New game",
+    "playerCount": "Players",
+    "player": "Player {n}",
+    "namePlaceholder": "Player {n}",
+    "color": "Gem color",
+    "timer": "30-second timer",
+    "timerHint": "Running out of time counts as a wrong answer.",
+    "start": "Start game",
+    "fewer": "Remove a player",
+    "more": "Add a player"
+  },
+  "turn": {
+    "passTo": "Pass the phone to",
+    "ready": "I'm ready",
+    "noPeek": "Everyone else: no peeking!",
+    "turnOf": "{name}'s turn"
+  },
+  "wheel": {
+    "label": "Category wheel",
+    "spin": "Spin",
+    "tapToSpin": "Tap the wheel to spin",
+    "spinning": "Spinning…",
+    "wildcard": "Wildcard",
+    "landed": "{category}!",
+    "chooseTitle": "Wildcard!",
+    "chooseHint": "Choose any world",
+    "infusedPick": "{category} is already infused: pick another world!"
+  },
+  "question": {
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "timeout": "Time's up!",
+    "answerWas": "The correct answer was: {answer}",
+    "secondsLeft": "{s} seconds left",
+    "final": "Final question",
+    "progress": "Question {n} of {total}"
+  },
+  "classic": {
+    "charge": "+1 charge for {category} ({n}/2)",
+    "infused": "Your {category} gem is infused!",
+    "alreadyInfused": "{category} is already infused, so no extra charge.",
+    "allInfused": "All gems infused! Next up: the final question.",
+    "spinAgain": "Spin again!",
+    "passTurn": "Turn passes to {name}.",
+    "soloMiss": "Missed! Spin again.",
+    "finalFail": "Not this time. You'll face the final question again on your next turn.",
+    "finalTitle": "Final question",
+    "finalIntro": "{name}, all your gems are infused. Answer this question correctly to win!",
+    "finalReady": "Bring it on",
+    "leave": "Leave game (progress is saved)",
+    "board": "Players",
+    "gemCount": "{n} of {total} gems infused",
+    "gem0": "{category}: no charges",
+    "gem1": "{category}: 1 charge",
+    "gem2": "{category}: infused"
+  },
+  "victory": {
+    "title": "{name} wins!",
+    "subtitle": "Every gem infused and the final question answered.",
+    "answered": "Questions asked: {n}"
+  },
+  "quick": {
+    "title": "Quick game",
+    "score": "Score",
+    "best": "Best score",
+    "points": "+{n} points",
+    "result": "{score} points",
+    "correctCount": "{n} of {total} correct",
+    "newRecord": "New record!",
+    "finished": "Results",
+    "seeResults": "See results",
+    "quitConfirm": "Quit this quick game? Your score will be lost."
+  },
+  "practice": {
+    "title": "Practice",
+    "category": "World",
+    "all": "All worlds",
+    "difficulty": "Difficulty",
+    "any": "Any",
+    "available": "Questions available: {n}",
+    "start": "Start practice",
+    "end": "Finish",
+    "tally": "{correct} of {total} correct"
+  },
+  "stats": {
+    "title": "Stats",
+    "classicGames": "Classic games won",
+    "quickGames": "Quick games",
+    "bestQuick": "Best quick score",
+    "answered": "Questions answered",
+    "accuracy": "Accuracy",
+    "byCategory": "Accuracy by world",
+    "none": "No answers yet. Go play!",
+    "of": "{correct} of {total}"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "sound": "Sound effects",
+    "vibration": "Vibration",
+    "vibrationUnsupported": "Not supported on this device",
+    "timer": "Timer on by default",
+    "spoilers": "Spoiler filter",
+    "spoilersHint": "Tick the works you've read. Only questions about them will appear.",
+    "selected": "{n} of {total} works selected",
+    "all": "Select all",
+    "none": "Select none",
+    "data": "Data",
+    "reset": "Reset all data",
+    "resetConfirm": "This deletes your stats, records, saved game and settings. Are you sure?",
+    "resetDone": "All data has been reset.",
+    "storageWarning": "Storage isn't available, so settings and progress won't be kept after closing the app."
+  },
+  "about": {
+    "title": "About",
+    "body": "A Trivial-style quiz about the worlds of Brandon Sanderson's Cosmere. Play solo or pass the phone around with friends.",
+    "howTo": "How to play",
+    "rule1": "Spin the wheel and answer a question about the world it lands on.",
+    "rule2": "Right answer: you earn a charge in that world and spin again. Wrong answer: the turn passes to the next player.",
+    "rule3": "Two charges infuse a gem. The wildcard lets you pick the world.",
+    "rule4": "Infuse every gem, then answer the final question to win.",
+    "offline": "Works offline once loaded. Everything is stored on this device only.",
+    "disclaimer": "Unofficial fan project, not affiliated with Brandon Sanderson or Dragonsteel. The Cosmere and all related names belong to their respective owners.",
+    "version": "Version {v}"
+  },
+  "errors": {
+    "load": "Couldn't load the questions. Check your connection and reload.",
+    "noQuestions": "No questions available with your current spoiler filter.",
+    "fallback": "Questions aren't available in this language yet, so they're shown in English."
+  }
+}

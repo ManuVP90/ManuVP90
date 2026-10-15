@@ -1,0 +1,186 @@
+{
+  "app": {
+    "title": "Quiz del Cosmere",
+    "tagline": "Quanto conosci il Cosmere?"
+  },
+  "common": {
+    "back": "Indietro",
+    "home": "Home",
+    "cancel": "Annulla",
+    "confirm": "Conferma",
+    "continue": "Continua",
+    "next": "Domanda successiva",
+    "loading": "Caricamento…",
+    "playAgain": "Gioca ancora"
+  },
+  "home": {
+    "continue": "Continua la partita",
+    "continueDesc": "In corso: {players}",
+    "classic": "Partita classica",
+    "classicDesc": "Da 1 a 6 giocatori · infondi tutte e sei le gemme",
+    "quick": "Partita veloce",
+    "quickDesc": "15 domande contro il tempo",
+    "practice": "Allenamento",
+    "practiceDesc": "Scegli un mondo e una difficoltà",
+    "stats": "Statistiche",
+    "settings": "Impostazioni",
+    "about": "Informazioni",
+    "newGameConfirm": "Iniziando una nuova partita, quella in corso andrà persa. Continuare?"
+  },
+  "cat": {
+    "roshar": "Roshar",
+    "scadrial": "Scadrial",
+    "sel": "Sel",
+    "nalthis": "Nalthis",
+    "otros": "Altri mondi",
+    "cosmere": "Il Cosmere"
+  },
+  "gem": {
+    "roshar": "Zaffiro",
+    "scadrial": "Rubino",
+    "sel": "Smeraldo",
+    "nalthis": "Eliodoro",
+    "otros": "Ametista",
+    "cosmere": "Diamante"
+  },
+  "difficulty": {
+    "1": "Facile",
+    "2": "Media",
+    "3": "Difficile",
+    "label": "Difficoltà: {level}"
+  },
+  "setup": {
+    "title": "Nuova partita",
+    "playerCount": "Giocatori",
+    "player": "Giocatore {n}",
+    "namePlaceholder": "Giocatore {n}",
+    "color": "Colore della gemma",
+    "timer": "Timer di 30 secondi",
+    "timerHint": "Se il tempo scade, la risposta conta come sbagliata.",
+    "start": "Inizia la partita",
+    "fewer": "Rimuovi un giocatore",
+    "more": "Aggiungi un giocatore"
+  },
+  "turn": {
+    "passTo": "Passa il telefono a",
+    "ready": "Inizia il mio turno",
+    "noPeek": "Tutti gli altri: niente sbirciate!",
+    "turnOf": "Tocca a {name}"
+  },
+  "wheel": {
+    "label": "Ruota delle categorie",
+    "spin": "Gira",
+    "tapToSpin": "Tocca la ruota per farla girare",
+    "spinning": "La ruota gira…",
+    "wildcard": "Jolly",
+    "landed": "{category}!",
+    "chooseTitle": "Jolly!",
+    "chooseHint": "Scegli il mondo che preferisci",
+    "infusedPick": "{category} è già infusa: scegli un altro mondo!"
+  },
+  "question": {
+    "correct": "Esatto!",
+    "incorrect": "Sbagliato",
+    "timeout": "Tempo scaduto!",
+    "answerWas": "La risposta corretta era: {answer}",
+    "secondsLeft": "Mancano {s} secondi",
+    "final": "Domanda finale",
+    "progress": "Domanda {n} di {total}"
+  },
+  "classic": {
+    "charge": "+1 carica per {category} ({n}/2)",
+    "infused": "La tua gemma di {category} è infusa!",
+    "alreadyInfused": "{category} è già infusa: nessuna carica in più.",
+    "allInfused": "Tutte le gemme sono infuse! Ora tocca alla domanda finale.",
+    "spinAgain": "Gira di nuovo!",
+    "passTurn": "Il turno passa a {name}.",
+    "soloMiss": "Sbagliato! Gira di nuovo.",
+    "finalFail": "Non stavolta. Riproverai la domanda finale al tuo prossimo turno.",
+    "finalTitle": "Domanda finale",
+    "finalIntro": "{name}, tutte le tue gemme sono infuse. Rispondi correttamente a questa domanda per vincere!",
+    "finalReady": "Vai!",
+    "leave": "Esci dalla partita (i progressi vengono salvati)",
+    "board": "Giocatori",
+    "gemCount": "{n} gemme infuse su {total}",
+    "gem0": "{category}: nessuna carica",
+    "gem1": "{category}: 1 carica",
+    "gem2": "{category}: infusa"
+  },
+  "victory": {
+    "title": "Vince {name}!",
+    "subtitle": "Tutte le gemme infuse e la domanda finale superata.",
+    "answered": "Domande giocate: {n}"
+  },
+  "quick": {
+    "title": "Partita veloce",
+    "score": "Punti",
+    "best": "Miglior punteggio",
+    "points": "+{n} punti",
+    "result": "{score} punti",
+    "correctCount": "{n} risposte esatte su {total}",
+    "newRecord": "Nuovo record!",
+    "finished": "Risultati",
+    "seeResults": "Vedi i risultati",
+    "quitConfirm": "Abbandonare la partita veloce? Perderai il punteggio."
+  },
+  "practice": {
+    "title": "Allenamento",
+    "category": "Mondo",
+    "all": "Tutti i mondi",
+    "difficulty": "Difficoltà",
+    "any": "Qualsiasi",
+    "available": "Domande disponibili: {n}",
+    "start": "Inizia l'allenamento",
+    "end": "Termina",
+    "tally": "{correct} su {total}"
+  },
+  "stats": {
+    "title": "Statistiche",
+    "classicGames": "Partite classiche vinte",
+    "quickGames": "Partite veloci",
+    "bestQuick": "Record nella partita veloce",
+    "answered": "Domande risposte",
+    "accuracy": "Precisione",
+    "byCategory": "Precisione per mondo",
+    "none": "Nessuna risposta per ora. Inizia a giocare!",
+    "of": "{correct} su {total}"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "language": "Lingua",
+    "theme": "Tema",
+    "dark": "Scuro",
+    "light": "Chiaro",
+    "sound": "Effetti sonori",
+    "vibration": "Vibrazione",
+    "vibrationUnsupported": "Non disponibile su questo dispositivo",
+    "timer": "Timer attivo per impostazione predefinita",
+    "spoilers": "Filtro spoiler",
+    "spoilersHint": "Seleziona le opere che hai letto. Appariranno solo domande su di esse.",
+    "selected": "{n} opere selezionate su {total}",
+    "all": "Seleziona tutto",
+    "none": "Deseleziona tutto",
+    "data": "Dati",
+    "reset": "Cancella tutti i dati",
+    "resetConfirm": "Verranno eliminati statistiche, record, partita salvata e impostazioni. Sei sicuro?",
+    "resetDone": "Tutti i dati sono stati cancellati.",
+    "storageWarning": "Memoria non disponibile: impostazioni e progressi non verranno conservati alla chiusura dell'app."
+  },
+  "about": {
+    "title": "Informazioni",
+    "body": "Un quiz in stile Trivial Pursuit sui mondi del Cosmere di Brandon Sanderson. Gioca da solo o passa il telefono agli amici.",
+    "howTo": "Come si gioca",
+    "rule1": "Gira la ruota e rispondi a una domanda sul mondo su cui si ferma.",
+    "rule2": "Risposta esatta: ottieni una carica di quel mondo e giri di nuovo. Risposta sbagliata: il turno passa al giocatore successivo.",
+    "rule3": "Due cariche infondono una gemma. Il jolly ti permette di scegliere il mondo.",
+    "rule4": "Infondi tutte le gemme, poi rispondi correttamente alla domanda finale per vincere.",
+    "offline": "Funziona offline dopo il primo caricamento. Tutti i dati restano su questo dispositivo.",
+    "disclaimer": "Progetto amatoriale non ufficiale, non affiliato a Brandon Sanderson né a Dragonsteel. Il Cosmere e tutti i nomi correlati appartengono ai rispettivi proprietari.",
+    "version": "Versione {v}"
+  },
+  "errors": {
+    "load": "Impossibile caricare le domande. Controlla la connessione e ricarica la pagina.",
+    "noQuestions": "Nessuna domanda disponibile con il filtro spoiler attuale.",
+    "fallback": "Le domande non sono ancora disponibili in questa lingua, quindi vengono mostrate in inglese."
+  }
+}

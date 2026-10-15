@@ -1,0 +1,186 @@
+{
+  "app": {
+    "title": "Trivia del Cosmere",
+    "tagline": "¿Cuánto sabes del Cosmere?"
+  },
+  "common": {
+    "back": "Atrás",
+    "home": "Inicio",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "continue": "Continuar",
+    "next": "Siguiente pregunta",
+    "loading": "Cargando…",
+    "playAgain": "Jugar otra vez"
+  },
+  "home": {
+    "continue": "Continuar partida",
+    "continueDesc": "En curso: {players}",
+    "classic": "Partida clásica",
+    "classicDesc": "De 1 a 6 jugadores · infunde las seis gemas",
+    "quick": "Partida rápida",
+    "quickDesc": "15 preguntas contrarreloj",
+    "practice": "Práctica",
+    "practiceDesc": "Elige un mundo y una dificultad",
+    "stats": "Estadísticas",
+    "settings": "Ajustes",
+    "about": "Acerca de",
+    "newGameConfirm": "Si empiezas una partida nueva se descartará la que está en curso. ¿Continuar?"
+  },
+  "cat": {
+    "roshar": "Roshar",
+    "scadrial": "Scadrial",
+    "sel": "Sel",
+    "nalthis": "Nalthis",
+    "otros": "Otros mundos",
+    "cosmere": "El Cosmere"
+  },
+  "gem": {
+    "roshar": "Zafiro",
+    "scadrial": "Rubí",
+    "sel": "Esmeralda",
+    "nalthis": "Heliodoro",
+    "otros": "Amatista",
+    "cosmere": "Diamante"
+  },
+  "difficulty": {
+    "1": "Fácil",
+    "2": "Media",
+    "3": "Difícil",
+    "label": "Dificultad: {level}"
+  },
+  "setup": {
+    "title": "Nueva partida",
+    "playerCount": "Jugadores",
+    "player": "Jugador {n}",
+    "namePlaceholder": "Jugador {n}",
+    "color": "Color de gema",
+    "timer": "Temporizador de 30 segundos",
+    "timerHint": "Si se acaba el tiempo, cuenta como fallo.",
+    "start": "Empezar partida",
+    "fewer": "Quitar un jugador",
+    "more": "Añadir un jugador"
+  },
+  "turn": {
+    "passTo": "Pasa el móvil a",
+    "ready": "Empezar mi turno",
+    "noPeek": "Los demás, ¡no miréis!",
+    "turnOf": "Turno de {name}"
+  },
+  "wheel": {
+    "label": "Ruleta de categorías",
+    "spin": "Girar",
+    "tapToSpin": "Toca la ruleta para girarla",
+    "spinning": "Girando…",
+    "wildcard": "Comodín",
+    "landed": "¡{category}!",
+    "chooseTitle": "¡Comodín!",
+    "chooseHint": "Elige el mundo que quieras",
+    "infusedPick": "{category} ya está infundida: ¡elige otro mundo!"
+  },
+  "question": {
+    "correct": "¡Correcto!",
+    "incorrect": "Incorrecto",
+    "timeout": "¡Se acabó el tiempo!",
+    "answerWas": "La respuesta correcta era: {answer}",
+    "secondsLeft": "Quedan {s} segundos",
+    "final": "Pregunta final",
+    "progress": "Pregunta {n} de {total}"
+  },
+  "classic": {
+    "charge": "+1 carga de {category} ({n}/2)",
+    "infused": "¡Tu gema de {category} está infundida!",
+    "alreadyInfused": "{category} ya está infundida: no suma más cargas.",
+    "allInfused": "¡Todas las gemas infundidas! Ahora toca la pregunta final.",
+    "spinAgain": "¡Vuelve a girar!",
+    "passTurn": "El turno pasa a {name}.",
+    "soloMiss": "¡Fallaste! Vuelve a girar.",
+    "finalFail": "Esta vez no. Volverás a intentar la pregunta final en tu próximo turno.",
+    "finalTitle": "Pregunta final",
+    "finalIntro": "{name}, tienes todas las gemas infundidas. ¡Acierta esta pregunta y ganarás!",
+    "finalReady": "¡Adelante!",
+    "leave": "Salir de la partida (se guarda el progreso)",
+    "board": "Jugadores",
+    "gemCount": "{n} de {total} gemas infundidas",
+    "gem0": "{category}: sin cargas",
+    "gem1": "{category}: 1 carga",
+    "gem2": "{category}: infundida"
+  },
+  "victory": {
+    "title": "¡{name} gana!",
+    "subtitle": "Todas las gemas infundidas y la pregunta final acertada.",
+    "answered": "Preguntas jugadas: {n}"
+  },
+  "quick": {
+    "title": "Partida rápida",
+    "score": "Puntos",
+    "best": "Mejor puntuación",
+    "points": "+{n} puntos",
+    "result": "{score} puntos",
+    "correctCount": "{n} de {total} aciertos",
+    "newRecord": "¡Nuevo récord!",
+    "finished": "Resultados",
+    "seeResults": "Ver resultados",
+    "quitConfirm": "¿Abandonar la partida rápida? Perderás la puntuación."
+  },
+  "practice": {
+    "title": "Práctica",
+    "category": "Mundo",
+    "all": "Todos los mundos",
+    "difficulty": "Dificultad",
+    "any": "Cualquiera",
+    "available": "Preguntas disponibles: {n}",
+    "start": "Empezar a practicar",
+    "end": "Terminar",
+    "tally": "{correct} de {total} aciertos"
+  },
+  "stats": {
+    "title": "Estadísticas",
+    "classicGames": "Partidas clásicas ganadas",
+    "quickGames": "Partidas rápidas",
+    "bestQuick": "Récord en partida rápida",
+    "answered": "Preguntas respondidas",
+    "accuracy": "Aciertos",
+    "byCategory": "Aciertos por mundo",
+    "none": "Aún no has respondido nada. ¡A jugar!",
+    "of": "{correct} de {total}"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "theme": "Tema",
+    "dark": "Oscuro",
+    "light": "Claro",
+    "sound": "Efectos de sonido",
+    "vibration": "Vibración",
+    "vibrationUnsupported": "No disponible en este dispositivo",
+    "timer": "Temporizador activado por defecto",
+    "spoilers": "Filtro de spoilers",
+    "spoilersHint": "Marca las obras que has leído. Solo saldrán preguntas sobre ellas.",
+    "selected": "{n} de {total} obras seleccionadas",
+    "all": "Marcar todas",
+    "none": "Desmarcar todas",
+    "data": "Datos",
+    "reset": "Borrar todos los datos",
+    "resetConfirm": "Se borrarán tus estadísticas, récords, la partida guardada y los ajustes. ¿Seguro?",
+    "resetDone": "Se han borrado todos los datos.",
+    "storageWarning": "El almacenamiento no está disponible: los ajustes y el progreso no se conservarán al cerrar la app."
+  },
+  "about": {
+    "title": "Acerca de",
+    "body": "Un juego de preguntas al estilo Trivial sobre los mundos del Cosmere de Brandon Sanderson. Juega en solitario o pasa el móvil a tus amigos.",
+    "howTo": "Cómo se juega",
+    "rule1": "Gira la ruleta y responde una pregunta sobre el mundo en el que caiga.",
+    "rule2": "Si aciertas, ganas una carga de ese mundo y vuelves a girar. Si fallas, el turno pasa al siguiente jugador.",
+    "rule3": "Con dos cargas, la gema queda infundida. El comodín te deja elegir el mundo.",
+    "rule4": "Infunde todas las gemas y acierta la pregunta final para ganar.",
+    "offline": "Funciona sin conexión una vez cargado. Todo se guarda solo en este dispositivo.",
+    "disclaimer": "Proyecto de fans no oficial, sin relación con Brandon Sanderson ni con Dragonsteel. El Cosmere y todos los nombres relacionados pertenecen a sus respectivos propietarios.",
+    "version": "Versión {v}"
+  },
+  "errors": {
+    "load": "No se han podido cargar las preguntas. Comprueba la conexión y recarga.",
+    "noQuestions": "No hay preguntas disponibles con el filtro de spoilers actual.",
+    "fallback": "Las preguntas aún no están disponibles en este idioma; se muestran en inglés."
+  }
+}
