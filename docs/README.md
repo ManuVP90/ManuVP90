@@ -1,0 +1,80 @@
+# Trivia del Cosmere
+
+Juego de preguntas tipo *Trivial* sobre el Cosmere de Brandon Sanderson, para móvil,
+con partidas locales (se pasa el móvil) y en 5 idiomas: español, inglés, francés, alemán e italiano.
+Proyecto de fans, no oficial.
+
+## Jugar
+
+Es una PWA: no necesita tienda de apps ni conexión una vez cargada.
+
+```bash
+node tools/serve.mjs 8080        # o: python3 -m http.server -d app 8080
+```
+
+Abre `http://<tu-ip>:8080` en el móvil (misma red) y usa *Añadir a pantalla de inicio*.
+Para tenerla siempre disponible basta con publicar la carpeta `app/` en cualquier hosting
+estático con HTTPS (GitHub Pages, Netlify, Cloudflare Pages…).
+
+### Modos
+- **Partida clásica** (1–6 jugadores o equipos): ruleta con 6 mundos + comodín. Dos aciertos en un
+  mundo infunden su gema; con las seis, pregunta final. Si la ruleta cae en una gema ya infundida,
+  cuenta como comodín.
+- **Partida rápida**: 15 preguntas contrarreloj, con récord.
+- **Práctica**: eliges mundo y dificultad, con explicación de cada respuesta.
+- **Filtro de spoilers** (Ajustes): marca solo los libros que has leído.
+
+## Contenido
+
+| Mundo | Preguntas |
+|---|---|
+| Roshar | 50 |
+| Scadrial | 50 |
+| Sel | 50 |
+| Nalthis | 40 |
+| Otros mundos | 50 |
+| El Cosmere | 50 |
+
+290 preguntas por idioma, 3 niveles de dificultad, cada una etiquetada con el libro más tardío
+que hace falta para conocer la respuesta.
+
+**Nombres**: en cada idioma se usan los de la edición oficial publicada en ese idioma
+(p. ej. *Hoja esquirlada* / *Lame d'éclat* / *Splitterklinge* / *Stratolama*; *Sagaz*, *Sondeluz*,
+*Alezkar*; *Cosmère*, *Kosmeer*, *Cosmoverso*). El criterio y el estado de verificación de cada
+término están en `content/glossary.json` (`official`, `community`, `unchanged`, `unpublished`,
+`unverified`).
+
+## Estructura
+
+```
+app/                PWA (HTML/CSS/JS sin dependencias) — ver docs/ENGINE.md
+content/en/*.json   preguntas canónicas (inglés)
+content/<lang>/     traducciones + revisión terminológica + títulos oficiales
+content/glossary.json  glosario de ~830 términos en 5 idiomas
+docs/SPEC.md        especificación y formato de datos
+tools/build.mjs     valida el contenido y genera app/data/questions.<lang>.json
+tools/terms.mjs     términos de las preguntas que faltan en el glosario
+tools/check-terms.mjs  coherencia terminológica de las traducciones
+tools/merge-glossary.mjs  integra las revisiones de cada idioma en el glosario
+tools/smoke.mjs     prueba de extremo a extremo en móvil emulado (Playwright)
+```
+
+Flujo para cambiar preguntas: edita `content/en/<mundo>.json` y la misma `id` en cada
+`content/<lang>/<mundo>.json`, luego `node tools/build.mjs` y `node tools/smoke.mjs`.
+Si cambias archivos de `app/`, sube `CACHE_VERSION` en `app/sw.js`.
+
+## Cómo se hizo
+
+Equipo de agentes coordinado por un líder: 1 desarrollador, 6 redactores (uno por mundo),
+2 verificadores de datos, 1 terminóloga y 4 traductores (uno por idioma, cada uno responsable
+de verificar la terminología oficial de su idioma).
+
+## Pendiente conocido
+
+- Parte de la terminología está marcada `unverified`: no se pudo confirmar contra el texto de
+  la edición publicada (sobre todo términos secundarios en francés y alemán, y algunos de
+  *El aliento de los dioses*, *Trenza* y la era 2 de *Nacidos de la bruma*). Conviene que un
+  lector de cada idioma con los libros a mano los revise; `node tools/check-terms.mjs` y el
+  glosario indican cuáles.
+- Libros sin edición en algún idioma (p. ej. *The Sunlit Man* en italiano) conservan los nombres
+  en inglés, según la regla.

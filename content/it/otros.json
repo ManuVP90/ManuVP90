@@ -1,0 +1,552 @@
+[
+ {
+  "id": "otros-001",
+  "q": "Su quale pianeta è ambientato «Tress del mare smeraldo»?",
+  "a": "Lumar",
+  "wrong": [
+   "Canticle",
+   "Komashi",
+   "Threnody"
+  ],
+  "explain": "Lumar è un mondo di oceani di spore alimentati da dodici lune, ognuna con un etere."
+ },
+ {
+  "id": "otros-002",
+  "q": "Che cosa ama collezionare Tress all'inizio della sua storia?",
+  "a": "Tazze",
+  "wrong": [
+   "Conchiglie",
+   "Monete",
+   "Mappe"
+  ],
+  "explain": "Tress custodisce le sue tazze per le storie che ognuna sembra raccontare."
+ },
+ {
+  "id": "otros-003",
+  "q": "Che animale è Huck, il compagno parlante di Tress?",
+  "a": "Un ratto",
+  "wrong": [
+   "Un pappagallo",
+   "Un gatto",
+   "Un furetto"
+  ],
+  "explain": "Huck è un ratto parlante vittima di una maledizione, che spia in segreto per la Fattucchiera."
+ },
+ {
+  "id": "otros-004",
+  "q": "Chi è Charlie, il giovane che Tress parte per salvare?",
+  "a": "Il figlio del duca",
+  "wrong": [
+   "Un capitano pirata",
+   "Il medico di bordo",
+   "Un messaggero reale"
+  ],
+  "explain": "Il duca mandò Charlie nel Mare Mezzanotte, dove fu catturato dalla Fattucchiera."
+ },
+ {
+  "id": "otros-005",
+  "q": "Chi comanda la nave pirata Canto del Corvo quando Tress si unisce all'equipaggio?",
+  "a": "Corvo",
+  "wrong": [
+   "Fort",
+   "Salay",
+   "Ann la Ridente"
+  ],
+  "explain": "La capitana Corvo è una pirata spietata, che alla fine Tress riesce a battere in astuzia."
+ },
+ {
+  "id": "otros-006",
+  "q": "Che cosa succede quando le spore verdi entrano in contatto con l'acqua?",
+  "a": "Germogliano in rampicanti",
+  "wrong": [
+   "Esplodono in aria",
+   "Formano cristalli",
+   "Fanno crescere spine aguzze"
+  ],
+  "explain": "I marinai usano i rampicanti verdi come micce o per intrappolare gli avversari."
+ },
+ {
+  "id": "otros-007",
+  "q": "Quali spore rilasciano un getto d'aria quando si bagnano, ideali per sparare con i cannoni?",
+  "a": "Spore zefiro",
+  "wrong": [
+   "Spore roseite",
+   "Spore mezzanotte",
+   "Spore cremisi"
+  ],
+  "explain": "Le spore zefiro cadono sul Mare Zaffiro e servono a spingere le palle di cannone."
+ },
+ {
+  "id": "otros-008",
+  "q": "Che ruolo ha Fort a bordo del Canto del Corvo?",
+  "a": "Quartiermastro",
+  "wrong": [
+   "Timoniere",
+   "Medico di bordo",
+   "Mozzo"
+  ],
+  "explain": "Fort è sordo e comunica tramite una tavoletta nalthiana."
+ },
+ {
+  "id": "otros-009",
+  "q": "Che cosa chiede come pagamento il dottor Ulaam, medico del Canto del Corvo?",
+  "a": "Cadaveri",
+  "wrong": [
+   "Tazze rare",
+   "Monete d'oro",
+   "Campioni di spore"
+  ],
+  "explain": "Hoid sostiene che Ulaam sia il miglior medico che abbia mai conosciuto, nonostante lo strano compenso."
+ },
+ {
+  "id": "otros-010",
+  "q": "Chi elegge capitano l'equipaggio dopo la destituzione di Corvo?",
+  "a": "Tress",
+  "wrong": [
+   "Fort",
+   "Salay",
+   "Ann la Ridente"
+  ],
+  "explain": "Tress consegna Corvo al drago Xisis, e l'equipaggio, riconoscente, sceglie lei come guida."
+ },
+ {
+  "id": "otros-011",
+  "q": "Come si chiama la nuova nave che Tress e l'equipaggio comprano alla fine della storia?",
+  "a": "Due Coppe",
+  "wrong": [
+   "Corona di Smeraldo",
+   "Rosa di Mezzanotte",
+   "Gabbiano Argentato"
+  ],
+  "explain": "Graziati dal re, vendono il Canto del Corvo e comprano la Due Coppe, con Charlie a bordo come valletto, narratore e musicista."
+ },
+ {
+  "id": "otros-012",
+  "q": "In quale dei mari di Lumar ha la sua dimora il drago Xisis?",
+  "a": "Il Mare Cremisi",
+  "wrong": [
+   "Il Mare Mezzanotte",
+   "Il Mare Rosa",
+   "Il Mare Zaffiro"
+  ],
+  "explain": "Xisis è un drago originario di Yolen che per un periodo ha vissuto nel Mare Cremisi."
+ },
+ {
+  "id": "otros-013",
+  "q": "Su quale pianeta vivono Yumi e Pittore?",
+  "a": "Komashi",
+  "wrong": [
+   "Lumar",
+   "Canticle",
+   "Taldain"
+  ],
+  "explain": "Komashi è il mondo in cui il Frammento Virtuosismo si è frammentato da sé."
+ },
+ {
+  "id": "otros-014",
+  "q": "Che cosa impila Yumi in torri delicate per evocare gli spiriti?",
+  "a": "Pietre",
+  "wrong": [
+   "Ossa",
+   "Conchiglie",
+   "Candele"
+  ],
+  "explain": "Gli spiriti che evoca concedono benedizioni agli abitanti del suo paese."
+ },
+ {
+  "id": "otros-015",
+  "q": "Che cosa caccia e cattura Pittore con pennello e inchiostro?",
+  "a": "Incubi",
+  "wrong": [
+   "Ombre",
+   "Spren",
+   "Aviar"
+  ],
+  "explain": "Gli incubi filtrano dal sudario, e i pittori li intrappolano dipingendoli in immagini innocue."
+ },
+ {
+  "id": "otros-016",
+  "q": "Quale titolo sacro ricopre Yumi presso il suo popolo?",
+  "a": "Yoki-hijo",
+  "wrong": [
+   "Pittore di incubi",
+   "Maestro della Sabbia",
+   "Tessiluce"
+  ],
+  "explain": "Una yoki-hijo evoca spiriti per il suo popolo a caro prezzo per la propria libertà."
+ },
+ {
+  "id": "otros-017",
+  "q": "Qual è il vero nome di Pittore?",
+  "a": "Nikaro",
+  "wrong": [
+   "Tojin",
+   "Kenton",
+   "Sigzil"
+  ],
+  "explain": "Di solito Nikaro si fa chiamare Pittore, dal suo lavoro di pittore di incubi."
+ },
+ {
+  "id": "otros-018",
+  "q": "Che cosa incombe perennemente sulla città di Kilahito?",
+  "a": "Un sudario di oscurità",
+  "wrong": [
+   "Un anello di particelle",
+   "Un muro di tempeste",
+   "Una pioggia di spore"
+  ],
+  "explain": "Sotto il sudario Kilahito vive nel buio costante, illuminata dalle linee di hion."
+ },
+ {
+  "id": "otros-019",
+  "q": "Di quali due colori brillano le linee di hion di Kilahito?",
+  "a": "Ciano e magenta",
+  "wrong": [
+   "Rosso e oro",
+   "Verde e viola",
+   "Bianco e arancione"
+  ],
+  "explain": "Le linee di hion attraversano la città fornendo luce ed energia."
+ },
+ {
+  "id": "otros-020",
+  "q": "Chi è la severa tutrice e assistente di Yumi?",
+  "a": "Liyun",
+  "wrong": [
+   "Akane",
+   "Masaka",
+   "Salay"
+  ],
+  "explain": "Liyun sorveglia i rigidi rituali quotidiani di Yumi come yoki-hijo."
+ },
+ {
+  "id": "otros-021",
+  "q": "Quale di questi personaggi è un altro pittore di incubi di Kilahito?",
+  "a": "Akane",
+  "wrong": [
+   "Liyun",
+   "Vathi",
+   "Rebeke"
+  ],
+  "explain": "Pittore incontra Akane e Tojin in pattuglia al margine occidentale della città."
+ },
+ {
+  "id": "otros-022",
+  "q": "Che cosa è in segreto Masaka, che lavora come pittrice di incubi?",
+  "a": "Un'Insonne",
+  "wrong": [
+   "Una kandra",
+   "Una Ritornata",
+   "Un'ombra"
+  ],
+  "explain": "Masaka nasconde la sua vera natura e poi aiuta Yumi e Disegno a esplorare le terre oltre il sudario."
+ },
+ {
+  "id": "otros-023",
+  "q": "Quale Frammento si è frammentato da sé su Komashi?",
+  "a": "Virtuosismo",
+  "wrong": [
+   "Autonomia",
+   "Devozione",
+   "Dotazione"
+  ],
+  "explain": "I resti del potere di Virtuosismo hanno plasmato la strana Investitura di Komashi."
+ },
+ {
+  "id": "otros-024",
+  "q": "Su quale pianeta è ambientato «The Sunlit Man»?",
+  "a": "Canticle",
+  "wrong": [
+   "Lumar",
+   "Komashi",
+   "Primo del Sole"
+  ],
+  "explain": "Canticle è un mondo bruciato da un sole letale e Investito."
+ },
+ {
+  "id": "otros-025",
+  "q": "Perché le città di Canticle devono spostarsi di continuo?",
+  "a": "Per sfuggire all'alba letale",
+  "wrong": [
+   "Per seguire mandrie migranti",
+   "Per evitare le altetempeste",
+   "Per restare vicino all'oceano"
+  ],
+  "explain": "Chiunque venga colto dalla luce diretta del sole di Canticle si riduce in cenere."
+ },
+ {
+  "id": "otros-026",
+  "q": "Chi è la donna che Nomad aiuta e di cui diventa amico su Canticle?",
+  "a": "Rebeke",
+  "wrong": [
+   "Salay",
+   "Vathi",
+   "Akane"
+  ],
+  "explain": "Rebeke diventa la principale alleata di Nomad nella lotta contro il Cinder King."
+ },
+ {
+  "id": "otros-027",
+  "q": "Con quale nome era conosciuto Nomad quando viveva su Roshar?",
+  "a": "Sigzil",
+  "wrong": [
+   "Teft",
+   "Skar",
+   "Lopen"
+  ],
+  "explain": "Sigzil era un membro del Ponte Quattro prima di diventare Nomad, il viaggiatore tra i mondi."
+ },
+ {
+  "id": "otros-028",
+  "q": "Quale gruppo dà la caccia a Nomad di mondo in mondo?",
+  "a": "La Night Brigade",
+  "wrong": [
+   "I Sanguispettri",
+   "I Figli dell'Onore",
+   "I Diem"
+  ],
+  "explain": "Nomad continua a saltare da un pianeta all'altro per restare un passo avanti alla Night Brigade."
+ },
+ {
+  "id": "otros-029",
+  "q": "A quale tiranno si oppongono Nomad e Rebeke su Canticle?",
+  "a": "Il Cinder King",
+  "wrong": [
+   "Il Lord Reggente",
+   "La Fattucchiera",
+   "Taravangian"
+  ],
+  "explain": "Il Cinder King comanda i Charred, persone ridotte in schiavitù da un sunheart corrotto piantato nel petto."
+ },
+ {
+  "id": "otros-030",
+  "q": "Il Tormento di Nomad gli impedisce di fare che cosa?",
+  "a": "Fare del male a chiunque",
+  "wrong": [
+   "Pronunciare il proprio nome",
+   "Dormire",
+   "Usare l'Investitura"
+  ],
+  "explain": "Il Tormento gli impedisce di nuocere anche per legittima difesa."
+ },
+ {
+  "id": "otros-031",
+  "q": "Qual è la causa del Tormento di Nomad?",
+  "a": "Un tempo ha portato un Frammento dell'Alba",
+  "wrong": [
+   "Una maledizione della Fattucchiera",
+   "Un Ideale infranto",
+   "Aver bevuto lerasium"
+  ],
+  "explain": "Portare un Frammento dell'Alba lascia un segno duraturo su chiunque l'abbia avuto."
+ },
+ {
+  "id": "otros-032",
+  "q": "Che tipo di essere è Auxiliary, il compagno parlante di Nomad?",
+  "a": "Un essere simile a uno spren",
+  "wrong": [
+   "Un kandra",
+   "Un seon",
+   "Un aviar"
+  ],
+  "explain": "Aux fu quasi distrutto dal Frammento dell'Alba che Nomad portava e sopravvive come una voce nella sua testa."
+ },
+ {
+  "id": "otros-033",
+  "q": "Su quale pianeta è ambientato «Sabbia bianca»?",
+  "a": "Taldain",
+  "wrong": [
+   "Threnody",
+   "Canticle",
+   "Lumar"
+  ],
+  "explain": "Taldain ha rotazione sincrona ed è diviso tra un eterno Lato Diurno e un Lato Oscuro."
+ },
+ {
+  "id": "otros-034",
+  "q": "Che cosa consumano del proprio corpo i Maestri della Sabbia per controllare la sabbia?",
+  "a": "Acqua",
+  "wrong": [
+   "Sangue",
+   "Ricordi",
+   "Calore corporeo"
+  ],
+  "explain": "Abusare della maestria della sabbia può disidratare pericolosamente un Maestro della Sabbia."
+ },
+ {
+  "id": "otros-035",
+  "q": "Chi è il padre di Kenton, il potente Lord Mastrell?",
+  "a": "Praxton",
+  "wrong": [
+   "Baon",
+   "Drile",
+   "Aarik"
+  ],
+  "explain": "Praxton muore combattendo i kerztiani, e il suo ultimo attacco seppellisce Kenton sotto la sabbia."
+ },
+ {
+  "id": "otros-036",
+  "q": "Di che colore diventa la sabbia bianca dopo l'uso da parte di un Maestro della Sabbia?",
+  "a": "Nera",
+  "wrong": [
+   "Rossa",
+   "Dorata",
+   "Blu"
+  ],
+  "explain": "La sabbia esausta torna bianca dopo circa quattro ore alla luce del sole del Lato Diurno."
+ },
+ {
+  "id": "otros-037",
+  "q": "Che cosa ha di particolare il Lato Oscuro di Taldain?",
+  "a": "È sempre rivolto verso una stella fioca",
+  "wrong": [
+   "È un unico oceano",
+   "È sempre in tempesta",
+   "Non ha aria"
+  ],
+  "explain": "Khriss viene dal Lato Oscuro, rivolto verso una nana bianca nascosta dietro un anello di particelle."
+ },
+ {
+  "id": "otros-038",
+  "q": "Come si chiama l'ordine di Maestri della Sabbia a cui appartiene Kenton?",
+  "a": "I Diem",
+  "wrong": [
+   "I kerztiani",
+   "I Sanguispettri",
+   "La Night Brigade"
+  ],
+  "explain": "Alla fine Kenton diventa Lord Mastrell, capo dei Diem."
+ },
+ {
+  "id": "otros-039",
+  "q": "Quale Frammento Investe Taldain attraverso la sua stella maggiore, rovente?",
+  "a": "Autonomia",
+  "wrong": [
+   "Virtuosismo",
+   "Dotazione",
+   "Coltivazione"
+  ],
+  "explain": "Taldain orbita attorno a una supergigante bianco-azzurra in coppia con una fioca nana bianca."
+ },
+ {
+  "id": "otros-040",
+  "q": "Su quale pianeta è ambientato «Sesto del Vespro»?",
+  "a": "Primo del Sole",
+  "wrong": [
+   "Threnody",
+   "Taldain",
+   "Komashi"
+  ],
+  "explain": "Primo del Sole è un mondo oceanico costellato di isole letali."
+ },
+ {
+  "id": "otros-041",
+  "q": "Come si chiamano gli uccelli di Primo del Sole che conferiscono talenti?",
+  "a": "Aviar",
+  "wrong": [
+   "Ombre",
+   "Insonni",
+   "Larkin"
+  ],
+  "explain": "I giovani aviar devono visitare l'isola di Patji per ottenere i loro talenti."
+ },
+ {
+  "id": "otros-042",
+  "q": "Qual è il mestiere di Vespro?",
+  "a": "Cacciatore",
+  "wrong": [
+   "Pescatore",
+   "Sacerdote",
+   "Mercante"
+  ],
+  "explain": "Vespro cattura aviar con le trappole su Patji, secondo la tradizione del suo popolo."
+ },
+ {
+  "id": "otros-043",
+  "q": "Patji, l'isola più grande del Pantheon, viene spesso chiamata come?",
+  "a": "Padre",
+  "wrong": [
+   "Madre",
+   "Fratello",
+   "Nonno"
+  ],
+  "explain": "I cacciatori come Vespro trattano l'isola letale di Patji con cauta reverenza, come un padre severo."
+ },
+ {
+  "id": "otros-044",
+  "q": "Che cosa mostra a Vespro il suo aviar Sak?",
+  "a": "Visioni del suo stesso cadavere",
+  "wrong": [
+   "Mappe dell'isola",
+   "I pensieri altrui",
+   "Tesori nascosti"
+  ],
+  "explain": "Le visioni di Sak avvertono Vespro dei pericoli imminenti; prima di lei nessun aviar aveva quel talento."
+ },
+ {
+  "id": "otros-045",
+  "q": "Quale talento gli conferisce Kokerlii, l'aviar di Vespro?",
+  "a": "Nascondere la mente ai predatori",
+  "wrong": [
+   "Vedere al buio",
+   "Parlare con gli animali",
+   "Guarire le ferite"
+  ],
+  "explain": "Su Patji molti predatori cacciano percependo le menti, quindi Kokerlii è vitale."
+ },
+ {
+  "id": "otros-046",
+  "q": "Su quale pianeta crescono le Foreste dell'Inferno?",
+  "a": "Threnody",
+  "wrong": [
+   "Taldain",
+   "Primo del Sole",
+   "Canticle"
+  ],
+  "explain": "Le Foreste dell'Inferno sono infestate dalle ombre, gli spiriti dei morti."
+ },
+ {
+  "id": "otros-047",
+  "q": "Che cosa gestisce Silence Montane nelle Foreste dell'Inferno?",
+  "a": "Una locanda di sosta",
+  "wrong": [
+   "Una segheria",
+   "Una cappella",
+   "Una miniera d'argento"
+  ],
+  "explain": "Silence gestisce la locanda con sua figlia, William Ann."
+ },
+ {
+  "id": "otros-048",
+  "q": "Quale metallo può distruggere le ombre di Threnody?",
+  "a": "L'argento",
+  "wrong": [
+   "Il ferro",
+   "Il rame",
+   "L'oro"
+  ],
+  "explain": "Le ombre si infuriano se qualcuno accende un fuoco, corre di notte o versa sangue."
+ },
+ {
+  "id": "otros-049",
+  "q": "Con quale identità segreta Silence dà la caccia alle taglie?",
+  "a": "La Volpe Bianca",
+  "wrong": [
+   "Il Lupo Grigio",
+   "Il Falco Nero",
+   "L'Orso Rosso"
+  ],
+  "explain": "Silence usa le taglie che riscuote per tenere la locanda lontana dai debiti."
+ },
+ {
+  "id": "otros-050",
+  "q": "Che cosa ne è stato della nonna di Silence dopo la sua morte?",
+  "a": "La sua ombra è legata in un santuario",
+  "wrong": [
+   "È stata sepolta nella Patria",
+   "Il corpo non è mai stato trovato",
+   "È tornata come kandra"
+  ],
+  "explain": "La nonna di Silence veniva dalla Patria, prima che cadesse in mano al Male."
+ }
+]

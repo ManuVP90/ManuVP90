@@ -1,7 +1,7 @@
 {
   "app": {
-    "title": "Quiz du Cosmere",
-    "tagline": "Connaissez-vous vraiment le Cosmere ?"
+    "title": "Quiz du Cosmère",
+    "tagline": "Connaissez-vous vraiment le Cosmère ?"
   },
   "common": {
     "back": "Retour",
@@ -33,7 +33,7 @@
     "sel": "Sel",
     "nalthis": "Nalthis",
     "otros": "Autres mondes",
-    "cosmere": "Le Cosmere"
+    "cosmere": "Le Cosmère"
   },
   "gem": {
     "roshar": "Saphir",
@@ -168,14 +168,14 @@
   },
   "about": {
     "title": "À propos",
-    "body": "Un jeu de questions façon Trivial Pursuit sur les mondes du Cosmere de Brandon Sanderson. Jouez seul ou faites passer le téléphone entre amis.",
+    "body": "Un jeu de questions façon Trivial Pursuit sur les mondes du Cosmère de Brandon Sanderson. Jouez seul ou faites passer le téléphone entre amis.",
     "howTo": "Règles du jeu",
     "rule1": "Faites tourner la roue et répondez à une question sur le monde désigné.",
     "rule2": "Bonne réponse : vous gagnez une charge de ce monde et vous rejouez. Mauvaise réponse : la main passe au joueur suivant.",
     "rule3": "Deux charges infusent une gemme. Le joker vous permet de choisir le monde.",
     "rule4": "Infusez toutes les gemmes, puis réussissez la question finale pour gagner.",
     "offline": "Fonctionne hors ligne une fois chargé. Tout est enregistré uniquement sur cet appareil.",
-    "disclaimer": "Projet de fans non officiel, sans lien avec Brandon Sanderson ni Dragonsteel. Le Cosmere et tous les noms associés appartiennent à leurs propriétaires respectifs.",
+    "disclaimer": "Projet de fans non officiel, sans lien avec Brandon Sanderson ni Dragonsteel. Le Cosmère et tous les noms associés appartiennent à leurs propriétaires respectifs.",
     "version": "Version {v}"
   },
   "errors": {

@@ -1,7 +1,7 @@
 {
   "app": {
-    "title": "Cosmere-Quiz",
-    "tagline": "Wie gut kennst du das Cosmere?"
+    "title": "Kosmeer-Quiz",
+    "tagline": "Wie gut kennst du das Kosmeer?"
   },
   "common": {
     "back": "Zurück",
@@ -33,7 +33,7 @@
     "sel": "Sel",
     "nalthis": "Nalthis",
     "otros": "Andere Welten",
-    "cosmere": "Das Cosmere"
+    "cosmere": "Das Kosmeer"
   },
   "gem": {
     "roshar": "Saphir",
@@ -168,14 +168,14 @@
   },
   "about": {
     "title": "Info",
-    "body": "Ein Quiz im Stil von Trivial Pursuit über die Welten von Brandon Sandersons Cosmere. Spiel allein oder reich das Handy unter Freunden herum.",
+    "body": "Ein Quiz im Stil von Trivial Pursuit über die Welten von Brandon Sandersons Kosmeer. Spiel allein oder reich das Handy unter Freunden herum.",
     "howTo": "So wird gespielt",
     "rule1": "Dreh das Rad und beantworte eine Frage zu der Welt, auf der es stehen bleibt.",
     "rule2": "Richtige Antwort: Du erhältst eine Ladung für diese Welt und drehst noch einmal. Falsche Antwort: Der nächste Spieler ist dran.",
     "rule3": "Zwei Ladungen laden einen Edelstein auf. Mit dem Joker wählst du die Welt selbst.",
     "rule4": "Lade alle Edelsteine auf und beantworte dann die Finalfrage richtig, um zu gewinnen.",
     "offline": "Funktioniert nach dem ersten Laden auch offline. Alle Daten bleiben auf diesem Gerät.",
-    "disclaimer": "Inoffizielles Fanprojekt, nicht verbunden mit Brandon Sanderson oder Dragonsteel. Das Cosmere und alle zugehörigen Namen gehören ihren jeweiligen Inhabern.",
+    "disclaimer": "Inoffizielles Fanprojekt, nicht verbunden mit Brandon Sanderson oder Dragonsteel. Das Kosmeer und alle zugehörigen Namen gehören ihren jeweiligen Inhabern.",
     "version": "Version {v}"
   },
   "errors": {
