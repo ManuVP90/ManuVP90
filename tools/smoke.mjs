@@ -52,7 +52,13 @@ page.on('requestfailed', (r) => { if (!r.url().includes('favicon')) errors.push(
 
 let step = 0;
 const log = (m) => console.log(`  ${String(++step).padStart(2, '0')} ${m}`);
-const shot = async (name) => { await page.waitForTimeout(350); await page.screenshot({ path: join(SHOTS, `${name}.png`) }); };
+const shot = async (name) => {
+  await page.waitForTimeout(350);
+  await page.screenshot({ path: join(SHOTS, `${name}.png`) });
+  // Every captured screen must be free of leaked JS values such as "null" or "undefined".
+  const leaked = await page.evaluate(() => (document.body.innerText.match(/\b(null|undefined|NaN|\[object Object\])\b/) || [])[0]);
+  if (leaked) throw new Error(`screen "${name}" shows the literal text "${leaked}"`);
+};
 function assert(cond, msg) { if (!cond) throw new Error(`Assertion failed: ${msg}`); }
 const T = (lang, key) => key.split('.').reduce((o, k) => o?.[k], strings[lang]);
 

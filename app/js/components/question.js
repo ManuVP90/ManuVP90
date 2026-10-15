@@ -106,12 +106,13 @@ export function questionView({ question: q, order = shuffledOrder(), timer = fal
 
     const extra = onAnswer({ correct, timedOut, remaining, ms: performance.now() - startedAt });
     const verdict = correct ? t('question.correct') : (timedOut ? t('question.timeout') : t('question.incorrect'));
-    live.replaceChildren(
+    // replaceChildren() would render null as the text "null", so drop the empty slots first.
+    live.replaceChildren(...[
       h('p', { class: `verdict ${correct ? 'ok' : 'bad'}` }, svg(correct ? ICONS.check : ICONS.x), h('span', {}, verdict)),
       correct ? null : h('p', { class: 'answer-was' }, t('question.answerWas', { answer: q.o[0] })),
       q.x ? h('p', { class: 'explain' }, q.x) : null,
       extra ? h('div', { class: 'feedback-extra' }, extra) : null,
-    );
+    ].filter(Boolean));
     continueBtn.hidden = false;
     continueBtn.focus({ preventScroll: true });
     requestAnimationFrame(() => {
