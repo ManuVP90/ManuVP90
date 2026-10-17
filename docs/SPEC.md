@@ -27,12 +27,16 @@ se pasa el móvil entre jugadores). Funciona sin conexión.
 
 ### Modos
 1. **Partida clásica** (1–6 jugadores o equipos, pasar el móvil).
-   - En cada turno gira la **ruleta** de 7 sectores: las 6 categorías + *Comodín* (el jugador elige categoría).
-   - Pregunta de opción múltiple (4 opciones, 1 correcta) con temporizador opcional (30 s).
+   - **Quién empieza se sortea** al crear la partida; la primera pantalla de «pasa el móvil» lo anuncia («Empieza: {nombre}»).
+   - En cada turno gira la **ruleta** de 7 sectores: las 6 categorías + *Comodín* (el jugador elige categoría). Si cae en una gema ya infundida, actúa como comodín entre las que faltan.
+   - Pregunta de opción múltiple (4 opciones, 1 correcta) con temporizador opcional (30 s). El plazo se guarda con la pregunta pendiente: recargar, salir o pulsar Atrás no lo reinicia, y si vence mientras tanto cuenta como fallo por tiempo.
    - Acierto → +1 *carga* en esa categoría y **sigue tirando**. Fallo → pasa el turno.
+   - **Máximo 3 aciertos seguidos por turno** (con 2 o más jugadores): tras el 3.º acierto el turno pasa igualmente y se avisa al jugador. En solitario no hay límite.
+   - Al reanudar una partida guardada con varios jugadores se muestra primero la pantalla de «pasa el móvil» y luego la pregunta pendiente.
    - Con **2 cargas** la gema de esa categoría queda **infundida** (las cargas extra ya no suman).
-   - Con las 6 gemas infundidas el jugador afronta la **pregunta final** (dificultad 3, categoría al azar). Acierto → gana. Fallo → pasa el turno y lo intentará en su siguiente turno.
+   - Con las 6 gemas infundidas el jugador afronta la **pregunta final** (dificultad 3, categoría al azar; se prefieren preguntas que aún no hayan salido en la partida). Acierto → gana. Fallo → pasa el turno y lo intentará en su siguiente turno.
 2. **Partida rápida** (solo): 15 preguntas de categorías mezcladas, puntuación por acierto y tiempo; récord guardado.
+   Las 15 plazas se reparten entre mundos en proporción a las preguntas disponibles con el filtro de spoilers, y ninguna pregunta se repite en la partida (si hay menos de 15, la partida es más corta). La partida en curso se guarda y se puede continuar tras recargar.
 3. **Práctica**: elige categoría y dificultad, sin puntuación, muestra la explicación de cada respuesta.
 
 ### Nivel de dificultad de la partida (v2)
@@ -49,6 +53,8 @@ Práctica permite elegir cualquiera de las 4 dificultades.
 ### Comodines (v2)
 Cada jugador tiene **1 de cada** por partida clásica; en partida rápida, 1 de cada por partida.
 No se pueden usar en la pregunta final. En práctica no hay comodines.
+**Atium y Luz tormentosa no se combinan** en la misma pregunta: usado uno, el otro queda desactivado en esa pregunta (con el motivo visible bajo la fila de comodines).
+Si se usa **Aliento con la Luz tormentosa activada**, la protección pasa a la pregunta nueva.
 | Comodín | Efecto |
 |---|---|
 | **Atium** | Elimina dos respuestas incorrectas. |

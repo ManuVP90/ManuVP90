@@ -1,9 +1,10 @@
 import { h, svg } from '../dom.js';
 import { ICONS } from '../icons.js';
-import { t, getLang } from '../i18n.js';
+import { t, getLang, num } from '../i18n.js';
 import { app, go, screen, confirmDialog } from '../core.js';
 import { fx } from '../fx.js';
 import { loadSavedGame } from './classic.js';
+import { loadSavedRun, discardRun } from './quick.js';
 
 function logo() {
   // Six gems around a central Stormlight diamond.
@@ -25,10 +26,19 @@ function bigButton(icon, title, desc, onclick, cls = '') {
 }
 
 export function homeScreen() {
+  // Only valid saves are offered ("Continue" must always work).
   const saved = loadSavedGame();
+  const savedQuick = loadSavedRun();
   const startClassic = async () => {
     if (saved && !(await confirmDialog(t('home.newGameConfirm')))) return;
     go('classic-setup');
+  };
+  const startQuick = async () => {
+    if (savedQuick) {
+      if (!(await confirmDialog(t('home.newGameConfirm')))) return;
+      discardRun();
+    }
+    go('quick');
   };
   const smallBtn = (icon, label, target) => h('button', { type: 'button', class: 'small-btn', onclick: () => { fx.tap(); go(target); } }, svg(ICONS[icon]), h('span', {}, label));
 
@@ -41,9 +51,10 @@ export function homeScreen() {
     !app.loadError && app.questionsLang && app.questionsLang !== getLang()
       ? h('p', { class: 'banner banner-warn', role: 'status' }, t('errors.fallback')) : null,
     h('nav', { class: 'menu', 'aria-label': t('app.title') },
-      saved ? bigButton('play', t('home.continue'), t('home.continueDesc', { players: saved.players.map((p) => p.name).join(', ') }), () => go('classic'), 'menu-continue') : null,
-      bigButton('users', t('home.classic'), t('home.classicDesc'), startClassic, saved ? '' : 'menu-primary'),
-      bigButton('bolt', t('home.quick'), t('home.quickDesc'), () => go('quick')),
+      saved ? bigButton('play', t('home.continue'), t('home.continueDesc', { players: saved.players.map((p) => p.name).join(', ') }), () => go('classic', { resume: true }), 'menu-continue menu-continue-classic') : null,
+      savedQuick ? bigButton('bolt', t('home.continueQuick'), t('home.continueQuickDesc', { n: savedQuick.index + 1, total: savedQuick.total, score: num(savedQuick.score) }), () => go('quick', { resume: true }), 'menu-continue menu-continue-quick') : null,
+      bigButton('users', t('home.classic'), t('home.classicDesc'), startClassic, saved || savedQuick ? '' : 'menu-primary'),
+      bigButton('bolt', t('home.quick'), t('home.quickDesc'), startQuick, 'menu-quick'),
       bigButton('book', t('home.practice'), t('home.practiceDesc'), () => go('practice-setup'))),
     h('div', { class: 'small-row' },
       smallBtn('stats', t('home.stats'), 'stats'),

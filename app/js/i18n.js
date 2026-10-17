@@ -1,6 +1,6 @@
 // UI string loading and lookup. Strings live in app/i18n/<lang>.json as nested objects;
 // look them up with dotted keys: t('home.classic'), t('turn.turnOf', { name }).
-import { LANGS } from './config.js';
+import { LANGS, LANG_ALIASES } from './config.js';
 
 let dict = {};
 let fallback = {};
@@ -12,17 +12,26 @@ async function fetchDict(lang) {
   return res.json();
 }
 
+/** Supported UI language for a BCP 47 tag ('ca-ES-valencia' → 'es'), or null. */
+export function matchLang(tag) {
+  const base = String(tag || '').toLowerCase().split(/[-_]/)[0];
+  if (LANGS.includes(base)) return base;
+  return LANG_ALIASES[base] || null;
+}
+
+/** First supported language among the device languages (English if none). */
 export function detectLang() {
-  const prefs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language];
+  let prefs = [];
+  try { prefs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language]; } catch { /* ignore */ }
   for (const l of prefs) {
-    const base = String(l || '').slice(0, 2).toLowerCase();
-    if (LANGS.includes(base)) return base;
+    const m = matchLang(l);
+    if (m) return m;
   }
   return 'en';
 }
 
 export async function setLang(lang) {
-  if (!LANGS.includes(lang)) lang = 'en';
+  if (!LANGS.includes(lang)) lang = detectLang();
   if (!Object.keys(fallback).length) {
     try { fallback = await fetchDict('en'); } catch (e) { console.warn(e); }
   }

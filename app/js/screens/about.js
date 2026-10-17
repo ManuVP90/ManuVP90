@@ -10,7 +10,7 @@ export function aboutScreen() {
     h('section', { class: 'card prose' },
       h('p', {}, t('about.body')),
       h('h2', {}, t('about.howTo')),
-      h('ol', {}, [1, 2, 3, 4].map((i) => h('li', {}, t(`about.rule${i}`)))),
+      h('ol', {}, [1, 2, 3, 4, 5].map((i) => h('li', {}, t(`about.rule${i}`)))),
       h('h2', {}, t('about.levels')),
       h('ul', { class: 'about-levels' }, LEVEL_IDS.map((l) => h('li', {}, h('b', {}, t(`level.${l}`)), ' — ', t(`level.${l}Desc`)))),
       h('p', {}, t('about.levelsFinal')),

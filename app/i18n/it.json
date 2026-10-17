@@ -11,7 +11,8 @@
     "continue": "Continua",
     "next": "Domanda successiva",
     "loading": "Caricamento…",
-    "playAgain": "Gioca ancora"
+    "playAgain": "Gioca ancora",
+    "openSettings": "Apri le impostazioni"
   },
   "home": {
     "continue": "Continua la partita",
@@ -25,7 +26,9 @@
     "stats": "Statistiche",
     "settings": "Impostazioni",
     "about": "Informazioni",
-    "newGameConfirm": "Iniziando una nuova partita, quella in corso andrà persa. Continuare?"
+    "newGameConfirm": "Iniziando una nuova partita, quella in corso andrà persa. Continuare?",
+    "continueQuick": "Riprendi la partita veloce",
+    "continueQuickDesc": "Domanda {n} di {total} · {score} punti"
   },
   "cat": {
     "roshar": "Roshar",
@@ -65,7 +68,7 @@
   "lifeline": {
     "title": "Aiuti",
     "help": "Come funzionano gli aiuti",
-    "rules": "Ogni giocatore ha un aiuto di ciascun tipo per partita (anche nella partita veloce). Non si possono usare nella domanda finale né in allenamento.",
+    "rules": "Ogni giocatore ha un aiuto di ciascun tipo per partita (anche nella partita veloce). Non si possono usare nella domanda finale né in allenamento, e Atium e Folgoluce non si combinano nella stessa domanda.",
     "used": "{name} (già usato)",
     "atium": {
       "name": "Atium",
@@ -77,7 +80,7 @@
     "stormlight": {
       "name": "Folgoluce",
       "desc": "Attivala prima di rispondere: se sbagli, scegli di nuovo.",
-      "long": "Attivala prima di rispondere. Se scegli una risposta sbagliata, viene segnata e scegli di nuovo, senza che venga rivelata quella giusta. Il tempo continua a scorrere.",
+      "long": "Attivala prima di rispondere. Se scegli una risposta sbagliata, viene segnata e scegli di nuovo, senza che venga rivelata quella giusta. Il tempo continua a scorrere. Se usi il Soffio mentre è attiva, resta attiva nella nuova domanda.",
       "armed": "Folgoluce attiva: se sbagli, potrai scegliere di nuovo.",
       "saved": "La Folgoluce ti guarisce! Non era quella: scegli un’altra risposta.",
       "struck": "{option} (sbagliata)"
@@ -87,7 +90,8 @@
       "desc": "Cambia la domanda con un’altra dello stesso mondo e della stessa difficoltà.",
       "long": "Cambia la domanda con un’altra dello stesso mondo e della stessa difficoltà. Se non ne restano, non si può usare.",
       "none": "Nessun’altra domanda dello stesso mondo e della stessa difficoltà."
-    }
+    },
+    "noCombo": "Atium e Folgoluce non si possono combinare nella stessa domanda."
   },
   "setup": {
     "title": "Nuova partita",
@@ -105,7 +109,8 @@
     "passTo": "Passa il telefono a",
     "ready": "Inizia il mio turno",
     "noPeek": "Tutti gli altri: niente sbirciate!",
-    "turnOf": "Tocca a {name}"
+    "turnOf": "Tocca a {name}",
+    "starts": "Inizia: {name}"
   },
   "wheel": {
     "label": "Ruota delle categorie",
@@ -144,7 +149,8 @@
     "gemCount": "{n} gemme infuse su {total}",
     "gem0": "{category}: nessuna carica",
     "gem1": "{category}: 1 carica",
-    "gem2": "{category}: infusa"
+    "gem2": "{category}: infusa",
+    "streakPass": "{n} risposte esatte di fila! Il turno passa a {name}."
   },
   "victory": {
     "title": "Vince {name}!",
@@ -164,7 +170,8 @@
     "quitConfirm": "Abbandonare la partita veloce? Perderai il punteggio.",
     "intro": "{n} domande su tutti i mondi, {s} secondi ciascuna. Più rispondi in fretta, più punti fai.",
     "introLifelines": "Hai un aiuto di ciascun tipo: Atium, Folgoluce e Soffio.",
-    "start": "Inizia"
+    "start": "Inizia",
+    "bestScore": "Miglior punteggio: {n}"
   },
   "practice": {
     "title": "Allenamento",
@@ -177,7 +184,8 @@
     "end": "Termina",
     "tally": "{correct} su {total}",
     "fallback": "Non ci sono ancora domande di difficoltà {level} qui: ti allenerai con quelle di difficoltà {fallback}.",
-    "empty": "Non ci sono ancora domande di difficoltà {level} qui."
+    "empty": "Non ci sono ancora domande di difficoltà {level} qui.",
+    "noneFilter": "Nessuna domanda disponibile: il filtro spoiler non lascia nessuna opera con domande. Seleziona più opere nelle Impostazioni."
   },
   "stats": {
     "title": "Statistiche",
@@ -225,11 +233,18 @@
     "version": "Versione {v}",
     "levels": "Livelli di difficoltà",
     "levelsFinal": "Nella partita classica la domanda finale è media in Facile, difficile in Normale e da esperti in Difficile ed Esperto.",
-    "lifelines": "Aiuti"
+    "lifelines": "Aiuti",
+    "rule5": "Chi inizia viene sorteggiato. Dopo 3 risposte esatte di fila il turno passa comunque al giocatore successivo."
   },
   "errors": {
     "load": "Impossibile caricare le domande. Controlla la connessione e ricarica la pagina.",
     "noQuestions": "Nessuna domanda disponibile con il filtro spoiler attuale.",
     "fallback": "Le domande non sono ancora disponibili in questa lingua, quindi vengono mostrate in inglese."
+  },
+  "boot": {
+    "title": "Qualcosa è andato storto",
+    "body": "L’app non è riuscita ad avviarsi. I dati salvati potrebbero essere danneggiati: cancellarli di solito risolve il problema (perderai la partita in corso, le impostazioni e le statistiche).",
+    "reset": "Cancella i dati e riavvia",
+    "retry": "Riprova"
   }
 }

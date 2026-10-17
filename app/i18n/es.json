@@ -11,7 +11,8 @@
     "continue": "Continuar",
     "next": "Siguiente pregunta",
     "loading": "Cargando…",
-    "playAgain": "Jugar otra vez"
+    "playAgain": "Jugar otra vez",
+    "openSettings": "Abrir ajustes"
   },
   "home": {
     "continue": "Continuar partida",
@@ -25,7 +26,9 @@
     "stats": "Estadísticas",
     "settings": "Ajustes",
     "about": "Acerca de",
-    "newGameConfirm": "Si empiezas una partida nueva se descartará la que está en curso. ¿Continuar?"
+    "newGameConfirm": "Si empiezas una partida nueva se descartará la que está en curso. ¿Continuar?",
+    "continueQuick": "Continuar partida rápida",
+    "continueQuickDesc": "Pregunta {n} de {total} · {score} puntos"
   },
   "cat": {
     "roshar": "Roshar",
@@ -65,7 +68,7 @@
   "lifeline": {
     "title": "Comodines",
     "help": "Cómo funcionan los comodines",
-    "rules": "Cada jugador tiene uno de cada por partida (también en la partida rápida). No se pueden usar en la pregunta final ni en práctica.",
+    "rules": "Cada jugador tiene uno de cada por partida (también en la partida rápida). No se pueden usar en la pregunta final ni en práctica, y el atium y la luz tormentosa no se combinan en la misma pregunta.",
     "used": "{name} (ya usado)",
     "atium": {
       "name": "Atium",
@@ -77,7 +80,7 @@
     "stormlight": {
       "name": "Luz tormentosa",
       "desc": "Actívala antes de responder: si fallas, vuelves a elegir.",
-      "long": "Actívala antes de responder. Si eliges una respuesta incorrecta, se marca y vuelves a elegir, sin que se revele la correcta. El tiempo sigue corriendo.",
+      "long": "Actívala antes de responder. Si eliges una respuesta incorrecta, se marca y vuelves a elegir, sin que se revele la correcta. El tiempo sigue corriendo. Si usas Aliento con ella activa, sigue activa en la pregunta nueva.",
       "armed": "Luz tormentosa activa: si fallas, podrás volver a elegir.",
       "saved": "¡La luz tormentosa te sana! Esa no era: elige otra respuesta.",
       "struck": "{option} (incorrecta)"
@@ -87,7 +90,8 @@
       "desc": "Cambia la pregunta por otra del mismo mundo y dificultad.",
       "long": "Cambia la pregunta por otra del mismo mundo y la misma dificultad. Si no queda ninguna, no se puede usar.",
       "none": "No hay otra pregunta del mismo mundo y dificultad."
-    }
+    },
+    "noCombo": "El atium y la luz tormentosa no se pueden combinar en la misma pregunta."
   },
   "setup": {
     "title": "Nueva partida",
@@ -105,7 +109,8 @@
     "passTo": "Pasa el móvil a",
     "ready": "Empezar mi turno",
     "noPeek": "Los demás, ¡no miréis!",
-    "turnOf": "Turno de {name}"
+    "turnOf": "Turno de {name}",
+    "starts": "Empieza: {name}"
   },
   "wheel": {
     "label": "Ruleta de categorías",
@@ -144,7 +149,8 @@
     "gemCount": "{n} de {total} gemas infundidas",
     "gem0": "{category}: sin cargas",
     "gem1": "{category}: 1 carga",
-    "gem2": "{category}: infundida"
+    "gem2": "{category}: infundida",
+    "streakPass": "¡{n} aciertos seguidos! El turno pasa a {name}."
   },
   "victory": {
     "title": "¡{name} gana!",
@@ -164,7 +170,8 @@
     "quitConfirm": "¿Abandonar la partida rápida? Perderás la puntuación.",
     "intro": "{n} preguntas de todos los mundos, {s} segundos cada una. Cuanto antes aciertes, más puntos.",
     "introLifelines": "Tienes un comodín de cada tipo: Atium, Luz tormentosa y Aliento.",
-    "start": "Empezar"
+    "start": "Empezar",
+    "bestScore": "Mejor puntuación: {n}"
   },
   "practice": {
     "title": "Práctica",
@@ -177,7 +184,8 @@
     "end": "Terminar",
     "tally": "{correct} de {total} aciertos",
     "fallback": "Aún no hay preguntas de dificultad {level} aquí: practicarás con las de dificultad {fallback}.",
-    "empty": "Aún no hay preguntas de dificultad {level} aquí."
+    "empty": "Aún no hay preguntas de dificultad {level} aquí.",
+    "noneFilter": "No hay preguntas disponibles: el filtro de spoilers no deja ninguna obra con preguntas. Marca más obras en Ajustes."
   },
   "stats": {
     "title": "Estadísticas",
@@ -225,11 +233,18 @@
     "version": "Versión {v}",
     "levels": "Niveles de dificultad",
     "levelsFinal": "La pregunta final de la partida clásica es media en Fácil, difícil en Normal y de experto en Difícil y Experto.",
-    "lifelines": "Comodines"
+    "lifelines": "Comodines",
+    "rule5": "Un sorteo decide quién empieza. Con 3 aciertos seguidos el turno pasa al siguiente jugador aunque aciertes."
   },
   "errors": {
     "load": "No se han podido cargar las preguntas. Comprueba la conexión y recarga.",
     "noQuestions": "No hay preguntas disponibles con el filtro de spoilers actual.",
     "fallback": "Las preguntas aún no están disponibles en este idioma; se muestran en inglés."
+  },
+  "boot": {
+    "title": "Algo ha fallado",
+    "body": "La app no ha podido arrancar. Puede que los datos guardados estén dañados: borrarlos suele arreglarlo (se perderán la partida en curso, los ajustes y las estadísticas).",
+    "reset": "Borrar datos y reiniciar",
+    "retry": "Reintentar"
   }
 }

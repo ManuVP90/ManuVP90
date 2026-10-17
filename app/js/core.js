@@ -3,7 +3,7 @@ import { h, svg } from './dom.js';
 import { ICONS } from './icons.js';
 import { t } from './i18n.js';
 import * as store from './storage.js';
-import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, levelOrDefault } from './config.js';
+import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LANGS, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, levelOrDefault } from './config.js';
 import { Pool } from './data.js';
 import { setFxPrefs, fx } from './fx.js';
 
@@ -17,11 +17,23 @@ export const app = {
   sessionUsed: {}, // used ids for quick/practice in this session (memory only)
 };
 
+const isObj = (o) => !!o && typeof o === 'object' && !Array.isArray(o);
+const count = (n) => (Number.isInteger(n) && n >= 0 ? n : 0);
+
+/** Keeps only the stored settings that have the right type; anything else gets its default. */
+export function sanitizeSettings(s) {
+  const out = { ...DEFAULT_SETTINGS, disabledWorks: [] };
+  if (!isObj(s)) return out;
+  if (LANGS.includes(s.lang)) out.lang = s.lang;
+  if (s.theme === 'light' || s.theme === 'dark') out.theme = s.theme;
+  for (const k of ['sound', 'vibration', 'timer']) if (typeof s[k] === 'boolean') out[k] = s[k];
+  if (Array.isArray(s.disabledWorks)) out.disabledWorks = [...new Set(s.disabledWorks.filter((w) => typeof w === 'string'))];
+  out.level = levelOrDefault(s.level);
+  return out;
+}
+
 export function loadSettings() {
-  const s = store.load('settings', {});
-  app.settings = { ...DEFAULT_SETTINGS, ...(s && typeof s === 'object' ? s : {}) };
-  if (!Array.isArray(app.settings.disabledWorks)) app.settings.disabledWorks = [];
-  app.settings.level = levelOrDefault(app.settings.level);
+  app.settings = sanitizeSettings(store.load('settings', null));
   applySettings();
 }
 
@@ -45,11 +57,22 @@ const emptyStats = () => ({
   lifelines: Object.fromEntries(LIFELINES.map((k) => [k, 0])),
 });
 
+/** Stored stats with every field checked: odd values (wrong type, negative) count as 0. */
 export function getStats() {
   const s = store.load('stats', null);
   const base = emptyStats();
-  if (!s || typeof s !== 'object') return base;
-  return { ...base, ...s, cats: { ...base.cats, ...(s.cats || {}) }, lifelines: { ...base.lifelines, ...(s.lifelines || {}) } };
+  if (!isObj(s)) return base;
+  for (const k of ['classicGames', 'quickGames', 'bestQuick']) base[k] = count(s[k]);
+  if (isObj(s.cats)) {
+    for (const c of CATEGORIES) {
+      const v = s.cats[c];
+      if (!isObj(v)) continue;
+      const a = count(v.a);
+      base.cats[c] = { a, c: Math.min(count(v.c), a) };
+    }
+  }
+  if (isObj(s.lifelines)) for (const k of LIFELINES) base.lifelines[k] = count(s.lifelines[k]);
+  return base;
 }
 
 export function updateStats(fn) {
@@ -83,6 +106,10 @@ let cleanups = [];
 let backHandler = null;
 let inHistory = false;
 let ignorePop = false;
+let renderFailures = 0;
+let fatalHandler = null;
+/** Called when even Home cannot render after startup (app.js shows the error screen). */
+export function setFatalHandler(fn) { fatalHandler = fn; }
 
 export function register(name, render) { screens[name] = render; }
 export function onCleanup(fn) { cleanups.push(fn); }
@@ -96,7 +123,20 @@ export function go(name, params = {}) {
   backHandler = null;
   closeModal();
   const root = document.getElementById('app');
-  const el = screens[name](params);
+  let el;
+  try {
+    el = screens[name](params);
+  } catch (e) {
+    // A screen that cannot render (odd state) must not brick the app: go home, or report it.
+    if (name !== 'home' && renderFailures++ < 3) {
+      console.warn(`screen "${name}" failed`, e);
+      go('home');
+      return;
+    }
+    if (fatalHandler && current) { fatalHandler(e); return; }
+    throw e;
+  }
+  renderFailures = 0;
   el.classList.add('screen-enter');
   root.replaceChildren(el);
   current = { name, params };
@@ -122,7 +162,12 @@ window.addEventListener('popstate', () => {
   inHistory = false;
   if (modalEl) { closeModal(false); history.pushState({ app: 1 }, ''); inHistory = true; return; }
   const fn = backHandler;
-  if (fn) fn(); else go('home');
+  if (fn) {
+    // Re-arm the history entry first: if the handler stays on this screen (e.g. the player
+    // cancels a "quit?" dialog), the next Back must reach the app again instead of closing it.
+    try { history.pushState({ app: 1 }, ''); inHistory = true; } catch { /* ignore */ }
+    fn();
+  } else go('home');
 });
 
 // ---------- UI building blocks ----------
@@ -132,11 +177,11 @@ export function iconButton(icon, label, onclick, cls = '') {
 
 /** Standard top bar: back/home button, title, optional right-side node. */
 export function topBar(title, { back = () => go('home'), backIcon = 'back', backLabel = t('common.back'), right = null } = {}) {
-  return h('header', { class: 'topbar' },
-    back ? iconButton(backIcon, backLabel, back) : h('span', { class: 'topbar-spacer' }),
+  return h('header', { class: 'topbar' }, h('div', { class: 'topbar-row' },
+    back ? iconButton(backIcon, backLabel, back, 'topbar-back') : h('span', { class: 'topbar-spacer topbar-back' }),
     title ? h('h1', { class: 'topbar-title' }, title) : h('span', { class: 'topbar-title' }),
-    right || h('span', { class: 'topbar-spacer' }),
-  );
+    right ? h('div', { class: 'topbar-right' }, right) : h('span', { class: 'topbar-spacer topbar-right' }),
+  ));
 }
 
 export function screen(cls, ...children) {

@@ -126,9 +126,10 @@
   "status": "official",
   "sources": [
    "https://kosmeer.fandom.com/de/wiki/Sprengsel",
-   "https://www.lovelybooks.de/stoebern/empfehlung/sprengsel/"
+   "https://www.lovelybooks.de/stoebern/empfehlung/sprengsel/",
+   "https://www.lovelybooks.de/stoebern/empfehlung/sturmlicht-chroniken/"
   ],
-  "notes": "Confirmed. das/der Sprengsel, pl. die Sprengsel."
+  "notes": "Neuter: das Sprengsel, pl. die Sprengsel (Heyne blurb of \"Der Pfad der Winde\": \"Syl, das kleine Windsprengsel\"). Beta-1: all masculine uses (der/den/einen Sprengsel) fixed to neuter. Named spren may take natural-gender pronouns (Muster \"er\", Timbre \"sie\")."
  },
  "Shallan Davar": {
   "de": "Schallan Davar",
@@ -1819,16 +1820,16 @@
   "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
  },
  "Heritage Faction": {
-  "de": "Erbe-Fraktion",
+  "de": "Fraktion des Erbes",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+  "notes": "Beta-1: \"Erbe-Fraktion\" flagged as awkward by the German tester. Heyne form not findable online (searched \"Die Seele des Königs\" + Fraktion/Erbe/Ruhm); idiomatic rendering used: die Fraktion des Erbes."
  },
  "Glory Faction": {
-  "de": "Ruhm-Fraktion",
+  "de": "Fraktion des Ruhms",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+  "notes": "See Heritage Faction: die Fraktion des Ruhms."
  },
  "Striker": {
   "de": "Schläger",
@@ -2385,9 +2386,12 @@
  },
  "Nomad": {
   "de": "Nomade",
-  "status": "unverified",
-  "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+  "status": "official",
+  "sources": [
+   "https://www.amazon.de/Das-Herz-Sonne-Ein-Kosmeer-Roman/dp/3453274407",
+   "https://www.lesejury.de/brandon-sanderson/buecher/das-herz-der-sonne/9783453274402"
+  ],
+  "notes": "Heyne blurb: \"ein Mann, der sich seit Langem nur noch »der Nomade« nennt\". Use with article: der Nomade, gen. des Nomaden (some reviews write \"Nomad\", but the publisher text uses \"der Nomade\")."
  },
  "Cinder King": {
   "de": "Zunderkönig",
@@ -2441,7 +2445,7 @@
   "de": "Auxiliar",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only).  Beta-1: a search-summary snippet of the Heyne Leseprobe suggested \"Auxilium\" (short \"Aux\"); could not be confirmed, kept \"Auxiliar\"."
  },
  "White Sand": {
   "de": "White Sand",
@@ -2490,10 +2494,10 @@
   "notes": "CHANGED from \"Sechster der Dämmerung\": unpublished in German -> English."
  },
  "Dusk": {
-  "de": "Dämmerung",
-  "status": "unverified",
+  "de": "Dusk",
+  "status": "unpublished",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+  "notes": "Sixth of the Dusk has no German edition (WORK_TITLES keeps the English title); golden rule -> character name stays \"Dusk\", as all German questions already use. Previous \"Dämmerung\" was an unattested guess that contradicted the content."
  },
  "Pantheon": {
   "de": "Pantheon",
@@ -3980,73 +3984,78 @@
   "de": "Compassion",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
  },
  "Contemplation": {
   "de": "Contemplation",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
  },
  "Zeal": {
   "de": "Zeal",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
  },
  "Greater Good": {
-  "de": "Greater Good",
+  "de": "Höheres Wohl",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "Beacon's ruling body: das Höhere Wohl. Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
  },
  "Beaconites": {
-  "de": "Beaconites",
+  "de": "Beaconiter",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "City name Beacon kept (proper name, unattested). Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
  },
  "Beacon": {
   "de": "Beacon",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
  },
  "Lodestar": {
-  "de": "Lodestar",
+  "de": "Leitstern",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "Elegy's title in Beacon; masc.: zum Leitstern ernannt. Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
  },
  "Sunlit One": {
-  "de": "Sunlit One",
+  "de": "Sonnenbeschienene",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
  },
  "Prospector": {
-  "de": "Prospector",
+  "de": "Prospektor",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
  },
  "Elegy Salvage": {
-  "de": "Elegy Salvage",
+  "de": "Elegie Salvage",
   "status": "unverified",
-  "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/"
+  ],
+  "notes": "Given name per German reviews (Elegie); surname \"Salvage\" kept, not attested in German."
  },
  "Elegy": {
-  "de": "Elegy",
-  "status": "unverified",
-  "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "de": "Elegie",
+  "status": "community",
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/",
+   "https://himmelsblau.org/2024/03/das-herz-der-sonne/"
+  ],
+  "notes": "German reviews write \"Elegie\" (Rebekes Schwester Elegie). Not seen in publisher text; very likely the Heyne form."
  },
  "Divinity": {
   "de": "Divinity",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
  },
  "Salvage": {
   "de": "Salvage",

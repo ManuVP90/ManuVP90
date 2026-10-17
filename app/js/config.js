@@ -1,5 +1,5 @@
 // Global constants shared by every module.
-export const APP_VERSION = '1.1.0';
+export const APP_VERSION = '1.2.0';
 
 /** Category ids, in wheel / board order (SPEC §2). */
 export const CATEGORIES = ['roshar', 'scadrial', 'sel', 'nalthis', 'otros', 'cosmere'];
@@ -25,6 +25,8 @@ export const CAT_INK = {
 };
 
 export const LANGS = ['es', 'en', 'fr', 'de', 'it'];
+/** Device languages without their own UI that fall back to another supported one. */
+export const LANG_ALIASES = { ca: 'es', gl: 'es', eu: 'es' };
 export const LANG_NAMES = { es: 'Español', en: 'English', fr: 'Français', de: 'Deutsch', it: 'Italiano' };
 
 export const TIMER_SECONDS = 30;
@@ -32,6 +34,8 @@ export const QUICK_LENGTH = 15;
 export const CHARGES_TO_INFUSE = 2;
 export const MIN_PLAYERS = 1;
 export const MAX_PLAYERS = 6;
+/** Classic: correct answers in a row before the turn passes anyway (multi-player games). */
+export const MAX_STREAK = 3;
 
 /** Question difficulties: 1 easy, 2 medium, 3 hard, 4 expert (SPEC §3.1). */
 export const DIFFICULTIES = [1, 2, 3, 4];

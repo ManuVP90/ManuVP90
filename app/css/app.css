@@ -132,16 +132,31 @@ svg { display: block; }
 }
 .screen-enter { animation: enter .28s var(--ease); }
 
-.topbar {
-  display: flex; align-items: center; gap: 8px;
-  min-height: 52px;
+/* The top bar is a size container: with big text (200 % at 320 px) the title gets its own row
+   and wraps instead of being cut, while the buttons stay on the first row. */
+.topbar { container: topbar / inline-size; }
+.topbar-row {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "back title right";
+  align-items: center; gap: 8px; min-height: 52px;
 }
+.topbar-back { grid-area: back; }
+.topbar-right { grid-area: right; display: flex; justify-content: flex-end; }
 .topbar-title {
-  flex: 1; margin: 0; text-align: center;
+  grid-area: title; min-width: 0; margin: 0; text-align: center;
   font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; letter-spacing: .01em;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .topbar-spacer { width: 48px; flex: none; }
+/* "Turn of {name}": only the name is shortened. */
+.turn-title { display: flex; justify-content: center; min-width: 0; }
+.turn-fix { flex: none; white-space: pre; }
+.turn-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@container topbar (max-width: 16em) {
+  .topbar-row { grid-template-columns: auto 1fr auto; grid-template-areas: "back . right" "title title title"; row-gap: 4px; }
+  .topbar-title { white-space: normal; overflow: visible; overflow-wrap: break-word; hyphens: auto; line-height: 1.2; }
+  .turn-title { flex-wrap: wrap; }
+  .turn-fix { white-space: pre-wrap; }
+}
 
 .icon-btn {
   width: 48px; height: 48px; flex: none;
@@ -293,11 +308,26 @@ svg { display: block; }
 .board-player.current { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset, 0 0 16px color-mix(in srgb, var(--accent) 25%, transparent); }
 .board-info { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .board-name { font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.board.compact .board-list { flex-direction: row; overflow-x: auto; scrollbar-width: none; padding: 2px; scroll-snap-type: x proximity; }
-.board.compact .board-list::-webkit-scrollbar { display: none; }
-.board.compact .board-player { flex: 0 0 auto; padding: 6px 10px 6px 6px; scroll-snap-align: start; }
-.board.compact .board-name { font-size: .9rem; max-width: 9em; }
+/* Compact board (game screens): a grid that always shows every player, never a hidden carousel. */
+.board.compact .board-list { display: grid; grid-template-columns: repeat(var(--cols, 2), minmax(0, 1fr)); gap: 6px; }
+.board.compact .board-player { min-width: 0; padding: 6px 8px 6px 6px; gap: 8px; }
+.board.compact .board-name { font-size: .9rem; }
 .board.compact .gems { gap: 2px; flex-wrap: nowrap; }
+/* Dense grid (3+ players, or a narrow/zoomed screen): the player's gem color is the left edge,
+   so the name and the mini gems get the whole cell. */
+.board.compact { container: board / inline-size; }
+.board.compact.dense .board-player { flex-direction: column; align-items: stretch; gap: 3px; padding: 5px 6px 5px 8px; border-left: 4px solid var(--pc, var(--border)); }
+.board.compact.dense .board-player .avatar { display: none; }
+.board.compact.dense .board-name { font-size: .82rem; line-height: 1.5; }
+.board.compact.dense .gems { gap: 1px; justify-content: space-between; }
+.board.compact.dense .board-info { gap: 3px; }
+@container board (max-width: 21em) {
+  .board-list .board-player { flex-direction: column; align-items: stretch; gap: 3px; padding: 5px 6px 5px 8px; border-left: 4px solid var(--pc, var(--border)); }
+  .board-list .board-player .avatar { display: none; }
+  .board-list .board-name { font-size: .82rem; line-height: 1.5; }
+  .board-list .gems { gap: 1px; justify-content: space-between; }
+  .board-list .board-info { gap: 3px; }
+}
 
 /* ---------- setup ---------- */
 .stepper-card { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
@@ -387,6 +417,10 @@ svg { display: block; }
 }
 .handoff-phone { width: 44px; height: 44px; color: var(--text-dim); animation: wiggle 2.4s ease-in-out infinite; }
 .handoff-pass { margin: 0; color: var(--text-dim); font-size: 1.1rem; }
+.handoff-starts {
+  margin: 0; padding: 6px 14px; border-radius: 999px; font-weight: 700;
+  color: var(--gold); background: color-mix(in srgb, var(--gold) 14%, transparent); border: 1px solid color-mix(in srgb, var(--gold) 45%, transparent);
+}
 .handoff-name, .final-title, .victory-title {
   margin: 0; font-family: var(--font-display); font-size: clamp(1.9rem, 9vw, 2.6rem); line-height: 1.15;
   overflow-wrap: anywhere;
@@ -530,7 +564,7 @@ svg { display: block; }
 .level-desc { margin: 10px 0 0; font-size: .92rem; min-height: 1.4em; }
 
 .level-badge {
-  flex: none; min-width: 48px; max-width: 92px; height: 48px; padding: 0 8px;
+  flex: none; min-width: 48px; max-width: 7em; min-height: 48px; padding: 4px 8px;
   display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
   border-radius: 14px; border: 1px solid color-mix(in srgb, var(--lvl) 55%, var(--border));
   background: color-mix(in srgb, var(--lvl) 12%, var(--surface));
@@ -538,7 +572,7 @@ svg { display: block; }
 .level-badge .pips { gap: 3px; }
 .level-badge .pips i { width: 6px; height: 6px; border-width: 1.2px; }
 .level-badge .pips i.on { background: var(--lvl); border-color: var(--lvl); }
-.level-badge-text { font-size: .72rem; font-weight: 700; line-height: 1; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.level-badge-text { font-size: .72rem; font-weight: 700; line-height: 1.1; color: var(--text); text-align: center; max-width: 100%; overflow-wrap: break-word; }
 
 /* ---------- lifelines ---------- */
 .lifelines { display: flex; flex-direction: column; gap: 8px; }
@@ -556,7 +590,8 @@ svg { display: block; }
 @media (hover: hover) { .lifeline:hover:not(:disabled) { border-color: var(--ll); } }
 .lifeline-art { display: inline-flex; line-height: 0; }
 .lifeline-art svg { width: 30px; height: 30px; }
-.lifeline-name { max-width: 100%; overflow-wrap: anywhere; hyphens: auto; }
+/* Labels wrap between words only ("Luz / tormentosa"), never inside one. */
+.lifeline-name { max-width: 100%; overflow-wrap: normal; word-break: normal; hyphens: manual; }
 .lifeline-atium { --ll: #b8b0dc; }
 .lifeline-atium .lifeline-art svg { filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .5)); }
 .lifeline-stormlight { --ll: #8fd3ff; }
@@ -584,6 +619,19 @@ svg { display: block; }
 .lifeline-help-btn[aria-expanded="true"] { color: var(--accent); border-color: var(--accent); }
 .lifeline-help-btn .icon { width: 22px; height: 22px; }
 .lifeline-status { margin: 0; font-size: .9rem; font-weight: 600; color: var(--accent); }
+.lifeline-reasons { margin: -2px 0 0; display: flex; flex-direction: column; gap: 2px; font-size: .82rem; line-height: 1.3; color: var(--text-dim); }
+.lifeline-reasons:empty { display: none; }
+.lifeline-reasons span::before { content: "ⓘ "; }
+.lifeline.blocked { opacity: .55; border-style: dashed; }
+/* Big text: the three lifelines stack as full-width rows so their names fit without breaking words. */
+.lifelines { container: lifelines / inline-size; }
+@container lifelines (max-width: 15em) {
+  .lifeline-row { flex-wrap: wrap; }
+  .lifeline { flex: 1 1 100%; flex-direction: row; justify-content: flex-start; gap: 10px; padding: 8px 12px; text-align: start; }
+  .lifeline-help-btn { flex: 1 1 100%; min-height: 48px; }
+}
+/* While the timer is paused (quit dialog open) the question can't be studied. */
+.qcard.paused .qtext, .qcard.paused .options { filter: blur(7px); }
 .lifeline-status:empty { display: none; }
 .lifeline-help { padding: 10px 12px; border-radius: 12px; background: var(--surface-2); font-size: .9rem; animation: enter .2s var(--ease); }
 .lifeline-help ul { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-direction: column; gap: 8px; }
@@ -710,3 +758,10 @@ svg { display: block; }
 /* Large decorative icons: make the inner SVG fill the wrapper. */
 .victory-trophy svg, .final-trophy svg, .result-icon svg, .handoff-phone svg { width: 100%; height: 100%; }
 [data-theme="light"] .logo svg { filter: drop-shadow(0 1px 2px rgba(20, 40, 90, .35)) drop-shadow(0 0 14px rgba(47, 111, 214, .25)); }
+
+/* ---------- startup error ---------- */
+.boot-error { justify-content: center; }
+.boot-error-body { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+.boot-error-title { margin: 0; font-family: var(--font-display); font-size: 1.6rem; }
+.boot-gem-broken { background: var(--bad); animation: none; opacity: .85; }
+.practice-empty { display: flex; flex-direction: column; gap: 10px; }

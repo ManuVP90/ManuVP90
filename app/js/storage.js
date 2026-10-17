@@ -27,6 +27,12 @@ export function load(key, fallback = null) {
   try { return JSON.parse(raw); } catch { return fallback; }
 }
 
+/** True when something is stored under `key`, even if it is not valid JSON. */
+export function hasRaw(key) {
+  try { if (storageAvailable() && window.localStorage.getItem(PREFIX + key) != null) return true; } catch { /* ignore */ }
+  return memory.has(key);
+}
+
 export function save(key, value) {
   let raw;
   try { raw = JSON.stringify(value); } catch { return; }

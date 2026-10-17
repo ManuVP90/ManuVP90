@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 // End-to-end smoke test (Playwright + Chromium) on a phone viewport.
 // Usage: node tools/smoke.mjs        (SCREENSHOT_DIR=/some/dir to choose where PNGs go)
-// Plays a full classic game with 2 players to victory on "Difícil" using each lifeline once,
-// checks resume after reload, cycles through all 5 languages, plays a quick game on "Fácil",
+// Plays a full classic game with 2 players to victory on "Difícil" using each lifeline once
+// (random starting player, at most 3 correct answers per turn), checks resume after reload
+// (pass-the-phone screen first), cycles through all 5 languages, plays a quick game on "Fácil",
 // practices difficulty 4 (fallback while there is no expert data), opens stats and about,
 // migrates a v1 save, and checks the app loads offline. Fails on any console error.
+// Math.random is seeded so every run plays the same game (see SEED).
+// Edge cases (corrupt saves, timers, history, repetitions, layout) live in tools/edge.mjs.
 import { createRequire } from 'node:module';
 import { execSync } from 'node:child_process';
 import { mkdirSync, readFileSync } from 'node:fs';
@@ -43,6 +46,12 @@ const server = await startServer(0);
 const BASE = `http://127.0.0.1:${server.address().port}/`;
 const browser = await chromium.launch();
 const context = await browser.newContext({ ...devices['Pixel 7'], locale: 'es-ES' });
+// Deterministic randomness: a seeded PRNG replaces Math.random in the page.
+const SEED = Number(process.env.SEED || 20261016);
+await context.addInitScript((seed) => {
+  let a = seed >>> 0;
+  Math.random = () => { a = (a + 0x6D2B79F5) >>> 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+}, SEED);
 const page = await context.newPage();
 
 const errors = [];
@@ -111,8 +120,11 @@ try {
   // ---------------------------------------------------------------- classic: play to victory
   let questions = 0;
   let firstSpinShot = false;
-  let wrongDone = false;
   let badgeChecked = false;
+  let starter = null; // drawn at random: shown as "Empieza: {name}" on the first handoff
+  let streak = 0; // correct answers in a row in the current turn
+  let resumed = false;
+  let maxStreak = 0;
   const usedLifelines = new Set();
   for (let guard = 0; guard < 400; guard++) {
     await page.waitForSelector('.handoff, .spin, .choose, .final-intro, .question, .victory');
@@ -122,7 +134,16 @@ try {
       badgeChecked = true;
     }
     if (await page.$('.handoff')) {
-      if (questions === 0) await shot('03-handoff');
+      const who = (await page.textContent('.handoff-name')).trim();
+      if (questions === 0) {
+        starter = who;
+        assert(['Shallan', 'Vin'].includes(starter), `starter is a player (${starter})`);
+        assert((await page.textContent('.handoff-starts')).trim() === T('es', 'turn.starts').replace('{name}', starter), 'first handoff says who starts');
+        await shot('03-handoff');
+      } else {
+        assert(!(await page.$('.handoff-starts')), '"Empieza" only on the first handoff');
+      }
+      streak = 0;
       await page.click('.handoff .btn-primary');
     } else if (await page.$('.spin')) {
       if (!firstSpinShot) {
@@ -145,6 +166,13 @@ try {
     } else if (await page.$('.question')) {
       const isFinal = !!(await page.$('.qcard.final'));
       const d = diffOf[await qText()];
+      const player = (await page.textContent('.q-top-name')).trim();
+      if (questions === 0) {
+        assert(player === starter, 'the drawn starter plays the first question');
+        // The DOM must not tell which option is right.
+        const leak = await page.locator('.qcard .option').evaluateAll((bs) => bs.some((b) => b.hasAttribute('data-idx') || Object.keys(b.dataset).length));
+        assert(!leak, 'options carry no index/dataset that reveals the answer');
+      }
       if (isFinal) {
         assert(!(await page.$('.qcard .lifelines')), 'no lifelines on the final question');
         assert(d === (hasD4 ? 4 : 3), `final question on Difícil is difficulty 4, or the nearest available (got ${d})`);
@@ -164,7 +192,7 @@ try {
         await page.emulateMedia({ reducedMotion: 'no-preference' });
       }
       if (questions === 0) {
-        // Stormlight (Shallan): armed before answering, a wrong pick is struck and she chooses again.
+        // Stormlight (starter): armed before answering, a wrong pick is struck and they choose again.
         await lifelineBtn('stormlight').click();
         await page.waitForSelector('.qcard .lifeline-stormlight.armed');
         await shot('07c-stormlight-armed');
@@ -180,7 +208,7 @@ try {
         usedLifelines.add('stormlight');
       }
       if (questions === 1) {
-        // Breath (Vin): the question is swapped for another of the same category and difficulty.
+        // Breath (other player): the question is swapped for another of the same category and difficulty.
         const before = await qId();
         const beforeD = diffOf[await qText()];
         const beforeCat = await page.textContent('.qcard .cat-pill');
@@ -205,17 +233,30 @@ try {
         const used = await page.locator('.qcard .lifeline.used').count();
         assert(used === 2 || used === 1, `lifelines stay spent for the rest of the game (used: ${used})`);
       }
-      // First answer is wrong on purpose (turn must pass to player 2), then always right.
-      const correct = wrongDone ? true : (wrongDone = true, false);
+      // The starter always misses (Stormlight retry included); the other player always answers right.
+      const correct = player !== starter;
       await answer(correct);
+      if (correct && !isFinal) {
+        streak++;
+        maxStreak = Math.max(maxStreak, streak);
+        const extra = await page.textContent('.feedback-extra');
+        if (streak === 3) {
+          assert(extra.includes(T('es', 'classic.streakPass').replace('{n}', '3').replace('{name}', starter)), `3rd correct answer passes the turn (${extra})`);
+          streak = 0;
+        } else {
+          assert(!extra.includes(T('es', 'classic.streakPass').split('{n}')[1].split('{name}')[0].trim()), 'no streak message before the 3rd');
+        }
+      }
       if (questions === 0) await shot('08-reveal');
       if (questions === 3) {
         // Reload mid-game: the game must be resumable from home.
         await page.reload();
-        await page.waitForSelector('.home .menu-continue');
+        await page.waitForSelector('.home .menu-continue-classic');
         await shot('11-home-continue');
-        await page.click('.home .menu-continue');
-        log('reload → "Continue game" resumes the classic game');
+        await page.click('.home .menu-continue-classic');
+        await page.waitForSelector('.handoff');
+        resumed = true;
+        log('reload → "Continue game" resumes the classic game on the pass-the-phone screen');
       } else {
         await page.click('.qcard .continue');
       }
@@ -225,9 +266,12 @@ try {
   await page.waitForSelector('.victory', { timeout: 5000 });
   await page.waitForTimeout(900);
   await shot('12-victory');
-  assert((await page.textContent('.victory-title')).includes('Vin'), 'player 2 (Vin) wins after player 1 missed');
+  const winnerName = starter === 'Shallan' ? 'Vin' : 'Shallan';
+  assert((await page.textContent('.victory-title')).includes(winnerName), `the player who never misses (${winnerName}) wins`);
   assert(usedLifelines.size === 3, 'each lifeline used once');
-  log(`classic game on Difícil won by Vin after ${questions} questions (Stormlight retry, Breath swap, Atium 2 options)`);
+  assert(resumed, 'game was resumed after a reload');
+  assert(maxStreak === 3, `turn passed after 3 correct answers in a row (max streak ${maxStreak})`);
+  log(`classic game on Difícil: ${starter} started (random), ${winnerName} won after ${questions} questions (Stormlight retry, Breath swap, Atium 2 options, 3-answer turns)`);
   await page.click('.victory .btn-ghost');
   await page.waitForSelector('.home');
   assert(!(await page.$('.menu-continue')), 'finished game is no longer resumable');
@@ -368,16 +412,16 @@ try {
     }));
   }, anyQ);
   await page.reload();
-  await page.waitForSelector('.home .menu-continue');
-  await page.click('.home .menu-continue');
+  await page.waitForSelector('.home .menu-continue-classic');
+  await page.click('.home .menu-continue-classic');
   await page.waitForSelector('.question .qcard');
   assert((await page.textContent('.level-badge-text')).trim() === T('es', 'level.normal'), 'v1 save migrates to Normal');
   assert(await page.locator('.qcard .lifeline:not([disabled])').count() === 3, 'v1 save gets lifelines');
-  assert(await page.evaluate(() => JSON.parse(localStorage.getItem('cosmere-trivia:classic')).v) === 2, 'save upgraded to v2');
+  assert(await page.evaluate(() => JSON.parse(localStorage.getItem('cosmere-trivia:classic')).v) === 3, 'save upgraded to v3');
   await page.evaluate(() => localStorage.removeItem('cosmere-trivia:classic'));
   await page.click('.topbar .icon-btn');
   await page.waitForSelector('.home');
-  log('v1 saved game migrated (level Normal, full lifelines)');
+  log('v1 saved game migrated to v3 (level Normal, full lifelines)');
 
   // ---------------------------------------------------------------- offline
   await page.evaluate(() => navigator.serviceWorker.ready);

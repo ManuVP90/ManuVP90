@@ -11,7 +11,8 @@
     "continue": "Weiter",
     "next": "Nächste Frage",
     "loading": "Wird geladen …",
-    "playAgain": "Nochmal spielen"
+    "playAgain": "Nochmal spielen",
+    "openSettings": "Einstellungen öffnen"
   },
   "home": {
     "continue": "Spiel fortsetzen",
@@ -25,10 +26,12 @@
     "stats": "Statistik",
     "settings": "Einstellungen",
     "about": "Info",
-    "newGameConfirm": "Wenn du ein neues Spiel startest, wird das laufende Spiel verworfen. Fortfahren?"
+    "newGameConfirm": "Wenn du ein neues Spiel startest, wird das laufende Spiel verworfen. Fortfahren?",
+    "continueQuick": "Schnelles Spiel fortsetzen",
+    "continueQuickDesc": "Frage {n} von {total} · {score} Punkte"
   },
   "cat": {
-    "roshar": "Roshar",
+    "roshar": "Roschar",
     "scadrial": "Scadrial",
     "sel": "Sel",
     "nalthis": "Nalthis",
@@ -65,7 +68,7 @@
   "lifeline": {
     "title": "Hilfen",
     "help": "So funktionieren die Hilfen",
-    "rules": "Jeder Spieler hat pro Partie jede Hilfe einmal (auch im schnellen Spiel). Bei der Finalfrage und beim Üben gibt es keine Hilfen.",
+    "rules": "Jeder Spieler hat pro Partie jede Hilfe einmal (auch im schnellen Spiel). Bei der Finalfrage und beim Üben gibt es keine Hilfen, und Atium und Sturmlicht lassen sich bei derselben Frage nicht kombinieren.",
     "used": "{name} (schon benutzt)",
     "atium": {
       "name": "Atium",
@@ -77,7 +80,7 @@
     "stormlight": {
       "name": "Sturmlicht",
       "desc": "Vor dem Antworten aktivieren: Liegst du falsch, darfst du noch einmal wählen.",
-      "long": "Aktiviere es vor dem Antworten. Wählst du eine falsche Antwort, wird sie markiert und du darfst noch einmal wählen – die richtige wird nicht verraten. Die Zeit läuft weiter.",
+      "long": "Aktiviere es vor dem Antworten. Wählst du eine falsche Antwort, wird sie markiert und du darfst noch einmal wählen – die richtige wird nicht verraten. Die Zeit läuft weiter. Benutzt du Hauch, während es aktiv ist, bleibt es bei der neuen Frage aktiv.",
       "armed": "Sturmlicht aktiv: Liegst du falsch, darfst du noch einmal wählen.",
       "saved": "Das Sturmlicht heilt dich! Die war es nicht – wähle eine andere Antwort.",
       "struck": "{option} (falsch)"
@@ -87,7 +90,8 @@
       "desc": "Tauscht die Frage gegen eine andere aus derselben Welt mit gleicher Schwierigkeit.",
       "long": "Tauscht die Frage gegen eine andere aus derselben Welt mit gleicher Schwierigkeit. Ist keine mehr übrig, kannst du ihn nicht einsetzen.",
       "none": "Keine andere Frage aus derselben Welt mit gleicher Schwierigkeit."
-    }
+    },
+    "noCombo": "Atium und Sturmlicht lassen sich bei derselben Frage nicht kombinieren."
   },
   "setup": {
     "title": "Neues Spiel",
@@ -105,7 +109,8 @@
     "passTo": "Gib das Handy weiter an",
     "ready": "Ich bin bereit",
     "noPeek": "Alle anderen: nicht spicken!",
-    "turnOf": "{name} ist dran"
+    "turnOf": "Am Zug: {name}",
+    "starts": "Es beginnt: {name}"
   },
   "wheel": {
     "label": "Kategorienrad",
@@ -138,13 +143,14 @@
     "finalFail": "Diesmal nicht. In deinem nächsten Zug bekommst du erneut die Finalfrage.",
     "finalTitle": "Finalfrage",
     "finalIntro": "{name}, alle deine Edelsteine sind aufgeladen. Beantworte diese Frage richtig, um zu gewinnen!",
-    "finalReady": "Los geht's",
+    "finalReady": "Los geht’s",
     "leave": "Spiel verlassen (Fortschritt wird gespeichert)",
     "board": "Spieler",
     "gemCount": "{n} von {total} Edelsteinen aufgeladen",
     "gem0": "{category}: keine Ladung",
     "gem1": "{category}: 1 Ladung",
-    "gem2": "{category}: aufgeladen"
+    "gem2": "{category}: aufgeladen",
+    "streakPass": "{n} richtige Antworten in Folge! Jetzt ist {name} am Zug."
   },
   "victory": {
     "title": "{name} gewinnt!",
@@ -164,7 +170,8 @@
     "quitConfirm": "Schnelles Spiel abbrechen? Deine Punkte gehen verloren.",
     "intro": "{n} Fragen aus allen Welten, je {s} Sekunden. Je schneller du antwortest, desto mehr Punkte gibt es.",
     "introLifelines": "Du hast jede Hilfe einmal: Atium, Sturmlicht und Hauch.",
-    "start": "Los geht’s"
+    "start": "Los geht’s",
+    "bestScore": "Bestleistung: {n}"
   },
   "practice": {
     "title": "Üben",
@@ -177,7 +184,8 @@
     "end": "Beenden",
     "tally": "{correct} von {total} richtig",
     "fallback": "Hier gibt es noch keine Fragen der Stufe {level}: Du übst mit Fragen der Stufe {fallback}.",
-    "empty": "Hier gibt es noch keine Fragen der Stufe {level}."
+    "empty": "Hier gibt es noch keine Fragen der Stufe {level}.",
+    "noneFilter": "Keine Fragen verfügbar: Der Spoilerfilter lässt kein Werk mit Fragen übrig. Wähle in den Einstellungen mehr Werke aus."
   },
   "stats": {
     "title": "Statistik",
@@ -187,7 +195,7 @@
     "answered": "Beantwortete Fragen",
     "accuracy": "Trefferquote",
     "byCategory": "Trefferquote nach Welt",
-    "none": "Noch keine Antworten. Auf geht's!",
+    "none": "Noch keine Antworten. Auf geht’s!",
     "of": "{correct} von {total}",
     "lifelines": "Benutzte Hilfen"
   },
@@ -225,11 +233,18 @@
     "version": "Version {v}",
     "levels": "Schwierigkeitsstufen",
     "levelsFinal": "Die Finalfrage im klassischen Spiel ist bei Leicht mittelschwer, bei Normal schwer und bei Schwer und Experte eine Expertenfrage.",
-    "lifelines": "Hilfen"
+    "lifelines": "Hilfen",
+    "rule5": "Wer beginnt, wird ausgelost. Nach 3 richtigen Antworten in Folge ist trotzdem der nächste Spieler dran."
   },
   "errors": {
     "load": "Die Fragen konnten nicht geladen werden. Prüfe deine Verbindung und lade die Seite neu.",
     "noQuestions": "Mit dem aktuellen Spoilerfilter sind keine Fragen verfügbar.",
     "fallback": "Die Fragen sind in dieser Sprache noch nicht verfügbar und werden auf Englisch angezeigt."
+  },
+  "boot": {
+    "title": "Etwas ist schiefgelaufen",
+    "body": "Die App konnte nicht starten. Möglicherweise sind die gespeicherten Daten beschädigt; sie zu löschen behebt das meistens (das laufende Spiel, die Einstellungen und die Statistik gehen verloren).",
+    "reset": "Daten löschen und neu starten",
+    "retry": "Erneut versuchen"
   }
 }

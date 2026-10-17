@@ -64,10 +64,11 @@ tools/check-terms.mjs  coherencia terminológica de las traducciones
 tools/merge-glossary.mjs  integra las revisiones de cada idioma en el glosario
 tools/changed-ids.mjs  ids nuevas o cambiadas desde una revisión (para traductores)
 tools/smoke.mjs     prueba de extremo a extremo en móvil emulado (Playwright)
+tools/edge.mjs      pruebas de casos límite de la beta 1 (guardados corruptos, temporizador, historial, repeticiones, 6 jugadores, texto al 200 %)
 ```
 
 Flujo para cambiar preguntas: edita `content/en/<mundo>.json` y la misma `id` en cada
-`content/<lang>/<mundo>.json`, luego `node tools/build.mjs` y `node tools/smoke.mjs`.
+`content/<lang>/<mundo>.json`, luego `node tools/build.mjs` y `node tools/smoke.mjs` (más `node tools/edge.mjs` si tocas la app).
 Si cambias archivos de `app/`, sube `CACHE_VERSION` en `app/sw.js`.
 
 ## Cómo se hizo

@@ -8,7 +8,7 @@ import { LIFELINES } from '../config.js';
 
 /**
  * @param {(kind:string) => void} onPick
- * @returns {{ el: HTMLElement, update: (st: Record<string,{left:boolean, enabled:boolean, armed?:boolean}>) => void, say: (msg:string) => void }}
+ * @returns {{ el: HTMLElement, update: (st: Record<string,{left:boolean, enabled:boolean, armed?:boolean, reason?:string|null}>) => void, say: (msg:string) => void }}
  */
 export function lifelineBar(onPick) {
   const helpId = `ll-help-${Math.random().toString(36).slice(2, 8)}`;
@@ -35,26 +35,34 @@ export function lifelineBar(onPick) {
     },
   }, svg(ICONS.help));
   const status = h('p', { class: 'lifeline-status', role: 'status', 'aria-live': 'polite' });
+  // Why a lifeline the player still has can't be used right now (visible, not only in title/aria).
+  const reasons = h('p', { class: 'lifeline-reasons', id: `${helpId}-why` });
 
   const el = h('div', { class: 'lifelines', role: 'group', 'aria-label': t('lifeline.title') },
     h('div', { class: 'lifeline-row' }, LIFELINES.map((k) => buttons[k]), helpBtn),
+    reasons,
     status,
     help);
 
   function update(st) {
+    const why = [];
     for (const k of LIFELINES) {
       const b = buttons[k];
       const s = st[k] || { left: false, enabled: false };
       const name = t(`lifeline.${k}.name`);
       let label = `${name}: ${t(`lifeline.${k}.desc`)}`;
       let tip = t(`lifeline.${k}.desc`);
-      if (!s.left && !s.armed) { label = t('lifeline.used', { name }); tip = label; } else if (s.armed) { label = t('lifeline.stormlight.armed'); tip = label; } else if (!s.enabled && k === 'breath') { label = `${name}: ${t('lifeline.breath.none')}`; tip = t('lifeline.breath.none'); }
+      const blocked = s.left && !s.armed && !s.enabled && s.reason;
+      if (!s.left && !s.armed) { label = t('lifeline.used', { name }); tip = label; } else if (s.armed) { label = t('lifeline.stormlight.armed'); tip = label; } else if (blocked) { label = `${name}: ${s.reason}`; tip = s.reason; }
+      if (blocked && !why.includes(s.reason)) why.push(s.reason);
       b.disabled = !s.left || !s.enabled || !!s.armed;
       b.classList.toggle('used', !s.left && !s.armed);
       b.classList.toggle('armed', !!s.armed);
+      b.classList.toggle('blocked', !!blocked);
       b.setAttribute('aria-label', label);
       b.title = `${name} — ${tip}`;
     }
+    reasons.replaceChildren(...why.map((r) => h('span', {}, r)));
   }
 
   return { el, update, say: (msg) => { status.textContent = msg; } };

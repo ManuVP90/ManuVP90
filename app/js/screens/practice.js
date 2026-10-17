@@ -48,8 +48,14 @@ export function practiceSetupScreen() {
     go('practice');
   }
 
+  // Nothing to practice at all: the spoiler filter leaves no questions. Say so and offer Settings.
+  const none = pool.size() === 0 ? h('section', { class: 'card practice-empty', role: 'status' },
+    h('p', { class: 'banner banner-warn' }, t('practice.noneFilter')),
+    h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: () => go('settings') }, svg(ICONS.settings), t('common.openSettings'))) : null;
+
   const el = screen('practice-setup',
     topBar(t('practice.title')),
+    none,
     h('section', { class: 'card' },
       h('h2', { class: 'section-title', id: 'pr-cat' }, t('practice.category')),
       h('div', { class: 'chips', role: 'radiogroup', 'aria-labelledby': 'pr-cat' },
