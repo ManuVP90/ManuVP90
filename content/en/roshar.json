@@ -1,0 +1,1914 @@
+[
+  {
+    "id": "roshar-001",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "Which bridge crew does Kaladin lead in Sadeas's army?",
+    "a": "Bridge Four",
+    "wrong": [
+      "Bridge Two",
+      "Bridge Seventeen",
+      "Bridge Eighteen"
+    ],
+    "explain": "Bridge Four began as the unluckiest crew on the Shattered Plains before Kaladin turned it around.",
+    "terms": [
+      "Kaladin",
+      "Sadeas",
+      "Bridge Four",
+      "Bridge Two",
+      "Bridge Seventeen",
+      "Bridge Eighteen",
+      "Shattered Plains"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-002",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "words-of-radiance",
+    "q": "What is the name of the Cryptic bonded to Shallan?",
+    "a": "Pattern",
+    "wrong": [
+      "Syl",
+      "Wyndle",
+      "Glys"
+    ],
+    "explain": "Pattern hums when pleased and makes Shallan a Lightweaver.",
+    "terms": [
+      "Cryptic",
+      "Shallan",
+      "Pattern",
+      "Syl",
+      "Wyndle",
+      "Glys",
+      "Lightweaver"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-003",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "When are spheres left out to be infused with Stormlight?",
+    "a": "During a highstorm",
+    "wrong": [
+      "During the Weeping",
+      "During the Everstorm",
+      "When Salas rises"
+    ],
+    "explain": "Rosharans hang their spheres outside during highstorms so the gems absorb fresh Stormlight.",
+    "terms": [
+      "Stormlight",
+      "highstorm",
+      "Weeping",
+      "Everstorm",
+      "Salas"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-004",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "Which younger brother did Kaladin fail to protect in Amaram's army?",
+    "a": "Tien",
+    "wrong": [
+      "Cenn",
+      "Dallet",
+      "Moash"
+    ],
+    "explain": "Tien's death haunts Kaladin, who had joined the army to keep him safe.",
+    "terms": [
+      "Kaladin",
+      "Amaram",
+      "Tien",
+      "Cenn",
+      "Dallet",
+      "Moash"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-005",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "Which Bridge Four member is a Horneater who cooks for the crew?",
+    "a": "Rock",
+    "wrong": [
+      "Teft",
+      "Lopen",
+      "Sigzil"
+    ],
+    "explain": "Rock's stew helps bind the bridgemen together, and as a Horneater he can see spren others cannot.",
+    "terms": [
+      "Bridge Four",
+      "Horneater",
+      "Rock",
+      "Teft",
+      "Lopen",
+      "Sigzil",
+      "spren"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-006",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "Who travels to Kharbranth hoping to become Jasnah Kholin's ward?",
+    "a": "Shallan Davar",
+    "wrong": [
+      "Navani Kholin",
+      "Lift",
+      "Rysn"
+    ],
+    "explain": "Shallan secretly planned to steal Jasnah's Soulcaster to save her family.",
+    "terms": [
+      "Kharbranth",
+      "Jasnah Kholin",
+      "Shallan Davar",
+      "Navani Kholin",
+      "Lift",
+      "Rysn",
+      "Jasnah",
+      "Soulcaster"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-007",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "words-of-radiance",
+    "q": "Which order of Knights Radiant does Kaladin belong to?",
+    "a": "Windrunners",
+    "wrong": [
+      "Skybreakers",
+      "Edgedancers",
+      "Stonewards"
+    ],
+    "explain": "Windrunners bond honorspren and swear to protect those who cannot protect themselves.",
+    "terms": [
+      "Knights Radiant",
+      "Kaladin",
+      "Windrunners",
+      "Skybreakers",
+      "Edgedancers",
+      "Stonewards",
+      "honorspren"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-008",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "oathbringer",
+    "q": "Which order of Knights Radiant does Dalinar Kholin join?",
+    "a": "Bondsmiths",
+    "wrong": [
+      "Windrunners",
+      "Dustbringers",
+      "Elsecallers"
+    ],
+    "explain": "Dalinar is bonded to the Stormfather, one of the three great spren tied to the Bondsmiths.",
+    "terms": [
+      "Knights Radiant",
+      "Dalinar Kholin",
+      "Bondsmiths",
+      "Windrunners",
+      "Dustbringers",
+      "Elsecallers",
+      "Dalinar",
+      "Stormfather",
+      "spren"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-009",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "oathbringer",
+    "q": "Which of Shallan's personas is a streetwise spy?",
+    "a": "Veil",
+    "wrong": [
+      "Radiant",
+      "Formless",
+      "Tyn"
+    ],
+    "explain": "Veil wears a white coat and hat and works with the Ghostbloods.",
+    "terms": [
+      "Shallan",
+      "Veil",
+      "Radiant",
+      "Formless",
+      "Tyn",
+      "Ghostbloods"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-010",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "edgedancer",
+    "q": "What is the name of Lift's cultivationspren?",
+    "a": "Wyndle",
+    "wrong": [
+      "Pattern",
+      "Syl",
+      "Timbre"
+    ],
+    "explain": "Wyndle was a renowned gardener of chairs in Shadesmar before he was asked to bond Lift.",
+    "terms": [
+      "Lift",
+      "cultivationspren",
+      "Wyndle",
+      "Pattern",
+      "Syl",
+      "Timbre",
+      "Shadesmar"
+    ],
+    "source": "Edgedancer"
+  },
+  {
+    "id": "roshar-011",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "Which greatshell do the Alethi hunt on the Shattered Plains for its gemheart?",
+    "a": "Chasmfiend",
+    "wrong": [
+      "Whitespine",
+      "Santhid",
+      "Chull"
+    ],
+    "explain": "Winning gemhearts from chasmfiends drives the rivalry between the highprinces.",
+    "terms": [
+      "greatshell",
+      "Alethi",
+      "Shattered Plains",
+      "gemheart",
+      "Chasmfiend",
+      "Whitespine",
+      "Santhid",
+      "Chull",
+      "highprince"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-012",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "Who assassinated King Gavilar Kholin?",
+    "a": "Szeth",
+    "wrong": [
+      "Sadeas",
+      "Moash",
+      "Amaram"
+    ],
+    "explain": "Szeth, the Assassin in White, was sent by the Parshendi on the night of the treaty feast.",
+    "terms": [
+      "Gavilar Kholin",
+      "Szeth",
+      "Sadeas",
+      "Moash",
+      "Amaram",
+      "Assassin in White",
+      "Parshendi"
+    ],
+    "source": "The Way of Kings, prologue"
+  },
+  {
+    "id": "roshar-013",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "Complete the First Ideal: \"Life before death, strength before weakness, journey before...\"",
+    "a": "Destination",
+    "wrong": [
+      "Honor",
+      "Victory",
+      "Glory"
+    ],
+    "explain": "The First Ideal is shared by all ten orders of the Knights Radiant.",
+    "terms": [
+      "First Ideal",
+      "Knights Radiant"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-014",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "oathbringer",
+    "q": "Which former member of Bridge Four kills King Elhokar?",
+    "a": "Moash",
+    "wrong": [
+      "Teft",
+      "Skar",
+      "Sigzil"
+    ],
+    "explain": "Moash kills Elhokar during the fall of Kholinar, betraying Kaladin.",
+    "terms": [
+      "Bridge Four",
+      "Elhokar",
+      "Moash",
+      "Teft",
+      "Skar",
+      "Sigzil",
+      "Kholinar",
+      "Kaladin"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-015",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "words-of-radiance",
+    "q": "What color is the lightning of the Everstorm?",
+    "a": "Red",
+    "wrong": [
+      "Blue",
+      "Green",
+      "Violet"
+    ],
+    "explain": "The Everstorm blows in the opposite direction to the highstorms.",
+    "terms": [
+      "Everstorm",
+      "highstorm"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-016",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "Which hand do Vorin women keep covered as their safehand?",
+    "a": "The left hand",
+    "wrong": [
+      "The right hand",
+      "Both hands",
+      "Neither hand"
+    ],
+    "explain": "Exposing the safehand is considered as improper as going out in public undressed.",
+    "terms": [
+      "Vorin",
+      "safehand"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-017",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "How many orders of Knights Radiant were there?",
+    "a": "Ten",
+    "wrong": [
+      "Seven",
+      "Twelve",
+      "Sixteen"
+    ],
+    "explain": "Each order was linked to one of the ten Heralds.",
+    "terms": [
+      "Knights Radiant",
+      "Herald"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-018",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "words-of-radiance",
+    "q": "What is the ancient city of the Knights Radiant, rediscovered by Shallan?",
+    "a": "Urithiru",
+    "wrong": [
+      "Narak",
+      "Vedenar",
+      "Kholinar"
+    ],
+    "explain": "Urithiru is a vast tower reached through Oathgates.",
+    "terms": [
+      "Knights Radiant",
+      "Shallan",
+      "Urithiru",
+      "Narak",
+      "Vedenar",
+      "Kholinar",
+      "Oathgate"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-019",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, to which land does Kaladin travel with Szeth?",
+    "a": "Shinovar",
+    "wrong": [
+      "Iri",
+      "Tukar",
+      "Herdaz"
+    ],
+    "explain": "Kaladin goes to help Szeth confront the corruption in his homeland.",
+    "terms": [
+      "Wind and Truth",
+      "Kaladin",
+      "Szeth",
+      "Shinovar",
+      "Iri",
+      "Tukar",
+      "Herdaz"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-020",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "What do the Alethi call the people they fight on the Shattered Plains?",
+    "a": "Parshendi",
+    "wrong": [
+      "Herdazians",
+      "Iriali",
+      "Shin"
+    ],
+    "explain": "The Parshendi grow carapace armor and sing as they go into battle.",
+    "terms": [
+      "Alethi",
+      "Shattered Plains",
+      "Parshendi",
+      "Herdazians",
+      "Iriali",
+      "Shin"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-021",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "words-of-radiance",
+    "q": "Which of Shallan's brothers was the Shardbearer Kaladin killed in Amaram's army?",
+    "a": "Helaran",
+    "wrong": [
+      "Balat",
+      "Wikim",
+      "Jushu"
+    ],
+    "explain": "Helaran bore a Shardblade and Shardplate when Kaladin killed him while saving Amaram.",
+    "terms": [
+      "Shallan",
+      "Shardbearer",
+      "Kaladin",
+      "Amaram",
+      "Helaran",
+      "Balat",
+      "Wikim",
+      "Jushu",
+      "Shardblade",
+      "Shardplate"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-022",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "oathbringer",
+    "q": "What is the name of Jasnah Kholin's inkspren?",
+    "a": "Ivory",
+    "wrong": [
+      "Glys",
+      "Wyndle",
+      "Syl"
+    ],
+    "explain": "Ivory's bond makes Jasnah an Elsecaller, letting her travel into Shadesmar.",
+    "terms": [
+      "Jasnah Kholin",
+      "inkspren",
+      "Ivory",
+      "Glys",
+      "Wyndle",
+      "Syl",
+      "Jasnah",
+      "Elsecaller",
+      "Shadesmar"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-023",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "oathbringer",
+    "q": "Which Radiant order does Renarin Kholin join?",
+    "a": "Truthwatchers",
+    "wrong": [
+      "Elsecallers",
+      "Willshapers",
+      "Stonewards"
+    ],
+    "explain": "Renarin's spren Glys was corrupted by the Unmade Sja-anat, letting him see the future.",
+    "terms": [
+      "Renarin Kholin",
+      "Truthwatchers",
+      "Elsecallers",
+      "Willshapers",
+      "Stonewards",
+      "Glys",
+      "Unmade",
+      "Sja-anat"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-024",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "rhythm-of-war",
+    "q": "Which spren does Navani Kholin bond?",
+    "a": "The Sibling",
+    "wrong": [
+      "The Stormfather",
+      "The Nightwatcher",
+      "Ivory"
+    ],
+    "explain": "The Sibling is the spren of Urithiru, making Navani a Bondsmith.",
+    "terms": [
+      "Navani Kholin",
+      "Sibling",
+      "Stormfather",
+      "Nightwatcher",
+      "Ivory",
+      "Urithiru",
+      "Bondsmith"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "roshar-025",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "oathbringer",
+    "q": "Which Unmade is the source of the Thrill felt by Alethi warriors?",
+    "a": "Nergaoul",
+    "wrong": [
+      "Moelach",
+      "Ashertmarn",
+      "Sja-anat"
+    ],
+    "explain": "Nergaoul fed the bloodlust of the armies at the Battle of Thaylen Field.",
+    "terms": [
+      "Unmade",
+      "Thrill",
+      "Alethi",
+      "Nergaoul",
+      "Moelach",
+      "Ashertmarn",
+      "Sja-anat",
+      "Thaylen Field"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-026",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "way-of-kings",
+    "q": "Which Herald did not abandon the Oathpact at Aharietiam?",
+    "a": "Talenel",
+    "wrong": [
+      "Jezrien",
+      "Kalak",
+      "Ishar"
+    ],
+    "explain": "Talenel endured torture in Damnation alone for millennia.",
+    "terms": [
+      "Herald",
+      "Oathpact",
+      "Aharietiam",
+      "Talenel",
+      "Jezrien",
+      "Kalak",
+      "Ishar",
+      "Damnation"
+    ],
+    "source": "The Way of Kings, prelude"
+  },
+  {
+    "id": "roshar-027",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "edgedancer",
+    "q": "In which Tashikki city does Edgedancer take place?",
+    "a": "Yeddaw",
+    "wrong": [
+      "Azimir",
+      "Kharbranth",
+      "Thaylen City"
+    ],
+    "explain": "In Yeddaw, Lift befriends Stump, a woman who runs an orphanage.",
+    "terms": [
+      "Tashikki",
+      "Edgedancer",
+      "Yeddaw",
+      "Azimir",
+      "Kharbranth",
+      "Thaylen City",
+      "Lift",
+      "Stump"
+    ],
+    "source": "Edgedancer"
+  },
+  {
+    "id": "roshar-028",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "dawnshard",
+    "q": "What kind of creature is Chiri-Chiri, Rysn's pet?",
+    "a": "A larkin",
+    "wrong": [
+      "A chull",
+      "An axehound",
+      "A skyeel"
+    ],
+    "explain": "Larkins feed on Investiture, and Chiri-Chiri's illness drives Rysn's voyage.",
+    "terms": [
+      "Chiri-Chiri",
+      "Rysn",
+      "larkin",
+      "chull",
+      "axehound",
+      "skyeel",
+      "Investiture"
+    ],
+    "source": "Dawnshard"
+  },
+  {
+    "id": "roshar-029",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "words-of-radiance",
+    "q": "Kaladin speaks his Third Ideal while protecting which man he hates?",
+    "a": "Elhokar",
+    "wrong": [
+      "Sadeas",
+      "Amaram",
+      "Taravangian"
+    ],
+    "explain": "The Third Ideal is: I will protect even those I hate, so long as it is right.",
+    "terms": [
+      "Kaladin",
+      "Third Ideal",
+      "Elhokar",
+      "Sadeas",
+      "Amaram",
+      "Taravangian"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-030",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "way-of-kings",
+    "q": "Which fabrial lets people write to each other across great distances?",
+    "a": "Spanreed",
+    "wrong": [
+      "Soulcaster",
+      "Painrial",
+      "Heatrial"
+    ],
+    "explain": "A spanreed is made of two pens holding the halves of a split gemstone.",
+    "terms": [
+      "fabrial",
+      "Spanreed",
+      "Soulcaster",
+      "Painrial",
+      "Heatrial"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-031",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "way-of-kings",
+    "q": "Which gemstone do Soulcasters use to turn things into grain and food?",
+    "a": "Emerald",
+    "wrong": [
+      "Ruby",
+      "Sapphire",
+      "Topaz"
+    ],
+    "explain": "This makes emerald broams the most valuable spheres.",
+    "terms": [
+      "Soulcaster",
+      "Emerald",
+      "Ruby",
+      "Sapphire",
+      "Topaz",
+      "broam"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-032",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "words-of-radiance",
+    "q": "Which form does Eshonai adopt before the Everstorm is summoned?",
+    "a": "Stormform",
+    "wrong": [
+      "Warform",
+      "Workform",
+      "Mateform"
+    ],
+    "explain": "Stormform is a form of power that lets its bearers channel red lightning.",
+    "terms": [
+      "Eshonai",
+      "Everstorm",
+      "Stormform",
+      "Warform",
+      "Workform",
+      "Mateform"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-033",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "oathbringer",
+    "q": "What is the name of Dalinar's late wife, erased from his memory?",
+    "a": "Evi",
+    "wrong": [
+      "Navani",
+      "Ialai",
+      "Aesudan"
+    ],
+    "explain": "Dalinar asked the Nightwatcher to take away his pain, and lost his memories of her.",
+    "terms": [
+      "Dalinar",
+      "Evi",
+      "Navani",
+      "Ialai",
+      "Aesudan",
+      "Nightwatcher"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-034",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "words-of-radiance",
+    "q": "Which substance is Teft secretly addicted to?",
+    "a": "Firemoss",
+    "wrong": [
+      "Lavis",
+      "Knobweed",
+      "Blackbane"
+    ],
+    "explain": "Teft's family belonged to the Envisagers, a cult hoping to bring back the Radiants.",
+    "terms": [
+      "Teft",
+      "Firemoss",
+      "Lavis",
+      "Knobweed",
+      "Blackbane",
+      "Envisagers",
+      "Radiant"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-035",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "rhythm-of-war",
+    "q": "What does Venli call the Reacher spren she bonds?",
+    "a": "Timbre",
+    "wrong": [
+      "Glys",
+      "Pattern",
+      "Wyndle"
+    ],
+    "explain": "Timbre communicates by pulsing to the rhythms and makes Venli a Willshaper.",
+    "terms": [
+      "Venli",
+      "Reacher",
+      "Timbre",
+      "Glys",
+      "Pattern",
+      "Wyndle",
+      "Willshaper"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "roshar-036",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "rhythm-of-war",
+    "q": "Who becomes the Vessel of Odium at the end of Rhythm of War?",
+    "a": "Taravangian",
+    "wrong": [
+      "Moash",
+      "Mraize",
+      "Raboniel"
+    ],
+    "explain": "Taravangian kills the previous Vessel and takes up the Shard himself.",
+    "terms": [
+      "Vessel",
+      "Odium",
+      "Rhythm of War",
+      "Taravangian",
+      "Moash",
+      "Mraize",
+      "Raboniel",
+      "Shard"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "roshar-037",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "wind-and-truth",
+    "q": "Over how many days does the main story of Wind and Truth unfold?",
+    "a": "Ten",
+    "wrong": [
+      "Seven",
+      "Thirty",
+      "One hundred"
+    ],
+    "explain": "The days count down to the contest of champions agreed with Odium.",
+    "terms": [
+      "Wind and Truth",
+      "Odium"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-038",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "rhythm-of-war",
+    "q": "What are the flying Fused called?",
+    "a": "Heavenly Ones",
+    "wrong": [
+      "Deepest Ones",
+      "Masked Ones",
+      "Magnified Ones"
+    ],
+    "explain": "Heavenly Ones such as Leshwi glide on the wind using Voidlight.",
+    "terms": [
+      "Fused",
+      "Heavenly Ones",
+      "Deepest Ones",
+      "Masked Ones",
+      "Magnified Ones",
+      "Leshwi",
+      "Voidlight"
+    ],
+    "source": "Oathbringer; Rhythm of War"
+  },
+  {
+    "id": "roshar-039",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "words-of-radiance",
+    "q": "Instead of Ideals, what must Lightweavers speak to progress?",
+    "a": "Truths",
+    "wrong": [
+      "Lies",
+      "Names",
+      "Prayers"
+    ],
+    "explain": "Shallan's Truths force her to admit painful facts about her past.",
+    "terms": [
+      "Ideal",
+      "Lightweavers",
+      "Truths",
+      "Shallan"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-040",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "words-of-radiance",
+    "q": "Which two Surges do Windrunners command?",
+    "a": "Adhesion and Gravitation",
+    "wrong": [
+      "Gravitation and Division",
+      "Adhesion and Tension",
+      "Illumination and Transformation"
+    ],
+    "explain": "Kaladin uses Gravitation for Lashings and Adhesion to stick objects together.",
+    "terms": [
+      "Surge",
+      "Windrunners",
+      "Adhesion",
+      "Gravitation",
+      "Division",
+      "Tension",
+      "Illumination",
+      "Transformation",
+      "Kaladin",
+      "Lashing"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-041",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "oathbringer",
+    "q": "Which Unmade is known as the Midnight Mother?",
+    "a": "Re-Shephir",
+    "wrong": [
+      "Sja-anat",
+      "Moelach",
+      "Chemoarish"
+    ],
+    "explain": "Re-Shephir lurked in Urithiru until Shallan drove her away.",
+    "terms": [
+      "Unmade",
+      "Midnight Mother",
+      "Re-Shephir",
+      "Sja-anat",
+      "Moelach",
+      "Chemoarish",
+      "Urithiru",
+      "Shallan"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-042",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "oathbringer",
+    "q": "Szeth's Honorblade originally belonged to which Herald?",
+    "a": "Jezrien",
+    "wrong": [
+      "Nale",
+      "Ishar",
+      "Kalak"
+    ],
+    "explain": "The Shin kept the Honorblades abandoned by the Heralds at Aharietiam.",
+    "terms": [
+      "Szeth",
+      "Honorblade",
+      "Herald",
+      "Jezrien",
+      "Nale",
+      "Ishar",
+      "Kalak",
+      "Shin",
+      "Aharietiam"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-043",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "oathbringer",
+    "q": "Which Herald is the patron of the Truthwatchers?",
+    "a": "Pailiah",
+    "wrong": [
+      "Chanarach",
+      "Battar",
+      "Shalash"
+    ],
+    "explain": "Pailiah, also called Pali, is the Herald of the Truthwatchers, associated with the divine attributes Learned and Giving.",
+    "terms": [
+      "Herald",
+      "Truthwatchers",
+      "Pailiah",
+      "Chanarach",
+      "Battar",
+      "Shalash",
+      "Pali"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-044",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "way-of-kings",
+    "q": "Which ancient Alethi conqueror is known as the Sunmaker?",
+    "a": "Sadees",
+    "wrong": [
+      "Nohadon",
+      "Gavilar",
+      "Jezrien"
+    ],
+    "explain": "The Sunmaker's vast empire fell apart soon after his death.",
+    "terms": [
+      "Alethi",
+      "Sunmaker",
+      "Sadees",
+      "Nohadon",
+      "Gavilar",
+      "Jezrien"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-045",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "Which Unmade did the Bondsmith Melishi trap in a perfect gem?",
+    "a": "Ba-Ado-Mishram",
+    "wrong": [
+      "Sja-anat",
+      "Nergaoul",
+      "Moelach"
+    ],
+    "explain": "Her imprisonment is linked to the singers losing their forms and becoming parshmen.",
+    "terms": [
+      "Unmade",
+      "Bondsmith",
+      "Melishi",
+      "Ba-Ado-Mishram",
+      "Sja-anat",
+      "Nergaoul",
+      "Moelach",
+      "singer",
+      "parshmen"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "roshar-046",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "Warlight is created by combining Stormlight with what?",
+    "a": "Voidlight",
+    "wrong": [
+      "Lifelight",
+      "Towerlight",
+      "Anti-Stormlight"
+    ],
+    "explain": "Navani and Raboniel studied warlight together during the occupation of Urithiru.",
+    "terms": [
+      "Warlight",
+      "Stormlight",
+      "Voidlight",
+      "Lifelight",
+      "Towerlight",
+      "Anti-Stormlight",
+      "Navani",
+      "Raboniel",
+      "Urithiru"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "roshar-047",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "dawnshard",
+    "q": "Which forbidden Aimian city is the goal of Rysn's expedition in Dawnshard?",
+    "a": "Akinah",
+    "wrong": [
+      "Rall Elorim",
+      "Sesemalex Dar",
+      "Vedenar"
+    ],
+    "explain": "Akinah is guarded by the Sleepless, who keep its secrets hidden.",
+    "terms": [
+      "Aimian",
+      "Rysn",
+      "Dawnshard",
+      "Akinah",
+      "Rall Elorim",
+      "Sesemalex Dar",
+      "Vedenar",
+      "Sleepless"
+    ],
+    "source": "Dawnshard"
+  },
+  {
+    "id": "roshar-048",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "Which Fused is known as the Lady of Wishes?",
+    "a": "Raboniel",
+    "wrong": [
+      "Leshwi",
+      "Lezian",
+      "Venli"
+    ],
+    "explain": "Raboniel organized the Fused occupation of Urithiru.",
+    "terms": [
+      "Fused",
+      "Lady of Wishes",
+      "Raboniel",
+      "Leshwi",
+      "Lezian",
+      "Venli",
+      "Urithiru"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "roshar-049",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, which besieged capital does Adolin help defend?",
+    "a": "Azimir",
+    "wrong": [
+      "Kholinar",
+      "Thaylen City",
+      "Vedenar"
+    ],
+    "explain": "Adolin fights alongside Emperor Yanagawn and Commandant Kushkam without any Radiant powers.",
+    "terms": [
+      "Wind and Truth",
+      "Adolin",
+      "Azimir",
+      "Kholinar",
+      "Thaylen City",
+      "Vedenar",
+      "Yanagawn",
+      "Kushkam",
+      "Radiant"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-050",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "dawnshard",
+    "q": "In Dawnshard, which Windrunner swears his Third Ideal to protect Lopen?",
+    "a": "Huio",
+    "wrong": [
+      "Skar",
+      "Drehy",
+      "Peet"
+    ],
+    "explain": "Huio is a Herdazian Windrunner sent with Lopen to guard Rysn on the voyage.",
+    "terms": [
+      "Dawnshard",
+      "Windrunner",
+      "Third Ideal",
+      "Lopen",
+      "Huio",
+      "Skar",
+      "Drehy",
+      "Peet",
+      "Herdazian",
+      "Rysn"
+    ],
+    "source": "Dawnshard"
+  },
+  {
+    "id": "roshar-051",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "way-of-kings",
+    "q": "What is the name of Kaladin's mother?",
+    "a": "Hesina",
+    "wrong": [
+      "Laral",
+      "Tarah",
+      "Kalami"
+    ],
+    "explain": "Hesina is married to Lirin, the surgeon of Hearthstone.",
+    "terms": [
+      "Kaladin",
+      "Hesina",
+      "Laral",
+      "Tarah",
+      "Kalami",
+      "Lirin",
+      "Hearthstone"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-052",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "oathbringer",
+    "q": "Which order of Knights Radiant prefers to be called the Releasers?",
+    "a": "Dustbringers",
+    "wrong": [
+      "Skybreakers",
+      "Stonewards",
+      "Willshapers"
+    ],
+    "explain": "Malata learns from her ashspren Spark that the order dislikes the name Dustbringers.",
+    "terms": [
+      "Knights Radiant",
+      "Releasers",
+      "Dustbringers",
+      "Skybreakers",
+      "Stonewards",
+      "Willshapers",
+      "Malata",
+      "ashspren",
+      "Spark"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-053",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "Which kind of spren forms the Nahel bond with Stonewards?",
+    "a": "Peakspren",
+    "wrong": [
+      "Mistspren",
+      "Highspren",
+      "Ashspren"
+    ],
+    "explain": "Peakspren look like stone and can hide inside real rocks.",
+    "terms": [
+      "spren",
+      "Nahel bond",
+      "Stonewards",
+      "Peakspren",
+      "Mistspren",
+      "Highspren",
+      "Ashspren"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "roshar-054",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "words-of-radiance",
+    "q": "Which con artist trains Shallan in deception until Shallan kills her?",
+    "a": "Tyn",
+    "wrong": [
+      "Palona",
+      "Ialai",
+      "Navani"
+    ],
+    "explain": "Tyn was working for the Ghostbloods and had been sent to kill Jasnah.",
+    "terms": [
+      "Shallan",
+      "Tyn",
+      "Palona",
+      "Ialai",
+      "Navani",
+      "Ghostbloods",
+      "Jasnah"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "roshar-055",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "way-of-kings",
+    "q": "Who is Rysn's babsk, the Thaylen merchant who trains her?",
+    "a": "Vstim",
+    "wrong": [
+      "Kylrm",
+      "Thresh",
+      "Tozbek"
+    ],
+    "explain": "Rysn travels with Vstim as his apprentice, learning the art of trade.",
+    "terms": [
+      "Rysn",
+      "babsk",
+      "Thaylen",
+      "Vstim",
+      "Kylrm",
+      "Thresh",
+      "Tozbek"
+    ],
+    "source": "The Way of Kings, interlude I-4"
+  },
+  {
+    "id": "roshar-056",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "way-of-kings",
+    "q": "In which region does Ishikk, the fisherman of the Way of Kings interludes, live?",
+    "a": "The Purelake",
+    "wrong": [
+      "The Reshi Isles",
+      "The Frostlands",
+      "The Unclaimed Hills"
+    ],
+    "explain": "Ishikk guides foreigners searching for a man across the shallow waters of the Purelake.",
+    "terms": [
+      "Ishikk",
+      "The Way of Kings",
+      "Purelake",
+      "Reshi Isles",
+      "Frostlands",
+      "Unclaimed Hills"
+    ],
+    "source": "The Way of Kings, interlude I-1"
+  },
+  {
+    "id": "roshar-057",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "What is the name of the spren of Adolin's Shardblade?",
+    "a": "Maya",
+    "wrong": [
+      "Testament",
+      "Glys",
+      "Ivory"
+    ],
+    "explain": "Maya is a deadeye whom Adolin's care slowly brings back to awareness.",
+    "terms": [
+      "Adolin",
+      "Shardblade",
+      "Maya",
+      "Testament",
+      "Glys",
+      "Ivory",
+      "deadeye"
+    ],
+    "source": "Oathbringer; Rhythm of War"
+  },
+  {
+    "id": "roshar-058",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "words-of-radiance",
+    "q": "What do Taravangian and his conspirators call the plan he wrote on his day of genius?",
+    "a": "The Diagram",
+    "wrong": [
+      "The Book of Endless Pages",
+      "The Way of Kings",
+      "Words of Radiance"
+    ],
+    "explain": "Taravangian wrote the Diagram on a single day of extraordinary intelligence.",
+    "terms": [
+      "Taravangian",
+      "Diagram",
+      "Book of Endless Pages",
+      "The Way of Kings",
+      "Words of Radiance"
+    ],
+    "source": "Words of Radiance, interlude"
+  },
+  {
+    "id": "roshar-059",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "words-of-radiance",
+    "q": "Which ardent in Kharbranth, secretly a Ghostblood agent, courted Shallan?",
+    "a": "Kabsal",
+    "wrong": [
+      "Vathah",
+      "Gaz",
+      "Tvlakv"
+    ],
+    "explain": "Kabsal tried to poison Jasnah with bread, but died when Jasnah Soulcast the antidote, believing it was the poison.",
+    "terms": [
+      "ardent",
+      "Kharbranth",
+      "Ghostblood",
+      "Shallan",
+      "Kabsal",
+      "Vathah",
+      "Gaz",
+      "Tvlakv",
+      "Jasnah",
+      "Soulcast"
+    ],
+    "source": "The Way of Kings; Words of Radiance"
+  },
+  {
+    "id": "roshar-060",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "way-of-kings",
+    "q": "How many chips of the same gem are worth one mark?",
+    "a": "Five",
+    "wrong": [
+      "Four",
+      "Ten",
+      "Twenty"
+    ],
+    "explain": "Four marks make a broam, so a broam is worth twenty chips.",
+    "terms": [
+      "chip",
+      "mark",
+      "broam"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "roshar-061",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "way-of-kings",
+    "q": "In the Ars Arcanum's table of the Ten Essences, which Essence corresponds to Jezrien and the sapphire?",
+    "a": "Zephyr",
+    "wrong": [
+      "Vapor",
+      "Spark",
+      "Talus"
+    ],
+    "explain": "Zephyr is listed as translucent gas or air, with inhalation as its body focus.",
+    "terms": [
+      "Ars Arcanum",
+      "Ten Essences",
+      "Essence",
+      "Jezrien",
+      "Zephyr",
+      "Vapor",
+      "Spark",
+      "Talus"
+    ],
+    "source": "The Way of Kings, Ars Arcanum"
+  },
+  {
+    "id": "roshar-062",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "way-of-kings",
+    "q": "Which Herald is associated with the divine attributes Brave and Obedient?",
+    "a": "Chanarach",
+    "wrong": [
+      "Vedeledev",
+      "Battar",
+      "Shalash"
+    ],
+    "explain": "Chanarach is linked to the number Chach, the ruby and the Essence Spark.",
+    "terms": [
+      "Herald",
+      "Chanarach",
+      "Vedeledev",
+      "Battar",
+      "Shalash",
+      "Chach",
+      "Essence",
+      "Spark"
+    ],
+    "source": "The Way of Kings, Ars Arcanum"
+  },
+  {
+    "id": "roshar-063",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "way-of-kings",
+    "q": "According to the Ars Arcanum, which gemstone is associated with the Herald Talenel?",
+    "a": "Topaz",
+    "wrong": [
+      "Heliodor",
+      "Zircon",
+      "Amethyst"
+    ],
+    "explain": "Talenel's Essence is Talus, and his divine attributes are Dependable and Resourceful.",
+    "terms": [
+      "Ars Arcanum",
+      "Herald",
+      "Talenel",
+      "Essence",
+      "Talus"
+    ],
+    "source": "The Way of Kings, Ars Arcanum"
+  },
+  {
+    "id": "roshar-064",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "edgedancer",
+    "q": "Which Third Ideal of the Edgedancers does Lift swear in Edgedancer?",
+    "a": "I will listen to those who have been ignored",
+    "wrong": [
+      "I will remember those who have been forgotten",
+      "I will protect those who cannot protect themselves",
+      "I will seek justice and let it guide me"
+    ],
+    "explain": "Lift swears it while facing Nale, after earlier swearing to remember the forgotten.",
+    "terms": [
+      "Third Ideal",
+      "Edgedancers",
+      "Lift",
+      "Edgedancer",
+      "Nale"
+    ],
+    "source": "Edgedancer"
+  },
+  {
+    "id": "roshar-065",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "rhythm-of-war",
+    "q": "Which Bridge Four member, who cannot draw Stormlight, is contacted by the Sibling during the occupation of Urithiru?",
+    "a": "Dabbid",
+    "wrong": [
+      "Leyten",
+      "Peet",
+      "Bisig"
+    ],
+    "explain": "The Sibling asks Dabbid to swap a spanreed gem so it can communicate with Navani.",
+    "terms": [
+      "Bridge Four",
+      "Stormlight",
+      "Sibling",
+      "Urithiru",
+      "Dabbid",
+      "Leyten",
+      "Peet",
+      "Bisig",
+      "spanreed",
+      "Navani"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "roshar-066",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "way-of-kings",
+    "q": "To which people does Axies the Collector, who catalogs every type of spren, belong?",
+    "a": "Siah Aimian",
+    "wrong": [
+      "Iriali",
+      "Natan",
+      "Reshi"
+    ],
+    "explain": "Axies can alter his own body, and uses this to write research notes on his skin as tattoos.",
+    "terms": [
+      "Axies the Collector",
+      "spren",
+      "Siah Aimian",
+      "Iriali",
+      "Natan",
+      "Reshi"
+    ],
+    "source": "The Way of Kings, interlude I-5"
+  },
+  {
+    "id": "roshar-067",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "way-of-kings",
+    "q": "Which kind of spren does the ardent Geranid study on her island in the Reshi Sea?",
+    "a": "Flamespren",
+    "wrong": [
+      "Windspren",
+      "Creationspren",
+      "Gloryspren"
+    ],
+    "explain": "Geranid discovers that a flamespren stops changing once it has been measured and recorded.",
+    "terms": [
+      "ardent",
+      "Geranid",
+      "spren",
+      "Reshi Sea",
+      "Flamespren",
+      "Windspren",
+      "Creationspren",
+      "Gloryspren"
+    ],
+    "source": "The Way of Kings, interlude I-8"
+  },
+  {
+    "id": "roshar-068",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "words-of-radiance",
+    "q": "What is the trade of Ym, the Surgebinder killed by Nale in a Words of Radiance interlude?",
+    "a": "Shoemaker",
+    "wrong": [
+      "Tailor",
+      "Blacksmith",
+      "Baker"
+    ],
+    "explain": "Ym gives shoes to a street boy and heals his infected foot with Stormlight just before Nale arrives.",
+    "terms": [
+      "Ym",
+      "Surgebinder",
+      "Nale",
+      "Words of Radiance",
+      "Stormlight"
+    ],
+    "source": "Words of Radiance, interlude I-2"
+  },
+  {
+    "id": "roshar-069",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "way-of-kings",
+    "q": "In her Way of Kings interlude, to which land does Rysn travel with Vstim to trade?",
+    "a": "Shinovar",
+    "wrong": [
+      "The Reshi Isles",
+      "Herdaz",
+      "Tukar"
+    ],
+    "explain": "Vstim trades Soulcast scrap metal to the Shin trader Thresh for chickens, cloth and dried meats.",
+    "terms": [
+      "The Way of Kings",
+      "Rysn",
+      "Vstim",
+      "Shinovar",
+      "Reshi Isles",
+      "Herdaz",
+      "Tukar",
+      "Soulcast",
+      "Shin",
+      "Thresh"
+    ],
+    "source": "The Way of Kings, interlude I-4"
+  },
+  {
+    "id": "roshar-070",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "way-of-kings",
+    "q": "During her trading trip with Vstim, which occupation does Rysn learn the Shin hold in the highest esteem?",
+    "a": "Farmers",
+    "wrong": [
+      "Warriors",
+      "Merchants",
+      "Priests"
+    ],
+    "explain": "To Rysn's surprise, soldiers are considered the lowliest of men among the Shin.",
+    "terms": [
+      "Vstim",
+      "Rysn",
+      "Shin"
+    ],
+    "source": "The Way of Kings, interlude I-4"
+  },
+  {
+    "id": "roshar-071",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "words-of-radiance",
+    "q": "According to the Ars Arcanum, which gemstone is used to create a reverser fabrial?",
+    "a": "Amethyst",
+    "wrong": [
+      "Ruby",
+      "Garnet",
+      "Heliodor"
+    ],
+    "explain": "Reversers are made like conjoiners, which use rubies, but their halves move in opposite directions.",
+    "terms": [
+      "Ars Arcanum",
+      "reverser",
+      "fabrial",
+      "conjoiner"
+    ],
+    "source": "Words of Radiance, Ars Arcanum"
+  },
+  {
+    "id": "roshar-072",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "oathbringer",
+    "q": "Which ancient Silver Kingdom is considered the predecessor of Alethkar?",
+    "a": "Alethela",
+    "wrong": [
+      "Natanatan",
+      "Makabakam",
+      "Sela Tales"
+    ],
+    "explain": "Alethela was one of the ten Silver Kingdoms, and its lands later became Alethkar.",
+    "terms": [
+      "Silver Kingdom",
+      "Alethkar",
+      "Alethela",
+      "Natanatan",
+      "Makabakam",
+      "Sela Tales"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-073",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "words-of-radiance",
+    "q": "Which of Taravangian's bodyguards helps judge each morning whether the king is fit to make decisions?",
+    "a": "Mrall",
+    "wrong": [
+      "Dukar",
+      "Graves",
+      "Kabsal"
+    ],
+    "explain": "Taravangian takes an intelligence test every morning, and Mrall and the stormwardens decide what he may do that day.",
+    "terms": [
+      "Taravangian",
+      "Mrall",
+      "Dukar",
+      "Graves",
+      "Kabsal",
+      "stormwarden"
+    ],
+    "source": "Words of Radiance, interludes"
+  },
+  {
+    "id": "roshar-074",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "rhythm-of-war",
+    "q": "What is the name of Teft's honorspren?",
+    "a": "Phendorana",
+    "wrong": [
+      "Notum",
+      "Caelinora",
+      "Sylphrena"
+    ],
+    "explain": "Unlike most honorspren, Phendorana appears in a human-sized form.",
+    "terms": [
+      "Teft",
+      "honorspren",
+      "Phendorana",
+      "Notum",
+      "Caelinora",
+      "Sylphrena"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "roshar-075",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "dawnshard",
+    "q": "What is the name of Huio's honorspren, who first becomes a weapon in Dawnshard?",
+    "a": "Caelinora",
+    "wrong": [
+      "Phendorana",
+      "Notum",
+      "Sylphrena"
+    ],
+    "explain": "When Huio swears the Third Ideal to save Lopen, Caelinora appears as a Shardhammer.",
+    "terms": [
+      "Huio",
+      "honorspren",
+      "Dawnshard",
+      "Caelinora",
+      "Phendorana",
+      "Notum",
+      "Sylphrena",
+      "Third Ideal",
+      "Lopen",
+      "Shardhammer"
+    ],
+    "source": "Dawnshard"
+  },
+  {
+    "id": "roshar-076",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "dawnshard",
+    "q": "Which ship carries Rysn's expedition to Akinah in Dawnshard?",
+    "a": "Wandersail",
+    "wrong": [
+      "Wind's Pleasure",
+      "First Dreams",
+      "Fourth Bridge"
+    ],
+    "explain": "Captained by Drlwan, the Wandersail breaches the strange storm surrounding Akinah.",
+    "terms": [
+      "Rysn",
+      "Akinah",
+      "Dawnshard",
+      "Wandersail",
+      "Wind's Pleasure",
+      "First Dreams",
+      "Fourth Bridge",
+      "Drlwan"
+    ],
+    "source": "Dawnshard"
+  },
+  {
+    "id": "roshar-077",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "oathbringer",
+    "q": "Selections from which in-world book about the Unmade serve as the epigraphs of Part Four of Oathbringer?",
+    "a": "Hessi's Mythica",
+    "wrong": [
+      "The Eila Stele",
+      "Words of Radiance",
+      "The Book of Endless Pages"
+    ],
+    "explain": "Hessi's controversial claims, such as the Unmade still being alive, were later proved right.",
+    "terms": [
+      "Unmade",
+      "Oathbringer",
+      "Hessi",
+      "Mythica",
+      "Eila Stele",
+      "Words of Radiance",
+      "Book of Endless Pages"
+    ],
+    "source": "Oathbringer, part four epigraphs"
+  },
+  {
+    "id": "roshar-078",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "rhythm-of-war",
+    "q": "Under which name does the Herald Ishar rule Tukar as god-priest?",
+    "a": "Tezim",
+    "wrong": [
+      "Hanavanar",
+      "Yanagawn",
+      "Kmakl"
+    ],
+    "explain": "As Tezim, Ishar wars with Emul over Sesemalex Dar and refuses to join Dalinar's coalition.",
+    "terms": [
+      "Herald",
+      "Ishar",
+      "Tukar",
+      "Tezim",
+      "Hanavanar",
+      "Yanagawn",
+      "Kmakl",
+      "Emul",
+      "Sesemalex Dar",
+      "Dalinar"
+    ],
+    "source": "Oathbringer; Rhythm of War"
+  },
+  {
+    "id": "roshar-079",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "oathbringer",
+    "q": "Which Unmade is the source of the Death Rattles, the prophetic words spoken by the dying?",
+    "a": "Moelach",
+    "wrong": [
+      "Chemoarish",
+      "Ashertmarn",
+      "Yelig-nar"
+    ],
+    "explain": "Taravangian records the Death Rattles of patients in Kharbranth while Moelach lingers near the city.",
+    "terms": [
+      "Unmade",
+      "Death Rattles",
+      "Moelach",
+      "Chemoarish",
+      "Ashertmarn",
+      "Yelig-nar",
+      "Taravangian",
+      "Kharbranth"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "roshar-080",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "words-of-radiance",
+    "q": "Navani begins cracking the Dawnchant after recognizing words from Dalinar's visions in which text?",
+    "a": "Corvana's Analectics",
+    "wrong": [
+      "Hessi's Mythica",
+      "The Way of Kings",
+      "The Book of Endless Pages"
+    ],
+    "explain": "The phrase matched a line of Vanrial songs preserved in the Analectics, leading to a wave of Dawnchant translations.",
+    "terms": [
+      "Navani",
+      "Dawnchant",
+      "Dalinar",
+      "Corvana's Analectics",
+      "Hessi",
+      "Mythica",
+      "The Way of Kings",
+      "Book of Endless Pages",
+      "Vanrial"
+    ],
+    "source": "The Way of Kings; Words of Radiance"
+  }
+]

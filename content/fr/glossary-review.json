@@ -1,0 +1,4278 @@
+{
+ "Stormlight": {
+  "fr": "Fulgiflamme",
+  "status": "official",
+  "sources": [
+   "https://www.forum-elbakin.net/viewtopic.php?t=6160&start=780 (translator Mélanie Fazi: « La Fulgiflamme »)"
+  ],
+  "notes": "Feminine: « la Fulgiflamme ». Confirmed by the translator on Elbakin."
+ },
+ "Anti-Stormlight": {
+  "fr": "anti-Fulgiflamme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Derived from Fulgiflamme; form not attested."
+ },
+ "highstorm": {
+  "fr": "tempête majeure",
+  "status": "official",
+  "sources": [
+   "https://www.melaniefazi.net/blog/livres/words-of-radiance-un-voyage-au-long-cours/ (via search snippet)"
+  ],
+  "notes": "Pl. tempêtes majeures."
+ },
+ "highstorms": {
+  "fr": "tempêtes majeures",
+  "status": "official",
+  "sources": [
+   "https://www.melaniefazi.net/blog/livres/words-of-radiance-un-voyage-au-long-cours/ (via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Stormwarden": {
+  "fr": "fulgicien",
+  "status": "official",
+  "sources": [
+   "https://www.melaniefazi.net/blog/livres/words-of-radiance-un-voyage-au-long-cours/ (via search snippet)"
+  ],
+  "notes": "Glossary had « gardien des tempêtes ». Fazi: stormwardens → « fulgiciens »."
+ },
+ "Everstorm": {
+  "fr": "Tempête Éternelle",
+  "status": "official",
+  "sources": [
+   "https://www.hachette.fr/livre/justiciere-volume-1-les-archives-de-roshar-tome-3-9791035412203/ (publisher blurb)"
+  ],
+  "notes": "Capitalised in LdP blurbs (« le retour de la Tempête Éternelle »)."
+ },
+ "Shardblade": {
+  "fr": "Lame d'éclat",
+  "status": "community",
+  "sources": [
+   "https://www.chemins-khatovar.com/forum/viewtopic.php?t=7863 (reader citing VF: Néantifères, Armures d'éclat, Lames d'éclat)"
+  ],
+  "notes": "Readers quoting the VF use « Lames d'éclat ». Not « Lame-éclat ». Capital L only."
+ },
+ "Shardplate": {
+  "fr": "Armure d'éclat",
+  "status": "community",
+  "sources": [
+   "https://www.chemins-khatovar.com/forum/viewtopic.php?t=7863 (reader citing VF: Néantifères, Armures d'éclat, Lames d'éclat)"
+  ],
+  "notes": "Readers quoting VF: « Armures d'éclat ». « Cuirasse d'Éclat » not attested anywhere."
+ },
+ "Shardbearer": {
+  "fr": "Porte-Éclat",
+  "status": "community",
+  "sources": [
+   "https://www.chemins-khatovar.com/forum/viewtopic.php?t=7863 (« Porte-Éclat »)"
+  ],
+  "notes": "Glossary had « Porteur d'éclats »."
+ },
+ "Bridge Four": {
+  "fr": "Pont Quatre",
+  "status": "official",
+  "sources": [
+   "https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/ ; https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (Pont Quatre, Plaines Brisées, Fusionnés, Néantifères)"
+  ],
+  "notes": ""
+ },
+ "Bridge Two": {
+  "fr": "Pont Deux",
+  "status": "unverified",
+  "sources": [
+   "https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/ ; https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (Pont Quatre, Plaines Brisées, Fusionnés, Néantifères)"
+  ],
+  "notes": "By analogy with Pont Quatre."
+ },
+ "Bridge Seventeen": {
+  "fr": "Pont Dix-Sept",
+  "status": "unverified",
+  "sources": [
+   "https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/ ; https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (Pont Quatre, Plaines Brisées, Fusionnés, Néantifères)"
+  ],
+  "notes": "By analogy with Pont Quatre."
+ },
+ "Bridge Eighteen": {
+  "fr": "Pont Dix-Huit",
+  "status": "unverified",
+  "sources": [
+   "https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/ ; https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (Pont Quatre, Plaines Brisées, Fusionnés, Néantifères)"
+  ],
+  "notes": "By analogy with Pont Quatre."
+ },
+ "Shattered Plains": {
+  "fr": "Plaines Brisées",
+  "status": "official",
+  "sources": [
+   "https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/ ; https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (Pont Quatre, Plaines Brisées, Fusionnés, Néantifères)"
+  ],
+  "notes": ""
+ },
+ "Fused": {
+  "fr": "Fusionnés",
+  "status": "official",
+  "sources": [
+   "https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/ ; https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (Pont Quatre, Plaines Brisées, Fusionnés, Néantifères)"
+  ],
+  "notes": ""
+ },
+ "Sons of Honor": {
+  "fr": "Fils d'Honneur",
+  "status": "community",
+  "sources": [
+   "https://www.hachette.fr/livre/justiciere-volume-1-les-archives-de-roshar-tome-3-9791035412203/ (publisher blurb)",
+   "https://www.paperblog.fr/8981236/sanderson-brandon-justiciere/ (« les Clivecieux, les Fils d'Honneur, les Sangs-de-Spectres »)"
+  ],
+  "notes": "Blurb writes « les fils d'Honneur »; reviews « Fils d'Honneur ». Used capitalised as a group name."
+ },
+ "Ghostbloods": {
+  "fr": "Sangs-de-Spectres",
+  "status": "community",
+  "sources": [
+   "https://www.paperblog.fr/8981236/sanderson-brandon-justiciere/ (« les Clivecieux, les Fils d'Honneur, les Sangs-de-Spectres »)"
+  ],
+  "notes": "Glossary had « Sang-Fantômes » (unattested). Only one review source found — QA should confirm in Justicière/Le Livre des Radieux."
+ },
+ "Odium": {
+  "fr": "Abjection",
+  "status": "official",
+  "sources": [
+   "https://books.google.com/books/about/Vent_et_v%C3%A9rit%C3%A9_Volume_1_Les_Archives_d.html?id=Wh9pEQAAQBAJ (publisher blurb: « champion d'Abjection »)",
+   "https://limaginaerumdesymphonie.fr/2025/07/30/les-archives-de-roshar-cosmere-t5-vent-et-verite-vol-1-brandon-sanderson/ (« l'Éclat Abjection »)"
+  ],
+  "notes": "MAJOR: glossary kept « Odium ». The French editions call the Shard « Abjection » (« le champion d'Abjection »). Grammatically feminine noun; I agree adjectives with the god (masc.) only where unavoidable."
+ },
+ "Herald": {
+  "fr": "Héraut",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)",
+   "https://lesmillemondes.com/2026/02/21/les-archives-de-roshar-vent-et-verite-2-de-brandon-sanderson-le-cosmere-en-danger/ (« Szeth-fils-fils-Vallano, l'Assassin en Blanc »)"
+  ],
+  "notes": "Feminine « Héraldesse » attested."
+ },
+ "Pattern": {
+  "fr": "Motif",
+  "status": "official",
+  "sources": [
+   "https://www.bookenstock.fr/2017/06/le-livre-des-radieux-volume-1-de.html?m=1 (« le Cryptique Motif »)"
+  ],
+  "notes": ""
+ },
+ "Cryptic": {
+  "fr": "Cryptique",
+  "status": "official",
+  "sources": [
+   "https://www.bookenstock.fr/2017/06/le-livre-des-radieux-volume-1-de.html?m=1 (« le Cryptique Motif »)"
+  ],
+  "notes": ""
+ },
+ "Spren": {
+  "fr": "sprène",
+  "status": "official",
+  "sources": [
+   "https://www.bookenstock.fr/2017/06/le-livre-des-radieux-volume-1-de.html?m=1 (« le Cryptique Motif »)"
+  ],
+  "notes": "Spot-check OK (« un sprène »)."
+ },
+ "spren": {
+  "fr": "sprène",
+  "status": "official",
+  "sources": [
+   "https://www.bookenstock.fr/2017/06/le-livre-des-radieux-volume-1-de.html?m=1 (« le Cryptique Motif »)"
+  ],
+  "notes": ""
+ },
+ "Assassin in White": {
+  "fr": "Assassin en blanc",
+  "status": "official",
+  "sources": [
+   "https://lesmillemondes.com/2026/02/21/les-archives-de-roshar-vent-et-verite-2-de-brandon-sanderson-le-cosmere-en-danger/ (« Szeth-fils-fils-Vallano, l'Assassin en Blanc »)"
+  ],
+  "notes": "Some blurbs capitalise « Blanc »."
+ },
+ "Parshendi": {
+  "fr": "Parshendis",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/cross-cosmere/lexique"
+  ],
+  "notes": ""
+ },
+ "parshmen": {
+  "fr": "parshes",
+  "status": "official",
+  "sources": [
+   "https://www.hachette.fr/livre/justiciere-volume-1-les-archives-de-roshar-tome-3-9791035412203/ (publisher blurb)"
+  ],
+  "notes": ""
+ },
+ "Oathbringer": {
+  "fr": "Justicière",
+  "status": "official",
+  "sources": [
+   "https://www.hachette.fr/livre/justiciere-volume-1-les-archives-de-roshar-tome-3-9791035412203/ (publisher blurb)"
+  ],
+  "notes": "Correct: official title of book 3 (LdP 2019) and name of the sword."
+ },
+ "Dawnshard": {
+  "fr": "Éclat de l'aube",
+  "status": "official",
+  "sources": [
+   "https://catalogue.bnf.fr (Éclat de l'aube, LdP 2022) ; https://www.librairielinstant.fr/livre/9782253106913-eclat-de-l-aube-brandon-sanderson/ (« un larquin nommé Chiri-Chiri »)"
+  ],
+  "notes": "Title is « Éclat de l'aube » (lower-case aube). Glossary had « Éclat de l'Aube »."
+ },
+ "Edgedancer": {
+  "fr": "Dansecorde",
+  "status": "official",
+  "sources": [
+   "https://www.goodreads.com/fr/book/show/42613578"
+  ],
+  "notes": "Novella published as « Dansecorde » in « Sixième du crépuscule et autres nouvelles » (LdP 2018); also sold as « Edgedancer » in some listings."
+ },
+ "larkin": {
+  "fr": "larquin",
+  "status": "official",
+  "sources": [
+   "https://catalogue.bnf.fr (Éclat de l'aube, LdP 2022) ; https://www.librairielinstant.fr/livre/9782253106913-eclat-de-l-aube-brandon-sanderson/ (« un larquin nommé Chiri-Chiri »)"
+  ],
+  "notes": "Glossary had « larkin »."
+ },
+ "Larkin": {
+  "fr": "larquin",
+  "status": "official",
+  "sources": [
+   "https://catalogue.bnf.fr (Éclat de l'aube, LdP 2022) ; https://www.librairielinstant.fr/livre/9782253106913-eclat-de-l-aube-brandon-sanderson/ (« un larquin nommé Chiri-Chiri »)"
+  ],
+  "notes": ""
+ },
+ "Chasmfiend": {
+  "fr": "démon-des-gouffres",
+  "status": "community",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-1--La-voie-des-rois-/943770/critiques (Démons-des-Gouffres, cœurs-gemmes)"
+  ],
+  "notes": "Reviews write « démon des gouffres » / « Démons-des-Gouffres ». Glossary had « démon-du-gouffre »."
+ },
+ "gemheart": {
+  "fr": "cœur-gemme",
+  "status": "community",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-1--La-voie-des-rois-/943770/critiques (Démons-des-Gouffres, cœurs-gemmes)"
+  ],
+  "notes": ""
+ },
+ "Bondsmith": {
+  "fr": "Forgelien",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Bondsmiths": {
+  "fr": "Forgeliens",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Stonewards": {
+  "fr": "Gardepierres",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Willshapers": {
+  "fr": "Façonnevolontés",
+  "status": "unverified",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": "fr.wikipedia table shows only « Façonneurs » (possibly truncated). Kept glossary form; QA needed."
+ },
+ "Willshaper": {
+  "fr": "Façonnevolonté",
+  "status": "unverified",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": "See Willshapers."
+ },
+ "Truthwatchers": {
+  "fr": "Véristigateurs",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Lightweavers": {
+  "fr": "Tisseflammes",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Elsecallers": {
+  "fr": "Outreporteurs",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": "Wikimonde has « Outrepasseur » variant; fr.wikipedia « Outreporteurs »."
+ },
+ "Windrunners": {
+  "fr": "Marchevents",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)",
+   "https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (publisher blurb)"
+  ],
+  "notes": ""
+ },
+ "Skybreakers": {
+  "fr": "Clivecieux",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)",
+   "https://www.paperblog.fr/8981236/sanderson-brandon-justiciere/ (« les Clivecieux, les Fils d'Honneur, les Sangs-de-Spectres »)"
+  ],
+  "notes": ""
+ },
+ "Edgedancers": {
+  "fr": "Dansecordes",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Dustbringers": {
+  "fr": "Désagrégateurs",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (Heralds/orders table, via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Wit": {
+  "fr": "Wit",
+  "status": "community",
+  "sources": [
+   "http://www.lesescapadesculturellesdefrankie.com/2018/02/le-livre-des-radieux-les-archives-de.html (« la vêture du fou du roi, Wit »)"
+  ],
+  "notes": "French reviews keep « Wit » as Hoid's name; the post itself rendered as « fou du roi » (cosmere-011)."
+ },
+ "Sibling": {
+  "fr": "Fratrie",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found."
+ },
+ "Voidlight": {
+  "fr": "Néantilumière",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No source; by analogy, could be « Néantiflamme ». QA."
+ },
+ "Unmade": {
+  "fr": "Défaits",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No source found. Used « un Défait / une Défaite »."
+ },
+ "Honorblade": {
+  "fr": "Lame d'Honneur",
+  "status": "unverified",
+  "sources": [
+   "https://lesmillemondes.com/2026/02/21/les-archives-de-roshar-vent-et-verite-2-de-brandon-sanderson-le-cosmere-en-danger/ (« Szeth-fils-fils-Vallano, l'Assassin en Blanc »)"
+  ],
+  "notes": "Not attested; Shinovar monasteries « des Lames » mentioned."
+ },
+ "Soulcaster": {
+  "fr": "transformateur d'âmes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested (my memory suggests « transmutateur », unconfirmed). Avoided in text where possible; only appears as a distractor in roshar-030."
+ },
+ "Soulcasting": {
+  "fr": "transformation des âmes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Avoided in text (paraphrased)."
+ },
+ "Surge": {
+  "fr": "Flux",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested. Avoided in text (roshar-040 says « pouvoirs »)."
+ },
+ "Lashing": {
+  "fr": "Projection",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Avoided in text (paraphrased)."
+ },
+ "Horneater": {
+  "fr": "Mange-cornes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No source found."
+ },
+ "Rock": {
+  "fr": "Rocher",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No source found."
+ },
+ "Stormfather": {
+  "fr": "Père-Tempête",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No source found."
+ },
+ "Thaylen City": {
+  "fr": "Thaylenville",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No source found."
+ },
+ "Spanreed": {
+  "fr": "plume-lien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No source found."
+ },
+ "Nightwatcher": {
+  "fr": "Veilleuse de Nuit",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No source found."
+ },
+ "Sleepless": {
+  "fr": "Sans-Sommeil",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No source found."
+ },
+ "Cognitive Realm": {
+  "fr": "Royaume cognitif",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/actualites/l-ile-de-noirebraise (« Shadesmar, le Royaume cognitif »)"
+  ],
+  "notes": ""
+ },
+ "Physical Realm": {
+  "fr": "Royaume physique",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/actualites/l-ile-de-noirebraise (« Shadesmar, le Royaume cognitif »)"
+  ],
+  "notes": "By analogy with Royaume cognitif."
+ },
+ "Spiritual Realm": {
+  "fr": "Royaume spirituel",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/actualites/l-ile-de-noirebraise (« Shadesmar, le Royaume cognitif »)"
+  ],
+  "notes": "By analogy with Royaume cognitif."
+ },
+ "Ruin": {
+  "fr": "Ravage",
+  "status": "official",
+  "sources": [
+   "https://www.webfantasy.fr/forum/viewtopic.php?pid=145552 (« Ruin (nommé Ravage en vf) … Preservation (nommé Sauvegarde en vf) »)",
+   "https://everybodywiki.com/Cosm%C3%A8re (Shards table)"
+  ],
+  "notes": "Confirmed (reader: « nommé Ravage en vf »)."
+ },
+ "Preservation": {
+  "fr": "Sauvegarde",
+  "status": "official",
+  "sources": [
+   "https://www.webfantasy.fr/forum/viewtopic.php?pid=145552 (« Ruin (nommé Ravage en vf) … Preservation (nommé Sauvegarde en vf) »)",
+   "https://everybodywiki.com/Cosm%C3%A8re (Shards table)"
+  ],
+  "notes": "Glossary had « Préservation ». VF uses « Sauvegarde »."
+ },
+ "Harmony": {
+  "fr": "Harmonie",
+  "status": "official",
+  "sources": [
+   "https://everybodywiki.com/Cosm%C3%A8re (Shards table)"
+  ],
+  "notes": ""
+ },
+ "Pits of Hathsin": {
+  "fr": "Fosses de Hathsin",
+  "status": "official",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Fils-des-brumes-tome-1--LEmpire-ultime/304052 (Fosses de Hathsin)"
+  ],
+  "notes": "Glossary had « Puits de Hathsin » (would clash with Puits de l'Ascension)."
+ },
+ "metalmind": {
+  "fr": "cerveau métallique",
+  "status": "official",
+  "sources": [
+   "https://www.livredepoche.com/livre/les-bracelets-des-larmes-fils-des-brumes-wax-wayne-tome-3-9782253191407/ (blurb: « ces cerveaux métalliques du Seigneur Maître »)"
+  ],
+  "notes": "Glossary had « métalmental »."
+ },
+ "Set": {
+  "fr": "le Cercle",
+  "status": "official",
+  "sources": [
+   "https://www.livredepoche.com/livre/le-metal-perdu-fils-des-brumes-wax-wayne-tome-4-9782253243540/ (blurb: « le Cercle »)"
+  ],
+  "notes": "Glossary had « le Groupe »."
+ },
+ "the Set": {
+  "fr": "le Cercle",
+  "status": "official",
+  "sources": [
+   "https://www.livredepoche.com/livre/le-metal-perdu-fils-des-brumes-wax-wayne-tome-4-9782253243540/ (blurb: « le Cercle »)"
+  ],
+  "notes": ""
+ },
+ "Steel Ministry": {
+  "fr": "Ministère d'Acier",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/scadrial/livres/fils-des-brumes-l-empire-ultime (annotations: Ministère d'Acier, obligateurs)"
+  ],
+  "notes": ""
+ },
+ "Obligator": {
+  "fr": "obligateur",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/scadrial/livres/fils-des-brumes-l-empire-ultime (annotations: Ministère d'Acier, obligateurs)"
+  ],
+  "notes": ""
+ },
+ "Keeper": {
+  "fr": "Gardien",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/L%27Empire_ultime (« Sazed est un Gardien terrisien »)"
+  ],
+  "notes": ""
+ },
+ "Pewterarm": {
+  "fr": "Biceps",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/scadrial/allomancie"
+  ],
+  "notes": "« Cogneurs ou Biceps ». Pewter = « potin » in VF."
+ },
+ "Twinborn": {
+  "fr": "Double-Fils",
+  "status": "community",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes (search snippet: « Double-Fils »)"
+  ],
+  "notes": "Glossary had « Jumeau-né ». Single snippet source; QA."
+ },
+ "Coinshot": {
+  "fr": "Lance-pièces",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/scadrial/allomancie"
+  ],
+  "notes": "Spot-check OK."
+ },
+ "Lurcher": {
+  "fr": "Aimant",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/scadrial/allomancie"
+  ],
+  "notes": "Spot-check OK."
+ },
+ "Tineye": {
+  "fr": "Œil-d'étain",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/scadrial/allomancie"
+  ],
+  "notes": "Spot-check OK."
+ },
+ "Thug": {
+  "fr": "Cogneur",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/scadrial/allomancie"
+  ],
+  "notes": "Spot-check OK."
+ },
+ "Misting": {
+  "fr": "Brumant",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/scadrial/allomancie"
+  ],
+  "notes": "Spot-check OK."
+ },
+ "Mistborn": {
+  "fr": "Fils-des-Brumes",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/scadrial/allomancie"
+  ],
+  "notes": "cosmere.fr writes « Fils-des-brumes »; LdP covers « Fils-des-Brumes »."
+ },
+ "Feruchemy": {
+  "fr": "Ferrochimie",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/L%27Empire_ultime (« Sazed est un Gardien terrisien »)"
+  ],
+  "notes": ""
+ },
+ "Bands of Mourning": {
+  "fr": "Bracelets des Larmes",
+  "status": "official",
+  "sources": [
+   "https://www.livredepoche.com/livre/les-bracelets-des-larmes-fils-des-brumes-wax-wayne-tome-3-9782253191407/ (blurb: « ces cerveaux métalliques du Seigneur Maître »)"
+  ],
+  "notes": "LdP title « Les Bracelets des Larmes » (capital L)."
+ },
+ "Secret History": {
+  "fr": "Fils-des-Brumes : l'histoire secrète",
+  "status": "official",
+  "sources": [
+   "https://bibliotheque.sceaux.fr/EXPLOITATION/doc/SYRACUSE/950108/"
+  ],
+  "notes": "Published with Les Bracelets des Larmes."
+ },
+ "Mistborn: Secret History": {
+  "fr": "Fils-des-Brumes : l'histoire secrète",
+  "status": "official",
+  "sources": [
+   "https://bibliotheque.sceaux.fr/EXPLOITATION/doc/SYRACUSE/950108/"
+  ],
+  "notes": ""
+ },
+ "Allomancer Jak": {
+  "fr": "Jak l'Allomancien",
+  "status": "official",
+  "sources": [
+   "https://www.bdfi.net/recueils/pages/fils_des_brumes.php"
+  ],
+  "notes": "« Jak l'Allomancien et les fosses d'Eltania », in Jeux de masques."
+ },
+ "Eleventh Metal": {
+  "fr": "Onzième Métal",
+  "status": "official",
+  "sources": [
+   "https://www.bdfi.net/recueils/pages/fils_des_brumes.php"
+  ],
+  "notes": "Title « Le Onzième Métal »."
+ },
+ "Lightsong": {
+  "fr": "Chanteflamme",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/nalthis/livres/warbreaker (Chanteflamme, Tissepourpre, Fouinard, Saignenuit)"
+  ],
+  "notes": "MAJOR: glossary had « Chant-de-Lumière »."
+ },
+ "Blushweaver": {
+  "fr": "Tissepourpre",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/nalthis/livres/warbreaker (Chanteflamme, Tissepourpre, Fouinard, Saignenuit)"
+  ],
+  "notes": "From cosmere.fr translation of annotations referring to VF. Glossary had « Tisse-Rougeur »."
+ },
+ "Returned": {
+  "fr": "Rappelé",
+  "status": "official",
+  "sources": [
+   "https://www.scifi-universe.com/critiques/7481/warbreaker (blurb: « les Rappelés »)"
+  ],
+  "notes": "Blurb: « les Rappelés ». Glossary had « Revenu »."
+ },
+ "Nightblood": {
+  "fr": "Saignenuit",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/nalthis/livres/warbreaker (Chanteflamme, Tissepourpre, Fouinard, Saignenuit)"
+  ],
+  "notes": "Masculine (le sabre)."
+ },
+ "Lifeless": {
+  "fr": "Sans-Vie",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/nalthis/lexique/sans-vie"
+  ],
+  "notes": ""
+ },
+ "Command": {
+  "fr": "Commandement",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/nalthis/livres/warbreaker"
+  ],
+  "notes": "Glossary had « Ordre »."
+ },
+ "Awakener": {
+  "fr": "Éveilleur",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/nalthis/livres/warbreaker"
+  ],
+  "notes": ""
+ },
+ "Breath": {
+  "fr": "Souffle",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/nalthis/souffle"
+  ],
+  "notes": ""
+ },
+ "God King": {
+  "fr": "Dieu-Roi",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/nalthis/livres/warbreaker (Chanteflamme, Tissepourpre, Fouinard, Saignenuit)"
+  ],
+  "notes": ""
+ },
+ "Endowment": {
+  "fr": "Dotation",
+  "status": "community",
+  "sources": [
+   "https://everybodywiki.com/Cosm%C3%A8re (Shards table)"
+  ],
+  "notes": "Shard names outside Roshar/Scadrial have no published French form found beyond fan wikis."
+ },
+ "Devotion": {
+  "fr": "Dévotion",
+  "status": "community",
+  "sources": [
+   "https://everybodywiki.com/Cosm%C3%A8re (Shards table)"
+  ],
+  "notes": ""
+ },
+ "Dominion": {
+  "fr": "Domination",
+  "status": "community",
+  "sources": [
+   "https://everybodywiki.com/Cosm%C3%A8re (Shards table)"
+  ],
+  "notes": ""
+ },
+ "Autonomy": {
+  "fr": "Autonomie",
+  "status": "community",
+  "sources": [
+   "https://everybodywiki.com/Cosm%C3%A8re (Shards table)"
+  ],
+  "notes": ""
+ },
+ "Honor": {
+  "fr": "Honneur",
+  "status": "official",
+  "sources": [
+   "https://books.google.com/books/about/Vent_et_v%C3%A9rit%C3%A9_Volume_1_Les_Archives_d.html?id=Wh9pEQAAQBAJ (publisher blurb: « champion d'Abjection »)"
+  ],
+  "notes": ""
+ },
+ "Cultivation": {
+  "fr": "Culture",
+  "status": "official",
+  "sources": [
+   "https://everybodywiki.com/Cosm%C3%A8re (Shards table)"
+  ],
+  "notes": ""
+ },
+ "Shard": {
+  "fr": "Éclat",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/cross-cosmere/lexique/eclat",
+   "https://limaginaerumdesymphonie.fr/2025/07/30/les-archives-de-roshar-cosmere-t5-vent-et-verite-vol-1-brandon-sanderson/ (« l'Éclat Abjection »)"
+  ],
+  "notes": ""
+ },
+ "Investiture": {
+  "fr": "Investiture",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/nalthis/souffle"
+  ],
+  "notes": ""
+ },
+ "Vessel": {
+  "fr": "Vaisseau",
+  "status": "community",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Cosm%C3%A8re (« Vaisseau »)"
+  ],
+  "notes": "Glossary had « Réceptacle »."
+ },
+ "Nomad": {
+  "fr": "Nomade",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/cantique/livres/l-ensoleille ; https://www.babelio.com/livres/Sanderson-LEnsoleille/1571819 (Nomade, Cantique, Roi des Braises, Brigade nocturne, Auxiliaire)"
+  ],
+  "notes": ""
+ },
+ "Auxiliary": {
+  "fr": "Auxiliaire",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/cantique/lexique/auxiliaire"
+  ],
+  "notes": ""
+ },
+ "Canticle": {
+  "fr": "Cantique",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/cantique/livres/l-ensoleille ; https://www.babelio.com/livres/Sanderson-LEnsoleille/1571819 (Nomade, Cantique, Roi des Braises, Brigade nocturne, Auxiliaire)"
+  ],
+  "notes": ""
+ },
+ "Cinder King": {
+  "fr": "Roi des Braises",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/cantique/livres/l-ensoleille ; https://www.babelio.com/livres/Sanderson-LEnsoleille/1571819 (Nomade, Cantique, Roi des Braises, Brigade nocturne, Auxiliaire)"
+  ],
+  "notes": "Glossary had « Roi des Cendres »."
+ },
+ "Night Brigade": {
+  "fr": "Brigade nocturne",
+  "status": "official",
+  "sources": [
+   "https://cosmere.fr/cantique/livres/l-ensoleille ; https://www.babelio.com/livres/Sanderson-LEnsoleille/1571819 (Nomade, Cantique, Roi des Braises, Brigade nocturne, Auxiliaire)"
+  ],
+  "notes": "Glossary had « Brigade de la Nuit »."
+ },
+ "The Sunlit Man": {
+  "fr": "L'Ensoleillé",
+  "status": "official",
+  "sources": [
+   "https://www.livredepoche.com/livre/lensoleille-9782253937296/"
+  ],
+  "notes": ""
+ },
+ "Crow": {
+  "fr": "Corneille",
+  "status": "official",
+  "sources": [
+   "https://booknode.com/tress_de_la_mer_emeraude_03484140/personnages (Corneille, la sorcière) — transl. Sébastien Guillot"
+  ],
+  "notes": "Glossary had « Corbeau ». Captain Crow is a woman."
+ },
+ "Crow's Song": {
+  "fr": "Chant de la Corneille",
+  "status": "unverified",
+  "sources": [
+   "https://booknode.com/tress_de_la_mer_emeraude_03484140/personnages (Corneille, la sorcière) — transl. Sébastien Guillot"
+  ],
+  "notes": "Derived from Corneille; ship name not attested."
+ },
+ "Sorceress": {
+  "fr": "Sorcière",
+  "status": "official",
+  "sources": [
+   "https://booknode.com/tress_de_la_mer_emeraude_03484140/personnages (Corneille, la sorcière) — transl. Sébastien Guillot"
+  ],
+  "notes": ""
+ },
+ "Tress of the Emerald Sea": {
+  "fr": "Tress de la mer Émeraude",
+  "status": "official",
+  "sources": [
+   "https://booknode.com/tress_de_la_mer_emeraude_03484140/personnages (Corneille, la sorcière) — transl. Sébastien Guillot"
+  ],
+  "notes": ""
+ },
+ "Painter": {
+  "fr": "Peintre",
+  "status": "official",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Yumi-et-le-peintre-de-cauchemars/1540363 (Peintre)"
+  ],
+  "notes": "Used without article as a name (« Peintre »)."
+ },
+ "Nightmare painter": {
+  "fr": "peintre de cauchemars",
+  "status": "official",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Yumi-et-le-peintre-de-cauchemars/1540363 (Peintre)"
+  ],
+  "notes": ""
+ },
+ "Sixth of the Dusk": {
+  "fr": "Sixième du Crépuscule",
+  "status": "official",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Sixieme-du-crepuscule-et-autres-nouvelles/1064048 ; https://www.elbakin.net/livre/6199/l-ile-de-noirebraise (Crépuscule, Aviares, Panthéon)"
+  ],
+  "notes": ""
+ },
+ "Dusk": {
+  "fr": "Crépuscule",
+  "status": "official",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Sixieme-du-crepuscule-et-autres-nouvelles/1064048 ; https://www.elbakin.net/livre/6199/l-ile-de-noirebraise (Crépuscule, Aviares, Panthéon)"
+  ],
+  "notes": ""
+ },
+ "Aviar": {
+  "fr": "Aviare",
+  "status": "community",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Sixieme-du-crepuscule-et-autres-nouvelles/1064048 ; https://www.elbakin.net/livre/6199/l-ile-de-noirebraise (Crépuscule, Aviares, Panthéon)"
+  ],
+  "notes": "Reviews and LdP blurb of L'Île de Noirebraise: « les Aviares »."
+ },
+ "Pantheon": {
+  "fr": "Panthéon",
+  "status": "official",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Sixieme-du-crepuscule-et-autres-nouvelles/1064048 ; https://www.elbakin.net/livre/6199/l-ile-de-noirebraise (Crépuscule, Aviares, Panthéon)"
+  ],
+  "notes": ""
+ },
+ "Sand Masters": {
+  "fr": "Maîtres des sables",
+  "status": "official",
+  "sources": [
+   "https://www.izneo.com/fr/bd/fantastique/white-sand-24793 (Graph Zeppelin: « Maîtres des sables », « Darksider »)"
+  ],
+  "notes": "Glossary had « Maîtres du sable ». White Sand FR = Graph Zeppelin comic (not Fazi)."
+ },
+ "Sand Master": {
+  "fr": "Maître des sables",
+  "status": "official",
+  "sources": [
+   "https://www.izneo.com/fr/bd/fantastique/white-sand-24793 (Graph Zeppelin: « Maîtres des sables », « Darksider »)"
+  ],
+  "notes": ""
+ },
+ "Darksider": {
+  "fr": "Darksider",
+  "status": "official",
+  "sources": [
+   "https://www.izneo.com/fr/bd/fantastique/white-sand-24793 (Graph Zeppelin: « Maîtres des sables », « Darksider »)"
+  ],
+  "notes": "Kept in English in the French blurb. Glossary had « Obscurien »."
+ },
+ "Darkside": {
+  "fr": "Darkside",
+  "status": "unverified",
+  "sources": [
+   "https://www.izneo.com/fr/bd/fantastique/white-sand-24793 (Graph Zeppelin: « Maîtres des sables », « Darksider »)"
+  ],
+  "notes": "Kept English by analogy with « Darksider »."
+ },
+ "Dayside": {
+  "fr": "Dayside",
+  "status": "unverified",
+  "sources": [
+   "https://www.izneo.com/fr/bd/fantastique/white-sand-24793 (Graph Zeppelin: « Maîtres des sables », « Darksider »)"
+  ],
+  "notes": "Kept English by analogy with « Darksider »."
+ },
+ "White Sand": {
+  "fr": "White Sand",
+  "status": "official",
+  "sources": [
+   "https://www.izneo.com/fr/bd/fantastique/white-sand-24793 (Graph Zeppelin: « Maîtres des sables », « Darksider »)"
+  ],
+  "notes": "French edition keeps the English title. Glossary had « Sable blanc »."
+ },
+ "Forests of Hell": {
+  "fr": "forêts de l'enfer",
+  "status": "official",
+  "sources": [
+   "https://www.goodreads.com/fr/book/show/42613578"
+  ],
+  "notes": "From the title « Des ombres pour Silence dans les forêts de l'enfer »."
+ },
+ "shades": {
+  "fr": "ombres",
+  "status": "official",
+  "sources": [
+   "https://www.goodreads.com/fr/book/show/42613578"
+  ],
+  "notes": ""
+ },
+ "Shades": {
+  "fr": "ombres",
+  "status": "official",
+  "sources": [
+   "https://www.goodreads.com/fr/book/show/42613578"
+  ],
+  "notes": ""
+ },
+ "shade": {
+  "fr": "ombre",
+  "status": "official",
+  "sources": [
+   "https://www.goodreads.com/fr/book/show/42613578"
+  ],
+  "notes": ""
+ },
+ "Forger": {
+  "fr": "Forgeuse / Forgeur",
+  "status": "official",
+  "sources": [
+   "https://www.librairie-gallimard.com/livre/9782253177142-l-ame-de-l-empereur-brandon-sanderson/ (« la jeune Forgeuse »)"
+  ],
+  "notes": ""
+ },
+ "Forgery": {
+  "fr": "Falsification",
+  "status": "unverified",
+  "sources": [],
+  "notes": "One search snippet (« l'art de la Falsification ») not confirmed by a primary source. QA."
+ },
+ "soulstamp": {
+  "fr": "tampon d'âme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "« tampons » attested in French summaries; full compound not confirmed."
+ },
+ "The Emperor's Soul": {
+  "fr": "L'Âme de l'empereur",
+  "status": "official",
+  "sources": [
+   "https://www.librairie-gallimard.com/livre/9782253177142-l-ame-de-l-empereur-brandon-sanderson/ (« la jeune Forgeuse »)"
+  ],
+  "notes": "Some covers capitalise « Empereur »."
+ },
+ "Arcanum Unbounded": {
+  "fr": "Arcanum Unbounded",
+  "status": "unpublished",
+  "sources": [
+   "https://www.goodreads.com/fr/book/show/42613578"
+  ],
+  "notes": "Only partially published in French as « Sixième du crépuscule et autres nouvelles » (2018); the planetary essays are not confirmed in French."
+ },
+ "Wind and Truth": {
+  "fr": "Vent et vérité",
+  "status": "official",
+  "sources": [
+   "https://books.google.com/books/about/Vent_et_v%C3%A9rit%C3%A9_Volume_1_Les_Archives_d.html?id=Wh9pEQAAQBAJ (publisher blurb: « champion d'Abjection »)"
+  ],
+  "notes": ""
+ },
+ "Rhythm of War": {
+  "fr": "Rythme de guerre",
+  "status": "official",
+  "sources": [
+   "https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (publisher blurb)"
+  ],
+  "notes": ""
+ },
+ "The Way of Kings": {
+  "fr": "La Voie des rois",
+  "status": "official",
+  "sources": [
+   "https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/ ; https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (Pont Quatre, Plaines Brisées, Fusionnés, Néantifères)"
+  ],
+  "notes": ""
+ },
+ "Words of Radiance": {
+  "fr": "Livre des Radieux",
+  "status": "official",
+  "sources": [
+   "https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/ ; https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-4--Rythme-de-guerre-/1292734 (Pont Quatre, Plaines Brisées, Fusionnés, Néantifères)"
+  ],
+  "notes": "Title « Le Livre des Radieux »."
+ },
+ "The Lost Metal": {
+  "fr": "Le Métal perdu",
+  "status": "official",
+  "sources": [
+   "https://www.livredepoche.com/livre/le-metal-perdu-fils-des-brumes-wax-wayne-tome-4-9782253243540/ (blurb: « le Cercle »)"
+  ],
+  "notes": ""
+ },
+ "Lord Ruler": {
+  "fr": "Seigneur Maître",
+  "status": "official",
+  "sources": [
+   "https://www.livredepoche.com/livre/les-bracelets-des-larmes-fils-des-brumes-wax-wayne-tome-3-9782253191407/ (blurb: « ces cerveaux métalliques du Seigneur Maître »)"
+  ],
+  "notes": ""
+ },
+ "Steel Inquisitor": {
+  "fr": "Inquisiteur d'Acier",
+  "status": "official",
+  "sources": [
+   "https://wikiland.org/fr/Mistborn_series"
+  ],
+  "notes": ""
+ },
+ "Lightweaver": {
+  "fr": "Tisseflamme",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Caballeros_Radiantes",
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter",
+   "https://stormlightarchive.fandom.com/it/ (Italian fan wiki citing Fanucci/Mondadori editions)wiki/Cavalieri_Radiosi"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Weeping": {
+  "fr": "les Pleurs",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Knights Radiant": {
+  "fr": "Chevaliers Radieux",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Caballeros_Radiantes",
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter",
+   "https://stormlightarchive.fandom.com/it/ (Italian fan wiki citing Fanucci/Mondadori editions)wiki/Cavalieri_Radiosi"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "honorspren": {
+  "fr": "sprène d'honneur",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento",
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://stormlightarchive.fandom.com/it/ (Italian fan wiki citing Fanucci/Mondadori editions)wiki/Corrivento"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Veil": {
+  "fr": "Voile",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Radiant": {
+  "fr": "Radieux",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Caballeros_Radiantes",
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Splitterr%C3%BCstung",
+   "https://stormlightarchive.fandom.com/it/ (Italian fan wiki citing Fanucci/Mondadori editions)wiki/Cavalieri_Radiosi"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Formless": {
+  "fr": "Sans-Forme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "cultivationspren": {
+  "fr": "sprène de culture",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Timbre": {
+  "fr": "Timbre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "greatshell": {
+  "fr": "grande-carapace",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Alethi": {
+  "fr": "Aléthi",
+  "status": "official",
+  "sources": [
+   "https://www.melaniefazi.net/blog/tag/les-archives-de-roshar/"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Whitespine": {
+  "fr": "échine-blanche",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Chull": {
+  "fr": "chull",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "highprince": {
+  "fr": "haut-prince",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "First Ideal": {
+  "fr": "Premier Idéal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Vorin": {
+  "fr": "vorin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "safehand": {
+  "fr": "main-sûre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Oathgate": {
+  "fr": "Porte-serment",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Herdazians": {
+  "fr": "Herdaziens",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "inkspren": {
+  "fr": "sprène d'encre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Ivory": {
+  "fr": "Ivoire",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Elsecaller": {
+  "fr": "Outreporteur",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Caballeros_Radiantes",
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter",
+   "https://stormlightarchive.fandom.com/it/ (Italian fan wiki citing Fanucci/Mondadori editions)wiki/Cavalieri_Radiosi"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Thrill": {
+  "fr": "Exaltation",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested."
+ },
+ "Thaylen Field": {
+  "fr": "champ de Thaylen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Oathpact": {
+  "fr": "Pacte du Serment",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Damnation": {
+  "fr": "Damnation",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Stump": {
+  "fr": "Souche",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "chull": {
+  "fr": "chull",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "axehound": {
+  "fr": "chien-hache",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "skyeel": {
+  "fr": "anguille céleste",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Third Ideal": {
+  "fr": "Troisième Idéal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "fabrial": {
+  "fr": "fabrial",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Emerald": {
+  "fr": "Émeraude",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Ruby": {
+  "fr": "Rubis",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Sapphire": {
+  "fr": "Saphir",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Topaz": {
+  "fr": "Topaze",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "broam": {
+  "fr": "broam",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Stormform": {
+  "fr": "forme de tempête",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Warform": {
+  "fr": "forme de guerre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Workform": {
+  "fr": "forme de travail",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Mateform": {
+  "fr": "forme d'accouplement",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Firemoss": {
+  "fr": "mousse-de-feu",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Knobweed": {
+  "fr": "herbe-à-bosses",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Blackbane": {
+  "fr": "fléau-noir",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Envisagers": {
+  "fr": "Visionnaires",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Reacher": {
+  "fr": "atteigneur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Heavenly Ones": {
+  "fr": "Célestes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Deepest Ones": {
+  "fr": "Profonds",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Masked Ones": {
+  "fr": "Masqués",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Magnified Ones": {
+  "fr": "Magnifiés",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Ideal": {
+  "fr": "Idéal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Truths": {
+  "fr": "Vérités",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Adhesion": {
+  "fr": "Adhésion",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Gravitation": {
+  "fr": "Gravitation",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Division": {
+  "fr": "Division",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Tension": {
+  "fr": "Tension",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Illumination": {
+  "fr": "Illumination",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Transformation": {
+  "fr": "Transformation",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Midnight Mother": {
+  "fr": "Mère de Minuit",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Essence": {
+  "fr": "Essence",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Sunmaker": {
+  "fr": "Faiseur-de-Soleil",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "singer": {
+  "fr": "chanteur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Warlight": {
+  "fr": "Lumière de guerre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Lifelight": {
+  "fr": "Vitalumière",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Towerlight": {
+  "fr": "Lumière de la Tour",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Aimian": {
+  "fr": "Aimien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Lady of Wishes": {
+  "fr": "Dame des Souhaits",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Windrunner": {
+  "fr": "Marchevent",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Caballeros_Radiantes",
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter",
+   "https://stormlightarchive.fandom.com/it/ (Italian fan wiki citing Fanucci/Mondadori editions)wiki/Cavalieri_Radiosi"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Herdazian": {
+  "fr": "Herdazien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Survivor of Hathsin": {
+  "fr": "Survivant de Hathsin",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Breeze": {
+  "fr": "Brise",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Fantasma",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Allomancer": {
+  "fr": "allomancien",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Alomancia",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "http://de.kosmeer.wikia.com/wiki/Allomant",
+   "https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Push": {
+  "fr": "pousser",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Final Empire": {
+  "fr": "Empire ultime",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Alomancia",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://de.wikipedia.org/wiki/Kinder_des_Nebels",
+   "https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Inquisitor": {
+  "fr": "Inquisiteur",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Inquisidor",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Hemalurgy": {
+  "fr": "Hémalurgie",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Hemalurgia",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://german.wikibrief.org/wiki/Mistborn"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "House Venture": {
+  "fr": "Maison Venture",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "House Renoux": {
+  "fr": "Maison Renoux",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "House Lekal": {
+  "fr": "Maison Lekal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "House Hasting": {
+  "fr": "Maison Hasting",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Feruchemist": {
+  "fr": "Ferrochimiste",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://german.wikibrief.org/wiki/Mistborn"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Soother": {
+  "fr": "Apaiseur",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Aplacador",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Clubs": {
+  "fr": "Clampin",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "spike": {
+  "fr": "pointe",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "medallion": {
+  "fr": "médaillon",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Well of Ascension": {
+  "fr": "Puits de l'Ascension",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Alomancia",
+   "https://cosmere.fr/scadrial/livres",
+   "https://www.mondadori.it/libri/mistborn-era-uno-2-il-pozzo-dellascensione-brandon-sanderson/"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Spook": {
+  "fr": "Spectre",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Fantasma",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Terris Mountains": {
+  "fr": "montagnes de Terris",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "lerasium": {
+  "fr": "lérasium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "harmonium": {
+  "fr": "harmonium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "electrum": {
+  "fr": "électrum",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Seeker": {
+  "fr": "Traqueur",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Alomancia/tabla",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "http://de.kosmeer.wikia.com/wiki/Nebelgeborener",
+   "https://it.everybodywiki.com/Allomanzia"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "duralumin": {
+  "fr": "duralumin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "malatium": {
+  "fr": "malatium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Keep Venture": {
+  "fr": "Forteresse Venture",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Keep Hasting": {
+  "fr": "Forteresse Hasting",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Conventical of Seran": {
+  "fr": "Conventicule de Seran",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Hero of Ages": {
+  "fr": "Héros des siècles",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/El_H%C3%A9roe_de_las_Eras",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://reihenfolge.org/buecherreihe/mistborn/",
+   "https://www.lafeltrinelli.it/serie/mistborn"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "aluminum": {
+  "fr": "aluminium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "mistwraith": {
+  "fr": "spectre des brumes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "New Seran": {
+  "fr": "Nouvelle-Seran",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Elendel Basin": {
+  "fr": "Bassin d'Elendel",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Survivorism": {
+  "fr": "survivantisme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Pathianism": {
+  "fr": "pathianisme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Trellism": {
+  "fr": "trellisme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Survivor": {
+  "fr": "Survivant",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Fantasma",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Mister Suit": {
+  "fr": "Monsieur Costume",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Vanishers": {
+  "fr": "Évanouisseurs",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Bleeder": {
+  "fr": "Saigneur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Path": {
+  "fr": "la Voie",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Pathian": {
+  "fr": "pathien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Skimmer": {
+  "fr": "Écrémeur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Ascendant Warrior": {
+  "fr": "Guerrière Ascendante",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Last Emperor": {
+  "fr": "Dernier Empereur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Lord Mistborn": {
+  "fr": "Seigneur Fils-des-Brumes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Faceless Immortals": {
+  "fr": "Immortels Sans-Visage",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Survivorist": {
+  "fr": "survivantiste",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Koloss-blooded": {
+  "fr": "sang-koloss",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Metallic Arts": {
+  "fr": "Arts métalliques",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://german.wikibrief.org/wiki/Mistborn",
+   "https://stormlightarchive.fandom.com/it/ (Italian fan wiki citing Fanucci/Mondadori editions)wiki/Arti_Metalliche"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Allomancy": {
+  "fr": "Allomancie",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Alomancia",
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://www.piper.de/brandon-sanderson-buecher",
+   "https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Scadrian": {
+  "fr": "scadrien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Ironeyes": {
+  "fr": "Yeux-de-Fer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "gyorn": {
+  "fr": "gyorn",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Jeskeri Mysteries": {
+  "fr": "Mystères jeskeri",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Elantrian": {
+  "fr": "Elantrien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Bloodsealing": {
+  "fr": "scellement de sang",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "New Elantris": {
+  "fr": "Nouvelle Elantris",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Rose Empire": {
+  "fr": "Empire de la Rose",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Moon Scepter": {
+  "fr": "Sceptre lunaire",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Imperial Fool": {
+  "fr": "Fou impérial",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Heritage Faction": {
+  "fr": "faction du Patrimoine",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested."
+ },
+ "Glory Faction": {
+  "fr": "Faction de la Gloire",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Striker": {
+  "fr": "Frappeur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Bloodsealer": {
+  "fr": "Scelleur de sang",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Essence Mark": {
+  "fr": "Marque d'Essence",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Ambition": {
+  "fr": "Ambition",
+  "status": "community",
+  "sources": [
+   "https://everybodywiki.com/Cosm%C3%A8re",
+   "https://stormlightarchive.fandom.com/it/ (Italian fan wiki citing Fanucci/Mondadori editions)wiki/Frammenti"
+  ],
+  "notes": "Glossary community form kept."
+ },
+ "Splinter": {
+  "fr": "Fragment",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Court of Gods": {
+  "fr": "Cour des Dieux",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Awakened": {
+  "fr": "éveillé",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sondeluz"
+  ],
+  "notes": "Glossary community form kept."
+ },
+ "Awaken": {
+  "fr": "éveiller",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sondeluz"
+  ],
+  "notes": "Glossary community form kept."
+ },
+ "Bluefingers": {
+  "fr": "Doigts-Bleus",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Name almost certainly translated (cf. Chanteflamme) but form not found."
+ },
+ "Awakening": {
+  "fr": "Éveil",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sondeluz",
+   "https://cosmere.fr/nalthis/livres/warbreaker",
+   "https://www.phantastik-couch.de/titel/7931-sturmklaenge/",
+   "https://it.wikipedia.org/wiki/Il_Conciliatore_(romanzo)"
+  ],
+  "notes": "Glossary community form kept."
+ },
+ "Drab": {
+  "fr": "Terne",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Idrian": {
+  "fr": "idrien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Royal Locks": {
+  "fr": "Mèches royales",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Austrism": {
+  "fr": "austrisme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Divine Breath": {
+  "fr": "Souffle divin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Heightening": {
+  "fr": "Élévation",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Tenth Heightening": {
+  "fr": "Dixième Élévation",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Manywar": {
+  "fr": "Guerre des Multiples",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Peacegiver": {
+  "fr": "Donneur-de-Paix",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Kalad's Phantoms": {
+  "fr": "Fantômes de Kalad",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "ardent": {
+  "fr": "ardent",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Azure": {
+  "fr": "Azure",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Wall Guard": {
+  "fr": "Garde des Murailles",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Tears of Edgli": {
+  "fr": "Larmes d'Edgli",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Five Scholars": {
+  "fr": "Cinq Érudits",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Clod": {
+  "fr": "Motte",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "ichor-alcohol": {
+  "fr": "alcool-ichor",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Mercystar": {
+  "fr": "Étoile-de-Merci",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Emerald Sea": {
+  "fr": "mer Émeraude",
+  "status": "official",
+  "sources": [],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "aether": {
+  "fr": "éther",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Midnight Sea": {
+  "fr": "mer de Minuit",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Laughing Ann": {
+  "fr": "Ann la Rieuse",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "verdant spores": {
+  "fr": "spores verdoyantes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Zephyr spores": {
+  "fr": "spores zéphyr",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Roseite spores": {
+  "fr": "spores roséites",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Midnight spores": {
+  "fr": "spores de minuit",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Crimson spores": {
+  "fr": "spores pourpres",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Sapphire Sea": {
+  "fr": "mer Saphir",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Nalthian": {
+  "fr": "nalthien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Two Cups": {
+  "fr": "Deux Tasses",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Tress collects cups — rendered « tasses »; ship « les Deux Tasses ». Glossary had « Deux Coupes». Guillot translation not checked."
+ },
+ "Emerald Crown": {
+  "fr": "Couronne d'Émeraude",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Midnight Rose": {
+  "fr": "Rose de Minuit",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Silver Gull": {
+  "fr": "Mouette d'Argent",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Crimson Sea": {
+  "fr": "mer Pourpre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Rose Sea": {
+  "fr": "mer Rose",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Virtuosity": {
+  "fr": "Virtuosité",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "shroud": {
+  "fr": "linceul",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "hion": {
+  "fr": "hion",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Rain": {
+  "fr": "Rain",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Design": {
+  "fr": "Design",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept as glossary; the French could be « Dessin »/« Dessein » (cf. Pattern → Motif)."
+ },
+ "First of the Sun": {
+  "fr": "Premier du Soleil",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Charred": {
+  "fr": "Calcinés",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "sunheart": {
+  "fr": "cœur-de-soleil",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Torment": {
+  "fr": "Tourment",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "sand mastery": {
+  "fr": "maîtrise du sable",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Silence Montane": {
+  "fr": "Silence Montane",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Silence": {
+  "fr": "Silence",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "White Fox": {
+  "fr": "Renard Blanc",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Homeland": {
+  "fr": "la Patrie",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Evil": {
+  "fr": "le Mal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Cosmere": {
+  "fr": "Cosmère",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net",
+   "https://cosmere.fr",
+   "https://www.buchtipp.de/reihenfolgen/brandon-sanderson-reihenfolge/",
+   "https://it.coppermind.net/wiki/Cosmoverso"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Shattering": {
+  "fr": "Fracassement",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Intent": {
+  "fr": "Intention",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Splintered": {
+  "fr": "fragmenté",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Tranquiline Halls": {
+  "fr": "Salles Tranquillines",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Origin": {
+  "fr": "Origine",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Highprince": {
+  "fr": "haut-prince",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Sunraiser": {
+  "fr": "Lève-Soleil",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Skybreaker": {
+  "fr": "Clivecieux",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Caballeros_Radiantes",
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter",
+   "https://stormlightarchive.fandom.com/it/ (Italian fan wiki citing Fanucci/Mondadori editions)wiki/Cavalieri_Radiosi"
+  ],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "Diagram": {
+  "fr": "le Diagramme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "The Final Empire": {
+  "fr": "L'Empire ultime",
+  "status": "official",
+  "sources": [],
+  "notes": "Glossary official form kept (not independently re-verified)."
+ },
+ "crem": {
+  "fr": "crème",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Sliver": {
+  "fr": "Esquille",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Valor": {
+  "fr": "Bravoure",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Seventeenth Shard": {
+  "fr": "Dix-septième Éclat",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Moonlight": {
+  "fr": "Moonlight",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "TwinSoul": {
+  "fr": "Âme-Jumelle",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Beyond": {
+  "fr": "l'Au-delà",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Cognitive Shadow": {
+  "fr": "ombre cognitive",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Mercy": {
+  "fr": "Miséricorde",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Whimsy": {
+  "fr": "Caprice",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Allmother": {
+  "fr": "Mère-de-Tous",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Wandersail": {
+  "fr": "Wandersail",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Perpendicularity": {
+  "fr": "perpendicularité",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Fadrex City": {
+  "fr": "Fadrex",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Valley": {
+  "fr": "la Vallée",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Horneater Peaks": {
+  "fr": "Pics des Mange-cornes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Purelake": {
+  "fr": "Lac Pur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Frostlands": {
+  "fr": "Terres Gelées",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "babsk": {
+  "fr": "babsk",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French source found in searches; glossary form kept as best guess."
+ },
+ "Painrial": {
+  "fr": "douleurial",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Coinage by me (fabrial pattern); not attested."
+ },
+ "Heatrial": {
+  "fr": "chaleurial",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Coinage by me (fabrial pattern); not attested."
+ },
+ "Miles Hundredlives": {
+  "fr": "Miles Hundredlives",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary \"unchanged\"; French surname may be translated."
+ },
+ "chip": {
+  "fr": "brisure",
+  "status": "official",
+  "sources": [
+   "https://www.forum-elbakin.net/viewtopic.php?t=6160&start=780 (Elbakin translator thread: « brisure » = chip, via search snippet)"
+  ],
+  "notes": "Glossary had « pièce » (unverified). Pl. brisures. Sphere denominations: brisure < marque < broam."
+ },
+ "mark": {
+  "fr": "marque",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Follows brisure/broam series; not directly attested in a snippet."
+ },
+ "Hearthstone": {
+  "fr": "Hearthstone",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kaladin’s hometown. No French form found (searched « Âtrepierre », « Foyerpierre »: no hits). Left in English per golden rule; QA should check La Voie des rois, ch. 7."
+ },
+ "Releasers": {
+  "fr": "Libérateurs",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Dustbringers’ preferred name (Oathbringer). Literal rendering; not attested."
+ },
+ "Spark": {
+  "fr": "Étincelle",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Both Malata’s ashspren and the Essence (Chanarach, ruby). Literal; not attested."
+ },
+ "Nahel bond": {
+  "fr": "lien nahel",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal; not attested."
+ },
+ "Peakspren": {
+  "fr": "sprène de cime",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary form kept; no attestation found. Pl. sprènes de cime."
+ },
+ "Mistspren": {
+  "fr": "sprène de brume",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary form kept."
+ },
+ "Highspren": {
+  "fr": "sprène supérieur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary form kept."
+ },
+ "Ashspren": {
+  "fr": "sprène de cendre",
+  "status": "unverified",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar (search snippet listing Désagrégateurs’ spren as « sprène de cendre »; unclear whether quoted from the books)"
+  ],
+  "notes": "Likely official but snippet ambiguous."
+ },
+ "Gloryspren": {
+  "fr": "sprène de gloire",
+  "status": "community",
+  "sources": [
+   "https://lebaralivres.wordpress.com/2017/07/04/la-voie-des-rois-les-archives-de-roshar/ (reader blog listing « sprènes de vent, de gloire, de pourriture », via search snippet)"
+  ],
+  "notes": "Reader-review attestation; probably the book form."
+ },
+ "Rotspren": {
+  "fr": "sprène de pourriture",
+  "status": "community",
+  "sources": [
+   "https://lebaralivres.wordpress.com/2017/07/04/la-voie-des-rois-les-archives-de-roshar/ (reader blog, via search snippet)"
+  ],
+  "notes": "Pl. sprènes de pourriture."
+ },
+ "Flamespren": {
+  "fr": "sprène de flamme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal, on the pattern of sprène de vent."
+ },
+ "Creationspren": {
+  "fr": "sprène de création",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Thaylen": {
+  "fr": "thaylen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Adjective (« marchand thaylen »); cf. Thaylenville."
+ },
+ "Reshi Isles": {
+  "fr": "îles Reshi",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal. « Reshi Sea » → « mer Reshi »."
+ },
+ "Reshi Sea": {
+  "fr": "mer Reshi",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Unclaimed Hills": {
+  "fr": "Collines Incultes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Searched « Collines Incultes / Désolées / non revendiquées »: no hits. Translator-style rendering pending QA; English fallback would be « Unclaimed Hills »."
+ },
+ "Book of Endless Pages": {
+  "fr": "Livre des Pages Infinies",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Ars Arcanum": {
+  "fr": "Ars Arcanum",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Latin title kept."
+ },
+ "Ten Essences": {
+  "fr": "dix Essences",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Essence = Essence (existing review)."
+ },
+ "Zephyr": {
+  "fr": "Zéphyr",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Essence (Jezrien, sapphire). Literal."
+ },
+ "Vapor": {
+  "fr": "Vapeur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Essence. Literal."
+ },
+ "Talus": {
+  "fr": "Talus",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Essence (Talenel, topaz). Same word in French."
+ },
+ "Axies the Collector": {
+  "fr": "Axies le Collectionneur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Siah Aimian": {
+  "fr": "Siah Aimiens",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural, following Aimian = Aimien."
+ },
+ "reverser": {
+  "fr": "inverseur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Fabrial type. Literal."
+ },
+ "conjoiner": {
+  "fr": "conjoncteur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Fabrial type. Literal."
+ },
+ "Silver Kingdom": {
+  "fr": "Royaume d'Argent",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Pl. Royaumes d’Argent. Searched: no French hit."
+ },
+ "Shardhammer": {
+  "fr": "Marteau d'éclat",
+  "status": "unverified",
+  "sources": [],
+  "notes": "On the pattern of Lame d’éclat / Armure d’éclat."
+ },
+ "Wind's Pleasure": {
+  "fr": "Plaisir du Vent",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Ship name. Literal."
+ },
+ "First Dreams": {
+  "fr": "Premiers Rêves",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Ship name. Literal."
+ },
+ "Fourth Bridge": {
+  "fr": "Quatrième Pont",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Navani’s flying ship. Literal."
+ },
+ "Mythica": {
+  "fr": "Mythica",
+  "status": "unverified",
+  "sources": [],
+  "notes": "« la Mythica de Hessi ». Latinate title kept."
+ },
+ "Eila Stele": {
+  "fr": "stèle d'Eila",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Death Rattles": {
+  "fr": "Râles de mort",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Dawnchant": {
+  "fr": "Chant de l'Aube",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Corvana's Analectics": {
+  "fr": "Analectes de Corvana",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Soulcast": {
+  "fr": "transformer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Verb, from Soulcaster = transformateur d’âmes (existing review)."
+ },
+ "Ghostblood": {
+  "fr": "Sang-de-Spectre",
+  "status": "community",
+  "sources": [],
+  "notes": "Singular of Sangs-de-Spectres (existing review). Used as « agent des Sangs-de-Spectres »."
+ },
+ "Hesina": {
+  "fr": "Hesina",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Laral": {
+  "fr": "Laral",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Tarah": {
+  "fr": "Tarah",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Kalami": {
+  "fr": "Kalami",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Lirin": {
+  "fr": "Lirin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Malata": {
+  "fr": "Malata",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Palona": {
+  "fr": "Palona",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Vstim": {
+  "fr": "Vstim",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Kylrm": {
+  "fr": "Kylrm",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Thresh": {
+  "fr": "Thresh",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Tozbek": {
+  "fr": "Tozbek",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Ishikk": {
+  "fr": "Ishikk",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Maya": {
+  "fr": "Maya",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Testament": {
+  "fr": "Testament",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Kabsal": {
+  "fr": "Kabsal",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Vathah": {
+  "fr": "Vathah",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Gaz": {
+  "fr": "Gaz",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Tvlakv": {
+  "fr": "Tvlakv",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Vedeledev": {
+  "fr": "Vedeledev",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Chach": {
+  "fr": "Chach",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Dabbid": {
+  "fr": "Dabbid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Leyten": {
+  "fr": "Leyten",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Bisig": {
+  "fr": "Bisig",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Natan": {
+  "fr": "Natan",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Geranid": {
+  "fr": "Geranid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Ym": {
+  "fr": "Ym",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Alethela": {
+  "fr": "Alethela",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Natanatan": {
+  "fr": "Natanatan",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Makabakam": {
+  "fr": "Makabakam",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Sela Tales": {
+  "fr": "Sela Tales",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Mrall": {
+  "fr": "Mrall",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Dukar": {
+  "fr": "Dukar",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Graves": {
+  "fr": "Graves",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Phendorana": {
+  "fr": "Phendorana",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Notum": {
+  "fr": "Notum",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Caelinora": {
+  "fr": "Caelinora",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Drlwan": {
+  "fr": "Drlwan",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Hessi": {
+  "fr": "Hessi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Tezim": {
+  "fr": "Tezim",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Hanavanar": {
+  "fr": "Hanavanar",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Kmakl": {
+  "fr": "Kmakl",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Emul": {
+  "fr": "Emul",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Vanrial": {
+  "fr": "Vanrial",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Renarin": {
+  "fr": "Renarin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Thaidakar": {
+  "fr": "Thaidakar",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Restares": {
+  "fr": "Restares",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Nikli": {
+  "fr": "Nikli",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Ashyn": {
+  "fr": "Ashyn",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Yomen": {
+  "fr": "Yomen",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Aradan Yomen": {
+  "fr": "Aradan Yomen",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Quellion": {
+  "fr": "Quellion",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Lestibournes": {
+  "fr": "Lestibournes",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Cladent": {
+  "fr": "Cladent",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Hammond": {
+  "fr": "Hammond",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Ladrian": {
+  "fr": "Ladrian",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Yeden": {
+  "fr": "Yeden",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Goradel": {
+  "fr": "Goradel",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Holstep": {
+  "fr": "Holstep",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Urteau": {
+  "fr": "Urteau",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Bilming": {
+  "fr": "Bilming",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Barl": {
+  "fr": "Barl",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Tevidian": {
+  "fr": "Tevidian",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Kar": {
+  "fr": "Kar",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Tresting": {
+  "fr": "Tresting",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Fedik": {
+  "fr": "Fedik",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Feltrel": {
+  "fr": "Feltrel",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Mantiz": {
+  "fr": "Mantiz",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Antillius Shezler": {
+  "fr": "Antillius Shezler",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Valette Renoux": {
+  "fr": "Valette Renoux",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Omin": {
+  "fr": "Omin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Fjon": {
+  "fr": "Fjon",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Jalla": {
+  "fr": "Jalla",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Svorden": {
+  "fr": "Svorden",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Hrovell": {
+  "fr": "Hrovell",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Teullu": {
+  "fr": "Teullu",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Rathbore": {
+  "fr": "Rathbore",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Fjeldor": {
+  "fr": "Fjeldor",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Ghajan": {
+  "fr": "Ghajan",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Forton": {
+  "fr": "Forton",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Dashe": {
+  "fr": "Dashe",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Shaizan": {
+  "fr": "Shaizan",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Oem": {
+  "fr": "Oem",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Vo": {
+  "fr": "Vo",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Havarseth": {
+  "fr": "Havarseth",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Gendren": {
+  "fr": "Gendren",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Namakudo": {
+  "fr": "Namakudo",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Izumakamo": {
+  "fr": "Izumakamo",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Chaeyung": {
+  "fr": "Chaeyung",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Chinikdakordich": {
+  "fr": "Chinikdakordich",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Rebeke": {
+  "fr": "Rebeke",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Torio": {
+  "fr": "Torio",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Hwanji": {
+  "fr": "Hwanji",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Dwookim": {
+  "fr": "Dwookim",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Taisha": {
+  "fr": "Taisha",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Taishin": {
+  "fr": "Taishin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Lossand": {
+  "fr": "Lossand",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Kelzin": {
+  "fr": "Kelzin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Chesterton Divide": {
+  "fr": "Chesterton Divide",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Chesterton": {
+  "fr": "Chesterton",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Red Young": {
+  "fr": "Red Young",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Daggon": {
+  "fr": "Daggon",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Dob": {
+  "fr": "Dob",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Theopolis": {
+  "fr": "Theopolis",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Eelakin": {
+  "fr": "Eelakin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Celebrant": {
+  "fr": "Celebrant",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Ire": {
+  "fr": "Ire",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "Ann": {
+  "fr": "Ann",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, not translated (as for other character/place names in the French editions)."
+ },
+ "coppermind": {
+  "fr": "cerveau de cuivre",
+  "status": "official",
+  "sources": [
+   "https://epdf.pub/le-heros-des-siecles42212bc21ad464c6b9938194525ef79672282.html (French text of Le Héros des siècles, via search snippet: « cerveaux de cuivre »)"
+  ],
+  "notes": "Consistent with metalmind = cerveau métallique. Pl. cerveaux de cuivre."
+ },
+ "Roughs": {
+  "fr": "Rocailles",
+  "status": "community",
+  "sources": [
+   "https://www.bookenstock.fr/2012/10/lalliage-de-la-justice-de-brandon.html",
+   "https://lespipelettesenparlent.com/2019/04/alliage-de-la-justice-brandon-sanderson-2/",
+   "https://www.audible.ca/series/Fils-des-Brumes-Wax-Wayne-Audiobooks/B0DCK5TBWZ (« l’ancien garde-loi des Rocailles », via search snippets)"
+  ],
+  "notes": "« les Rocailles ». Very likely the official form (blurb-style wording), but only seen in snippets."
+ },
+ "Weathering": {
+  "fr": "Weathering",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Town in the Roughs; no French form found, kept in English."
+ },
+ "mist spirit": {
+  "fr": "esprit des brumes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal. Distinct from mistwraith = spectre des brumes."
+ },
+ "Blessing": {
+  "fr": "Bénédiction",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kandra Blessings. Potency = Puissance, Presence = Présence, Awareness = Lucidité, Stability = Stabilité (all literal, unattested)."
+ },
+ "Blessing of Potency": {
+  "fr": "Bénédiction de Puissance",
+  "status": "unverified",
+  "sources": [],
+  "notes": ""
+ },
+ "Blessing of Presence": {
+  "fr": "Bénédiction de Présence",
+  "status": "unverified",
+  "sources": [],
+  "notes": ""
+ },
+ "Blessing of Awareness": {
+  "fr": "Bénédiction de Lucidité",
+  "status": "unverified",
+  "sources": [],
+  "notes": ""
+ },
+ "Blessing of Stability": {
+  "fr": "Bénédiction de Stabilité",
+  "status": "unverified",
+  "sources": [],
+  "notes": ""
+ },
+ "Generation": {
+  "fr": "Génération",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kandra Generations (Première, Deuxième, Troisième…)."
+ },
+ "Second Generation": {
+  "fr": "Deuxième Génération",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Could also be « Seconde Génération »; unattested."
+ },
+ "Seer": {
+  "fr": "Voyant",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Atium Misting. Not found in the fr.wikipedia allomancy table snippet."
+ },
+ "Pulser": {
+  "fr": "Indolent",
+  "status": "community",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": "Glossary had « Pulseur » (unverified). fr.wikipedia allomancy table gives « Indolent » for the cadmium Misting; f. Indolente."
+ },
+ "Slider": {
+  "fr": "Glisseur",
+  "status": "community",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": "fr.wikipedia table (bubble that speeds time). f. Glisseuse."
+ },
+ "bendalloy": {
+  "fr": "cerrobend",
+  "status": "community",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": "Glossary had « bendalliage » (unverified). fr.wikipedia table names the speed-bubble metal « cerrobend »; adopted. QA: check L’Alliage de la justice."
+ },
+ "cadmium": {
+  "fr": "cadmium",
+  "status": "unverified",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": "Same word."
+ },
+ "chromium": {
+  "fr": "chrome",
+  "status": "unverified",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Rioter": {
+  "fr": "Exalteur",
+  "status": "community",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)",
+   "https://brandonsanderson.webfantasy.fr/forum/topic-4832-1-Table_allomantique_des_metaux.html (via search snippet)"
+  ],
+  "notes": "Glossary had « Émeutier » (unverified). fr.wikipedia and French fan forum both give « Exalteur » for the zinc Misting."
+ },
+ "Augur": {
+  "fr": "Augure",
+  "status": "community",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": "Gold Misting."
+ },
+ "Oracle": {
+  "fr": "Oracle",
+  "status": "community",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": "Electrum Misting."
+ },
+ "Leecher": {
+  "fr": "Sangsue",
+  "status": "community",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": "Chromium Misting. Feminine noun regardless of sex: « une Sangsue »."
+ },
+ "Nicroburst": {
+  "fr": "Nicrobrûleur",
+  "status": "community",
+  "sources": [
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": "Nicrosil Misting."
+ },
+ "Sparker": {
+  "fr": "Étincelle",
+  "status": "community",
+  "sources": [
+   "https://franco.wiki/fr/Fils-des-brumes.html (fr.wikipedia mirror, ferrochemy table, via search snippet)"
+  ],
+  "notes": "Zinc Ferring. Feminine noun: « une Étincelle »."
+ },
+ "Windwhisper": {
+  "fr": "Sifflevent",
+  "status": "community",
+  "sources": [
+   "https://franco.wiki/fr/Fils-des-brumes.html (fr.wikipedia mirror, ferrochemy table, via search snippet)",
+   "https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes (mirror of fr.wikipedia « Magie dans Fils-des-brumes », via search snippet)"
+  ],
+  "notes": "Tin Ferring."
+ },
+ "Firesoul": {
+  "fr": "Ardent",
+  "status": "community",
+  "sources": [
+   "https://franco.wiki/fr/Fils-des-brumes.html (fr.wikipedia mirror, ferrochemy table, via search snippet)"
+  ],
+  "notes": "Brass Ferring."
+ },
+ "Sentry": {
+  "fr": "Sentinelle",
+  "status": "community",
+  "sources": [
+   "https://franco.wiki/fr/Fils-des-brumes.html (fr.wikipedia mirror, ferrochemy table, via search snippet)"
+  ],
+  "notes": "Bronze Ferring. Feminine noun: « une Sentinelle »."
+ },
+ "Bloodmaker": {
+  "fr": "Sang-Neuf",
+  "status": "community",
+  "sources": [
+   "https://franco.wiki/fr/Fils-des-brumes.html (fr.wikipedia mirror, ferrochemy table, via search snippet)"
+  ],
+  "notes": "Gold Ferring. Single-source."
+ },
+ "Gasper": {
+  "fr": "Insuffleur",
+  "status": "community",
+  "sources": [
+   "https://everybodywiki.com/Magie_dans_Fils-des-brumes (via search snippet)"
+  ],
+  "notes": "Cadmium Ferring. Single fan-wiki source."
+ },
+ "Bloody Tan": {
+  "fr": "Tan le Sanglant",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "ettmetal": {
+  "fr": "ettmetal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept as in English."
+ },
+ "trellium": {
+  "fr": "trellium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Same word."
+ },
+ "Raysium": {
+  "fr": "raysium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Same word."
+ },
+ "god metal": {
+  "fr": "métal divin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "As already used in content/fr/scadrial.json (scadrial-020)."
+ },
+ "Citizen": {
+  "fr": "Citoyen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Quellion’s title (« le Citoyen »)."
+ },
+ "Lord Prelan": {
+  "fr": "Seigneur Prélan",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal; parallel to Seigneur Maître."
+ },
+ "Lord Renoux": {
+  "fr": "seigneur Renoux",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Era-1 « Lord » rendered « seigneur »; era-2 content keeps « Lord » (e.g. Lord Harms, Lord Shezler in The Eleventh Metal) — QA check."
+ },
+ "Terris Dominance": {
+  "fr": "Domination de Terris",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Synod": {
+  "fr": "Synode",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Keepers’ Synod = Synode des Gardiens."
+ },
+ "boxing": {
+  "fr": "boxing",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Coin; no French form found, kept in English (pl. boxings). QA: check L’Empire ultime."
+ },
+ "Survivor's Treasure": {
+  "fr": "Trésor du Survivant",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal (Survivor = Survivant, official)."
+ },
+ "Canton": {
+  "fr": "Canton",
+  "status": "official",
+  "sources": [
+   "https://epdf.pub/le-puits-de-lascension42624b518590a26f19ab7c18965a9fe558939.html (French text of Le Puits de l’Ascension, via search snippet: « Canton des Finances du Ministère d’Acier »)"
+  ],
+  "notes": ""
+ },
+ "Canton of Finance": {
+  "fr": "Canton des Finances",
+  "status": "official",
+  "sources": [
+   "https://epdf.pub/le-puits-de-lascension42624b518590a26f19ab7c18965a9fe558939.html (via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Canton of Inquisition": {
+  "fr": "Canton de l'Inquisition",
+  "status": "unverified",
+  "sources": [],
+  "notes": "On the attested pattern « Canton des Finances »."
+ },
+ "Canton of Orthodoxy": {
+  "fr": "Canton de l'Orthodoxie",
+  "status": "unverified",
+  "sources": [],
+  "notes": "On the attested pattern."
+ },
+ "Canton of Resource": {
+  "fr": "Canton des Ressources",
+  "status": "unverified",
+  "sources": [],
+  "notes": "On the attested pattern."
+ },
+ "The Well of Ascension": {
+  "fr": "Le Puits de l'Ascension",
+  "status": "official",
+  "sources": [
+   "content/fr/WORK_TITLES.json"
+  ],
+  "notes": "Book title."
+ },
+ "The Alloy of Law": {
+  "fr": "L'Alliage de la justice",
+  "status": "official",
+  "sources": [
+   "content/fr/WORK_TITLES.json"
+  ],
+  "notes": "Book title."
+ },
+ "The Eleventh Metal": {
+  "fr": "Le Onzième Métal",
+  "status": "official",
+  "sources": [
+   "content/fr/WORK_TITLES.json"
+  ],
+  "notes": "Book title."
+ },
+ "Allomancer Jak and the Pits of Eltania": {
+  "fr": "Jak l'Allomancien et les fosses d'Eltania",
+  "status": "official",
+  "sources": [
+   "content/fr/WORK_TITLES.json"
+  ],
+  "notes": "Book title."
+ },
+ "The Hope of Elantris": {
+  "fr": "The Hope of Elantris",
+  "status": "unpublished",
+  "sources": [
+   "content/fr/WORK_TITLES.json"
+  ],
+  "notes": "Not published in French; title kept in English."
+ },
+ "Aon Tia": {
+  "fr": "aon Tia",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Aon names unchanged."
+ },
+ "Bloodsealed": {
+  "fr": "scellé par le sang",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Rendered as « tampon de scellement de sang » (Bloodsealing = scellement de sang, existing review)."
+ },
+ "Chasm Line": {
+  "fr": "Ligne du Gouffre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Widow's Trial": {
+  "fr": "Épreuve de la Veuve",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Svordish": {
+  "fr": "svordien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Demonym, derived."
+ },
+ "Dzhamarian": {
+  "fr": "dzhamarien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Demonym, derived."
+ },
+ "ragnat": {
+  "fr": "ragnat",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Derethi rank, kept (pl. -s)."
+ },
+ "grador": {
+  "fr": "grador",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Derethi rank, kept (pl. -s)."
+ },
+ "arteth": {
+  "fr": "arteth",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Derethi rank, kept (pl. -s)."
+ },
+ "dorven": {
+  "fr": "dorven",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Derethi rank, kept (pl. -s)."
+ },
+ "Roost": {
+  "fr": "Perchoir",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "The Hope of Elantris is unpublished in French. Translated (with the generic distractors Nid, Bergerie, Berceau) so the answer does not stand out in English; English fallback would be « the Roost »."
+ },
+ "Grands": {
+  "fr": "Grands",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Ruling class of the Rose Empire; same word."
+ },
+ "soulstone": {
+  "fr": "pierre d'âme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "First Heightening": {
+  "fr": "Première Élévation",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/src/documents/warbreaker-resume-complet.pdf (via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Third Heightening": {
+  "fr": "Troisième Élévation",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/src/documents/warbreaker-resume-complet.pdf (via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Sixth Heightening": {
+  "fr": "Sixième Élévation",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/src/documents/warbreaker-resume-complet.pdf (via search snippet)"
+  ],
+  "notes": ""
+ },
+ "Red Panther": {
+  "fr": "Panthère Rouge",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Boat name. Literal."
+ },
+ "Five Visions": {
+  "fr": "Cinq Visions",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Bright Sea": {
+  "fr": "mer Brillante",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Inner Sea": {
+  "fr": "mer Intérieure",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Iridescent Tones": {
+  "fr": "Tons iridescents",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal; searched « Tons Iridescents / Tonalités iridescentes »: no hit."
+ },
+ "Hopefinder": {
+  "fr": "Trouve-l'Espoir",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary form kept."
+ },
+ "hijo": {
+  "fr": "hijo",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "As in yoki-hijo (glossary: unchanged). Invariable plural. Reader reviews describe them as « esprits »."
+ },
+ "Yoki-hijo": {
+  "fr": "yoki-hijo",
+  "status": "unchanged",
+  "sources": [
+   "https://cosmere.fr/komashi/lexique/yoki-hijo"
+  ],
+  "notes": ""
+ },
+ "father machine": {
+  "fr": "machine père",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Noodle Pupil": {
+  "fr": "Élève aux Nouilles",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Shop name. Literal."
+ },
+ "Noodle Princess": {
+  "fr": "Princesse aux Nouilles",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Shop name. Literal."
+ },
+ "Compassion": {
+  "fr": "Compassion",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Canticle personal name; same word."
+ },
+ "Contemplation": {
+  "fr": "Contemplation",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Canticle personal name; same word."
+ },
+ "Zeal": {
+  "fr": "Zeal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Canticle personal name; left in English pending check of L’Ensoleillé (Fazi may have translated it, e.g. « Zèle »)."
+ },
+ "Elegy Salvage": {
+  "fr": "Elegy Salvage",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Personal name left in English pending check; same for Divinity, Salvage."
+ },
+ "Elegy": {
+  "fr": "Elegy",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Elegy Salvage."
+ },
+ "Divinity": {
+  "fr": "Divinity",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Elegy Salvage."
+ },
+ "Salvage": {
+  "fr": "Salvage",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Family name; see Elegy Salvage."
+ },
+ "Greater Good": {
+  "fr": "Bien Suprême",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "Beacon": {
+  "fr": "Phare",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Canticle city. Literal."
+ },
+ "Beaconites": {
+  "fr": "Phariens",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Derived from Phare."
+ },
+ "Lodestar": {
+  "fr": "Étoile-Guide",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Title. Literal."
+ },
+ "Sunlit One": {
+  "fr": "Ensoleillé",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Matches official book title L’Ensoleillé (The Sunlit Man)."
+ },
+ "Threnodite": {
+  "fr": "Threnodien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Demonym derived from Threnody (unchanged)."
+ },
+ "sprouter": {
+  "fr": "germeur",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/src/documents/tress-de-la-mer-emeraude-resume-complet.pdf (« la nouvelle germeuse du navire », via search snippet)",
+   "https://malecturotheque.wordpress.com/2023/04/26/tress-de-la-mer-emeraude/ (« germeur », via search snippet)"
+  ],
+  "notes": "f. germeuse. Fan summary + reader blog; probably Guillot’s form."
+ },
+ "sprouters": {
+  "fr": "germeurs",
+  "status": "community",
+  "sources": [
+   "https://malecturotheque.wordpress.com/2023/04/26/tress-de-la-mer-emeraude/ (via search snippet)"
+  ],
+  "notes": ""
+ },
+ "aether spores": {
+  "fr": "spores d'éther",
+  "status": "unverified",
+  "sources": [],
+  "notes": "aether = éther (existing review)."
+ },
+ "Cognitive Shadows": {
+  "fr": "ombres cognitives",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural of existing entry."
+ },
+ "sunhearts": {
+  "fr": "cœurs-de-soleil",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural of existing entry."
+ },
+ "Professions": {
+  "fr": "Professions",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Lossand’s guilds; same word."
+ },
+ "Mastrell's Path": {
+  "fr": "Chemin du Mastrell",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal."
+ },
+ "sandling": {
+  "fr": "sandling",
+  "status": "unverified",
+  "sources": [],
+  "notes": "White Sand creature; no French form found, kept in English."
+ },
+ "Kerztian": {
+  "fr": "kerztien",
+  "status": "unverified",
+  "sources": [
+   "content/fr/otros.json (otros-038 already uses « Kerztiens »)"
+  ],
+  "notes": "Glossary lists Kerztians as unchanged; existing French content uses the French plural « Kerztiens »."
+ },
+ "Ones Above": {
+  "fr": "Ceux-d'en-haut",
+  "status": "official",
+  "sources": [
+   "https://www.livredepoche.com/livre/lile-de-noirebraise-edition-collector-9782253255178/ (publisher blurb, via search snippet)",
+   "https://bibliotheques.paris.fr/doc/SYRACUSE/1480488 (library record of L’Île de Noirebraise, via search snippet)"
+  ],
+  "notes": "Hyphenated in the publisher blurb for L’Île de Noirebraise."
+ },
+ "Nightmaws": {
+  "fr": "gueules-de-nuit",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/premiere-du-soleil/lexique/ile-de-patji (« Gueule-de-nuit », via search snippet)"
+  ],
+  "notes": "Sg. gueule-de-nuit."
+ },
+ "nightmaws": {
+  "fr": "gueules-de-nuit",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/premiere-du-soleil/lexique/ile-de-patji (via search snippet)"
+  ],
+  "notes": ""
+ },
+ "deepwalker": {
+  "fr": "marcheur des profondeurs",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal; no entry found on cosmere.fr."
+ },
+ "Deepwalkers": {
+  "fr": "marcheurs des profondeurs",
+  "status": "unverified",
+  "sources": [],
+  "notes": ""
+ },
+ "Rosharan system": {
+  "fr": "système de Roshar",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Descriptive."
+ },
+ "Rosharan": {
+  "fr": "Roshari",
+  "status": "official",
+  "sources": [],
+  "notes": "As used in existing content (« les Rosharis »)."
+ },
+ "Fortune": {
+  "fr": "Fortune",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Feruchemical attribute (chromium)."
+ },
+ "Light": {
+  "fr": "Lumière",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Generic Investiture « Light »."
+ },
+ "Silverlight": {
+  "fr": "Argentiflamme",
+  "status": "community",
+  "sources": [
+   "https://cosmere.fr/scadrial (French fan site: « Argentiflamme », cité mythique du Royaume cognitif, via search snippet)"
+  ],
+  "notes": "Community form from cosmere.fr; follows the Fulgiflamme pattern. No official occurrence known."
+ },
+ "Realm": {
+  "fr": "Royaume",
+  "status": "official",
+  "sources": [],
+  "notes": "As in Royaume cognitif (official)."
+ },
+ "Hordelings": {
+  "fr": "hordelins",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Coined; no attestation."
+ },
+ "Cremlings": {
+  "fr": "crémlings",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Coined; existing review has crem = crème. QA check."
+ },
+ "Larkins": {
+  "fr": "larquins",
+  "status": "official",
+  "sources": [],
+  "notes": "Plural of existing entry."
+ },
+ "Worldsinger": {
+  "fr": "Chanteur de mondes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Literal; search budget exhausted before verification."
+ },
+ "Retribution": {
+  "fr": "Rétribution",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary form kept."
+ },
+ "worldhopper": {
+  "fr": "voyageur entre les mondes",
+  "status": "unverified",
+  "sources": [
+   "content/fr/otros.json, content/fr/cosmere.json (existing usage)"
+  ],
+  "notes": "Glossary had « voyageur interplanétaire »; existing French content consistently uses « voyageur entre les mondes ». Kept the latter."
+ },
+ "Desolation": {
+  "fr": "Désolation",
+  "status": "unverified",
+  "sources": [],
+  "notes": ""
+ }
+}

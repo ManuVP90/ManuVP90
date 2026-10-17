@@ -1,0 +1,1375 @@
+{
+ "Oathgate": {
+  "it": "Giuriporta",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Giuriporta\""
+  ],
+  "notes": "f. (la Giuriporta, pl. le Giuriporte). Glossary had \"Giuraportale\"."
+ },
+ "Stormfather": {
+  "it": "Folgopadre",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Folgopadre\""
+  ],
+  "notes": "m. (il Folgopadre). Built on Folgoluce like the official edition; glossary had \"Padre della Tempesta\"."
+ },
+ "Spanreed": {
+  "it": "distacanna",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Distacanna\""
+  ],
+  "notes": "f. (la distacanna, pl. le distacanne). Glossary had \"cannalegata\"."
+ },
+ "Soulcasting": {
+  "it": "Animutazione",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Animutazione\""
+  ],
+  "notes": "f. Glossary had \"plasmanima\"."
+ },
+ "Soulcaster": {
+  "it": "Animutatore",
+  "status": "unverified",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Animutazione\" (Soulcasting)"
+  ],
+  "notes": "m. Derived from Animutazione (page for Soulcasting); the device/person form itself not seen. Glossary had \"Plasmanime\"."
+ },
+ "Honorblade": {
+  "it": "Onorlama",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Onorlama\"",
+   "https://stormlightarchive.fandom.com/it/wiki/Onorlama"
+  ],
+  "notes": "f. (l'Onorlama, pl. le Onorlame). Glossary had \"Lama dell'Onore\"."
+ },
+ "Everstorm": {
+  "it": "Tempesta Infinita",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Tempesta Infinita\" (redirect from Everstorm)"
+  ],
+  "notes": "f. Glossary had \"Tempesta Eterna\"."
+ },
+ "Horneater": {
+  "it": "Mangiacorno",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Picchi dei Mangiacorno\", \"Gli oceani dei Mangiacorno\""
+  ],
+  "notes": "m./f., invariable (un Mangiacorno, i Mangiacorno). Glossary had \"Mangiacorna\"."
+ },
+ "Horneater Peaks": {
+  "it": "Picchi dei Mangiacorno",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Picchi dei Mangiacorno\""
+  ],
+  "notes": "m. pl. Glossary had \"Picchi Mangiacorna\"."
+ },
+ "gemheart": {
+  "it": "cuorgemma",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Cuorgemma\""
+  ],
+  "notes": "f. (la cuorgemma). Glossary had \"cuoregemma\"."
+ },
+ "Ghostbloods": {
+  "it": "Sanguispettri",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Sanguispettri\""
+  ],
+  "notes": "m. pl. (i Sanguispettri). Glossary had \"Sanguespettrale\"."
+ },
+ "Lightsong": {
+  "it": "Lievecanto",
+  "status": "official",
+  "sources": [
+   "https://it.wikipedia.org/wiki/Il_Conciliatore_(romanzo) (\"il devoto sommo sacerdote di Lievecanto\", via search)",
+   "Italian reader reviews of Il conciliatore (Fanucci)"
+  ],
+  "notes": "m. God of bravery. Glossary said the name was kept in English - wrong."
+ },
+ "Nightblood": {
+  "it": "Sanguinotte",
+  "status": "official",
+  "sources": [
+   "https://it.wikipedia.org/wiki/Il_Conciliatore_(romanzo) (\"la spada vivente Sanguinotte\", via search)",
+   "Italian reader reviews of Il conciliatore"
+  ],
+  "notes": "f.? The sword is \"Sanguinotte\" (proper name, no article needed). Glossary said kept in English - wrong."
+ },
+ "Vanishers": {
+  "it": "Evanescenti",
+  "status": "official",
+  "sources": [
+   "Fanucci/Mondadori blurb of La legge delle lande (\"una banda di rapinatori che si fanno chiamare Evanescenti\", via search)"
+  ],
+  "notes": "m. pl. Glossary had \"Svanitori\"."
+ },
+ "the Set": {
+  "it": "l'Ordine",
+  "status": "official",
+  "sources": [
+   "Mondadori blurb of Il metallo perduto (\"ha dato la caccia all'Ordine\", via search/Goodreads it)"
+  ],
+  "notes": "m. Glossary had \"il Set\". Applies also to \"Set\"."
+ },
+ "Set": {
+  "it": "Ordine",
+  "status": "official",
+  "sources": [
+   "Mondadori blurb of Il metallo perduto"
+  ],
+  "notes": "See \"the Set\"."
+ },
+ "Bleeder": {
+  "it": "Salassa",
+  "status": "official",
+  "sources": [
+   "Mondadori blurb of Le ombre residue (via search summary: \"Salassa, uno dei kandra al servizio del dio Armonia\")"
+  ],
+  "notes": "Proper name, no article. Only one snippet seen - lead may want a second check. Glossary had \"Dissanguatore\"."
+ },
+ "Sorceress": {
+  "it": "Fattucchiera",
+  "status": "official",
+  "sources": [
+   "Mondadori blurb of Tress del mare smeraldo (\"la Fattucchiera del Mare Mezzanotte\", via search)"
+  ],
+  "notes": "f. (la Fattucchiera). Glossary had \"Strega\"."
+ },
+ "Midnight Sea": {
+  "it": "Mare Mezzanotte",
+  "status": "official",
+  "sources": [
+   "Mondadori blurb of Tress del mare smeraldo"
+  ],
+  "notes": "m. Glossary had \"mare di Mezzanotte\". By analogy: Mare Cremisi, Mare Rosa, Mare Zaffiro."
+ },
+ "Sixth of the Dusk": {
+  "it": "Sesto del Vespro",
+  "status": "official",
+  "sources": [
+   "Mondadori Arcanum Unbounded. La collezione Cosmoverso, table of contents (librerie.coop, illibraio, via search)",
+   "it.coppermind.net (page title via search) \"Sesto del Vespro\""
+  ],
+  "notes": "Title and character. Glossary had \"Sesto del Crepuscolo\"."
+ },
+ "Dusk": {
+  "it": "Vespro",
+  "status": "official",
+  "sources": [
+   "Mondadori Arcanum Unbounded (title \"Sesto del Vespro\")"
+  ],
+  "notes": "m. Short name of the character. Glossary had \"Crepuscolo\"."
+ },
+ "Forests of Hell": {
+  "it": "Foreste dell'Inferno",
+  "status": "official",
+  "sources": [
+   "Mondadori Arcanum Unbounded, story title \"Ombre per Silence nelle Foreste dell'Inferno\""
+  ],
+  "notes": "f. pl., capitalized as in the title."
+ },
+ "Forger": {
+  "it": "Contraffattrice",
+  "status": "community",
+  "sources": [
+   "Italian blurb snippet of L'anima dell'imperatore (\"creare - Contraffare - una nuova anima\"; \"la Contraffazione dell'anima\")"
+  ],
+  "notes": "f. for Shai (m. Contraffattore). Sources also show \"Forgiatrice/Forgiatura\" in another edition; could not determine which is in the current Mondadori Arcanum Unbounded. Glossary had \"Falsaria\"."
+ },
+ "Forgery": {
+  "it": "Contraffazione",
+  "status": "community",
+  "sources": [
+   "Italian blurb snippet of L'anima dell'imperatore"
+  ],
+  "notes": "f. Variant seen: \"Forgiatura\". Glossary had \"Falsificazione\"."
+ },
+ "Moon Scepter": {
+  "it": "Scettro della Luna",
+  "status": "community",
+  "sources": [
+   "Italian blurb snippet of L'anima dell'imperatore (\"lo Scettro della Luna\")"
+  ],
+  "notes": "m. Glossary had \"Scettro Lunare\"."
+ },
+ "Tineye": {
+  "it": "Percettore",
+  "status": "community",
+  "sources": [
+   "https://it.everybodywiki.com/Allomanzia (\"Un Misting che brucia stagno è detto Percettore\")",
+   "Italian review calling Spook \"il Percettore\""
+  ],
+  "notes": "m. Glossary had \"Occhio di stagno\"."
+ },
+ "Allomancer Jak": {
+  "it": "l'allomante Jak",
+  "status": "official",
+  "sources": [
+   "Mondadori Arcanum Unbounded, story title \"L'allomante Jak e le fosse di Eltania\""
+  ],
+  "notes": "m. Glossary had \"Jak l'Allomante\"."
+ },
+ "Painter": {
+  "it": "Pittore",
+  "status": "official",
+  "sources": [
+   "Mondadori/Libraccio blurb of Yumi e il pittore di incubi (\"Pittore, invece, pattuglia le strade buie\")"
+  ],
+  "notes": "m. Nikaro's nickname, used without article."
+ },
+ "Nightmare painter": {
+  "it": "pittore di incubi",
+  "status": "official",
+  "sources": [
+   "Title \"Yumi e il pittore di incubi\" (Mondadori 2026)"
+  ],
+  "notes": "m."
+ },
+ "Edgedancer": {
+  "it": "Danzafilo",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) \"Danzafilo\""
+  ],
+  "notes": "Radiant order (invariable). NB the novella title is kept as \"Edgedancer\" in Mondadori's Arcanum Unbounded."
+ },
+ "Lord Ruler": {
+  "it": "Lord Reggente",
+  "status": "official",
+  "sources": [
+   "Italian reviews of the Fanucci/Mondadori trilogy (\"il crudele Lord Reggente\")",
+   "Libraccio listing of Il pozzo dell'ascensione (Mondadori 2022)"
+  ],
+  "notes": "m. (il Lord Reggente)."
+ },
+ "Preservation": {
+  "it": "Preservazione",
+  "status": "official",
+  "sources": [
+   "Italian reviews of Il campione delle ere (\"la lotta tra Rovina e Preservazione\")",
+   "stormlightarchive.fandom.com/it (via search) Frammenti"
+  ],
+  "notes": "f. Glossary status was community; it.wikipedia/es-style \"Conservazione\" NOT used."
+ },
+ "Ruin": {
+  "it": "Rovina",
+  "status": "official",
+  "sources": [
+   "Italian reviews of Il campione delle ere",
+   "stormlightarchive.fandom.com/it (via search)"
+  ],
+  "notes": "f."
+ },
+ "Harmony": {
+  "it": "Armonia",
+  "status": "official",
+  "sources": [
+   "Italian reviews of Il campione delle ere",
+   "stormlightarchive.fandom.com/it (via search)"
+  ],
+  "notes": "f. as a Shard; Sazed is still \"lui\"."
+ },
+ "Shard": {
+  "it": "Frammento",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Frammento\""
+  ],
+  "notes": "m. (il Frammento, pl. i Frammenti)."
+ },
+ "Steel Inquisitor": {
+  "it": "Inquisitore d'Acciaio",
+  "status": "official",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Inquisitori d'Acciaio\""
+  ],
+  "notes": "m."
+ },
+ "Steel Ministry": {
+  "it": "Culto d'Acciaio",
+  "status": "official",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Culto d'Acciaio\""
+  ],
+  "notes": "m."
+ },
+ "Thug": {
+  "it": "Lottatore",
+  "status": "official",
+  "sources": [
+   "it.wikipedia Mistborn: L'Ultimo Impero (\"Ham, il Lottatore, che brucia peltro\", via search)",
+   "it.everybodywiki Allomanzia"
+  ],
+  "notes": "m. Fan wiki notes \"bruto\" as an era-1 variant."
+ },
+ "Soother": {
+  "it": "Sedatore",
+  "status": "official",
+  "sources": [
+   "it.wikipedia Mistborn: L'Ultimo Impero (\"Breeze, il Sedatore, che brucia ottone\")"
+  ],
+  "notes": "m."
+ },
+ "Coinshot": {
+  "it": "Repulsore",
+  "status": "community",
+  "sources": [
+   "it.everybodywiki Allomanzia / stormlightarchive.fandom.com/it (via search) Arti Metalliche (\"Repulsore o, in epoca imperiale, sparamonete\")"
+  ],
+  "notes": "m. Variant \"sparamonete\" (era 1). No edition text seen."
+ },
+ "Lurcher": {
+  "it": "Attrattore",
+  "status": "community",
+  "sources": [
+   "it.everybodywiki Allomanzia (\"Un Misting che brucia ferro è detto Attrattore\")"
+  ],
+  "notes": "m."
+ },
+ "Mistborn": {
+  "it": "Mistborn",
+  "status": "official",
+  "sources": [
+   "it.wikipedia Mistborn (\"Misting ... e Mistborn\")"
+  ],
+  "notes": "Kept in English, invariable (un/una Mistborn, i Mistborn)."
+ },
+ "Misting": {
+  "it": "Misting",
+  "status": "official",
+  "sources": [
+   "it.wikipedia Mistborn"
+  ],
+  "notes": "Kept in English, invariable."
+ },
+ "Breath": {
+  "it": "Soffio",
+  "status": "official",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Soffio BioCromatico\"",
+   "Fanucci blurb of Il conciliatore (\"Soffio vitale\")"
+  ],
+  "notes": "m."
+ },
+ "Lifeless": {
+  "it": "Senzavita",
+  "status": "official",
+  "sources": [
+   "Fanucci blurb of Il conciliatore (\"soldati Senzavita\")"
+  ],
+  "notes": "m./f. invariable."
+ },
+ "Returned": {
+  "it": "Ritornato",
+  "status": "official",
+  "sources": [
+   "Fanucci blurb of Il conciliatore (\"dèi Ritornati\")"
+  ],
+  "notes": "m."
+ },
+ "Pattern": {
+  "it": "Schema",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Schema\""
+  ],
+  "notes": "m."
+ },
+ "Sibling": {
+  "it": "Fratello",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Fratello\""
+  ],
+  "notes": "m. in the fan wiki; the spren is non-binary - in questions use \"il Fratello\"."
+ },
+ "Nightwatcher": {
+  "it": "Guardiana della Notte",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Guardiana della Notte\""
+  ],
+  "notes": "f."
+ },
+ "Weeping": {
+  "it": "il Pianto",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Pianto\""
+  ],
+  "notes": "m."
+ },
+ "Unmade": {
+  "it": "Disfatti",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Disfatti\""
+  ],
+  "notes": "m. pl. (i Disfatti; sg. il Disfatto, also used for female Unmade)."
+ },
+ "Herald": {
+  "it": "Araldo",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Araldi\""
+  ],
+  "notes": "m. (l'Araldo, pl. gli Araldi)."
+ },
+ "Cognitive Realm": {
+  "it": "Reame Cognitivo",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Reame Cognitivo\""
+  ],
+  "notes": "m."
+ },
+ "Spiritual Realm": {
+  "it": "Reame Spirituale",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) (Reame Cognitivo article)"
+  ],
+  "notes": "m."
+ },
+ "Physical Realm": {
+  "it": "Reame Fisico",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) (Reame Cognitivo article)"
+  ],
+  "notes": "m."
+ },
+ "Investiture": {
+  "it": "Investitura",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Investitura\""
+  ],
+  "notes": "f."
+ },
+ "Perpendicularity": {
+  "it": "perpendicolarità",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (page title via search) \"Perpendicolarità\""
+  ],
+  "notes": "f."
+ },
+ "chasmfiend": {
+  "it": "abissale",
+  "status": "community",
+  "sources": [
+   "it.coppermind Riassunto:La Via dei Re (\"raccogliere la sua cuorgemma\" ... \"l'abissale\")"
+  ],
+  "notes": "m. (l'abissale, pl. gli abissali)."
+ },
+ "highstorm": {
+  "it": "altatempesta",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Folgoluce (\"altetempeste\")"
+  ],
+  "notes": "f., pl. altetempeste."
+ },
+ "highstorms": {
+  "it": "altetempeste",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search)"
+  ],
+  "notes": "f. pl."
+ },
+ "Cryptic": {
+  "it": "Criptico",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Tessiluce (\"Criptici\")"
+  ],
+  "notes": "m. (i Criptici)."
+ },
+ "honorspren": {
+  "it": "onorespren",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Corrivento (\"Onorespren\")"
+  ],
+  "notes": "m. invariable."
+ },
+ "cultivationspren": {
+  "it": "coltivazionespren",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Danzafilo (\"Coltivazionespren\")"
+  ],
+  "notes": "m. invariable."
+ },
+ "Bridge Four": {
+  "it": "Ponte Quattro",
+  "status": "official",
+  "sources": [
+   "https://stormlightarchive.fandom.com/it/wiki/Ponte_Quattro"
+  ],
+  "notes": "m."
+ },
+ "Windrunner": {
+  "it": "Corrivento",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Windrunners": {
+  "it": "Corrivento",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Skybreaker": {
+  "it": "Rompicielo",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Skybreakers": {
+  "it": "Rompicielo",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Dustbringers": {
+  "it": "Polverizzanti",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Edgedancers": {
+  "it": "Danzafilo",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Truthwatchers": {
+  "it": "Scorgivero",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Lightweaver": {
+  "it": "Tessiluce",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Lightweavers": {
+  "it": "Tessiluce",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Elsecaller": {
+  "it": "Altrovocante",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Elsecallers": {
+  "it": "Altrovocanti",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Willshaper": {
+  "it": "Plasmavolere",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Willshapers": {
+  "it": "Plasmavolere",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Stonewards": {
+  "it": "Salvaroccia",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Bondsmith": {
+  "it": "Forgialegami",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Bondsmiths": {
+  "it": "Forgialegami",
+  "status": "official",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Cavalieri Radiosi / order pages"
+  ],
+  "notes": "Radiant order; invariable in the plural except Altrovocante/-i. Confirmed in the Italian fan wiki (which follows the Giorgi translation)."
+ },
+ "Adhesion": {
+  "it": "Adesione",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Vincolaflussi / Corrivento"
+  ],
+  "notes": "f. Surge name."
+ },
+ "Gravitation": {
+  "it": "Gravitazione",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Vincolaflussi / Corrivento"
+  ],
+  "notes": "f. Surge name."
+ },
+ "Division": {
+  "it": "Divisione",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Vincolaflussi / Corrivento"
+  ],
+  "notes": "f. Surge name."
+ },
+ "Tension": {
+  "it": "Tensione",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Vincolaflussi / Corrivento"
+  ],
+  "notes": "f. Surge name."
+ },
+ "Illumination": {
+  "it": "Illuminazione",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Vincolaflussi / Corrivento"
+  ],
+  "notes": "f. Surge name."
+ },
+ "Transformation": {
+  "it": "Trasformazione",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Vincolaflussi / Corrivento"
+  ],
+  "notes": "f. Surge name."
+ },
+ "Surge": {
+  "it": "Flusso",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Vincolaflussi (\"flussi\")"
+  ],
+  "notes": "m. (il Flusso, pl. i Flussi); Surgebinder/Surgebinding = Vincolaflussi."
+ },
+ "Cosmere": {
+  "it": "Cosmoverso",
+  "status": "official",
+  "sources": [
+   "Mondadori \"Arcanum Unbounded. La collezione Cosmoverso\""
+  ],
+  "notes": "m."
+ },
+ "Secret History": {
+  "it": "Storia segreta",
+  "status": "official",
+  "sources": [
+   "Mondadori Arcanum Unbounded (\"Mistborn: Storia segreta\")"
+  ],
+  "notes": "f."
+ },
+ "Mistborn: Secret History": {
+  "it": "Mistborn: Storia segreta",
+  "status": "official",
+  "sources": [
+   "Mondadori Arcanum Unbounded"
+  ],
+  "notes": ""
+ },
+ "Eleventh Metal": {
+  "it": "Undicesimo Metallo",
+  "status": "official",
+  "sources": [
+   "Mondadori Arcanum Unbounded (\"L'undicesimo metallo\")"
+  ],
+  "notes": "m."
+ },
+ "Arcanum Unbounded": {
+  "it": "Arcanum Unbounded",
+  "status": "official",
+  "sources": [
+   "Mondadori 2021"
+  ],
+  "notes": "Kept in English."
+ },
+ "White Sand": {
+  "it": "Sabbia bianca",
+  "status": "official",
+  "sources": [
+   "Mondadori graphic novel / Arcanum Unbounded"
+  ],
+  "notes": ""
+ },
+ "Odium": {
+  "it": "Odio",
+  "status": "community",
+  "sources": [
+   "Italian sources about Vento e verità (search summary)"
+  ],
+  "notes": "m."
+ },
+ "The Sunlit Man": {
+  "it": "The Sunlit Man",
+  "status": "unpublished",
+  "sources": [
+   "No Italian edition found (search Oct 2026)"
+  ],
+  "notes": "Keep English title; its coined names (Canticle, Rain, Cinder King, Night Brigade, Charred) kept in English."
+ },
+ "Canticle": {
+  "it": "Canticle",
+  "status": "unpublished",
+  "sources": [
+   "No Italian edition of The Sunlit Man found"
+  ],
+  "notes": "Kept in English per the golden rule (no edition, no it.coppermind form found)."
+ },
+ "Rain": {
+  "it": "Rain",
+  "status": "unpublished",
+  "sources": [
+   "No Italian edition of The Sunlit Man found"
+  ],
+  "notes": "Kept in English per the golden rule (no edition, no it.coppermind form found)."
+ },
+ "Cinder King": {
+  "it": "Cinder King",
+  "status": "unpublished",
+  "sources": [
+   "No Italian edition of The Sunlit Man found"
+  ],
+  "notes": "Kept in English per the golden rule (no edition, no it.coppermind form found)."
+ },
+ "Night Brigade": {
+  "it": "Night Brigade",
+  "status": "unpublished",
+  "sources": [
+   "No Italian edition of The Sunlit Man found"
+  ],
+  "notes": "Kept in English per the golden rule (no edition, no it.coppermind form found)."
+ },
+ "Charred": {
+  "it": "Charred",
+  "status": "unpublished",
+  "sources": [
+   "No Italian edition of The Sunlit Man found"
+  ],
+  "notes": "Kept in English per the golden rule (no edition, no it.coppermind form found)."
+ },
+ "sunheart": {
+  "it": "sunheart",
+  "status": "unpublished",
+  "sources": [
+   "No Italian edition of The Sunlit Man found"
+  ],
+  "notes": "Kept in English per the golden rule (no edition, no it.coppermind form found)."
+ },
+ "Dawnshard": {
+  "it": "Frammento dell'Alba",
+  "status": "unverified",
+  "sources": [
+   "No Italian edition of Dawnshard found"
+  ],
+  "notes": "m. The novella is unpublished in Italian; the term may appear in Il ritmo della guerra/Vento e verità - not confirmed."
+ },
+ "Twinborn": {
+  "it": "duomante",
+  "status": "official",
+  "sources": [
+   "Mondadori/Fanucci blurb of La legge delle lande (\"un raro duomante\", via search)"
+  ],
+  "notes": "m./f. (un/una duomante). Glossary had \"Gemellonato\"."
+ },
+ "lerasium": {
+  "it": "lerasium",
+  "status": "community",
+  "sources": [
+   "https://it.everybodywiki.com/Allomanzia (\"Atium e Lerasium come metalli divini\")"
+  ],
+  "notes": "m. Latin -ium form kept. Glossary had \"lerasio\"."
+ },
+ "electrum": {
+  "it": "electrum",
+  "status": "community",
+  "sources": [
+   "https://it.everybodywiki.com/Allomanzia (\"Oro e Electrum\")"
+  ],
+  "notes": "m. Glossary had \"elettro\"."
+ },
+ "malatium": {
+  "it": "malatium",
+  "status": "unverified",
+  "sources": [
+   "By analogy with atium/lerasium in Italian fan sources"
+  ],
+  "notes": "m. Glossary had \"malatio\"."
+ },
+ "harmonium": {
+  "it": "harmonium",
+  "status": "unverified",
+  "sources": [
+   "By analogy with atium/lerasium"
+  ],
+  "notes": "m. Glossary had \"armonio\"."
+ },
+ "Sliver": {
+  "it": "Scheggia",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net/wiki/Sliver redirects to \"Scheggia\""
+  ],
+  "notes": "f. NB the glossary also uses \"Scheggia\" for Splinter; the Italian Splinter form was not found. They never co-occur in one question."
+ },
+ "Seeker": {
+  "it": "Cercatore",
+  "status": "unverified",
+  "sources": [
+   "it.everybodywiki Allomanzia (bronze section cut off in snippet)"
+  ],
+  "notes": "m. Not confirmed."
+ },
+ "Keeper": {
+  "it": "Custode",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m./f. (la Custode for Tindwyl). Not confirmed by any source found."
+ },
+ "Peakspren": {
+  "it": "piccospren",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (via search) \"Piccospren\" (redirect from /wiki/Peakspren)"
+  ],
+  "notes": "m. (il piccospren, pl. i piccospren). Glossary had \"vettaspren\" (unverified)."
+ },
+ "Ashspren": {
+  "it": "cenerespren",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Polverizzanti page: \"formano il legame Nahel con i Cenerespren\""
+  ],
+  "notes": "m. Confirms glossary form."
+ },
+ "Releasers": {
+  "it": "Liberatori",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Polverizzanti page: other names \"Liberatori\" and \"Fiammiferi\""
+  ],
+  "notes": "m. pl. Name the Dustbringers prefer."
+ },
+ "Spark": {
+  "it": "Scintilla",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Polverizzanti page (Malata's spren)"
+  ],
+  "notes": "Malata's ashspren; also used for the Essence Spark (Chach), same English word; Essence form itself unverified."
+ },
+ "Mistspren": {
+  "it": "nebbiaspren",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Coined on the pattern onorespren/cenerespren/fiammaspren; no Italian attestation found."
+ },
+ "Highspren": {
+  "it": "altospren",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Coined on the same pattern; no attestation found."
+ },
+ "Flamespren": {
+  "it": "fiammaspren",
+  "status": "official",
+  "sources": [
+   "https://stormlightarchive.fandom.com/it/wiki/Parole_di_Luce:_Capitolo_7 (quotes the Italian text: \"fiammaspren che danzavano attorno al fuoco\")"
+  ],
+  "notes": "m."
+ },
+ "Gloryspren": {
+  "it": "gloriaspren",
+  "status": "official",
+  "sources": [
+   "https://www.oscarmondadori.it/approfondimenti/sanderson-giuramento-capitolo-4/ (Mondadori excerpt of Giuramento: \"attorniata da gloriaspren\")"
+  ],
+  "notes": "m."
+ },
+ "Windspren": {
+  "it": "ventospren",
+  "status": "community",
+  "sources": [
+   "Italian reader reviews of La via dei re (via search)"
+  ],
+  "notes": "m."
+ },
+ "Creationspren": {
+  "it": "creazionespren",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Pattern-based."
+ },
+ "Silver Kingdom": {
+  "it": "Regno Argenteo",
+  "status": "community",
+  "sources": [
+   "https://stormlightarchive.fandom.com/it/wiki/Regni_Argentei"
+  ],
+  "notes": "m. pl. Regni Argentei."
+ },
+ "Unclaimed Hills": {
+  "it": "Colline Indipendenti",
+  "status": "community",
+  "sources": [
+   "https://stormlightarchive.fandom.com/it/wiki/Colline_Indipendenti"
+  ],
+  "notes": "f. pl."
+ },
+ "Death Rattles": {
+  "it": "Rantoli della Morte",
+  "status": "community",
+  "sources": [
+   "https://stormlightarchive.fandom.com/it/wiki/Rantoli_della_Morte"
+  ],
+  "notes": "m. pl."
+ },
+ "Diagram": {
+  "it": "Diagramma",
+  "status": "community",
+  "sources": [
+   "https://stormlightarchive.fandom.com/it/wiki/Diagramma_(organizzazione)"
+  ],
+  "notes": "m. (il Diagramma). Already used in cosmere.json."
+ },
+ "Purelake": {
+  "it": "Lagopuro",
+  "status": "community",
+  "sources": [
+   "es/it Coppermind page title \"Lagopuro\" (via search)"
+  ],
+  "notes": "m. (il Lagopuro). Already used in cosmere.json."
+ },
+ "Mythica": {
+  "it": "Mythica",
+  "status": "community",
+  "sources": [
+   "coppermind.net/wiki/Epigraphs (in-world title is Latin-like)"
+  ],
+  "notes": "f. (la Mythica di Hessi). Kept as is."
+ },
+ "Ten Essences": {
+  "it": "Dieci Essenze",
+  "status": "community",
+  "sources": [
+   "https://it.coppermind.net/wiki/Dieci_Essenze"
+  ],
+  "notes": "f. pl."
+ },
+ "Zephyr": {
+  "it": "Zefiro",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Essence; Italian Ars Arcanum table not found. Vapor -> Vapore, Talus -> Talus likewise unverified."
+ },
+ "Vapor": {
+  "it": "Vapore",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Essence; see Zephyr."
+ },
+ "Talus": {
+  "it": "Talus",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Essence; see Zephyr."
+ },
+ "Nahel bond": {
+  "it": "legame Nahel",
+  "status": "community",
+  "sources": [
+   "stormlightarchive.fandom.com/it (via search) Polverizzanti page: \"formano il legame Nahel\""
+  ],
+  "notes": "m."
+ },
+ "Shardhammer": {
+  "it": "Stratomartello",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Pattern of Stratolama (official). Dawnshard (unpublished in Italian)."
+ },
+ "Testament": {
+  "it": "Testamento",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Shallan's first Shardblade spren; not found."
+ },
+ "stormwarden": {
+  "it": "guardiano delle tempeste",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Descriptive rendering; no attestation found."
+ },
+ "Dawnchant": {
+  "it": "Canto dell'Alba",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Not found."
+ },
+ "Corvana's Analectics": {
+  "it": "Analettica di Corvana",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. Not found."
+ },
+ "Book of Endless Pages": {
+  "it": "Libro delle Pagine Infinite",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Not found."
+ },
+ "Eila Stele": {
+  "it": "Stele di Eila",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. Not found."
+ },
+ "Hearthstone": {
+  "it": "(avoided)",
+  "status": "unverified",
+  "sources": [
+   "coppermind / fandom searches returned only the English name"
+  ],
+  "notes": "No Italian form found (\"Pietrafocolare\" unattested); roshar-051 rephrased (\"villaggio natale di Kaladin\") to avoid it."
+ },
+ "Wandersail": {
+  "it": "Wandersail",
+  "status": "unpublished",
+  "sources": [
+   "WORK_TITLES: Dawnshard has no Italian edition"
+  ],
+  "notes": "f. (la Wandersail). Dawnshard unpublished in Italian; the other ships in roshar-076 (Wind's Pleasure, First Dreams, Fourth Bridge) kept in English too, because their Italian forms (Parole di luce / Giuramento) could not be verified and mixing languages would give away the answer."
+ },
+ "Pulser": {
+  "it": "Temporeggiatore",
+  "status": "community",
+  "sources": [
+   "https://stormlightarchive.fandom.com/it/wiki/Arti_Metalliche: \"Un Misting che brucia cadmio è detto Temporeggiatore\""
+  ],
+  "notes": "m. Glossary had \"Pulsatore\" (unverified)."
+ },
+ "Slider": {
+  "it": "Traslatore",
+  "status": "community",
+  "sources": [
+   "it.everybodywiki.com/Allomanzia: \"Un Misting che brucia cerrobend è detto Traslatore\""
+  ],
+  "notes": "m. Glossary had \"Scivolatore\" (unverified)."
+ },
+ "bendalloy": {
+  "it": "cerrobend",
+  "status": "community",
+  "sources": [
+   "it.wikipedia.org (Mistborn): \"Cadmio e Cerrobend, metalli temporali esterni\"",
+   "https://stormlightarchive.fandom.com/it/wiki/Arti_Metalliche"
+  ],
+  "notes": "m. Cerrobend is the real-world alloy name Sanderson could not use in English for trademark reasons; Italian sources use it."
+ },
+ "Seer": {
+  "it": "Veggente",
+  "status": "community",
+  "sources": [
+   "https://stormlightarchive.fandom.com/it/wiki/Investitura: \"un Misting che brucia atium è detto Veggente\""
+  ],
+  "notes": "m."
+ },
+ "Roughs": {
+  "it": "Lande",
+  "status": "official",
+  "sources": [
+   "Mondadori/Fanucci title \"La legge delle lande\"; blurb: \"terre di frontiera note come le Lande\""
+  ],
+  "notes": "f. pl. (le Lande)."
+ },
+ "Oracle": {
+  "it": "Oracle",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Electrum Misting. Italian forms of the electrum/Feruchemy role names (Oracle, Augur, Leecher, Nicroburst, Sparker, Windwhisper, Firesoul, Sentry, Gasper) not found; scadrial-074/075 keep all four options in English so none stands out."
+ },
+ "Sparker": {
+  "it": "Sparker",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Oracle."
+ },
+ "Weathering": {
+  "it": "Weathering",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Town in the Roughs; no Italian form found, kept in English."
+ },
+ "ettmetal": {
+  "it": "Ettmetal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not found; kept in English."
+ },
+ "boxing": {
+  "it": "boxing",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Mistborn coin; Italian form not found, kept in English (invariable)."
+ },
+ "Bloody Tan": {
+  "it": "Tan il Sanguinario",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Descriptive rendering; not found."
+ },
+ "Lord Prelan": {
+  "it": "Lord Prelano",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Not found."
+ },
+ "Blessing": {
+  "it": "Benedizione",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. Kandra Blessings: della Potenza / della Presenza / della Consapevolezza / della Stabilità."
+ },
+ "Canton": {
+  "it": "Cantone",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Cantone dell'Inquisizione / dell'Ortodossia / delle Risorse / delle Finanze."
+ },
+ "Generation": {
+  "it": "Generazione",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. (kandra Generations)."
+ },
+ "Bluefingers": {
+  "it": "Ditablu",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net/wiki/Susebron (via search): \"...Siri e Ditablu\""
+  ],
+  "notes": "m. Glossary/earlier it files had \"Bluefingers\"; replaced in all it files."
+ },
+ "Blushweaver": {
+  "it": "Tessitrame",
+  "status": "official",
+  "sources": [
+   "https://www.piumedicarta.it/2013/11/il-conciliatore-di-brandon-sanderson.html (review quoting Fanucci edition)",
+   "it.coppermind.net Lievecanto: \"molto amico della dea Tessitrame\""
+  ],
+  "notes": "f. Replaced \"Blushweaver\" in nalthis.json and cosmere.json."
+ },
+ "Mercystar": {
+  "it": "Benignastella",
+  "status": "official",
+  "sources": [
+   "https://www.piumedicarta.it/2013/11/il-conciliatore-di-brandon-sanderson.html (\"Benignastella, che rappresenta la benevolenza\")"
+  ],
+  "notes": "f. Mapping inferred from the review (goddess of benevolence). Replaced in nalthis.json and cosmere.json."
+ },
+ "Allmother": {
+  "it": "Onnimadre",
+  "status": "official",
+  "sources": [
+   "Italian reader reviews of Il conciliatore (via search) naming Onnimadre, goddess of mothers"
+  ],
+  "notes": "f. Replaces earlier \"Madre di Tutti\" (cosmere.json)."
+ },
+ "Hopefinder": {
+  "it": "Trovasperanza",
+  "status": "official",
+  "sources": [
+   "https://www.piumedicarta.it/2013/11/il-conciliatore-di-brandon-sanderson.html (\"Trovasperanza\")"
+  ],
+  "notes": "m. (Trovasperanza il Giusto)."
+ },
+ "Five Scholars": {
+  "it": "Cinque Sapienti",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Already used in nalthis.json; not independently verified."
+ },
+ "Iridescent Tones": {
+  "it": "Toni Iridescenti",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. pl. Not found."
+ },
+ "Five Visions": {
+  "it": "Cinque Visioni",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. pl. Not found."
+ },
+ "Inner Sea": {
+  "it": "Mare Interno",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Bright Sea -> Mare Luminoso, also unverified."
+ },
+ "Red Panther": {
+  "it": "Pantera Rossa",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f."
+ },
+ "Roost": {
+  "it": "Posatoio",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Hope of Elantris; not found (Nest/Fold/Cradle -> Nido/Ovile/Culla)."
+ },
+ "Widow's Trial": {
+  "it": "Prova della Vedova",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. Not found."
+ },
+ "soulstone": {
+  "it": "pietra dell'anima",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. Not found."
+ },
+ "Chasm Line": {
+  "it": "(descriptive)",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Rendered as \"la linea del baratro\" (lowercase description) in sel-054."
+ },
+ "Silverlight": {
+  "it": "Silverlight",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not found in Italian; kept in English (Celebrant too)."
+ },
+ "Ones Above": {
+  "it": "Quelli di Sopra",
+  "status": "unverified",
+  "sources": [
+   "searched together with Sesto del Vespro (Arcanum Unbounded, Mondadori): no hit"
+  ],
+  "notes": "m. pl."
+ },
+ "Worldsinger": {
+  "it": "Worldsinger",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not found; cosmere-076 question rephrased to avoid it, kept in English in the explanation."
+ },
+ "Hordeling": {
+  "it": "hordeling",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Dawnshard term (unpublished); cremling and rotspren (\"putrespren\", pattern-based) likewise unverified."
+ },
+ "Raysium": {
+  "it": "raysium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Pattern of lerasium/harmonium."
+ },
+ "Retribution": {
+  "it": "Retribuzione",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Wind and Truth Shard; Mondadori text not checked."
+ },
+ "Fuzz": {
+  "it": "Fuzz",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kelsier's nickname for Preservation; Italian form not found. cosmere-070 keeps the four options in English (Fuzz / Old Man / Smudge / Ghost)."
+ },
+ "sprouter": {
+  "it": "addetta alle spore",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Descriptive rendering for Tress's job (otros-051); Mondadori term not found."
+ },
+ "deepwalker": {
+  "it": "deepwalker",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Sixth of the Dusk; nightmaw likewise kept in English."
+ },
+ "father machine": {
+  "it": "macchina padre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. Yumi."
+ },
+ "sandling": {
+  "it": "creatura delle sabbie",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Descriptive; Sabbia bianca term not found."
+ },
+ "Mastrell's Path": {
+  "it": "Sentiero del Mastrell",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m."
+ }
+}

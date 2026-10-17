@@ -1,0 +1,250 @@
+{
+  "app": {
+    "title": "Kosmeer-Quiz",
+    "tagline": "Wie gut kennst du das Kosmeer?"
+  },
+  "common": {
+    "back": "Zurück",
+    "home": "Startseite",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "continue": "Weiter",
+    "next": "Nächste Frage",
+    "loading": "Wird geladen …",
+    "playAgain": "Nochmal spielen",
+    "openSettings": "Einstellungen öffnen"
+  },
+  "home": {
+    "continue": "Spiel fortsetzen",
+    "continueDesc": "Laufendes Spiel: {players}",
+    "classic": "Klassisches Spiel",
+    "classicDesc": "1–6 Spieler · lade alle sechs Edelsteine auf",
+    "quick": "Schnelles Spiel",
+    "quickDesc": "15 Fragen gegen die Uhr",
+    "practice": "Üben",
+    "practiceDesc": "Wähle eine Welt und einen Schwierigkeitsgrad",
+    "stats": "Statistik",
+    "settings": "Einstellungen",
+    "about": "Info",
+    "newGameConfirm": "Wenn du ein neues Spiel startest, wird das laufende Spiel verworfen. Fortfahren?",
+    "continueQuick": "Schnelles Spiel fortsetzen",
+    "continueQuickDesc": "Frage {n} von {total} · {score} Punkte"
+  },
+  "cat": {
+    "roshar": "Roschar",
+    "scadrial": "Scadrial",
+    "sel": "Sel",
+    "nalthis": "Nalthis",
+    "otros": "Andere Welten",
+    "cosmere": "Das Kosmeer"
+  },
+  "gem": {
+    "roshar": "Saphir",
+    "scadrial": "Rubin",
+    "sel": "Smaragd",
+    "nalthis": "Heliodor",
+    "otros": "Amethyst",
+    "cosmere": "Diamant"
+  },
+  "difficulty": {
+    "1": "Leicht",
+    "2": "Mittel",
+    "3": "Schwer",
+    "label": "Schwierigkeit: {level}",
+    "4": "Experte"
+  },
+  "level": {
+    "title": "Schwierigkeitsstufe",
+    "easy": "Leicht",
+    "normal": "Normal",
+    "hard": "Schwer",
+    "expert": "Experte",
+    "easyDesc": "Nur leichte Fragen.",
+    "normalDesc": "Eine Mischung aus leichten und mittleren Fragen, dazu ein paar schwere.",
+    "hardDesc": "Mittlere, schwere und Expertenfragen.",
+    "expertDesc": "Nur schwere und Expertenfragen – für alle, die die Bücher mehrmals gelesen haben.",
+    "badge": "Stufe: {level}"
+  },
+  "lifeline": {
+    "title": "Hilfen",
+    "help": "So funktionieren die Hilfen",
+    "rules": "Jeder Spieler hat pro Partie jede Hilfe einmal (auch im schnellen Spiel). Bei der Finalfrage und beim Üben gibt es keine Hilfen, und Atium und Sturmlicht lassen sich bei derselben Frage nicht kombinieren.",
+    "used": "{name} (schon benutzt)",
+    "atium": {
+      "name": "Atium",
+      "desc": "Entfernt zwei falsche Antworten.",
+      "long": "Verbrenne Atium und blicke in die Zukunft: Zwei falsche Antworten verschwinden.",
+      "done": "Atium: Zwei falsche Antworten wurden entfernt.",
+      "removed": "{option} (durch Atium entfernt)"
+    },
+    "stormlight": {
+      "name": "Sturmlicht",
+      "desc": "Vor dem Antworten aktivieren: Liegst du falsch, darfst du noch einmal wählen.",
+      "long": "Aktiviere es vor dem Antworten. Wählst du eine falsche Antwort, wird sie markiert und du darfst noch einmal wählen – die richtige wird nicht verraten. Die Zeit läuft weiter. Benutzt du Hauch, während es aktiv ist, bleibt es bei der neuen Frage aktiv.",
+      "armed": "Sturmlicht aktiv: Liegst du falsch, darfst du noch einmal wählen.",
+      "saved": "Das Sturmlicht heilt dich! Die war es nicht – wähle eine andere Antwort.",
+      "struck": "{option} (falsch)"
+    },
+    "breath": {
+      "name": "Hauch",
+      "desc": "Tauscht die Frage gegen eine andere aus derselben Welt mit gleicher Schwierigkeit.",
+      "long": "Tauscht die Frage gegen eine andere aus derselben Welt mit gleicher Schwierigkeit. Ist keine mehr übrig, kannst du ihn nicht einsetzen.",
+      "none": "Keine andere Frage aus derselben Welt mit gleicher Schwierigkeit."
+    },
+    "noCombo": "Atium und Sturmlicht lassen sich bei derselben Frage nicht kombinieren."
+  },
+  "setup": {
+    "title": "Neues Spiel",
+    "playerCount": "Spieler",
+    "player": "Spieler {n}",
+    "namePlaceholder": "Spieler {n}",
+    "color": "Edelsteinfarbe",
+    "timer": "30-Sekunden-Timer",
+    "timerHint": "Läuft die Zeit ab, zählt die Antwort als falsch.",
+    "start": "Spiel starten",
+    "fewer": "Spieler entfernen",
+    "more": "Spieler hinzufügen"
+  },
+  "turn": {
+    "passTo": "Gib das Handy weiter an",
+    "ready": "Ich bin bereit",
+    "noPeek": "Alle anderen: nicht spicken!",
+    "turnOf": "Am Zug: {name}",
+    "starts": "Es beginnt: {name}"
+  },
+  "wheel": {
+    "label": "Kategorienrad",
+    "spin": "Drehen",
+    "tapToSpin": "Tippe auf das Rad, um es zu drehen",
+    "spinning": "Das Rad dreht sich …",
+    "wildcard": "Joker",
+    "landed": "{category}!",
+    "chooseTitle": "Joker!",
+    "chooseHint": "Wähle eine beliebige Welt",
+    "infusedPick": "{category} ist bereits aufgeladen: Wähle eine andere Welt!"
+  },
+  "question": {
+    "correct": "Richtig!",
+    "incorrect": "Falsch",
+    "timeout": "Die Zeit ist um!",
+    "answerWas": "Die richtige Antwort war: {answer}",
+    "secondsLeft": "Noch {s} Sekunden",
+    "final": "Finalfrage",
+    "progress": "Frage {n} von {total}"
+  },
+  "classic": {
+    "charge": "+1 Ladung für {category} ({n}/2)",
+    "infused": "Dein {category}-Edelstein ist aufgeladen!",
+    "alreadyInfused": "{category} ist bereits aufgeladen – keine weitere Ladung.",
+    "allInfused": "Alle Edelsteine aufgeladen! Als Nächstes: die Finalfrage.",
+    "spinAgain": "Dreh noch einmal!",
+    "passTurn": "{name} ist jetzt an der Reihe.",
+    "soloMiss": "Daneben! Dreh noch einmal.",
+    "finalFail": "Diesmal nicht. In deinem nächsten Zug bekommst du erneut die Finalfrage.",
+    "finalTitle": "Finalfrage",
+    "finalIntro": "{name}, alle deine Edelsteine sind aufgeladen. Beantworte diese Frage richtig, um zu gewinnen!",
+    "finalReady": "Los geht’s",
+    "leave": "Spiel verlassen (Fortschritt wird gespeichert)",
+    "board": "Spieler",
+    "gemCount": "{n} von {total} Edelsteinen aufgeladen",
+    "gem0": "{category}: keine Ladung",
+    "gem1": "{category}: 1 Ladung",
+    "gem2": "{category}: aufgeladen",
+    "streakPass": "{n} richtige Antworten in Folge! Jetzt ist {name} am Zug."
+  },
+  "victory": {
+    "title": "{name} gewinnt!",
+    "subtitle": "Alle Edelsteine aufgeladen und die Finalfrage gemeistert.",
+    "answered": "Gestellte Fragen: {n}"
+  },
+  "quick": {
+    "title": "Schnelles Spiel",
+    "score": "Punkte",
+    "best": "Bestleistung",
+    "points": "+{n} Punkte",
+    "result": "{score} Punkte",
+    "correctCount": "{n} von {total} richtig",
+    "newRecord": "Neuer Rekord!",
+    "finished": "Ergebnis",
+    "seeResults": "Ergebnis anzeigen",
+    "quitConfirm": "Schnelles Spiel abbrechen? Deine Punkte gehen verloren.",
+    "intro": "{n} Fragen aus allen Welten, je {s} Sekunden. Je schneller du antwortest, desto mehr Punkte gibt es.",
+    "introLifelines": "Du hast jede Hilfe einmal: Atium, Sturmlicht und Hauch.",
+    "start": "Los geht’s",
+    "bestScore": "Bestleistung: {n}"
+  },
+  "practice": {
+    "title": "Üben",
+    "category": "Welt",
+    "all": "Alle Welten",
+    "difficulty": "Schwierigkeit",
+    "any": "Alle",
+    "available": "Verfügbare Fragen: {n}",
+    "start": "Üben starten",
+    "end": "Beenden",
+    "tally": "{correct} von {total} richtig",
+    "fallback": "Hier gibt es noch keine Fragen der Stufe {level}: Du übst mit Fragen der Stufe {fallback}.",
+    "empty": "Hier gibt es noch keine Fragen der Stufe {level}.",
+    "noneFilter": "Keine Fragen verfügbar: Der Spoilerfilter lässt kein Werk mit Fragen übrig. Wähle in den Einstellungen mehr Werke aus."
+  },
+  "stats": {
+    "title": "Statistik",
+    "classicGames": "Gewonnene klassische Spiele",
+    "quickGames": "Schnelle Spiele",
+    "bestQuick": "Rekord im schnellen Spiel",
+    "answered": "Beantwortete Fragen",
+    "accuracy": "Trefferquote",
+    "byCategory": "Trefferquote nach Welt",
+    "none": "Noch keine Antworten. Auf geht’s!",
+    "of": "{correct} von {total}",
+    "lifelines": "Benutzte Hilfen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "theme": "Design",
+    "dark": "Dunkel",
+    "light": "Hell",
+    "sound": "Soundeffekte",
+    "vibration": "Vibration",
+    "vibrationUnsupported": "Auf diesem Gerät nicht verfügbar",
+    "timer": "Timer standardmäßig an",
+    "spoilers": "Spoilerfilter",
+    "spoilersHint": "Hake die Werke an, die du gelesen hast. Es erscheinen nur Fragen dazu.",
+    "selected": "{n} von {total} Werken ausgewählt",
+    "all": "Alle auswählen",
+    "none": "Keine auswählen",
+    "data": "Daten",
+    "reset": "Alle Daten löschen",
+    "resetConfirm": "Damit werden Statistik, Rekorde, gespeichertes Spiel und Einstellungen gelöscht. Bist du sicher?",
+    "resetDone": "Alle Daten wurden gelöscht.",
+    "storageWarning": "Speicher nicht verfügbar: Einstellungen und Fortschritt gehen beim Schließen der App verloren."
+  },
+  "about": {
+    "title": "Info",
+    "body": "Ein Quiz im Stil von Trivial Pursuit über die Welten von Brandon Sandersons Kosmeer. Spiel allein oder reich das Handy unter Freunden herum.",
+    "howTo": "So wird gespielt",
+    "rule1": "Dreh das Rad und beantworte eine Frage zu der Welt, auf der es stehen bleibt.",
+    "rule2": "Richtige Antwort: Du erhältst eine Ladung für diese Welt und drehst noch einmal. Falsche Antwort: Der nächste Spieler ist dran.",
+    "rule3": "Zwei Ladungen laden einen Edelstein auf. Mit dem Joker wählst du die Welt selbst.",
+    "rule4": "Lade alle Edelsteine auf und beantworte dann die Finalfrage richtig, um zu gewinnen.",
+    "offline": "Funktioniert nach dem ersten Laden auch offline. Alle Daten bleiben auf diesem Gerät.",
+    "disclaimer": "Inoffizielles Fanprojekt, nicht verbunden mit Brandon Sanderson oder Dragonsteel. Das Kosmeer und alle zugehörigen Namen gehören ihren jeweiligen Inhabern.",
+    "version": "Version {v}",
+    "levels": "Schwierigkeitsstufen",
+    "levelsFinal": "Die Finalfrage im klassischen Spiel ist bei Leicht mittelschwer, bei Normal schwer und bei Schwer und Experte eine Expertenfrage.",
+    "lifelines": "Hilfen",
+    "rule5": "Wer beginnt, wird ausgelost. Nach 3 richtigen Antworten in Folge ist trotzdem der nächste Spieler dran."
+  },
+  "errors": {
+    "load": "Die Fragen konnten nicht geladen werden. Prüfe deine Verbindung und lade die Seite neu.",
+    "noQuestions": "Mit dem aktuellen Spoilerfilter sind keine Fragen verfügbar.",
+    "fallback": "Die Fragen sind in dieser Sprache noch nicht verfügbar und werden auf Englisch angezeigt."
+  },
+  "boot": {
+    "title": "Etwas ist schiefgelaufen",
+    "body": "Die App konnte nicht starten. Möglicherweise sind die gespeicherten Daten beschädigt; sie zu löschen behebt das meistens (das laufende Spiel, die Einstellungen und die Statistik gehen verloren).",
+    "reset": "Daten löschen und neu starten",
+    "retry": "Erneut versuchen"
+  }
+}

@@ -1,0 +1,1855 @@
+[
+  {
+    "id": "scadrial-001",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "Which character is known as the Survivor of Hathsin?",
+    "a": "Kelsier",
+    "wrong": [
+      "Dockson",
+      "Marsh",
+      "Breeze"
+    ],
+    "explain": "Kelsier earned the title by escaping the Pits of Hathsin, where the Lord Ruler's prisoners mined atium.",
+    "terms": [
+      "Survivor of Hathsin",
+      "Kelsier",
+      "Dockson",
+      "Marsh",
+      "Breeze",
+      "Pits of Hathsin",
+      "Lord Ruler",
+      "atium"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-002",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "Burning which metal lets an Allomancer push on nearby metals?",
+    "a": "Steel",
+    "wrong": [
+      "Iron",
+      "Tin",
+      "Brass"
+    ],
+    "explain": "Coinshots use steel Pushes to fling coins or launch themselves through the air.",
+    "terms": [
+      "Allomancer",
+      "Coinshot",
+      "Push"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-003",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "What does burning pewter enhance in an Allomancer?",
+    "a": "Physical strength and stamina",
+    "wrong": [
+      "Senses",
+      "Emotions of others",
+      "Speed of thought"
+    ],
+    "explain": "Thugs, or Pewterarms, burn pewter to fight and endure wounds that would stop others.",
+    "terms": [
+      "Allomancer",
+      "Thug",
+      "Pewterarm"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-004",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "What is the name of Vin's older brother, who raised her on the streets?",
+    "a": "Reen",
+    "wrong": [
+      "Camon",
+      "Ulef",
+      "Elend"
+    ],
+    "explain": "Reen taught Vin to trust no one, a lesson she struggles to unlearn.",
+    "terms": [
+      "Vin",
+      "Reen",
+      "Camon",
+      "Ulef",
+      "Elend"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-005",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "What is the capital city of the Final Empire?",
+    "a": "Luthadel",
+    "wrong": [
+      "Fadrex",
+      "Fellise",
+      "Tathingdwen"
+    ],
+    "explain": "Luthadel is home to the Great Houses and the Lord Ruler's palace.",
+    "terms": [
+      "Final Empire",
+      "Luthadel",
+      "Fadrex",
+      "Fellise",
+      "Tathingdwen",
+      "Lord Ruler"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-006",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "What are the Lord Ruler's servants with metal spikes through their eyes called?",
+    "a": "Steel Inquisitors",
+    "wrong": [
+      "Obligators",
+      "Kandra",
+      "Keepers"
+    ],
+    "explain": "Inquisitors gain their powers through Hemalurgy, using spikes driven into their bodies.",
+    "terms": [
+      "Lord Ruler",
+      "Steel Inquisitor",
+      "Obligator",
+      "kandra",
+      "Keeper",
+      "Inquisitor",
+      "Hemalurgy"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-007",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "To which noble house does Elend belong?",
+    "a": "House Venture",
+    "wrong": [
+      "House Renoux",
+      "House Lekal",
+      "House Hasting"
+    ],
+    "explain": "House Venture was one of the most powerful Great Houses of Luthadel.",
+    "terms": [
+      "Elend",
+      "House Venture",
+      "House Renoux",
+      "House Lekal",
+      "House Hasting",
+      "Luthadel"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-008",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "Sazed is a Keeper from which people?",
+    "a": "Terris",
+    "wrong": [
+      "Skaa",
+      "Khlenni",
+      "Malwish"
+    ],
+    "explain": "Terris Keepers are Feruchemists who store memories of lost religions and lore.",
+    "terms": [
+      "Sazed",
+      "Keeper",
+      "Terris",
+      "skaa",
+      "Khlenni",
+      "Malwish",
+      "Feruchemist"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-009",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "well-of-ascension",
+    "q": "What colour is the skin of a koloss?",
+    "a": "Blue",
+    "wrong": [
+      "Grey",
+      "Red",
+      "Green"
+    ],
+    "explain": "A koloss's blue skin does not grow with its body, so it stretches and tears as the creature gets bigger.",
+    "terms": [
+      "koloss"
+    ],
+    "source": "The Well of Ascension"
+  },
+  {
+    "id": "scadrial-010",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "Which member of Kelsier's crew is a Soother?",
+    "a": "Breeze",
+    "wrong": [
+      "Ham",
+      "Clubs",
+      "Dockson"
+    ],
+    "explain": "Breeze burns brass to calm and nudge the emotions of those around him.",
+    "terms": [
+      "Kelsier",
+      "Soother",
+      "Breeze",
+      "Ham",
+      "Clubs",
+      "Dockson"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-011",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "Burning which metal lets an Allomancer see a few seconds into the future?",
+    "a": "Atium",
+    "wrong": [
+      "Gold",
+      "Electrum",
+      "Bronze"
+    ],
+    "explain": "Atium shows shadows of what people are about to do, making its user almost unbeatable in a fight.",
+    "terms": [
+      "Allomancer",
+      "atium"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-012",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "What are the metal objects in which Feruchemists store attributes called?",
+    "a": "Metalminds",
+    "wrong": [
+      "Spikes",
+      "Atium beads",
+      "Medallions"
+    ],
+    "explain": "Sazed wears metalminds as bracers, rings and earrings to store memories, weight and more.",
+    "terms": [
+      "Feruchemist",
+      "metalmind",
+      "spike",
+      "medallion",
+      "Sazed",
+      "atium"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-013",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "well-of-ascension",
+    "q": "Who releases Ruin at the Well of Ascension?",
+    "a": "Vin",
+    "wrong": [
+      "Elend",
+      "Sazed",
+      "Zane"
+    ],
+    "explain": "Ruin tricked Vin into releasing the Well's power instead of taking it, freeing him from his prison.",
+    "terms": [
+      "Ruin",
+      "Well of Ascension",
+      "Vin",
+      "Elend",
+      "Sazed",
+      "Zane"
+    ],
+    "source": "The Well of Ascension"
+  },
+  {
+    "id": "scadrial-014",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "hero-of-ages",
+    "q": "Who becomes Harmony at the end of The Hero of Ages?",
+    "a": "Sazed",
+    "wrong": [
+      "Vin",
+      "Elend",
+      "Spook"
+    ],
+    "explain": "By taking up both Ruin and Preservation, Sazed becomes the Shard holder known as Harmony.",
+    "terms": [
+      "Harmony",
+      "Sazed",
+      "Vin",
+      "Elend",
+      "Spook",
+      "Ruin",
+      "Preservation",
+      "Shard"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "scadrial-015",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "hero-of-ages",
+    "q": "Who gave Vin the earring she always wears?",
+    "a": "Her mother",
+    "wrong": [
+      "Reen",
+      "Kelsier",
+      "Elend"
+    ],
+    "explain": "The earring was actually a Hemalurgic spike that let Ruin whisper to Vin.",
+    "terms": [
+      "Vin",
+      "Reen",
+      "Kelsier",
+      "Elend",
+      "Hemalurgy",
+      "Ruin"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "scadrial-016",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "well-of-ascension",
+    "q": "What was the Lord Ruler's real name?",
+    "a": "Rashek",
+    "wrong": [
+      "Alendi",
+      "Kwaan",
+      "Gemmel"
+    ],
+    "explain": "Rashek was a Terris packman who took the power at the Well of Ascension for himself.",
+    "terms": [
+      "Lord Ruler",
+      "Rashek",
+      "Alendi",
+      "Kwaan",
+      "Gemmel",
+      "Terris",
+      "Well of Ascension"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-017",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "well-of-ascension",
+    "q": "Which kandra secretly took the place of OreSeur at Vin's side?",
+    "a": "TenSoon",
+    "wrong": [
+      "MeLaan",
+      "KanPaar",
+      "VenDell"
+    ],
+    "explain": "Zane ordered TenSoon to kill OreSeur and take his place to spy on Vin.",
+    "terms": [
+      "kandra",
+      "OreSeur",
+      "Vin",
+      "TenSoon",
+      "MeLaan",
+      "KanPaar",
+      "VenDell",
+      "Zane"
+    ],
+    "source": "The Well of Ascension"
+  },
+  {
+    "id": "scadrial-018",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "final-empire",
+    "q": "Kandra imitate people by digesting a corpse and then using its what?",
+    "a": "Bones",
+    "wrong": [
+      "Blood",
+      "Hair",
+      "Teeth"
+    ],
+    "explain": "A kandra rebuilds the body's flesh around the skeleton, copying the person's looks.",
+    "terms": [
+      "kandra"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-019",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "well-of-ascension",
+    "q": "Where was the Well of Ascension finally found?",
+    "a": "Beneath Luthadel",
+    "wrong": [
+      "In the Terris Mountains",
+      "Under Fadrex",
+      "In the Pits of Hathsin"
+    ],
+    "explain": "Everyone sought it in the Terris Mountains, but it lay in a cavern under the capital.",
+    "terms": [
+      "Well of Ascension",
+      "Luthadel",
+      "Terris Mountains",
+      "Fadrex",
+      "Pits of Hathsin"
+    ],
+    "source": "The Well of Ascension"
+  },
+  {
+    "id": "scadrial-020",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "hero-of-ages",
+    "q": "Which god metal can turn an ordinary person into a Mistborn?",
+    "a": "Lerasium",
+    "wrong": [
+      "Atium",
+      "Harmonium",
+      "Electrum"
+    ],
+    "explain": "Lerasium is the metal form of Preservation's power.",
+    "terms": [
+      "Mistborn",
+      "lerasium",
+      "atium",
+      "harmonium",
+      "electrum",
+      "Preservation"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "scadrial-021",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "final-empire",
+    "q": "What was the name of Kelsier's wife, who died in the Pits of Hathsin?",
+    "a": "Mare",
+    "wrong": [
+      "Shan",
+      "Tindwyl",
+      "Valette"
+    ],
+    "explain": "Mare, a Tineye, was imprisoned in the Pits along with Kelsier and died there.",
+    "terms": [
+      "Kelsier",
+      "Mare",
+      "Pits of Hathsin",
+      "Shan",
+      "Tindwyl",
+      "Valette",
+      "Tineye"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-022",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "final-empire",
+    "q": "What is a Misting who can only burn iron called?",
+    "a": "Lurcher",
+    "wrong": [
+      "Coinshot",
+      "Seeker",
+      "Tineye"
+    ],
+    "explain": "A Lurcher Pulls on metals, drawing them toward himself or himself toward them.",
+    "terms": [
+      "Misting",
+      "Lurcher",
+      "Coinshot",
+      "Seeker",
+      "Tineye"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-023",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "well-of-ascension",
+    "q": "If an Allomancer burns duralumin with another metal, what happens to that metal?",
+    "a": "It burns all at once",
+    "wrong": [
+      "It lasts twice as long",
+      "It is hidden from Seekers",
+      "It heals the user"
+    ],
+    "explain": "Vin uses duralumin bursts to gain enormous, short-lived surges of power.",
+    "terms": [
+      "Allomancer",
+      "duralumin",
+      "Seeker",
+      "Vin"
+    ],
+    "source": "The Well of Ascension"
+  },
+  {
+    "id": "scadrial-024",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "final-empire",
+    "q": "What does burning malatium, the Eleventh Metal, reveal?",
+    "a": "A person's past self",
+    "wrong": [
+      "A person's future",
+      "A person's emotions",
+      "Hidden metals"
+    ],
+    "explain": "Vin burned it on the Lord Ruler and glimpsed the man he once was.",
+    "terms": [
+      "malatium",
+      "Eleventh Metal",
+      "Vin",
+      "Lord Ruler"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-025",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "final-empire",
+    "q": "What is the name of the Lord Ruler's palace in Luthadel?",
+    "a": "Kredik Shaw",
+    "wrong": [
+      "Keep Venture",
+      "Keep Hasting",
+      "Conventical of Seran"
+    ],
+    "explain": "Its name means 'the Hill of a Thousand Spires'.",
+    "terms": [
+      "Lord Ruler",
+      "Luthadel",
+      "Kredik Shaw",
+      "Keep Venture",
+      "Keep Hasting",
+      "Conventical of Seran"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-026",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "well-of-ascension",
+    "q": "Which Terriswoman tutors Elend on how to behave like a king?",
+    "a": "Tindwyl",
+    "wrong": [
+      "Allrianne",
+      "Shan Elariel",
+      "Kliss"
+    ],
+    "explain": "Tindwyl is a Keeper who is fascinated by historical leaders.",
+    "terms": [
+      "Terris",
+      "Elend",
+      "Tindwyl",
+      "Allrianne",
+      "Shan Elariel",
+      "Kliss",
+      "Keeper"
+    ],
+    "source": "The Well of Ascension"
+  },
+  {
+    "id": "scadrial-027",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "well-of-ascension",
+    "q": "Which warlord, Elend's own father, besieges Luthadel?",
+    "a": "Straff Venture",
+    "wrong": [
+      "Ashweather Cett",
+      "Jastes Lekal",
+      "Ferson Penrod"
+    ],
+    "explain": "Straff was one of several warlords who surrounded Luthadel at once.",
+    "terms": [
+      "Elend",
+      "Luthadel",
+      "Straff Venture",
+      "Ashweather Cett",
+      "Jastes Lekal",
+      "Ferson Penrod"
+    ],
+    "source": "The Well of Ascension"
+  },
+  {
+    "id": "scadrial-028",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "well-of-ascension",
+    "q": "Who was the man believed to be the Hero of Ages, whose place the Lord Ruler stole?",
+    "a": "Alendi",
+    "wrong": [
+      "Kwaan",
+      "Rashek",
+      "Gemmel"
+    ],
+    "explain": "Rashek killed Alendi on the journey to the Well and took the power himself.",
+    "terms": [
+      "Hero of Ages",
+      "Lord Ruler",
+      "Alendi",
+      "Kwaan",
+      "Rashek",
+      "Gemmel",
+      "Well of Ascension"
+    ],
+    "source": "The Well of Ascension"
+  },
+  {
+    "id": "scadrial-029",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "final-empire",
+    "q": "What does burning aluminum do to an Allomancer?",
+    "a": "Empties their metal reserves",
+    "wrong": [
+      "Lets them sense Feruchemy",
+      "Doubles their Pushes",
+      "Shows them their past"
+    ],
+    "explain": "Inquisitors used aluminum to strip captured Allomancers of their powers.",
+    "terms": [
+      "aluminum",
+      "Allomancer",
+      "Feruchemy",
+      "Push",
+      "Inquisitor"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-030",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "hero-of-ages",
+    "q": "From which creatures are kandra created?",
+    "a": "Mistwraiths",
+    "wrong": [
+      "Koloss",
+      "Mist spirits",
+      "Steel Inquisitors"
+    ],
+    "explain": "Kandra are mistwraiths granted sentience by Hemalurgic spikes known as Blessings.",
+    "terms": [
+      "kandra",
+      "mistwraith",
+      "koloss",
+      "mist spirit",
+      "Steel Inquisitor",
+      "Hemalurgy",
+      "Blessing"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "scadrial-031",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "alloy-of-law",
+    "q": "In which city does most of The Alloy of Law take place?",
+    "a": "Elendel",
+    "wrong": [
+      "Luthadel",
+      "Fadrex",
+      "New Seran"
+    ],
+    "explain": "Elendel is the capital of the Elendel Basin, named after Elend Venture.",
+    "terms": [
+      "Elendel",
+      "Luthadel",
+      "Fadrex",
+      "New Seran",
+      "Elend Venture",
+      "Elendel Basin"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-032",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "alloy-of-law",
+    "q": "Wayne is famous for his skill with what?",
+    "a": "Accents and disguises",
+    "wrong": [
+      "Knife throwing",
+      "Lockpicking",
+      "Pistols"
+    ],
+    "explain": "Wayne collects hats and other items to help him slip into a new persona.",
+    "terms": [
+      "Wayne"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-033",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "alloy-of-law",
+    "q": "Which woman does Wax become engaged to in The Alloy of Law?",
+    "a": "Steris",
+    "wrong": [
+      "Marasi",
+      "Ranette",
+      "MeLaan"
+    ],
+    "explain": "Steris approaches the engagement like a business deal, complete with a detailed contract.",
+    "terms": [
+      "Wax",
+      "Steris",
+      "Marasi",
+      "Ranette",
+      "MeLaan"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-034",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "alloy-of-law",
+    "q": "Which religion of era 2 worships Kelsier?",
+    "a": "Survivorism",
+    "wrong": [
+      "Pathianism",
+      "The Steel Ministry",
+      "Trellism"
+    ],
+    "explain": "Survivorists revere Kelsier as the Survivor who overthrew the Lord Ruler.",
+    "terms": [
+      "Kelsier",
+      "Survivorism",
+      "Pathianism",
+      "Steel Ministry",
+      "Trellism",
+      "Survivor",
+      "Lord Ruler"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-035",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "bands-of-mourning",
+    "q": "The Bands of Mourning are said to be the metalminds of whom?",
+    "a": "The Lord Ruler",
+    "wrong": [
+      "Kelsier",
+      "Sazed",
+      "Vin"
+    ],
+    "explain": "Legends say they could grant all of the Lord Ruler's powers to whoever wore them.",
+    "terms": [
+      "Bands of Mourning",
+      "metalmind",
+      "Lord Ruler",
+      "Kelsier",
+      "Sazed",
+      "Vin"
+    ],
+    "source": "The Bands of Mourning"
+  },
+  {
+    "id": "scadrial-036",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "secret-history",
+    "q": "Which character's story after death is told in Secret History?",
+    "a": "Kelsier",
+    "wrong": [
+      "Vin",
+      "Elend",
+      "Marsh"
+    ],
+    "explain": "Kelsier clung to the Cognitive Realm and kept working behind the scenes of era 1.",
+    "terms": [
+      "Secret History",
+      "Kelsier",
+      "Vin",
+      "Elend",
+      "Marsh",
+      "Cognitive Realm"
+    ],
+    "source": "Secret History"
+  },
+  {
+    "id": "scadrial-037",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "alloy-of-law",
+    "q": "Who is the man known as Mister Suit?",
+    "a": "Edwarn Ladrian",
+    "wrong": [
+      "Miles Hundredlives",
+      "Telsin Ladrian",
+      "Lord Harms"
+    ],
+    "explain": "Mister Suit, the man behind Miles and the Vanishers, is Wax's own uncle.",
+    "terms": [
+      "Mister Suit",
+      "Edwarn Ladrian",
+      "Miles Hundredlives",
+      "Telsin Ladrian",
+      "Lord Harms",
+      "Wax",
+      "Miles",
+      "Vanishers"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-038",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "shadows-of-self",
+    "q": "Who turns out to be the killer known as Bleeder?",
+    "a": "Lessie",
+    "wrong": [
+      "Steris",
+      "MeLaan",
+      "Telsin"
+    ],
+    "explain": "Wax's beloved Lessie had been the kandra Paalm all along.",
+    "terms": [
+      "Bleeder",
+      "Lessie",
+      "Steris",
+      "MeLaan",
+      "Telsin",
+      "Wax",
+      "kandra",
+      "Paalm"
+    ],
+    "source": "Shadows of Self"
+  },
+  {
+    "id": "scadrial-039",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "shadows-of-self",
+    "q": "What do followers of the Path wear while they pray?",
+    "a": "An earring",
+    "wrong": [
+      "A bracelet",
+      "A hat",
+      "A veil"
+    ],
+    "explain": "Wax, a Pathian, often touches his earring when praying or thinking things over.",
+    "terms": [
+      "Path",
+      "Wax",
+      "Pathian"
+    ],
+    "source": "Shadows of Self; Coppermind: The Path"
+  },
+  {
+    "id": "scadrial-040",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "alloy-of-law",
+    "q": "Which gunsmith, an old friend of Wax and Wayne, builds them weapons?",
+    "a": "Ranette",
+    "wrong": [
+      "Steris",
+      "Marasi",
+      "MeLaan"
+    ],
+    "explain": "Ranette has threatened to shoot Wayne on sight, and has actually shot him more than once.",
+    "terms": [
+      "Wax",
+      "Wayne",
+      "Ranette",
+      "Steris",
+      "Marasi",
+      "MeLaan"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-041",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "alloy-of-law",
+    "q": "Which metal does Wax use as a Feruchemist to change his weight?",
+    "a": "Iron",
+    "wrong": [
+      "Steel",
+      "Pewter",
+      "Tin"
+    ],
+    "explain": "Wax is a Twinborn: a Coinshot and a Skimmer, and he combines the two to fly.",
+    "terms": [
+      "Wax",
+      "Feruchemist",
+      "Twinborn",
+      "Coinshot",
+      "Skimmer"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-042",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "alloy-of-law",
+    "q": "In era 2, which era 1 character is revered as the Ascendant Warrior?",
+    "a": "Vin",
+    "wrong": [
+      "Tindwyl",
+      "Allrianne",
+      "Mare"
+    ],
+    "explain": "In era 2 Elend is the Last Emperor and Spook is the Lord Mistborn.",
+    "terms": [
+      "Allrianne",
+      "Ascendant Warrior",
+      "Elend",
+      "Last Emperor",
+      "Lord Mistborn",
+      "Mare",
+      "Spook",
+      "Survivor",
+      "Tindwyl",
+      "Vin"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-043",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "lost-metal",
+    "q": "Which major character dies in The Lost Metal?",
+    "a": "Wayne",
+    "wrong": [
+      "Wax",
+      "Marasi",
+      "Steris"
+    ],
+    "explain": "Wayne gives his life to stop the Set's bomb, a heavy loss for Wax and Marasi.",
+    "terms": [
+      "Wayne",
+      "Wax",
+      "Marasi",
+      "Steris",
+      "Set"
+    ],
+    "source": "The Lost Metal"
+  },
+  {
+    "id": "scadrial-044",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "shadows-of-self",
+    "q": "By what name are the kandra known to the people of Elendel?",
+    "a": "Faceless Immortals",
+    "wrong": [
+      "Seekers",
+      "Survivorists",
+      "Ascendants"
+    ],
+    "explain": "Most people in Elendel see the kandra as half-mythical servants of Harmony.",
+    "terms": [
+      "kandra",
+      "Elendel",
+      "Faceless Immortals",
+      "Seeker",
+      "Survivorist",
+      "Harmony"
+    ],
+    "source": "Shadows of Self"
+  },
+  {
+    "id": "scadrial-045",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "lost-metal",
+    "q": "Which god does the Set serve?",
+    "a": "Trell",
+    "wrong": [
+      "Ruin",
+      "Harmony",
+      "Preservation"
+    ],
+    "explain": "The Set's leaders worship Trell, an ancient god of Scadrial, and work against Harmony's plans.",
+    "terms": [
+      "Set",
+      "Trell",
+      "Ruin",
+      "Harmony",
+      "Preservation",
+      "Scadrial"
+    ],
+    "source": "The Lost Metal"
+  },
+  {
+    "id": "scadrial-046",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "bands-of-mourning",
+    "q": "From which southern nation does the pilot Allik come?",
+    "a": "The Malwish",
+    "wrong": [
+      "The Terris",
+      "The Khlenni",
+      "The Koloss-blooded"
+    ],
+    "explain": "Like other Malwish, Allik wears a mask and uses medallions to access the Metallic Arts.",
+    "terms": [
+      "Allik",
+      "Malwish",
+      "Terris",
+      "Khlenni",
+      "Koloss-blooded",
+      "medallion",
+      "Metallic Arts"
+    ],
+    "source": "The Bands of Mourning"
+  },
+  {
+    "id": "scadrial-047",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "eleventh-metal",
+    "q": "In The Eleventh Metal, who trains Kelsier in Allomancy?",
+    "a": "Gemmel",
+    "wrong": [
+      "Dockson",
+      "Sazed",
+      "Marsh"
+    ],
+    "explain": "Gemmel is an eccentric, seemingly mad Mistborn.",
+    "terms": [
+      "Eleventh Metal",
+      "Kelsier",
+      "Allomancy",
+      "Gemmel",
+      "Dockson",
+      "Sazed",
+      "Marsh",
+      "Mistborn"
+    ],
+    "source": "The Eleventh Metal"
+  },
+  {
+    "id": "scadrial-048",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "allomancer-jak",
+    "q": "Who is the Terris steward who edits Allomancer Jak's stories?",
+    "a": "Handerwym",
+    "wrong": [
+      "Sazed",
+      "Tindwyl",
+      "Rashek"
+    ],
+    "explain": "Handerwym's footnotes politely cast doubt on Jak's wildest claims.",
+    "terms": [
+      "Terris",
+      "Allomancer Jak",
+      "Handerwym",
+      "Sazed",
+      "Tindwyl",
+      "Rashek",
+      "Jak"
+    ],
+    "source": "Allomancer Jak and the Pits of Eltania"
+  },
+  {
+    "id": "scadrial-049",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "bands-of-mourning",
+    "q": "What do the southern Scadrians use to let anyone access Feruchemy?",
+    "a": "Medallions",
+    "wrong": [
+      "Earrings",
+      "Spikes",
+      "Vials"
+    ],
+    "explain": "The medallions are unkeyed metalminds, usable by people with no powers of their own.",
+    "terms": [
+      "Scadrian",
+      "Feruchemy",
+      "medallion",
+      "metalmind",
+      "spike"
+    ],
+    "source": "The Bands of Mourning"
+  },
+  {
+    "id": "scadrial-050",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "lost-metal",
+    "q": "Which era 1 character is known in era 2 as Ironeyes?",
+    "a": "Marsh",
+    "wrong": [
+      "Spook",
+      "TenSoon",
+      "Elend"
+    ],
+    "explain": "Marsh still serves Harmony centuries later and is feared as a figure of legend.",
+    "terms": [
+      "Inquisitor",
+      "Ironeyes",
+      "Marsh",
+      "Spook",
+      "TenSoon",
+      "Elend",
+      "Harmony"
+    ],
+    "source": "The Lost Metal"
+  },
+  {
+    "id": "scadrial-051",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "final-empire",
+    "q": "What name did Spook go by before Kelsier gave him his nickname?",
+    "a": "Lestibournes",
+    "wrong": [
+      "Cladent",
+      "Hammond",
+      "Ladrian"
+    ],
+    "explain": "Kelsier renamed the young Lestibournes \"Spook\" soon after he joined the crew.",
+    "terms": [
+      "Spook",
+      "Kelsier",
+      "Lestibournes",
+      "Cladent",
+      "Hammond",
+      "Ladrian"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-052",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "hero-of-ages",
+    "q": "Who rules Fadrex City when Elend's army besieges it in The Hero of Ages?",
+    "a": "Aradan Yomen",
+    "wrong": [
+      "Quellion",
+      "Ashweather Cett",
+      "Ferson Penrod"
+    ],
+    "explain": "Yomen, an obligator who is secretly an atium Seer, made himself king after Cett left for Luthadel.",
+    "terms": [
+      "Fadrex City",
+      "Elend",
+      "The Hero of Ages",
+      "Aradan Yomen",
+      "Quellion",
+      "Ashweather Cett",
+      "Ferson Penrod",
+      "obligator",
+      "atium",
+      "Seer",
+      "Cett",
+      "Luthadel"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "scadrial-053",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "alloy-of-law",
+    "q": "What kind of Misting is Marasi?",
+    "a": "A Pulser",
+    "wrong": [
+      "A Slider",
+      "A Smoker",
+      "A Seeker"
+    ],
+    "explain": "Marasi burns cadmium to slow time inside a bubble around herself, a power she considers nearly useless.",
+    "terms": [
+      "Misting",
+      "Marasi",
+      "Pulser",
+      "Slider",
+      "Smoker",
+      "Seeker",
+      "cadmium"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-054",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "alloy-of-law",
+    "q": "Which metal does Wayne burn as a Slider?",
+    "a": "Bendalloy",
+    "wrong": [
+      "Cadmium",
+      "Chromium",
+      "Electrum"
+    ],
+    "explain": "Burning bendalloy lets Wayne speed up time inside a bubble around himself.",
+    "terms": [
+      "Wayne",
+      "Slider",
+      "bendalloy",
+      "cadmium",
+      "chromium",
+      "electrum"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-055",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "final-empire",
+    "q": "Who plays the part of Lord Renoux, Vin's supposed uncle, in The Final Empire?",
+    "a": "OreSeur",
+    "wrong": [
+      "TenSoon",
+      "Dockson",
+      "Kelsier"
+    ],
+    "explain": "OreSeur, a kandra hired by Kelsier, wore Lord Renoux's bones while Vin posed as Valette Renoux.",
+    "terms": [
+      "Lord Renoux",
+      "Vin",
+      "The Final Empire",
+      "OreSeur",
+      "TenSoon",
+      "Dockson",
+      "Kelsier",
+      "kandra",
+      "Valette Renoux"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-056",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "well-of-ascension",
+    "q": "The chapter epigraphs of The Well of Ascension reproduce the words of which man?",
+    "a": "Kwaan",
+    "wrong": [
+      "Alendi",
+      "Sazed",
+      "Rashek"
+    ],
+    "explain": "They come from the inscription Kwaan left before his death, which Sazed found in the Conventical of Seran.",
+    "terms": [
+      "The Well of Ascension",
+      "Kwaan",
+      "Alendi",
+      "Sazed",
+      "Rashek",
+      "Conventical of Seran"
+    ],
+    "source": "The Well of Ascension, epigraphs"
+  },
+  {
+    "id": "scadrial-057",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "final-empire",
+    "q": "Who was the leader of the skaa rebellion that hired Kelsier's crew?",
+    "a": "Yeden",
+    "wrong": [
+      "Demoux",
+      "Goradel",
+      "Camon"
+    ],
+    "explain": "Yeden later led the rebel army against the Holstep garrison too early, and he died when it was crushed.",
+    "terms": [
+      "skaa",
+      "Kelsier",
+      "Yeden",
+      "Demoux",
+      "Goradel",
+      "Camon",
+      "Holstep"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-058",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "hero-of-ages",
+    "q": "Which city was the capital of the Terris Dominance and the seat of the Keepers' Synod?",
+    "a": "Tathingdwen",
+    "wrong": [
+      "Urteau",
+      "Fellise",
+      "Fadrex City"
+    ],
+    "explain": "Keepers returned there periodically to update their copperminds, until Inquisitors and koloss burned it.",
+    "terms": [
+      "Terris Dominance",
+      "Keeper",
+      "Synod",
+      "Tathingdwen",
+      "Urteau",
+      "Fellise",
+      "Fadrex City",
+      "coppermind",
+      "Inquisitor",
+      "koloss"
+    ],
+    "source": "The Well of Ascension; The Hero of Ages"
+  },
+  {
+    "id": "scadrial-059",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "alloy-of-law",
+    "q": "In which Roughs town did Wax keep the peace before returning to Elendel?",
+    "a": "Weathering",
+    "wrong": [
+      "Bilming",
+      "New Seran",
+      "Fadrex City"
+    ],
+    "explain": "Wax, Wayne, Lessie and deputies such as Barl kept order in Weathering and the surrounding area.",
+    "terms": [
+      "Roughs",
+      "Wax",
+      "Elendel",
+      "Weathering",
+      "Bilming",
+      "New Seran",
+      "Fadrex City",
+      "Wayne",
+      "Lessie",
+      "Barl"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-060",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "lost-metal",
+    "q": "What is the strange metal linked to the god Trell called?",
+    "a": "Trellium",
+    "wrong": [
+      "Harmonium",
+      "Malatium",
+      "Lerasium"
+    ],
+    "explain": "Trellium and harmonium repel each other, and forcing them together can unleash a devastating explosion.",
+    "terms": [
+      "Trell",
+      "trellium",
+      "harmonium",
+      "malatium",
+      "lerasium"
+    ],
+    "source": "The Lost Metal"
+  },
+  {
+    "id": "scadrial-061",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "hero-of-ages",
+    "q": "To which kandra Generation does TenSoon belong?",
+    "a": "The Third",
+    "wrong": [
+      "The First",
+      "The Second",
+      "The Fifth"
+    ],
+    "explain": "As a Third Generation kandra, TenSoon is older than most of his people but below the ruling Second Generation.",
+    "terms": [
+      "kandra",
+      "Generation",
+      "TenSoon",
+      "Second Generation"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "scadrial-062",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "hero-of-ages",
+    "q": "Which kandra Blessing grants its bearer greater strength?",
+    "a": "The Blessing of Potency",
+    "wrong": [
+      "The Blessing of Presence",
+      "The Blessing of Awareness",
+      "The Blessing of Stability"
+    ],
+    "explain": "TenSoon was created with the Blessing of Presence and later took OreSeur's Blessing of Potency.",
+    "terms": [
+      "kandra",
+      "Blessing",
+      "Blessing of Potency",
+      "Blessing of Presence",
+      "Blessing of Awareness",
+      "Blessing of Stability",
+      "TenSoon",
+      "OreSeur"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "scadrial-063",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "well-of-ascension",
+    "q": "In his inscription, Kwaan calls himself a philosopher, a scholar and a what?",
+    "a": "A traitor",
+    "wrong": [
+      "A prophet",
+      "A hero",
+      "A Keeper"
+    ],
+    "explain": "Kwaan first proclaimed Alendi the Hero of Ages and later betrayed him to stop his quest.",
+    "terms": [
+      "Kwaan",
+      "Keeper",
+      "Alendi",
+      "Hero of Ages"
+    ],
+    "source": "The Well of Ascension, ch. 4 epigraph"
+  },
+  {
+    "id": "scadrial-064",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "well-of-ascension",
+    "q": "On what did Kwaan record his final account?",
+    "a": "A steel plate",
+    "wrong": [
+      "A stone wall",
+      "A vellum scroll",
+      "A clay tablet"
+    ],
+    "explain": "Kwaan wrote in steel because, as he says, anything not set in metal cannot be trusted.",
+    "terms": [
+      "Kwaan"
+    ],
+    "source": "The Well of Ascension, ch. 1 epigraph"
+  },
+  {
+    "id": "scadrial-065",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "final-empire",
+    "q": "Who was revealed to be Vin's father?",
+    "a": "Tevidian",
+    "wrong": [
+      "Kar",
+      "Tresting",
+      "Straff Venture"
+    ],
+    "explain": "Tevidian was the Lord Prelan of the Steel Ministry; the Lord Ruler let the Inquisitors kill him once the truth came out.",
+    "terms": [
+      "Vin",
+      "Tevidian",
+      "Kar",
+      "Tresting",
+      "Straff Venture",
+      "Lord Prelan",
+      "Steel Ministry",
+      "Lord Ruler",
+      "Inquisitor"
+    ],
+    "source": "The Final Empire, ch. 36-37"
+  },
+  {
+    "id": "scadrial-066",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "final-empire",
+    "q": "According to Alendi's logbook, which member of his party was stabbed by a mist spirit?",
+    "a": "Fedik",
+    "wrong": [
+      "Rashek",
+      "Kwaan",
+      "Gemmel"
+    ],
+    "explain": "Fedik survived the attack, and Rashek spread rumours that Alendi himself had been the attacker.",
+    "terms": [
+      "Alendi",
+      "mist spirit",
+      "Fedik",
+      "Rashek",
+      "Kwaan",
+      "Gemmel"
+    ],
+    "source": "The Final Empire, epigraphs (Alendi's logbook)"
+  },
+  {
+    "id": "scadrial-067",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "alloy-of-law",
+    "q": "Miles Hundredlives is a Twinborn with the same metal in Allomancy and Feruchemy. Which metal?",
+    "a": "Gold",
+    "wrong": [
+      "Pewter",
+      "Bendalloy",
+      "Iron"
+    ],
+    "explain": "As an Augur and a Bloodmaker, Miles can compound gold and heal almost any wound in an instant.",
+    "terms": [
+      "Miles Hundredlives",
+      "Twinborn",
+      "Allomancy",
+      "Feruchemy",
+      "Augur",
+      "Bloodmaker",
+      "Miles"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "scadrial-068",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "alloy-of-law",
+    "q": "In the prologue of The Alloy of Law, which outlaw are Wax and Lessie hunting in Feltrel?",
+    "a": "Bloody Tan",
+    "wrong": [
+      "Miles Hundredlives",
+      "Mister Suit",
+      "Bleeder"
+    ],
+    "explain": "Tan pulled Lessie into the path of Wax's bullet, and Wax shot him dead.",
+    "terms": [
+      "The Alloy of Law",
+      "Wax",
+      "Lessie",
+      "Feltrel",
+      "Bloody Tan",
+      "Miles Hundredlives",
+      "Mister Suit",
+      "Bleeder",
+      "Tan"
+    ],
+    "source": "The Alloy of Law, prologue"
+  },
+  {
+    "id": "scadrial-069",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "lost-metal",
+    "q": "By what other name is harmonium known on Scadrial?",
+    "a": "Ettmetal",
+    "wrong": [
+      "Trellium",
+      "Malatium",
+      "Duralumin"
+    ],
+    "explain": "Harmonium is the god metal of Harmony; it reacts violently with water.",
+    "terms": [
+      "harmonium",
+      "Scadrial",
+      "ettmetal",
+      "trellium",
+      "malatium",
+      "duralumin",
+      "Harmony"
+    ],
+    "source": "The Bands of Mourning; The Lost Metal"
+  },
+  {
+    "id": "scadrial-070",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "alloy-of-law",
+    "q": "What does a Feruchemist store in cadmium?",
+    "a": "Breath",
+    "wrong": [
+      "Fortune",
+      "Determination",
+      "Identity"
+    ],
+    "explain": "A Gasper hyperventilates while storing and can later go long periods without needing to breathe.",
+    "terms": [
+      "Feruchemist",
+      "cadmium",
+      "Gasper"
+    ],
+    "source": "Ars Arcanum (era 2)"
+  },
+  {
+    "id": "scadrial-071",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "hero-of-ages",
+    "q": "According to the Ars Arcanum, what does a Hemalurgic spike of pewter steal?",
+    "a": "Physical Feruchemical powers",
+    "wrong": [
+      "Physical Allomantic powers",
+      "Human strength",
+      "Human senses"
+    ],
+    "explain": "Steel spikes steal physical Allomantic powers, iron steals strength and tin steals senses.",
+    "terms": [
+      "Ars Arcanum",
+      "Hemalurgy",
+      "Feruchemy",
+      "Allomancy"
+    ],
+    "source": "The Hero of Ages, Ars Arcanum (Hemalurgy table)"
+  },
+  {
+    "id": "scadrial-072",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "hero-of-ages",
+    "q": "Which Allomantic power did Quellion, the Citizen of Urteau, gain from a hidden Hemalurgic spike?",
+    "a": "That of a Seeker",
+    "wrong": [
+      "That of a Soother",
+      "That of a Rioter",
+      "That of a Thug"
+    ],
+    "explain": "Quellion used a bronze spike to find Allomancers he could blackmail into working for him.",
+    "terms": [
+      "Allomancy",
+      "Quellion",
+      "Citizen",
+      "Urteau",
+      "Hemalurgy",
+      "spike",
+      "Seeker",
+      "Soother",
+      "Rioter",
+      "Thug",
+      "Allomancer"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "scadrial-073",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "hero-of-ages",
+    "q": "How many Hemalurgic spikes are used to make a koloss?",
+    "a": "Four",
+    "wrong": [
+      "Two",
+      "Three",
+      "Seven"
+    ],
+    "explain": "The spikes are taken from four people and driven into a fifth, who becomes the koloss.",
+    "terms": [
+      "Hemalurgy",
+      "spike",
+      "koloss"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "scadrial-074",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "alloy-of-law",
+    "q": "What is a Misting who burns electrum called?",
+    "a": "An Oracle",
+    "wrong": [
+      "An Augur",
+      "A Leecher",
+      "A Nicroburst"
+    ],
+    "explain": "An Oracle sees possible futures of their own, a few seconds ahead.",
+    "terms": [
+      "Misting",
+      "electrum",
+      "Oracle",
+      "Augur",
+      "Leecher",
+      "Nicroburst"
+    ],
+    "source": "Ars Arcanum (era 2)"
+  },
+  {
+    "id": "scadrial-075",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "alloy-of-law",
+    "q": "What is a Feruchemist who stores mental speed in zinc called?",
+    "a": "A Sparker",
+    "wrong": [
+      "A Windwhisper",
+      "A Firesoul",
+      "A Sentry"
+    ],
+    "explain": "A Sparker can later tap that zinc to think much faster than normal.",
+    "terms": [
+      "Feruchemist",
+      "zinc",
+      "Sparker",
+      "Windwhisper",
+      "Firesoul",
+      "Sentry"
+    ],
+    "source": "Ars Arcanum (era 2)"
+  },
+  {
+    "id": "scadrial-076",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "final-empire",
+    "q": "How much did Yeden's skaa rebellion agree to pay Kelsier's crew?",
+    "a": "Thirty thousand boxings",
+    "wrong": [
+      "Ten thousand boxings",
+      "Three thousand boxings",
+      "One hundred thousand boxings"
+    ],
+    "explain": "Half was to be paid in advance and half once the job was done; the rebels had saved it for years.",
+    "terms": [
+      "Yeden",
+      "skaa",
+      "Kelsier",
+      "boxing"
+    ],
+    "source": "The Final Empire"
+  },
+  {
+    "id": "scadrial-077",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "eleventh-metal",
+    "q": "In The Eleventh Metal, which noble Mistborn does Kelsier fight and kill in his keep in Mantiz?",
+    "a": "Lord Shezler",
+    "wrong": [
+      "Lord Tresting",
+      "Lord Hasting",
+      "Lord Tekiel"
+    ],
+    "explain": "Kelsier took Antillius Shezler's notebook, full of research into a possible eleventh metal.",
+    "terms": [
+      "The Eleventh Metal",
+      "Mistborn",
+      "Kelsier",
+      "Mantiz",
+      "Lord Shezler",
+      "Lord Tresting",
+      "Lord Hasting",
+      "Lord Tekiel",
+      "Antillius Shezler"
+    ],
+    "source": "The Eleventh Metal"
+  },
+  {
+    "id": "scadrial-078",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "allomancer-jak",
+    "q": "In Allomancer Jak and the Pits of Eltania, what does the Survivor's Treasure turn out to contain?",
+    "a": "Koloss spikes",
+    "wrong": [
+      "Atium beads",
+      "A bead of lerasium",
+      "The Bands of Mourning"
+    ],
+    "explain": "Jak dove into the pits and brought up a chest full of koloss spikes; the chest itself turned out to be made of aluminum.",
+    "terms": [
+      "Allomancer Jak and the Pits of Eltania",
+      "Survivor's Treasure",
+      "koloss",
+      "atium",
+      "lerasium",
+      "Bands of Mourning",
+      "Jak",
+      "aluminum"
+    ],
+    "source": "Allomancer Jak and the Pits of Eltania"
+  },
+  {
+    "id": "scadrial-079",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "secret-history",
+    "q": "In Secret History, what keeps Kelsier from passing into the Beyond after his death?",
+    "a": "The power of the Well of Ascension",
+    "wrong": [
+      "A Hemalurgic spike",
+      "Vin's earring",
+      "Sazed's copperminds"
+    ],
+    "explain": "Kelsier tricked Preservation into revealing that the Well was near, and its power held him as a Cognitive Shadow.",
+    "terms": [
+      "Secret History",
+      "Kelsier",
+      "Beyond",
+      "Well of Ascension",
+      "Hemalurgy",
+      "Vin",
+      "Sazed",
+      "coppermind",
+      "Preservation",
+      "Cognitive Shadow"
+    ],
+    "source": "Secret History"
+  },
+  {
+    "id": "scadrial-080",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "well-of-ascension",
+    "q": "Which Canton of the Steel Ministry held the Conventical of Seran?",
+    "a": "The Canton of Inquisition",
+    "wrong": [
+      "The Canton of Orthodoxy",
+      "The Canton of Resource",
+      "The Canton of Finance"
+    ],
+    "explain": "The Conventical was the Inquisitors' fortress, and Kwaan's steel inscription lay in its depths.",
+    "terms": [
+      "Canton",
+      "Steel Ministry",
+      "Conventical of Seran",
+      "Canton of Inquisition",
+      "Canton of Orthodoxy",
+      "Canton of Resource",
+      "Canton of Finance",
+      "Inquisitor",
+      "Kwaan"
+    ],
+    "source": "The Well of Ascension"
+  }
+]

@@ -1,0 +1,4328 @@
+{
+ "Bridge Four": {
+  "de": "Brücke Vier",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Br%C3%BCcke_Vier"
+  ],
+  "notes": "Confirmed."
+ },
+ "Bridge Two": {
+  "de": "Brücke Zwei",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Bridge Seventeen": {
+  "de": "Brücke Siebzehn",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Bridge Eighteen": {
+  "de": "Brücke Achtzehn",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Shattered Plains": {
+  "de": "Zerbrochene Ebene",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Zerbrochene_Ebene"
+  ],
+  "notes": "Singular in German: die Zerbrochene Ebene (dat. auf der Zerbrochenen Ebene)."
+ },
+ "Cryptic": {
+  "de": "Kryptiker",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Muster"
+  ],
+  "notes": "Confirmed: der Kryptiker, pl. -."
+ },
+ "Shallan": {
+  "de": "Schallan",
+  "status": "official",
+  "sources": [
+   "https://himmelsblau.org/2016/08/buchreview-der-weg-der-koenige/"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). \"Schallan\" (Heyne)."
+ },
+ "Pattern": {
+  "de": "Muster",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Muster"
+  ],
+  "notes": "Confirmed. Masc. pronoun in German text (\"er\")."
+ },
+ "Wyndle": {
+  "de": "Wyndel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "kosmeer spelling Wyndel."
+ },
+ "Lightweaver": {
+  "de": "Lichtweber",
+  "status": "unverified",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). \"Lichtweber\" not seen in sources."
+ },
+ "Stormlight": {
+  "de": "Sturmlicht",
+  "status": "official",
+  "sources": [
+   "https://www.17thshard.com/forums/topic/94537-reading-stormlight-in-translation/ (reader report of French edition)",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Wogenbinden"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). das Sturmlicht."
+ },
+ "highstorm": {
+  "de": "Großsturm",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Kosmeer"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). der Großsturm, pl. Großstürme."
+ },
+ "Weeping": {
+  "de": "das Weinen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Everstorm": {
+  "de": "Ewigsturm",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Moash": {
+  "de": "Moasch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form (Siefener sh->sch pattern, cf. Schallan, Schalasch confirmed). Not directly confirmed."
+ },
+ "Horneater": {
+  "de": "Hornesser",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Rock": {
+  "de": "Fels",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "spren": {
+  "de": "Sprengsel",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel",
+   "https://www.lovelybooks.de/stoebern/empfehlung/sprengsel/",
+   "https://www.lovelybooks.de/stoebern/empfehlung/sturmlicht-chroniken/"
+  ],
+  "notes": "Neuter: das Sprengsel, pl. die Sprengsel (Heyne blurb of \"Der Pfad der Winde\": \"Syl, das kleine Windsprengsel\"). Beta-1: all masculine uses (der/den/einen Sprengsel) fixed to neuter. Named spren may take natural-gender pronouns (Muster \"er\", Timbre \"sie\")."
+ },
+ "Shallan Davar": {
+  "de": "Schallan Davar",
+  "status": "official",
+  "sources": [
+   "https://himmelsblau.org/2016/08/buchreview-der-weg-der-koenige/"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). \"Schallan Davar\"."
+ },
+ "Lift": {
+  "de": "Lift",
+  "status": "official",
+  "sources": [],
+  "notes": "Kept glossary form (spot check: no contrary evidence). German reviews keep \"Lift\"."
+ },
+ "Soulcaster": {
+  "de": "Seelengießer",
+  "status": "official",
+  "sources": [
+   "https://phantastisch-lesen.com/der-weg-der-koenige-sturmlicht-chroniken-1-brandon-sanderson/",
+   "https://prestelpublishing.penguinrandomhouse.de/leseprobe/Der-Weg-der-Koenige/leseprobe_9783453317109.pdf"
+  ],
+  "notes": "Confirmed in reviews/Leseprobe of Heyne edition: der Seelengießer (person and fabrial), pl. -."
+ },
+ "Knights Radiant": {
+  "de": "Strahlende Ritter",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). die Strahlenden Ritter."
+ },
+ "Windrunners": {
+  "de": "Windläufer",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Skybreakers": {
+  "de": "Himmelsbrecher",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Edgedancers": {
+  "de": "Grattänzer",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter"
+  ],
+  "notes": "Order name confirmed in kosmeer. der Grattänzer, pl. -; fem. Grattänzerin."
+ },
+ "Stonewards": {
+  "de": "Steinwächter",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden",
+   "https://kosmeer.fandom.com/de/wiki/Herold"
+  ],
+  "notes": "CHANGED from \"Steinwehrer\" (glossary marked official without source). kosmeer: Steinwächter (Herald Talenel; Cohesion+Tension). der Steinwächter, pl. die Steinwächter."
+ },
+ "honorspren": {
+  "de": "Ehrensprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel",
+   "https://kosmeer.fandom.com/de/wiki/Sylphrena"
+  ],
+  "notes": "Confirmed. der/das Sprengsel; pl. die Ehrensprengsel."
+ },
+ "Bondsmiths": {
+  "de": "Bindeschmiede",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Dustbringers": {
+  "de": "Staubbringer",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Elsecallers": {
+  "de": "Aufscheiner",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter",
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden"
+  ],
+  "notes": "CHANGED; see Elsecaller. Plural."
+ },
+ "Stormfather": {
+  "de": "Sturmvater",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Veil": {
+  "de": "Schleier",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Radiant": {
+  "de": "Strahlender",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Splitterr%C3%BCstung"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). der/die Strahlende. Also the name of Shallan's persona \"Radiant\" (es Radiante, fr Radieuse, de Strahlende, it Radiosa - persona forms unverified)."
+ },
+ "Formless": {
+  "de": "Formlose",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Ghostbloods": {
+  "de": "Geisterblut",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "cultivationspren": {
+  "de": "Bebauungssprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "kosmeer lists Wyndel as Bebauungssprengsel; consistent with Cultivation = die Bebauerin."
+ },
+ "Timbre": {
+  "de": "Timbre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Shadesmar": {
+  "de": "Schadesmar",
+  "status": "official",
+  "sources": [
+   "https://himmelsblau.org/2019/08/sturmlichtarchive-6-die-splitter-der-macht/"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). Heyne spells \"Schadesmar\"."
+ },
+ "greatshell": {
+  "de": "Großpanzer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Alethi": {
+  "de": "Alethi",
+  "status": "unverified",
+  "sources": [
+   "https://www.melaniefazi.net/blog/tag/les-archives-de-roshar/"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "gemheart": {
+  "de": "Gemmenherz",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "chasmfiend": {
+  "de": "Kluftteufel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Zerbrochene_Ebene"
+  ],
+  "notes": "Confirmed: der Kluftteufel, pl. die Kluftteufel."
+ },
+ "Whitespine": {
+  "de": "Weißdorn",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "chull": {
+  "de": "Chull",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "highprince": {
+  "de": "Großprinz",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Dalinar_Kholin",
+   "https://prestelpublishing.penguinrandomhouse.de/leseprobe/Der-Weg-der-Koenige/leseprobe_9783453317109.pdf"
+  ],
+  "notes": "Confirmed (Leseprobe: \"an Großprinz Sadeas verkauft\"). der Großprinz, pl. die Großprinzen. kosmeer also has \"Hochprinz\" once."
+ },
+ "Assassin in White": {
+  "de": "Attentäter in Weiß",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Szeth"
+  ],
+  "notes": "Confirmed: der Attentäter in Weiß."
+ },
+ "Parshendi": {
+  "de": "Parschendi",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). probably \"Parschendi\" following the sh->sch rule."
+ },
+ "First Ideal": {
+  "de": "Erstes Ideal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Vorin": {
+  "de": "vorinisch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "safehand": {
+  "de": "Schutzhand",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Herald": {
+  "de": "Herold",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Herold"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). der Herold, die Heroldin (female Heralds)."
+ },
+ "Oathgate": {
+  "de": "Eidtor",
+  "status": "official",
+  "sources": [
+   "https://www.penguin.de/buecher/reihen/die-sturmlicht-chroniken/5003202"
+  ],
+  "notes": "Publisher blurb: \"die Eidtore in Urithiru\". das Eidtor, pl. die Eidtore."
+ },
+ "Wind and Truth": {
+  "de": "Winde und Wahrheit / Der Kampf der Meister",
+  "status": "official",
+  "sources": [
+   "https://www.penguin.de/buecher/brandon-sanderson-winde-und-wahrheit/buch/9783453272743",
+   "https://www.jpc.de/jpcng/books/detail/-/art/brandon-sanderson-winde-und-wahrheit/hnum/12691451"
+  ],
+  "notes": "Split into two Heyne volumes."
+ },
+ "Shinovar": {
+  "de": "Schinovar",
+  "status": "official",
+  "sources": [
+   "https://www.penguin.de/content/edition/excerpts_extended/Leseprobe_978-3-453-27325-2.pdf"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). \"Schinovar\" (Heyne blurb)."
+ },
+ "Herdazians": {
+  "de": "Herdazianer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Shin": {
+  "de": "Schin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Shardbearer": {
+  "de": "Splitterträger",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Dalinar_Kholin"
+  ],
+  "notes": "Confirmed: der Splitterträger, pl. -."
+ },
+ "Jushu": {
+  "de": "Juschu",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+ },
+ "Shardblade": {
+  "de": "Splitterklinge",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Splitterr%C3%BCstung"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). die Splitterklinge, pl. Splitterklingen."
+ },
+ "Shardplate": {
+  "de": "Splitterpanzer",
+  "status": "official",
+  "sources": [
+   "https://content.penguinrandomhouse.de/content/edition/excerpts_extended/Leseprobe_978-3-453-31710-9.pdf"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). der Splitterpanzer (Heyne; German fan wiki also has \"Splitterrüstung\")."
+ },
+ "inkspren": {
+  "de": "Tintensprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel",
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter"
+  ],
+  "notes": "Confirmed."
+ },
+ "Ivory": {
+  "de": "Elfenbein",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel",
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter"
+  ],
+  "notes": "Confirmed (kosmeer: \"Elfenbein und Mischin\")."
+ },
+ "Elsecaller": {
+  "de": "Aufscheiner",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter",
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden",
+   "https://kosmeer.fandom.com/de/wiki/Herold"
+  ],
+  "notes": "CHANGED from \"Anderswortrufer\" (invented). kosmeer lists Aufscheiner (Herald Battar; Transformation+Transportation; inkspren bond). der Aufscheiner, pl. die Aufscheiner; fem. Aufscheinerin. Likely Siefener form; not seen in a publisher text."
+ },
+ "Truthwatchers": {
+  "de": "Wahrheitswächter",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). German fan wiki \"Wahrheitswächter\" (Wahrheitsbeobachter NOT attested). es also confirmed by 17th Shard reader report."
+ },
+ "Willshapers": {
+  "de": "Willensformer",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). German fan wiki \"Willensformer\"."
+ },
+ "Unmade": {
+  "de": "Ungemachte",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Ungemachte"
+  ],
+  "notes": "CHANGED from unattested \"Unerschaffene\": the German Kosmeer wiki uses \"die Ungemachten\" (der Ungemachte, pl. die Ungemachten). de files updated (roshar-023/025/041/045 + new entries). QA: confirm against Heyne text if possible."
+ },
+ "Sibling": {
+  "de": "Zwilling",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Nachtschauerin"
+  ],
+  "notes": "kosmeer: \"Der Zwilling ... Er ist die Kraft im Turm von Urithiru\" – masculine: der Zwilling."
+ },
+ "Nightwatcher": {
+  "de": "Nachtschauerin",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Nachtschauerin"
+  ],
+  "notes": "Confirmed by kosmeer page title (glossary status \"official\" not independently confirmed). die Nachtschauerin."
+ },
+ "Bondsmith": {
+  "de": "Bindeschmied",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Thrill": {
+  "de": "der Rausch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Ashertmarn": {
+  "de": "Aschertmarn",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+ },
+ "Thaylen Field": {
+  "de": "Thaylen-Feld",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Oathpact": {
+  "de": "Eidpakt",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Herold"
+  ],
+  "notes": "Confirmed: der Eidpakt."
+ },
+ "Ishar": {
+  "de": "Ischar",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter",
+   "https://kosmeer.fandom.com/de/wiki/Herold"
+  ],
+  "notes": "kosmeer: Ischar (Bindeschmiede); also on the Herold page."
+ },
+ "Damnation": {
+  "de": "Verdammnis",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Herold"
+  ],
+  "notes": "Confirmed: die Verdammnis (Braize)."
+ },
+ "Tashikki": {
+  "de": "Taschikki",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Edgedancer": {
+  "de": "Grattänzer",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter"
+  ],
+  "notes": "Order name (kosmeer). NOTE: the novella's German title is \"Die Tänzerin am Abgrund\" (Heyne, Sturmlicht-Chroniken Bd. 7), not \"Grattänzer\"."
+ },
+ "Thaylen City": {
+  "de": "Thaylen-Stadt",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary."
+ },
+ "Stump": {
+  "de": "Stumpf",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "larkin": {
+  "de": "Larkin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "axehound": {
+  "de": "Axthund",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "skyeel": {
+  "de": "Himmelsaal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Investiture": {
+  "de": "Investitur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Third Ideal": {
+  "de": "Drittes Ideal",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Wogenbinden"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). German fan wiki \"das dritte Ideal\"."
+ },
+ "fabrial": {
+  "de": "Fabrial",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Spanreed": {
+  "de": "Spannfeder",
+  "status": "official",
+  "sources": [
+   "https://www.penguin.de/content/edition/excerpts_extended/Leseprobe_978-3-453-27325-2.pdf"
+  ],
+  "notes": "Confirmed in Heyne Leseprobe (Der Kampf der Meister): die Spannfeder, pl. die Spannfedern."
+ },
+ "Emerald": {
+  "de": "Smaragd",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Ruby": {
+  "de": "Rubin",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Sapphire": {
+  "de": "Saphir",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Topaz": {
+  "de": "Topas",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "broam": {
+  "de": "Broam",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Eshonai": {
+  "de": "Eschonai",
+  "status": "unverified",
+  "sources": [],
+  "notes": "sh->sch pattern; not directly confirmed."
+ },
+ "Stormform": {
+  "de": "Sturmform",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Odium"
+  ],
+  "notes": "CHANGED from \"Sturmgestalt\": kosmeer names dullform \"Fadform\", so Siefener uses -form, not -gestalt. die Sturmform."
+ },
+ "Warform": {
+  "de": "Kriegsform",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Odium"
+  ],
+  "notes": "CHANGED (see Stormform). die Kriegsform."
+ },
+ "Workform": {
+  "de": "Arbeitsform",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Odium"
+  ],
+  "notes": "CHANGED (see Stormform). die Arbeitsform."
+ },
+ "Mateform": {
+  "de": "Paarungsform",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Odium"
+  ],
+  "notes": "CHANGED (see Stormform). die Paarungsform."
+ },
+ "Firemoss": {
+  "de": "Feuermoos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Knobweed": {
+  "de": "Knotenkraut",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Blackbane": {
+  "de": "Schwarzbann",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Envisagers": {
+  "de": "Visionäre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Reacher": {
+  "de": "Greifer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Willshaper": {
+  "de": "Willensformer",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). German fan wiki \"Willensformer\"."
+ },
+ "Vessel": {
+  "de": "Gefäß",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Odium": {
+  "de": "Odium",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Roschar"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Rhythm of War": {
+  "de": "Der Rhythmus des Krieges / Der Turm der Lichter",
+  "status": "official",
+  "sources": [
+   "https://www.penguin.de/buecher/brandon-sanderson-der-turm-der-lichter/buch/9783453273245"
+  ],
+  "notes": "Two volumes."
+ },
+ "Shard": {
+  "de": "Scherbe",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Adonalsium",
+   "https://kosmeer.fandom.com/de/wiki/Odium",
+   "https://kosmeer.fandom.com/de/wiki/Ruin",
+   "https://kosmeer.fandom.com/de/wiki/Scherbenpool"
+  ],
+  "notes": "CHANGED from \"Splitter\": kosmeer consistently \"Scherbe\" for the 16 Shards (Scherbenpool, \"Odium ist eine Scherbe von Adonalsium\") and \"Splitter\" for Splinters. die Scherbe, pl. die Scherben. Siebzehnter Splitter -> Siebzehnte Scherbe for consistency."
+ },
+ "Fused": {
+  "de": "Verschmolzene",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Herold"
+  ],
+  "notes": "Confirmed: der/die Verschmolzene, pl. die Verschmolzenen."
+ },
+ "Heavenly Ones": {
+  "de": "Himmlische",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Deepest Ones": {
+  "de": "Tiefsten",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Masked Ones": {
+  "de": "Maskierte",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Magnified Ones": {
+  "de": "Vergrößerte",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Leshwi": {
+  "de": "Leschwi",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+ },
+ "Voidlight": {
+  "de": "Leerenlicht",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Ideal": {
+  "de": "Ideal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Lightweavers": {
+  "de": "Lichtweber",
+  "status": "unverified",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). \"Lichtweber\" not seen in sources."
+ },
+ "Truths": {
+  "de": "Wahrheiten",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Surge": {
+  "de": "Woge",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden"
+  ],
+  "notes": "Confirmed: die Woge, pl. die Wogen; Surgebinding = Wogenbinden."
+ },
+ "Adhesion": {
+  "de": "Haftung",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter",
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden"
+  ],
+  "notes": "Confirmed: die Haftung."
+ },
+ "Gravitation": {
+  "de": "Gravitation",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter",
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden"
+  ],
+  "notes": "CHANGED from \"Schwerkraft\": kosmeer uses Gravitation. die Gravitation."
+ },
+ "Division": {
+  "de": "Division",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter",
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden"
+  ],
+  "notes": "CHANGED from \"Zerstörung\": kosmeer lists the Surge as Division (Himmelsbrecher: Gravitation und Division). die Division."
+ },
+ "Tension": {
+  "de": "Tension",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden"
+  ],
+  "notes": "Confirmed (Steinwächter: Kohäsion und Tension). die Tension."
+ },
+ "Illumination": {
+  "de": "Illumination",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter"
+  ],
+  "notes": "Confirmed. die Illumination."
+ },
+ "Transformation": {
+  "de": "Transformation",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter",
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden"
+  ],
+  "notes": "Surge name confirmed. die Transformation."
+ },
+ "Lashing": {
+  "de": "Peitsche",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Wogenbinden"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). German fan wiki \"Peitschen\" (Windrunners use all three)."
+ },
+ "Midnight Mother": {
+  "de": "Mitternachtsmutter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Re-Shephir": {
+  "de": "Re-Schephir",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+ },
+ "Chemoarish": {
+  "de": "Chemoarisch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+ },
+ "Honorblade": {
+  "de": "Ehrenklinge",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Herold"
+  ],
+  "notes": "Confirmed: die Ehrenklinge, pl. die Ehrenklingen."
+ },
+ "Pailiah": {
+  "de": "Paliah",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter"
+  ],
+  "notes": "kosmeer herald table: Paliah (Wahrheitswächter). Pali kept."
+ },
+ "Shalash": {
+  "de": "Schalasch",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter",
+   "https://kosmeer.fandom.com/de/wiki/Herold"
+  ],
+  "notes": "Confirmed in kosmeer (Lichtweber; Herold)."
+ },
+ "Essence": {
+  "de": "Essenz",
+  "status": "community",
+  "sources": [
+   "https://gedankenfunken.de/buecher/rezensionen/der-weg-der-koenige-von-brandon-sanderson"
+  ],
+  "notes": "See Ten Essences. Upgraded from unverified."
+ },
+ "Sunmaker": {
+  "de": "Sonnenmacher",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Melishi": {
+  "de": "Melischi",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+ },
+ "Ba-Ado-Mishram": {
+  "de": "Ba-Ado-Mischram",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+ },
+ "singer": {
+  "de": "Sänger",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Odium"
+  ],
+  "notes": "Confirmed. der Sänger, pl. die Sänger."
+ },
+ "parshmen": {
+  "de": "Parscher",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Odium"
+  ],
+  "notes": "CHANGED from \"Parschmänner\": kosmeer \"wurden die Sänger zu Parschern\". der Parscher, pl. die Parscher."
+ },
+ "Warlight": {
+  "de": "Kriegslicht",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Lifelight": {
+  "de": "Lebenslicht",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Towerlight": {
+  "de": "Turmlicht",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Anti-Stormlight": {
+  "de": "Anti-Sturmlicht",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Aimian": {
+  "de": "Aimianer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Dawnshard": {
+  "de": "Splitter der Dämmerung",
+  "status": "official",
+  "sources": [
+   "https://www.penguin.de/content/edition/excerpts_extended/Leseprobe_978-3-453-32246-2.pdf"
+  ],
+  "notes": "Book title with article: \"Der Splitter der Dämmerung\". der Splitter der Dämmerung."
+ },
+ "Sleepless": {
+  "de": "Schlaflose",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Lady of Wishes": {
+  "de": "Herrin der Wünsche",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Kushkam": {
+  "de": "Kuschkam",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+ },
+ "Windrunner": {
+  "de": "Windläufer",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Herdazian": {
+  "de": "Herdazianer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Survivor of Hathsin": {
+  "de": "Überlebender von Hathsin",
+  "status": "unverified",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Dockson": {
+  "de": "Dockson",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "Unchanged confirmed."
+ },
+ "Marsh": {
+  "de": "Marsch",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Marsch"
+  ],
+  "notes": "CHANGED (glossary \"unchanged\")."
+ },
+ "Breeze": {
+  "de": "Weher",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Weher_Ladrian",
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "Confirmed (Weher Ladrian)."
+ },
+ "Pits of Hathsin": {
+  "de": "Gruben von Hathsin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Lord Ruler": {
+  "de": "Oberster Herrscher",
+  "status": "official",
+  "sources": [
+   "https://www.oscarmondadori.it/libri/mistborn-era-due-3-le-fasce-del-lutto-brandon-sanderson/"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). der Oberste Herrscher."
+ },
+ "Allomancer": {
+  "de": "Allomant",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "http://de.kosmeer.wikia.com/wiki/Allomant"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). der Allomant."
+ },
+ "Coinshot": {
+  "de": "Münzwerfer",
+  "status": "community",
+  "sources": [
+   "http://de.kosmeer.wikia.com/wiki/Allomant"
+  ],
+  "notes": "kosmeer (Allomant): \"Münzwerfer\". der Münzwerfer, pl. -."
+ },
+ "Push": {
+  "de": "drücken",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Thug": {
+  "de": "Schläger",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Nebeling",
+   "https://kosmeer.fandom.com/de/wiki/Wei%C3%9Fblech"
+  ],
+  "notes": "Confirmed (Schläger oder Weißblecharm)."
+ },
+ "Pewterarm": {
+  "de": "Weißblecharm",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Nebeling",
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "Confirmed; pewter = Weißblech."
+ },
+ "Elend": {
+  "de": "Elant",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Elant_Wager",
+   "https://www.lovelybooks.de/autor/Brandon-Sanderson/Krieger-des-Feuers-1549737726-w/"
+  ],
+  "notes": "CHANGED (glossary \"unchanged\"): German Elend = Elant (blurb \"Vin und Elant Wager\"). Elantel derives from it."
+ },
+ "Final Empire": {
+  "de": "Letztes Reich",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://de.wikipedia.org/wiki/Kinder_des_Nebels"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). German Wikipedia \"des letzten Reiches\"."
+ },
+ "Steel Inquisitor": {
+  "de": "Stahlinquisitor",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Inquisitor"
+  ],
+  "notes": "Confirmed. pl. Stahlinquisitoren."
+ },
+ "Obligator": {
+  "de": "Obligator",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Obligator"
+  ],
+  "notes": "Confirmed. pl. Obligatoren."
+ },
+ "Keeper": {
+  "de": "Bewahrer",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sazed",
+   "https://kosmeer.fandom.com/de/wiki/Tindwyl"
+  ],
+  "notes": "Confirmed; fem. Bewahrerin."
+ },
+ "Inquisitor": {
+  "de": "Inquisitor",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Hemalurgy": {
+  "de": "Hämalurgie",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "House Venture": {
+  "de": "Haus Wager",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Elant_Wager",
+   "https://kosmeer.fandom.com/de/wiki/Straff_Wager"
+  ],
+  "notes": "Confirmed (Elant Wager, Straff Wager)."
+ },
+ "House Renoux": {
+  "de": "Haus Rennoux",
+  "status": "unverified",
+  "sources": [
+   "https://de.wikipedia.org/wiki/Kinder_des_Nebels"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). German Wikipedia writes \"Rennoux\"."
+ },
+ "House Lekal": {
+  "de": "Haus Lekal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "House Hasting": {
+  "de": "Haus Hasting",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Malwish": {
+  "de": "Malwisch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+ },
+ "Feruchemist": {
+  "de": "Ferrochemiker",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Soother": {
+  "de": "Besänftiger",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Gef%C3%BChlsallomantie",
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "Confirmed."
+ },
+ "Ham": {
+  "de": "Hamm",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Hammond"
+  ],
+  "notes": "Confirmed (Hammond, auch Hamm genannt)."
+ },
+ "Clubs": {
+  "de": "Keuler",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Cladent",
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "CHANGED from \"Clubs\": kosmeer \"Cladent, auch Keuler genannt\" (Raucher)."
+ },
+ "metalmind": {
+  "de": "Metallgeist",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Zinn",
+   "https://kosmeer.fandom.com/de/wiki/Sazed"
+  ],
+  "notes": "Confirmed (Kupfergeister). der Metallgeist, pl. die Metallgeister."
+ },
+ "spike": {
+  "de": "Stachel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Inquisitor",
+   "https://kosmeer.fandom.com/de/wiki/Ruin"
+  ],
+  "notes": "CHANGED from \"Dorn\": kosmeer \"hämalurgische Stacheln\". der Stachel, pl. die Stacheln."
+ },
+ "medallion": {
+  "de": "Medaillon",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Ruin": {
+  "de": "Ruin",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Ruin"
+  ],
+  "notes": "Confirmed. Masc. (er)."
+ },
+ "Well of Ascension": {
+  "de": "Quelle der Erhebung",
+  "status": "official",
+  "sources": [
+   "https://www.lovelybooks.de/autor/Brandon-Sanderson/Krieger-des-Feuers-1549737726-w/"
+  ],
+  "notes": "Blurb: \"die geheimnisvolle Quelle der Erhebung\". Book title = \"Krieger des Feuers\"."
+ },
+ "Harmony": {
+  "de": "der Einträchtige",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sazed",
+   "https://kosmeer.fandom.com/de/wiki/Marsch"
+  ],
+  "notes": "CHANGED from \"Harmonie\": kosmeer \"erhob sich somit zum Einträchtigen\"; Marsch \"Gehilfe des Einträchtigen\" (era 2). No publisher text seen. HIGH PRIORITY to confirm in Held aller Zeiten / Hüter des Gesetzes."
+ },
+ "Spook": {
+  "de": "Spuki",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/wiki/Lestiborner",
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "CHANGED from \"Spuk\": kosmeer \"Spuki\" (another page \"Spucki\"). Needs book check."
+ },
+ "Preservation": {
+  "de": "Bewahr",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Bewahr",
+   "https://kosmeer.fandom.com/de/wiki/Ruin"
+  ],
+  "notes": "Confirmed kosmeer page title \"Bewahr\"."
+ },
+ "Rashek": {
+  "de": "Raschek",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Raschek"
+  ],
+  "notes": "Confirmed."
+ },
+ "Terris Mountains": {
+  "de": "Terris-Berge",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Mistborn": {
+  "de": "Nebelgeborener",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Nebelgeborener"
+  ],
+  "notes": "der Nebelgeborene; series \"Die Nebelgeborenen\"."
+ },
+ "lerasium": {
+  "de": "Lerasium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "harmonium": {
+  "de": "Harmonium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "electrum": {
+  "de": "Elektrum",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Tineye": {
+  "de": "Zinnauge",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Nebeling",
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "Confirmed. das Zinnauge, pl. die Zinnaugen."
+ },
+ "Misting": {
+  "de": "Nebeling",
+  "status": "official",
+  "sources": [
+   "https://marjorie-wiki.de/wiki/Allomant"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). der Nebeling."
+ },
+ "Lurcher": {
+  "de": "Eisenzieher",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not found anywhere; \"Zieher\" also possible. Needs book check."
+ },
+ "Seeker": {
+  "de": "Sucher",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Nebeling",
+   "https://kosmeer.fandom.com/de/wiki/Marsch"
+  ],
+  "notes": "Confirmed (Marsch ist ein Sucher). Glossary had status community already."
+ },
+ "duralumin": {
+  "de": "Duralumin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "malatium": {
+  "de": "Malatium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Eleventh Metal": {
+  "de": "Elftes Metall",
+  "status": "unverified",
+  "sources": [],
+  "notes": "The concept (malatium) appears in Kinder des Nebels; form \"das Elfte Metall\" plausible. The novella \"The Eleventh Metal\" is unpublished in German."
+ },
+ "Keep Venture": {
+  "de": "Festung Wager",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Follows Haus Wager."
+ },
+ "Keep Hasting": {
+  "de": "Festung Hasting",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Conventical of Seran": {
+  "de": "Konventikel von Seran",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Straff Venture": {
+  "de": "Straff Wager",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Straff_Wager"
+  ],
+  "notes": "CHANGED (glossary \"unchanged\")."
+ },
+ "Hero of Ages": {
+  "de": "Held aller Zeiten",
+  "status": "official",
+  "sources": [
+   "https://www.lesejury.de/brandon-sanderson/buecher/held-aller-zeiten/9783492704687"
+  ],
+  "notes": "Piper Bd. 3 title (formerly Heyne \"Herrscher des Lichts\"); also the epithet."
+ },
+ "aluminum": {
+  "de": "Aluminium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Feruchemy": {
+  "de": "Ferrochemie",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "mistwraith": {
+  "de": "Nebelgeist",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Elendel": {
+  "de": "Elantel",
+  "status": "official",
+  "sources": [
+   "https://www.lesejury.de/brandon-sanderson/buecher/hueter-des-gesetzes/9783492706643",
+   "https://www.piper.de/buecher/schatten-ueber-elantel-isbn-978-3-492-70435-9"
+  ],
+  "notes": "Confirmed: Piper blurbs (\"nach Elantel zurückkehren\"; title \"Schatten über Elantel\")."
+ },
+ "New Seran": {
+  "de": "Neu-Seran",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Elend Venture": {
+  "de": "Elant Wager",
+  "status": "official",
+  "sources": [
+   "https://www.lovelybooks.de/autor/Brandon-Sanderson/Krieger-des-Feuers-1549737726-w/"
+  ],
+  "notes": "CHANGED (glossary \"unchanged\")."
+ },
+ "Elendel Basin": {
+  "de": "Elantel-Becken",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/wiki/Lestiborner"
+  ],
+  "notes": "kosmeer: \"Becken von Elantel\". das Elantel-Becken."
+ },
+ "Survivorism": {
+  "de": "Überlebendenkult",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Pathianism": {
+  "de": "Pathianismus",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Steel Ministry": {
+  "de": "Stahlministerium",
+  "status": "unverified",
+  "sources": [
+   "https://es.coppermind.net/wiki/Ministerio_del_Acero"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Trellism": {
+  "de": "Trellismus",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Survivor": {
+  "de": "Überlebender",
+  "status": "unverified",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Bands of Mourning": {
+  "de": "Bänder der Trauer",
+  "status": "official",
+  "sources": [
+   "https://www.lesejury.de/brandon-sanderson/buecher/baender-der-trauer/9783492704441"
+  ],
+  "notes": "Piper Bd. 6."
+ },
+ "Secret History": {
+  "de": "Mistborn: Secret History",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "See above."
+ },
+ "Cognitive Realm": {
+  "de": "Kognitives Reich",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Mister Suit": {
+  "de": "Herr Anzug",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Vanishers": {
+  "de": "Verschwinder",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Bleeder": {
+  "de": "Bluter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Path": {
+  "de": "der Pfad",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Pathian": {
+  "de": "Pathianer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Twinborn": {
+  "de": "Zwillingsgeborener",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Nebelgeborener"
+  ],
+  "notes": "kosmeer mentions Zwillingsgeborene. der Zwillingsgeborene."
+ },
+ "Skimmer": {
+  "de": "Abschöpfer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Ascendant Warrior": {
+  "de": "Aufgestiegene Kriegerin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Last Emperor": {
+  "de": "Letzter Kaiser",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Lord Mistborn": {
+  "de": "Oberster Nebelgeborener",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/wiki/Lestiborner"
+  ],
+  "notes": "CHANGED from \"Lord Nebelgeborener\": kosmeer gives Spook's title as \"Oberste Nebelgeborene\". der Oberste Nebelgeborene."
+ },
+ "Set": {
+  "de": "der Kreis",
+  "status": "official",
+  "sources": [
+   "https://www.goodreads.com/book/show/62897334"
+  ],
+  "notes": "See \"the Set\"."
+ },
+ "Faceless Immortals": {
+  "de": "Gesichtslose Unsterbliche",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Survivorist": {
+  "de": "Überlebendenanhänger",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Autonomy": {
+  "de": "Autonomie",
+  "status": "official",
+  "sources": [
+   "https://www.legimi.de/e-book-metall-der-gotter-brandon-sanderson,b3723973.html"
+  ],
+  "notes": "Piper blurb: \"Die Göttin Autonomie\". Feminine."
+ },
+ "Koloss-blooded": {
+  "de": "Koloss-Blütige",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Metallic Arts": {
+  "de": "Metallische Künste",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). \"die drei Metallischen Künste\"."
+ },
+ "Allomancy": {
+  "de": "Allomantie",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Fils-des-brumes",
+   "https://www.piper.de/brandon-sanderson-buecher"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). die Allomantie."
+ },
+ "Allomancer Jak": {
+  "de": "Allomancer Jak",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Story unpublished in German; character name in text: \"Allomant Jak\" acceptable."
+ },
+ "Scadrian": {
+  "de": "scadrianisch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Ironeyes": {
+  "de": "Eisenauge",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Marsch"
+  ],
+  "notes": "Confirmed: \"Marsch, auch genannt Eisenauge\"."
+ },
+ "gyorn": {
+  "de": "Gyorn",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Shu-Dereth": {
+  "de": "Shu-Dereth",
+  "status": "unverified",
+  "sources": [],
+  "notes": "CHANGED from \"Schu-Dereth\": Elantris translator (Ute Brammertz, Piper) kept \"Shaod\", so no sh->sch respelling expected."
+ },
+ "Shu-Korath": {
+  "de": "Shu-Korath",
+  "status": "unverified",
+  "sources": [],
+  "notes": "CHANGED from \"Schu-Korath\" (see Shu-Dereth)."
+ },
+ "Shu-Keseg": {
+  "de": "Shu-Keseg",
+  "status": "unverified",
+  "sources": [],
+  "notes": "CHANGED from \"Schu-Keseg\" (see Shu-Dereth)."
+ },
+ "Jeskeri Mysteries": {
+  "de": "Jeskeri-Mysterien",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Shaod": {
+  "de": "Shaod",
+  "status": "official",
+  "sources": [
+   "https://www.buechertreff.de/details/12057-brandon-sanderson-elantris/"
+  ],
+  "notes": "German reviews keep \"Shaod\" -> Piper/Brammertz translation does NOT respell sh->sch."
+ },
+ "Elantrian": {
+  "de": "Elantrier",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Forgery": {
+  "de": "Fälschen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "CHANGED from \"Seelenschmieden\" (no evidence). Used \"das Fälschen\"/\"Fälschung\"."
+ },
+ "Bloodsealing": {
+  "de": "Blutsiegelung",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "New Elantris": {
+  "de": "Neu-Elantris",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Forger": {
+  "de": "Fälscherin",
+  "status": "community",
+  "sources": [
+   "https://www.lovelybooks.de/autor/Brandon-Sanderson/?seite=3"
+  ],
+  "notes": "Review: \"die Fälscherin Shai\"."
+ },
+ "Rose Empire": {
+  "de": "Rosenreich",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "soulstamp": {
+  "de": "Seelenstempel",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Moon Scepter": {
+  "de": "Mondzepter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Imperial Fool": {
+  "de": "Kaiserlicher Narr",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Heritage Faction": {
+  "de": "Fraktion des Erbes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Beta-1: \"Erbe-Fraktion\" flagged as awkward by the German tester. Heyne form not findable online (searched \"Die Seele des Königs\" + Fraktion/Erbe/Ruhm); idiomatic rendering used: die Fraktion des Erbes."
+ },
+ "Glory Faction": {
+  "de": "Fraktion des Ruhms",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Heritage Faction: die Fraktion des Ruhms."
+ },
+ "Striker": {
+  "de": "Schläger",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Bloodsealer": {
+  "de": "Blutsiegler",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Essence Mark": {
+  "de": "Essenzmal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Devotion": {
+  "de": "Devotion",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Adonalsium"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). fan wiki keeps English."
+ },
+ "Dominion": {
+  "de": "Dominion",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Adonalsium"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). fan wiki keeps English."
+ },
+ "Ambition": {
+  "de": "Ehrgeiz",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Honor": {
+  "de": "Ehr",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Adonalsium",
+   "https://kosmeer.fandom.com/de/wiki/Herold"
+  ],
+  "notes": "kosmeer: \"Ehr\" (no -e) as Shard name. Not seen in publisher text. Compare Ehrensprengsel, Söhne der Ehr."
+ },
+ "Splinter": {
+  "de": "Splitter",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Nachtschauerin"
+  ],
+  "notes": "CHANGED from \"Splitterchen\": kosmeer \"Als Splitter von der Bebauerin\". der Splitter, pl. -."
+ },
+ "God King": {
+  "de": "Gottkönig",
+  "status": "official",
+  "sources": [
+   "https://www.lovelybooks.de/autor/Brandon-Sanderson/Sturmkl%C3%A4nge-306527282-w/"
+  ],
+  "notes": "Confirmed."
+ },
+ "Shashara": {
+  "de": "Schaschara",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Court of Gods": {
+  "de": "Hof der Götter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Lightsong": {
+  "de": "Lichtsang",
+  "status": "official",
+  "sources": [
+   "https://www.lovelybooks.de/autor/Brandon-Sanderson/Sturmkl%C3%A4nge-306527282-w/"
+  ],
+  "notes": "Confirmed in reader reviews of Sturmklänge."
+ },
+ "Nightblood": {
+  "de": "Nachtblut",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Categor%C3%ADa:El_aliento_de_los_dioses",
+   "https://www.phantastik-couch.de/titel/7931-sturmklaenge/"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Awakened": {
+  "de": "erweckt",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sondeluz"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Breath": {
+  "de": "Hauch",
+  "status": "official",
+  "sources": [
+   "https://www.lesejury.de/brandon-sanderson/ebooks/sturmklaenge/9783641277956"
+  ],
+  "notes": "Confirmed (\"dem Hauch\"). der Hauch, pl. die Hauche."
+ },
+ "Awaken": {
+  "de": "erwecken",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sondeluz"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Bluefingers": {
+  "de": "Blaufinger",
+  "status": "unverified",
+  "sources": [
+   "https://es.coppermind.net/wiki/Categor%C3%ADa:El_aliento_de_los_dioses"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Awakening": {
+  "de": "Erweckung",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sondeluz",
+   "https://www.phantastik-couch.de/titel/7931-sturmklaenge/"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Drab": {
+  "de": "Fahler",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Lifeless": {
+  "de": "Leblose",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Categor%C3%ADa:El_aliento_de_los_dioses",
+   "https://www.buechereule.de/wbb/thread/113175-sturmklaenge-seiten-618-ende/"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). die Leblosen."
+ },
+ "Returned": {
+  "de": "Zurückgekehrter",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sondeluz",
+   "https://www.phantastik-couch.de/titel/7931-sturmklaenge/",
+   "https://www.amazon.it/conciliatore-Brandon-Sanderson/dp/8834740475"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). die Zurückgekehrten."
+ },
+ "Command": {
+  "de": "Befehl",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Idrian": {
+  "de": "idrisch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Royal Locks": {
+  "de": "Königliche Locken",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Endowment": {
+  "de": "Endowment",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Adonalsium"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). German fan wiki keeps \"Endowment\" in English."
+ },
+ "Austrism": {
+  "de": "Austrismus",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Blushweaver": {
+  "de": "Rotweberin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Divine Breath": {
+  "de": "Göttlicher Hauch",
+  "status": "unverified",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sondeluz"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Heightening": {
+  "de": "Steigerung",
+  "status": "unverified",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sondeluz"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Tenth Heightening": {
+  "de": "Zehnte Steigerung",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Warbreaker": {
+  "de": "Warbreaker",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Epithet of Vasher; German book title is \"Sturmklänge\" (Heyne). In-text epithet unconfirmed."
+ },
+ "Manywar": {
+  "de": "Vielkrieg",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Peacegiver": {
+  "de": "Friedensbringer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Kalad's Phantoms": {
+  "de": "Kalads Phantome",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Roshar": {
+  "de": "Roschar",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Roschar"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). Heyne \"Roschar\"."
+ },
+ "ardent": {
+  "de": "Glühender",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Oathbringer": {
+  "de": "Eidbringer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "The sword. Book = \"Der Ruf der Klingen / Die Splitter der Macht\" (Heyne). Sword name not confirmed."
+ },
+ "Azure": {
+  "de": "Azure",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Wall Guard": {
+  "de": "Mauerwache",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Words of Radiance": {
+  "de": "Die Worte des Lichts / Die Stürme des Zorns",
+  "status": "official",
+  "sources": [
+   "https://www.penguin.de/content/edition/excerpts_extended/Leseprobe_978-3-453-31864-9.pdf"
+  ],
+  "notes": "Note article \"Die\" in title."
+ },
+ "Tears of Edgli": {
+  "de": "Tränen von Edgli",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Five Scholars": {
+  "de": "Fünf Gelehrten",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Clod": {
+  "de": "Klumpen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "ichor-alcohol": {
+  "de": "Ichor-Alkohol",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Mercystar": {
+  "de": "Gnadenstern",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Awakener": {
+  "de": "Erwecker",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Emerald Sea": {
+  "de": "smaragdgrüne See",
+  "status": "official",
+  "sources": [],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Canticle": {
+  "de": "Canticum",
+  "status": "official",
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/",
+   "https://buecherbriefe.de/sanderson-herz-der-sonne/"
+  ],
+  "notes": "CHANGED: Heyne edition names the planet \"Canticum\"."
+ },
+ "aether": {
+  "de": "Äther",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Sorceress": {
+  "de": "Hexe",
+  "status": "official",
+  "sources": [
+   "https://www.piper.de/buecher/weit-ueber-der-smaragdgruenen-see-isbn-978-3-492-70668-1"
+  ],
+  "notes": "CHANGED from \"Zauberin\": Piper blurb \"eine böse Hexe\". die Hexe."
+ },
+ "Midnight Sea": {
+  "de": "Mitternachtsmeer",
+  "status": "unverified",
+  "sources": [
+   "https://anikaentrelibros.com/trenza-del-mar-esmeralda"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Crow's Song": {
+  "de": "Krähenlied",
+  "status": "community",
+  "sources": [
+   "https://geeksantiques.de/book-kitchen-tress-pastete-kulunussbrot-co-aus-weit-ueber-der-smaragdgruenen-see-rezept/"
+  ],
+  "notes": "German reader pages on the Piper edition name the ship \"Krähenlied\" (die Krähenlied). Upgraded from unverified."
+ },
+ "Crow": {
+  "de": "Krähe",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Laughing Ann": {
+  "de": "Lachende Ann",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "verdant spores": {
+  "de": "grüne Sporen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Zephyr spores": {
+  "de": "Zephyrsporen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Roseite spores": {
+  "de": "Roseitsporen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Midnight spores": {
+  "de": "Mitternachtssporen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Crimson spores": {
+  "de": "Purpursporen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Sapphire Sea": {
+  "de": "Saphirmeer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Nalthian": {
+  "de": "nalthisch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Two Cups": {
+  "de": "Zwei Tassen",
+  "status": "unverified",
+  "sources": [
+   "https://worldofbooksanddreams.de/2023/12/27/weit-ueber-der-smaragdgruenen-see-von-brandon-sanderson-aussergewoehnliches-maerchen-fuer-erwachsene/"
+  ],
+  "notes": "CHANGED from \"Zwei Becher\": German reviews say Tress collects \"Tassen\"."
+ },
+ "Emerald Crown": {
+  "de": "Smaragdkrone",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Midnight Rose": {
+  "de": "Mitternachtsrose",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Silver Gull": {
+  "de": "Silbermöwe",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Crimson Sea": {
+  "de": "Purpurmeer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Rose Sea": {
+  "de": "Rosenmeer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Painter": {
+  "de": "Painter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Virtuosity": {
+  "de": "Virtuosität",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "shades": {
+  "de": "Schatten",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Aviar": {
+  "de": "Aviar",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "shroud": {
+  "de": "Leichentuch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Nightmare painter": {
+  "de": "Nightmare Painter",
+  "status": "unverified",
+  "sources": [
+   "https://www.hugendubel.de/de/buch_gebunden/brandon_sanderson-yumi_and_the_nightmare_painter-49301118-produkt-details.html"
+  ],
+  "notes": "German edition (Droemer Knaur 2025, transl. Paula Telge) keeps the English title \"Yumi and the Nightmare Painter\"; how the profession is rendered in the text is unconfirmed (glossary had \"official\")."
+ },
+ "Sand Master": {
+  "de": "Sandmeister",
+  "status": "unverified",
+  "sources": [
+   "https://www.mondadori.it/libri/sabbia-bianca-un-graphic-novel-del-cosmoverso-brandon-sanderson/"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "hion": {
+  "de": "Hion",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Rain": {
+  "de": "Rebeke",
+  "status": "unverified",
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/",
+   "https://buecherbriefe.de/sanderson-herz-der-sonne/",
+   "https://coppermind.net/wiki/Summary:The_Sunlit_Man"
+  ],
+  "notes": "CHANGED: German review names the sisters \"Rebeke und Elegie\"; English summaries also use Rebeke. EN question uses \"Rain\" — EN author/QA should check."
+ },
+ "shade": {
+  "de": "Schatten",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Design": {
+  "de": "Design",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "The Sunlit Man": {
+  "de": "Das Herz der Sonne",
+  "status": "official",
+  "sources": [
+   "https://www.amazon.de/-/en/Das-Herz-Sonne-Ein-Kosmeer-Roman/dp/3453274407"
+  ],
+  "notes": "Heyne 2024, Siefener."
+ },
+ "First of the Sun": {
+  "de": "First of the Sun",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "CHANGED from \"Erster der Sonne\": unpublished; no community form found -> English."
+ },
+ "highstorms": {
+  "de": "Großstürme",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Kosmeer"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Nomad": {
+  "de": "Nomade",
+  "status": "official",
+  "sources": [
+   "https://www.amazon.de/Das-Herz-Sonne-Ein-Kosmeer-Roman/dp/3453274407",
+   "https://www.lesejury.de/brandon-sanderson/buecher/das-herz-der-sonne/9783453274402"
+  ],
+  "notes": "Heyne blurb: \"ein Mann, der sich seit Langem nur noch »der Nomade« nennt\". Use with article: der Nomade, gen. des Nomaden (some reviews write \"Nomad\", but the publisher text uses \"der Nomade\")."
+ },
+ "Cinder King": {
+  "de": "Zunderkönig",
+  "status": "official",
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/",
+   "https://buecherbriefe.de/sanderson-herz-der-sonne/"
+  ],
+  "notes": "CHANGED from \"Aschenkönig\". der Zunderkönig."
+ },
+ "Night Brigade": {
+  "de": "Nachtbrigade",
+  "status": "official",
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/",
+   "https://buecherbriefe.de/sanderson-herz-der-sonne/"
+  ],
+  "notes": "Confirmed."
+ },
+ "Sons of Honor": {
+  "de": "Söhne der Ehr",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Follows Honor = Ehr; unconfirmed. die Söhne der Ehr."
+ },
+ "Charred": {
+  "de": "Verkohlte",
+  "status": "official",
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/",
+   "https://buecherbriefe.de/sanderson-herz-der-sonne/"
+  ],
+  "notes": "Confirmed (\"seinen zombieartigen Verkohlten\")."
+ },
+ "sunheart": {
+  "de": "Sonnenherz",
+  "status": "official",
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/",
+   "https://buecherbriefe.de/sanderson-herz-der-sonne/"
+  ],
+  "notes": "Confirmed (\"Sonnenherzen\")."
+ },
+ "Torment": {
+  "de": "Qual",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Auxiliary": {
+  "de": "Auxiliar",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only).  Beta-1: a search-summary snippet of the Heyne Leseprobe suggested \"Auxilium\" (short \"Aux\"); could not be confirmed, kept \"Auxiliar\"."
+ },
+ "White Sand": {
+  "de": "White Sand",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "CHANGED from \"Weißer Sand\" as title: no German edition found."
+ },
+ "Dayside": {
+  "de": "Tagseite",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Darkside": {
+  "de": "Dunkelseite",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Sand Masters": {
+  "de": "Sandmeister",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "sand mastery": {
+  "de": "Sandmeisterschaft",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Cultivation": {
+  "de": "Bebauerin",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Adonalsium",
+   "https://kosmeer.fandom.com/de/wiki/Odium",
+   "https://kosmeer.fandom.com/de/wiki/Nachtschauerin"
+  ],
+  "notes": "CHANGED from \"Kultivierung\": kosmeer consistently uses \"die Bebauerin\" (one page has Kultivierung). Use with article: die Bebauerin. Needs check against Heyne text."
+ },
+ "Sixth of the Dusk": {
+  "de": "Sixth of the Dusk",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "CHANGED from \"Sechster der Dämmerung\": unpublished in German -> English."
+ },
+ "Dusk": {
+  "de": "Dusk",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Sixth of the Dusk has no German edition (WORK_TITLES keeps the English title); golden rule -> character name stays \"Dusk\", as all German questions already use. Previous \"Dämmerung\" was an unattested guess that contradicted the content."
+ },
+ "Pantheon": {
+  "de": "Pantheon",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Forests of Hell": {
+  "de": "Höllenwälder",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Story unpublished in German; descriptive translation used in game text, English \"Forests of Hell\" would also be valid per rule."
+ },
+ "Silence Montane": {
+  "de": "Silence Montane",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Silence": {
+  "de": "Silence",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "White Fox": {
+  "de": "Weißer Fuchs",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Unpublished work; descriptive translation."
+ },
+ "Homeland": {
+  "de": "die Heimat",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Evil": {
+  "de": "das Böse",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Cosmere": {
+  "de": "Kosmeer",
+  "status": "official",
+  "sources": [
+   "https://www.buchtipp.de/reihenfolgen/brandon-sanderson-reihenfolge/"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Shattering": {
+  "de": "Zersplitterung",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Adonalsium"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). fan wiki \"Zersplitterung\". fr/it: not verified."
+ },
+ "Intent": {
+  "de": "Absicht",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Splintered": {
+  "de": "zersplittert",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Adonalsium"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Tranquiline Halls": {
+  "de": "Tranquiline Hallen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Origin": {
+  "de": "Ursprung",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Soulcasting": {
+  "de": "Seelengießen",
+  "status": "community",
+  "sources": [],
+  "notes": "Derived from Seelengießer; das Seelengießen."
+ },
+ "Physical Realm": {
+  "de": "Physisches Reich",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Spiritual Realm": {
+  "de": "Geistiges Reich",
+  "status": "official",
+  "sources": [
+   "https://himmelsblau.org/2019/08/sturmlichtarchive-6-die-splitter-der-macht/"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). \"das Geistige Reich\" attested in German reviews of Heyne edition."
+ },
+ "Wit": {
+  "de": "Witz",
+  "status": "unverified",
+  "sources": [
+   "http://www.lesescapadesculturellesdefrankie.com/2017/08/la-voie-des-rois-les-archives-de-roshar.html"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Stormwarden": {
+  "de": "Sturmwächter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Tress of the Emerald Sea": {
+  "de": "Weit über der smaragdgrünen See",
+  "status": "official",
+  "sources": [
+   "https://www.piper.de/buecher/weit-ueber-der-smaragdgruenen-see-isbn-978-3-492-70668-1"
+  ],
+  "notes": "Piper 2023, transl. Simon Weinert."
+ },
+ "Sunraiser": {
+  "de": "Sonnenheber",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Skybreaker": {
+  "de": "Himmelsbrecher",
+  "status": "official",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
+   "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
+  ],
+  "notes": "Kept glossary form (spot check: no contrary evidence). "
+ },
+ "Diagram": {
+  "de": "das Diagramm",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Taravangian",
+   "https://kosmeer.fandom.com/de/wiki/Nachtschauerin"
+  ],
+  "notes": "Kosmeer wiki uses \"das Diagramm\". Upgraded from unverified."
+ },
+ "The Final Empire": {
+  "de": "Kinder des Nebels",
+  "status": "official",
+  "sources": [
+   "https://www.amazon.de/Kinder-Nebels-Roman-Nebelgeborenen-Band/dp/3453523369"
+  ],
+  "notes": "Heyne 2009 and Piper same title."
+ },
+ "The Way of Kings": {
+  "de": "Der Weg der Könige / Der Pfad der Winde",
+  "status": "official",
+  "sources": [
+   "https://www.buchfreund.de/de/angebote/9783453317680/der-pfad-winde"
+  ],
+  "notes": "Two volumes."
+ },
+ "crem": {
+  "de": "Krem",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Sliver": {
+  "de": "Span",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Valor": {
+  "de": "Tapferkeit",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Shard name; Lightsong is \"Gott der Tapferkeit\" in reviews (Bravery)."
+ },
+ "The Lost Metal": {
+  "de": "Metall der Götter",
+  "status": "official",
+  "sources": [
+   "https://www.audible.fr/pd/Metall-der-Goetter-Livre-Audio/B0C69T9JZP"
+  ],
+  "notes": "Piper Bd. 7, transl. Simon Weinert."
+ },
+ "the Set": {
+  "de": "der Kreis",
+  "status": "official",
+  "sources": [
+   "https://www.goodreads.com/book/show/62897334",
+   "https://de.wikipedia.org/wiki/B%C3%A4nder_der_Trauer"
+  ],
+  "notes": "CHANGED from \"die Gruppe\": Piper Leseprobe/blurb: \"die Gruppe, die als Kreis bekannt ... war\". der Kreis. (Bänder der Trauer review text also once says \"vom Set\".)"
+ },
+ "Seventeenth Shard": {
+  "de": "Siebzehnte Scherbe",
+  "status": "unverified",
+  "sources": [],
+  "notes": "CHANGED to follow Shard = Scherbe. die Siebzehnte Scherbe."
+ },
+ "Moonlight": {
+  "de": "Mondlicht",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "TwinSoul": {
+  "de": "Zwillingsseele",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Mistborn: Secret History": {
+  "de": "Mistborn: Secret History",
+  "status": "unpublished",
+  "sources": [
+   "https://blog.flore.nz/blog/arcanum-unbounded-brandon-sanderson/"
+  ],
+  "notes": "CHANGED from invented \"Die Nebelgeborenen: Die geheime Geschichte\": no German edition found (Arcanum Unbounded untranslated). English title."
+ },
+ "Beyond": {
+  "de": "das Jenseits",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Cognitive Shadow": {
+  "de": "kognitiver Schatten",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Arcanum Unbounded": {
+  "de": "Arcanum Unbounded",
+  "status": "unpublished",
+  "sources": [
+   "https://blog.flore.nz/blog/arcanum-unbounded-brandon-sanderson/"
+  ],
+  "notes": "No German edition found."
+ },
+ "Darksider": {
+  "de": "Dunkelseitler",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Mercy": {
+  "de": "Gnade",
+  "status": "unverified",
+  "sources": [
+   "https://www.17thshard.com/forums/topic/6487-stormlight-archive-translation-guide/ (reader report of Spanish edition)"
+  ],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Whimsy": {
+  "de": "Laune",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Allmother": {
+  "de": "Allmutter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Wandersail": {
+  "de": "Wandersail",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Ship name kept."
+ },
+ "Perpendicularity": {
+  "de": "Perpendikularität",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Fadrex City": {
+  "de": "Fadrex",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Valley": {
+  "de": "das Tal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Horneater Peaks": {
+  "de": "Hornesser-Gipfel",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Purelake": {
+  "de": "Reiner See",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "Frostlands": {
+  "de": "Frostlande",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "babsk": {
+  "de": "Babsk",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+ },
+ "The Emperor's Soul": {
+  "de": "Die Seele des Königs",
+  "status": "official",
+  "sources": [
+   "https://www.goodreads.com/book/show/17925563"
+  ],
+  "notes": "Heyne (ISBN 978-3-453-31524-2), collection with Legion/Infinity Blade. Title says König although Ashravan is Kaiser."
+ },
+ "Peakspren": {
+  "de": "Gipfelsprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter",
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Kosmeer wiki: Steinwächter bind Gipfelsprengsel."
+ },
+ "Ashspren": {
+  "de": "Aschesprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Kosmeer wiki spelling \"Aschesprengsel\" (glossary had unverified \"Aschensprengsel\")."
+ },
+ "ashspren": {
+  "de": "Aschesprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "See Ashspren."
+ },
+ "Spark": {
+  "de": "Funke",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Malata's ashspren is \"Funke\" on the Kosmeer wiki; same word used for the Essence Spark (unverified for the Essence)."
+ },
+ "Mistspren": {
+  "de": "Nebelsprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Listed on Kosmeer wiki spren page."
+ },
+ "Flamespren": {
+  "de": "Flammensprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Kosmeer wiki."
+ },
+ "Windspren": {
+  "de": "Windsprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Kosmeer wiki."
+ },
+ "Creationspren": {
+  "de": "Schöpfungssprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Kosmeer wiki."
+ },
+ "Gloryspren": {
+  "de": "Ruhmsprengsel",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Kosmeer wiki spelling (no -es-)."
+ },
+ "Highspren": {
+  "de": "Hochsprengsel",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not found on Kosmeer wiki; formed by analogy with Ehrensprengsel/Gipfelsprengsel."
+ },
+ "Nahel bond": {
+  "de": "Nahel-Band",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sylphrena"
+  ],
+  "notes": "Not used in de text (rephrased as \"bindet sich an\")."
+ },
+ "Maya": {
+  "de": "Maya",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Maya"
+  ],
+  "notes": "Mayalaran, \"Maya\"; Kosmeer wiki: Bebauungssprengsel and Totauge, spren of Adolin's Splitterklinge."
+ },
+ "Phendorana": {
+  "de": "Phendorana",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Listed as Ehrensprengsel."
+ },
+ "Notum": {
+  "de": "Notum",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sprengsel"
+  ],
+  "notes": "Listed as Ehrensprengsel."
+ },
+ "Caelinora": {
+  "de": "Caelinora",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Name; no respelling expected."
+ },
+ "Testament": {
+  "de": "Testament",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "spanreed": {
+  "de": "Spannfeder",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Fabrial"
+  ],
+  "notes": "Kosmeer wiki Fabrial page: \"Spannfedern zur Nachrichtenübermittlung\"."
+ },
+ "conjoiner": {
+  "de": "Vereiniger",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Fabrial"
+  ],
+  "notes": "Kosmeer wiki: \"Vereiniger\" (made with a ruby)."
+ },
+ "reverser": {
+  "de": "Umkehrer",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Fabrial"
+  ],
+  "notes": "Kosmeer wiki: \"Umkehrer\" (amethyst; halves move oppositely)."
+ },
+ "Dabbid": {
+  "de": "Dabbid",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Br%C3%BCcke_Vier"
+  ],
+  "notes": "Listed as Brücke Vier member."
+ },
+ "Leyten": {
+  "de": "Leyten",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Br%C3%BCcke_Vier"
+  ],
+  "notes": ""
+ },
+ "Bisig": {
+  "de": "Bisig",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Br%C3%BCcke_Vier"
+  ],
+  "notes": ""
+ },
+ "Death Rattles": {
+  "de": "Todesröcheln",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Ungemachte"
+  ],
+  "notes": "Kosmeer wiki (Moelach): \"bekannt als das Todesröcheln\". das Todesröcheln (used as a mass noun)."
+ },
+ "Ten Essences": {
+  "de": "Zehn Essenzen",
+  "status": "community",
+  "sources": [
+   "https://gedankenfunken.de/buecher/rezensionen/der-weg-der-koenige-von-brandon-sanderson"
+  ],
+  "notes": "Review of the Heyne edition: the Ars Arcanum \"gibt einen tabellarischen Überblick über die zehn Essenzen\"."
+ },
+ "Ars Arcanum": {
+  "de": "Ars Arcanum",
+  "status": "unchanged",
+  "sources": [
+   "https://gedankenfunken.de/buecher/rezensionen/der-weg-der-koenige-von-brandon-sanderson"
+  ],
+  "notes": "Latin title kept in the German edition (review)."
+ },
+ "Zephyr": {
+  "de": "Zephyr",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Essence; not attested."
+ },
+ "Vapor": {
+  "de": "Dampf",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Talus": {
+  "de": "Talus",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Essence; not attested."
+ },
+ "Silver Kingdom": {
+  "de": "Silbernes Königreich",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Urithiru"
+  ],
+  "notes": "Kosmeer wiki: \"die Silbernen Königreiche\"."
+ },
+ "Desolation": {
+  "de": "Wüstwerdung",
+  "status": "official",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Die_Splitter_der_Macht"
+  ],
+  "notes": "Heyne blurb of \"Die Splitter der Macht\" (quoted on the Kosmeer wiki): \"die alles verheerende Wüstwerdung\". Glossary had unverified \"Verwüstung\". pl. Wüstwerdungen."
+ },
+ "Surgebinder": {
+  "de": "Wogenbinder",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Wogenbinden"
+  ],
+  "notes": "Kosmeer wiki page \"Wogenbinden\"."
+ },
+ "Hearthstone": {
+  "de": "Herdstein",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Hesina": {
+  "de": "Hesina",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Lirin": {
+  "de": "Lirin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Releasers": {
+  "de": "Befreier",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Malata": {
+  "de": "Malata",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Thaylen": {
+  "de": "thaylenisch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Adjective (noun Thaylenah unchanged). Not attested."
+ },
+ "Vstim": {
+  "de": "Vstim",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Thresh": {
+  "de": "Thresh",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Shin name; sh->sch respelling (cf. Schin, Schinovar) NOT confirmed, kept English."
+ },
+ "Reshi": {
+  "de": "Reshi",
+  "status": "unverified",
+  "sources": [],
+  "notes": "sh->sch not confirmed; kept."
+ },
+ "Reshi Isles": {
+  "de": "Reshi-Inseln",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested; sh->sch not confirmed."
+ },
+ "Reshi Sea": {
+  "de": "Reshi-Meer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Reshi Isles."
+ },
+ "Unclaimed Hills": {
+  "de": "Unbeanspruchte Hügel",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Siah Aimian": {
+  "de": "Siah Aimian",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Natan": {
+  "de": "Natan",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Book of Endless Pages": {
+  "de": "Buch der endlosen Seiten",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Ghostblood": {
+  "de": "Geisterblut",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Ghostbloods."
+ },
+ "stormwarden": {
+  "de": "Sturmwächter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Same as the Stormwarden entry; already used in cosmere-011."
+ },
+ "Shardhammer": {
+  "de": "Splitterhammer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "By analogy with official Splitterklinge/Splitterpanzer."
+ },
+ "Wind's Pleasure": {
+  "de": "Windfreude",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "First Dreams": {
+  "de": "Erste Träume",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Fourth Bridge": {
+  "de": "Vierte Brücke",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Hessi": {
+  "de": "Hessi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Mythica": {
+  "de": "Mythica",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Hessis Mythica; Latin-style title kept."
+ },
+ "Eila Stele": {
+  "de": "Eila-Stele",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Corvana's Analectics": {
+  "de": "Corvanas Analektik",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Dawnchant": {
+  "de": "Morgengesang",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Tezim": {
+  "de": "Tezim",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Holstep": {
+  "de": "Holschrit",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Yeden"
+  ],
+  "notes": "Kosmeer wiki: Yeden († 1022 EE, Holschrit). Looks like the Piper translator's rendering."
+ },
+ "Yeden": {
+  "de": "Yeden",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Yeden"
+  ],
+  "notes": ""
+ },
+ "Lestibournes": {
+  "de": "Lestiborner",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/wiki/Lestiborner",
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "German Kosmeer wiki names Spook \"Lestiborner\" (street-slang name rendered in German)."
+ },
+ "Cladent": {
+  "de": "Cladent",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/wiki/Cladent"
+  ],
+  "notes": ""
+ },
+ "Hammond": {
+  "de": "Hammond",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/wiki/Hammond"
+  ],
+  "notes": "Full name of Hamm."
+ },
+ "Ashweather Cett": {
+  "de": "Aschwetter Cett",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Aschwetter_Cett",
+   "https://kosmeer.fandom.com/de/wiki/Allrianne_Cett"
+  ],
+  "notes": "CHANGED from \"Ashweather Cett\" (glossary 'unchanged'): the German Kosmeer wiki consistently uses \"Aschwetter Cett\". scadrial-027 option updated too."
+ },
+ "Aradan Yomen": {
+  "de": "Aradan Yomen",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Aradan_Yomen"
+  ],
+  "notes": "Kosmeer wiki: Obligator and Seher, ruler of Fadrex."
+ },
+ "Seer": {
+  "de": "Seher",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Aradan_Yomen"
+  ],
+  "notes": "Atium Misting."
+ },
+ "obligator": {
+  "de": "Obligator",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Obligator"
+  ],
+  "notes": "pl. Obligatoren."
+ },
+ "Tevidian": {
+  "de": "Tevidian",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Tevidian"
+  ],
+  "notes": ""
+ },
+ "Lord Prelan": {
+  "de": "Hochprälan",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Tevidian"
+  ],
+  "notes": "Kosmeer wiki: \"der Hochprälan\"."
+ },
+ "Canton": {
+  "de": "Amt",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Obligator"
+  ],
+  "notes": "Kosmeer wiki: \"Amt für Orthodoxie\", \"Amt für Inquisition\", \"Amt für Finanzwesen\"."
+ },
+ "Canton of Inquisition": {
+  "de": "Amt für Inquisition",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Obligator"
+  ],
+  "notes": ""
+ },
+ "Canton of Orthodoxy": {
+  "de": "Amt für Orthodoxie",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Obligator"
+  ],
+  "notes": ""
+ },
+ "Canton of Finance": {
+  "de": "Amt für Finanzwesen",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Obligator"
+  ],
+  "notes": ""
+ },
+ "Canton of Resource": {
+  "de": "Amt für Ressourcen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested; formed by analogy with the attested Ämter."
+ },
+ "Quellion": {
+  "de": "Quellion",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Quellion"
+  ],
+  "notes": "\"Erster Bürger\" of Urteau on the Kosmeer wiki."
+ },
+ "Citizen": {
+  "de": "Bürger",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Quellion"
+  ],
+  "notes": "Quellion's title."
+ },
+ "Urteau": {
+  "de": "Urteau",
+  "status": "unchanged",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Quellion"
+  ],
+  "notes": ""
+ },
+ "Blessing": {
+  "de": "Segen",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/TenSoon"
+  ],
+  "notes": "Kosmeer wiki speaks of the kandra \"Segen\". Individual Blessings not attested."
+ },
+ "Blessing of Potency": {
+  "de": "Segen der Stärke",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Blessing of Presence": {
+  "de": "Segen der Präsenz",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Blessing of Awareness": {
+  "de": "Segen der Wahrnehmung",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Blessing of Stability": {
+  "de": "Segen der Stabilität",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Generation": {
+  "de": "Generation",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/TenSoon"
+  ],
+  "notes": "Kosmeer wiki: \"Kandra der Dritten Generation\"."
+ },
+ "Second Generation": {
+  "de": "Zweite Generation",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/TenSoon"
+  ],
+  "notes": ""
+ },
+ "Synod": {
+  "de": "Synode",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sazed",
+   "https://kosmeer.fandom.com/de/wiki/Tindwyl"
+  ],
+  "notes": "die Synode (der Bewahrer)."
+ },
+ "coppermind": {
+  "de": "Kupfergeist",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Sazed"
+  ],
+  "notes": "pl. Kupfergeister."
+ },
+ "Terris Dominance": {
+  "de": "Terris-Dominium",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Zentrales_Dominium"
+  ],
+  "notes": "Kosmeer wiki uses \"Dominium\" (Zentrales Dominium); Terris form by analogy."
+ },
+ "Roughs": {
+  "de": "Einöde",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/J%C3%A4ger_der_Macht"
+  ],
+  "notes": "Kosmeer wiki blurb: Wax returns \"nach zwanzig Jahren in der Einöde\". die Einöde."
+ },
+ "bendalloy": {
+  "de": "Biegmetall",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/wiki/Lestiborner"
+  ],
+  "notes": "Kosmeer wiki: \"Biegmetall und Kadmium\"."
+ },
+ "cadmium": {
+  "de": "Kadmium",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/wiki/Lestiborner"
+  ],
+  "notes": ""
+ },
+ "chromium": {
+  "de": "Chrom",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Standard German chemical name."
+ },
+ "zinc": {
+  "de": "Zink",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Fabrial"
+  ],
+  "notes": "Standard chemical name."
+ },
+ "Weathering": {
+  "de": "Weathering",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Bilming": {
+  "de": "Bilming",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Barl": {
+  "de": "Barl",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Lord Renoux": {
+  "de": "Lord Renoux",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "Kosmeer wiki alternates \"Renoux\"/\"Remoux\" and uses \"Großherr\"; kept the existing de form \"Renoux\" (scadrial-007). QA: check Piper text."
+ },
+ "Valette Renoux": {
+  "de": "Valette Renoux",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande"
+  ],
+  "notes": "See Lord Renoux (\"Valette Remoux\" also seen)."
+ },
+ "mist spirit": {
+  "de": "Nebelwesen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested; kept distinct from mistwraith = Nebelgeist. QA: check Piper (Alendi's logbook)."
+ },
+ "trellium": {
+  "de": "Trellium",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Unchanged form expected."
+ },
+ "ettmetal": {
+  "de": "Ettmetall",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Pulser": {
+  "de": "Pulser",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary form; not attested."
+ },
+ "Slider": {
+  "de": "Gleiter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary form; not attested."
+ },
+ "Oracle": {
+  "de": "Orakel",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested; obvious rendering."
+ },
+ "Augur": {
+  "de": "Augur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested; same word in German."
+ },
+ "Bloodmaker": {
+  "de": "Blutmacher",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Nicroburst": {
+  "de": "Nicroburst",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Sparker": {
+  "de": "Sparker",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Windwhisper": {
+  "de": "Windwhisper",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Firesoul": {
+  "de": "Firesoul",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Sentry": {
+  "de": "Sentry",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Gasper": {
+  "de": "Gasper",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept. Not used in de text (rephrased)."
+ },
+ "Fortune": {
+  "de": "Glück",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "boxing": {
+  "de": "Boxing",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept. pl. Boxings."
+ },
+ "Feltrel": {
+  "de": "Feltrel",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Bloody Tan": {
+  "de": "Bloody Tan",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Fedik": {
+  "de": "Fedik",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Lord Shezler": {
+  "de": "Lord Shezler",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "The Eleventh Metal not published in German."
+ },
+ "Mantiz": {
+  "de": "Mantiz",
+  "status": "unpublished",
+  "sources": [],
+  "notes": ""
+ },
+ "Survivor's Treasure": {
+  "de": "Schatz des Überlebenden",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Allomancer Jak not published in German; descriptive."
+ },
+ "ragnat": {
+  "de": "Ragnat",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "grador": {
+  "de": "Grador",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Dilaf"
+  ],
+  "notes": "Kosmeer wiki shows Derethi ranks (Arteth, Grad...) unchanged."
+ },
+ "arteth": {
+  "de": "Arteth",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Dilaf"
+  ],
+  "notes": "Kosmeer wiki shows Derethi ranks (Arteth, Grad...) unchanged."
+ },
+ "dorven": {
+  "de": "Dorven",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Rathbore": {
+  "de": "Rathbore",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Fjeldor": {
+  "de": "Fjeldor",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Ghajan": {
+  "de": "Ghajan",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Omin": {
+  "de": "Omin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Fjon": {
+  "de": "Fjon",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Jalla": {
+  "de": "Jalla",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Svorden": {
+  "de": "Svorden",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Hrovell": {
+  "de": "Hrovell",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Forton": {
+  "de": "Forton",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Dashe": {
+  "de": "Dashe",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Teullu": {
+  "de": "Teullu",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Shaizan": {
+  "de": "Shaizan",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Oem": {
+  "de": "Oem",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Widow's Trial": {
+  "de": "Witwenprobe",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Chasm Line": {
+  "de": "Schluchtlinie",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Grands": {
+  "de": "die Großen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "soulstone": {
+  "de": "Seelenstein",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Roost": {
+  "de": "The Roost",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "The Hope of Elantris: no German edition attested (WORK_TITLES keeps English) -> English."
+ },
+ "Five Visions": {
+  "de": "Fünf Visionen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Iridescent Tones": {
+  "de": "Schillernde Töne",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Vo": {
+  "de": "Vo",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Bright Sea": {
+  "de": "Helles Meer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Inner Sea": {
+  "de": "Inneres Meer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Red Panther": {
+  "de": "Roter Panther",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Havarseth": {
+  "de": "Havarseth",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Gendren": {
+  "de": "Gendren",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Hopefinder": {
+  "de": "Hoffnungsfinder",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary form; not attested."
+ },
+ "First Heightening": {
+  "de": "Erste Steigerung",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Capitalised ordinal as in existing nalthis-020 (\"Zehnte Steigerung\")."
+ },
+ "Third Heightening": {
+  "de": "Dritte Steigerung",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See First Heightening."
+ },
+ "Sixth Heightening": {
+  "de": "Sechste Steigerung",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See First Heightening."
+ },
+ "sprouter": {
+  "de": "Sporenmeisterin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Piper term not found; descriptive rendering (Sporenmeister/-in)."
+ },
+ "sprouters": {
+  "de": "Sporenmeister",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See sprouter."
+ },
+ "roseite spores": {
+  "de": "Roseitsporen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Matches existing otros-007 wording."
+ },
+ "aether spores": {
+  "de": "Äthersporen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Ann": {
+  "de": "Ann",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Laughing Ann."
+ },
+ "hijo": {
+  "de": "Hijo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not attested; kept."
+ },
+ "father machine": {
+  "de": "Vatermaschine",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Torio": {
+  "de": "Torio",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Cognitive Shadows": {
+  "de": "kognitive Schatten",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Cognitive Shadow."
+ },
+ "Noodle Pupil": {
+  "de": "Noodle Pupil",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Noodle Princess": {
+  "de": "Noodle Princess",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Namakudo": {
+  "de": "Namakudo",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Izumakamo": {
+  "de": "Izumakamo",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Chaeyung": {
+  "de": "Chaeyung",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Chinikdakordich": {
+  "de": "Chinikdakordich",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Hwanji": {
+  "de": "Hwanji",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Dwookim": {
+  "de": "Dwookim",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Yoki-hijo": {
+  "de": "Yoki-hijo",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Rebeke": {
+  "de": "Rebeke",
+  "status": "unchanged",
+  "sources": [
+   "https://coppermind.net/wiki/Elegy_Salvage"
+  ],
+  "notes": ""
+ },
+ "Compassion": {
+  "de": "Compassion",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
+ },
+ "Contemplation": {
+  "de": "Contemplation",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
+ },
+ "Zeal": {
+  "de": "Zeal",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
+ },
+ "Greater Good": {
+  "de": "Höheres Wohl",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Beacon's ruling body: das Höhere Wohl. Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
+ },
+ "Beaconites": {
+  "de": "Beaconiter",
+  "status": "unverified",
+  "sources": [],
+  "notes": "City name Beacon kept (proper name, unattested). Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
+ },
+ "Beacon": {
+  "de": "Beacon",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
+ },
+ "Lodestar": {
+  "de": "Leitstern",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Elegy's title in Beacon; masc.: zum Leitstern ernannt. Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
+ },
+ "Sunlit One": {
+  "de": "Sonnenbeschienene",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
+ },
+ "Prospector": {
+  "de": "Prospektor",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
+ },
+ "Elegy Salvage": {
+  "de": "Elegie Salvage",
+  "status": "unverified",
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/"
+  ],
+  "notes": "Given name per German reviews (Elegie); surname \"Salvage\" kept, not attested in German."
+ },
+ "Elegy": {
+  "de": "Elegie",
+  "status": "community",
+  "sources": [
+   "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/",
+   "https://himmelsblau.org/2024/03/das-herz-der-sonne/"
+  ],
+  "notes": "German reviews write \"Elegie\" (Rebekes Schwester Elegie). Not seen in publisher text; very likely the Heyne form."
+ },
+ "Divinity": {
+  "de": "Divinity",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
+ },
+ "Salvage": {
+  "de": "Salvage",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too."
+ },
+ "sunhearts": {
+  "de": "Sonnenherzen",
+  "status": "official",
+  "sources": [],
+  "notes": "pl. of Sonnenherz (official)."
+ },
+ "Threnodite": {
+  "de": "Threnodier",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Not used in de text (rephrased)."
+ },
+ "Taisha": {
+  "de": "Taisha",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Taishin": {
+  "de": "Taishin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Lossand": {
+  "de": "Lossand",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Professions": {
+  "de": "Berufsstände",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Mastrell's Path": {
+  "de": "Pfad des Mastrell",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "sandling": {
+  "de": "Sandling",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Works as German; not attested."
+ },
+ "Kerztian": {
+  "de": "kerztianisch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Adjective from existing \"Kerztianer\"."
+ },
+ "Kelzin": {
+  "de": "Kelzin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Chesterton Divide": {
+  "de": "Chesterton Divide",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Shadows for Silence not published in German -> English."
+ },
+ "Chesterton": {
+  "de": "Chesterton",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Shadows for Silence not published in German -> English."
+ },
+ "Red Young": {
+  "de": "Red Young",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Shadows for Silence not published in German -> English."
+ },
+ "Daggon": {
+  "de": "Daggon",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Shadows for Silence not published in German -> English."
+ },
+ "Theopolis": {
+  "de": "Theopolis",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Shadows for Silence not published in German -> English."
+ },
+ "Dob": {
+  "de": "Dob",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Shadows for Silence not published in German -> English."
+ },
+ "Eelakin": {
+  "de": "Eelakin",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Sixth of the Dusk not published in German -> English."
+ },
+ "Ones Above": {
+  "de": "Ones Above",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Sixth of the Dusk not published in German -> English."
+ },
+ "Nightmaws": {
+  "de": "Nightmaws",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Sixth of the Dusk not published in German -> English."
+ },
+ "nightmaws": {
+  "de": "Nightmaws",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Sixth of the Dusk not published in German -> English."
+ },
+ "Deepwalkers": {
+  "de": "Deepwalker",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Sixth of the Dusk not published in German -> English."
+ },
+ "deepwalker": {
+  "de": "Deepwalker",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Sixth of the Dusk not published in German -> English."
+ },
+ "Rosharan system": {
+  "de": "System von Roschar",
+  "status": "community",
+  "sources": [],
+  "notes": "Wording as in existing cosmere-038."
+ },
+ "Ashyn": {
+  "de": "Ashyn",
+  "status": "unverified",
+  "sources": [],
+  "notes": "sh->sch not confirmed; kept."
+ },
+ "Silverlight": {
+  "de": "Silverlight",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Celebrant": {
+  "de": "Celebrant",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); golden rule -> English kept."
+ },
+ "Nikli": {
+  "de": "Nikli",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Hordelings": {
+  "de": "Hordlinge",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Cremlings": {
+  "de": "Kremlinge",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Common rendering; not confirmed in this pass."
+ },
+ "Rotspren": {
+  "de": "Fäulnissprengsel",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "Larkins": {
+  "de": "Larkin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See larkin."
+ },
+ "Retribution": {
+  "de": "Vergeltung",
+  "status": "unverified",
+  "sources": [
+   "https://reactormag.com/wind-and-truth-reread-chapters-144-146/"
+  ],
+  "notes": "German name of the Shard not found; natural rendering."
+ },
+ "Renarin": {
+  "de": "Renarin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Thaidakar": {
+  "de": "Thaidakar",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Restares": {
+  "de": "Restares",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "Worldsinger": {
+  "de": "Weltensänger",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No German attestation found (WebSearch, incl. kosmeer.fandom.com/de); descriptive German rendering used in the quiz, pending QA."
+ },
+ "worldhopper": {
+  "de": "Weltenspringer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Glossary form, already used in cosmere.json."
+ },
+ "god metal": {
+  "de": "Göttermetall",
+  "status": "community",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Kategorie:Allomantische_Metalle"
+  ],
+  "notes": "Kosmeer wiki: \"Göttermetalle\"."
+ },
+ "Raysium": {
+  "de": "Raysium",
+  "status": "unverified",
+  "sources": [],
+  "notes": ""
+ },
+ "Fuzz": {
+  "de": "Fuzz",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "Secret History unpublished in German."
+ },
+ "Ire": {
+  "de": "Ire",
+  "status": "unpublished",
+  "sources": [],
+  "notes": ""
+ },
+ "Yomen": {
+  "de": "Yomen",
+  "status": "unchanged",
+  "sources": [],
+  "notes": ""
+ },
+ "aviar": {
+  "de": "Aviar",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Aviar."
+ }
+}

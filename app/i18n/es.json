@@ -1,0 +1,250 @@
+{
+  "app": {
+    "title": "Trivia del Cosmere",
+    "tagline": "¿Cuánto sabes del Cosmere?"
+  },
+  "common": {
+    "back": "Atrás",
+    "home": "Inicio",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "continue": "Continuar",
+    "next": "Siguiente pregunta",
+    "loading": "Cargando…",
+    "playAgain": "Jugar otra vez",
+    "openSettings": "Abrir ajustes"
+  },
+  "home": {
+    "continue": "Continuar partida",
+    "continueDesc": "En curso: {players}",
+    "classic": "Partida clásica",
+    "classicDesc": "De 1 a 6 jugadores · infunde las seis gemas",
+    "quick": "Partida rápida",
+    "quickDesc": "15 preguntas contrarreloj",
+    "practice": "Práctica",
+    "practiceDesc": "Elige un mundo y una dificultad",
+    "stats": "Estadísticas",
+    "settings": "Ajustes",
+    "about": "Acerca de",
+    "newGameConfirm": "Si empiezas una partida nueva se descartará la que está en curso. ¿Continuar?",
+    "continueQuick": "Continuar partida rápida",
+    "continueQuickDesc": "Pregunta {n} de {total} · {score} puntos"
+  },
+  "cat": {
+    "roshar": "Roshar",
+    "scadrial": "Scadrial",
+    "sel": "Sel",
+    "nalthis": "Nalthis",
+    "otros": "Otros mundos",
+    "cosmere": "El Cosmere"
+  },
+  "gem": {
+    "roshar": "Zafiro",
+    "scadrial": "Rubí",
+    "sel": "Esmeralda",
+    "nalthis": "Heliodoro",
+    "otros": "Amatista",
+    "cosmere": "Diamante"
+  },
+  "difficulty": {
+    "1": "Fácil",
+    "2": "Media",
+    "3": "Difícil",
+    "label": "Dificultad: {level}",
+    "4": "Experto"
+  },
+  "level": {
+    "title": "Nivel de dificultad",
+    "easy": "Fácil",
+    "normal": "Normal",
+    "hard": "Difícil",
+    "expert": "Experto",
+    "easyDesc": "Solo preguntas fáciles.",
+    "normalDesc": "Mezcla de preguntas fáciles y medias, con alguna difícil.",
+    "hardDesc": "Preguntas medias, difíciles y de experto.",
+    "expertDesc": "Solo preguntas difíciles y de experto, para quienes releen.",
+    "badge": "Nivel: {level}"
+  },
+  "lifeline": {
+    "title": "Comodines",
+    "help": "Cómo funcionan los comodines",
+    "rules": "Cada jugador tiene uno de cada por partida (también en la partida rápida). No se pueden usar en la pregunta final ni en práctica, y el atium y la luz tormentosa no se combinan en la misma pregunta.",
+    "used": "{name} (ya usado)",
+    "atium": {
+      "name": "Atium",
+      "desc": "Elimina dos respuestas incorrectas.",
+      "long": "Quema atium y atisba el futuro: se eliminan dos respuestas incorrectas.",
+      "done": "Atium: se han eliminado dos respuestas incorrectas.",
+      "removed": "{option} (eliminada por el atium)"
+    },
+    "stormlight": {
+      "name": "Luz tormentosa",
+      "desc": "Actívala antes de responder: si fallas, vuelves a elegir.",
+      "long": "Actívala antes de responder. Si eliges una respuesta incorrecta, se marca y vuelves a elegir, sin que se revele la correcta. El tiempo sigue corriendo. Si usas Aliento con ella activa, sigue activa en la pregunta nueva.",
+      "armed": "Luz tormentosa activa: si fallas, podrás volver a elegir.",
+      "saved": "¡La luz tormentosa te sana! Esa no era: elige otra respuesta.",
+      "struck": "{option} (incorrecta)"
+    },
+    "breath": {
+      "name": "Aliento",
+      "desc": "Cambia la pregunta por otra del mismo mundo y dificultad.",
+      "long": "Cambia la pregunta por otra del mismo mundo y la misma dificultad. Si no queda ninguna, no se puede usar.",
+      "none": "No hay otra pregunta del mismo mundo y dificultad."
+    },
+    "noCombo": "El atium y la luz tormentosa no se pueden combinar en la misma pregunta."
+  },
+  "setup": {
+    "title": "Nueva partida",
+    "playerCount": "Jugadores",
+    "player": "Jugador {n}",
+    "namePlaceholder": "Jugador {n}",
+    "color": "Color de gema",
+    "timer": "Temporizador de 30 segundos",
+    "timerHint": "Si se acaba el tiempo, cuenta como fallo.",
+    "start": "Empezar partida",
+    "fewer": "Quitar un jugador",
+    "more": "Añadir un jugador"
+  },
+  "turn": {
+    "passTo": "Pasa el móvil a",
+    "ready": "Empezar mi turno",
+    "noPeek": "Los demás, ¡no miréis!",
+    "turnOf": "Turno de {name}",
+    "starts": "Empieza: {name}"
+  },
+  "wheel": {
+    "label": "Ruleta de categorías",
+    "spin": "Girar",
+    "tapToSpin": "Toca la ruleta para girarla",
+    "spinning": "Girando…",
+    "wildcard": "Comodín",
+    "landed": "¡{category}!",
+    "chooseTitle": "¡Comodín!",
+    "chooseHint": "Elige el mundo que quieras",
+    "infusedPick": "{category} ya está infundida: ¡elige otro mundo!"
+  },
+  "question": {
+    "correct": "¡Correcto!",
+    "incorrect": "Incorrecto",
+    "timeout": "¡Se acabó el tiempo!",
+    "answerWas": "La respuesta correcta era: {answer}",
+    "secondsLeft": "Quedan {s} segundos",
+    "final": "Pregunta final",
+    "progress": "Pregunta {n} de {total}"
+  },
+  "classic": {
+    "charge": "+1 carga de {category} ({n}/2)",
+    "infused": "¡Tu gema de {category} está infundida!",
+    "alreadyInfused": "{category} ya está infundida: no suma más cargas.",
+    "allInfused": "¡Todas las gemas infundidas! Ahora toca la pregunta final.",
+    "spinAgain": "¡Vuelve a girar!",
+    "passTurn": "El turno pasa a {name}.",
+    "soloMiss": "¡Fallaste! Vuelve a girar.",
+    "finalFail": "Esta vez no. Volverás a intentar la pregunta final en tu próximo turno.",
+    "finalTitle": "Pregunta final",
+    "finalIntro": "{name}, tienes todas las gemas infundidas. ¡Acierta esta pregunta y ganarás!",
+    "finalReady": "¡Adelante!",
+    "leave": "Salir de la partida (se guarda el progreso)",
+    "board": "Jugadores",
+    "gemCount": "{n} de {total} gemas infundidas",
+    "gem0": "{category}: sin cargas",
+    "gem1": "{category}: 1 carga",
+    "gem2": "{category}: infundida",
+    "streakPass": "¡{n} aciertos seguidos! El turno pasa a {name}."
+  },
+  "victory": {
+    "title": "¡{name} gana!",
+    "subtitle": "Todas las gemas infundidas y la pregunta final acertada.",
+    "answered": "Preguntas jugadas: {n}"
+  },
+  "quick": {
+    "title": "Partida rápida",
+    "score": "Puntos",
+    "best": "Mejor puntuación",
+    "points": "+{n} puntos",
+    "result": "{score} puntos",
+    "correctCount": "{n} de {total} aciertos",
+    "newRecord": "¡Nuevo récord!",
+    "finished": "Resultados",
+    "seeResults": "Ver resultados",
+    "quitConfirm": "¿Abandonar la partida rápida? Perderás la puntuación.",
+    "intro": "{n} preguntas de todos los mundos, {s} segundos cada una. Cuanto antes aciertes, más puntos.",
+    "introLifelines": "Tienes un comodín de cada tipo: Atium, Luz tormentosa y Aliento.",
+    "start": "Empezar",
+    "bestScore": "Mejor puntuación: {n}"
+  },
+  "practice": {
+    "title": "Práctica",
+    "category": "Mundo",
+    "all": "Todos los mundos",
+    "difficulty": "Dificultad",
+    "any": "Cualquiera",
+    "available": "Preguntas disponibles: {n}",
+    "start": "Empezar a practicar",
+    "end": "Terminar",
+    "tally": "{correct} de {total} aciertos",
+    "fallback": "Aún no hay preguntas de dificultad {level} aquí: practicarás con las de dificultad {fallback}.",
+    "empty": "Aún no hay preguntas de dificultad {level} aquí.",
+    "noneFilter": "No hay preguntas disponibles: el filtro de spoilers no deja ninguna obra con preguntas. Marca más obras en Ajustes."
+  },
+  "stats": {
+    "title": "Estadísticas",
+    "classicGames": "Partidas clásicas ganadas",
+    "quickGames": "Partidas rápidas",
+    "bestQuick": "Récord en partida rápida",
+    "answered": "Preguntas respondidas",
+    "accuracy": "Aciertos",
+    "byCategory": "Aciertos por mundo",
+    "none": "Aún no has respondido nada. ¡A jugar!",
+    "of": "{correct} de {total}",
+    "lifelines": "Comodines usados"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "theme": "Tema",
+    "dark": "Oscuro",
+    "light": "Claro",
+    "sound": "Efectos de sonido",
+    "vibration": "Vibración",
+    "vibrationUnsupported": "No disponible en este dispositivo",
+    "timer": "Temporizador activado por defecto",
+    "spoilers": "Filtro de spoilers",
+    "spoilersHint": "Marca las obras que has leído. Solo saldrán preguntas sobre ellas.",
+    "selected": "{n} de {total} obras seleccionadas",
+    "all": "Marcar todas",
+    "none": "Desmarcar todas",
+    "data": "Datos",
+    "reset": "Borrar todos los datos",
+    "resetConfirm": "Se borrarán tus estadísticas, récords, la partida guardada y los ajustes. ¿Seguro?",
+    "resetDone": "Se han borrado todos los datos.",
+    "storageWarning": "El almacenamiento no está disponible: los ajustes y el progreso no se conservarán al cerrar la app."
+  },
+  "about": {
+    "title": "Acerca de",
+    "body": "Un juego de preguntas al estilo Trivial sobre los mundos del Cosmere de Brandon Sanderson. Juega en solitario o pasa el móvil a tus amigos.",
+    "howTo": "Cómo se juega",
+    "rule1": "Gira la ruleta y responde una pregunta sobre el mundo en el que caiga.",
+    "rule2": "Si aciertas, ganas una carga de ese mundo y vuelves a girar. Si fallas, el turno pasa al siguiente jugador.",
+    "rule3": "Con dos cargas, la gema queda infundida. El comodín te deja elegir el mundo.",
+    "rule4": "Infunde todas las gemas y acierta la pregunta final para ganar.",
+    "offline": "Funciona sin conexión una vez cargado. Todo se guarda solo en este dispositivo.",
+    "disclaimer": "Proyecto de fans no oficial, sin relación con Brandon Sanderson ni con Dragonsteel. El Cosmere y todos los nombres relacionados pertenecen a sus respectivos propietarios.",
+    "version": "Versión {v}",
+    "levels": "Niveles de dificultad",
+    "levelsFinal": "La pregunta final de la partida clásica es media en Fácil, difícil en Normal y de experto en Difícil y Experto.",
+    "lifelines": "Comodines",
+    "rule5": "Un sorteo decide quién empieza. Con 3 aciertos seguidos el turno pasa al siguiente jugador aunque aciertes."
+  },
+  "errors": {
+    "load": "No se han podido cargar las preguntas. Comprueba la conexión y recarga.",
+    "noQuestions": "No hay preguntas disponibles con el filtro de spoilers actual.",
+    "fallback": "Las preguntas aún no están disponibles en este idioma; se muestran en inglés."
+  },
+  "boot": {
+    "title": "Algo ha fallado",
+    "body": "La app no ha podido arrancar. Puede que los datos guardados estén dañados: borrarlos suele arreglarlo (se perderán la partida en curso, los ajustes y las estadísticas).",
+    "reset": "Borrar datos y reiniciar",
+    "retry": "Reintentar"
+  }
+}

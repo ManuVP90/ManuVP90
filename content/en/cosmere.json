@@ -1,0 +1,1935 @@
+[
+  {
+    "id": "cosmere-001",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "arcanum",
+    "q": "The Shards of the Cosmere are pieces of which ancient being?",
+    "a": "Adonalsium",
+    "wrong": [
+      "Odium",
+      "Harmony",
+      "The Stormfather"
+    ],
+    "explain": "Adonalsium was broken in the Shattering, and its power was divided among the Shards.",
+    "terms": [
+      "Shard",
+      "Cosmere",
+      "Adonalsium",
+      "Odium",
+      "Harmony",
+      "Stormfather",
+      "Shattering"
+    ],
+    "source": "Arcanum Unbounded, essays"
+  },
+  {
+    "id": "cosmere-002",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "wob",
+    "q": "How many Shards was Adonalsium split into?",
+    "a": "Sixteen",
+    "wrong": [
+      "Ten",
+      "Twelve",
+      "Seven"
+    ],
+    "explain": "Each of the sixteen Shards embodies a single Intent, such as Honor, Ruin or Endowment.",
+    "terms": [
+      "Shard",
+      "Adonalsium",
+      "Intent",
+      "Honor",
+      "Ruin",
+      "Endowment"
+    ],
+    "source": "Words of Brandon"
+  },
+  {
+    "id": "cosmere-003",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "oathbringer",
+    "q": "Besides Honor and Cultivation, which Shard is present in the Rosharan system?",
+    "a": "Odium",
+    "wrong": [
+      "Ruin",
+      "Autonomy",
+      "Preservation"
+    ],
+    "explain": "Odium came to Roshar long ago, and Honor and Cultivation bound him to the system.",
+    "terms": [
+      "Honor",
+      "Cultivation",
+      "Shard",
+      "Roshar",
+      "Odium",
+      "Ruin",
+      "Autonomy",
+      "Preservation"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "cosmere-004",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "oathbringer",
+    "q": "Which Shard was responsible for the death of Honor?",
+    "a": "Odium",
+    "wrong": [
+      "Cultivation",
+      "Ruin",
+      "Autonomy"
+    ],
+    "explain": "Odium Splintered Honor, leaving the Stormfather as one of his largest remnants.",
+    "terms": [
+      "Shard",
+      "Honor",
+      "Odium",
+      "Cultivation",
+      "Ruin",
+      "Autonomy",
+      "Splintered",
+      "Stormfather"
+    ],
+    "source": "The Way of Kings; Oathbringer"
+  },
+  {
+    "id": "cosmere-005",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "hero-of-ages",
+    "q": "Which two Shards worked together to create humankind on Scadrial?",
+    "a": "Ruin and Preservation",
+    "wrong": [
+      "Honor and Cultivation",
+      "Devotion and Dominion",
+      "Odium and Ruin"
+    ],
+    "explain": "Ruin agreed in exchange for being allowed to destroy the world later, but Preservation betrayed and imprisoned him at great cost to himself.",
+    "terms": [
+      "Shard",
+      "Scadrial",
+      "Ruin",
+      "Preservation",
+      "Honor",
+      "Cultivation",
+      "Devotion",
+      "Dominion",
+      "Odium"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "cosmere-006",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "rhythm-of-war",
+    "q": "Stormlight is the Investiture of which Shard?",
+    "a": "Honor",
+    "wrong": [
+      "Cultivation",
+      "Odium",
+      "Preservation"
+    ],
+    "explain": "Cultivation's power appears as Lifelight and Odium's as Voidlight.",
+    "terms": [
+      "Stormlight",
+      "Investiture",
+      "Shard",
+      "Honor",
+      "Cultivation",
+      "Odium",
+      "Preservation",
+      "Lifelight",
+      "Voidlight"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "cosmere-007",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "hero-of-ages",
+    "q": "Who takes up Preservation's power to fight Ruin directly?",
+    "a": "Vin",
+    "wrong": [
+      "Elend",
+      "Marsh",
+      "Kelsier"
+    ],
+    "explain": "Vin and Ruin destroyed each other in their final clash.",
+    "terms": [
+      "Preservation",
+      "Ruin",
+      "Vin",
+      "Elend",
+      "Marsh",
+      "Kelsier"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "cosmere-008",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "hero-of-ages",
+    "q": "Atium turns out to be the concentrated body of which Shard?",
+    "a": "Ruin",
+    "wrong": [
+      "Preservation",
+      "Honor",
+      "Harmony"
+    ],
+    "explain": "Ruin hid his body as atium, which was mined in the Pits of Hathsin.",
+    "terms": [
+      "atium",
+      "Shard",
+      "Ruin",
+      "Preservation",
+      "Honor",
+      "Harmony",
+      "Pits of Hathsin"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "cosmere-009",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "words-of-radiance",
+    "q": "On Roshar, what is the Cognitive Realm commonly called?",
+    "a": "Shadesmar",
+    "wrong": [
+      "The Tranquiline Halls",
+      "The Origin",
+      "Damnation"
+    ],
+    "explain": "Jasnah and Shallan can glimpse and even slip into Shadesmar through Soulcasting.",
+    "terms": [
+      "Roshar",
+      "Cognitive Realm",
+      "Shadesmar",
+      "Tranquiline Halls",
+      "Origin",
+      "Damnation",
+      "Jasnah",
+      "Shallan",
+      "Soulcasting"
+    ],
+    "source": "The Way of Kings; Words of Radiance"
+  },
+  {
+    "id": "cosmere-010",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "oathbringer",
+    "q": "The Physical and Cognitive Realms are two of the three Realms. What is the third?",
+    "a": "The Spiritual Realm",
+    "wrong": [
+      "The Emotional Realm",
+      "The Divine Realm",
+      "The Elemental Realm"
+    ],
+    "explain": "The Spiritual Realm holds a thing's ideal form and is outside time and space.",
+    "terms": [
+      "Physical Realm",
+      "Cognitive Realm",
+      "Spiritual Realm"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "cosmere-011",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "What position does Hoid hold at King Elhokar's court?",
+    "a": "King's Wit",
+    "wrong": [
+      "Royal Highprince",
+      "Court Ardent",
+      "Royal Stormwarden"
+    ],
+    "explain": "As Wit he insults courtiers for a living, yet keeps his true purpose hidden.",
+    "terms": [
+      "Hoid",
+      "Elhokar",
+      "Wit",
+      "Highprince",
+      "ardent",
+      "Stormwarden"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "cosmere-012",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "tress",
+    "q": "Which worldhopper narrates Tress of the Emerald Sea?",
+    "a": "Hoid",
+    "wrong": [
+      "Khriss",
+      "Nazh",
+      "Vasher"
+    ],
+    "explain": "Hoid tells the story of Tress, a young woman of the island world Lumar.",
+    "terms": [
+      "Tress of the Emerald Sea",
+      "Tress",
+      "Hoid",
+      "Khriss",
+      "Nazh",
+      "Vasher",
+      "Lumar"
+    ],
+    "source": "Tress of the Emerald Sea"
+  },
+  {
+    "id": "cosmere-013",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "oathbringer",
+    "q": "Which sentient sword from Nalthis ends up on Roshar?",
+    "a": "Nightblood",
+    "wrong": [
+      "Oathbringer",
+      "Sunraiser",
+      "Jezrien's Honorblade"
+    ],
+    "explain": "Nightblood was Awakened on Nalthis with the Command to destroy evil.",
+    "terms": [
+      "Nalthis",
+      "Roshar",
+      "Nightblood",
+      "Oathbringer",
+      "Sunraiser",
+      "Jezrien",
+      "Honorblade",
+      "Awakened"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "cosmere-014",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "oathbringer",
+    "q": "Which Rosharan carries Nightblood in Oathbringer?",
+    "a": "Szeth",
+    "wrong": [
+      "Kaladin",
+      "Dalinar",
+      "Adolin"
+    ],
+    "explain": "Szeth trains with the Skybreakers under Nale while bearing Nightblood.",
+    "terms": [
+      "Roshar",
+      "Nightblood",
+      "Oathbringer",
+      "Szeth",
+      "Kaladin",
+      "Dalinar",
+      "Adolin",
+      "Skybreaker",
+      "Nale"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "cosmere-015",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "words-of-radiance",
+    "q": "Which secret society, through its agent Mraize, recruits Shallan?",
+    "a": "The Ghostbloods",
+    "wrong": [
+      "The Sons of Honor",
+      "The Diagram",
+      "The Envisagers"
+    ],
+    "explain": "In Words of Radiance, Mraize has Shallan, disguised as Veil, spy on Amaram's Sons of Honor.",
+    "terms": [
+      "Mraize",
+      "Shallan",
+      "Ghostbloods",
+      "Sons of Honor",
+      "Diagram",
+      "Envisagers",
+      "Veil",
+      "Amaram"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "cosmere-016",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "Which was the first Cosmere novel to be published?",
+    "a": "Elantris",
+    "wrong": [
+      "Mistborn: The Final Empire",
+      "Warbreaker",
+      "The Way of Kings"
+    ],
+    "explain": "Elantris came out in 2005, set on the planet Sel.",
+    "terms": [
+      "Cosmere",
+      "Elantris",
+      "Mistborn",
+      "The Final Empire",
+      "Warbreaker",
+      "The Way of Kings",
+      "Sel"
+    ],
+    "source": "Publication history"
+  },
+  {
+    "id": "cosmere-017",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "arcanum",
+    "q": "What is the general Cosmere term for the power of the Shards in all its forms?",
+    "a": "Investiture",
+    "wrong": [
+      "Stormlight",
+      "Breath",
+      "Dor"
+    ],
+    "explain": "Stormlight, Breath and the Dor are all forms of Investiture on their respective worlds.",
+    "terms": [
+      "Cosmere",
+      "Shard",
+      "Investiture",
+      "Stormlight",
+      "Breath",
+      "Dor"
+    ],
+    "source": "Arcanum Unbounded, essays"
+  },
+  {
+    "id": "cosmere-018",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "What makes up the 'ocean' of Shadesmar?",
+    "a": "Small glass beads",
+    "wrong": [
+      "Liquid Stormlight",
+      "Black sand",
+      "Crem"
+    ],
+    "explain": "Each bead represents an object in the Physical Realm, and touching one reveals its nature.",
+    "terms": [
+      "Shadesmar",
+      "Stormlight",
+      "crem",
+      "Physical Realm"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "cosmere-019",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "oathbringer",
+    "q": "The Stormfather is a remnant of which Shard?",
+    "a": "Honor",
+    "wrong": [
+      "Cultivation",
+      "Odium",
+      "Harmony"
+    ],
+    "explain": "After Honor's death, the Stormfather retained fragments of his power and memories.",
+    "terms": [
+      "Stormfather",
+      "Shard",
+      "Honor",
+      "Cultivation",
+      "Odium",
+      "Harmony"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "cosmere-020",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "sunlit-man",
+    "q": "Which worldhopper is the protagonist of The Sunlit Man?",
+    "a": "Nomad",
+    "wrong": [
+      "Hoid",
+      "Khriss",
+      "Vasher"
+    ],
+    "explain": "Nomad keeps jumping between worlds to escape the Night Brigade.",
+    "terms": [
+      "The Sunlit Man",
+      "Nomad",
+      "Hoid",
+      "Khriss",
+      "Vasher",
+      "Night Brigade"
+    ],
+    "source": "The Sunlit Man"
+  },
+  {
+    "id": "cosmere-021",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "alloy-of-law",
+    "q": "What is the name of the Shard formed when Ruin and Preservation are held together?",
+    "a": "Harmony",
+    "wrong": [
+      "Endowment",
+      "Autonomy",
+      "Cultivation"
+    ],
+    "explain": "Sazed, as Harmony, is worshipped by the people of Elendel in the second Mistborn era.",
+    "terms": [
+      "Shard",
+      "Ruin",
+      "Preservation",
+      "Harmony",
+      "Endowment",
+      "Autonomy",
+      "Cultivation",
+      "Sazed",
+      "Elendel",
+      "Mistborn"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "cosmere-022",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "rhythm-of-war",
+    "q": "What is the person who holds a Shard's power called?",
+    "a": "A Vessel",
+    "wrong": [
+      "A Herald",
+      "A Sliver",
+      "A Bondsmith"
+    ],
+    "explain": "A Sliver, by contrast, is someone who once held a Shard and then let it go.",
+    "terms": [
+      "Shard",
+      "Vessel",
+      "Herald",
+      "Sliver",
+      "Bondsmith"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "cosmere-023",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "wob",
+    "q": "Which Shard is invested on Nalthis, the world of Warbreaker?",
+    "a": "Endowment",
+    "wrong": [
+      "Devotion",
+      "Autonomy",
+      "Valor"
+    ],
+    "explain": "Endowment gives each person a single Breath and sends the Returned back to life.",
+    "terms": [
+      "Shard",
+      "Nalthis",
+      "Warbreaker",
+      "Endowment",
+      "Devotion",
+      "Autonomy",
+      "Valor",
+      "Breath",
+      "Returned"
+    ],
+    "source": "Words of Brandon"
+  },
+  {
+    "id": "cosmere-024",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "hero-of-ages",
+    "q": "Allomancy draws its power from which Shard?",
+    "a": "Preservation",
+    "wrong": [
+      "Ruin",
+      "Honor",
+      "Endowment"
+    ],
+    "explain": "The metals only act as a catalyst for Preservation's power, while Hemalurgy is tied to Ruin.",
+    "terms": [
+      "Allomancy",
+      "Shard",
+      "Preservation",
+      "Ruin",
+      "Honor",
+      "Endowment",
+      "Hemalurgy"
+    ],
+    "source": "The Hero of Ages"
+  },
+  {
+    "id": "cosmere-025",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "lost-metal",
+    "q": "In The Lost Metal, the god Trell is revealed to be a guise of which Shard?",
+    "a": "Autonomy",
+    "wrong": [
+      "Odium",
+      "Ambition",
+      "Ruin"
+    ],
+    "explain": "Harmony tells Wax that Autonomy acts through independent avatars, and Trell is one of them.",
+    "terms": [
+      "The Lost Metal",
+      "Trell",
+      "Shard",
+      "Autonomy",
+      "Odium",
+      "Ambition",
+      "Ruin",
+      "Harmony",
+      "Wax"
+    ],
+    "source": "The Lost Metal"
+  },
+  {
+    "id": "cosmere-026",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "lost-metal",
+    "q": "In The Lost Metal, which group led by Kelsier invites Marasi to join it?",
+    "a": "The Ghostbloods",
+    "wrong": [
+      "The Set",
+      "The Seventeenth Shard",
+      "The Steel Ministry"
+    ],
+    "explain": "Marasi works with the Ghostblood agents Moonlight and TwinSoul, but turns down Kelsier's offer.",
+    "terms": [
+      "The Lost Metal",
+      "Kelsier",
+      "Marasi",
+      "Ghostbloods",
+      "the Set",
+      "Seventeenth Shard",
+      "Steel Ministry",
+      "Moonlight",
+      "TwinSoul"
+    ],
+    "source": "The Lost Metal"
+  },
+  {
+    "id": "cosmere-027",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "secret-history",
+    "q": "After his death, in which Realm does Kelsier linger in Mistborn: Secret History?",
+    "a": "The Cognitive Realm",
+    "wrong": [
+      "The Spiritual Realm",
+      "The Physical Realm",
+      "The Beyond"
+    ],
+    "explain": "Kelsier refuses to pass into the Beyond and survives as a Cognitive Shadow.",
+    "terms": [
+      "Kelsier",
+      "Mistborn: Secret History",
+      "Cognitive Realm",
+      "Spiritual Realm",
+      "Physical Realm",
+      "Beyond",
+      "Cognitive Shadow"
+    ],
+    "source": "Mistborn: Secret History"
+  },
+  {
+    "id": "cosmere-028",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "arcanum",
+    "q": "Which worldhopper is the in-world author of the planetary essays in Arcanum Unbounded?",
+    "a": "Khriss",
+    "wrong": [
+      "Hoid",
+      "Nazh",
+      "Iyatil"
+    ],
+    "explain": "Khriss is a scholar of the Cosmere who studies its worlds and magic systems.",
+    "terms": [
+      "Arcanum Unbounded",
+      "Khriss",
+      "Hoid",
+      "Nazh",
+      "Iyatil",
+      "Cosmere"
+    ],
+    "source": "Arcanum Unbounded"
+  },
+  {
+    "id": "cosmere-029",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "white-sand",
+    "q": "From which planet does the scholar Khriss come?",
+    "a": "Taldain",
+    "wrong": [
+      "Threnody",
+      "Sel",
+      "Scadrial"
+    ],
+    "explain": "Khriss is a Darksider who travels to Taldain's Dayside in White Sand.",
+    "terms": [
+      "Khriss",
+      "Taldain",
+      "Threnody",
+      "Sel",
+      "Scadrial",
+      "White Sand",
+      "Darksider",
+      "Dayside"
+    ],
+    "source": "White Sand"
+  },
+  {
+    "id": "cosmere-030",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "arcanum",
+    "q": "Which two Shards were Splintered on Sel?",
+    "a": "Devotion and Dominion",
+    "wrong": [
+      "Mercy and Valor",
+      "Honor and Endowment",
+      "Ambition and Whimsy"
+    ],
+    "explain": "Their scattered power fuels the Dor, the source of Selish magic such as AonDor.",
+    "terms": [
+      "Shard",
+      "Sel",
+      "Devotion",
+      "Dominion",
+      "Mercy",
+      "Valor",
+      "Honor",
+      "Endowment",
+      "Ambition",
+      "Whimsy",
+      "Dor",
+      "AonDor"
+    ],
+    "source": "Arcanum Unbounded, Selish system essay"
+  },
+  {
+    "id": "cosmere-031",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "warbreaker",
+    "q": "In Warbreaker, which god summons Hoid to the Court of Gods to tell stories?",
+    "a": "Lightsong",
+    "wrong": [
+      "Blushweaver",
+      "Mercystar",
+      "Allmother"
+    ],
+    "explain": "Hoid recounts the history of the first Returned and the origin of the God Kings.",
+    "terms": [
+      "Warbreaker",
+      "Hoid",
+      "Court of Gods",
+      "Lightsong",
+      "Blushweaver",
+      "Mercystar",
+      "Allmother",
+      "Returned",
+      "God King"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "cosmere-032",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "way-of-kings",
+    "q": "What musical instrument does Hoid leave with Kaladin?",
+    "a": "A flute",
+    "wrong": [
+      "A lute",
+      "A drum",
+      "A zither"
+    ],
+    "explain": "Hoid plays it while telling the story of Derethil and the Wandersail, then tells Kaladin to keep it.",
+    "terms": [
+      "Hoid",
+      "Kaladin",
+      "Derethil",
+      "Wandersail"
+    ],
+    "source": "The Way of Kings"
+  },
+  {
+    "id": "cosmere-033",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "rhythm-of-war",
+    "q": "Which Cryptic, found by Hoid in Kholinar, becomes bonded to him?",
+    "a": "Design",
+    "wrong": [
+      "Pattern",
+      "Wyndle",
+      "Timbre"
+    ],
+    "explain": "Hoid bonds the Cryptic Design and, through that bond, becomes a Lightweaver.",
+    "terms": [
+      "Cryptic",
+      "Kholinar",
+      "Hoid",
+      "Design",
+      "Pattern",
+      "Wyndle",
+      "Timbre",
+      "Lightweaver"
+    ],
+    "source": "Oathbringer; Rhythm of War"
+  },
+  {
+    "id": "cosmere-034",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "wob",
+    "q": "What is the name of Hoid's homeworld?",
+    "a": "Yolen",
+    "wrong": [
+      "Roshar",
+      "Taldain",
+      "Threnody"
+    ],
+    "explain": "Yolen is where Adonalsium was Shattered, and is the setting of the planned Dragonsteel books.",
+    "terms": [
+      "Hoid",
+      "Yolen",
+      "Roshar",
+      "Taldain",
+      "Threnody",
+      "Adonalsium",
+      "Dragonsteel"
+    ],
+    "source": "Words of Brandon"
+  },
+  {
+    "id": "cosmere-035",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "wob",
+    "q": "Under what name does Vasher work as a swordmaster on Roshar?",
+    "a": "Zahel",
+    "wrong": [
+      "Mraize",
+      "Nale",
+      "Taln"
+    ],
+    "explain": "Zahel trains Adolin, and his speech hints at the colors and Breath of Nalthis.",
+    "terms": [
+      "Vasher",
+      "Roshar",
+      "Zahel",
+      "Mraize",
+      "Nale",
+      "Taln",
+      "Adolin",
+      "Breath",
+      "Nalthis"
+    ],
+    "source": "Words of Radiance; Words of Brandon"
+  },
+  {
+    "id": "cosmere-036",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "oathbringer",
+    "q": "What is a place where a Shard's power pools and links the Realms, allowing travel between them?",
+    "a": "A Perpendicularity",
+    "wrong": [
+      "A Dawnshard",
+      "A Splinter",
+      "A Highstorm"
+    ],
+    "explain": "Worldhoppers often use Perpendicularities to enter and leave the Cognitive Realm.",
+    "terms": [
+      "Shard",
+      "Perpendicularity",
+      "Dawnshard",
+      "Splinter",
+      "highstorm",
+      "Cognitive Realm"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "cosmere-037",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "secret-history",
+    "q": "On Scadrial, which place is Preservation's Perpendicularity?",
+    "a": "The Well of Ascension",
+    "wrong": [
+      "Fadrex City",
+      "Kredik Shaw",
+      "The Conventical of Seran"
+    ],
+    "explain": "In Secret History, the dead Kelsier spends years by the Well, where Preservation's power pools.",
+    "terms": [
+      "Scadrial",
+      "Preservation",
+      "Perpendicularity",
+      "Well of Ascension",
+      "Fadrex City",
+      "Kredik Shaw",
+      "Conventical of Seran",
+      "Secret History",
+      "Kelsier"
+    ],
+    "source": "Mistborn: Secret History"
+  },
+  {
+    "id": "cosmere-038",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "oathbringer",
+    "q": "What keeps Odium from leaving the Rosharan system?",
+    "a": "Honor and Cultivation bound him",
+    "wrong": [
+      "Nightblood holds him",
+      "The Oathpact traps him",
+      "The Everstorm anchors him"
+    ],
+    "explain": "Odium seeks a contest of champions as a way to escape this binding.",
+    "terms": [
+      "Odium",
+      "Roshar",
+      "Honor",
+      "Cultivation",
+      "Nightblood",
+      "Oathpact",
+      "Everstorm"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "cosmere-039",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "oathbringer",
+    "q": "Who does Dalinar learn is the true identity of the old woman of the Valley?",
+    "a": "Cultivation",
+    "wrong": [
+      "Honor",
+      "The Nightwatcher",
+      "Odium"
+    ],
+    "explain": "Cultivation lives in the Valley alongside the Nightwatcher, a powerful spren.",
+    "terms": [
+      "Dalinar",
+      "Valley",
+      "Cultivation",
+      "Honor",
+      "Nightwatcher",
+      "Odium",
+      "spren"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "cosmere-040",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "oathbringer",
+    "q": "How does Odium describe himself to Dalinar?",
+    "a": "As the god of passion",
+    "wrong": [
+      "As the god of order",
+      "As the god of sorrow",
+      "As the god of fate"
+    ],
+    "explain": "Odium insists he embodies every passion, not only hatred.",
+    "terms": [
+      "Odium",
+      "Dalinar"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "cosmere-041",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "With which weapon does Taravangian kill Rayse?",
+    "a": "Nightblood",
+    "wrong": [
+      "Raboniel's dagger",
+      "An Honorblade",
+      "Oathbringer"
+    ],
+    "explain": "Nightblood's hunger for Investiture let it destroy the Vessel of a Shard.",
+    "terms": [
+      "Taravangian",
+      "Rayse",
+      "Nightblood",
+      "Raboniel",
+      "Honorblade",
+      "Oathbringer",
+      "Investiture",
+      "Vessel",
+      "Shard"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "cosmere-042",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "Who was the Vessel of Odium before Taravangian?",
+    "a": "Rayse",
+    "wrong": [
+      "Tanavast",
+      "Ati",
+      "Leras"
+    ],
+    "explain": "Rayse had held Odium since the Shattering of Adonalsium.",
+    "terms": [
+      "Vessel",
+      "Odium",
+      "Taravangian",
+      "Rayse",
+      "Tanavast",
+      "Ati",
+      "Leras",
+      "Shattering",
+      "Adonalsium"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "cosmere-043",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "secret-history",
+    "q": "Who was the original Vessel of Ruin?",
+    "a": "Ati",
+    "wrong": [
+      "Leras",
+      "Rayse",
+      "Bavadin"
+    ],
+    "explain": "Holding Ruin for millennia gradually twisted Ati's mind toward its Intent.",
+    "terms": [
+      "Vessel",
+      "Ruin",
+      "Ati",
+      "Leras",
+      "Rayse",
+      "Bavadin",
+      "Intent"
+    ],
+    "source": "Mistborn: Secret History"
+  },
+  {
+    "id": "cosmere-044",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "lost-metal",
+    "q": "According to Harmony in The Lost Metal, who holds the Shard Autonomy?",
+    "a": "Bavadin",
+    "wrong": [
+      "Rayse",
+      "Leras",
+      "Koravellium"
+    ],
+    "explain": "Bavadin's Autonomy works through many independent avatars, such as Trell.",
+    "terms": [
+      "Harmony",
+      "The Lost Metal",
+      "Shard",
+      "Autonomy",
+      "Bavadin",
+      "Rayse",
+      "Leras",
+      "Koravellium",
+      "Trell"
+    ],
+    "source": "The Lost Metal"
+  },
+  {
+    "id": "cosmere-045",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "arcanum",
+    "q": "Which Shard did Odium mortally wound in the Threnodite system?",
+    "a": "Ambition",
+    "wrong": [
+      "Devotion",
+      "Mercy",
+      "Valor"
+    ],
+    "explain": "Ambition survived that clash but was later Splintered somewhere else.",
+    "terms": [
+      "Shard",
+      "Odium",
+      "Threnody",
+      "Ambition",
+      "Devotion",
+      "Mercy",
+      "Valor",
+      "Splintered"
+    ],
+    "source": "Arcanum Unbounded, Threnodite system essay"
+  },
+  {
+    "id": "cosmere-046",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "arcanum",
+    "q": "Which worldhopper collects maps and artifacts for Khriss and annotates the charts?",
+    "a": "Nazh",
+    "wrong": [
+      "Mraize",
+      "Felt",
+      "Demoux"
+    ],
+    "explain": "Nazh's handwritten notes appear on several of the maps and illustrations in the books.",
+    "terms": [
+      "Khriss",
+      "Nazh",
+      "Mraize",
+      "Felt",
+      "Demoux"
+    ],
+    "source": "Arcanum Unbounded"
+  },
+  {
+    "id": "cosmere-047",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "wob",
+    "q": "The Elantrian Galladon is a member of which worldhopper society?",
+    "a": "The Seventeenth Shard",
+    "wrong": [
+      "The Ghostbloods",
+      "The Set",
+      "The Sons of Honor"
+    ],
+    "explain": "The Seventeenth Shard opposes meddling with the Shards and their worlds.",
+    "terms": [
+      "Elantrian",
+      "Galladon",
+      "Seventeenth Shard",
+      "Ghostbloods",
+      "the Set",
+      "Sons of Honor",
+      "Shard"
+    ],
+    "source": "Words of Brandon"
+  },
+  {
+    "id": "cosmere-048",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "oathbringer",
+    "q": "In which region of Roshar is Cultivation's Perpendicularity?",
+    "a": "The Horneater Peaks",
+    "wrong": [
+      "The Shattered Plains",
+      "The Purelake",
+      "The Frostlands"
+    ],
+    "explain": "The Unkalaki tell of a sacred lake there that leads to the realm of the gods.",
+    "terms": [
+      "Roshar",
+      "Cultivation",
+      "Perpendicularity",
+      "Horneater Peaks",
+      "Shattered Plains",
+      "Purelake",
+      "Frostlands",
+      "Unkalaki"
+    ],
+    "source": "Oathbringer"
+  },
+  {
+    "id": "cosmere-049",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "Who is the masked Ghostblood who serves as Mraize's babsk?",
+    "a": "Iyatil",
+    "wrong": [
+      "Tyn",
+      "Ialai",
+      "Khriss"
+    ],
+    "explain": "Iyatil is a worldhopper who always keeps her face hidden behind a mask.",
+    "terms": [
+      "Ghostbloods",
+      "Mraize",
+      "babsk",
+      "Iyatil",
+      "Tyn",
+      "Ialai",
+      "Khriss"
+    ],
+    "source": "Oathbringer; Rhythm of War"
+  },
+  {
+    "id": "cosmere-050",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "lost-metal",
+    "q": "Which offworld Ghostblood agent uses soulstamps in The Lost Metal?",
+    "a": "Moonlight",
+    "wrong": [
+      "Iyatil",
+      "Khriss",
+      "Azure"
+    ],
+    "explain": "Soulstamps are a Selish art, the same one practised in The Emperor's Soul.",
+    "terms": [
+      "Ghostbloods",
+      "soulstamp",
+      "The Lost Metal",
+      "Moonlight",
+      "Iyatil",
+      "Khriss",
+      "Azure",
+      "Sel",
+      "The Emperor's Soul"
+    ],
+    "source": "The Lost Metal"
+  },
+  {
+    "id": "cosmere-051",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "Which planet of the Rosharan system do Rosharans call Damnation?",
+    "a": "Braize",
+    "wrong": [
+      "Ashyn",
+      "Yolen",
+      "Threnody"
+    ],
+    "explain": "Braize, the cold third planet of the system, is where Odium is bound and where the Heralds returned between Desolations.",
+    "terms": [
+      "Rosharan system",
+      "Rosharan",
+      "Damnation",
+      "Braize",
+      "Ashyn",
+      "Yolen",
+      "Threnody",
+      "Odium",
+      "Herald",
+      "Desolation"
+    ],
+    "source": "Arcanum Unbounded, The Rosharan System; Rhythm of War"
+  },
+  {
+    "id": "cosmere-052",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "From which planet of the Rosharan system did the humans of Roshar originally flee?",
+    "a": "Ashyn",
+    "wrong": [
+      "Braize",
+      "Yolen",
+      "Taldain"
+    ],
+    "explain": "Humans destroyed much of Ashyn with their powers and came to Roshar as refugees.",
+    "terms": [
+      "Rosharan system",
+      "Roshar",
+      "Ashyn",
+      "Braize",
+      "Yolen",
+      "Taldain"
+    ],
+    "source": "Oathbringer (Eila Stele); Arcanum Unbounded, The Rosharan System"
+  },
+  {
+    "id": "cosmere-053",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "bands-of-mourning",
+    "q": "What does a Feruchemist store in a duralumin metalmind?",
+    "a": "Connection",
+    "wrong": [
+      "Identity",
+      "Fortune",
+      "Investiture"
+    ],
+    "explain": "Duralumin stores Connection, the Spiritual link to people and places; aluminum stores Identity, chromium Fortune and nicrosil Investiture.",
+    "terms": [
+      "Feruchemist",
+      "metalmind",
+      "Connection",
+      "Identity",
+      "Fortune",
+      "Investiture"
+    ],
+    "source": "The Bands of Mourning, Ars Arcanum"
+  },
+  {
+    "id": "cosmere-054",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "What is the name of the Light that is the Investiture of Cultivation?",
+    "a": "Lifelight",
+    "wrong": [
+      "Voidlight",
+      "Warlight",
+      "Towerlight"
+    ],
+    "explain": "Lifelight is Cultivation's Light; combined with Stormlight it produces the Sibling's Towerlight.",
+    "terms": [
+      "Light",
+      "Investiture",
+      "Cultivation",
+      "Lifelight",
+      "Voidlight",
+      "Warlight",
+      "Towerlight",
+      "Stormlight",
+      "Sibling"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "cosmere-055",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "arcanum",
+    "q": "From which planet does Nazh, the worldhopper who gathers maps for Khriss, come?",
+    "a": "Threnody",
+    "wrong": [
+      "Taldain",
+      "Scadrial",
+      "Yolen"
+    ],
+    "explain": "Khriss notes that Nazh is himself a native of Threnody, the world of the Forests of Hell.",
+    "terms": [
+      "Nazh",
+      "worldhopper",
+      "Khriss",
+      "Threnody",
+      "Taldain",
+      "Scadrial",
+      "Yolen",
+      "Threnodite",
+      "Forests of Hell"
+    ],
+    "source": "Arcanum Unbounded, The Threnodite System"
+  },
+  {
+    "id": "cosmere-056",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "arcanum",
+    "q": "Which city in the Cognitive Realm is a gathering place for worldhoppers from many planets?",
+    "a": "Silverlight",
+    "wrong": [
+      "Celebrant",
+      "Lasting Integrity",
+      "Kholinar"
+    ],
+    "explain": "Silverlight lies in the Cognitive Realm and serves as a meeting point for worldhoppers and scholars of the Realms.",
+    "terms": [
+      "Cognitive Realm",
+      "worldhopper",
+      "Silverlight",
+      "Celebrant",
+      "Lasting Integrity",
+      "Kholinar",
+      "Realm"
+    ],
+    "source": "Arcanum Unbounded"
+  },
+  {
+    "id": "cosmere-057",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "dawnshard",
+    "q": "According to Nikli in Dawnshard, the Dawnshards were eventually used to do what?",
+    "a": "Undo Adonalsium",
+    "wrong": [
+      "Imprison Odium",
+      "Forge the Honorblades",
+      "Bind the Unmade"
+    ],
+    "explain": "The Dawnshards are the four primal Commands that created all things, later turned against Adonalsium itself.",
+    "terms": [
+      "Nikli",
+      "Dawnshard",
+      "Adonalsium",
+      "Odium",
+      "Honorblade",
+      "Unmade",
+      "Command"
+    ],
+    "source": "Dawnshard"
+  },
+  {
+    "id": "cosmere-058",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "dawnshard",
+    "q": "The Sleepless are hive minds made up of swarms of which small creatures?",
+    "a": "Hordelings",
+    "wrong": [
+      "Cremlings",
+      "Larkins",
+      "Rotspren"
+    ],
+    "explain": "A Sleepless spreads its mind across countless hordelings and can replace lost ones, letting it live for ages.",
+    "terms": [
+      "Sleepless",
+      "Hordelings",
+      "Cremlings",
+      "Larkins",
+      "Rotspren"
+    ],
+    "source": "Dawnshard"
+  },
+  {
+    "id": "cosmere-059",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "secret-history",
+    "q": "What was the name of the Vessel of Preservation?",
+    "a": "Leras",
+    "wrong": [
+      "Ati",
+      "Rayse",
+      "Tanavast"
+    ],
+    "explain": "Kelsier meets Leras, the dying Vessel of Preservation, in the Cognitive Realm.",
+    "terms": [
+      "Vessel",
+      "Preservation",
+      "Leras",
+      "Ati",
+      "Rayse",
+      "Tanavast",
+      "Kelsier",
+      "Cognitive Realm"
+    ],
+    "source": "Mistborn: Secret History"
+  },
+  {
+    "id": "cosmere-060",
+    "category": "cosmere",
+    "difficulty": 3,
+    "work": "rhythm-of-war",
+    "q": "The Sibling, the spren of Urithiru, is born of which two Shards?",
+    "a": "Honor and Cultivation",
+    "wrong": [
+      "Honor and Odium",
+      "Cultivation and Odium",
+      "Honor and Harmony"
+    ],
+    "explain": "The Sibling harmonizes the rhythms of Honor and Cultivation to produce Towerlight.",
+    "terms": [
+      "Sibling",
+      "spren",
+      "Urithiru",
+      "Shard",
+      "Honor",
+      "Cultivation",
+      "Odium",
+      "Harmony",
+      "Towerlight"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "cosmere-061",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, Honor and Odium are joined into a single new Shard. What is it called?",
+    "a": "Retribution",
+    "wrong": [
+      "Harmony",
+      "Ambition",
+      "Valor"
+    ],
+    "explain": "Taravangian absorbs Honor alongside Odium, forming the Shard of Retribution.",
+    "terms": [
+      "Wind and Truth",
+      "Honor",
+      "Odium",
+      "Shard",
+      "Retribution",
+      "Harmony",
+      "Ambition",
+      "Valor",
+      "Taravangian"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "cosmere-062",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, who takes up the power of Honor before it passes to Taravangian?",
+    "a": "Dalinar",
+    "wrong": [
+      "Kaladin",
+      "Szeth",
+      "Renarin"
+    ],
+    "explain": "Dalinar ascends as Honor's Vessel and then renounces his oaths, releasing the Shard.",
+    "terms": [
+      "Wind and Truth",
+      "Honor",
+      "Taravangian",
+      "Dalinar",
+      "Kaladin",
+      "Szeth",
+      "Renarin",
+      "Vessel",
+      "Shard"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "cosmere-063",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "final-empire",
+    "q": "In what role does Hoid appear in Luthadel in The Final Empire?",
+    "a": "An informant",
+    "wrong": [
+      "An obligator",
+      "A canal boatman",
+      "A tavern keeper"
+    ],
+    "explain": "Hoid sells information in Luthadel, and Kelsier is among those who consult him.",
+    "terms": [
+      "Hoid",
+      "Luthadel",
+      "The Final Empire",
+      "Kelsier",
+      "obligator"
+    ],
+    "source": "Mistborn: The Final Empire"
+  },
+  {
+    "id": "cosmere-064",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "alloy-of-law",
+    "q": "Hoid makes a brief appearance in The Alloy of Law, dressed as a beggar. At what event?",
+    "a": "A wedding reception",
+    "wrong": [
+      "A train robbery",
+      "A horse race",
+      "A funeral"
+    ],
+    "explain": "Hoid comes to the Yomen wedding reception to congratulate the couple, shortly before the Vanishers attack.",
+    "terms": [
+      "Hoid",
+      "The Alloy of Law",
+      "Yomen",
+      "Vanishers"
+    ],
+    "source": "The Alloy of Law"
+  },
+  {
+    "id": "cosmere-065",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "secret-history",
+    "q": "In Secret History, what does Hoid swallow in the chamber of the Well of Ascension?",
+    "a": "A bead of lerasium",
+    "wrong": [
+      "A bead of atium",
+      "A bead of malatium",
+      "A bead of harmonium"
+    ],
+    "explain": "Kelsier cannot stop Hoid, who consumes lerasium and leaves the chamber.",
+    "terms": [
+      "Secret History",
+      "Hoid",
+      "Well of Ascension",
+      "lerasium",
+      "atium",
+      "malatium",
+      "harmonium",
+      "Kelsier"
+    ],
+    "source": "Mistborn: Secret History"
+  },
+  {
+    "id": "cosmere-066",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "wind-and-truth",
+    "q": "What kind of creature is Mraize's green pet bird?",
+    "a": "An aviar",
+    "wrong": [
+      "A larkin",
+      "A skyeel",
+      "An Awakened bird"
+    ],
+    "explain": "Mraize's bird is an aviar, one of the talent-granting birds of First of the Sun.",
+    "terms": [
+      "Mraize",
+      "aviar",
+      "larkin",
+      "skyeel",
+      "Awakened",
+      "First of the Sun"
+    ],
+    "source": "Rhythm of War; Wind and Truth"
+  },
+  {
+    "id": "cosmere-067",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "words-of-radiance",
+    "q": "Shallan overhears Mraize say that some pages must be brought to his master. Which name does he use?",
+    "a": "Thaidakar",
+    "wrong": [
+      "Restares",
+      "Mister Suit",
+      "Ironeyes"
+    ],
+    "explain": "Thaidakar is a leader of the Ghostbloods, rivals of Restares and the Sons of Honor.",
+    "terms": [
+      "Shallan",
+      "Mraize",
+      "Thaidakar",
+      "Restares",
+      "Mister Suit",
+      "Ironeyes",
+      "Ghostbloods",
+      "Sons of Honor"
+    ],
+    "source": "Words of Radiance, ch. 54"
+  },
+  {
+    "id": "cosmere-068",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "warbreaker",
+    "q": "How does Hoid illustrate the history of Hallandren when he tells it to Siri and Lightsong?",
+    "a": "By dropping colored sands and dusts",
+    "wrong": [
+      "By making shadow puppets",
+      "By drawing on a scroll",
+      "By playing a flute"
+    ],
+    "explain": "As Hoid speaks he lets sands, dusts and small objects fall, forming shapes on the floor.",
+    "terms": [
+      "Hoid",
+      "Hallandren",
+      "Siri",
+      "Lightsong"
+    ],
+    "source": "Warbreaker"
+  },
+  {
+    "id": "cosmere-069",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "rhythm-of-war",
+    "q": "Which story does Wit tell Kaladin when he finds him in a nightmare in Rhythm of War?",
+    "a": "The Dog and the Dragon",
+    "wrong": [
+      "The Girl Who Looked Up",
+      "The Fox and the Moon",
+      "The Boy Who Stole the Wind"
+    ],
+    "explain": "With Design creating illusions, Wit tells of a dog who wanted to become a dragon.",
+    "terms": [
+      "Wit",
+      "Kaladin",
+      "Rhythm of War",
+      "Design"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "cosmere-070",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "secret-history",
+    "q": "What nickname does Kelsier give Preservation in Secret History?",
+    "a": "Fuzz",
+    "wrong": [
+      "Old Man",
+      "Smudge",
+      "Ghost"
+    ],
+    "explain": "Kelsier befriends the dying Preservation and calls him Fuzz.",
+    "terms": [
+      "Kelsier",
+      "Preservation",
+      "Secret History"
+    ],
+    "source": "Mistborn: Secret History"
+  },
+  {
+    "id": "cosmere-071",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "secret-history",
+    "q": "In Secret History, what does Nazh give Kelsier before they part ways?",
+    "a": "His knife",
+    "wrong": [
+      "His map of the Final Empire",
+      "A bead of lerasium",
+      "A vial of metals"
+    ],
+    "explain": "Nazh also points Kelsier toward the Ire, and Kelsier later uses the knife to smash their device and take up Preservation's power.",
+    "terms": [
+      "Secret History",
+      "Nazh",
+      "Kelsier",
+      "Final Empire",
+      "lerasium",
+      "Ire",
+      "Preservation"
+    ],
+    "source": "Mistborn: Secret History"
+  },
+  {
+    "id": "cosmere-072",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "sixth-of-the-dusk",
+    "q": "What do the Eelakin call the spacefaring visitors who sell them technology?",
+    "a": "The Ones Above",
+    "wrong": [
+      "The Night Brigade",
+      "The Seventeenth Shard",
+      "The Ghostbloods"
+    ],
+    "explain": "Dusk distrusts the Ones Above, even though he bought accurate sea maps from them.",
+    "terms": [
+      "Eelakin",
+      "Ones Above",
+      "Night Brigade",
+      "Seventeenth Shard",
+      "Ghostbloods",
+      "Dusk"
+    ],
+    "source": "Sixth of the Dusk"
+  },
+  {
+    "id": "cosmere-073",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "rhythm-of-war",
+    "q": "What is the god metal associated with Odium called?",
+    "a": "Raysium",
+    "wrong": [
+      "Lerasium",
+      "Harmonium",
+      "Trellium"
+    ],
+    "explain": "Presumably named after Rayse, Odium's first Vessel, raysium has long been used by Odium's forces in their weapons.",
+    "terms": [
+      "god metal",
+      "Odium",
+      "Raysium",
+      "Lerasium",
+      "Harmonium",
+      "Trellium",
+      "Rayse",
+      "Vessel"
+    ],
+    "source": "Rhythm of War"
+  },
+  {
+    "id": "cosmere-074",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "words-of-radiance",
+    "q": "What symbol must every member of the Ghostbloods have tattooed?",
+    "a": "Three overlapping diamonds",
+    "wrong": [
+      "A crowned skull",
+      "A broken spear",
+      "A closed eye"
+    ],
+    "explain": "Jasnah later finds this symbol tattooed on Kabsal's arm.",
+    "terms": [
+      "Ghostbloods",
+      "Jasnah",
+      "Kabsal"
+    ],
+    "source": "Words of Radiance"
+  },
+  {
+    "id": "cosmere-075",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "arcanum",
+    "q": "According to Khriss's essay, how do people on Ashyn now gain magical powers?",
+    "a": "By catching certain diseases",
+    "wrong": [
+      "By eating gemhearts",
+      "By bonding spren",
+      "By swallowing metals"
+    ],
+    "explain": "After the cataclysm, Ashyn's magic became tied to illnesses.",
+    "terms": [
+      "Khriss",
+      "Ashyn",
+      "gemheart",
+      "spren"
+    ],
+    "source": "Arcanum Unbounded, The Rosharan System"
+  },
+  {
+    "id": "cosmere-076",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "words-of-radiance",
+    "q": "Which worldhopper took Sigzil on as an apprentice Worldsinger?",
+    "a": "Hoid",
+    "wrong": [
+      "Vasher",
+      "Nazh",
+      "Mraize"
+    ],
+    "explain": "Sigzil travelled with his master Hoid, training as a Worldsinger, before ending up in Bridge Four.",
+    "terms": [
+      "worldhopper",
+      "Sigzil",
+      "Worldsinger",
+      "Hoid",
+      "Vasher",
+      "Nazh",
+      "Mraize",
+      "Bridge Four"
+    ],
+    "source": "The Way of Kings; Words of Radiance"
+  },
+  {
+    "id": "cosmere-077",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "secret-history",
+    "q": "In Secret History, which crew member does Kelsier free from Ruin's control in Urteau and then speak to in a dream?",
+    "a": "Spook",
+    "wrong": [
+      "Breeze",
+      "Ham",
+      "Sazed"
+    ],
+    "explain": "Kelsier frees Spook from Ruin and tells him in a dream to warn Vin about people pierced by metal.",
+    "terms": [
+      "Secret History",
+      "Kelsier",
+      "Ruin",
+      "Urteau",
+      "Spook",
+      "Breeze",
+      "Ham",
+      "Sazed",
+      "Vin"
+    ],
+    "source": "Mistborn: Secret History"
+  },
+  {
+    "id": "cosmere-078",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "dawnshard",
+    "q": "In Dawnshard, what kind of being is Nikli, Rysn's attendant?",
+    "a": "A Sleepless",
+    "wrong": [
+      "A kandra",
+      "A seon",
+      "A Lifeless"
+    ],
+    "explain": "Nikli is a Sleepless swarm skilled at impersonating humans, set to guard Akinah's secret.",
+    "terms": [
+      "Dawnshard",
+      "Nikli",
+      "Rysn",
+      "Sleepless",
+      "kandra",
+      "seon",
+      "Lifeless",
+      "Akinah"
+    ],
+    "source": "Dawnshard"
+  },
+  {
+    "id": "cosmere-079",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "arcanum",
+    "q": "According to Khriss, what policy does Bavadin, the Vessel of Autonomy, impose on Taldain?",
+    "a": "Strict isolation from other worlds",
+    "wrong": [
+      "Open trade with other worlds",
+      "An alliance with Odium",
+      "Rule by the Sand Masters"
+    ],
+    "explain": "Bavadin keeps Taldain isolated while meddling elsewhere, leaving worldhoppers like Khriss cut off from home.",
+    "terms": [
+      "Khriss",
+      "Bavadin",
+      "Vessel",
+      "Autonomy",
+      "Taldain",
+      "Odium",
+      "Sand Master",
+      "worldhopper"
+    ],
+    "source": "Arcanum Unbounded, The Taldain System"
+  },
+  {
+    "id": "cosmere-080",
+    "category": "cosmere",
+    "difficulty": 4,
+    "work": "tress",
+    "q": "In Tress of the Emerald Sea, which Selish magic does Hoid use to block the Sorceress's curse aimed at Tress?",
+    "a": "AonDor",
+    "wrong": [
+      "Forgery",
+      "ChayShan",
+      "Dakhor"
+    ],
+    "explain": "The Sorceress was casting her curse with AonDor, and Hoid burst into her tower and blocked it with an Aon of his own.",
+    "terms": [
+      "Tress of the Emerald Sea",
+      "Hoid",
+      "Sorceress",
+      "Tress",
+      "AonDor",
+      "Forgery",
+      "ChayShan",
+      "Dakhor",
+      "Aon"
+    ],
+    "source": "Tress of the Emerald Sea"
+  }
+]

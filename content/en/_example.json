@@ -1,0 +1,14 @@
+[
+  {
+    "id": "roshar-000",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "way-of-kings",
+    "q": "What is the name of the honorspren bonded to Kaladin?",
+    "a": "Syl",
+    "wrong": ["Pattern", "Wyndle", "Ivory"],
+    "explain": "Syl is the honorspren who bonds Kaladin, making him a Windrunner.",
+    "terms": ["honorspren", "Kaladin", "Syl", "Pattern", "Wyndle", "Ivory", "Windrunner"],
+    "source": "The Way of Kings"
+  }
+]
