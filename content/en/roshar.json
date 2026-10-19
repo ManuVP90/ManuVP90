@@ -97,7 +97,7 @@
     "category": "roshar",
     "difficulty": 1,
     "work": "way-of-kings",
-    "q": "Which Bridge Four member is a Horneater who cooks for the crew?",
+    "q": "Which of Kaladin's bridgemen is a Horneater who cooks for the crew?",
     "a": "Rock",
     "wrong": [
       "Teft",
@@ -106,13 +106,13 @@
     ],
     "explain": "Rock's stew helps bind the bridgemen together, and as a Horneater he can see spren others cannot.",
     "terms": [
-      "Bridge Four",
       "Horneater",
       "Rock",
       "Teft",
       "Lopen",
       "Sigzil",
-      "spren"
+      "spren",
+      "Kaladin"
     ],
     "source": "The Way of Kings"
   },
@@ -300,7 +300,7 @@
       "Victory",
       "Glory"
     ],
-    "explain": "The First Ideal is shared by all ten orders of the Knights Radiant.",
+    "explain": "The First Ideal is shared by every order of the Knights Radiant.",
     "terms": [
       "First Ideal",
       "Knights Radiant"
@@ -312,7 +312,7 @@
     "category": "roshar",
     "difficulty": 1,
     "work": "oathbringer",
-    "q": "Which former member of Bridge Four kills King Elhokar?",
+    "q": "Which former bridgeman from Kaladin's crew kills King Elhokar?",
     "a": "Moash",
     "wrong": [
       "Teft",
@@ -321,7 +321,6 @@
     ],
     "explain": "Moash kills Elhokar during the fall of Kholinar, betraying Kaladin.",
     "terms": [
-      "Bridge Four",
       "Elhokar",
       "Moash",
       "Teft",
@@ -550,7 +549,7 @@
       "The Nightwatcher",
       "Ivory"
     ],
-    "explain": "The Sibling is the spren of Urithiru, making Navani a Bondsmith.",
+    "explain": "The Sibling is the spren of Urithiru and had gone unbonded for millennia before Navani.",
     "terms": [
       "Navani Kholin",
       "Sibling",
@@ -558,7 +557,7 @@
       "Nightwatcher",
       "Ivory",
       "Urithiru",
-      "Bondsmith"
+      "Navani"
     ],
     "source": "Rhythm of War"
   },
@@ -741,7 +740,7 @@
       "Workform",
       "Mateform"
     ],
-    "explain": "Stormform is a form of power that lets its bearers channel red lightning.",
+    "explain": "Stormform is a form of power that lets its bearers channel lightning.",
     "terms": [
       "Eshonai",
       "Everstorm",
@@ -951,7 +950,7 @@
       "Moelach",
       "Chemoarish"
     ],
-    "explain": "Re-Shephir lurked in Urithiru until Shallan drove her away.",
+    "explain": "Re-Shephir lurked in the tower until Shallan drove her away.",
     "terms": [
       "Unmade",
       "Midnight Mother",
@@ -959,7 +958,6 @@
       "Sja-anat",
       "Moelach",
       "Chemoarish",
-      "Urithiru",
       "Shallan"
     ],
     "source": "Oathbringer"
@@ -1528,16 +1526,15 @@
     "category": "roshar",
     "difficulty": 4,
     "work": "rhythm-of-war",
-    "q": "Which Bridge Four member, who cannot draw Stormlight, is contacted by the Sibling during the occupation of Urithiru?",
+    "q": "Which of Kaladin's bridgemen, who cannot draw Stormlight, is contacted by the Sibling during the occupation of Urithiru?",
     "a": "Dabbid",
     "wrong": [
       "Leyten",
       "Peet",
       "Bisig"
     ],
-    "explain": "The Sibling asks Dabbid to swap a spanreed gem so it can communicate with Navani.",
+    "explain": "The Sibling asks Dabbid to swap a spanreed gem so it can communicate through the spanreed.",
     "terms": [
-      "Bridge Four",
       "Stormlight",
       "Sibling",
       "Urithiru",
@@ -1546,7 +1543,7 @@
       "Peet",
       "Bisig",
       "spanreed",
-      "Navani"
+      "Kaladin"
     ],
     "source": "Rhythm of War"
   },
@@ -1625,25 +1622,25 @@
     "category": "roshar",
     "difficulty": 4,
     "work": "way-of-kings",
-    "q": "In her Way of Kings interlude, to which land does Rysn travel with Vstim to trade?",
+    "q": "In her Way of Kings interlude, to which land does Rysn travel with her babsk to trade?",
     "a": "Shinovar",
     "wrong": [
       "The Reshi Isles",
       "Herdaz",
       "Tukar"
     ],
-    "explain": "Vstim trades Soulcast scrap metal to the Shin trader Thresh for chickens, cloth and dried meats.",
+    "explain": "Her babsk trades Soulcast scrap metal to the Shin trader Thresh for chickens, cloth and dried meats.",
     "terms": [
       "The Way of Kings",
       "Rysn",
-      "Vstim",
       "Shinovar",
       "Reshi Isles",
       "Herdaz",
       "Tukar",
       "Soulcast",
       "Shin",
-      "Thresh"
+      "Thresh",
+      "babsk"
     ],
     "source": "The Way of Kings, interlude I-4"
   },
@@ -1652,7 +1649,7 @@
     "category": "roshar",
     "difficulty": 4,
     "work": "way-of-kings",
-    "q": "During her trading trip with Vstim, which occupation does Rysn learn the Shin hold in the highest esteem?",
+    "q": "On her trading trip in The Way of Kings, which occupation does Rysn learn the Shin hold in the highest esteem?",
     "a": "Farmers",
     "wrong": [
       "Warriors",
@@ -1661,9 +1658,9 @@
     ],
     "explain": "To Rysn's surprise, soldiers are considered the lowliest of men among the Shin.",
     "terms": [
-      "Vstim",
       "Rysn",
-      "Shin"
+      "Shin",
+      "The Way of Kings"
     ],
     "source": "The Way of Kings, interlude I-4"
   },
@@ -1762,24 +1759,22 @@
     "category": "roshar",
     "difficulty": 4,
     "work": "dawnshard",
-    "q": "What is the name of Huio's honorspren, who first becomes a weapon in Dawnshard?",
+    "q": "What is the name of Huio's honorspren?",
     "a": "Caelinora",
     "wrong": [
       "Phendorana",
       "Notum",
       "Sylphrena"
     ],
-    "explain": "When Huio swears the Third Ideal to save Lopen, Caelinora appears as a Shardhammer.",
+    "explain": "Caelinora first appears in Dawnshard, where she manifests as a living Shardhammer.",
     "terms": [
       "Huio",
       "honorspren",
-      "Dawnshard",
       "Caelinora",
       "Phendorana",
       "Notum",
       "Sylphrena",
-      "Third Ideal",
-      "Lopen",
+      "Dawnshard",
       "Shardhammer"
     ],
     "source": "Dawnshard"
@@ -1789,23 +1784,23 @@
     "category": "roshar",
     "difficulty": 4,
     "work": "dawnshard",
-    "q": "Which ship carries Rysn's expedition to Akinah in Dawnshard?",
+    "q": "Which ship carries Rysn's expedition in Dawnshard?",
     "a": "Wandersail",
     "wrong": [
       "Wind's Pleasure",
       "First Dreams",
       "Fourth Bridge"
     ],
-    "explain": "Captained by Drlwan, the Wandersail breaches the strange storm surrounding Akinah.",
+    "explain": "Captained by Drlwan, the Wandersail breaches the strange storm surrounding the hidden Aimian city.",
     "terms": [
       "Rysn",
-      "Akinah",
       "Dawnshard",
       "Wandersail",
       "Wind's Pleasure",
       "First Dreams",
       "Fourth Bridge",
-      "Drlwan"
+      "Drlwan",
+      "Aimian"
     ],
     "source": "Dawnshard"
   },

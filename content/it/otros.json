@@ -12,7 +12,7 @@
  },
  {
   "id": "otros-002",
-  "q": "Che cosa ama collezionare Tress all'inizio della sua storia?",
+  "q": "Che cosa ama collezionare Tress all’inizio della sua storia?",
   "a": "Tazze",
   "wrong": [
    "Conchiglie",
@@ -41,22 +41,22 @@
    "Il medico di bordo",
    "Un messaggero reale"
   ],
-  "explain": "Il duca mandò Charlie nel Mare Mezzanotte, dove fu catturato dalla Fattucchiera."
+  "explain": "Il duca mandò Charlie in viaggio, e il giovane finì prigioniero della Fattucchiera."
  },
  {
   "id": "otros-005",
-  "q": "Chi comanda la nave pirata Canto del Corvo quando Tress si unisce all'equipaggio?",
-  "a": "Corvo",
+  "q": "In quale mare si trova il dominio della Fattucchiera?",
+  "a": "Il Mare Mezzanotte",
   "wrong": [
-   "Fort",
-   "Salay",
-   "Ann la Ridente"
+   "Il Mare Cremisi",
+   "Il Mare Rosa",
+   "Il Mare Zaffiro"
   ],
-  "explain": "La capitana Corvo è una pirata spietata, che alla fine Tress riesce a battere in astuzia."
+  "explain": "La Fattucchiera regna sul Mare Mezzanotte, dove Tress deve navigare per salvare Charlie."
  },
  {
   "id": "otros-006",
-  "q": "Che cosa succede quando le spore verdi entrano in contatto con l'acqua?",
+  "q": "Che cosa succede quando le spore verdi entrano in contatto con l’acqua?",
   "a": "Germogliano in rampicanti",
   "wrong": [
    "Esplodono in aria",
@@ -67,7 +67,7 @@
  },
  {
   "id": "otros-007",
-  "q": "Quali spore rilasciano un getto d'aria quando si bagnano, ideali per sparare con i cannoni?",
+  "q": "Quali spore rilasciano un getto d’aria quando si bagnano, ideali per sparare con i cannoni?",
   "a": "Spore zefiro",
   "wrong": [
    "Spore roseite",
@@ -93,25 +93,25 @@
   "a": "Cadaveri",
   "wrong": [
    "Tazze rare",
-   "Monete d'oro",
+   "Monete d’oro",
    "Campioni di spore"
   ],
   "explain": "Hoid sostiene che Ulaam sia il miglior medico che abbia mai conosciuto, nonostante lo strano compenso."
  },
  {
   "id": "otros-010",
-  "q": "Chi elegge capitano l'equipaggio dopo la destituzione di Corvo?",
+  "q": "Chi elegge capitano l’equipaggio dopo la destituzione di Corvo?",
   "a": "Tress",
   "wrong": [
    "Fort",
    "Salay",
    "Ann la Ridente"
   ],
-  "explain": "Tress consegna Corvo al drago Xisis, e l'equipaggio, riconoscente, sceglie lei come guida."
+  "explain": "Tress consegna Corvo al drago Xisis, e l’equipaggio, riconoscente, sceglie lei come guida."
  },
  {
   "id": "otros-011",
-  "q": "Come si chiama la nuova nave che Tress e l'equipaggio comprano alla fine della storia?",
+  "q": "Come si chiama la nuova nave che Tress e l’equipaggio comprano alla fine della storia?",
   "a": "Due Coppe",
   "wrong": [
    "Corona di Smeraldo",
@@ -122,7 +122,7 @@
  },
  {
   "id": "otros-012",
-  "q": "In quale dei mari di Lumar ha la sua dimora il drago Xisis?",
+  "q": "In quale dei dodici mari ha la sua dimora il drago Xisis?",
   "a": "Il Mare Cremisi",
   "wrong": [
    "Il Mare Mezzanotte",
@@ -140,7 +140,7 @@
    "Canticle",
    "Taldain"
   ],
-  "explain": "Komashi è il mondo in cui il Frammento Virtuosismo si è frammentato da sé."
+  "explain": "Komashi ospita sia le tradizioni yoki-hijo di Yumi sia Kilahito, la città di Pittore."
  },
  {
   "id": "otros-014",
@@ -169,7 +169,7 @@
   "q": "Quale titolo sacro ricopre Yumi presso il suo popolo?",
   "a": "Yoki-hijo",
   "wrong": [
-   "Pittrice di incubi",
+   "Oracolo del tempio",
    "Guardiana del sudario",
    "Ingegnera dello hion"
   ],
@@ -233,7 +233,7 @@
  {
   "id": "otros-022",
   "q": "Masaka lavora come pittrice di incubi, ma che cosa è in segreto?",
-  "a": "Un'Insonne",
+  "a": "Un’Insonne",
   "wrong": [
    "Una hijo",
    "Un incubo",
@@ -246,9 +246,9 @@
   "q": "Quale Frammento si è frammentato da sé su Komashi?",
   "a": "Virtuosismo",
   "wrong": [
-   "Coltivazione",
-   "Devozione",
-   "Dotazione"
+   "Ambizione",
+   "Autonomia",
+   "Valore"
   ],
   "explain": "I resti del potere di Virtuosismo hanno plasmato la strana Investitura di Komashi."
  },
@@ -266,24 +266,24 @@
  {
   "id": "otros-025",
   "q": "Perché le città di Canticle devono spostarsi di continuo?",
-  "a": "Per sfuggire all'alba letale",
+  "a": "Per sfuggire all’alba letale",
   "wrong": [
    "Per seguire mandrie migranti",
    "Per sfuggire alle inondazioni",
-   "Per restare vicino all'oceano"
+   "Per restare vicino all’oceano"
   ],
   "explain": "Chiunque venga colto dalla luce diretta del sole di Canticle si riduce in cenere."
  },
  {
   "id": "otros-026",
-  "q": "Chi, tra gli abitanti di Canticle, diventa il principale alleato di Nomad in «The Sunlit Man»?",
-  "a": "Rebeke",
+  "q": "In «The Sunlit Man», su quale veicolo viaggia Rebeke quando Nomad vi si aggrappa e viene trascinato via con lei?",
+  "a": "Una moto volante",
   "wrong": [
-   "Compassion",
-   "Contemplation",
-   "Zeal"
+   "Un aliante",
+   "Una carrozza a vapore",
+   "Un camion blindato"
   ],
-  "explain": "Rebeke diventa l'alleata chiave di Nomad nella lotta contro il Cinder King."
+  "explain": "Nomad lancia una catena sulla moto volante di Rebeke che si allontana, e la luce del sole comincia a bruciarlo mentre viene trascinato via."
  },
  {
   "id": "otros-027",
@@ -305,15 +305,15 @@
    "Il Greater Good",
    "I Beaconite"
   ],
-  "explain": "Nomad continua a saltare da un pianeta all'altro per restare un passo avanti alla Night Brigade."
+  "explain": "Nomad continua a saltare da un pianeta all’altro per restare un passo avanti alla Night Brigade."
  },
  {
   "id": "otros-029",
-  "q": "A quale tiranno si oppongono Nomad e Rebeke su Canticle?",
+  "q": "Quale tiranno governa il pianeta in cui è ambientato «The Sunlit Man»?",
   "a": "Il Cinder King",
   "wrong": [
-   "Zeal",
-   "Il Lodestar",
+   "Il Sunlit One",
+   "Il Prospector",
    "Il Greater Good"
   ],
   "explain": "Il Cinder King comanda i Charred, persone ridotte in schiavitù da un sunheart corrotto piantato nel petto."
@@ -325,31 +325,31 @@
   "wrong": [
    "Pronunciare il proprio nome",
    "Dormire",
-   "Usare l'Investitura"
+   "Usare l’Investitura"
   ],
   "explain": "Il Tormento gli impedisce di nuocere anche per legittima difesa."
  },
  {
   "id": "otros-031",
   "q": "Qual è la causa del Tormento di Nomad?",
-  "a": "Un tempo ha portato un Frammento dell'Alba",
+  "a": "Un tempo ha portato un Frammento dell’Alba",
   "wrong": [
    "Un sunheart corrotto",
    "Un Ideale infranto",
-   "L'esposizione al sole di Canticle"
+   "L’esposizione al sole di Canticle"
   ],
-  "explain": "Portare un Frammento dell'Alba lascia un segno duraturo su chiunque l'abbia avuto."
+  "explain": "Portare un Frammento dell’Alba lascia un segno duraturo su chiunque l’abbia avuto."
  },
  {
   "id": "otros-032",
   "q": "Che tipo di essere è Auxiliary, il compagno parlante di Nomad?",
   "a": "Un essere simile a uno spren",
   "wrong": [
-   "Un'ombra",
+   "Un’ombra",
    "Un sunheart vivente",
    "Un Charred"
   ],
-  "explain": "Aux fu quasi consumato dal Frammento dell'Alba che Nomad portava un tempo, e sopravvive come una voce nella sua testa."
+  "explain": "Aux fu quasi consumato dal Frammento dell’Alba che Nomad portava un tempo, e sopravvive come una voce nella sua testa."
  },
  {
   "id": "otros-033",
@@ -386,7 +386,7 @@
  },
  {
   "id": "otros-036",
-  "q": "Di che colore diventa la sabbia bianca dopo l'uso da parte di un Maestro della Sabbia?",
+  "q": "Di che colore diventa la sabbia bianca dopo l’uso da parte di un Maestro della Sabbia?",
   "a": "Nera",
   "wrong": [
    "Rossa",
@@ -408,7 +408,7 @@
  },
  {
   "id": "otros-038",
-  "q": "Come si chiama l'ordine di Maestri della Sabbia a cui appartiene Kenton?",
+  "q": "Come si chiama l’ordine di Maestri della Sabbia a cui appartiene Kenton?",
   "a": "I Diem",
   "wrong": [
    "I kerztiani",
@@ -423,8 +423,8 @@
   "a": "Autonomia",
   "wrong": [
    "Onore",
-   "Dotazione",
-   "Coltivazione"
+   "Valore",
+   "Preservazione"
   ],
   "explain": "Taldain orbita attorno a una supergigante bianco-azzurra in coppia con una fioca nana bianca."
  },
@@ -448,7 +448,7 @@
    "Deepwalker",
    "Eelakin"
   ],
-  "explain": "I giovani aviar devono visitare l'isola di Patji per ottenere i loro talenti."
+  "explain": "I giovani aviar devono visitare l’isola di Patji per ottenere i loro talenti."
  },
  {
   "id": "otros-042",
@@ -463,21 +463,21 @@
  },
  {
   "id": "otros-043",
-  "q": "Patji, l'isola più grande del Pantheon, viene spesso chiamata come?",
+  "q": "Patji, l’isola più grande del Pantheon, viene spesso chiamata come?",
   "a": "Padre",
   "wrong": [
    "Madre",
    "Fratello",
    "Nonno"
   ],
-  "explain": "I cacciatori come Vespro trattano l'isola letale di Patji con cauta reverenza, come un padre severo."
+  "explain": "Vespro e la sua gente trattano l’isola letale di Patji con cauta reverenza, come un padre severo."
  },
  {
   "id": "otros-044",
   "q": "Che cosa mostra a Vespro il suo aviar Sak?",
   "a": "Visioni del suo stesso cadavere",
   "wrong": [
-   "Mappe dell'isola",
+   "Mappe dell’isola",
    "I pensieri altrui",
    "Tesori nascosti"
   ],
@@ -485,7 +485,7 @@
  },
  {
   "id": "otros-045",
-  "q": "Quale talento gli conferisce Kokerlii, l'aviar di Vespro?",
+  "q": "Quale talento gli conferisce Kokerlii, l’aviar di Vespro?",
   "a": "Nascondere la mente ai predatori",
   "wrong": [
    "Vedere al buio",
@@ -496,34 +496,34 @@
  },
  {
   "id": "otros-046",
-  "q": "Su quale pianeta crescono le Foreste dell'Inferno?",
+  "q": "Su quale pianeta crescono le Foreste dell’Inferno?",
   "a": "Threnody",
   "wrong": [
    "Taldain",
    "Primo del Sole",
    "Canticle"
   ],
-  "explain": "Le Foreste dell'Inferno sono infestate dalle ombre, gli spiriti dei morti."
+  "explain": "Le Foreste dell’Inferno sono infestate dalle ombre, gli spiriti dei morti."
  },
  {
   "id": "otros-047",
-  "q": "Che cosa gestisce Silence Montane nelle Foreste dell'Inferno?",
+  "q": "Che cosa gestisce Silence Montane nelle Foreste dell’Inferno?",
   "a": "Una locanda di sosta",
   "wrong": [
    "Una segheria",
    "Una cappella",
-   "Una miniera d'argento"
+   "Una miniera d’argento"
   ],
   "explain": "Silence gestisce la locanda con sua figlia, William Ann."
  },
  {
   "id": "otros-048",
   "q": "Quale metallo può distruggere le ombre di Threnody?",
-  "a": "L'argento",
+  "a": "L’argento",
   "wrong": [
    "Il ferro",
    "Il rame",
-   "L'oro"
+   "L’oro"
   ],
   "explain": "Le ombre si infuriano se qualcuno accende un fuoco, corre di notte o versa sangue."
  },
@@ -534,7 +534,7 @@
   "wrong": [
    "Il Lupo Grigio",
    "Il Falco Nero",
-   "L'Orso Rosso"
+   "L’Orso Rosso"
   ],
   "explain": "Silence usa le taglie che riscuote per tenere la locanda lontana dai debiti."
  },
@@ -547,7 +547,7 @@
    "Il suo corpo non è mai stato trovato",
    "È stata bruciata su una pira"
   ],
-  "explain": "Silence intrappolò l'ombra della sua severa nonna nel santuario della locanda di sosta, e in seguito la scatena contro Theopolis."
+  "explain": "Silence intrappolò l’ombra della sua severa nonna nel santuario della locanda di sosta, e in seguito la scatena contro l’esattore."
  },
  {
   "id": "otros-051",
@@ -558,7 +558,7 @@
    "Carpentiera",
    "Quartiermastro"
   ],
-  "explain": "Come addetta alle spore della nave, Tress maneggia le spore d'etere che l'equipaggio usa per combattere e per riparare la nave."
+  "explain": "Come addetta alle spore della nave, Tress maneggia le spore d’etere che l’equipaggio usa per combattere e per riparare la nave."
  },
  {
   "id": "otros-052",
@@ -574,7 +574,7 @@
  {
   "id": "otros-053",
   "q": "Perché Ann si era imbarcata sul Canto del Corvo come carpentiera?",
-  "a": "Per evitare l'arruolamento nell'esercito del re",
+  "a": "Per evitare l’arruolamento nell’esercito del re",
   "wrong": [
    "Per saldare i debiti della famiglia",
    "Per dare la caccia alla Fattucchiera",
@@ -584,14 +584,14 @@
  },
  {
   "id": "otros-054",
-  "q": "Che cosa fanno le spore di roseite a contatto con l'acqua?",
+  "q": "Che cosa fanno le spore di roseite a contatto con l’acqua?",
   "a": "Crescono formando cristalli",
   "wrong": [
    "Crescono formando spine rosse e aguzze",
-   "Rilasciano un getto d'aria",
+   "Rilasciano un getto d’aria",
    "Diventano una schiuma densa"
   ],
-  "explain": "Il cristallo di roseite serve a rattoppare gli scafi danneggiati; inoltre la roseite resiste all'argento meglio della maggior parte delle spore."
+  "explain": "Il cristallo di roseite serve a rattoppare gli scafi danneggiati."
  },
  {
   "id": "otros-055",
@@ -628,44 +628,44 @@
  },
  {
   "id": "otros-058",
-  "q": "Che cosa aprì a Kilahito la Criptica Disegno mentre Hoid era congelato nel tempo?",
+  "q": "In «Yumi e il pittore di incubi», che cosa aprì a Kilahito la compagna di Hoid mentre lui era congelato nel tempo?",
   "a": "Un negozio di noodle",
   "wrong": [
    "Una scuola di pittura",
    "Una casa da tè",
    "Una libreria"
   ],
-  "explain": "Disegno gestiva il negozio insieme al cuoco Namakudo e in seguito lo lasciò a Yumi e Pittore, che gli diedero un nuovo nome."
+  "explain": "Il negozio era gestito insieme al cuoco Namakudo e in seguito fu lasciato a Yumi e Pittore, che gli diedero un nuovo nome."
  },
  {
   "id": "otros-059",
-  "q": "Che cosa sono gli hijo, gli spiriti che le yoki-hijo evocano su Komashi?",
+  "q": "Che cosa sono gli hijo, gli spiriti che Yumi evoca su Komashi?",
   "a": "Schegge di Virtuosismo",
   "wrong": [
    "Ombre cognitive dei morti",
    "Frammenti del sudario",
    "Scintille di hion vivente"
   ],
-  "explain": "Gli hijo vivono sottoterra e sono attratti da pensieri, emozioni e arte, come le pietre impilate con cura."
+  "explain": "Gli hijo vivono sottoterra e sono attratti da pensieri, emozioni e arte."
  },
  {
   "id": "otros-060",
-  "q": "Quale di queste donne fu una delle assistenti di Yumi sotto Liyun?",
+  "q": "Quale di queste donne fu una delle assistenti di Yumi?",
   "a": "Hwanji",
   "wrong": [
    "Akane",
    "Masaka",
    "Izumakamo"
   ],
-  "explain": "Hwanji, nota perché canticchiava mentre lavorava, aveva servito in precedenza un'altra yoki-hijo, Dwookim."
+  "explain": "Hwanji, nota perché canticchiava mentre lavorava, aveva servito in precedenza Dwookim."
  },
  {
   "id": "otros-061",
   "q": "Da dove provengono i sunheart di Canticle?",
-  "a": "Dall'Investitura di chi muore sul pianeta",
+  "a": "Dall’Investitura di chi muore sul pianeta",
   "wrong": [
-   "Da meteoriti che cadono all'alba",
-   "Da cristalli estratti nell'oscurità",
+   "Da meteoriti che cadono all’alba",
+   "Da cristalli estratti nell’oscurità",
    "Dalle ceneri di foreste bruciate"
   ],
   "explain": "I sunheart si formano da chi muore nella luce Investita del sole di Canticle, e alimentano le città volanti."
@@ -679,7 +679,7 @@
    "Roshar",
    "Taldain"
   ],
-  "explain": "Gli abitanti di Canticle sono di origine threnodita, anche se ricordano il loro antico mondo come l'Inferno."
+  "explain": "Gli abitanti di Canticle discendono da coloni threnoditi."
  },
  {
   "id": "otros-063",
@@ -690,22 +690,22 @@
    "Sunlit One",
    "Prospector"
   ],
-  "explain": "La nomina di Elegy a Lodestar di Beacon pose fine all'usanza di sacrificare i membri più anziani della città."
+  "explain": "La nomina di Elegy a Lodestar di Beacon pose fine all’usanza di sacrificare i membri più anziani della città."
  },
  {
   "id": "otros-064",
   "q": "Di che cosa sono fatte le città volanti di Canticle, come Beacon?",
   "a": "Di molte navi più piccole collegate",
   "wrong": [
-   "Di un'unica montagna svuotata",
+   "Di un’unica montagna svuotata",
    "Di piattaforme che scorrono su rotaie",
    "Di isole di roccia fluttuanti"
   ],
-  "explain": "Le navi collegate possono essere manovrate come un tutt'uno e restano in volo grazie ai sunheart."
+  "explain": "Le navi collegate possono essere manovrate come un tutt’uno e restano in volo grazie ai sunheart."
  },
  {
   "id": "otros-065",
-  "q": "Che legame di parentela c'è tra Elegy Salvage, che arriva a guidare la città di Beacon, e Rebeke?",
+  "q": "Che legame di parentela c’è tra Elegy Salvage, che arriva a guidare la città di Beacon, e Rebeke?",
   "a": "È sua sorella",
   "wrong": [
    "È sua madre",
@@ -716,14 +716,14 @@
  },
  {
   "id": "otros-066",
-  "q": "Oltre alla maestria della sabbia, che cos'altro esaurisce il potere della sabbia bianca di Taldain?",
-  "a": "Il contatto con l'acqua",
+  "q": "Oltre alla maestria della sabbia, che cos’altro esaurisce il potere della sabbia bianca di Taldain?",
+  "a": "Il contatto con l’acqua",
   "wrong": [
-   "L'esposizione al buio",
+   "L’esposizione al buio",
    "Essere calpestata",
    "Il vento forte"
   ],
-  "explain": "La sabbia bagnata brilla e diventa nera, proprio come quella usata dai Maestri, finché la luce del sole non la ricarica."
+  "explain": "La sabbia bagnata perde il suo potere proprio come quella usata dai Maestri, finché la luce del sole non la ricarica."
  },
  {
   "id": "otros-067",
@@ -734,7 +734,7 @@
    "Ossa macinate",
    "Luce solare intrappolata nel vetro"
   ],
-  "explain": "L'organismo attinge alla luce del sole maggiore di Taldain; quando la sua Investitura si esaurisce, la sabbia diventa nera."
+  "explain": "L’organismo attinge alla luce del sole maggiore di Taldain, che ricarica anche la sabbia esaurita."
  },
  {
   "id": "otros-068",
@@ -745,7 +745,7 @@
    "Sette",
    "Dodici"
   ],
-  "explain": "Ogni Taisha è a capo di una delle Professioni di Lossand; il Lord Mastrell parla per i Diem."
+  "explain": "Ogni Taisha è a capo di una delle Professioni di Lossand; il Lord Mastrell parla per i Maestri della Sabbia."
  },
  {
   "id": "otros-069",
@@ -754,20 +754,20 @@
   "wrong": [
    "Lo completò senza usare la maestria della sabbia",
    "Lo completò in una sola notte",
-   "Lo attraversò senz'acqua"
+   "Lo attraversò senz’acqua"
   ],
   "explain": "Kenton usò la spada per uccidere la creatura al centro del Sentiero, distruggendo il Sentiero per sempre."
  },
  {
   "id": "otros-070",
-  "q": "Durante quale evento i sacerdoti guerrieri kerztiani attaccano i Diem?",
+  "q": "Durante quale evento i sacerdoti guerrieri kerztiani attaccano l’ordine di Maestri della Sabbia di Kenton?",
   "a": "Una cerimonia di promozione",
   "wrong": [
    "Il funerale del Lord Mastrell",
    "Una riunione del Taishin",
    "Una caccia alle creature delle sabbie"
   ],
-  "explain": "Quasi tutti i Maestri della Sabbia vengono uccisi, e Kenton crede di essere l'unico sopravvissuto."
+  "explain": "Quasi tutti i Maestri della Sabbia vengono uccisi, e Kenton crede di essere l’unico sopravvissuto."
  },
  {
   "id": "otros-071",
@@ -778,7 +778,7 @@
    "Daggon",
    "Theopolis"
   ],
-  "explain": "Nei panni della Volpe Bianca, Silence segue le tracce di Chesterton e della sua banda attraverso le Foreste dell'Inferno."
+  "explain": "Silence segue le tracce di Chesterton e della sua banda attraverso le Foreste dell’Inferno."
  },
  {
   "id": "otros-072",
@@ -809,7 +809,7 @@
   "wrong": [
    "Un membro della banda di Chesterton",
    "Il defunto marito di Silence",
-   "Un mercante d'argento itinerante"
+   "Un mercante d’argento itinerante"
   ],
   "explain": "Red Young è uno dei cacciatori di taglie che operano dai forti di Threnody."
  },
@@ -822,7 +822,7 @@
    "Tre",
    "Cinque"
   ],
-  "explain": "Il continente più grande fu invaso dal Male, mentre quello più piccolo e boscoso divenne le Foreste dell'Inferno."
+  "explain": "Il continente più grande fu invaso dal Male, mentre quello più piccolo e boscoso divenne le Foreste dell’Inferno."
  },
  {
   "id": "otros-076",
@@ -833,44 +833,44 @@
    "Come le tombe dei loro antenati",
    "Come proprietà del loro re"
   ],
-  "explain": "Ogni cacciatore è una sorta di sacerdote dell'isola su cui caccia."
+  "explain": "Ogni cacciatore è una sorta di sacerdote dell’isola su cui caccia."
  },
  {
   "id": "otros-077",
-  "q": "A che cosa dovrebbe servire su Patji la macchina di Quelli di Sopra della compagnia commerciale?",
-  "a": "A localizzare tutti gli aviar dell'isola",
+  "q": "A che cosa dovrebbe servire su Patji la macchina venuta da un altro mondo della compagnia commerciale?",
+  "a": "A localizzare tutti gli aviar dell’isola",
   "wrong": [
-   "A eliminare i veleni dell'isola",
+   "A eliminare i veleni dell’isola",
    "A scacciare i nightmaw",
    "A mappare il fondale oceanico"
   ],
-  "explain": "La macchina non doveva funzionare davvero: Quelli di Sopra speravano che la sua tecnologia accelerasse il progresso degli Eelakin, per aggirare le leggi che vietavano il commercio."
+  "explain": "La macchina non doveva funzionare davvero: i suoi costruttori venuti da un altro mondo speravano che la sua tecnologia accelerasse il progresso degli Eelakin, per aggirare le leggi che vietavano il commercio."
  },
  {
   "id": "otros-078",
-  "q": "Che cosa conferisce davvero agli aviar i loro talenti?",
+  "q": "Che cosa conferisce davvero i loro talenti agli uccelli del mondo di Vespro?",
   "a": "Un parassita che contraggono sulle isole",
   "wrong": [
-   "I minerali delle sorgenti dell'isola",
+   "I minerali delle sorgenti dell’isola",
    "I canti degli uccelli più anziani",
    "Il legame con un cacciatore"
   ],
-  "explain": "Sak, un uccello della terraferma, ha acquisito il suo talento solo dopo che Vespro l'ha portata su Patji."
+  "explain": "Sak, un uccello della terraferma, ha acquisito il suo talento solo dopo che Vespro l’ha portata su Patji."
  },
  {
   "id": "otros-079",
-  "q": "Chi fu il mentore di Vespro come cacciatore?",
+  "q": "Chi insegnò il mestiere a Vespro?",
   "a": "Suo zio",
   "wrong": [
    "Suo padre",
    "Suo nonno",
    "Suo fratello maggiore"
   ],
-  "explain": "Dopo la morte dello zio durante un viaggio su Patji, Vespro divenne da solo il cacciatore di quell'isola, come voleva la tradizione."
+  "explain": "Dopo la morte dello zio durante un viaggio su Patji, Vespro proseguì da solo su quell’isola, come voleva la tradizione."
  },
  {
   "id": "otros-080",
-  "q": "Che cos'è un deepwalker?",
+  "q": "Che cos’è un deepwalker?",
   "a": "Un enorme predatore marino che caccia percependo le menti",
   "wrong": [
    "Un insetto velenoso della giungla",

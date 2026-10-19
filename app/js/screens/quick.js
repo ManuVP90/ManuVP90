@@ -1,19 +1,22 @@
 // Quick game: 15 mixed questions against the clock. Score = 100 per correct answer
 // + up to 100 speed bonus (proportional to the time left). Best score is stored.
 // The run is saved after every step (key `quick`), so a reload offers "Continue quick game".
+// The finished summary is kept (key `quickResult`) until the player leaves the results screen,
+// so reloading there shows the results again.
 import { h, svg } from '../dom.js';
 import { ICONS } from '../icons.js';
 import { t, num } from '../i18n.js';
-import { app, go, screen, topBar, makePool, recordAnswer, recordLifeline, updateStats, getStats, toast, setBack, confirmDialog, levelPicker, levelBadge } from '../core.js';
+import { app, go, screen, topBar, makePool, recordAnswer, recordLifeline, updateStats, getStats, setBack, confirmDialog, levelPicker, levelBadge, noQuestionsBanner, filterIsEmpty } from '../core.js';
 import * as store from '../storage.js';
 import { CATEGORIES, LEVEL_IDS, QUICK_LENGTH, TIMER_SECONDS, fullLifelines, levelOrDefault } from '../config.js';
 import { quickPlan, shuffledOrder } from '../data.js';
-import { isObj, isInt, isPermutation, isValidFx, isValidClock, isValidLifelines } from '../game.js';
+import { isObj, isInt, isPermutation, isValidFx, isValidClock, isValidLifelines, migrateClock } from '../game.js';
 import { fx, confetti } from '../fx.js';
-import { questionView, emptyFx } from '../components/question.js';
+import { questionView, emptyFx, newClock } from '../components/question.js';
 import { lifelinesLeft } from '../components/board.js';
 
 const SAVE_KEY = 'quick';
+const RESULT_KEY = 'quickResult';
 const RUN_VERSION = 1;
 let run = null;
 
@@ -37,14 +40,19 @@ function newRun(level) {
   };
 }
 
+/** Each right answer scores 100 plus a speed bonus of up to 100; wrong answers score 0. */
+const isValidScore = (score, correct) => isInt(score, correct * 100, correct * 200);
+
 function isValidRun(r) {
   try {
     if (!isObj(r) || r.v !== RUN_VERSION || r.finished) return false;
     if (!isInt(r.total, 1, QUICK_LENGTH) || !Array.isArray(r.plan) || r.plan.length !== r.total
       || !r.plan.every((c) => CATEGORIES.includes(c))) return false;
-    if (!isInt(r.index, 0, r.total - 1) || !isInt(r.correct, 0, r.index) || !isInt(r.score, 0, r.index * 200)) return false;
+    if (!isInt(r.index, 0, r.total - 1) || !isInt(r.correct, 0, r.index) || !isValidScore(r.score, r.correct)) return false;
     if (!LEVEL_IDS.includes(r.level) || !isValidLifelines(r.lifelines)) return false;
-    if (!Array.isArray(r.seen) || !r.seen.every((id) => typeof id === 'string')) return false;
+    // One id per question asked (the current one included) plus at most one Breath swap.
+    if (!Array.isArray(r.seen) || r.seen.length > r.index + 2 || !r.seen.every((id) => typeof id === 'string')
+      || new Set(r.seen).size !== r.seen.length) return false;
     const c = r.current;
     if (c !== null && (!isObj(c) || typeof c.id !== 'string' || !isPermutation(c.order, 4) || !isValidFx(c.fx) || !isValidClock(c.clock))) return false;
     return true;
@@ -58,9 +66,25 @@ export function loadSavedRun() {
   if (run && !run.finished) return run;
   const raw = store.load(SAVE_KEY, null);
   if (raw === null) { if (store.hasRaw(SAVE_KEY)) store.remove(SAVE_KEY); return null; }
+  if (isObj(raw?.current) && 'clock' in raw.current) raw.current.clock = migrateClock(raw.current.clock);
   if (!isValidRun(raw)) { store.remove(SAVE_KEY); return null; }
   return raw;
 }
+
+/** The summary of a finished quick game whose results screen wasn't dismissed yet, or null. */
+export function loadSavedResult() {
+  const r = store.load(RESULT_KEY, null);
+  const best = getStats().bestQuick;
+  // The summary must agree with the stats it was recorded into: a record is the best score.
+  const ok = isObj(r) && isInt(r.total, 1, QUICK_LENGTH) && isInt(r.correct, 0, r.total) && isValidScore(r.score, r.correct)
+    && LEVEL_IDS.includes(r.level) && typeof r.record === 'boolean'
+    && (r.record ? r.score > 0 && best === r.score : best >= r.score);
+  if (!ok) { if (store.hasRaw(RESULT_KEY)) store.remove(RESULT_KEY); return null; }
+  return { score: r.score, correct: r.correct, total: r.total, level: r.level, record: r.record };
+}
+
+/** The results screen was left: the summary is not shown again. */
+export function dismissResult() { store.remove(RESULT_KEY); }
 
 function saveRun() {
   if (!run || run.finished) { store.remove(SAVE_KEY); return; }
@@ -72,6 +96,7 @@ function saveRun() {
 export function discardRun() {
   run = null;
   store.remove(SAVE_KEY);
+  store.remove(RESULT_KEY);
 }
 
 /** Next question: the planned world first; if it has nothing unseen left, any world that does. */
@@ -92,8 +117,10 @@ function drawNext() {
 function introView() {
   let level = levelOrDefault(app.settings.level);
   const best = getStats().bestQuick || 0;
+  const empty = filterIsEmpty();
   return screen('quick-intro',
     topBar(t('quick.title')),
+    empty ? noQuestionsBanner() : null,
     h('section', { class: 'card quick-intro-card' },
       svg(ICONS.bolt, 'quick-intro-icon'),
       h('p', { class: 'lead' }, t('quick.intro', { n: QUICK_LENGTH, s: TIMER_SECONDS })),
@@ -103,38 +130,56 @@ function introView() {
     levelPicker(level, (l) => { level = l; }),
     h('div', { class: 'sticky-actions' },
       h('button', {
-        type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '',
+        type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '', disabled: empty,
         onclick: () => { fx.tap(); go('quick', { start: level }); },
       }, svg(ICONS.play), t('quick.start'))));
 }
 
 export function quickScreen(params = {}) {
+  if (params.start || params.restart) dismissResult();
   if (params.start) { run = newRun(params.start); saveRun(); }
   else if (params.restart && run) { run = newRun(run.level); saveRun(); }
+  else if (params.results && !run) {
+    // Reloaded on the results screen: show the saved summary once more.
+    const r = loadSavedResult();
+    if (!r) return introView();
+    run = { ...r, index: r.total, finished: true, restored: true };
+  }
   else if (params.resume && !run) {
     const saved = loadSavedRun();
     run = saved ? { ...saved, pool: makePool() } : null;
     if (!run) return introView();
   } else if (!run || (run.finished && !params.results)) { run = null; return introView(); }
-  if (!run) { setTimeout(() => go('home')); toast(t('errors.noQuestions')); return screen('', h('h1', {}, t('quick.title'))); }
+  if (!run) return introView();
   if (run.index >= run.total) return resultView();
 
   let view = null;
   const quit = async () => {
     view?.pauseTimer(); // no time passes while the player decides
-    if (await confirmDialog(t('quick.quitConfirm'))) { discardRun(); go('home'); } else view?.resumeTimer();
+    const ok = await confirmDialog(t('quick.quitBody'), { title: t('quick.quitTitle'), okLabel: t('quick.quitYes'), cancelLabel: t('quick.quitNo'), danger: true });
+    if (ok) { discardRun(); go('home'); } else view?.resumeTimer();
   };
   setBack(quit);
-  let q = run.current && run.pool.get(run.current.id);
+  // The question on screen stays even if the spoiler filter now hides it (no free re-draw).
+  let q = run.current && run.pool.getAny(run.current.id);
   if (!q) {
     q = drawNext();
-    if (!q) { discardRun(); setTimeout(() => go('home')); toast(t('errors.noQuestions')); return screen('', h('h1', {}, t('quick.title'))); }
+    // The filter changed and leaves nothing: keep the run (it can go on once books are marked again).
+    if (!q) {
+      const saved = run;
+      run = null;
+      setBack(() => go('home'));
+      return screen('quick-empty', topBar(t('quick.title')),
+        noQuestionsBanner(),
+        h('p', { class: 'muted center' }, t('quick.emptySaved', { n: saved.index + 1, total: saved.total })),
+        h('div', { class: 'stack-actions' }, h('button', { type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '', onclick: () => go('home') }, t('common.home'))));
+    }
     if (!run.seen.includes(q.id)) run.seen.push(q.id);
-    run.current = { id: q.id, order: shuffledOrder(), fx: emptyFx(), clock: { deadline: null } };
+    run.current = { id: q.id, order: shuffledOrder(), fx: emptyFx(), clock: newClock() };
   }
   const cur = run.current;
   cur.fx ||= emptyFx();
-  cur.clock ||= { deadline: null };
+  cur.clock ||= newClock();
   const scoreEl = h('span', { class: 'score-value' }, num(run.score));
   const top = h('div', { class: 'q-top quick-top' },
     h('span', { class: 'progress-label' }, t('question.progress', { n: run.index + 1, total: run.total })),
@@ -156,7 +201,7 @@ export function quickScreen(params = {}) {
         if (alt) {
           run.seen.push(alt.id);
           // An armed Stormlight carries over to the new question.
-          run.current = { id: alt.id, order: shuffledOrder(), fx: emptyFx(!!cur.fx.armed), clock: { deadline: null } };
+          run.current = { id: alt.id, order: shuffledOrder(), fx: emptyFx(!!cur.fx.armed), clock: newClock() };
         }
         saveRun();
         go('quick');
@@ -190,7 +235,7 @@ export function quickScreen(params = {}) {
     view);
 }
 
-/** Records the result once and removes the saved run. */
+/** Records the result once, removes the saved run and keeps the summary for the results screen. */
 function finish() {
   if (run.finished) return;
   run.finished = true;
@@ -198,13 +243,16 @@ function finish() {
   run.record = run.score > prevBest && run.score > 0;
   updateStats((s) => { s.quickGames++; s.bestQuick = Math.max(s.bestQuick || 0, run.score); });
   store.remove(SAVE_KEY);
+  store.save(RESULT_KEY, { score: run.score, correct: run.correct, total: run.total, level: run.level, record: run.record });
 }
 
 function resultView() {
   finish();
+  const leave = (fn) => () => { dismissResult(); fn(); };
+  setBack(leave(() => go('home')));
   const best = getStats().bestQuick;
   const el = screen('quick-result',
-    topBar(t('quick.finished')),
+    topBar(t('quick.finished'), { back: leave(() => go('home')) }),
     h('div', { class: 'result-body' },
       svg(ICONS.bolt, 'result-icon'),
       h('p', { class: 'result-score', 'aria-live': 'polite' }, t('quick.result', { score: num(run.score) })),
@@ -212,8 +260,8 @@ function resultView() {
       h('p', { class: 'lead' }, t('quick.correctCount', { n: run.correct, total: run.total })),
       h('p', { class: 'muted quick-best' }, t('quick.bestScore', { n: num(best) }))),
     h('div', { class: 'stack-actions' },
-      h('button', { type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '', onclick: () => go('quick', { restart: true }) }, svg(ICONS.refresh), t('common.playAgain')),
-      h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: () => go('home') }, t('common.home'))));
-  if (run.record) requestAnimationFrame(() => { confetti(el, 60); fx.victory(); });
+      h('button', { type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '', onclick: leave(() => go('quick', { restart: true })) }, svg(ICONS.refresh), t('common.playAgain')),
+      h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: leave(() => go('home')) }, t('common.home'))));
+  if (run.record && !run.restored) requestAnimationFrame(() => { confetti(el, 60); fx.victory(); });
   return el;
 }

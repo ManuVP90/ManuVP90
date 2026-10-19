@@ -57,3 +57,20 @@ rebuscados y todos eran correctos; el alemán coincide en general con Heyne y Pi
 
 Capturas, scripts y registros de cada tester: `/tmp/claude-0/-home-user-ManuVP90/e05cb330-3b92-587b-816a-ee3c94e47988/scratchpad/beta/<tester>/`
 (local a esta sesión).
+
+## Rondas de corrección y retest
+
+| Tester | Beta 1 | Ronda 2 | Ronda 3 | Final | ¿Lo enseñaría ya? |
+|---|---|---|---|---|---|
+| Lucía | 7 | 8 | 8 | 8 | Sí, con reservas (resueltas tras la ronda final) |
+| Marc | 7 | 8 | 8 | 9 | Sí |
+| Hannah | 7 | 8 | 7 | 8 | Sí, con reservas |
+| Ignacio | 6 | 8 | 8 | 8 | Sí, con reservas |
+
+Decisión de diseño tomada durante las rondas: **el temporizador sigue corriendo una vez revelada la pregunta**,
+aunque el jugador salga de la app (evita buscar la respuesta). Solo se pausa antes de revelarla (pantalla de
+pasar el móvil) y con el diálogo de abandonar la partida rápida. Quien quiera pausar puede jugar sin temporizador.
+
+Pendiente menor tras la ronda final: 5 pares de preguntas en los que el enunciado de una insinúa la respuesta
+de otra; algunas opciones en inglés dentro de preguntas alemanas de libros sin edición alemana; nombres de
+*Das Herz der Sonne* sin confirmar contra el libro de Heyne.

@@ -363,17 +363,16 @@
     "category": "scadrial",
     "difficulty": 2,
     "work": "well-of-ascension",
-    "q": "Which kandra secretly took the place of OreSeur at Vin's side?",
+    "q": "Which kandra secretly killed Vin's kandra companion and took his place?",
     "a": "TenSoon",
     "wrong": [
       "MeLaan",
       "KanPaar",
       "VenDell"
     ],
-    "explain": "Zane ordered TenSoon to kill OreSeur and take his place to spy on Vin.",
+    "explain": "Zane ordered TenSoon to kill Vin's kandra and take his place so he could spy on her.",
     "terms": [
       "kandra",
-      "OreSeur",
       "Vin",
       "TenSoon",
       "MeLaan",
@@ -451,22 +450,22 @@
     "category": "scadrial",
     "difficulty": 2,
     "work": "final-empire",
-    "q": "What was the name of Kelsier's wife, who died in the Pits of Hathsin?",
+    "q": "What was the name of the Survivor's wife, who died in the Pits of Hathsin?",
     "a": "Mare",
     "wrong": [
       "Shan",
       "Tindwyl",
       "Valette"
     ],
-    "explain": "Mare, a Tineye, was imprisoned in the Pits along with Kelsier and died there.",
+    "explain": "Mare, a Tineye, was imprisoned in the Pits along with her husband and died there.",
     "terms": [
-      "Kelsier",
       "Mare",
       "Pits of Hathsin",
       "Shan",
       "Tindwyl",
       "Valette",
-      "Tineye"
+      "Tineye",
+      "Survivor"
     ],
     "source": "The Final Empire"
   },
@@ -539,7 +538,7 @@
     "category": "scadrial",
     "difficulty": 2,
     "work": "final-empire",
-    "q": "What is the name of the Lord Ruler's palace in Luthadel?",
+    "q": "What is the name of the Lord Ruler's palace in the imperial capital?",
     "a": "Kredik Shaw",
     "wrong": [
       "Keep Venture",
@@ -549,7 +548,6 @@
     "explain": "Its name means 'the Hill of a Thousand Spires'.",
     "terms": [
       "Lord Ruler",
-      "Luthadel",
       "Kredik Shaw",
       "Keep Venture",
       "Keep Hasting",
@@ -616,7 +614,7 @@
       "Rashek",
       "Gemmel"
     ],
-    "explain": "Rashek killed Alendi on the journey to the Well and took the power himself.",
+    "explain": "Alendi's own Terris packman killed him on the journey to the Well and took the power himself.",
     "terms": [
       "Hero of Ages",
       "Lord Ruler",
@@ -624,7 +622,7 @@
       "Kwaan",
       "Rashek",
       "Gemmel",
-      "Well of Ascension"
+      "Terris"
     ],
     "source": "The Well of Ascension"
   },
@@ -742,22 +740,22 @@
     "category": "scadrial",
     "difficulty": 1,
     "work": "alloy-of-law",
-    "q": "Which religion of era 2 worships Kelsier?",
+    "q": "Which religion of era 2 reveres the crew leader who inspired the skaa uprising against the Lord Ruler?",
     "a": "Survivorism",
     "wrong": [
       "Pathianism",
       "The Steel Ministry",
       "Trellism"
     ],
-    "explain": "Survivorists revere Kelsier as the Survivor who overthrew the Lord Ruler.",
+    "explain": "Survivorists revere the Survivor as the martyr whose death sparked the fall of the Lord Ruler.",
     "terms": [
-      "Kelsier",
       "Survivorism",
       "Pathianism",
       "Steel Ministry",
       "Trellism",
       "Survivor",
-      "Lord Ruler"
+      "Lord Ruler",
+      "skaa"
     ],
     "source": "The Alloy of Law"
   },
@@ -796,14 +794,13 @@
       "Elend",
       "Marsh"
     ],
-    "explain": "Kelsier clung to the Cognitive Realm and kept working behind the scenes of era 1.",
+    "explain": "Kelsier refused to pass on and kept working behind the scenes of era 1.",
     "terms": [
       "Secret History",
       "Kelsier",
       "Vin",
       "Elend",
-      "Marsh",
-      "Cognitive Realm"
+      "Marsh"
     ],
     "source": "Secret History"
   },
@@ -1003,7 +1000,7 @@
     "a": "Trell",
     "wrong": [
       "Ruin",
-      "Harmony",
+      "Sazed",
       "Preservation"
     ],
     "explain": "The Set's leaders worship Trell, an ancient god of Scadrial, and work against Harmony's plans.",
@@ -1013,7 +1010,8 @@
       "Ruin",
       "Harmony",
       "Preservation",
-      "Scadrial"
+      "Scadrial",
+      "Sazed"
     ],
     "source": "The Lost Metal"
   },
@@ -1029,15 +1027,13 @@
       "The Khlenni",
       "The Koloss-blooded"
     ],
-    "explain": "Like other Malwish, Allik wears a mask and uses medallions to access the Metallic Arts.",
+    "explain": "Like other Malwish, Allik hides his face behind a mask.",
     "terms": [
       "Allik",
       "Malwish",
       "Terris",
       "Khlenni",
-      "Koloss-blooded",
-      "medallion",
-      "Metallic Arts"
+      "Koloss-blooded"
     ],
     "source": "The Bands of Mourning"
   },
@@ -1313,7 +1309,7 @@
     "category": "scadrial",
     "difficulty": 3,
     "work": "hero-of-ages",
-    "q": "Which city was the capital of the Terris Dominance and the seat of the Keepers' Synod?",
+    "q": "Which city was the seat of the Keepers' Synod?",
     "a": "Tathingdwen",
     "wrong": [
       "Urteau",
@@ -1322,7 +1318,6 @@
     ],
     "explain": "Keepers returned there periodically to update their copperminds, until Inquisitors and koloss burned it.",
     "terms": [
-      "Terris Dominance",
       "Keeper",
       "Synod",
       "Tathingdwen",
@@ -1340,7 +1335,7 @@
     "category": "scadrial",
     "difficulty": 3,
     "work": "alloy-of-law",
-    "q": "In which Roughs town did Wax keep the peace before returning to Elendel?",
+    "q": "In which Roughs town did Wax keep the peace before returning to the city?",
     "a": "Weathering",
     "wrong": [
       "Bilming",
@@ -1351,7 +1346,6 @@
     "terms": [
       "Roughs",
       "Wax",
-      "Elendel",
       "Weathering",
       "Bilming",
       "New Seran",
@@ -1417,7 +1411,7 @@
       "The Blessing of Awareness",
       "The Blessing of Stability"
     ],
-    "explain": "TenSoon was created with the Blessing of Presence and later took OreSeur's Blessing of Potency.",
+    "explain": "TenSoon was created with the Blessing of Presence and later also gained the Blessing of Potency.",
     "terms": [
       "kandra",
       "Blessing",
@@ -1425,8 +1419,7 @@
       "Blessing of Presence",
       "Blessing of Awareness",
       "Blessing of Stability",
-      "TenSoon",
-      "OreSeur"
+      "TenSoon"
     ],
     "source": "The Hero of Ages"
   },
@@ -1435,19 +1428,18 @@
     "category": "scadrial",
     "difficulty": 4,
     "work": "well-of-ascension",
-    "q": "In his inscription, Kwaan calls himself a philosopher, a scholar and a what?",
+    "q": "In the inscription quoted in The Well of Ascension's epigraphs, the author calls himself a philosopher, a scholar and a what?",
     "a": "A traitor",
     "wrong": [
       "A prophet",
       "A hero",
       "A Keeper"
     ],
-    "explain": "Kwaan first proclaimed Alendi the Hero of Ages and later betrayed him to stop his quest.",
+    "explain": "He had first proclaimed the Hero of Ages, and later betrayed him to stop his quest.",
     "terms": [
-      "Kwaan",
       "Keeper",
-      "Alendi",
-      "Hero of Ages"
+      "Hero of Ages",
+      "The Well of Ascension"
     ],
     "source": "The Well of Ascension, ch. 4 epigraph"
   },
@@ -1456,16 +1448,16 @@
     "category": "scadrial",
     "difficulty": 4,
     "work": "well-of-ascension",
-    "q": "On what did Kwaan record his final account?",
+    "q": "On what did the author of The Well of Ascension's epigraphs record his final account?",
     "a": "A steel plate",
     "wrong": [
       "A stone wall",
       "A vellum scroll",
       "A clay tablet"
     ],
-    "explain": "Kwaan wrote in steel because, as he says, anything not set in metal cannot be trusted.",
+    "explain": "He wrote in steel because, as he says, anything not set in metal cannot be trusted.",
     "terms": [
-      "Kwaan"
+      "The Well of Ascension"
     ],
     "source": "The Well of Ascension, ch. 1 epigraph"
   },
@@ -1500,21 +1492,22 @@
     "category": "scadrial",
     "difficulty": 4,
     "work": "final-empire",
-    "q": "According to Alendi's logbook, which member of his party was stabbed by a mist spirit?",
+    "q": "According to the logbook Vin reads in The Final Empire, which member of its author's party was stabbed by a mist spirit?",
     "a": "Fedik",
     "wrong": [
       "Rashek",
       "Kwaan",
       "Gemmel"
     ],
-    "explain": "Fedik survived the attack, and Rashek spread rumours that Alendi himself had been the attacker.",
+    "explain": "Fedik survived the attack, and Rashek spread rumours that the logbook's author had been the attacker.",
     "terms": [
-      "Alendi",
       "mist spirit",
       "Fedik",
       "Rashek",
       "Kwaan",
-      "Gemmel"
+      "Gemmel",
+      "Vin",
+      "The Final Empire"
     ],
     "source": "The Final Empire, epigraphs (Alendi's logbook)"
   },
@@ -1732,7 +1725,7 @@
     "category": "scadrial",
     "difficulty": 4,
     "work": "final-empire",
-    "q": "How much did Yeden's skaa rebellion agree to pay Kelsier's crew?",
+    "q": "In The Final Empire, how much did the skaa rebellion agree to pay Kelsier's crew?",
     "a": "Thirty thousand boxings",
     "wrong": [
       "Ten thousand boxings",
@@ -1741,10 +1734,10 @@
     ],
     "explain": "Half was to be paid in advance and half once the job was done; the rebels had saved it for years.",
     "terms": [
-      "Yeden",
       "skaa",
       "Kelsier",
-      "boxing"
+      "boxing",
+      "The Final Empire"
     ],
     "source": "The Final Empire"
   },
@@ -1804,17 +1797,16 @@
     "category": "scadrial",
     "difficulty": 4,
     "work": "secret-history",
-    "q": "In Secret History, what keeps Kelsier from passing into the Beyond after his death?",
+    "q": "In Secret History, what keeps the novella's protagonist from passing into the Beyond after his death?",
     "a": "The power of the Well of Ascension",
     "wrong": [
       "A Hemalurgic spike",
       "Vin's earring",
       "Sazed's copperminds"
     ],
-    "explain": "Kelsier tricked Preservation into revealing that the Well was near, and its power held him as a Cognitive Shadow.",
+    "explain": "He tricked Preservation into revealing that the Well was near, and its power held him as a Cognitive Shadow.",
     "terms": [
       "Secret History",
-      "Kelsier",
       "Beyond",
       "Well of Ascension",
       "Hemalurgy",
@@ -1838,7 +1830,7 @@
       "The Canton of Resource",
       "The Canton of Finance"
     ],
-    "explain": "The Conventical was the Inquisitors' fortress, and Kwaan's steel inscription lay in its depths.",
+    "explain": "The Conventical was the Inquisitors' fortress, and the steel inscription quoted in the epigraphs lay in its depths.",
     "terms": [
       "Canton",
       "Steel Ministry",
@@ -1847,8 +1839,7 @@
       "Canton of Orthodoxy",
       "Canton of Resource",
       "Canton of Finance",
-      "Inquisitor",
-      "Kwaan"
+      "Inquisitor"
     ],
     "source": "The Well of Ascension"
   }

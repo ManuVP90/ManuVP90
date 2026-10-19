@@ -1,4 +1,4 @@
-// Lifeline row (SPEC "Comodines (v2)"): three themed icon buttons under the question,
+// Lifeline row (SPEC "Ayudas (v2)"): three themed icon buttons under the question,
 // a "?" toggle with a short explanation of each, and a live status line.
 // The rules live in components/question.js; this module only renders.
 import { h, svg } from '../dom.js';
@@ -50,10 +50,10 @@ export function lifelineBar(onPick) {
       const b = buttons[k];
       const s = st[k] || { left: false, enabled: false };
       const name = t(`lifeline.${k}.name`);
-      let label = `${name}: ${t(`lifeline.${k}.desc`)}`;
+      let label = t('common.labelled', { label: name, text: t(`lifeline.${k}.desc`) });
       let tip = t(`lifeline.${k}.desc`);
       const blocked = s.left && !s.armed && !s.enabled && s.reason;
-      if (!s.left && !s.armed) { label = t('lifeline.used', { name }); tip = label; } else if (s.armed) { label = t('lifeline.stormlight.armed'); tip = label; } else if (blocked) { label = `${name}: ${s.reason}`; tip = s.reason; }
+      if (!s.left && !s.armed) { label = t('lifeline.used', { name }); tip = label; } else if (s.armed) { label = t('lifeline.stormlight.armed'); tip = label; } else if (blocked) { label = t('common.labelled', { label: name, text: s.reason }); tip = s.reason; }
       if (blocked && !why.includes(s.reason)) why.push(s.reason);
       b.disabled = !s.left || !s.enabled || !!s.armed;
       b.classList.toggle('used', !s.left && !s.armed);

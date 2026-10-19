@@ -4,23 +4,21 @@
     "category": "nalthis",
     "difficulty": 1,
     "work": "warbreaker",
-    "q": "Who is sent to T'Telir to marry the God King of Hallandren?",
+    "q": "Who is sent to Hallandren to marry the God King?",
     "a": "Siri",
     "wrong": [
       "Vivenna",
       "Jewels",
       "Shashara"
     ],
-    "explain": "Siri, the youngest princess of Idris, is sent in place of her older sister Vivenna.",
+    "explain": "Siri, the youngest princess, is sent in place of her older sister.",
     "terms": [
-      "T'Telir",
       "God King",
       "Hallandren",
       "Siri",
-      "Vivenna",
       "Jewels",
       "Shashara",
-      "Idris"
+      "Vivenna"
     ],
     "source": "Warbreaker"
   },
@@ -159,22 +157,22 @@
     "category": "nalthis",
     "difficulty": 1,
     "work": "warbreaker",
-    "q": "Who is the king of Idris and father of Siri and Vivenna?",
+    "q": "Who is the father of Siri and Vivenna?",
     "a": "Dedelin",
     "wrong": [
       "Susebron",
       "Lemex",
       "Vahr"
     ],
-    "explain": "Dedelin sends Siri instead of Vivenna, hoping to keep his heir-trained daughter safe.",
+    "explain": "Dedelin is bound by an old treaty that forces him to send a daughter to the God King.",
     "terms": [
-      "Idris",
       "Siri",
       "Vivenna",
       "Dedelin",
       "Susebron",
       "Lemex",
-      "Vahr"
+      "Vahr",
+      "God King"
     ],
     "source": "Warbreaker"
   },
@@ -269,7 +267,7 @@
     "category": "nalthis",
     "difficulty": 1,
     "work": "warbreaker",
-    "q": "What can members of the Idrian royal family do with their hair?",
+    "q": "What can members of Siri's royal family do with their hair?",
     "a": "Change its color",
     "wrong": [
       "Use it as a weapon",
@@ -278,7 +276,6 @@
     ],
     "explain": "The Royal Locks shift color with emotion, which Siri struggles to control.",
     "terms": [
-      "Idrian",
       "Royal Locks",
       "Siri"
     ],
@@ -314,7 +311,7 @@
       "Shashara",
       "Jewels"
     ],
-    "explain": "Vivenna trained her whole life for the marriage, only to see Siri sent instead.",
+    "explain": "Vivenna trained her whole life for the marriage, only to see her younger sister sent instead.",
     "terms": [
       "God King",
       "Vivenna",
@@ -509,16 +506,15 @@
     "category": "nalthis",
     "difficulty": 2,
     "work": "warbreaker",
-    "q": "Shashara, Vasher's former lover, was the sister of which mercenary?",
+    "q": "Which of Vasher's old companions hates him for killing his sister?",
     "a": "Denth",
     "wrong": [
       "Tonk Fah",
       "Bluefingers",
       "Llarimar"
     ],
-    "explain": "Vasher killed Shashara, which fuels Denth's hatred of him.",
+    "explain": "Vasher killed Denth's sister, and Denth has hated him for it ever since.",
     "terms": [
-      "Shashara",
       "Vasher",
       "Denth",
       "Tonk Fah",
@@ -531,25 +527,22 @@
     "id": "nalthis-025",
     "category": "nalthis",
     "difficulty": 2,
-    "work": "wob",
-    "q": "On Roshar, Vasher goes by Zahel. What does he do for Adolin?",
-    "a": "Teaches him swordplay",
+    "work": "warbreaker",
+    "q": "What color is the God King's palace in T'Telir's Court of Gods?",
+    "a": "Black",
     "wrong": [
-      "Guards his father",
-      "Forges his Shardplate",
-      "Spies on his enemies"
+      "White",
+      "Gold",
+      "Red"
     ],
-    "explain": "Zahel is a sharp-tongued ardent and dueling master in the Kholin warcamp.",
+    "explain": "Susebron lives almost alone in the black palace of the God Kings, kept apart from his people.",
     "terms": [
-      "Roshar",
-      "Vasher",
-      "Zahel",
-      "Adolin",
-      "Shardplate",
-      "ardent",
-      "Kholin"
+      "God King",
+      "T'Telir",
+      "Court of Gods",
+      "Susebron"
     ],
-    "source": "Words of Radiance; Words of Brandon"
+    "source": "Warbreaker; Coppermind: Susebron"
   },
   {
     "id": "nalthis-026",
@@ -559,8 +552,8 @@
     "q": "Under what name does Vivenna appear in Kholinar in Oathbringer?",
     "a": "Azure",
     "wrong": [
-      "Zahel",
-      "Talaxin",
+      "Scarlet",
+      "Indigo",
       "Jewels"
     ],
     "explain": "Vivenna travelled to Roshar and, in Kholinar, became known as the swordswoman Azure.",
@@ -569,8 +562,6 @@
       "Kholinar",
       "Oathbringer",
       "Azure",
-      "Zahel",
-      "Talaxin",
       "Jewels",
       "Roshar"
     ],
@@ -656,7 +647,7 @@
       "Vahr",
       "Treledees"
     ],
-    "explain": "Lemex was being secretly poisoned by Denth, and the sudden Breath leaves Vivenna overwhelmed.",
+    "explain": "Lemex had been secretly poisoned, and the sudden Breath leaves Vivenna overwhelmed.",
     "terms": [
       "Idrian",
       "Breath",
@@ -664,8 +655,7 @@
       "Lemex",
       "Parlin",
       "Vahr",
-      "Treledees",
-      "Denth"
+      "Treledees"
     ],
     "source": "Warbreaker"
   },
@@ -681,7 +671,7 @@
       "Bluefingers",
       "Dedelin"
     ],
-    "explain": "Treledees dies defending Siri and Susebron during the Pahn Kahl rebellion.",
+    "explain": "Treledees dies defending the God King and his queen during the Pahn Kahl rebellion.",
     "terms": [
       "God King",
       "Susebron",
@@ -689,7 +679,6 @@
       "Llarimar",
       "Bluefingers",
       "Dedelin",
-      "Siri",
       "Pahn Kahl"
     ],
     "source": "Warbreaker"
@@ -699,7 +688,7 @@
     "category": "nalthis",
     "difficulty": 2,
     "work": "warbreaker",
-    "q": "How do Siri and Susebron first manage to talk to each other?",
+    "q": "How do the God King and his young bride first manage to talk to each other?",
     "a": "In writing",
     "wrong": [
       "With sign language",
@@ -708,8 +697,6 @@
     ],
     "explain": "Their secret written conversations happen at night in the God King's bedchamber.",
     "terms": [
-      "Siri",
-      "Susebron",
       "Llarimar",
       "Awakened",
       "God King"
@@ -728,7 +715,7 @@
       "Arsteel",
       "Stennimar"
     ],
-    "explain": "As Talaxin, he created Nightblood together with Shashara.",
+    "explain": "Talaxin was his name in the days when the Five Scholars studied Awakening together.",
     "terms": [
       "Five Scholars",
       "Vasher",
@@ -736,8 +723,7 @@
       "Yesteel",
       "Arsteel",
       "Stennimar",
-      "Nightblood",
-      "Shashara"
+      "Awakening"
     ],
     "source": "Warbreaker"
   },
@@ -746,7 +732,7 @@
     "category": "nalthis",
     "difficulty": 3,
     "work": "warbreaker",
-    "q": "Clod, the Lifeless in Denth's crew, was once which of the Five Scholars?",
+    "q": "Before he became the Lifeless called Clod, which of the Five Scholars was he?",
     "a": "Arsteel",
     "wrong": [
       "Yesteel",
@@ -757,7 +743,6 @@
     "terms": [
       "Clod",
       "Lifeless",
-      "Denth",
       "Five Scholars",
       "Arsteel",
       "Yesteel",
@@ -776,7 +761,7 @@
     "a": "Yesteel",
     "wrong": [
       "Arsteel",
-      "Denth",
+      "Talaxin",
       "Shashara"
     ],
     "explain": "Ichor-alcohol replaces a Lifeless's blood and makes it far more durable.",
@@ -786,7 +771,7 @@
       "Lifeless",
       "Yesteel",
       "Arsteel",
-      "Denth",
+      "Talaxin",
       "Shashara"
     ],
     "source": "Warbreaker"
@@ -869,12 +854,11 @@
       "Died of a plague",
       "Was killed by bandits"
     ],
-    "explain": "In life he was Stennimar, the brother of his future high priest Llarimar.",
+    "explain": "In life he was Stennimar, and his own brother later became his high priest.",
     "terms": [
       "Lightsong",
       "Manywar",
-      "Stennimar",
-      "Llarimar"
+      "Stennimar"
     ],
     "source": "Warbreaker"
   },
@@ -906,26 +890,22 @@
     "category": "nalthis",
     "difficulty": 3,
     "work": "warbreaker",
-    "q": "Vasher, Shashara, Arsteel and Yesteel were four of the Five Scholars. Who was the fifth?",
+    "q": "Besides Vasher, which Returned was secretly one of the Five Scholars?",
     "a": "Denth",
     "wrong": [
-      "Llarimar",
-      "Lemex",
-      "Tonk Fah"
+      "Lightsong",
+      "Blushweaver",
+      "Mercystar"
     ],
-    "explain": "Denth, who later led a band of mercenaries in T'Telir, was also a Returned and one of the Five Scholars.",
+    "explain": "For centuries, Denth hid that he was a Returned and one of the Five Scholars.",
     "terms": [
       "Vasher",
-      "Shashara",
-      "Arsteel",
-      "Yesteel",
+      "Returned",
       "Five Scholars",
       "Denth",
-      "Llarimar",
-      "Lemex",
-      "Tonk Fah",
-      "Returned",
-      "T'Telir"
+      "Lightsong",
+      "Blushweaver",
+      "Mercystar"
     ],
     "source": "Warbreaker"
   },
@@ -1173,11 +1153,10 @@
       "A tavern he owned",
       "A pet he kept"
     ],
-    "explain": "Llarimar borrowed the Red Panther for a family trip, and Lightsong later uses its name as a Command phrase.",
+    "explain": "His brother borrowed the Red Panther for a family trip, and Lightsong later uses its name as a Command phrase.",
     "terms": [
       "Lightsong",
       "Red Panther",
-      "Llarimar",
       "Command"
     ],
     "source": "Warbreaker"
@@ -1262,7 +1241,7 @@
       "Arsteel",
       "Yesteel"
     ],
-    "explain": "As Kalad, Vasher created the Phantoms during the Manywar, long before he was revered as Peacegiver.",
+    "explain": "As Kalad, Vasher created the Phantoms during the Manywar.",
     "terms": [
       "Kalad",
       "Kalad's Phantoms",
@@ -1270,8 +1249,7 @@
       "Denth",
       "Arsteel",
       "Yesteel",
-      "Manywar",
-      "Peacegiver"
+      "Manywar"
     ],
     "source": "Warbreaker"
   },
@@ -1287,14 +1265,13 @@
       "The Northern Sea",
       "The Still Sea"
     ],
-    "explain": "Landlocked Idris downplays the sea that lets T'Telir thrive as a port.",
+    "explain": "Landlocked Idris downplays the sea that lets Hallandren's capital thrive as a port.",
     "terms": [
       "Idrian",
       "Hallandren",
       "Bright Sea",
       "Inner Sea",
-      "Idris",
-      "T'Telir"
+      "Idris"
     ],
     "source": "Warbreaker"
   },

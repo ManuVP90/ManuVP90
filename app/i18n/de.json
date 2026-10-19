@@ -12,7 +12,8 @@
     "next": "Nächste Frage",
     "loading": "Wird geladen …",
     "playAgain": "Nochmal spielen",
-    "openSettings": "Einstellungen öffnen"
+    "openSettings": "Einstellungen öffnen",
+    "labelled": "{label}: {text}"
   },
   "home": {
     "continue": "Spiel fortsetzen",
@@ -26,9 +27,12 @@
     "stats": "Statistik",
     "settings": "Einstellungen",
     "about": "Info",
-    "newGameConfirm": "Wenn du ein neues Spiel startest, wird das laufende Spiel verworfen. Fortfahren?",
     "continueQuick": "Schnelles Spiel fortsetzen",
-    "continueQuickDesc": "Frage {n} von {total} · {score} Punkte"
+    "continueQuickDesc": "Frage {n} von {total} · {score} Punkte",
+    "newGameConfirmClassic": "Wenn du ein neues Spiel startest, wird das laufende klassische Spiel verworfen. Fortfahren?",
+    "newGameConfirmQuick": "Wenn du ein neues Spiel startest, wird das laufende schnelle Spiel verworfen. Fortfahren?",
+    "newGameYes": "Neues Spiel starten",
+    "newGameNo": "Zurück"
   },
   "cat": {
     "roshar": "Roschar",
@@ -69,7 +73,7 @@
     "title": "Hilfen",
     "help": "So funktionieren die Hilfen",
     "rules": "Jeder Spieler hat pro Partie jede Hilfe einmal (auch im schnellen Spiel). Bei der Finalfrage und beim Üben gibt es keine Hilfen, und Atium und Sturmlicht lassen sich bei derselben Frage nicht kombinieren.",
-    "used": "{name} (schon benutzt)",
+    "used": "Schon benutzt: {name}",
     "atium": {
       "name": "Atium",
       "desc": "Entfernt zwei falsche Antworten.",
@@ -100,10 +104,11 @@
     "namePlaceholder": "Spieler {n}",
     "color": "Edelsteinfarbe",
     "timer": "30-Sekunden-Timer",
-    "timerHint": "Läuft die Zeit ab, zählt die Antwort als falsch.",
+    "timerHint": "Läuft die Zeit ab, zählt die Antwort als falsch. Die Zeit einer Frage läuft weiter, auch wenn du die App verlässt.",
     "start": "Spiel starten",
     "fewer": "Spieler entfernen",
-    "more": "Spieler hinzufügen"
+    "more": "Spieler hinzufügen",
+    "timerPause": "Ohne Timer kannst du jederzeit pausieren."
   },
   "turn": {
     "passTo": "Gib das Handy weiter an",
@@ -121,7 +126,7 @@
     "landed": "{category}!",
     "chooseTitle": "Joker!",
     "chooseHint": "Wähle eine beliebige Welt",
-    "infusedPick": "{category} ist bereits aufgeladen: Wähle eine andere Welt!"
+    "infusedPick": "Edelstein schon aufgeladen: {category}. Wähle eine andere Welt!"
   },
   "question": {
     "correct": "Richtig!",
@@ -133,9 +138,9 @@
     "progress": "Frage {n} von {total}"
   },
   "classic": {
-    "charge": "+1 Ladung für {category} ({n}/2)",
-    "infused": "Dein {category}-Edelstein ist aufgeladen!",
-    "alreadyInfused": "{category} ist bereits aufgeladen – keine weitere Ladung.",
+    "charge": "+1 Ladung: {category} ({n}/2)",
+    "infused": "Edelstein aufgeladen: {category}",
+    "alreadyInfused": "Edelstein schon aufgeladen: {category}. Keine weitere Ladung.",
     "allInfused": "Alle Edelsteine aufgeladen! Als Nächstes: die Finalfrage.",
     "spinAgain": "Dreh noch einmal!",
     "passTurn": "{name} ist jetzt an der Reihe.",
@@ -150,12 +155,26 @@
     "gem0": "{category}: keine Ladung",
     "gem1": "{category}: 1 Ladung",
     "gem2": "{category}: aufgeladen",
-    "streakPass": "{n} richtige Antworten in Folge! Jetzt ist {name} am Zug."
+    "streakPass": "{n} richtige Antworten in Folge! Jetzt ist {name} am Zug.",
+    "allInfusedNext": "Alle Edelsteine aufgeladen! In deinem nächsten Zug kommt die Finalfrage.",
+    "leaveTimerTitle": "Spiel verlassen?",
+    "leaveTimerBody": "Wenn du gehst, läuft die Zeit der Frage weiter.",
+    "leaveTimerYes": "Verlassen",
+    "leaveTimerNo": "Weiterspielen",
+    "emptySaved": "Das Spiel ist gespeichert: Du kannst es fortsetzen, sobald du mehr Werke auswählst."
   },
   "victory": {
     "title": "{name} gewinnt!",
     "subtitle": "Alle Edelsteine aufgeladen und die Finalfrage gemeistert.",
-    "answered": "Gestellte Fragen: {n}"
+    "answered": "Gestellte Fragen: {n}",
+    "statsTitle": "Spielübersicht",
+    "correct": "Richtig",
+    "correctOf": "{n}/{total}",
+    "accuracy": "Trefferquote",
+    "percent": "{n} %",
+    "lifelines": "Benutzte Hilfen",
+    "gems": "Edelsteine",
+    "duration": "Dauer: {time}"
   },
   "quick": {
     "title": "Schnelles Spiel",
@@ -167,11 +186,15 @@
     "newRecord": "Neuer Rekord!",
     "finished": "Ergebnis",
     "seeResults": "Ergebnis anzeigen",
-    "quitConfirm": "Schnelles Spiel abbrechen? Deine Punkte gehen verloren.",
-    "intro": "{n} Fragen aus allen Welten, je {s} Sekunden. Je schneller du antwortest, desto mehr Punkte gibt es.",
+    "intro": "{n} Fragen aus allen Welten, je {s} Sekunden. Je schneller du antwortest, desto mehr Punkte gibt es. Die Zeit läuft weiter, auch wenn du die App verlässt.",
     "introLifelines": "Du hast jede Hilfe einmal: Atium, Sturmlicht und Hauch.",
     "start": "Los geht’s",
-    "bestScore": "Bestleistung: {n}"
+    "bestScore": "Bestleistung: {n}",
+    "quitTitle": "Schnelles Spiel beenden?",
+    "quitBody": "Deine Punkte aus diesem Spiel gehen verloren.",
+    "quitYes": "Spiel beenden",
+    "quitNo": "Weiterspielen",
+    "emptySaved": "Das Spiel ist gespeichert (Frage {n} von {total}): Du kannst es fortsetzen, sobald du mehr Werke auswählst."
   },
   "practice": {
     "title": "Üben",
@@ -185,7 +208,8 @@
     "tally": "{correct} von {total} richtig",
     "fallback": "Hier gibt es noch keine Fragen der Stufe {level}: Du übst mit Fragen der Stufe {fallback}.",
     "empty": "Hier gibt es noch keine Fragen der Stufe {level}.",
-    "noneFilter": "Keine Fragen verfügbar: Der Spoilerfilter lässt kein Werk mit Fragen übrig. Wähle in den Einstellungen mehr Werke aus."
+    "noneFilter": "Keine Fragen verfügbar: Der Spoilerfilter lässt kein Werk mit Fragen übrig. Wähle in den Einstellungen mehr Werke aus.",
+    "allSeen": "Du hast alle verfügbaren Fragen gesehen; ab jetzt wiederholen sie sich."
   },
   "stats": {
     "title": "Statistik",
@@ -218,7 +242,8 @@
     "reset": "Alle Daten löschen",
     "resetConfirm": "Damit werden Statistik, Rekorde, gespeichertes Spiel und Einstellungen gelöscht. Bist du sicher?",
     "resetDone": "Alle Daten wurden gelöscht.",
-    "storageWarning": "Speicher nicht verfügbar: Einstellungen und Fortschritt gehen beim Schließen der App verloren."
+    "storageWarning": "Speicher nicht verfügbar: Einstellungen und Fortschritt gehen beim Schließen der App verloren.",
+    "resetNo": "Nicht löschen"
   },
   "about": {
     "title": "Info",
@@ -234,17 +259,47 @@
     "levels": "Schwierigkeitsstufen",
     "levelsFinal": "Die Finalfrage im klassischen Spiel ist bei Leicht mittelschwer, bei Normal schwer und bei Schwer und Experte eine Expertenfrage.",
     "lifelines": "Hilfen",
-    "rule5": "Wer beginnt, wird ausgelost. Nach 3 richtigen Antworten in Folge ist trotzdem der nächste Spieler dran."
+    "rule5": "Wer beginnt, wird ausgelost. Nach 3 richtigen Antworten in Folge ist trotzdem der nächste Spieler dran.",
+    "rule6": "Landet das Rad auf einem Edelstein, den du schon aufgeladen hast, wählst du eine andere Welt.",
+    "intro": "Einführung ansehen"
   },
   "errors": {
     "load": "Die Fragen konnten nicht geladen werden. Prüfe deine Verbindung und lade die Seite neu.",
     "noQuestions": "Mit dem aktuellen Spoilerfilter sind keine Fragen verfügbar.",
-    "fallback": "Die Fragen sind in dieser Sprache noch nicht verfügbar und werden auf Englisch angezeigt."
+    "fallback": "Die Fragen sind in dieser Sprache noch nicht verfügbar und werden auf Englisch angezeigt.",
+    "emptyFilter": "Mit dem aktuellen Spoilerfilter gibt es keine Fragen. Wähle in den Einstellungen die Bücher aus, die du gelesen hast."
   },
   "boot": {
     "title": "Etwas ist schiefgelaufen",
     "body": "Die App konnte nicht starten. Möglicherweise sind die gespeicherten Daten beschädigt; sie zu löschen behebt das meistens (das laufende Spiel, die Einstellungen und die Statistik gehen verloren).",
     "reset": "Daten löschen und neu starten",
-    "retry": "Erneut versuchen"
+    "retry": "Erneut versuchen",
+    "confirm": "App-Daten löschen? Das laufende Spiel, die Einstellungen und die Statistik gehen verloren.",
+    "confirmYes": "Ja, löschen und neu starten",
+    "cancel": "Nicht löschen"
+  },
+  "onboarding": {
+    "label": "Einführung",
+    "step": "Schritt {n} von {total}",
+    "skip": "Überspringen",
+    "next": "Weiter",
+    "welcome": "Willkommen",
+    "readTitle": "Was hast du gelesen?",
+    "readHint": "Hake die Bücher ab, die du gelesen hast – dann kommen nur Fragen dazu. Du kannst das jederzeit in den Einstellungen ändern.",
+    "all": "Alles",
+    "none": "Nichts",
+    "noneWarn": "Ohne abgehakte Bücher gibt es keine Fragen.",
+    "rulesTitle": "So wird gespielt",
+    "ruleWheel": "Dreh das Rad: Es bestimmt, aus welcher Welt die Frage kommt. Beim Joker wählst du selbst.",
+    "ruleGems": "Jede richtige Antwort lädt den Edelstein dieser Welt; zwei Ladungen laden ihn ganz auf. Lade alle auf und beantworte die Finalfrage, um zu gewinnen.",
+    "ruleLifelines": "Pro Partie hast du drei Hilfen: Atium entfernt zwei falsche Antworten, Sturmlicht lässt dich neu wählen und Hauch tauscht die Frage aus.",
+    "startTitle": "Alles bereit!",
+    "startBody": "Spiel allein oder gib das Handy weiter. Diese Einführung findest du jederzeit unter „Info“.",
+    "start": "Los geht’s",
+    "showWorks": "Bücher anzeigen: {world}",
+    "readAll": "Ich habe alles gelesen",
+    "orPick": "Oder wähle nur aus, was du gelesen hast:",
+    "pickOne": "Wähle mindestens ein Werk aus, um weiterzumachen.",
+    "skippedNoFilter": "Kein Spoilerfilter: Du bekommst Fragen zu allen Büchern. Das kannst du in den Einstellungen ändern."
   }
 }

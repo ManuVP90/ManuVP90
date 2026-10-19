@@ -81,7 +81,7 @@ export function wheel(categories, onResult) {
 
   const disc = h('div', { class: 'wheel-disc', html: wheelSvg(sectors) });
   const btn = h('button', {
-    type: 'button', class: 'wheel', 'aria-label': `${t('wheel.label')}: ${t('wheel.tapToSpin')}`,
+    type: 'button', class: 'wheel', 'aria-label': t('common.labelled', { label: t('wheel.label'), text: t('wheel.tapToSpin') }),
     onclick: () => spin(),
   }, disc);
   const pointer = h('div', { class: 'wheel-pointer', 'aria-hidden': 'true' });

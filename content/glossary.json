@@ -9025,7 +9025,7 @@
   "Heritage Faction": {
     "es": "Facción del Legado",
     "fr": "faction du Patrimoine",
-    "de": "Erbe-Fraktion",
+    "de": "Fraktion des Erbes",
     "it": "Fazione del Retaggio",
     "status": {
       "es": "unverified",
@@ -9033,13 +9033,13 @@
       "de": "unverified",
       "it": "unverified"
     },
-    "notes": "[es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] Not attested. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] Not attested. [de] Kept glossary form; not independently verified in this pass (search snippets only). ",
+    "notes": "[es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] Not attested. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] Not attested. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": []
   },
   "Glory Faction": {
     "es": "Facción de la Gloria",
     "fr": "Faction de la Gloire",
-    "de": "Ruhm-Fraktion",
+    "de": "Fraktion des Ruhms",
     "it": "Fazione della Gloria",
     "status": {
       "es": "unverified",
@@ -9047,7 +9047,7 @@
       "de": "unverified",
       "it": "unverified"
     },
-    "notes": "[es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] No French source found in searches; glossary form kept as best guess. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] No French source found in searches; glossary form kept as best guess. [de] Kept glossary form; not independently verified in this pass (search snippets only). ",
+    "notes": "[es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] No French source found in searches; glossary form kept as best guess. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] No French source found in searches; glossary form kept as best guess. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": []
   },
   "Strikers": {
@@ -10535,15 +10535,15 @@
   "Dusk": {
     "es": "Sexto del Ocaso",
     "fr": "Crépuscule",
-    "de": "Dämmerung",
+    "de": "Dusk",
     "it": "Vespro",
     "status": {
       "es": "official",
       "fr": "official",
-      "de": "unverified",
+      "de": "unpublished",
       "it": "official"
     },
-    "notes": "Short name of Sixth of the Dusk. [es] Glossary had \"Ocaso\" (unverified). The character is called \"Sexto del Ocaso\" / \"Sexto\" in Spanish blurbs; glossary short form \"Ocaso\" avoided. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [it] m. Short name of the character. Glossary had \"Crepuscolo\". [es] Glossary had \"Ocaso\" (unverified). The character is called \"Sexto del Ocaso\" / \"Sexto\" in Spanish blurbs; glossary short form \"Ocaso\" avoided. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [it] m. Short name of the character. Glossary had \"Crepuscolo\".",
+    "notes": "Short name of Sixth of the Dusk. [es] Glossary had \"Ocaso\" (unverified). The character is called \"Sexto del Ocaso\" / \"Sexto\" in Spanish blurbs; glossary short form \"Ocaso\" avoided. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [it] m. Short name of the character. Glossary had \"Crepuscolo\". [es] Glossary had \"Ocaso\" (unverified). The character is called \"Sexto del Ocaso\" / \"Sexto\" in Spanish blurbs; glossary short form \"Ocaso\" avoided. [de] Kept glossary form; not independently verified in this pass (search snippets only).  [it] m. Short name of the character. Glossary had \"Crepuscolo\". [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": [
       "https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/",
       "https://www.babelio.com/livres/Sanderson-Sixieme-du-crepuscule-et-autres-nouvelles/1064048 ; https://www.elbakin.net/livre/6199/l-ile-de-noirebraise (Crépuscule, Aviares, Panthéon)",
@@ -16554,11 +16554,11 @@
       "fr": "unverified",
       "de": "unverified"
     },
-    "notes": "[es] Proper name; Nova keeps original names. [fr] Personal name left in English pending check; same for Divinity, Salvage. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too.",
+    "notes": "[es] Proper name; Nova keeps original names. [fr] Personal name left in English pending check; same for Divinity, Salvage. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": [],
     "es": "Elegy Salvage",
     "fr": "Elegy Salvage",
-    "de": "Elegy Salvage"
+    "de": "Elegie Salvage"
   },
   "Greater Good": {
     "status": {
@@ -16566,11 +16566,11 @@
       "fr": "unverified",
       "de": "unverified"
     },
-    "notes": "[es] Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Literal. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too.",
+    "notes": "[es] Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Literal. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": [],
     "es": "el Bien Mayor",
     "fr": "Bien Suprême",
-    "de": "Greater Good"
+    "de": "Höheres Wohl"
   },
   "Beacon": {
     "status": {
@@ -16590,11 +16590,11 @@
       "fr": "unverified",
       "de": "unverified"
     },
-    "notes": "[es] Title in Beacon. Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Title. Literal. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too.",
+    "notes": "[es] Title in Beacon. Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Title. Literal. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": [],
     "es": "Estrella Guía",
     "fr": "Étoile-Guide",
-    "de": "Lodestar"
+    "de": "Leitstern"
   },
   "Sunlit One": {
     "status": {
@@ -16602,23 +16602,23 @@
       "fr": "unverified",
       "de": "unverified"
     },
-    "notes": "[es] Rendered \"Iluminada\" for Elegy. Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Matches official book title L’Ensoleillé (The Sunlit Man). [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too.",
+    "notes": "[es] Rendered \"Iluminada\" for Elegy. Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Matches official book title L’Ensoleillé (The Sunlit Man). [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": [],
     "es": "Iluminado",
     "fr": "Ensoleillé",
-    "de": "Sunlit One"
+    "de": "Sonnenbeschienene"
   },
   "Elegy": {
     "status": {
       "es": "unchanged",
       "fr": "unverified",
-      "de": "unverified"
+      "de": "community"
     },
-    "notes": "[es] Proper name; Nova keeps original names. [fr] See Elegy Salvage. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too.",
+    "notes": "[es] Proper name; Nova keeps original names. [fr] See Elegy Salvage. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": [],
     "es": "Elegy",
     "fr": "Elegy",
-    "de": "Elegy"
+    "de": "Elegie"
   },
   "Rebeke": {
     "status": {
@@ -16945,11 +16945,11 @@
       "fr": "unverified",
       "de": "unverified"
     },
-    "notes": "[es] Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Derived from Phare. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too.",
+    "notes": "[es] Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Derived from Phare. [de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": [],
     "es": "los de Faro",
     "fr": "Phariens",
-    "de": "Beaconites"
+    "de": "Beaconiter"
   },
   "Kelzin": {
     "status": {
@@ -17145,9 +17145,9 @@
     "status": {
       "de": "unverified"
     },
-    "notes": "[de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too.",
+    "notes": "[de] Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. [de] Beta-3: synced with content/de/glossary-review.json (form used in the German questions).",
     "sources": [],
-    "de": "Prospector"
+    "de": "Prospektor"
   },
   "Fuzz": {
     "status": {

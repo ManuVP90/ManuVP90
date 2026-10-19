@@ -1,10 +1,15 @@
 // Classic-mode rules (SPEC §2), kept free of DOM code.
 import {
-  CATEGORIES, CHARGES_TO_INFUSE, LIFELINES, LEVEL_IDS, MAX_PLAYERS, MAX_STREAK, fullLifelines, levelOrDefault,
+  CATEGORIES, CHARGES_TO_INFUSE, LIFELINES, LEVEL_IDS, MAX_PLAYERS, MAX_STREAK, TIMER_MS, fullLifelines, levelOrDefault,
 } from './config.js';
 
 // v2 adds the game level and per-player lifelines; v3 adds the random first player, the
-// consecutive-answer limit (streak) and the question deadline. Older saves are migrated on load.
+// consecutive-answer limit (streak) and the question clock. Older saves are migrated on load.
+// Since 1.3.0 the clock stores the time left ({ remaining: ms }) instead of a wall-clock
+// deadline; migrateClock converts the old shape. Since 1.4.0 it also stores `savedAt`, the wall
+// time (epoch ms) at which `remaining` was measured while the question was revealed: the time
+// spent away (Home, another app, a reload) is deducted on return. null = paused / never shown.
+// 1.4.0 also adds per-player stats ({ answered, correct, lifelines }) and the game's play time.
 export const STATE_VERSION = 3;
 export const PHASES = ['handoff', 'spin', 'choose', 'final-intro', 'question', 'won'];
 
@@ -14,7 +19,7 @@ export function newClassicGame({ players, timer, categories, level }) {
   const multi = players.length > 1;
   return {
     v: STATE_VERSION,
-    players: players.map((p) => ({ name: p.name, color: p.color, charges: {}, lifelines: fullLifelines() })),
+    players: players.map((p) => ({ name: p.name, color: p.color, charges: {}, lifelines: fullLifelines(), stats: emptyPlayerStats() })),
     current: multi ? randomIndex(players.length) : 0, // SPEC: the starting player is drawn at random
     phase: multi ? 'handoff' : 'spin',
     first: multi, // show "Starts: {name}" on the first handoff
@@ -23,24 +28,62 @@ export function newClassicGame({ players, timer, categories, level }) {
     level: levelOrDefault(level),
     categories,
     used: {},
-    pending: null, // { id, cat, order, final, fx: { removed, struck, armed }, clock: { deadline } }
+    pending: null, // { id, cat, order, final, fx: { removed, struck, armed }, clock: { remaining } }
     resume: null, // phase to restore after the handoff shown when a saved game is resumed
     asked: 0,
     winner: null,
     startedAt: Date.now(),
+    playMs: 0, // time spent playing (screens of this game on display), for the victory screen
   };
 }
+
+/** Per-player counters shown on the victory screen. */
+export const emptyPlayerStats = () => ({ answered: 0, correct: 0, lifelines: 0 });
+const isValidPlayerStats = (st) => isObj(st) && isInt(st.answered) && isInt(st.correct, 0, st.answered) && isInt(st.lifelines, 0, 3);
 
 // Shape checks shared with the quick game's saved run.
 export const isObj = (o) => !!o && typeof o === 'object' && !Array.isArray(o);
 export const isInt = (n, min = 0, max = Number.MAX_SAFE_INTEGER) => Number.isInteger(n) && n >= min && n <= max;
 export const isPermutation = (a, n) => Array.isArray(a) && a.length === n && [...Array(n).keys()].every((i) => a.includes(i));
-const optIndexes = (a) => Array.isArray(a) && a.length <= 3 && a.every((i) => isInt(i, 1, 3)) && new Set(a).size === a.length;
-/** Lifeline effects on a question ({ removed, struck, armed }); null/undefined means none yet. */
-export const isValidFx = (fx) => fx === undefined || fx === null
-  || (isObj(fx) && optIndexes(fx.removed) && optIndexes(fx.struck) && typeof fx.armed === 'boolean');
-/** Question countdown ({ deadline: epoch ms | null }); null/undefined means not started. */
-export const isValidClock = (c) => c === undefined || c === null || (isObj(c) && (c.deadline === null || Number.isFinite(c.deadline)));
+const optIndexes = (a, max = 3) => Array.isArray(a) && a.length <= max && a.every((i) => isInt(i, 1, 3)) && new Set(a).size === a.length;
+/**
+ * Lifeline effects on a question ({ removed, struck, armed }); null/undefined means none yet.
+ * Atium removes at most 2 wrong options; Stormlight strikes at most 1 (and is no longer armed
+ * then); the two can't be combined on one question, so their effects never coexist.
+ */
+export function isValidFx(fx) {
+  if (fx === undefined || fx === null) return true;
+  if (!isObj(fx) || !optIndexes(fx.removed, 2) || !optIndexes(fx.struck, 1) || typeof fx.armed !== 'boolean') return false;
+  if (fx.removed.some((i) => fx.struck.includes(i))) return false;
+  if (fx.armed && fx.struck.length) return false;
+  if (fx.removed.length && (fx.armed || fx.struck.length)) return false;
+  return true;
+}
+/**
+ * Question countdown ({ remaining: ms left, 0..TIMER_MS, savedAt: epoch ms | null }); null/undefined
+ * means not started. `savedAt` set = the question was revealed and its time keeps running.
+ */
+export const isValidClock = (c) => c === undefined || c === null
+  || (isObj(c) && isInt(c.remaining, 0, TIMER_MS) && (c.savedAt === undefined || c.savedAt === null || typeof c.savedAt === 'number'));
+/** Converts a pre-1.3 clock ({ deadline: epoch ms }) to the time it had left. Other shapes are left as they are. */
+export function migrateClock(c) {
+  if (!isObj(c) || 'remaining' in c || !('deadline' in c)) return c;
+  if (c.deadline === null) return null; // never started
+  if (!Number.isFinite(c.deadline)) return c; // garbage: validation rejects it
+  return { remaining: Math.max(0, Math.min(TIMER_MS, Math.round(c.deadline - Date.now()))), savedAt: null };
+}
+
+/**
+ * Time left on a clock now, deducting the wall time elapsed since it was saved while running.
+ * A negative or unreadable elapsed time counts as 0 (a clock moved backwards gives nothing back).
+ */
+export function clockLeft(c, now = Date.now()) {
+  if (!isObj(c) || !isInt(c.remaining, 0, TIMER_MS)) return TIMER_MS;
+  if (typeof c.savedAt !== 'number') return c.remaining;
+  let away = now - c.savedAt;
+  if (!Number.isFinite(away) || away < 0) away = 0;
+  return Math.max(0, Math.round(c.remaining - away));
+}
 export const isValidLifelines = (l) => isObj(l) && LIFELINES.every((k) => isInt(l[k], 0, 1));
 
 /**
@@ -70,24 +113,31 @@ export function migrateState(s) {
   if (typeof s.first !== 'boolean') s.first = false;
   if (!isObj(s.used) || !Object.values(s.used).every((ids) => Array.isArray(ids) && ids.every((id) => typeof id === 'string'))) s.used = {};
   if (s.resume !== null && s.resume !== undefined && !PHASES.includes(s.resume)) s.resume = null;
+  if (isObj(s.pending) && 'clock' in s.pending) s.pending.clock = migrateClock(s.pending.clock);
   if (Array.isArray(s.players)) {
     for (const p of s.players) {
-      if (!isObj(p) || !isObj(p.lifelines)) continue;
+      if (!isObj(p)) continue;
+      if (!('stats' in p)) p.stats = emptyPlayerStats(); // saves from before 1.4.0
+      if (!isObj(p.lifelines)) continue;
       for (const k of LIFELINES) if (!isInt(p.lifelines[k], 0, 1)) p.lifelines[k] = 0;
     }
+    // Multi-player turns end at MAX_STREAK correct answers, so a higher streak can't be real.
+    if (s.players.length > 1 && s.streak >= MAX_STREAK) s.streak = 0;
   }
+  if (!isInt(s.playMs)) s.playMs = 0;
+  if (s.phase !== 'won') s.winner = null;
   return s;
 }
 
 function isValidPlayer(p) {
   return isObj(p) && typeof p.name === 'string' && p.name.length <= 64 && CATEGORIES.includes(p.color)
-    && isObj(p.charges) && Object.entries(p.charges).every(([c, n]) => CATEGORIES.includes(c) && isInt(n, 0, 99))
-    && isValidLifelines(p.lifelines);
+    && isObj(p.charges) && Object.entries(p.charges).every(([c, n]) => CATEGORIES.includes(c) && isInt(n, 0, CHARGES_TO_INFUSE))
+    && isValidLifelines(p.lifelines) && isValidPlayerStats(p.stats);
 }
 
-function isValidPending(p) {
+function isValidPending(p, categories) {
   if (p === null || p === undefined) return true;
-  if (!isObj(p) || typeof p.id !== 'string' || !p.id || !CATEGORIES.includes(p.cat)) return false;
+  if (!isObj(p) || typeof p.id !== 'string' || !p.id || !CATEGORIES.includes(p.cat) || !categories.includes(p.cat)) return false;
   if (!isPermutation(p.order, 4) || typeof p.final !== 'boolean') return false;
   return isValidFx(p.fx) && isValidClock(p.clock);
 }
@@ -98,13 +148,21 @@ export function isValidState(s) {
     if (!isObj(s) || s.v !== STATE_VERSION) return false;
     if (!Array.isArray(s.players) || s.players.length < 1 || s.players.length > MAX_PLAYERS) return false;
     if (!s.players.every(isValidPlayer)) return false;
+    if (new Set(s.players.map((p) => p.color)).size !== s.players.length) return false; // colors are unique
     if (!isInt(s.current, 0, s.players.length - 1)) return false;
     if (!Array.isArray(s.categories) || !s.categories.length || !s.categories.every((c) => CATEGORIES.includes(c))
       || new Set(s.categories).size !== s.categories.length) return false;
     if (!PHASES.includes(s.phase)) return false;
-    if (!isValidPending(s.pending)) return false;
+    if (!isValidPending(s.pending, s.categories)) return false;
     if (s.phase === 'question' && !s.pending) return false;
     if (s.phase === 'won' && !isInt(s.winner, 0, s.players.length - 1)) return false;
+    if (s.phase === 'handoff' && s.resume === 'question' && !s.pending) return false;
+    // A player with every gem infused only plays the final question, and only they get one.
+    const ready = allInfused(s, s.players[s.current]);
+    const phase = s.phase === 'handoff' ? (s.resume || null) : s.phase;
+    if (s.pending && s.pending.final !== ready) return false;
+    if (ready && (phase === 'spin' || phase === 'choose')) return false;
+    if (!ready && phase === 'final-intro') return false;
     return true;
   } catch {
     return false;

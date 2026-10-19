@@ -240,7 +240,7 @@
   "sources": [
    "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Strahlende_Ritter"
   ],
-  "notes": "Kept glossary form (spot check: no contrary evidence). "
+  "notes": "Kept glossary form (spot check: no contrary evidence).  Beta-3: cosmere-001 no longer lists \"Der Sturmvater\" among bare Shard names; used in cosmere-039 with the article like the other options."
  },
  "Veil": {
   "de": "Schleier",
@@ -255,7 +255,7 @@
    "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
    "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Splitterr%C3%BCstung"
   ],
-  "notes": "Kept glossary form (spot check: no contrary evidence). der/die Strahlende. Also the name of Shallan's persona \"Radiant\" (es Radiante, fr Radieuse, de Strahlende, it Radiosa - persona forms unverified)."
+  "notes": "Kept glossary form (spot check: no contrary evidence). der/die Strahlende. Also the name of Shallan's persona \"Radiant\" (es Radiante, fr Radieuse, de Strahlende, it Radiosa - persona forms unverified). Beta-3: roshar-049 explain now reads \"ganz ohne Strahlendenkräfte\"."
  },
  "Formless": {
   "de": "Formlose",
@@ -507,7 +507,7 @@
   "sources": [
    "https://kosmeer.fandom.com/de/wiki/Nachtschauerin"
   ],
-  "notes": "kosmeer: \"Der Zwilling ... Er ist die Kraft im Turm von Urithiru\" – masculine: der Zwilling."
+  "notes": "kosmeer: \"Der Zwilling ... Er ist die Kraft im Turm von Urithiru\" – masculine: der Zwilling. Beta-3: used as an option in cosmere-039: \"Der Zwilling\"."
  },
  "Nightwatcher": {
   "de": "Nachtschauerin",
@@ -515,7 +515,7 @@
   "sources": [
    "https://kosmeer.fandom.com/de/wiki/Nachtschauerin"
   ],
-  "notes": "Confirmed by kosmeer page title (glossary status \"official\" not independently confirmed). die Nachtschauerin."
+  "notes": "Confirmed by kosmeer page title (glossary status \"official\" not independently confirmed). die Nachtschauerin. Beta-3: cosmere-039: all four options carry the article (Die Bebauerin | Der Sturmvater | Die Nachtschauerin | Der Zwilling)."
  },
  "Bondsmith": {
   "de": "Bindeschmied",
@@ -1341,7 +1341,7 @@
    "https://kosmeer.fandom.com/de/wiki/Sazed",
    "https://kosmeer.fandom.com/de/wiki/Marsch"
   ],
-  "notes": "CHANGED from \"Harmonie\": kosmeer \"erhob sich somit zum Einträchtigen\"; Marsch \"Gehilfe des Einträchtigen\" (era 2). No publisher text seen. HIGH PRIORITY to confirm in Held aller Zeiten / Hüter des Gesetzes."
+  "notes": "CHANGED from \"Harmonie\": kosmeer \"erhob sich somit zum Einträchtigen\"; Marsch \"Gehilfe des Einträchtigen\" (era 2). No publisher text seen. HIGH PRIORITY to confirm in Held aller Zeiten / Hüter des Gesetzes. Beta-3: \"der Einträchtige\" needs an article, so it is no longer used as a distractor in lists of bare Shard names (cosmere-001/008/019/061 now use Ruin/Odium/Autonomie/Gnade instead; scadrial-045 uses Sazed). cosmere-021 rewritten (answer Sazed); the term now only appears in running text."
  },
  "Spook": {
   "de": "Spuki",
@@ -1855,7 +1855,7 @@
   "sources": [
    "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Adonalsium"
   ],
-  "notes": "Kept glossary form (spot check: no contrary evidence). fan wiki keeps English."
+  "notes": "Kept glossary form (spot check: no contrary evidence). fan wiki keeps English. Beta-3: removed as a distractor where it mixed with German names (otros-023, cosmere-045); kept where it is the answer (cosmere-030) or sits with other untranslated names (cosmere-023)."
  },
  "Dominion": {
   "de": "Dominion",
@@ -1863,13 +1863,13 @@
   "sources": [
    "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Adonalsium"
   ],
-  "notes": "Kept glossary form (spot check: no contrary evidence). fan wiki keeps English."
+  "notes": "Kept glossary form (spot check: no contrary evidence). fan wiki keeps English. Beta-3: used in cosmere-023 alongside other names that stay the same in German."
  },
  "Ambition": {
   "de": "Ehrgeiz",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only).  Beta-3: new distractor in otros-023 (Ehrgeiz)."
  },
  "Honor": {
   "de": "Ehr",
@@ -2015,7 +2015,7 @@
   "sources": [
    "https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/Adonalsium"
   ],
-  "notes": "Kept glossary form (spot check: no contrary evidence). German fan wiki keeps \"Endowment\" in English."
+  "notes": "Kept glossary form (spot check: no contrary evidence). German fan wiki keeps \"Endowment\" in English. Beta-3: no published German form beyond the fan wiki's English. Removed as a distractor where it mixed with German Shard names (cosmere-024, otros-023, otros-039); cosmere-023 now lists only names that stay the same in German (Endowment | Devotion | Dominion | Odium); cosmere-030 distractors rebuilt."
  },
  "Austrism": {
   "de": "Austrismus",
@@ -2324,7 +2324,7 @@
   "sources": [
    "https://www.hugendubel.de/de/buch_gebunden/brandon_sanderson-yumi_and_the_nightmare_painter-49301118-produkt-details.html"
   ],
-  "notes": "German edition (Droemer Knaur 2025, transl. Paula Telge) keeps the English title \"Yumi and the Nightmare Painter\"; how the profession is rendered in the text is unconfirmed (glossary had \"official\")."
+  "notes": "German edition (Droemer Knaur 2025, transl. Paula Telge) keeps the English title \"Yumi and the Nightmare Painter\"; how the profession is rendered in the text is unconfirmed (glossary had \"official\"). Beta-3: removed as a distractor from otros-016 (replaced by \"Tempelorakel\") because the German profession name is unattested."
  },
  "Sand Master": {
   "de": "Sandmeister",
@@ -2360,7 +2360,7 @@
   "de": "Design",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Beta-2 (Hannah): Design is female; refer to her as \"die Kryptikerin\"/\"Hoids Begleiterin\", never \"der Kryptiker Design\". cosmere-033 rephrased with \"Welches Sprengsel\" so all four options fit."
  },
  "The Sunlit Man": {
   "de": "Das Herz der Sonne",
@@ -2391,7 +2391,7 @@
    "https://www.amazon.de/Das-Herz-Sonne-Ein-Kosmeer-Roman/dp/3453274407",
    "https://www.lesejury.de/brandon-sanderson/buecher/das-herz-der-sonne/9783453274402"
   ],
-  "notes": "Heyne blurb: \"ein Mann, der sich seit Langem nur noch »der Nomade« nennt\". Use with article: der Nomade, gen. des Nomaden (some reviews write \"Nomad\", but the publisher text uses \"der Nomade\")."
+  "notes": "Heyne blurb: \"ein Mann, der sich seit Langem nur noch »der Nomade« nennt\". Use with article: der Nomade, gen. des Nomaden (some reviews write \"Nomad\", but the publisher text uses \"der Nomade\"). Beta-3: cosmere-020: the answer option is the bare \"Nomade\" so it matches the bare names Hoid/Khriss/Vasher; the article stays in running text."
  },
  "Cinder King": {
   "de": "Zunderkönig",
@@ -2400,7 +2400,7 @@
    "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/",
    "https://buecherbriefe.de/sanderson-herz-der-sonne/"
   ],
-  "notes": "CHANGED from \"Aschenkönig\". der Zunderkönig."
+  "notes": "CHANGED from \"Aschenkönig\". der Zunderkönig. Beta-2: reviews also show \"Zunderherz\" for the heart the Zunderkönig implants (teilzeithelden snippet)."
  },
  "Night Brigade": {
   "de": "Nachtbrigade",
@@ -2445,7 +2445,7 @@
   "de": "Auxiliar",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only).  Beta-1: a search-summary snippet of the Heyne Leseprobe suggested \"Auxilium\" (short \"Aux\"); could not be confirmed, kept \"Auxiliar\"."
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only).  Beta-1: a search-summary snippet of the Heyne Leseprobe suggested \"Auxilium\" (short \"Aux\"); could not be confirmed, kept \"Auxiliar\". Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm."
  },
  "White Sand": {
   "de": "White Sand",
@@ -2485,7 +2485,7 @@
    "https://kosmeer.fandom.com/de/wiki/Odium",
    "https://kosmeer.fandom.com/de/wiki/Nachtschauerin"
   ],
-  "notes": "CHANGED from \"Kultivierung\": kosmeer consistently uses \"die Bebauerin\" (one page has Kultivierung). Use with article: die Bebauerin. Needs check against Heyne text."
+  "notes": "CHANGED from \"Kultivierung\": kosmeer consistently uses \"die Bebauerin\" (one page has Kultivierung). Use with article: die Bebauerin. Needs check against Heyne text. Beta-2 (Hannah): in answer-option lists use the bare name \"Bebauerin\" (like Ehr, Bewahr, Ruin) so the four options share one form; keep the article in running text. Beta-3: cosmere-019 no longer lists Cultivation; cosmere-039 (answer \"Die Bebauerin\") now has article-bearing distractors only: Der Sturmvater, Die Nachtschauerin, Der Zwilling."
  },
  "Sixth of the Dusk": {
   "de": "Sixth of the Dusk",
@@ -2681,7 +2681,7 @@
   "de": "Tapferkeit",
   "status": "unverified",
   "sources": [],
-  "notes": "Shard name; Lightsong is \"Gott der Tapferkeit\" in reviews (Bravery)."
+  "notes": "Shard name; Lightsong is \"Gott der Tapferkeit\" in reviews (Bravery). Beta-3: new distractor in otros-023, otros-039 (Tapferkeit)."
  },
  "The Lost Metal": {
   "de": "Metall der Götter",
@@ -2758,13 +2758,13 @@
   "sources": [
    "https://www.17thshard.com/forums/topic/6487-stormlight-archive-translation-guide/ (reader report of Spanish edition)"
   ],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only).  Beta-3: new distractor in cosmere-061 (Gnade)."
  },
  "Whimsy": {
   "de": "Laune",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). "
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only).  Beta-3: new distractor in cosmere-045 (Laune)."
  },
  "Allmother": {
   "de": "Allmutter",
@@ -3984,25 +3984,25 @@
   "de": "Compassion",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too. Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm. Beta-3: no longer used anywhere (otros-026 rewritten as a vehicle question: Schwebemotorrad)."
  },
  "Contemplation": {
   "de": "Contemplation",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too. Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm. Beta-3: no longer used anywhere (otros-026 rewritten)."
  },
  "Zeal": {
   "de": "Zeal",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too. Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm. Beta-3: no longer used as an option (otros-026 rewritten; otros-029 distractor replaced by Der Sonnenbeschienene / Der Prospektor)."
  },
  "Greater Good": {
   "de": "Höheres Wohl",
   "status": "unverified",
   "sources": [],
-  "notes": "Beacon's ruling body: das Höhere Wohl. Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
+  "notes": "Beacon's ruling body: das Höhere Wohl. Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text. Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm."
  },
  "Beaconites": {
   "de": "Beaconiter",
@@ -4014,25 +4014,25 @@
   "de": "Beacon",
   "status": "unverified",
   "sources": [],
-  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too."
+  "notes": "Das Herz der Sonne (Heyne, transl. Siefener) exists, but the German rendering was not findable (Leseprobe PDF unreachable); golden rule -> English. QA: check Heyne text - Siefener translated Canticum/Zunderkönig/Verkohlte, so these may be translated too. Beta-1: still unattested; kept in English (personal/proper name). Note Elegy is \"Elegie\" in German reviews, so these may be translated too. Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm."
  },
  "Lodestar": {
   "de": "Leitstern",
   "status": "unverified",
   "sources": [],
-  "notes": "Elegy's title in Beacon; masc.: zum Leitstern ernannt. Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
+  "notes": "Elegy's title in Beacon; masc.: zum Leitstern ernannt. Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text. Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm. Usage in options: \"Der Leitstern\" (otros-029, otros-063 rephrased to nominative). Beta-3: no longer an option in otros-029 (it is the answer of otros-063 and leaked from there)."
  },
  "Sunlit One": {
   "de": "Sonnenbeschienene",
   "status": "unverified",
   "sources": [],
-  "notes": "Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
+  "notes": "Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text. Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm. Usage: as a title takes an article (die/der Sonnenbeschienene); answer options in otros-063 now all carry articles. Beta-3: now also a distractor in otros-029: \"Der Sonnenbeschienene\"."
  },
  "Prospector": {
   "de": "Prospektor",
   "status": "unverified",
   "sources": [],
-  "notes": "Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text."
+  "notes": "Beta-1 pass (Hannah): Heyne/Siefener translated Canticum, Zunderkönig, Verkohlte, Elegie and \"der Nomade\", so English forms are almost certainly wrong. No German attestation (publisher blurb, reviews, kosmeer wiki snippets) found for this term; Leseprobe PDF unreachable from this environment. Literal translator rendering used; QA must check against the Heyne text. Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm. Beta-3: now also a distractor in otros-029: \"Der Prospektor\"."
  },
  "Elegy Salvage": {
   "de": "Elegie Salvage",
@@ -4040,7 +4040,7 @@
   "sources": [
    "https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/"
   ],
-  "notes": "Given name per German reviews (Elegie); surname \"Salvage\" kept, not attested in German."
+  "notes": "Given name per German reviews (Elegie); surname \"Salvage\" kept, not attested in German. Beta-2 pass (2026-10-17): searched Heyne/Penguin blurbs, German reviews (teilzeithelden.de, himmelsblau.org, buecherbriefe.de, bücher.de, LovelyBooks) and kosmeer.fandom.com/de snippets via WebSearch: still no German attestation; the Heyne Leseprobe PDF and review pages are blocked from this environment. Status stays unverified; QA with the Heyne book should confirm."
  },
  "Elegy": {
   "de": "Elegie",
@@ -4324,5 +4324,11 @@
   "status": "unverified",
   "sources": [],
   "notes": "See Aviar."
+ },
+ "koloss": {
+  "de": "Koloss",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "der Koloss, des Kolosses, pl. die Kolosse. Beta-3: genitive singular is \"eines Kolosses\" (pl. die Kolosse); fixed in scadrial-009."
  }
 }

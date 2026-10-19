@@ -143,19 +143,17 @@ svg { display: block; }
 .topbar-right { grid-area: right; display: flex; justify-content: flex-end; }
 .topbar-title {
   grid-area: title; min-width: 0; margin: 0; text-align: center;
-  font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; letter-spacing: .01em;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; letter-spacing: .01em; line-height: 1.2;
+  /* Long titles (a long player name) wrap onto a second line before being shortened with an ellipsis. */
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;
+  overflow: hidden; overflow-wrap: anywhere;
 }
 .topbar-spacer { width: 48px; flex: none; }
-/* "Turn of {name}": only the name is shortened. */
-.turn-title { display: flex; justify-content: center; min-width: 0; }
-.turn-fix { flex: none; white-space: pre; }
-.turn-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* "Turn of {name}": wraps between the words (and inside a very long name) like any title. */
+.turn-title, .turn-fix, .turn-name { display: inline; }
 @container topbar (max-width: 16em) {
   .topbar-row { grid-template-columns: auto 1fr auto; grid-template-areas: "back . right" "title title title"; row-gap: 4px; }
-  .topbar-title { white-space: normal; overflow: visible; overflow-wrap: break-word; hyphens: auto; line-height: 1.2; }
-  .turn-title { flex-wrap: wrap; }
-  .turn-fix { white-space: pre-wrap; }
+  .topbar-title { display: block; overflow: visible; hyphens: auto; }
 }
 
 .icon-btn {
@@ -247,7 +245,7 @@ svg { display: block; }
 .menu-icon svg { width: 24px; height: 24px; }
 .menu-text { display: flex; flex-direction: column; min-width: 0; }
 .menu-title { font-weight: 700; font-size: 1.12rem; }
-.menu-desc { color: var(--text-dim); font-size: .92rem; overflow: hidden; text-overflow: ellipsis; }
+.menu-desc { color: var(--text-dim); font-size: .92rem; hyphens: auto; overflow-wrap: break-word; }
 .menu-primary, .menu-continue {
   border-color: color-mix(in srgb, var(--accent) 55%, transparent);
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 22%, transparent), var(--surface));
@@ -255,10 +253,12 @@ svg { display: block; }
 }
 .menu-primary .menu-icon, .menu-continue .menu-icon { background: var(--accent); color: var(--accent-ink); }
 
-.small-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: auto; padding-top: 6px; }
+/* Three equal buttons in a row; with big text (200 %) they wrap onto more rows instead of being cut. */
+.small-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 6px; }
 .small-btn {
+  flex: 1 1 4.5em; /* never narrower than its longest word (min-width: auto), so labels wrap between words */
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
-  min-height: 68px; padding: 8px 4px;
+  min-height: 68px; padding: 8px 6px; text-align: center; overflow-wrap: break-word; max-width: 100%;
   border-radius: var(--radius-sm); border: 1px solid var(--border);
   background: var(--surface); color: var(--text); font-size: .9rem; font-weight: 600;
 }
@@ -311,20 +311,25 @@ svg { display: block; }
 /* Compact board (game screens): a grid that always shows every player, never a hidden carousel. */
 .board.compact .board-list { display: grid; grid-template-columns: repeat(var(--cols, 2), minmax(0, 1fr)); gap: 6px; }
 .board.compact .board-player { min-width: 0; padding: 6px 8px 6px 6px; gap: 8px; }
-.board.compact .board-name { font-size: .9rem; }
+.board.compact .board-name { font-size: .9rem; line-height: 1.25; }
+/* Long names on the compact board: up to two lines, then an ellipsis. */
+.board.compact .board-name {
+  white-space: normal; overflow-wrap: anywhere;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;
+}
 .board.compact .gems { gap: 2px; flex-wrap: nowrap; }
 /* Dense grid (3+ players, or a narrow/zoomed screen): the player's gem color is the left edge,
    so the name and the mini gems get the whole cell. */
 .board.compact { container: board / inline-size; }
 .board.compact.dense .board-player { flex-direction: column; align-items: stretch; gap: 3px; padding: 5px 6px 5px 8px; border-left: 4px solid var(--pc, var(--border)); }
 .board.compact.dense .board-player .avatar { display: none; }
-.board.compact.dense .board-name { font-size: .82rem; line-height: 1.5; }
+.board.compact.dense .board-name { font-size: .82rem; line-height: 1.3; }
 .board.compact.dense .gems { gap: 1px; justify-content: space-between; }
 .board.compact.dense .board-info { gap: 3px; }
 @container board (max-width: 21em) {
   .board-list .board-player { flex-direction: column; align-items: stretch; gap: 3px; padding: 5px 6px 5px 8px; border-left: 4px solid var(--pc, var(--border)); }
   .board-list .board-player .avatar { display: none; }
-  .board-list .board-name { font-size: .82rem; line-height: 1.5; }
+  .board-list .board-name { font-size: .82rem; line-height: 1.3; }
   .board-list .gems { gap: 1px; justify-content: space-between; }
   .board-list .board-info { gap: 3px; }
 }
@@ -765,3 +770,86 @@ svg { display: block; }
 .boot-error-title { margin: 0; font-family: var(--font-display); font-size: 1.6rem; }
 .boot-gem-broken { background: var(--bad); animation: none; opacity: .85; }
 .practice-empty { display: flex; flex-direction: column; gap: 10px; }
+
+/* boot error: one-step confirmation before clearing data */
+.boot-confirm { margin-top: auto; display: flex; flex-direction: column; gap: 10px; }
+.boot-confirm-msg { margin: 0 0 4px; padding: 12px 14px; border-radius: var(--radius-sm); background: var(--bad-bg); color: var(--text); border: 1px solid var(--bad); font-weight: 600; }
+
+/* wheel: the "already infused" rule stays on screen a little longer */
+.wheel-status.notice {
+  padding: 10px 14px; border-radius: var(--radius-sm); cursor: pointer;
+  background: color-mix(in srgb, var(--gold) 16%, transparent); border: 1px solid color-mix(in srgb, var(--gold) 60%, transparent);
+  color: var(--text); font-weight: 700;
+}
+
+/* spoiler picker (settings + introduction) */
+.spoiler-summary { margin: 8px 0 0; }
+.spoiler-warn { margin-top: 8px; }
+.group-line { display: flex; align-items: center; gap: 4px 8px; flex-wrap: wrap; }
+.group-line .group-row { flex: 1 1 7em; min-width: 0; }
+.group-line .group-name { min-width: 0; overflow-wrap: anywhere; }
+/* With big text the counter drops below the world name instead of overflowing the card. */
+.group-line .work-toggle { margin-left: auto; max-width: 100%; }
+.work-toggle {
+  flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; min-width: 44px; padding: 6px 10px;
+  border-radius: 999px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text-dim);
+  font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.work-chevron { width: 8px; height: 8px; border: solid currentColor; border-width: 0 2px 2px 0; transform: translateY(-2px) rotate(45deg); transition: transform .15s; }
+.work-toggle[aria-expanded="true"] .work-chevron { transform: translateY(2px) rotate(-135deg); }
+.work-group.collapsed { margin-top: 4px; }
+
+/* first-run introduction */
+.onb-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding-top: 6px; }
+.onb-dots { display: flex; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.onb-dots li { width: 22px; height: 6px; border-radius: 99px; background: var(--surface-2); }
+.onb-dots li.on { background: var(--accent); }
+.onb-step { margin: 0; color: var(--text-dim); font-weight: 600; flex: 1; min-width: max-content; }
+.onb-skip { margin-left: auto; }
+.onb-kicker { margin: 4px 0 0; color: var(--accent); font-weight: 700; letter-spacing: .02em; }
+.onb-title { margin: 0; font-family: var(--font-display); font-size: 1.7rem; line-height: 1.15; }
+.onb-works { padding-top: 10px; }
+.onb-rules { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.onb-rules li {
+  display: flex; align-items: center; gap: 14px; padding: 14px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border);
+}
+.onb-rules p { margin: 0; }
+.onb-art { flex: none; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 3px; width: 80px; line-height: 0; }
+.onb-final { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; margin: auto 0; }
+.onb-final-icon { width: 72px; height: 72px; color: var(--gold); }
+.onb-final-icon svg { width: 100%; height: 100%; }
+@media (max-width: 360px) { .onb-rules li { flex-direction: column; align-items: flex-start; } .onb-art { width: auto; } }
+.about-intro { margin-top: 6px; }
+
+/* first-run introduction, step 1: "I've read everything" shortcut, the reason "Next" is off */
+.onb-readall { margin-top: 4px; }
+.onb-or { margin: 4px 0 0; text-align: center; font-weight: 600; }
+.onb-why { margin: 0; text-align: center; font-weight: 600; color: var(--text); }
+.onb-actions { gap: 8px; }
+/* With very big text the bar would cover the list: it then simply follows the content. */
+@media (max-height: 600px) { .onboarding .onb-actions { position: static; margin-bottom: 0; } }
+
+/* spoiler filter leaves no question */
+.empty-filter { display: flex; flex-direction: column; gap: 10px; }
+.empty-filter .banner { margin: 0; }
+.setup-timer-note { margin: 6px 0 0; font-size: .9rem; }
+.practice-repeat { margin: 0 0 8px; }
+
+/* victory: per-player summary */
+.victory-meta { margin: 0; font-variant-numeric: tabular-nums; }
+.vstats { width: 100%; text-align: left; }
+.vstats-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.vstats-player {
+  padding: 10px 12px; border-radius: var(--radius-sm); background: var(--surface);
+  border: 1px solid var(--border); border-left: 4px solid var(--pc, var(--border));
+}
+.vstats-player.winner { border-color: color-mix(in srgb, var(--gold) 60%, transparent); border-left-color: var(--pc, var(--gold)); }
+.vstats-head { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.vstats-name { font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
+.vstats-trophy { width: 20px; height: 20px; flex: none; color: var(--gold); }
+.vstats-trophy svg { width: 100%; height: 100%; }
+.vstats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(6.5em, 1fr)); gap: 6px 12px; margin: 8px 0 0; }
+.vstat { margin: 0; min-width: 0; }
+.vstat dt { font-size: .8rem; color: var(--text-dim); }
+.vstat dd { margin: 0; font-weight: 700; font-variant-numeric: tabular-nums; }

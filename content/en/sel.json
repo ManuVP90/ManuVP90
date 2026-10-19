@@ -133,15 +133,14 @@
       "Daa",
       "Ehe"
     ],
-    "explain": "Like every seon, Ashe is named after an Aon, which glows at its center.",
+    "explain": "Ashe is Sarene's loyal seon and one of her most trusted advisers.",
     "terms": [
       "Sarene",
       "seon",
       "Ashe",
       "Ien",
       "Daa",
-      "Ehe",
-      "Aon"
+      "Ehe"
     ],
     "source": "Elantris"
   },
@@ -172,21 +171,18 @@
     "category": "sel",
     "difficulty": 1,
     "work": "elantris",
-    "q": "What was the catastrophe that ruined Elantris ten years before the novel?",
-    "a": "The Reod",
+    "q": "How many years before the novel did the Reod bring Elantris down?",
+    "a": "Ten",
     "wrong": [
-      "The Shaod",
-      "The Hoed",
-      "The Dakhor"
+      "Five",
+      "Twenty",
+      "Fifty"
     ],
-    "explain": "In the Reod, Elantrians lost their powers and their city fell into filth and decay.",
+    "explain": "Elantris has lain in ruin for a decade when Raoden is thrown into it.",
     "terms": [
       "Elantris",
       "Reod",
-      "Shaod",
-      "Hoed",
-      "Dakhor",
-      "Elantrian"
+      "Raoden"
     ],
     "source": "Elantris"
   },
@@ -259,23 +255,22 @@
     "category": "sel",
     "difficulty": 1,
     "work": "elantris",
-    "q": "Who is Sarene's uncle, living in Kae with his family?",
+    "q": "Who is Sarene's uncle, whose family welcomes her in Arelon?",
     "a": "Kiin",
     "wrong": [
       "Shuden",
       "Ahan",
       "Eondel"
     ],
-    "explain": "Kiin is the brother of King Eventeo of Teod and a superb cook.",
+    "explain": "Kiin is the brother of Sarene's father, King Eventeo, and a superb cook.",
     "terms": [
       "Sarene",
-      "Kae",
       "Kiin",
       "Shuden",
       "Ahan",
       "Eondel",
       "Eventeo",
-      "Teod"
+      "Arelon"
     ],
     "source": "Elantris"
   },
@@ -284,20 +279,16 @@
     "category": "sel",
     "difficulty": 1,
     "work": "elantris",
-    "q": "What is the community Raoden builds inside the fallen city called?",
-    "a": "New Elantris",
+    "q": "What does Raoden give the Elantrians to help them endure their constant pain?",
+    "a": "Work to keep them busy",
     "wrong": [
-      "Kae",
-      "Teod",
-      "Dakhor"
+      "Medicine smuggled from outside",
+      "Daily prayers",
+      "Extra food from the city outside"
     ],
-    "explain": "Raoden unites the city's gangs and gives the Elantrians work to fight their pain.",
+    "explain": "Raoden realizes that keeping busy helps the Elantrians bear their pain.",
     "terms": [
       "Raoden",
-      "New Elantris",
-      "Kae",
-      "Teod",
-      "Dakhor",
       "Elantrian"
     ],
     "source": "Elantris"
@@ -356,7 +347,7 @@
     "category": "sel",
     "difficulty": 2,
     "work": "elantris",
-    "q": "How long does the Wyrn give Hrathen to convert Arelon before Fjorden destroys it?",
+    "q": "How long does the Wyrn give Hrathen to convert Arelon before his empire destroys it?",
     "a": "Three months",
     "wrong": [
       "One month",
@@ -367,8 +358,7 @@
     "terms": [
       "Wyrn",
       "Hrathen",
-      "Arelon",
-      "Fjorden"
+      "Arelon"
     ],
     "source": "Elantris"
   },
@@ -443,17 +433,16 @@
     "category": "sel",
     "difficulty": 2,
     "work": "elantris",
-    "q": "How does Hrathen stage a fake 'cure' for the Shaod?",
+    "q": "How does Hrathen stage a fake 'cure' after he is thrown into Elantris?",
     "a": "He drinks a mimicking potion",
     "wrong": [
       "He forges a soulstamp",
       "He bribes the guards",
       "He draws an Aon"
     ],
-    "explain": "After being locked in Elantris, he takes an antidote and claims Jaddeth cured him.",
+    "explain": "He takes an antidote and claims Jaddeth cured him.",
     "terms": [
       "Hrathen",
-      "Shaod",
       "Elantris",
       "Jaddeth",
       "Aon"
@@ -580,22 +569,23 @@
     "category": "sel",
     "difficulty": 2,
     "work": "elantris",
-    "q": "What is Raoden's seon, which loses its sanity after his Shaod, called?",
+    "q": "What is the name of Raoden's seon, which goes mad after Raoden's transformation?",
     "a": "Ien",
     "wrong": [
       "Ashe",
       "Rao",
       "Ati"
     ],
-    "explain": "A seon whose master is taken by the broken Shaod goes mad.",
+    "explain": "A seon whose master becomes an Elantrian after the Reod goes mad.",
     "terms": [
       "Raoden",
       "seon",
-      "Shaod",
       "Ien",
       "Ashe",
       "Rao",
-      "Ati"
+      "Ati",
+      "Elantrian",
+      "Reod"
     ],
     "source": "Elantris"
   },
@@ -719,24 +709,22 @@
     "category": "sel",
     "difficulty": 3,
     "work": "elantris",
-    "q": "Which member of Kiin's family has been secretly hidden as an Elantrian?",
+    "q": "Which member of Sarene's uncle's family has been secretly hidden as an Elantrian?",
     "a": "Adien",
     "wrong": [
       "Lukel",
       "Daorn",
       "Kaise"
     ],
-    "explain": "Kiin and Daora hid Adien's Shaod so he would not be thrown into Elantris.",
+    "explain": "His parents hid Adien's transformation so he would not be thrown into Elantris.",
     "terms": [
-      "Kiin",
       "Elantrian",
       "Adien",
       "Lukel",
       "Daorn",
       "Kaise",
-      "Daora",
-      "Shaod",
-      "Elantris"
+      "Elantris",
+      "Sarene"
     ],
     "source": "Elantris"
   },
@@ -798,7 +786,7 @@
       "Zu",
       "Ashravan"
     ],
-    "explain": "Unlike the other arbiters, Gaotona comes to see Forgery as a true art.",
+    "explain": "Unlike the other arbiters, Gaotona comes to see Shai's craft as a true art.",
     "terms": [
       "Gaotona",
       "Shai",
@@ -813,20 +801,17 @@
     "category": "sel",
     "difficulty": 1,
     "work": "emperors-soul",
-    "q": "In which empire is The Emperor's Soul set?",
-    "a": "The Rose Empire",
+    "q": "In The Emperor's Soul, how many days does Shai have to create the emperor's new soul?",
+    "a": "One hundred",
     "wrong": [
-      "Fjorden",
-      "Arelon",
-      "Teod"
+      "Thirty",
+      "Forty-nine",
+      "Three hundred"
     ],
-    "explain": "Ashravan is the forty-ninth emperor of the Rose Empire.",
+    "explain": "The emperor's absence is hidden behind a hundred-day mourning period for his late wife.",
     "terms": [
-      "Rose Empire",
-      "Fjorden",
-      "Arelon",
-      "Teod",
-      "Ashravan"
+      "The Emperor's Soul",
+      "Shai"
     ],
     "source": "The Emperor's Soul"
   },
@@ -862,12 +847,11 @@
       "A soulstamp",
       "The Imperial seal"
     ],
-    "explain": "The Imperial Fool betrayed her, swapping her copy back for the real scepter.",
+    "explain": "A trusted accomplice betrayed her, swapping her copy back for the real scepter.",
     "terms": [
       "Shai",
       "Moon Scepter",
-      "soulstamp",
-      "Imperial Fool"
+      "soulstamp"
     ],
     "source": "The Emperor's Soul"
   },
@@ -883,10 +867,9 @@
       "1 year",
       "10 days"
     ],
-    "explain": "If Ashravan did not reappear in time, the Heritage Faction would lose power.",
+    "explain": "If Ashravan did not reappear in time, his faction would lose power.",
     "terms": [
-      "Ashravan",
-      "Heritage Faction"
+      "Ashravan"
     ],
     "source": "The Emperor's Soul"
   },
@@ -1089,23 +1072,22 @@
     "category": "sel",
     "difficulty": 2,
     "work": "arcanum",
-    "q": "Which Shard Splintered Devotion and Dominion on Sel?",
+    "q": "Which Shard Splintered the two Shards whose power is trapped around Sel?",
     "a": "Odium",
     "wrong": [
       "Ambition",
       "Honor",
       "Ruin"
     ],
-    "explain": "Odium attacked the two Shards and left their power trapped around Sel.",
+    "explain": "Odium struck them down long ago, and their scattered power now fuels the Dor.",
     "terms": [
       "Shard",
-      "Devotion",
-      "Dominion",
       "Sel",
       "Odium",
       "Ambition",
       "Honor",
-      "Ruin"
+      "Ruin",
+      "Dor"
     ],
     "source": "Arcanum Unbounded, Selish system essay"
   },
@@ -1121,7 +1103,7 @@
       "A Splinter of Odium",
       "A gift of Jaddeth"
     ],
-    "explain": "Odium sealed the Investiture of the Splintered Devotion and Dominion in Sel's Cognitive Realm, where it forms the Dor.",
+    "explain": "The Investiture of two Splintered Shards is trapped in Sel's Cognitive Realm, where it forms the Dor.",
     "terms": [
       "Dor",
       "Shard",
@@ -1130,10 +1112,9 @@
       "Odium",
       "Jaddeth",
       "Investiture",
-      "Devotion",
-      "Dominion",
       "Sel",
-      "Cognitive Realm"
+      "Cognitive Realm",
+      "Splintered"
     ],
     "source": "Arcanum Unbounded, Selish system essay"
   },
@@ -1168,22 +1149,23 @@
     "category": "sel",
     "difficulty": 3,
     "work": "elantris",
-    "q": "Who kills the Dakhor monk Dilaf in the climax of Elantris?",
+    "q": "Who kills the Derethi priest Dilaf in the climax of Elantris?",
     "a": "Hrathen",
     "wrong": [
       "Raoden",
       "Eondel",
       "Galladon"
     ],
-    "explain": "Hrathen reveals his own Dakhor-trained strength to kill Dilaf before succumbing to his wounds.",
+    "explain": "Hrathen kills Dilaf to save Sarene before succumbing to his own wounds.",
     "terms": [
-      "Dakhor",
       "Dilaf",
       "Elantris",
       "Hrathen",
       "Raoden",
       "Eondel",
-      "Galladon"
+      "Galladon",
+      "Derethi",
+      "Sarene"
     ],
     "source": "Elantris"
   },
@@ -1237,19 +1219,19 @@
     "category": "sel",
     "difficulty": 3,
     "work": "elantris",
-    "q": "What did Raoden have to add to the Aons to make AonDor work again?",
+    "q": "What did Raoden have to add to the Aons to make Elantris's magic work again?",
     "a": "A line representing the chasm",
     "wrong": [
       "A circle around each Aon",
       "A second Aon overlapping it",
       "A dot at the center of each Aon"
     ],
-    "explain": "The earthquake of the Reod opened a chasm that changed the land the Aons mirror, so every Aon needed a new line for it.",
+    "explain": "The Reod changed the very land the Aons mirror, so every Aon needed a new line for it.",
     "terms": [
       "Raoden",
       "Aon",
-      "AonDor",
-      "Reod"
+      "Reod",
+      "Elantris"
     ],
     "source": "Elantris"
   },
@@ -1258,17 +1240,16 @@
     "category": "sel",
     "difficulty": 3,
     "work": "emperors-soul",
-    "q": "Once Shai's soulstamp works on Ashravan, how often must it be applied?",
+    "q": "Once Shai's soulstamp restores the emperor, how often must it be applied?",
     "a": "Every day",
     "wrong": [
       "Once a month",
       "Once a year",
       "Never again"
     ],
-    "explain": "The Forged soul does not take permanently, so Ashravan must be restamped each day.",
+    "explain": "The Forged soul does not take permanently, so the emperor must be restamped each day.",
     "terms": [
-      "Shai",
-      "Ashravan"
+      "Shai"
     ],
     "source": "The Emperor's Soul"
   },
@@ -1277,17 +1258,16 @@
     "category": "sel",
     "difficulty": 3,
     "work": "emperors-soul",
-    "q": "Who betrayed Shai during the theft of the Moon Scepter?",
+    "q": "Who betrayed Shai during the theft that got her arrested?",
     "a": "The Imperial Fool",
     "wrong": [
       "Captain Zu",
       "Arbiter Gaotona",
       "The Bloodsealer"
     ],
-    "explain": "The Imperial Fool swapped the scepters and gave Shai up to the palace guards.",
+    "explain": "The Imperial Fool swapped her copy back for the original and gave Shai up to the palace guards.",
     "terms": [
       "Shai",
-      "Moon Scepter",
       "Imperial Fool",
       "Zu",
       "Gaotona",
@@ -1461,17 +1441,16 @@
     "category": "sel",
     "difficulty": 4,
     "work": "elantris",
-    "q": "What physical trace did Hrathen keep from his time at the Dakhor monastery?",
+    "q": "What physical trace did Hrathen keep from his early training as a monk?",
     "a": "A nearly indestructible bone in his forearm",
     "wrong": [
       "An Aon carved into his chest",
       "A soulstamp mark on his neck",
       "Eyes that see in darkness"
     ],
-    "explain": "Hrathen left Dakhor for another monastery, but one altered forearm bone remained, giving him great strength.",
+    "explain": "He left that monastery for another, but one altered forearm bone remained, giving him great strength.",
     "terms": [
       "Hrathen",
-      "Dakhor",
       "Aon"
     ],
     "source": "Elantris"
@@ -1527,17 +1506,16 @@
     "category": "sel",
     "difficulty": 4,
     "work": "hope-of-elantris",
-    "q": "In The Hope of Elantris, what is the name of the building where Matisse looks after the children?",
+    "q": "In The Hope of Elantris, what is the name of the building where the children of New Elantris are cared for?",
     "a": "The Roost",
     "wrong": [
       "The Nest",
       "The Fold",
       "The Cradle"
     ],
-    "explain": "The Roost is the nursery of New Elantris, where Matisse helps care for the children.",
+    "explain": "The Roost is New Elantris's nursery, where the story's young heroine helps look after the other children.",
     "terms": [
       "The Hope of Elantris",
-      "Matisse",
       "Roost",
       "New Elantris"
     ],
@@ -1548,16 +1526,15 @@
     "category": "sel",
     "difficulty": 4,
     "work": "hope-of-elantris",
-    "q": "Who is Matisse's adoptive father in The Hope of Elantris?",
+    "q": "In The Hope of Elantris, who is the adoptive father of the story's young heroine?",
     "a": "Dashe",
     "wrong": [
       "Galladon",
       "Aanden",
       "Mareshe"
     ],
-    "explain": "Dashe, Karata's second in command, brought Matisse to Karata's palace after the Shaod took her.",
+    "explain": "Dashe, Karata's second in command, brought her to Karata's palace after the Shaod took her.",
     "terms": [
-      "Matisse",
       "The Hope of Elantris",
       "Dashe",
       "Galladon",
@@ -1573,21 +1550,21 @@
     "category": "sel",
     "difficulty": 4,
     "work": "hope-of-elantris",
-    "q": "Which Aon does Matisse draw to lure and blind the pursuing soldiers?",
+    "q": "In The Hope of Elantris, which Aon is drawn to lure and blind the pursuing soldiers?",
     "a": "Ashe",
     "wrong": [
       "Daa",
       "Ehe",
       "Tia"
     ],
-    "explain": "Aon Ashe creates light, which Matisse uses first as a lure and then to dazzle the soldiers.",
+    "explain": "Aon Ashe creates light, which the young heroine uses first as a lure and then to dazzle the soldiers.",
     "terms": [
       "Aon",
-      "Matisse",
       "Ashe",
       "Daa",
       "Ehe",
-      "Tia"
+      "Tia",
+      "The Hope of Elantris"
     ],
     "source": "The Hope of Elantris"
   },

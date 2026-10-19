@@ -177,14 +177,14 @@
   },
   {
     "id": "scadrial-017",
-    "q": "¿Qué kandra ocupó en secreto el lugar de OreSeur junto a Vin?",
+    "q": "¿Qué kandra mató en secreto al kandra que acompañaba a Vin y ocupó su lugar?",
     "a": "TenSoon",
     "wrong": [
       "MeLaan",
       "KanPaar",
       "VenDell"
     ],
-    "explain": "Zane ordenó a TenSoon matar a OreSeur y suplantarlo para espiar a Vin."
+    "explain": "Zane ordenó a TenSoon matar al kandra de Vin y suplantarlo para espiarla."
   },
   {
     "id": "scadrial-018",
@@ -221,14 +221,14 @@
   },
   {
     "id": "scadrial-021",
-    "q": "¿Cómo se llamaba la esposa de Kelsier, que murió en los Pozos de Hathsin?",
+    "q": "¿Cómo se llamaba la esposa del Superviviente, que murió en los Pozos de Hathsin?",
     "a": "Mare",
     "wrong": [
       "Shan",
       "Tindwyl",
       "Valette"
     ],
-    "explain": "Mare, una ojo de estaño, fue encerrada en los Pozos junto a Kelsier y murió allí."
+    "explain": "Mare, una ojo de estaño, fue encerrada en los Pozos junto a su marido y murió allí."
   },
   {
     "id": "scadrial-022",
@@ -265,7 +265,7 @@
   },
   {
     "id": "scadrial-025",
-    "q": "¿Cómo se llama el palacio del lord Legislador en Luthadel?",
+    "q": "¿Cómo se llama el palacio del lord Legislador en la capital imperial?",
     "a": "Kredik Shaw",
     "wrong": [
       "La Fortaleza Venture",
@@ -305,7 +305,7 @@
       "Rashek",
       "Gemmel"
     ],
-    "explain": "Rashek mató a Alendi durante el viaje al Pozo y tomó el poder para sí."
+    "explain": "Su propio porteador terrisano mató a Alendi durante el viaje al Pozo y tomó el poder para sí."
   },
   {
     "id": "scadrial-029",
@@ -364,14 +364,14 @@
   },
   {
     "id": "scadrial-034",
-    "q": "¿Qué religión de la segunda era venera a Kelsier?",
+    "q": "¿Qué religión de la segunda era venera al cabecilla de la banda que inspiró la rebelión skaa contra el lord Legislador?",
     "a": "El supervivencialismo",
     "wrong": [
       "La Senda",
       "El Ministerio del Acero",
       "El trellismo"
     ],
-    "explain": "Los supervivencialistas veneran a Kelsier como el Superviviente que derrocó al lord Legislador."
+    "explain": "Los supervivencialistas veneran al Superviviente como el mártir cuya muerte desencadenó la caída del lord Legislador."
   },
   {
     "id": "scadrial-035",
@@ -393,7 +393,7 @@
       "Elend",
       "Marsh"
     ],
-    "explain": "Kelsier se aferró al Reino Cognitivo y siguió actuando entre bastidores durante la primera era."
+    "explain": "Kelsier se negó a marcharse y siguió actuando entre bastidores durante la primera era."
   },
   {
     "id": "scadrial-037",
@@ -489,7 +489,7 @@
     "a": "A Trell",
     "wrong": [
       "A Ruina",
-      "A Armonía",
+      "A Sazed",
       "A Conservación"
     ],
     "explain": "Los líderes del Grupo adoran a Trell, un antiguo dios de Scadrial, y conspiran contra los planes de Armonía."
@@ -503,7 +503,7 @@
       "A los khlenni",
       "A los de sangre koloss"
     ],
-    "explain": "Como otros malwish, Allik lleva máscara y usa medallones para acceder a las Artes Metálicas."
+    "explain": "Como otros malwish, Allik oculta el rostro tras una máscara."
   },
   {
     "id": "scadrial-047",
@@ -628,7 +628,7 @@
   },
   {
     "id": "scadrial-058",
-    "q": "¿Qué ciudad era la capital del Dominio de Terris y la sede del Sínodo de los Guardadores?",
+    "q": "¿Qué ciudad era la sede del Sínodo de los Guardadores?",
     "a": "Tathingdwen",
     "wrong": [
       "Urteau",
@@ -639,7 +639,7 @@
   },
   {
     "id": "scadrial-059",
-    "q": "¿En qué pueblo de los Áridos mantenía Wax el orden antes de volver a Elendel?",
+    "q": "¿En qué pueblo de los Áridos mantenía Wax el orden antes de volver a la ciudad?",
     "a": "Weathering",
     "wrong": [
       "Bilming",
@@ -679,29 +679,29 @@
       "La Bendición de la Consciencia",
       "La Bendición de la Estabilidad"
     ],
-    "explain": "TenSoon fue creado con la Bendición de la Presencia y más tarde tomó la Bendición de la Potencia de OreSeur."
+    "explain": "TenSoon fue creado con la Bendición de la Presencia y más tarde obtuvo también la Bendición de la Potencia."
   },
   {
     "id": "scadrial-063",
-    "q": "En su inscripción, Kwaan se describe como filósofo, erudito y... ¿qué más?",
+    "q": "En la inscripción citada en los epígrafes de El Pozo de la Ascensión, su autor se describe como filósofo, erudito y... ¿qué más?",
     "a": "Traidor",
     "wrong": [
       "Profeta",
       "Héroe",
       "Guardador"
     ],
-    "explain": "Kwaan proclamó primero a Alendi Héroe de las Eras y después lo traicionó para detener su búsqueda."
+    "explain": "Primero proclamó al Héroe de las Eras y después lo traicionó para detener su búsqueda."
   },
   {
     "id": "scadrial-064",
-    "q": "¿Sobre qué dejó Kwaan su relato final?",
+    "q": "¿Sobre qué dejó su relato final el autor de los epígrafes de El Pozo de la Ascensión?",
     "a": "Una plancha de acero",
     "wrong": [
       "Un muro de piedra",
       "Un rollo de vitela",
       "Una tablilla de arcilla"
     ],
-    "explain": "Kwaan escribió en acero porque, según dice, no se puede confiar en nada que no esté grabado en metal."
+    "explain": "Escribió en acero porque, según dice, no se puede confiar en nada que no esté grabado en metal."
   },
   {
     "id": "scadrial-065",
@@ -716,14 +716,14 @@
   },
   {
     "id": "scadrial-066",
-    "q": "Según el diario de Alendi, ¿a qué miembro de su grupo apuñaló un espíritu de la bruma?",
+    "q": "Según el diario que lee Vin en El imperio final, ¿a qué miembro del grupo de su autor apuñaló un espíritu de la bruma?",
     "a": "A Fedik",
     "wrong": [
       "A Rashek",
       "A Kwaan",
       "A Gemmel"
     ],
-    "explain": "Fedik sobrevivió al ataque, y Rashek difundió el rumor de que el agresor había sido el propio Alendi."
+    "explain": "Fedik sobrevivió al ataque, y Rashek difundió el rumor de que el agresor había sido el propio autor del diario."
   },
   {
     "id": "scadrial-067",
@@ -826,7 +826,7 @@
   },
   {
     "id": "scadrial-076",
-    "q": "¿Cuánto acordó pagar la rebelión skaa de Yeden a la banda de Kelsier?",
+    "q": "En El imperio final, ¿cuánto acordó pagar la rebelión skaa a la banda de Kelsier?",
     "a": "Treinta mil cuartos",
     "wrong": [
       "Diez mil cuartos",
@@ -859,14 +859,14 @@
   },
   {
     "id": "scadrial-079",
-    "q": "En Historia secreta, ¿qué impide a Kelsier pasar al Más Allá tras su muerte?",
+    "q": "En Historia secreta, ¿qué impide al protagonista pasar al Más Allá tras su muerte?",
     "a": "El poder del Pozo de la Ascensión",
     "wrong": [
       "Un clavo hemalúrgico",
       "El pendiente de Vin",
       "Las mentecobres de Sazed"
     ],
-    "explain": "Kelsier engañó a Conservación para que le revelara que el Pozo estaba cerca, y su poder lo retuvo como sombra cognitiva."
+    "explain": "Engañó a Conservación para que le revelara que el Pozo estaba cerca, y su poder lo retuvo como sombra cognitiva."
   },
   {
     "id": "scadrial-080",
@@ -877,6 +877,6 @@
       "El Cantón de Recursos",
       "El Cantón de Finanzas"
     ],
-    "explain": "El Convento era la fortaleza de los Inquisidores, y la inscripción en acero de Kwaan estaba en sus profundidades."
+    "explain": "El Convento era la fortaleza de los Inquisidores, y la inscripción en acero citada en los epígrafes estaba en sus profundidades."
   }
 ]

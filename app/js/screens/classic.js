@@ -1,18 +1,18 @@
 // Classic mode: setup, turn handoff, wheel, wildcard, questions, final question, victory.
 import { h, svg } from '../dom.js';
 import { ICONS, gemSvg } from '../icons.js';
-import { t } from '../i18n.js';
+import { t, num } from '../i18n.js';
 import {
   app, go, screen, topBar, iconButton, toggle, toast, makePool, recordAnswer, recordLifeline,
-  updateStats, catStyle, setBack, onCleanup, levelPicker, levelBadge,
+  updateStats, catStyle, setBack, onCleanup, levelPicker, levelBadge, confirmDialog, noQuestionsBanner, filterIsEmpty,
 } from '../core.js';
 import * as store from '../storage.js';
 import { CATEGORIES, MIN_PLAYERS, MAX_PLAYERS, MAX_STREAK, LEVELS, levelOrDefault, fullLifelines } from '../config.js';
-import { cleanName } from '../text.js';
-import { newClassicGame, isValidState, migrateState, applyAnswer, startPhase, isInfused } from '../game.js';
+import { cleanName, initialOf } from '../text.js';
+import { newClassicGame, isValidState, migrateState, applyAnswer, startPhase, isInfused, allInfused, infusedCount, emptyPlayerStats } from '../game.js';
 import { shuffledOrder } from '../data.js';
 import { fx, confetti } from '../fx.js';
-import { questionView, emptyFx } from '../components/question.js';
+import { questionView, emptyFx, newClock } from '../components/question.js';
 import { wheel, WILDCARD } from '../components/wheel.js';
 import { board, avatar, gemRow, lifelinesLeft } from '../components/board.js';
 
@@ -33,7 +33,7 @@ export function loadSavedGame() {
   try {
     const oldVersion = raw?.v;
     const s = migrateState(raw);
-    if (!isValidState(s) || s.phase === 'won') { store.remove(SAVE_KEY); return null; }
+    if (!isValidState(s) || s.phase === 'won' || !pendingMatchesData(s)) { store.remove(SAVE_KEY); return null; }
     if (oldVersion !== s.v) store.save(SAVE_KEY, s); // keep the upgraded save
     return s;
   } catch (e) {
@@ -43,7 +43,25 @@ export function loadSavedGame() {
   }
 }
 
+/** A pending question that exists in the data must belong to the category the save says. */
+function pendingMatchesData(s) {
+  if (!s.pending) return true;
+  const q = app.questions.find((x) => x.id === s.pending.id);
+  return !q || q.c === s.pending.cat;
+}
+
+// Play time for the victory screen: the time between saves while this game is on screen, each
+// gap capped (a phone left on the table for an hour doesn't count as an hour of play).
+const MAX_GAP_MS = 5 * 60 * 1000;
+let activeSince = null;
+function trackTime() {
+  const t0 = performance.now();
+  if (activeSince !== null && state) state.playMs = (state.playMs || 0) + Math.round(Math.min(MAX_GAP_MS, Math.max(0, t0 - activeSince)));
+  activeSince = t0;
+}
+
 function save() {
+  trackTime();
   if (state.phase === 'won') store.remove(SAVE_KEY);
   else store.save(SAVE_KEY, state);
 }
@@ -82,9 +100,14 @@ export function setupScreen(params = {}) {
     list.replaceChildren(...players.map((p, i) => {
       const inputId = `pname-${i}`;
       const input = h('input', {
-        id: inputId, type: 'text', class: 'text-input', value: p.name, maxlength: '16', autocomplete: 'off',
+        id: inputId, type: 'text', class: 'text-input', value: p.name, maxlength: '24', autocomplete: 'off',
         autocapitalize: 'words', enterkeyhint: 'next', placeholder: t('setup.namePlaceholder', { n: i + 1 }),
-        oninput: (e) => { p.name = e.target.value; },
+        oninput: (e) => {
+          p.name = e.target.value;
+          // Live avatar initial while typing (the number when the name is empty).
+          const ini = input.closest('.setup-player')?.querySelector('.avatar-initial');
+          if (ini) ini.textContent = initialOf(p.name, String(i + 1));
+        },
       });
       const swatches = h('div', { class: 'swatches', role: 'radiogroup', 'aria-label': `${t('setup.color')} — ${t('setup.player', { n: i + 1 })}` },
         CATEGORIES.map((c) => h('button', {
@@ -102,7 +125,7 @@ export function setupScreen(params = {}) {
         })));
       return h('li', { class: 'setup-player card', ...catStyle(p.color) },
         h('div', { class: 'setup-player-row' },
-          avatar(p.color, p.name || String(i + 1), 44),
+          avatar(p.color, p.name.trim() ? p.name : String(i + 1), 44),
           h('div', { class: 'grow' },
             h('label', { for: inputId, class: 'field-label' }, t('setup.player', { n: i + 1 })),
             input)),
@@ -111,10 +134,11 @@ export function setupScreen(params = {}) {
   }
   renderList();
 
+  const empty = filterIsEmpty();
   function start() {
     const pool = makePool({});
     const categories = pool.categories();
-    if (!categories.length) { toast(t('errors.noQuestions')); return; }
+    if (!categories.length) { toast(t('errors.emptyFilter')); return; }
     const named = players.map((p, i) => ({ name: cleanName(p.name) || t('setup.namePlaceholder', { n: i + 1 }), color: p.color }));
     store.save('lastPlayers', players.map((p) => ({ name: cleanName(p.name), color: p.color })));
     state = newClassicGame({ players: named, timer, categories, level });
@@ -125,14 +149,16 @@ export function setupScreen(params = {}) {
 
   return screen('setup',
     topBar(t('setup.title')),
+    empty ? noQuestionsBanner() : null,
     h('section', { class: 'card stepper-card' },
       h('span', { class: 'row-label', id: 'pcount' }, t('setup.playerCount')),
       h('div', { class: 'stepper', role: 'group', 'aria-labelledby': 'pcount' }, minus, countLabel, plus)),
     list,
     levelPicker(level, (l) => { level = l; }),
-    h('section', { class: 'card' }, toggle(t('setup.timer'), timer, (v) => { timer = v; }, { hint: t('setup.timerHint') })),
+    h('section', { class: 'card' }, toggle(t('setup.timer'), timer, (v) => { timer = v; }, { hint: t('setup.timerHint') }),
+      h('p', { class: 'muted setup-timer-note' }, t('setup.timerPause'))),
     h('div', { class: 'sticky-actions' },
-      h('button', { type: 'button', class: 'btn btn-primary btn-block', onclick: start }, svg(ICONS.play), t('setup.start'))),
+      h('button', { type: 'button', class: 'btn btn-primary btn-block', onclick: start, disabled: empty }, svg(ICONS.play), t('setup.start'))),
   );
 }
 
@@ -140,19 +166,51 @@ export function setupScreen(params = {}) {
 function ensureState() {
   if (!state) state = loadSavedGame();
   if (!state) return false;
-  // Respect the current spoiler filter: drop categories that no longer have questions.
+  const before = JSON.stringify([state.categories, state.phase, state.resume]);
+  // Respect the current spoiler filter: drop categories that no longer have questions, except
+  // the one of a question already drawn (it stays pending, see questionPhase).
   const available = makePool(state.used).categories();
   if (available.length) {
-    const kept = state.categories.filter((c) => available.includes(c));
+    const kept = state.categories.filter((c) => available.includes(c) || c === state.pending?.cat);
     state.categories = kept.length ? kept : available;
   }
+  // Fewer categories can complete a player's gems: keep the final-question phases consistent.
+  const ready = allInfused(state, cur());
+  if (!state.pending) {
+    if (ready && (state.phase === 'spin' || state.phase === 'choose')) state.phase = 'final-intro';
+    if (!ready && state.phase === 'final-intro') state.phase = 'spin';
+    // Keep the phase a resumed game returns to after the handoff (a wildcard choice stays a
+    // choice); only fix it when the gems no longer match it.
+    if (state.phase === 'handoff' && state.resume) {
+      if (ready && ['spin', 'choose'].includes(state.resume)) state.resume = 'final-intro';
+      if (!ready && state.resume === 'final-intro') state.resume = null;
+    }
+  }
+  // A solo game never needs the pass-the-phone screen.
+  if (state.players.length === 1 && state.phase === 'handoff') {
+    state.phase = state.resume || (state.pending ? 'question' : startPhase(state));
+    state.resume = null;
+  }
+  if (JSON.stringify([state.categories, state.phase, state.resume]) !== before) save();
   return true;
 }
 
 const cur = () => state.players[state.current];
+let liveQuestion = null; // the question card on screen (classic), to know if its timer is running
 
-function leave() {
+/**
+ * Home / Back. On a revealed question with the timer on, the time keeps running while away
+ * (no free thinking time), so the player confirms first.
+ */
+async function leave() {
+  if (state?.phase === 'question' && liveQuestion?.timerRunning?.() && document.contains(liveQuestion)) {
+    const ok = await confirmDialog(t('classic.leaveTimerBody'), {
+      title: t('classic.leaveTimerTitle'), okLabel: t('classic.leaveTimerYes'), cancelLabel: t('classic.leaveTimerNo'),
+    });
+    if (!ok || !state) return;
+  }
   save();
+  activeSince = null;
   go('home');
 }
 
@@ -172,7 +230,7 @@ function turnTitle(name) {
 /**
  * A saved game resumed from Home (after a reload or after leaving): in multi-player games the
  * phone may be in anyone's hands, so the pass-the-phone screen comes first and the pending
- * question (with its running deadline) is only revealed after "Ready".
+ * question is only revealed after "Ready" (its clock is stopped until then).
  */
 function applyResume() {
   if (state.players.length > 1 && state.phase !== 'handoff' && state.phase !== 'won') {
@@ -182,10 +240,22 @@ function applyResume() {
   }
 }
 
+/** The spoiler filter leaves no question for this game: say so instead of spinning forever. */
+function noQuestionsView() {
+  return screen('classic-empty', gameBar(t('home.classic')),
+    noQuestionsBanner(),
+    h('p', { class: 'muted center' }, t('classic.emptySaved')),
+    h('div', { class: 'stack-actions' },
+      h('button', { type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '', onclick: leave }, t('common.home'))));
+}
+
 export function classicScreen(params = {}) {
+  liveQuestion = null;
   if (!ensureState()) { setTimeout(() => go('home')); return screen('', h('h1', {}, t('common.loading'))); }
   if (params.resume) applyResume();
+  if (activeSince === null) activeSince = performance.now();
   setBack(leave);
+  if (!state.pending && state.phase !== 'won' && !makePool(state.used).categories().length) return noQuestionsView();
   switch (state.phase) {
     case 'handoff': return handoffView();
     case 'spin': return spinView();
@@ -230,15 +300,19 @@ function spinView() {
   const p = cur();
   const status = h('p', { class: 'wheel-status', 'aria-live': 'polite' }, t('wheel.tapToSpin'));
   const spinBtn = h('button', { type: 'button', class: 'btn btn-primary btn-block', onclick: () => w.spin() }, svg(ICONS.refresh), t('wheel.spin'));
+  let el = null;
   const w = wheel(state.categories, (result) => {
     spinBtn.disabled = true;
+    let delay = 1100;
     if (result === WILDCARD) {
       status.textContent = t('wheel.landed', { category: t('wheel.wildcard') });
       state.phase = 'choose';
     } else if (isInfused(p, result)) {
       // An already-infused gem gives nothing, so it acts as a wildcard among the gems still to infuse.
       status.textContent = t('wheel.infusedPick', { category: t(`cat.${result}`) });
+      status.classList.add('notice');
       state.phase = 'choose';
+      delay = 2500; // a rule worth reading: stays ~2.5 s, or until tapped
     } else {
       status.textContent = t('wheel.landed', { category: t(`cat.${result}`) });
       status.setAttribute('style', `--cat: var(--c-${result})`);
@@ -246,17 +320,21 @@ function spinView() {
       setPending(result, false);
     }
     save();
-    const timer = setTimeout(() => go('classic'), 1100);
-    onCleanup(() => clearTimeout(timer));
+    let moved = false;
+    const next = () => { if (!moved) { moved = true; go('classic'); } };
+    const timer = setTimeout(next, delay);
+    if (delay > 1100) setTimeout(() => el?.addEventListener('click', next), 0);
+    onCleanup(() => { moved = true; clearTimeout(timer); });
   });
   w.querySelector('.wheel').addEventListener('click', () => { spinBtn.disabled = true; status.textContent = t('wheel.spinning'); });
   spinBtn.addEventListener('click', () => { spinBtn.disabled = true; status.textContent = t('wheel.spinning'); });
 
-  return screen('spin', gameBar(turnTitle(p.name)),
+  el = screen('spin', gameBar(turnTitle(p.name)),
     board(state, { compact: true }),
     w,
     status,
     h('div', { class: 'sticky-actions' }, spinBtn));
+  return el;
 }
 
 function chooseView() {
@@ -303,13 +381,17 @@ function setPending(cat, final) {
 
 function questionPhase() {
   const pool = makePool(state.used);
-  let q = state.pending && pool.get(state.pending.id);
-  if (!q) { // question vanished (filter/data changed): draw again
+  // A question already drawn stays pending even if the spoiler filter now hides it: changing the
+  // settings must not give a free re-draw (or a fresh timer). Only a question that no longer
+  // exists in the data is replaced, and it keeps the time it had left.
+  let q = state.pending && pool.getAny(state.pending.id);
+  if (!q) {
     const final = !!state.pending?.final;
+    const clock = state.pending?.clock;
     q = final ? pool.drawFinal(state.categories, LEVELS[levelOrDefault(state.level)].final)
       : pool.drawLeveled(state.pending?.cat || state.categories[0], state.level);
-    if (!q) { state.pending = null; state.phase = 'spin'; save(); return spinView(); }
-    state.pending = { id: q.id, cat: q.c, order: shuffledOrder(), final };
+    if (!q) { state.pending = null; state.phase = startPhase(state); save(); return classicScreen(); }
+    state.pending = { id: q.id, cat: q.c, order: shuffledOrder(), final, ...(clock ? { clock } : {}) };
     save();
   }
   const p = cur();
@@ -323,6 +405,7 @@ function questionPhase() {
     fx: (pend.fx ||= emptyFx()),
     onUse: (kind) => {
       p.lifelines[kind] = Math.max(0, (p.lifelines[kind] || 0) - 1);
+      (p.stats ||= emptyPlayerStats()).lifelines++;
       recordLifeline(kind);
       if (kind === 'breath') {
         const alt = pool.drawAlternative(q);
@@ -336,19 +419,22 @@ function questionPhase() {
     },
     onChange: save,
   };
-  if (state.timer) pend.clock ||= { deadline: null };
-  return screen('question', gameBar(pend.final ? t('question.final') : turnTitle(p.name)),
-    questionView({
+  if (state.timer) pend.clock ||= newClock();
+  liveQuestion = questionView({
       question: q, order: pend.order, timer: state.timer, clock: pend.clock, onClockChange: save, final: pend.final, top, lifelines,
       onAnswer: ({ correct }) => {
         recordAnswer(q.c, correct);
+        const st = (p.stats ||= emptyPlayerStats());
+        st.answered++;
+        if (correct) st.correct++;
         const res = applyAnswer(state, correct);
         if (res.won) updateStats((s) => { s.classicGames++; });
         save();
         return feedbackFor(res, p);
       },
       onContinue: () => go('classic'),
-    }));
+    });
+  return screen('question', gameBar(pend.final ? t('question.final') : turnTitle(p.name)), liveQuestion);
 }
 
 function feedbackFor(res, player) {
@@ -359,8 +445,11 @@ function feedbackFor(res, player) {
     if (res.alreadyInfused) lines.push(t('classic.alreadyInfused', { category: cat }));
     else if (res.infused) { lines.push(t('classic.infused', { category: cat })); setTimeout(() => fx.infuse(), 350); }
     else lines.push(t('classic.charge', { category: cat, n: res.charges }));
-    if (res.streakEnd) lines.push(t('classic.streakPass', { n: MAX_STREAK, name: res.next }));
-    else lines.push(res.allInfused ? t('classic.allInfused') : t('classic.spinAgain'));
+    if (res.streakEnd) {
+      // The 3rd answer in a row can also infuse the last gem: say both, the final comes next turn.
+      if (res.allInfused) lines.push(t('classic.allInfusedNext'));
+      lines.push(t('classic.streakPass', { n: MAX_STREAK, name: res.next }));
+    } else lines.push(res.allInfused ? t('classic.allInfused') : t('classic.spinAgain'));
   } else {
     if (res.final) lines.push(t('classic.finalFail'));
     lines.push(state.players.length > 1 ? t('classic.passTurn', { name: res.next }) : t('classic.soloMiss'));
@@ -372,6 +461,37 @@ function feedbackFor(res, player) {
   ];
 }
 
+/** "1:05:09" / "12:04" from milliseconds. */
+function formatDuration(ms) {
+  const total = Math.max(0, Math.round((ms || 0) / 1000));
+  const hh = Math.floor(total / 3600);
+  const mm = Math.floor((total % 3600) / 60);
+  const ss = String(total % 60).padStart(2, '0');
+  return hh ? `${hh}:${String(mm).padStart(2, '0')}:${ss}` : `${mm}:${ss}`;
+}
+
+/** Per-player summary on the victory screen: right answers, accuracy, lifelines used, gems. */
+function playerStats() {
+  const rows = state.players.map((p, i) => {
+    const st = p.stats || emptyPlayerStats();
+    const acc = st.answered ? Math.round((st.correct / st.answered) * 100) : 0;
+    const item = (cls, label, value) => h('div', { class: `vstat ${cls}` }, h('dt', {}, label), h('dd', {}, value));
+    return h('li', { class: `vstats-player ${i === state.winner ? 'winner' : ''}`, '--pc': `var(--c-${p.color})` },
+      h('div', { class: 'vstats-head' },
+        avatar(p.color, p.name, 32),
+        h('span', { class: 'vstats-name' }, p.name),
+        i === state.winner ? svg(ICONS.trophy, 'vstats-trophy') : null),
+      h('dl', { class: 'vstats-grid' },
+        item('vstat-correct', t('victory.correct'), t('victory.correctOf', { n: num(st.correct), total: num(st.answered) })),
+        item('vstat-acc', t('victory.accuracy'), t('victory.percent', { n: num(acc) })),
+        item('vstat-lifelines', t('victory.lifelines'), num(st.lifelines)),
+        item('vstat-gems', t('victory.gems'), t('victory.correctOf', { n: num(infusedCount(state, p)), total: num(state.categories.length) }))));
+  });
+  return h('section', { class: 'vstats', 'aria-labelledby': 'vstats-title' },
+    h('h2', { class: 'section-title', id: 'vstats-title' }, t('victory.statsTitle')),
+    h('ol', { class: 'vstats-list' }, rows));
+}
+
 function victoryView() {
   const winner = state.players[state.winner ?? state.current];
   const el = screen('victory',
@@ -379,21 +499,26 @@ function victoryView() {
       svg(ICONS.trophy, 'victory-trophy'),
       h('h1', { class: 'victory-title' }, t('victory.title', { name: winner.name })),
       h('p', { class: 'lead' }, t('victory.subtitle')),
-      board(state),
-      h('p', { class: 'muted' }, t('victory.answered', { n: state.asked }))),
+      h('p', { class: 'muted victory-meta' },
+        h('span', { class: 'victory-duration' }, t('victory.duration', { time: formatDuration(state.playMs) })),
+        ' · ',
+        h('span', {}, t('victory.answered', { n: state.asked }))),
+      playerStats()),
     h('div', { class: 'stack-actions' },
       h('button', {
         type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '',
         onclick: () => {
+          // Same players, colors, timer and level: straight back to a prefilled setup.
           const players = state.players.map((p) => ({ name: p.name, color: p.color }));
           const timer = state.timer;
           const level = state.level;
           state = null;
+          activeSince = null;
           go('classic-setup', { players, timer, level });
         },
-      }, t('common.playAgain')),
-      h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: () => { state = null; go('home'); } }, t('common.home'))));
-  setBack(() => { state = null; go('home'); });
+      }, svg(ICONS.refresh), t('common.playAgain')),
+      h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: () => { state = null; activeSince = null; go('home'); } }, t('common.home'))));
+  setBack(() => { state = null; activeSince = null; go('home'); });
   requestAnimationFrame(() => { confetti(el); fx.victory(); });
   return el;
 }

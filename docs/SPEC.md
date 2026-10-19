@@ -28,16 +28,19 @@ se pasa el móvil entre jugadores). Funciona sin conexión.
 ### Modos
 1. **Partida clásica** (1–6 jugadores o equipos, pasar el móvil).
    - **Quién empieza se sortea** al crear la partida; la primera pantalla de «pasa el móvil» lo anuncia («Empieza: {nombre}»).
-   - En cada turno gira la **ruleta** de 7 sectores: las 6 categorías + *Comodín* (el jugador elige categoría). Si cae en una gema ya infundida, actúa como comodín entre las que faltan.
-   - Pregunta de opción múltiple (4 opciones, 1 correcta) con temporizador opcional (30 s). El plazo se guarda con la pregunta pendiente: recargar, salir o pulsar Atrás no lo reinicia, y si vence mientras tanto cuenta como fallo por tiempo.
+   - En cada turno gira la **ruleta** de 7 sectores: las 6 categorías + *Comodín* (el jugador elige categoría). Si cae en una gema ya infundida, el jugador elige otro mundo entre los que faltan (el aviso se mantiene ~2,5 s o hasta tocarlo, y la regla figura en «Acerca de»).
+   - Pregunta de opción múltiple (4 opciones, 1 correcta) con temporizador opcional (30 s). **Decisión (1.4.0): una vez mostrada la pregunta, su tiempo corre en tiempo real aunque el jugador salga** (Inicio, otra app, pantalla bloqueada, recarga): salir no da tiempo para pensar. Se guarda el tiempo restante con la hora en que se midió y, al volver, se descuenta el tiempo transcurrido (si el reloj del sistema retrocede o no se puede leer, no se descuenta nada; nunca baja de 0). Si al volver ya no queda tiempo, cuenta como fallo por tiempo en cuanto se muestra. La **única pausa** es antes de revelarla: en «pasa el móvil» de una partida reanudada, una pregunta que aún no se había mostrado no descuenta; si ya se había mostrado antes de salir, el tiempo fuera sí cuenta. El botón Inicio (y Atrás) durante una pregunta clásica con tiempo pide confirmación: «Si sales, el tiempo de la pregunta sigue corriendo». En la partida rápida, el diálogo de abandonar pausa el tiempo (y difumina la pregunta) mientras está en pantalla. Quien quiera pausar libremente puede jugar sin temporizador (se indica bajo el interruptor). Cambiar el filtro de spoilers o los ajustes no cambia una pregunta ya mostrada ni reinicia su tiempo.
    - Acierto → +1 *carga* en esa categoría y **sigue tirando**. Fallo → pasa el turno.
-   - **Máximo 3 aciertos seguidos por turno** (con 2 o más jugadores): tras el 3.º acierto el turno pasa igualmente y se avisa al jugador. En solitario no hay límite.
+   - **Máximo 3 aciertos seguidos por turno** (con 2 o más jugadores): tras el 3.º acierto el turno pasa igualmente y se avisa al jugador (si ese acierto infunde la última gema, se avisan ambas cosas y la pregunta final llega en su siguiente turno). En solitario no hay límite.
    - Al reanudar una partida guardada con varios jugadores se muestra primero la pantalla de «pasa el móvil» y luego la pregunta pendiente.
    - Con **2 cargas** la gema de esa categoría queda **infundida** (las cargas extra ya no suman).
    - Con las 6 gemas infundidas el jugador afronta la **pregunta final** (dificultad 3, categoría al azar; se prefieren preguntas que aún no hayan salido en la partida). Acierto → gana. Fallo → pasa el turno y lo intentará en su siguiente turno.
+   - La **pantalla de victoria** muestra la duración de la partida y, por jugador, aciertos/preguntas respondidas, % de acierto, ayudas usadas y gemas infundidas. «Jugar otra vez» abre la configuración con los mismos jugadores, colores, temporizador y nivel.
 2. **Partida rápida** (solo): 15 preguntas de categorías mezcladas, puntuación por acierto y tiempo; récord guardado.
-   Las 15 plazas se reparten entre mundos en proporción a las preguntas disponibles con el filtro de spoilers, y ninguna pregunta se repite en la partida (si hay menos de 15, la partida es más corta). La partida en curso se guarda y se puede continuar tras recargar.
-3. **Práctica**: elige categoría y dificultad, sin puntuación, muestra la explicación de cada respuesta.
+   Las 15 plazas se reparten entre mundos en proporción a las preguntas disponibles con el filtro de spoilers, y ninguna pregunta se repite en la partida (si hay menos de 15, la partida es más corta). La partida en curso se guarda y se puede continuar tras recargar; al terminar, recargar en la pantalla de resultados los vuelve a mostrar una vez.
+3. **Práctica**: elige categoría y dificultad, sin puntuación, muestra la explicación de cada respuesta. Cuando ya se han visto todas las preguntas disponibles en la sesión se avisa: «Has visto todas las preguntas disponibles; empiezan a repetirse».
+
+**Repeticiones entre partidas**: la app recuerda por idioma las últimas 150 preguntas vistas (en cualquier modo y entre sesiones) y en todos los sorteos (rápida, práctica, clásica) prefiere las no vistas recientemente y, si no hay, las vistas hace más tiempo.
 
 ### Nivel de dificultad de la partida (v2)
 Al empezar una partida clásica o rápida se elige un nivel (por defecto **Normal**):
@@ -50,12 +53,13 @@ Al empezar una partida clásica o rápida se elige un nivel (por defecto **Norma
 Si un nivel agota su pool en una categoría, se toma la dificultad más cercana disponible.
 Práctica permite elegir cualquiera de las 4 dificultades.
 
-### Comodines (v2)
+### Ayudas (v2)
+En la interfaz en español el grupo se llama **«Ayudas»** (en la ruleta, «Comodín» es solo el sector que deja elegir mundo).
 Cada jugador tiene **1 de cada** por partida clásica; en partida rápida, 1 de cada por partida.
-No se pueden usar en la pregunta final. En práctica no hay comodines.
-**Atium y Luz tormentosa no se combinan** en la misma pregunta: usado uno, el otro queda desactivado en esa pregunta (con el motivo visible bajo la fila de comodines).
+No se pueden usar en la pregunta final. En práctica no hay ayudas.
+**Atium y Luz tormentosa no se combinan** en la misma pregunta: usado uno, el otro queda desactivado en esa pregunta (con el motivo visible bajo la fila de ayudas).
 Si se usa **Aliento con la Luz tormentosa activada**, la protección pasa a la pregunta nueva.
-| Comodín | Efecto |
+| Ayuda | Efecto |
 |---|---|
 | **Atium** | Elimina dos respuestas incorrectas. |
 | **Luz tormentosa** | Se activa antes de responder: si fallas, la opción fallada se marca y vuelves a elegir (sin revelar la correcta). |
@@ -63,6 +67,8 @@ Si se usa **Aliento con la Luz tormentosa activada**, la protección pasa a la p
 Nombres oficiales: atium (igual en los 5 idiomas), Stormlight → luz tormentosa / Fulgiflamme / Sturmlicht / Folgoluce, Breath → Aliento / Souffle / Hauch / Soffio.
 
 ### Filtro de spoilers
+En el **primer arranque** una introducción de 3 pasos pregunta «¿Qué has leído?» (obras agrupadas por mundo con sus títulos oficiales, atajos «Todo»/«Nada»), resume las reglas y empieza; se puede saltar, no vuelve a salir y está en «Acerca de» → «Ver introducción». Es primer arranque mientras los ajustes (ya saneados) no digan `onboarded: true`: ajustes ausentes, corruptos o nulos la muestran, y recargar a mitad vuelve al mismo paso conservando lo marcado. Quien ya tiene estadísticas o una partida guardada sin esa marca no la ve (se marca en silencio). El paso 1 empieza **sin nada marcado**, con un botón destacado «Lo he leído todo»; «Siguiente» está desactivado (con el motivo visible) hasta marcar al menos una obra. Saltar sin marcar nada deja el filtro sin restricciones.
+Si el filtro deja **0 preguntas**, Inicio muestra un aviso con botón a Ajustes; empezar o continuar una partida sin categorías disponibles muestra un mensaje claro (la partida sigue guardada) en vez de quedarse esperando.
 En ajustes el jugador marca qué obras ha leído. Solo salen preguntas cuyo `work` esté marcado
 (por defecto: todas). Si el pool de una categoría queda vacío, la ruleta la sustituye por otra
 y el juego exige infundir solo las categorías disponibles.

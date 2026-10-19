@@ -1,7 +1,7 @@
 import { h, svg } from '../dom.js';
 import { ICONS } from '../icons.js';
 import { t, getLang, num } from '../i18n.js';
-import { app, go, screen, confirmDialog } from '../core.js';
+import { app, go, screen, confirmDialog, noQuestionsBanner, filterIsEmpty } from '../core.js';
 import { fx } from '../fx.js';
 import { loadSavedGame } from './classic.js';
 import { loadSavedRun, discardRun } from './quick.js';
@@ -30,12 +30,12 @@ export function homeScreen() {
   const saved = loadSavedGame();
   const savedQuick = loadSavedRun();
   const startClassic = async () => {
-    if (saved && !(await confirmDialog(t('home.newGameConfirm')))) return;
+    if (saved && !(await confirmDialog(t('home.newGameConfirmClassic'), { okLabel: t('home.newGameYes'), cancelLabel: t('home.newGameNo') }))) return;
     go('classic-setup');
   };
   const startQuick = async () => {
     if (savedQuick) {
-      if (!(await confirmDialog(t('home.newGameConfirm')))) return;
+      if (!(await confirmDialog(t('home.newGameConfirmQuick'), { okLabel: t('home.newGameYes'), cancelLabel: t('home.newGameNo') }))) return;
       discardRun();
     }
     go('quick');
@@ -50,6 +50,8 @@ export function homeScreen() {
     app.loadError ? h('p', { class: 'banner banner-error', role: 'alert' }, t('errors.load')) : null,
     !app.loadError && app.questionsLang && app.questionsLang !== getLang()
       ? h('p', { class: 'banner banner-warn', role: 'status' }, t('errors.fallback')) : null,
+    // The spoiler filter leaves no question: warn before any game is started.
+    !app.loadError && filterIsEmpty() ? noQuestionsBanner('home-empty') : null,
     h('nav', { class: 'menu', 'aria-label': t('app.title') },
       saved ? bigButton('play', t('home.continue'), t('home.continueDesc', { players: saved.players.map((p) => p.name).join(', ') }), () => go('classic', { resume: true }), 'menu-continue menu-continue-classic') : null,
       savedQuick ? bigButton('bolt', t('home.continueQuick'), t('home.continueQuickDesc', { n: savedQuick.index + 1, total: savedQuick.total, score: num(savedQuick.score) }), () => go('quick', { resume: true }), 'menu-continue menu-continue-quick') : null,

@@ -17,7 +17,7 @@ export function initialOf(name, fallback = '?') {
 }
 
 /** Removes lone surrogates (e.g. left by a maxlength cut) and caps the length in graphemes. */
-export function cleanName(name, max = 16) {
+export function cleanName(name, max = 24) {
   const s = String(name ?? '').replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/g, '');
   return graphemes(s.trim()).slice(0, max).join('').trim();
 }

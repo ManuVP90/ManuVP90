@@ -12,7 +12,8 @@
     "next": "Domanda successiva",
     "loading": "Caricamento…",
     "playAgain": "Gioca ancora",
-    "openSettings": "Apri le impostazioni"
+    "openSettings": "Apri le impostazioni",
+    "labelled": "{label}: {text}"
   },
   "home": {
     "continue": "Continua la partita",
@@ -26,9 +27,12 @@
     "stats": "Statistiche",
     "settings": "Impostazioni",
     "about": "Informazioni",
-    "newGameConfirm": "Iniziando una nuova partita, quella in corso andrà persa. Continuare?",
     "continueQuick": "Riprendi la partita veloce",
-    "continueQuickDesc": "Domanda {n} di {total} · {score} punti"
+    "continueQuickDesc": "Domanda {n} di {total} · {score} punti",
+    "newGameConfirmClassic": "Iniziando una nuova partita, la partita classica in corso andrà persa. Continuare?",
+    "newGameConfirmQuick": "Iniziando una nuova partita, la partita veloce in corso andrà persa. Continuare?",
+    "newGameYes": "Inizia una nuova",
+    "newGameNo": "Torna indietro"
   },
   "cat": {
     "roshar": "Roshar",
@@ -69,7 +73,7 @@
     "title": "Aiuti",
     "help": "Come funzionano gli aiuti",
     "rules": "Ogni giocatore ha un aiuto di ciascun tipo per partita (anche nella partita veloce). Non si possono usare nella domanda finale né in allenamento, e Atium e Folgoluce non si combinano nella stessa domanda.",
-    "used": "{name} (già usato)",
+    "used": "Hai già usato {name}",
     "atium": {
       "name": "Atium",
       "desc": "Elimina due risposte sbagliate.",
@@ -100,10 +104,11 @@
     "namePlaceholder": "Giocatore {n}",
     "color": "Colore della gemma",
     "timer": "Timer di 30 secondi",
-    "timerHint": "Se il tempo scade, la risposta conta come sbagliata.",
+    "timerHint": "Se il tempo scade, la risposta conta come sbagliata. Il tempo di una domanda continua a scorrere anche se esci dall’app.",
     "start": "Inizia la partita",
     "fewer": "Rimuovi un giocatore",
-    "more": "Aggiungi un giocatore"
+    "more": "Aggiungi un giocatore",
+    "timerPause": "Senza timer puoi metterti in pausa quando vuoi."
   },
   "turn": {
     "passTo": "Passa il telefono a",
@@ -121,7 +126,7 @@
     "landed": "{category}!",
     "chooseTitle": "Jolly!",
     "chooseHint": "Scegli il mondo che preferisci",
-    "infusedPick": "{category} è già infusa: scegli un altro mondo!"
+    "infusedPick": "Gemma già infusa: {category}. Scegli un altro mondo!"
   },
   "question": {
     "correct": "Esatto!",
@@ -133,9 +138,9 @@
     "progress": "Domanda {n} di {total}"
   },
   "classic": {
-    "charge": "+1 carica per {category} ({n}/2)",
-    "infused": "La tua gemma di {category} è infusa!",
-    "alreadyInfused": "{category} è già infusa: nessuna carica in più.",
+    "charge": "+1 carica · {category} ({n}/2)",
+    "infused": "Gemma infusa: {category}",
+    "alreadyInfused": "Gemma già infusa: {category}. Nessuna carica in più.",
     "allInfused": "Tutte le gemme sono infuse! Ora tocca alla domanda finale.",
     "spinAgain": "Gira di nuovo!",
     "passTurn": "Il turno passa a {name}.",
@@ -150,12 +155,26 @@
     "gem0": "{category}: nessuna carica",
     "gem1": "{category}: 1 carica",
     "gem2": "{category}: infusa",
-    "streakPass": "{n} risposte esatte di fila! Il turno passa a {name}."
+    "streakPass": "{n} risposte esatte di fila! Il turno passa a {name}.",
+    "allInfusedNext": "Tutte le gemme sono infuse! Affronterai la domanda finale al tuo prossimo turno.",
+    "leaveTimerTitle": "Uscire dalla partita?",
+    "leaveTimerBody": "Se esci, il tempo della domanda continua a scorrere.",
+    "leaveTimerYes": "Esci",
+    "leaveTimerNo": "Continua a giocare",
+    "emptySaved": "La partita è salvata: potrai riprenderla quando selezionerai altre opere."
   },
   "victory": {
     "title": "Vince {name}!",
     "subtitle": "Tutte le gemme infuse e la domanda finale superata.",
-    "answered": "Domande giocate: {n}"
+    "answered": "Domande giocate: {n}",
+    "statsTitle": "Riepilogo della partita",
+    "correct": "Risposte giuste",
+    "correctOf": "{n}/{total}",
+    "accuracy": "Precisione",
+    "percent": "{n}%",
+    "lifelines": "Aiuti usati",
+    "gems": "Gemme",
+    "duration": "Durata: {time}"
   },
   "quick": {
     "title": "Partita veloce",
@@ -167,11 +186,15 @@
     "newRecord": "Nuovo record!",
     "finished": "Risultati",
     "seeResults": "Vedi i risultati",
-    "quitConfirm": "Abbandonare la partita veloce? Perderai il punteggio.",
-    "intro": "{n} domande su tutti i mondi, {s} secondi ciascuna. Più rispondi in fretta, più punti fai.",
+    "intro": "{n} domande su tutti i mondi, {s} secondi ciascuna. Più rispondi in fretta, più punti fai. Il tempo continua a scorrere anche se esci dall’app.",
     "introLifelines": "Hai un aiuto di ciascun tipo: Atium, Folgoluce e Soffio.",
     "start": "Inizia",
-    "bestScore": "Miglior punteggio: {n}"
+    "bestScore": "Miglior punteggio: {n}",
+    "quitTitle": "Abbandonare la partita veloce?",
+    "quitBody": "Perderai il punteggio di questa partita.",
+    "quitYes": "Abbandona",
+    "quitNo": "Continua a giocare",
+    "emptySaved": "La partita è salvata (domanda {n} di {total}): potrai riprenderla quando selezionerai altre opere."
   },
   "practice": {
     "title": "Allenamento",
@@ -180,12 +203,13 @@
     "difficulty": "Difficoltà",
     "any": "Qualsiasi",
     "available": "Domande disponibili: {n}",
-    "start": "Inizia l'allenamento",
+    "start": "Inizia l’allenamento",
     "end": "Termina",
     "tally": "{correct} su {total}",
     "fallback": "Non ci sono ancora domande di difficoltà {level} qui: ti allenerai con quelle di difficoltà {fallback}.",
     "empty": "Non ci sono ancora domande di difficoltà {level} qui.",
-    "noneFilter": "Nessuna domanda disponibile: il filtro spoiler non lascia nessuna opera con domande. Seleziona più opere nelle Impostazioni."
+    "noneFilter": "Nessuna domanda disponibile: il filtro spoiler non lascia nessuna opera con domande. Seleziona più opere nelle Impostazioni.",
+    "allSeen": "Hai visto tutte le domande disponibili; ora inizieranno a ripetersi."
   },
   "stats": {
     "title": "Statistiche",
@@ -218,7 +242,8 @@
     "reset": "Cancella tutti i dati",
     "resetConfirm": "Verranno eliminati statistiche, record, partita salvata e impostazioni. Sei sicuro?",
     "resetDone": "Tutti i dati sono stati cancellati.",
-    "storageWarning": "Memoria non disponibile: impostazioni e progressi non verranno conservati alla chiusura dell'app."
+    "storageWarning": "Memoria non disponibile: impostazioni e progressi non verranno conservati alla chiusura dell’app.",
+    "resetNo": "Non cancellare"
   },
   "about": {
     "title": "Informazioni",
@@ -234,17 +259,47 @@
     "levels": "Livelli di difficoltà",
     "levelsFinal": "Nella partita classica la domanda finale è media in Facile, difficile in Normale e da esperti in Difficile ed Esperto.",
     "lifelines": "Aiuti",
-    "rule5": "Chi inizia viene sorteggiato. Dopo 3 risposte esatte di fila il turno passa comunque al giocatore successivo."
+    "rule5": "Chi inizia viene sorteggiato. Dopo 3 risposte esatte di fila il turno passa comunque al giocatore successivo.",
+    "rule6": "Se la ruota si ferma su una gemma che hai già infuso, scegli un altro mondo.",
+    "intro": "Rivedi l’introduzione"
   },
   "errors": {
     "load": "Impossibile caricare le domande. Controlla la connessione e ricarica la pagina.",
     "noQuestions": "Nessuna domanda disponibile con il filtro spoiler attuale.",
-    "fallback": "Le domande non sono ancora disponibili in questa lingua, quindi vengono mostrate in inglese."
+    "fallback": "Le domande non sono ancora disponibili in questa lingua, quindi vengono mostrate in inglese.",
+    "emptyFilter": "Con il filtro spoiler attuale non c’è nessuna domanda. Seleziona nelle Impostazioni i libri che hai letto."
   },
   "boot": {
     "title": "Qualcosa è andato storto",
     "body": "L’app non è riuscita ad avviarsi. I dati salvati potrebbero essere danneggiati: cancellarli di solito risolve il problema (perderai la partita in corso, le impostazioni e le statistiche).",
     "reset": "Cancella i dati e riavvia",
-    "retry": "Riprova"
+    "retry": "Riprova",
+    "confirm": "Cancellare i dati dell’app? Perderai la partita in corso, le impostazioni e le statistiche.",
+    "confirmYes": "Sì, cancella e riavvia",
+    "cancel": "Non cancellare"
+  },
+  "onboarding": {
+    "label": "Introduzione",
+    "step": "Passo {n} di {total}",
+    "skip": "Salta",
+    "next": "Avanti",
+    "welcome": "Benvenuti",
+    "readTitle": "Che cosa hai letto?",
+    "readHint": "Segna i libri che hai letto e riceverai domande solo su quelli. Puoi cambiarlo quando vuoi nelle Impostazioni.",
+    "all": "Tutto",
+    "none": "Niente",
+    "noneWarn": "Senza nessun libro segnato non ci saranno domande.",
+    "rulesTitle": "Come si gioca",
+    "ruleWheel": "Gira la ruota: decide il mondo della domanda. Sul jolly scegli tu.",
+    "ruleGems": "Ogni risposta esatta carica la gemma di quel mondo; con due cariche è infusa. Infondile tutte e rispondi alla domanda finale per vincere.",
+    "ruleLifelines": "Hai tre aiuti per partita: l’Atium elimina due risposte sbagliate, la Folgoluce ti fa scegliere di nuovo e il Soffio cambia la domanda.",
+    "startTitle": "Tutto pronto!",
+    "startBody": "Gioca da solo o passa il telefono agli amici. Puoi rivedere questa introduzione da «Informazioni».",
+    "start": "Inizia a giocare",
+    "showWorks": "Mostra i libri: {world}",
+    "readAll": "Ho letto tutto",
+    "orPick": "Oppure seleziona solo quello che hai letto:",
+    "pickOne": "Seleziona almeno un’opera per continuare.",
+    "skippedNoFilter": "Nessun filtro spoiler: riceverai domande su tutti i libri. Puoi cambiarlo nelle Impostazioni."
   }
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // End-to-end smoke test (Playwright + Chromium) on a phone viewport.
 // Usage: node tools/smoke.mjs        (SCREENSHOT_DIR=/some/dir to choose where PNGs go)
-// Plays a full classic game with 2 players to victory on "Difícil" using each lifeline once
+// Walks the first-run introduction, then plays a full classic game with 2 players to victory on "Difícil" using each lifeline once
 // (random starting player, at most 3 correct answers per turn), checks resume after reload
 // (pass-the-phone screen first), cycles through all 5 languages, plays a quick game on "Fácil",
 // practices difficulty 4 (fallback while there is no expert data), opens stats and about,
@@ -92,8 +92,22 @@ const enabledOptions = () => page.locator('.qcard .option:not([disabled])').coun
 const lifelineBtn = (kind) => page.locator(`.qcard .lifeline-${kind}`);
 
 try {
-  // ---------------------------------------------------------------- home (auto-detected es)
+  // ---------------------------------------------------------------- first-run introduction (auto-detected es)
   await page.goto(BASE);
+  await page.waitForSelector('.onboarding');
+  assert((await page.textContent('.onb-title')).trim() === T('es', 'onboarding.readTitle'), 'first launch asks what you have read (Spanish)');
+  await shot('00a-onboarding-read');
+  await page.click('.spoiler-none');
+  await page.click('.spoiler-all');
+  await page.click('.onb-next');
+  await page.waitForSelector('.onb-rules');
+  await shot('00b-onboarding-rules');
+  await page.click('.onb-next');
+  await page.click('.onb-start');
+  await page.waitForSelector('.home');
+  log('first-run introduction: what have you read → rules → start');
+
+  // ---------------------------------------------------------------- home
   await page.waitForSelector('.home');
   assert((await page.textContent('h1.title')).trim() === T('es', 'app.title'), 'Spanish title from navigator.language');
   await shot('01-home-es');

@@ -5,26 +5,34 @@ import { ICONS } from '../icons.js';
 import { t } from '../i18n.js';
 import { catPill, catStyle, diffPips, onCleanup } from '../core.js';
 import { fx, reducedMotion } from '../fx.js';
-import { TIMER_SECONDS } from '../config.js';
+import { TIMER_SECONDS, TIMER_MS } from '../config.js';
 import { shuffledOrder, shuffle } from '../data.js';
+import { clockLeft } from '../game.js';
 import { lifelineBar } from './lifelines.js';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
-const TIMER_MS = TIMER_SECONDS * 1000;
 
 /** Effects of the lifelines on one question (stored with the pending question). */
 export const emptyFx = (armed = false) => ({ removed: [], struck: [], armed });
+
+/** A fresh countdown state for a question. */
+export const newClock = () => ({ remaining: TIMER_MS, savedAt: null });
+const validRemaining = (ms) => Number.isInteger(ms) && ms >= 0 && ms <= TIMER_MS;
 
 /**
  * @param {object} opts
  * @param {object} opts.question  {id, c, d, q, o, x}
  * @param {number[]} [opts.order] display order of option indexes (0 = correct)
  * @param {boolean} [opts.timer]
- * @param {{deadline:number|null}} [opts.clock] countdown state, mutated in place so the screen can
- *        persist it: `deadline` is the wall-clock time (Date.now()) when time runs out. A reload or
- *        a resume keeps the deadline, so the timer never restarts; if it already passed, the
- *        question resolves as a timeout as soon as it is shown.
- * @param {() => void} [opts.onClockChange] called when the deadline is set or moved (pause/resume)
+ * @param {{remaining:number, savedAt:number|null}} [opts.clock] countdown state, mutated in place so the
+ *        screen can persist it: `remaining` is the question's time left in ms (0..TIMER_MS), measured at
+ *        wall time `savedAt`. Once the question is revealed its time runs in real time, even if the player
+ *        leaves (Home, another app, lock screen, reload): on screen it is measured with performance.now()
+ *        (system clock changes don't matter); it is written back about once a second and on pagehide,
+ *        visibility hidden and leaving the screen, and the wall time elapsed since `savedAt` is deducted
+ *        when the question is shown again or the page becomes visible. Only the quick game's quit dialog
+ *        pauses it (savedAt null). At 0 the question resolves as a timeout as soon as it is shown.
+ * @param {() => void} [opts.onClockChange] called whenever `clock.remaining` is written back
  * @param {boolean} [opts.final]
  * @param {Node} [opts.top]       optional node rendered above the card (progress, score…)
  * @param {(res:{correct:boolean, timedOut:boolean, remaining:number}) => (string|Node|Array|null)} opts.onAnswer
@@ -39,16 +47,16 @@ export const emptyFx = (armed = false) => ({ removed: [], struck: [], armed });
  * @param {(kind:string) => void} opts.lifelines.onUse  called after a lifeline is applied ('breath': swap the
  *        question; an armed Stormlight (fx.armed) carries over to the new question)
  * @param {() => void} [opts.lifelines.onChange]  called when fx changes without a new use (Stormlight retry)
- * @returns {HTMLElement & {pauseTimer: () => void, resumeTimer: () => void}}
+ * @returns {HTMLElement & {pauseTimer: () => void, resumeTimer: () => void}}  pause/resume for a dialog
  */
 export function questionView({
   question: q, order = shuffledOrder(), timer = false, clock = null, onClockChange = null, final = false, top = null,
   onAnswer, onContinue, continueLabel = t('common.continue'), lifelines = null,
 }) {
   let answered = false;
-  let remaining = TIMER_SECONDS;
+  let remaining = TIMER_SECONDS; // seconds left, for the score
   let interval = null;
-  let pausedAt = null;
+  const pauses = new Set(); // why the countdown is stopped: 'dialog', 'hidden'
   const shownAt = Date.now();
 
   const live = h('div', { class: 'feedback', 'aria-live': 'polite', 'aria-atomic': 'true' });
@@ -72,10 +80,35 @@ export function questionView({
   let ring = null;
   let timerNum = null;
   const C = 2 * Math.PI * 20;
-  const clk = timer ? (clock || { deadline: null }) : null;
-  const timeLeft = () => Math.max(0, Math.min(TIMER_MS, clk.deadline - Date.now())) / 1000;
+  const clk = timer ? (clock || {}) : null;
+  if (timer && !validRemaining(clk.remaining)) clk.remaining = TIMER_MS;
+  // Revealed before and left running (Home, another app, a reload): the time away counts.
+  if (timer) clk.remaining = clockLeft(clk);
+  let runFrom = null; // performance.now() at the start of the current running stretch (null: stopped)
+  let lastPersist = 0;
+  const now = () => performance.now();
+  const leftMs = () => (runFrom === null ? clk.remaining : Math.max(0, clk.remaining - (now() - runFrom)));
+  /** Folds the running stretch into clk.remaining. */
+  function commit() {
+    if (runFrom === null) return;
+    const t0 = now();
+    clk.remaining = Math.max(0, Math.round(clk.remaining - (t0 - runFrom)));
+    runFrom = t0;
+  }
+  /**
+   * Writes the time left back with the wall time it was measured at. Only the quick game's quit
+   * dialog pauses the clock (savedAt null); otherwise the question keeps counting while away.
+   */
+  function persist() {
+    if (answered) return;
+    commit();
+    // The dialog only pauses while it is on screen: hidden or unloaded, the time runs again.
+    clk.savedAt = pauses.has('dialog') && !pauses.has('hidden') ? null : Date.now();
+    lastPersist = now();
+    onClockChange?.();
+  }
   function paint() {
-    remaining = timeLeft();
+    remaining = leftMs() / 1000;
     const secs = Math.ceil(remaining);
     timerNum.textContent = String(secs);
     ring.style.strokeDashoffset = String(C * (1 - remaining / TIMER_SECONDS));
@@ -84,25 +117,67 @@ export function questionView({
   }
   function tick() {
     paint();
-    if (remaining <= 0) answer(-1);
+    if (remaining <= 0) { commit(); answer(-1); return; }
+    if (now() - lastPersist >= 1000) persist();
   }
-  const startTicking = () => { clearInterval(interval); interval = setInterval(tick, 200); };
+  function run() {
+    if (!timer || answered || pauses.size || runFrom !== null) return;
+    runFrom = now();
+    lastPersist = runFrom;
+    clearInterval(interval);
+    interval = setInterval(tick, 200);
+  }
+  function halt() {
+    commit();
+    runFrom = null;
+    clearInterval(interval);
+  }
+  /** Page hidden / unloaded: save the time left with its wall time; it keeps running meanwhile. */
+  function away() {
+    if (!timer || answered) return;
+    const wasHidden = pauses.has('hidden');
+    pauses.add('hidden');
+    halt();
+    if (!wasHidden) persist();
+  }
+  /** Back on the page: deduct the wall time spent away (even with the quit dialog still open). */
+  function back() {
+    if (!timer || answered || !pauses.delete('hidden')) return;
+    clk.remaining = clockLeft(clk);
+    persist();
+    paint();
+    if (clk.remaining <= 0) { answer(-1); return; }
+    run();
+  }
   if (timer) {
-    if (!Number.isFinite(clk.deadline)) { clk.deadline = Date.now() + TIMER_MS; onClockChange?.(); }
     timerEl = h('div', { class: 'timer', role: 'timer', 'aria-label': t('question.secondsLeft', { s: TIMER_SECONDS }) });
     timerEl.innerHTML = `<svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="20" class="timer-track"/><circle cx="24" cy="24" r="20" class="timer-ring" stroke-dasharray="${C}" stroke-dashoffset="0"/></svg>`;
     timerNum = h('span', { class: 'timer-num', 'aria-hidden': 'true' }, String(TIMER_SECONDS));
     timerEl.appendChild(timerNum);
     ring = timerEl.querySelector('.timer-ring');
+    // While visible the countdown uses performance.now(); hidden or unloaded, the wall clock.
+    const onVisibility = () => (document.visibilityState === 'hidden' ? away() : back());
+    const onPageShow = () => { if (document.visibilityState !== 'hidden') back(); };
+    document.addEventListener('visibilitychange', onVisibility);
+    window.addEventListener('pagehide', away);
+    window.addEventListener('pageshow', onPageShow);
+    if (document.visibilityState === 'hidden') pauses.add('hidden');
+    persist(); // revealed now: from here on the time runs even if the player leaves
     paint();
-    startTicking();
-    onCleanup(() => clearInterval(interval));
+    run();
+    onCleanup(() => {
+      // Leaving the screen (Home, Back, a re-render…) saves the time left; it keeps running in wall time.
+      document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('pagehide', away);
+      window.removeEventListener('pageshow', onPageShow);
+      if (!answered) { halt(); persist(); } else clearInterval(interval);
+    });
   }
 
   const continueBtn = h('button', { type: 'button', class: 'btn btn-primary btn-block continue', hidden: true, onclick: () => { fx.tap(); onContinue(); } }, continueLabel);
 
   function answer(idx) {
-    if (answered || pausedAt !== null) return;
+    if (answered || pauses.has('dialog')) return;
     if (idx > 0 && effects?.armed) { // Stormlight: strike the wrong option and choose again
       effects.armed = false;
       effects.struck.push(idx);
@@ -115,10 +190,9 @@ export function questionView({
       optionButtons.find((b) => !b.disabled)?.focus({ preventScroll: true });
       return;
     }
+    if (timer) { halt(); remaining = clk.remaining / 1000; }
     answered = true;
     if (bar) bar.el.hidden = true;
-    clearInterval(interval);
-    if (timer) remaining = timeLeft();
     const correct = idx === 0;
     const timedOut = idx === -1;
     card.classList.add('answered', correct ? 'is-right' : 'is-wrong-answer');
@@ -184,7 +258,7 @@ export function questionView({
     });
   }
   function useLifeline(kind) {
-    if (answered || pausedAt !== null || !((lifelines.left?.[kind] || 0) > 0)) return;
+    if (answered || pauses.has('dialog') || !((lifelines.left?.[kind] || 0) > 0)) return;
     if (kind === 'atium') {
       if (stormlightUsedHere()) return;
       const gone = shuffle(wrongLeft()).slice(0, 2);
@@ -228,22 +302,26 @@ export function questionView({
   }
 
   const wrap = h('div', { class: 'question-wrap' }, top, card);
-  /** Stops the countdown (e.g. while a "quit?" dialog is open); resumeTimer gives the time back. */
+  /** Stops the countdown while a "quit?" dialog is open (time left is persisted); resumeTimer restarts it. */
   wrap.pauseTimer = () => {
-    if (!timer || answered || pausedAt !== null) return;
-    pausedAt = Date.now();
-    clearInterval(interval);
+    if (!timer || answered || pauses.has('dialog')) return;
+    halt();
+    pauses.add('dialog');
+    persist(); // saved with savedAt null: a reload behind the dialog loses no time either
     card.classList.add('paused');
   };
   wrap.resumeTimer = () => {
-    if (pausedAt === null) return;
-    clk.deadline += Date.now() - pausedAt;
-    pausedAt = null;
+    if (!pauses.delete('dialog')) return;
     card.classList.remove('paused');
-    onClockChange?.();
-    if (!answered) { paint(); startTicking(); }
+    if (answered) return;
+    persist();
+    if (!pauses.size) { paint(); run(); }
   };
-  // Time already ran out (reload or resume after the deadline): resolve as a timeout once shown.
-  if (timer && timeLeft() <= 0) queueMicrotask(() => answer(-1));
+  /** True once the question has been answered (or timed out). */
+  wrap.isAnswered = () => answered;
+  /** True while a countdown is running for this question (the time keeps going if the player leaves). */
+  wrap.timerRunning = () => !!timer && !answered;
+  // Time already ran out (saved at 0): resolve as a timeout once shown.
+  if (timer && clk.remaining <= 0) queueMicrotask(() => answer(-1));
   return wrap;
 }

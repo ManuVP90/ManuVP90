@@ -1,5 +1,5 @@
 // Global constants shared by every module.
-export const APP_VERSION = '1.2.0';
+export const APP_VERSION = '1.4.0';
 
 /** Category ids, in wheel / board order (SPEC §2). */
 export const CATEGORIES = ['roshar', 'scadrial', 'sel', 'nalthis', 'otros', 'cosmere'];
@@ -30,6 +30,7 @@ export const LANG_ALIASES = { ca: 'es', gl: 'es', eu: 'es' };
 export const LANG_NAMES = { es: 'Español', en: 'English', fr: 'Français', de: 'Deutsch', it: 'Italiano' };
 
 export const TIMER_SECONDS = 30;
+export const TIMER_MS = TIMER_SECONDS * 1000;
 export const QUICK_LENGTH = 15;
 export const CHARGES_TO_INFUSE = 2;
 export const MIN_PLAYERS = 1;
@@ -55,6 +56,8 @@ export const LEVEL_IDS = Object.keys(LEVELS);
 export const DEFAULT_LEVEL = 'normal';
 export const levelOrDefault = (l) => (LEVEL_IDS.includes(l) ? l : DEFAULT_LEVEL);
 
-/** Lifelines (SPEC "Comodines (v2)"), in display order. Each player gets one of each per game. */
+/** Lifelines (SPEC "Ayudas (v2)"), in display order. Each player gets one of each per game. */
 export const LIFELINES = ['atium', 'stormlight', 'breath'];
 export const fullLifelines = () => Object.fromEntries(LIFELINES.map((k) => [k, 1]));
+/** Recently seen question ids remembered per language (across games and sessions) to avoid repeats. */
+export const RECENT_MAX = 150;

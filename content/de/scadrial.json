@@ -96,7 +96,7 @@
    "Rot",
    "Grün"
   ],
-  "explain": "Die blaue Haut eines Koloss wächst nicht mit, deshalb dehnt und reißt sie, während das Wesen größer wird."
+  "explain": "Die blaue Haut eines Kolosses wächst nicht mit, deshalb dehnt und reißt sie, während das Wesen größer wird."
  },
  {
   "id": "scadrial-010",
@@ -177,14 +177,14 @@
  },
  {
   "id": "scadrial-017",
-  "q": "Welcher Kandra nahm heimlich OreSeurs Platz an Vins Seite ein?",
+  "q": "Welcher Kandra tötete heimlich Vins Kandra-Begleiter und nahm seinen Platz ein?",
   "a": "TenSoon",
   "wrong": [
    "MeLaan",
    "KanPaar",
    "VenDell"
   ],
-  "explain": "Zane befahl TenSoon, OreSeur zu töten und dessen Platz einzunehmen, um Vin auszuspionieren."
+  "explain": "Zane befahl TenSoon, Vins Kandra zu töten und dessen Platz einzunehmen, um sie auszuspionieren."
  },
  {
   "id": "scadrial-018",
@@ -221,14 +221,14 @@
  },
  {
   "id": "scadrial-021",
-  "q": "Wie hieß Kelsiers Frau, die in den Gruben von Hathsin starb?",
+  "q": "Wie hieß die Frau des Überlebenden, die in den Gruben von Hathsin starb?",
   "a": "Mare",
   "wrong": [
    "Shan",
    "Tindwyl",
    "Valette"
   ],
-  "explain": "Mare, ein Zinnauge, war mit Kelsier in den Gruben gefangen und starb dort."
+  "explain": "Mare, ein Zinnauge, war mit ihrem Mann in den Gruben gefangen und starb dort."
  },
  {
   "id": "scadrial-022",
@@ -265,7 +265,7 @@
  },
  {
   "id": "scadrial-025",
-  "q": "Wie heißt der Palast des Obersten Herrschers in Luthadel?",
+  "q": "Wie heißt der Palast des Obersten Herrschers in der Hauptstadt des Reiches?",
   "a": "Kredik Shaw",
   "wrong": [
    "Festung Wager",
@@ -305,7 +305,7 @@
    "Raschek",
    "Gemmel"
   ],
-  "explain": "Raschek tötete Alendi auf dem Weg zur Quelle und nahm die Macht selbst an sich."
+  "explain": "Alendis eigener terrisischer Träger tötete ihn auf dem Weg zur Quelle und nahm die Macht selbst an sich."
  },
  {
   "id": "scadrial-029",
@@ -364,14 +364,14 @@
  },
  {
   "id": "scadrial-034",
-  "q": "Welche Religion des zweiten Zeitalters verehrt Kelsier?",
+  "q": "Welche Religion des zweiten Zeitalters verehrt den Bandenanführer, der den Aufstand der Skaa gegen den Obersten Herrscher entfachte?",
   "a": "Der Überlebendenkult",
   "wrong": [
    "Der Pathianismus",
    "Das Stahlministerium",
    "Der Trellismus"
   ],
-  "explain": "Seine Anhänger verehren Kelsier als den Überlebenden, der den Obersten Herrscher stürzte."
+  "explain": "Ihre Anhänger verehren den Überlebenden als Märtyrer, dessen Tod den Sturz des Obersten Herrschers auslöste."
  },
  {
   "id": "scadrial-035",
@@ -393,7 +393,7 @@
    "Elants",
    "Marschs"
   ],
-  "explain": "Kelsier klammerte sich an das Kognitive Reich und wirkte im ersten Zeitalter weiter im Verborgenen."
+  "explain": "Kelsier weigerte sich weiterzuziehen und wirkte im ersten Zeitalter weiter im Verborgenen."
  },
  {
   "id": "scadrial-037",
@@ -489,7 +489,7 @@
   "a": "Trell",
   "wrong": [
    "Ruin",
-   "Der Einträchtige",
+   "Sazed",
    "Bewahr"
   ],
   "explain": "Die Anführer des Kreises verehren Trell, einen alten Gott Scadrials, und arbeiten gegen die Pläne des Einträchtigen."
@@ -503,7 +503,7 @@
    "Khlenni",
    "Koloss-Blütige"
   ],
-  "explain": "Wie andere Malwisch trägt Allik eine Maske und nutzt Medaillons, um auf die Metallischen Künste zuzugreifen."
+  "explain": "Wie andere Malwisch verbirgt Allik sein Gesicht hinter einer Maske."
  },
  {
   "id": "scadrial-047",
@@ -628,7 +628,7 @@
  },
  {
   "id": "scadrial-058",
-  "q": "Welche Stadt war die Hauptstadt des Terris-Dominiums und Sitz der Synode der Bewahrer?",
+  "q": "Welche Stadt war Sitz der Synode der Bewahrer?",
   "a": "Tathingdwen",
   "wrong": [
    "Urteau",
@@ -639,7 +639,7 @@
  },
  {
   "id": "scadrial-059",
-  "q": "In welcher Stadt der Einöde sorgte Wax für Recht und Ordnung, bevor er nach Elantel zurückkehrte?",
+  "q": "In welcher Stadt der Einöde sorgte Wax für Recht und Ordnung, bevor er in die Großstadt zurückkehrte?",
   "a": "Weathering",
   "wrong": [
    "Bilming",
@@ -679,29 +679,29 @@
    "Der Segen der Wahrnehmung",
    "Der Segen der Stabilität"
   ],
-  "explain": "TenSoon wurde mit dem Segen der Präsenz erschaffen und nahm später OreSeurs Segen der Stärke an sich."
+  "explain": "TenSoon wurde mit dem Segen der Präsenz erschaffen und erhielt später zusätzlich den Segen der Stärke."
  },
  {
   "id": "scadrial-063",
-  "q": "Kwaan nennt sich in seiner Inschrift einen Philosophen, einen Gelehrten und was noch?",
+  "q": "In der Inschrift, die in den Kapitelmottos von „Krieger des Feuers“ zitiert wird, nennt sich ihr Verfasser einen Philosophen, einen Gelehrten und was noch?",
   "a": "Einen Verräter",
   "wrong": [
    "Einen Propheten",
    "Einen Helden",
    "Einen Bewahrer"
   ],
-  "explain": "Kwaan rief Alendi zuerst als Held aller Zeiten aus und verriet ihn später, um seine Suche zu beenden."
+  "explain": "Er hatte zuerst den Helden aller Zeiten ausgerufen und ihn später verraten, um seine Suche zu beenden."
  },
  {
   "id": "scadrial-064",
-  "q": "Worauf hielt Kwaan seinen letzten Bericht fest?",
+  "q": "Worauf hielt der Verfasser der Kapitelmottos von „Krieger des Feuers“ seinen letzten Bericht fest?",
   "a": "Auf einer Stahlplatte",
   "wrong": [
    "Auf einer Steinmauer",
    "Auf einer Pergamentrolle",
    "Auf einer Tontafel"
   ],
-  "explain": "Kwaan schrieb in Stahl, denn wie er sagt, kann man nichts trauen, was nicht in Metall festgehalten ist."
+  "explain": "Er schrieb in Stahl, denn wie er sagt, kann man nichts trauen, was nicht in Metall festgehalten ist."
  },
  {
   "id": "scadrial-065",
@@ -716,14 +716,14 @@
  },
  {
   "id": "scadrial-066",
-  "q": "Welcher seiner Gefährten wurde laut Alendis Logbuch von einem Nebelwesen niedergestochen?",
+  "q": "Welcher Gefährte des Verfassers wurde laut dem Logbuch, das Vin in „Kinder des Nebels“ liest, von einem Nebelwesen niedergestochen?",
   "a": "Fedik",
   "wrong": [
    "Raschek",
    "Kwaan",
    "Gemmel"
   ],
-  "explain": "Fedik überlebte den Angriff, und Raschek streute das Gerücht, Alendi selbst sei der Angreifer gewesen."
+  "explain": "Fedik überlebte den Angriff, und Raschek streute das Gerücht, der Verfasser des Logbuchs selbst sei der Angreifer gewesen."
  },
  {
   "id": "scadrial-067",
@@ -826,7 +826,7 @@
  },
  {
   "id": "scadrial-076",
-  "q": "Wie viel wollte Yedens Skaa-Rebellion Kelsiers Bande zahlen?",
+  "q": "Wie viel wollte die Skaa-Rebellion in „Kinder des Nebels“ Kelsiers Bande zahlen?",
   "a": "Dreißigtausend Boxings",
   "wrong": [
    "Zehntausend Boxings",
@@ -859,14 +859,14 @@
  },
  {
   "id": "scadrial-079",
-  "q": "Was hindert Kelsier in „Mistborn: Secret History“ nach seinem Tod daran, ins Jenseits überzugehen?",
+  "q": "Was hindert den Protagonisten von „Mistborn: Secret History“ nach seinem Tod daran, ins Jenseits überzugehen?",
   "a": "Die Macht der Quelle der Erhebung",
   "wrong": [
    "Ein hämalurgischer Stachel",
    "Vins Ohrring",
    "Sazeds Kupfergeister"
   ],
-  "explain": "Kelsier brachte Bewahr mit einer List dazu, zu verraten, dass die Quelle nahe war, und ihre Macht hielt ihn als kognitiven Schatten fest."
+  "explain": "Er brachte Bewahr mit einer List dazu, zu verraten, dass die Quelle nahe war, und ihre Macht hielt ihn als kognitiven Schatten fest."
  },
  {
   "id": "scadrial-080",
@@ -877,6 +877,6 @@
    "Dem Amt für Ressourcen",
    "Dem Amt für Finanzwesen"
   ],
-  "explain": "Das Konventikel war die Festung der Inquisitoren; in seinen Tiefen lag Kwaans Inschrift aus Stahl."
+  "explain": "Das Konventikel war die Festung der Inquisitoren; in seinen Tiefen lag die stählerne Inschrift aus den Kapitelmottos."
  }
 ]

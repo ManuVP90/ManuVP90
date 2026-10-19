@@ -12,7 +12,8 @@
     "next": "Next question",
     "loading": "Loading…",
     "playAgain": "Play again",
-    "openSettings": "Open settings"
+    "openSettings": "Open settings",
+    "labelled": "{label}: {text}"
   },
   "home": {
     "continue": "Continue game",
@@ -26,9 +27,12 @@
     "stats": "Stats",
     "settings": "Settings",
     "about": "About",
-    "newGameConfirm": "Starting a new game will discard the game in progress. Continue?",
     "continueQuick": "Continue quick game",
-    "continueQuickDesc": "Question {n} of {total} · {score} points"
+    "continueQuickDesc": "Question {n} of {total} · {score} points",
+    "newGameConfirmClassic": "Starting a new game will discard the classic game in progress. Continue?",
+    "newGameConfirmQuick": "Starting a new game will discard the quick game in progress. Continue?",
+    "newGameYes": "Start a new one",
+    "newGameNo": "Go back"
   },
   "cat": {
     "roshar": "Roshar",
@@ -69,7 +73,7 @@
     "title": "Lifelines",
     "help": "How lifelines work",
     "rules": "Each player gets one of each per game (quick games too). They can’t be used on the final question or in practice, and Atium and Stormlight can’t be combined on the same question.",
-    "used": "{name} (used)",
+    "used": "Already used: {name}",
     "atium": {
       "name": "Atium",
       "desc": "Removes two wrong answers.",
@@ -100,14 +104,15 @@
     "namePlaceholder": "Player {n}",
     "color": "Gem color",
     "timer": "30-second timer",
-    "timerHint": "Running out of time counts as a wrong answer.",
+    "timerHint": "Running out of time counts as a wrong answer. A question’s time keeps running even if you leave the app.",
     "start": "Start game",
     "fewer": "Remove a player",
-    "more": "Add a player"
+    "more": "Add a player",
+    "timerPause": "Turn the timer off to pause whenever you like."
   },
   "turn": {
     "passTo": "Pass the phone to",
-    "ready": "I'm ready",
+    "ready": "I’m ready",
     "noPeek": "Everyone else: no peeking!",
     "turnOf": "{name}’s turn",
     "starts": "First up: {name}"
@@ -121,26 +126,26 @@
     "landed": "{category}!",
     "chooseTitle": "Wildcard!",
     "chooseHint": "Choose any world",
-    "infusedPick": "{category} is already infused: pick another world!"
+    "infusedPick": "Gem already infused: {category}. Pick another world!"
   },
   "question": {
     "correct": "Correct!",
     "incorrect": "Incorrect",
-    "timeout": "Time's up!",
+    "timeout": "Time’s up!",
     "answerWas": "The correct answer was: {answer}",
     "secondsLeft": "{s} seconds left",
     "final": "Final question",
     "progress": "Question {n} of {total}"
   },
   "classic": {
-    "charge": "+1 charge for {category} ({n}/2)",
-    "infused": "Your {category} gem is infused!",
-    "alreadyInfused": "{category} is already infused, so no extra charge.",
+    "charge": "+1 charge · {category} ({n}/2)",
+    "infused": "Gem infused: {category}",
+    "alreadyInfused": "Gem already infused: {category}. No extra charge.",
     "allInfused": "All gems infused! Next up: the final question.",
     "spinAgain": "Spin again!",
     "passTurn": "Turn passes to {name}.",
     "soloMiss": "Missed! Spin again.",
-    "finalFail": "Not this time. You'll face the final question again on your next turn.",
+    "finalFail": "Not this time. You’ll face the final question again on your next turn.",
     "finalTitle": "Final question",
     "finalIntro": "{name}, all your gems are infused. Answer this question correctly to win!",
     "finalReady": "Bring it on",
@@ -150,12 +155,26 @@
     "gem0": "{category}: no charges",
     "gem1": "{category}: 1 charge",
     "gem2": "{category}: infused",
-    "streakPass": "{n} right in a row! The turn passes to {name}."
+    "streakPass": "{n} right in a row! The turn passes to {name}.",
+    "allInfusedNext": "All gems infused! You’ll face the final question on your next turn.",
+    "leaveTimerTitle": "Leave the game?",
+    "leaveTimerBody": "If you leave, the question’s time keeps running.",
+    "leaveTimerYes": "Leave",
+    "leaveTimerNo": "Keep playing",
+    "emptySaved": "The game is saved: you can continue it once you select more books."
   },
   "victory": {
     "title": "{name} wins!",
     "subtitle": "Every gem infused and the final question answered.",
-    "answered": "Questions asked: {n}"
+    "answered": "Questions asked: {n}",
+    "statsTitle": "Game summary",
+    "correct": "Correct",
+    "correctOf": "{n}/{total}",
+    "accuracy": "Accuracy",
+    "percent": "{n}%",
+    "lifelines": "Lifelines used",
+    "gems": "Gems",
+    "duration": "Duration: {time}"
   },
   "quick": {
     "title": "Quick game",
@@ -167,11 +186,15 @@
     "newRecord": "New record!",
     "finished": "Results",
     "seeResults": "See results",
-    "quitConfirm": "Quit this quick game? Your score will be lost.",
-    "intro": "{n} questions from every world, {s} seconds each. The faster you answer, the more points you score.",
+    "intro": "{n} questions from every world, {s} seconds each. The faster you answer, the more points you score. The clock keeps running even if you leave the app.",
     "introLifelines": "You get one of each lifeline: Atium, Stormlight and Breath.",
     "start": "Start",
-    "bestScore": "Best score: {n}"
+    "bestScore": "Best score: {n}",
+    "quitTitle": "Quit this quick game?",
+    "quitBody": "Your score for this game will be lost.",
+    "quitYes": "Quit game",
+    "quitNo": "Keep playing",
+    "emptySaved": "The game is saved (question {n} of {total}): you can continue it once you select more books."
   },
   "practice": {
     "title": "Practice",
@@ -185,7 +208,8 @@
     "tally": "{correct} of {total} correct",
     "fallback": "No {level} questions here yet: you’ll practice with {fallback} ones.",
     "empty": "No {level} questions here yet.",
-    "noneFilter": "No questions available: the spoiler filter leaves no works with questions. Select more works in Settings."
+    "noneFilter": "No questions available: the spoiler filter leaves no works with questions. Select more works in Settings.",
+    "allSeen": "You’ve seen every available question; they’ll start repeating now."
   },
   "stats": {
     "title": "Stats",
@@ -210,7 +234,7 @@
     "vibrationUnsupported": "Not supported on this device",
     "timer": "Timer on by default",
     "spoilers": "Spoiler filter",
-    "spoilersHint": "Tick the works you've read. Only questions about them will appear.",
+    "spoilersHint": "Tick the works you’ve read. Only questions about them will appear.",
     "selected": "{n} of {total} works selected",
     "all": "Select all",
     "none": "Select none",
@@ -218,11 +242,12 @@
     "reset": "Reset all data",
     "resetConfirm": "This deletes your stats, records, saved game and settings. Are you sure?",
     "resetDone": "All data has been reset.",
-    "storageWarning": "Storage isn't available, so settings and progress won't be kept after closing the app."
+    "storageWarning": "Storage isn’t available, so settings and progress won’t be kept after closing the app.",
+    "resetNo": "Keep my data"
   },
   "about": {
     "title": "About",
-    "body": "A Trivial-style quiz about the worlds of Brandon Sanderson's Cosmere. Play solo or pass the phone around with friends.",
+    "body": "A Trivial-style quiz about the worlds of Brandon Sanderson’s Cosmere. Play solo or pass the phone around with friends.",
     "howTo": "How to play",
     "rule1": "Spin the wheel and answer a question about the world it lands on.",
     "rule2": "Right answer: you earn a charge in that world and spin again. Wrong answer: the turn passes to the next player.",
@@ -234,17 +259,47 @@
     "levels": "Difficulty levels",
     "levelsFinal": "The classic game’s final question is medium on Easy, hard on Normal and expert on Hard and Expert.",
     "lifelines": "Lifelines",
-    "rule5": "A random draw decides who starts. After 3 right answers in a row, the turn passes to the next player anyway."
+    "rule5": "A random draw decides who starts. After 3 right answers in a row, the turn passes to the next player anyway.",
+    "rule6": "If the wheel lands on a gem you’ve already infused, you choose another world.",
+    "intro": "Show the introduction"
   },
   "errors": {
-    "load": "Couldn't load the questions. Check your connection and reload.",
+    "load": "Couldn’t load the questions. Check your connection and reload.",
     "noQuestions": "No questions available with your current spoiler filter.",
-    "fallback": "Questions aren't available in this language yet, so they're shown in English."
+    "fallback": "Questions aren’t available in this language yet, so they’re shown in English.",
+    "emptyFilter": "Your spoiler filter leaves no questions. Select the books you’ve read in Settings."
   },
   "boot": {
     "title": "Something went wrong",
     "body": "The app couldn’t start. The saved data may be damaged: clearing it usually fixes this (you’ll lose the game in progress, your settings and stats).",
     "reset": "Clear data and restart",
-    "retry": "Try again"
+    "retry": "Try again",
+    "confirm": "Clear the app’s data? You’ll lose the game in progress, your settings and stats.",
+    "confirmYes": "Yes, clear and restart",
+    "cancel": "Keep my data"
+  },
+  "onboarding": {
+    "label": "Introduction",
+    "step": "Step {n} of {total}",
+    "skip": "Skip",
+    "next": "Next",
+    "welcome": "Welcome",
+    "readTitle": "What have you read?",
+    "readHint": "Tick the books you’ve read and you’ll only get questions about them. You can change this any time in Settings.",
+    "all": "All",
+    "none": "None",
+    "noneWarn": "With no books ticked there won’t be any questions.",
+    "rulesTitle": "How to play",
+    "ruleWheel": "Spin the wheel: it picks the world of your question. On the wildcard, you choose.",
+    "ruleGems": "Each right answer charges that world’s gem; two charges infuse it. Infuse them all and answer the final question to win.",
+    "ruleLifelines": "You get three lifelines per game: Atium removes two wrong answers, Stormlight lets you pick again and Breath swaps the question.",
+    "startTitle": "All set!",
+    "startBody": "Play solo or pass the phone around. You can see this introduction again from “About”.",
+    "start": "Start playing",
+    "showWorks": "Show books: {world}",
+    "readAll": "I’ve read everything",
+    "orPick": "Or select only what you’ve read:",
+    "pickOne": "Select at least one book to continue.",
+    "skippedNoFilter": "No spoiler filter: you will get questions from every book. You can change this in Settings."
   }
 }

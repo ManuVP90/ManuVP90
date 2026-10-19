@@ -66,7 +66,7 @@ export function gemSvg(cat, { charges = 2, size = 24, color } = {}) {
     + `<polygon points="${s.outer}" fill="none" stroke="${c}" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
 }
 
-// ---------- lifeline art (SPEC "Comodines (v2)"), viewBox 0 0 32 32 ----------
+// ---------- lifeline art (SPEC "Ayudas (v2)"), viewBox 0 0 32 32 ----------
 let lifeSeq = 0;
 
 // Breath: a spiral of color (BioChroma), split into hue segments from the center outward.

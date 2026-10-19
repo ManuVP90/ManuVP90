@@ -73,11 +73,10 @@
       "A ship's surgeon",
       "A royal messenger"
     ],
-    "explain": "The duke sent Charlie to the Midnight Sea, where he was captured by the Sorceress.",
+    "explain": "The duke sent Charlie away on a voyage, and he ended up a prisoner of the Sorceress.",
     "terms": [
       "Charlie",
       "Tress",
-      "Midnight Sea",
       "Sorceress"
     ],
     "source": "Tress of the Emerald Sea"
@@ -87,21 +86,22 @@
     "category": "otros",
     "difficulty": 1,
     "work": "tress",
-    "q": "Who captains the pirate ship Crow's Song when Tress joins its crew?",
-    "a": "Crow",
+    "q": "In which sea does the Sorceress hold her domain?",
+    "a": "The Midnight Sea",
     "wrong": [
-      "Fort",
-      "Salay",
-      "Laughing Ann"
+      "The Crimson Sea",
+      "The Rose Sea",
+      "The Sapphire Sea"
     ],
-    "explain": "Captain Crow is a ruthless pirate whom Tress eventually outwits.",
+    "explain": "The Sorceress rules the Midnight Sea, where Tress must sail to rescue Charlie.",
     "terms": [
-      "Crow's Song",
+      "Sorceress",
+      "Midnight Sea",
+      "Crimson Sea",
+      "Rose Sea",
+      "Sapphire Sea",
       "Tress",
-      "Crow",
-      "Fort",
-      "Salay",
-      "Laughing Ann"
+      "Charlie"
     ],
     "source": "Tress of the Emerald Sea"
   },
@@ -237,7 +237,7 @@
     "category": "otros",
     "difficulty": 3,
     "work": "tress",
-    "q": "In which of Lumar's seas does the dragon Xisis make his home?",
+    "q": "In which of the twelve seas does the dragon Xisis make his home?",
     "a": "The Crimson Sea",
     "wrong": [
       "The Midnight Sea",
@@ -246,7 +246,6 @@
     ],
     "explain": "Xisis is a dragon originally from Yolen who, for a time, made his home in the Crimson Sea.",
     "terms": [
-      "Lumar",
       "Xisis",
       "Crimson Sea",
       "Midnight Sea",
@@ -268,7 +267,7 @@
       "Canticle",
       "Taldain"
     ],
-    "explain": "Komashi is the world where the Shard Virtuosity Splintered herself.",
+    "explain": "Komashi is home both to Yumi's yoki-hijo traditions and to Painter's city of Kilahito.",
     "terms": [
       "Yumi",
       "Painter",
@@ -276,8 +275,8 @@
       "Lumar",
       "Canticle",
       "Taldain",
-      "Shard",
-      "Virtuosity"
+      "yoki-hijo",
+      "Kilahito"
     ],
     "source": "Yumi and the Nightmare Painter"
   },
@@ -327,7 +326,7 @@
     "q": "What sacred title does Yumi hold among her people?",
     "a": "Yoki-hijo",
     "wrong": [
-      "Nightmare painter",
+      "Temple oracle",
       "Shroud warden",
       "Hion engineer"
     ],
@@ -335,7 +334,6 @@
     "terms": [
       "Yumi",
       "Yoki-hijo",
-      "Nightmare painter",
       "shroud",
       "hion"
     ],
@@ -480,19 +478,19 @@
     "q": "Which Shard Splintered herself on Komashi?",
     "a": "Virtuosity",
     "wrong": [
-      "Cultivation",
-      "Devotion",
-      "Endowment"
+      "Ambition",
+      "Autonomy",
+      "Valor"
     ],
     "explain": "The remnants of Virtuosity's power shaped the strange Investiture of Komashi.",
     "terms": [
       "Shard",
       "Komashi",
       "Virtuosity",
-      "Devotion",
-      "Endowment",
       "Investiture",
-      "Cultivation"
+      "Ambition",
+      "Autonomy",
+      "Valor"
     ],
     "source": "Yumi and the Nightmare Painter"
   },
@@ -541,23 +539,18 @@
     "category": "otros",
     "difficulty": 1,
     "work": "sunlit-man",
-    "q": "Which native of Canticle becomes Nomad's main ally in The Sunlit Man?",
-    "a": "Rebeke",
+    "q": "In The Sunlit Man, what is Rebeke riding when Nomad latches on to it and is dragged away with her?",
+    "a": "A hovercycle",
     "wrong": [
-      "Compassion",
-      "Contemplation",
-      "Zeal"
+      "A glider",
+      "A steam carriage",
+      "An armored truck"
     ],
-    "explain": "Rebeke becomes Nomad's key ally in standing against the Cinder King.",
+    "explain": "Nomad hurls a chain onto Rebeke's departing hovercycle, and the sunlight starts to burn him as he is dragged away.",
     "terms": [
-      "Canticle",
-      "Nomad",
       "The Sunlit Man",
       "Rebeke",
-      "Cinder King",
-      "Compassion",
-      "Contemplation",
-      "Zeal"
+      "Nomad"
     ],
     "source": "The Sunlit Man"
   },
@@ -612,24 +605,22 @@
     "category": "otros",
     "difficulty": 2,
     "work": "sunlit-man",
-    "q": "Which tyrant do Nomad and Rebeke oppose on Canticle?",
+    "q": "Which tyrant rules the planet where The Sunlit Man is set?",
     "a": "The Cinder King",
     "wrong": [
-      "Zeal",
-      "The Lodestar",
+      "The Sunlit One",
+      "The Prospector",
       "The Greater Good"
     ],
     "explain": "The Cinder King commands the Charred, people enslaved by a corrupted sunheart driven into their chests.",
     "terms": [
-      "Nomad",
-      "Rebeke",
-      "Canticle",
+      "The Sunlit Man",
       "Cinder King",
+      "Greater Good",
       "Charred",
       "sunheart",
-      "Zeal",
-      "Lodestar",
-      "Greater Good"
+      "Sunlit One",
+      "Prospector"
     ],
     "source": "The Sunlit Man"
   },
@@ -840,17 +831,17 @@
     "a": "Autonomy",
     "wrong": [
       "Honor",
-      "Endowment",
-      "Cultivation"
+      "Valor",
+      "Preservation"
     ],
     "explain": "Taldain orbits a blue-white supergiant paired with a dim white dwarf.",
     "terms": [
       "Shard",
       "Taldain",
       "Autonomy",
-      "Endowment",
-      "Cultivation",
-      "Honor"
+      "Honor",
+      "Valor",
+      "Preservation"
     ],
     "source": "Arcanum Unbounded, Taldain system essay; Coppermind: Taldain system"
   },
@@ -931,7 +922,7 @@
       "Brother",
       "Grandfather"
     ],
-    "explain": "Trappers like Dusk treat the deadly island of Patji with wary reverence, as a stern father.",
+    "explain": "Dusk and his people treat the deadly island of Patji with wary reverence, as a stern father.",
     "terms": [
       "Patji",
       "Pantheon",
@@ -1073,11 +1064,10 @@
       "Her body was never found",
       "She was burned on a pyre"
     ],
-    "explain": "Silence trapped the shade of her strict grandmother in the waystop's shrine, and later unleashes it on Theopolis.",
+    "explain": "Silence trapped the shade of her strict grandmother in the waystop's shrine, and later unleashes it on the tax collector.",
     "terms": [
       "Silence",
-      "Homeland",
-      "Theopolis"
+      "Homeland"
     ],
     "source": "Shadows for Silence in the Forests of Hell; Coppermind: Silence's grandmother"
   },
@@ -1156,7 +1146,7 @@
       "Release a burst of air",
       "Turn into a thick foam"
     ],
-    "explain": "Sprouters use roseite crystal to patch damaged hulls; roseite also resists silver better than most spores.",
+    "explain": "Sprouters use roseite crystal to patch damaged hulls.",
     "terms": [
       "roseite spores",
       "sprouters"
@@ -1232,19 +1222,18 @@
     "category": "otros",
     "difficulty": 4,
     "work": "yumi",
-    "q": "What did the Cryptic Design open in Kilahito while Hoid was frozen in time?",
+    "q": "In Yumi and the Nightmare Painter, what did Hoid's companion open in Kilahito while he was frozen in time?",
     "a": "A noodle shop",
     "wrong": [
       "A painting school",
       "A tea house",
       "A bookshop"
     ],
-    "explain": "Design ran the Noodle Pupil with the cook Namakudo and later left it to Yumi and Painter, who renamed it the Noodle Princess.",
+    "explain": "The Noodle Pupil was run with the cook Namakudo and later left to Yumi and Painter, who renamed it the Noodle Princess.",
     "terms": [
-      "Cryptic",
-      "Design",
-      "Kilahito",
+      "Yumi and the Nightmare Painter",
       "Hoid",
+      "Kilahito",
       "Noodle Pupil",
       "Namakudo",
       "Yumi",
@@ -1258,22 +1247,22 @@
     "category": "otros",
     "difficulty": 4,
     "work": "yumi",
-    "q": "What are the hijo, the spirits that yoki-hijo summon on Komashi?",
+    "q": "What are the hijo, the spirits that Yumi summons on Komashi?",
     "a": "Splinters of Virtuosity",
     "wrong": [
       "Cognitive Shadows of the dead",
       "Fragments of the shroud",
       "Sparks of living hion"
     ],
-    "explain": "Hijo live underground and are drawn to thoughts, emotions and art, such as carefully stacked stones.",
+    "explain": "Hijo live underground and are drawn to thoughts, emotions and art.",
     "terms": [
       "hijo",
-      "yoki-hijo",
       "Komashi",
       "Virtuosity",
       "Cognitive Shadows",
       "shroud",
-      "hion"
+      "hion",
+      "Yumi"
     ],
     "source": "Yumi and the Nightmare Painter; Coppermind: Hijo"
   },
@@ -1282,22 +1271,20 @@
     "category": "otros",
     "difficulty": 4,
     "work": "yumi",
-    "q": "Which of these women served as one of Yumi's attendants under Liyun?",
+    "q": "Which of these women served as one of Yumi's attendants?",
     "a": "Hwanji",
     "wrong": [
       "Akane",
       "Masaka",
       "Izumakamo"
     ],
-    "explain": "Hwanji, known for humming as she worked, had previously attended another yoki-hijo, Dwookim.",
+    "explain": "Hwanji, known for humming as she worked, had previously served Dwookim.",
     "terms": [
       "Yumi",
-      "Liyun",
       "Hwanji",
       "Akane",
       "Masaka",
       "Izumakamo",
-      "yoki-hijo",
       "Dwookim"
     ],
     "source": "Yumi and the Nightmare Painter, ch. 2; Coppermind: Hwanji"
@@ -1334,7 +1321,7 @@
       "Roshar",
       "Taldain"
     ],
-    "explain": "Canticle's people are Threnodites, though they remember their old homeworld as Hell.",
+    "explain": "Canticle's people descend from Threnodite settlers.",
     "terms": [
       "Canticle",
       "Threnody",
@@ -1423,7 +1410,7 @@
       "Being trodden on",
       "Strong wind"
     ],
-    "explain": "Wet sand glows and turns black, just like sand that has been mastered, until sunlight recharges it.",
+    "explain": "Wet sand loses its power just like sand that has been mastered, until sunlight recharges it.",
     "terms": [
       "sand mastery",
       "Taldain"
@@ -1442,10 +1429,9 @@
       "Ground-up bone",
       "Sunlight trapped inside the glass"
     ],
-    "explain": "The organism draws on the light of Taldain's larger sun; when its Investiture is spent, the sand turns black.",
+    "explain": "The organism draws on the light of Taldain's larger sun, which also recharges spent sand.",
     "terms": [
-      "Taldain",
-      "Investiture"
+      "Taldain"
     ],
     "source": "Arcanum Unbounded, The Taldain System; Coppermind: Sand mastery"
   },
@@ -1461,14 +1447,14 @@
       "Seven",
       "Twelve"
     ],
-    "explain": "Each Taisha heads one of Lossand's Professions; the Lord Mastrell speaks for the Diem.",
+    "explain": "Each Taisha heads one of Lossand's Professions; the Lord Mastrell speaks for the Sand Masters.",
     "terms": [
       "Taisha",
       "Taishin",
       "Lossand",
       "Professions",
       "Lord Mastrell",
-      "Diem"
+      "Sand Masters"
     ],
     "source": "White Sand; Coppermind: Taishin"
   },
@@ -1498,7 +1484,7 @@
     "category": "otros",
     "difficulty": 4,
     "work": "white-sand",
-    "q": "During which event do the Kerztian warrior-priests attack the Diem?",
+    "q": "During which event do the Kerztian warrior-priests attack Kenton's order of Sand Masters?",
     "a": "An advancement ceremony",
     "wrong": [
       "The Lord Mastrell's funeral",
@@ -1508,12 +1494,11 @@
     "explain": "Almost every Sand Master is killed, and Kenton believes he is the only survivor.",
     "terms": [
       "Kerztian",
-      "Diem",
+      "Kenton",
+      "Sand Masters",
       "Lord Mastrell",
       "Taishin",
-      "sandling",
-      "Sand Master",
-      "Kenton"
+      "sandling"
     ],
     "source": "White Sand; Coppermind: Kenton"
   },
@@ -1529,14 +1514,13 @@
       "Daggon",
       "Theopolis"
     ],
-    "explain": "As the White Fox, Silence tracks Chesterton and his crew through the Forests of Hell.",
+    "explain": "Silence tracks Chesterton and his crew through the Forests of Hell.",
     "terms": [
       "Silence",
       "Chesterton Divide",
       "Red Young",
       "Daggon",
       "Theopolis",
-      "White Fox",
       "Forests of Hell"
     ],
     "source": "Shadows for Silence in the Forests of Hell; Coppermind: Silence Montane"
@@ -1651,16 +1635,15 @@
     "category": "otros",
     "difficulty": 3,
     "work": "sixth-of-the-dusk",
-    "q": "What is the trading company's machine from the Ones Above meant to do on Patji?",
+    "q": "What is the trading company's offworld machine meant to do on Patji?",
     "a": "Locate all of the island's Aviar",
     "wrong": [
       "Drain the island's poisons",
       "Drive off the nightmaws",
       "Map the ocean floor"
     ],
-    "explain": "The machine was never meant to run: the Ones Above hoped its technology would hurry the Eelakin's progress so they could get around laws forbidding trade.",
+    "explain": "The machine was never meant to run: its offworld makers hoped its technology would hurry the Eelakin's progress so they could get around laws forbidding trade.",
     "terms": [
-      "Ones Above",
       "Patji",
       "Aviar",
       "nightmaws",
@@ -1673,7 +1656,7 @@
     "category": "otros",
     "difficulty": 4,
     "work": "sixth-of-the-dusk",
-    "q": "What actually grants the Aviar their talents?",
+    "q": "What actually grants the talented birds of Dusk's world their abilities?",
     "a": "A parasite they pick up on the islands",
     "wrong": [
       "Minerals in the island springs",
@@ -1682,7 +1665,6 @@
     ],
     "explain": "Sak, a mainland bird, only gained her talent after Dusk took her to Patji.",
     "terms": [
-      "Aviar",
       "Sak",
       "Dusk",
       "Patji"
@@ -1694,14 +1676,14 @@
     "category": "otros",
     "difficulty": 4,
     "work": "sixth-of-the-dusk",
-    "q": "Who was Dusk's mentor as a trapper?",
+    "q": "Who taught Dusk his profession?",
     "a": "His uncle",
     "wrong": [
       "His father",
       "His grandfather",
       "His older brother"
     ],
-    "explain": "After his uncle died on a trip to Patji, Dusk became a trapper of that island alone, as tradition demanded.",
+    "explain": "After his uncle died on a trip to Patji, Dusk carried on alone on that island, as tradition demanded.",
     "terms": [
       "Dusk",
       "Patji"

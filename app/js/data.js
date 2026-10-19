@@ -57,12 +57,21 @@ function levelRange(level) {
  * question just shown never comes back right away when a category starts over.
  */
 export class Pool {
-  constructor(questions, disabledWorks = [], used = {}) {
+  /**
+   * @param {object} [recent] recency tracker across games ({ rank(id), add(id) }, see core.makePool):
+   *        among the candidates of a draw, questions not seen lately come first, then the least
+   *        recently seen. `recycled` turns true when a draw had to start a category over.
+   */
+  constructor(questions, disabledWorks = [], used = {}, recent = null) {
     const off = new Set(disabledWorks);
     this.used = used;
+    this.recent = recent;
+    this.recycled = false;
     this.byCat = Object.fromEntries(CATEGORIES.map((c) => [c, []]));
     this.byId = new Map();
+    this.allById = new Map(); // every loaded question, filter or not
     for (const q of questions) {
+      this.allById.set(q.id, q);
       if (off.has(q.w)) continue;
       this.byCat[q.c].push(q);
       this.byId.set(q.id, q);
@@ -86,6 +95,12 @@ export class Pool {
   }
 
   get(id) { return this.byId.get(id) || null; }
+
+  /**
+   * A question by id even if the spoiler filter now hides it: a question already on screen stays
+   * pending when the filter changes (no free re-draw).
+   */
+  getAny(id) { return this.allById.get(id) || null; }
 
   /** How many questions of `cat` pass `filter`, and how many of those are still unused. */
   counts(cat, filter = () => true) {
@@ -113,10 +128,26 @@ export class Pool {
       const last = cands.length > 1 ? [...usedList].reverse().find((id) => ids.has(id)) : undefined;
       this.used[cat] = usedList.filter((id) => !ids.has(id) || id === last);
       fresh = cands.filter((q) => q.id !== last);
+      this.recycled = true;
     }
-    const q = pick(fresh);
+    // Across games: questions not seen lately first, then the least recently seen one.
+    let best = fresh;
+    if (this.recent) {
+      const rank = (x) => this.recent.rank(x.id);
+      const low = Math.min(...fresh.map(rank));
+      best = fresh.filter((x) => rank(x) === low);
+    }
+    const q = pick(best);
     (this.used[cat] ||= []).push(q.id);
+    this.recent?.add(q.id);
     return q;
+  }
+
+  /** `list` without the questions seen lately (across games), unless that leaves nothing. */
+  notRecent(list) {
+    if (!this.recent) return list;
+    const out = list.filter((q) => this.recent.rank(q.id) < 0);
+    return out.length ? out : list;
   }
 
   /**
@@ -143,9 +174,12 @@ export class Pool {
     const usedIds = new Set(this.used[cat] || []);
     const fresh = {};
     const all = {};
-    for (const q of list) {
-      all[q.d] = (all[q.d] || 0) + 1;
-      if (!usedIds.has(q.id)) fresh[q.d] = (fresh[q.d] || 0) + 1;
+    // Difficulties are weighed on the questions not seen lately when there are any.
+    const unused = list.filter((q) => !usedIds.has(q.id));
+    for (const q of list) all[q.d] = (all[q.d] || 0) + 1;
+    const [lo0, hi0] = levelRange(level);
+    for (const q of this.notRecent(unused.filter((x) => x.d >= lo0 && x.d <= hi0)).concat(unused.filter((x) => x.d < lo0 || x.d > hi0))) {
+      fresh[q.d] = (fresh[q.d] || 0) + 1;
     }
     // Unused questions may come from one step outside the level (Easy → 2, Expert → 2);
     // past that, the level's own questions are recycled instead.
@@ -175,7 +209,7 @@ export class Pool {
     const [lo, hi] = levelRange(level);
     const tally = (list) => list.reduce((o, q) => { o[q.d] = (o[q.d] || 0) + 1; return o; }, {});
     const inRange = cands.filter((q) => q.d >= lo && q.d <= hi);
-    const d = nearestDifficulty(weightedPick(weights), tally(inRange.length ? inRange : cands), weights);
+    const d = nearestDifficulty(weightedPick(weights), tally(this.notRecent(inRange.length ? inRange : cands)), weights);
     return this.draw(cat, (q) => q.d === d && !seen.has(q.id));
   }
 

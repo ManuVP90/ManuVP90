@@ -3,12 +3,13 @@ import { h, svg } from './dom.js';
 import { ICONS } from './icons.js';
 import { t } from './i18n.js';
 import * as store from './storage.js';
-import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LANGS, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, levelOrDefault } from './config.js';
+import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LANGS, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, RECENT_MAX, levelOrDefault } from './config.js';
 import { Pool } from './data.js';
 import { setFxPrefs, fx } from './fx.js';
 
 // ---------- settings & stats ----------
-const DEFAULT_SETTINGS = { lang: null, theme: 'dark', sound: true, vibration: true, timer: true, disabledWorks: [], level: DEFAULT_LEVEL };
+// onbStep: the first-run introduction step being shown (0–2), so a reload there resumes it; null otherwise.
+const DEFAULT_SETTINGS = { lang: null, theme: 'dark', sound: true, vibration: true, timer: true, disabledWorks: [], level: DEFAULT_LEVEL, onboarded: false, onbStep: null };
 
 export const app = {
   settings: { ...DEFAULT_SETTINGS },
@@ -26,11 +27,18 @@ export function sanitizeSettings(s) {
   if (!isObj(s)) return out;
   if (LANGS.includes(s.lang)) out.lang = s.lang;
   if (s.theme === 'light' || s.theme === 'dark') out.theme = s.theme;
-  for (const k of ['sound', 'vibration', 'timer']) if (typeof s[k] === 'boolean') out[k] = s[k];
+  for (const k of ['sound', 'vibration', 'timer', 'onboarded']) if (typeof s[k] === 'boolean') out[k] = s[k];
   if (Array.isArray(s.disabledWorks)) out.disabledWorks = [...new Set(s.disabledWorks.filter((w) => typeof w === 'string'))];
   out.level = levelOrDefault(s.level);
+  if (Number.isInteger(s.onbStep) && s.onbStep >= 0 && s.onbStep <= 2) out.onbStep = s.onbStep;
   return out;
 }
+
+/**
+ * The first-run introduction is due: the (sanitized) settings don't say it was seen. Missing,
+ * corrupt or null settings therefore show it, and so does a reload in the middle of it.
+ */
+export function needsOnboarding() { return app.settings.onboarded !== true; }
 
 export function loadSettings() {
   app.settings = sanitizeSettings(store.load('settings', null));
@@ -94,9 +102,50 @@ export function recordLifeline(kind) {
   updateStats((s) => { s.lifelines[kind] = (s.lifelines[kind] || 0) + 1; });
 }
 
+// ---------- recently seen questions (across games and sessions) ----------
+// A ring buffer of the last RECENT_MAX question ids per language (`recent` key), so every draw
+// (quick, practice, classic) prefers questions not seen lately, then the least recently seen.
+const recentLang = () => app.questionsLang || app.questions?.lang || 'en';
+function loadRecent() {
+  const r = store.load('recent', null);
+  const list = isObj(r) && Array.isArray(r[recentLang()]) ? r[recentLang()] : [];
+  return [...new Set(list.filter((id) => typeof id === 'string'))].slice(-RECENT_MAX);
+}
+/** Remembers that question `id` was shown (most recent last). */
+export function noteSeen(id) {
+  const r = store.load('recent', null);
+  const all = isObj(r) ? r : {};
+  const list = loadRecent().filter((x) => x !== id);
+  list.push(id);
+  all[recentLang()] = list.slice(-RECENT_MAX);
+  store.save('recent', all);
+}
+/** Recency tracker for a Pool: rank(id) is -1 when not seen lately, higher = seen more recently. */
+function recentTracker() {
+  const list = loadRecent();
+  const rank = new Map(list.map((id, i) => [id, i]));
+  let top = list.length;
+  return {
+    rank: (id) => (rank.has(id) ? rank.get(id) : -1),
+    add: (id) => { rank.set(id, top++); noteSeen(id); },
+  };
+}
+
 /** A pool over the loaded questions respecting the spoiler filter. */
 export function makePool(used = app.sessionUsed) {
-  return new Pool(app.questions, app.settings.disabledWorks, used);
+  return new Pool(app.questions, app.settings.disabledWorks, used, recentTracker());
+}
+
+/** True when the spoiler filter leaves no question at all. */
+export function filterIsEmpty() {
+  return app.questions.length > 0 && new Pool(app.questions, app.settings.disabledWorks).size() === 0;
+}
+
+/** Warning shown when the spoiler filter leaves no question, with a button to Settings. */
+export function noQuestionsBanner(extraClass = '') {
+  return h('section', { class: `card empty-filter ${extraClass}`, role: 'status' },
+    h('p', { class: 'banner banner-warn' }, t('errors.emptyFilter')),
+    h('button', { type: 'button', class: 'btn btn-ghost btn-block empty-filter-settings', onclick: () => go('settings') }, svg(ICONS.settings), t('common.openSettings')));
 }
 
 // ---------- router ----------
@@ -296,15 +345,20 @@ function closeModal(result = false) {
   if (r) r(result);
 }
 
-export function confirmDialog(message, { okLabel = t('common.confirm'), cancelLabel = t('common.cancel'), danger = false } = {}) {
+/**
+ * Yes/no dialog. Every caller should pass explicit `okLabel` / `cancelLabel` verbs ("Keep playing" /
+ * "Quit game") so neither button can be read two ways; `title` is an optional bold question.
+ */
+export function confirmDialog(message, { title = null, okLabel = t('common.confirm'), cancelLabel = t('common.cancel'), danger = false } = {}) {
   closeModal(false);
   modalReturnFocus = document.activeElement;
   return new Promise((resolve) => {
     modalResolve = resolve;
     const ok = h('button', { type: 'button', class: `btn ${danger ? 'btn-danger' : 'btn-primary'}`, onclick: () => closeModal(true) }, okLabel);
     const cancel = h('button', { type: 'button', class: 'btn btn-ghost', onclick: () => closeModal(false) }, cancelLabel);
-    const box = h('div', { class: 'modal', role: 'alertdialog', 'aria-modal': 'true', 'aria-labelledby': 'modal-msg' },
-      h('p', { id: 'modal-msg' }, message),
+    const box = h('div', { class: 'modal', role: 'alertdialog', 'aria-modal': 'true', 'aria-labelledby': title ? 'modal-title' : 'modal-msg', 'aria-describedby': title ? 'modal-msg' : null },
+      title ? h('h2', { id: 'modal-title', class: 'modal-title' }, title) : null,
+      message ? h('p', { id: 'modal-msg' }, message) : null,
       h('div', { class: 'modal-actions' }, cancel, ok));
     modalEl = h('div', { class: 'modal-backdrop', onclick: (e) => { if (e.target === modalEl) closeModal(false); },
       onkeydown: (e) => {

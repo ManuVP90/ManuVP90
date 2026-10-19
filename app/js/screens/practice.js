@@ -90,13 +90,15 @@ export function practiceScreen() {
   const filter = (q) => !d || q.d === d;
   const q = d === null ? null : (sel.cat === 'all' ? pool.drawAny(d || null) : pool.draw(sel.cat, filter));
   if (!q) { setTimeout(() => go('practice-setup')); toast(t('errors.noQuestions')); return screen('', h('h1', {}, t('practice.title'))); }
+  // Every available question has been seen in this session: from now on they come back.
+  const repeat = pool.recycled ? h('p', { class: 'banner banner-warn practice-repeat', role: 'status' }, t('practice.allSeen')) : null;
   const tallyEl = h('span', { class: 'tally' }, t('practice.tally', { correct: tally.correct, total: tally.total }));
   const end = () => go('practice-setup');
   return screen('question practice',
     topBar(t('practice.title'), { back: end, right: h('button', { type: 'button', class: 'btn btn-small btn-ghost', onclick: end }, t('practice.end')) }),
     questionView({
       question: q,
-      top: h('div', { class: 'q-top' }, tallyEl),
+      top: [repeat, h('div', { class: 'q-top' }, tallyEl)],
       continueLabel: t('common.next'),
       onAnswer: ({ correct }) => {
         recordAnswer(q.c, correct);
