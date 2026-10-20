@@ -82,7 +82,7 @@ Si cambias archivos de `app/`, sube `CACHE_VERSION` en `app/sw.js`.
 
 ## Cómo se hizo
 
-Equipo de agentes coordinado por un líder: 1 desarrollador, 6 redactores (uno por mundo),
+Equipo de agentes coordinado por un líder (ver `docs/AGENTS.md`): 1 desarrollador, 6 redactores (uno por mundo),
 2 verificadores de datos, 1 terminóloga y 4 traductores (uno por idioma, cada uno responsable
 de verificar la terminología oficial de su idioma).
 
