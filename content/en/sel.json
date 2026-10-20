@@ -298,22 +298,16 @@
     "category": "sel",
     "difficulty": 1,
     "work": "elantris",
-    "q": "In which kingdom does the city of Elantris stand?",
-    "a": "Arelon",
+    "q": "Which sport is Sarene highly skilled at?",
+    "a": "Fencing",
     "wrong": [
-      "Teod",
-      "Fjorden",
-      "Duladel"
+      "Archery",
+      "Wrestling",
+      "Horse racing"
     ],
-    "explain": "Elantrians once ruled Arelon, until the Reod brought them down.",
+    "explain": "Sarene is an expert fencer and even teaches the noblewomen of the court to fence.",
     "terms": [
-      "Elantris",
-      "Arelon",
-      "Teod",
-      "Fjorden",
-      "Duladel",
-      "Elantrian",
-      "Reod"
+      "Sarene"
     ],
     "source": "Elantris"
   },
@@ -500,7 +494,7 @@
     "category": "sel",
     "difficulty": 2,
     "work": "elantris",
-    "q": "What event broke AonDor and caused the Reod?",
+    "q": "What event broke the magic of the Elantrians and caused the Reod?",
     "a": "An earthquake",
     "wrong": [
       "A curse from Jaddeth",
@@ -509,13 +503,13 @@
     ],
     "explain": "The resulting chasm changed the land of Arelon, which the Aons are tied to, so every Aon needed a new line.",
     "terms": [
-      "AonDor",
       "Reod",
       "Jaddeth",
       "Dakhor",
       "Fjorden",
       "Arelon",
-      "Aon"
+      "Aon",
+      "Elantrians"
     ],
     "source": "Elantris"
   },
@@ -594,7 +588,7 @@
     "category": "sel",
     "difficulty": 3,
     "work": "elantris",
-    "q": "What does Aon Ien do in AonDor?",
+    "q": "What does Aon Ien do when drawn by an Elantrian?",
     "a": "Heals",
     "wrong": [
       "Gives light",
@@ -604,7 +598,7 @@
     "explain": "Healing with Aon Ien required modifiers specifying which part of the body to mend.",
     "terms": [
       "Aon Ien",
-      "AonDor"
+      "Elantrian"
     ],
     "source": "Elantris"
   },
@@ -1178,7 +1172,7 @@
     "a": "The university",
     "wrong": [
       "The Royal Palace",
-      "The Korathi chapel",
+      "The city gates",
       "The marketplace"
     ],
     "explain": "Aanden set up his court in the university because Karata's gang held the palace.",
@@ -1506,18 +1500,18 @@
     "category": "sel",
     "difficulty": 4,
     "work": "hope-of-elantris",
-    "q": "In The Hope of Elantris, what is the name of the building where the children of New Elantris are cared for?",
-    "a": "The Roost",
+    "q": "In The Hope of Elantris, roughly how many children live together in the children's home of New Elantris?",
+    "a": "About fifty",
     "wrong": [
-      "The Nest",
-      "The Fold",
-      "The Cradle"
+      "About a dozen",
+      "About twenty",
+      "About two hundred"
     ],
-    "explain": "The Roost is New Elantris's nursery, where the story's young heroine helps look after the other children.",
+    "explain": "Matisse helps look after the fifty or so children who live there.",
     "terms": [
       "The Hope of Elantris",
-      "Roost",
-      "New Elantris"
+      "New Elantris",
+      "Matisse"
     ],
     "source": "The Hope of Elantris"
   },
@@ -1597,17 +1591,16 @@
     "category": "sel",
     "difficulty": 4,
     "work": "elantris",
-    "q": "Which Aon serves as the symbol of the Korathi church and is carved on its chapels?",
+    "q": "Which Aon serves as the symbol of Shu-Korath?",
     "a": "Omi",
     "wrong": [
       "Rao",
       "Ien",
       "Ashe"
     ],
-    "explain": "Aon Omi is the emblem of Shu-Korath.",
+    "explain": "Aon Omi, which means love, is the emblem of Shu-Korath and is carved on its chapels.",
     "terms": [
       "Aon",
-      "Korathi",
       "Omi",
       "Rao",
       "Ien",

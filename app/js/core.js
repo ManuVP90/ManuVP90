@@ -1,9 +1,12 @@
 // Shared app state, router and small UI building blocks used by every screen.
 import { h, svg } from './dom.js';
-import { ICONS } from './icons.js';
+import { ICONS, gemSvg } from './icons.js';
 import { t } from './i18n.js';
 import * as store from './storage.js';
-import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LANGS, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, RECENT_MAX, levelOrDefault } from './config.js';
+import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LANGS, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, RECENT_MAX, MISSED_MAX, SEEN_MAX, levelOrDefault } from './config.js';
+import { ACHIEVEMENTS, sanitizeAchievements, newlyEarned } from './achievements.js';
+import { sanitizeDaily } from './daily.js';
+import { addId, removeId, cleanIds, cleanIdMap } from './progress.js';
 import { Pool } from './data.js';
 import { setFxPrefs, fx } from './fx.js';
 
@@ -61,16 +64,20 @@ function applySettings() {
 
 const emptyStats = () => ({
   classicGames: 0, quickGames: 0, bestQuick: 0,
+  // Quick-game best score per level (1.5.0). `bestQuick` stays the best of all (older saves only have it).
+  bestByLevel: Object.fromEntries(LEVEL_IDS.map((l) => [l, 0])),
   cats: Object.fromEntries(CATEGORIES.map((c) => [c, { a: 0, c: 0 }])),
   lifelines: Object.fromEntries(LIFELINES.map((k) => [k, 0])),
 });
 
-/** Stored stats with every field checked: odd values (wrong type, negative) count as 0. */
-export function getStats() {
-  const s = store.load('stats', null);
+/** Stats with every field checked: odd values (wrong type, negative) count as 0. */
+export function sanitizeStats(s) {
   const base = emptyStats();
   if (!isObj(s)) return base;
   for (const k of ['classicGames', 'quickGames', 'bestQuick']) base[k] = count(s[k]);
+  if (isObj(s.bestByLevel)) for (const l of LEVEL_IDS) base.bestByLevel[l] = count(s.bestByLevel[l]);
+  // The overall record is never below a level's record.
+  base.bestQuick = Math.max(base.bestQuick, ...Object.values(base.bestByLevel));
   if (isObj(s.cats)) {
     for (const c of CATEGORIES) {
       const v = s.cats[c];
@@ -83,14 +90,19 @@ export function getStats() {
   return base;
 }
 
+/** Stored stats, sanitized. */
+export function getStats() { return sanitizeStats(store.load('stats', null)); }
+
 export function updateStats(fn) {
   const s = getStats();
   fn(s);
   store.save('stats', s);
+  checkAchievements(); // records, wins, answers and lifelines can unlock achievements
   return s;
 }
 
 export function recordAnswer(cat, correct) {
+  noteLangPlayed();
   updateStats((s) => {
     const c = (s.cats[cat] ||= { a: 0, c: 0 });
     c.a++;
@@ -119,7 +131,191 @@ export function noteSeen(id) {
   list.push(id);
   all[recentLang()] = list.slice(-RECENT_MAX);
   store.save('recent', all);
+  noteDiscovered(id);
 }
+
+// ---------- discovered questions (collection progress) ----------
+// Per language (`seen` key, { es: [...] }): every question id ever shown, capped at SEEN_MAX.
+// The recently-seen ring (kept since 1.4.0) is merged in, so players from before 1.6.0 keep theirs.
+function noteDiscovered(id) {
+  const all = loadIdMap('seen');
+  const list = cleanIds(all[recentLang()], SEEN_MAX);
+  if (list.includes(id)) return;
+  all[recentLang()] = addId(list, id, SEEN_MAX);
+  store.save('seen', all);
+}
+/** Ids of the questions discovered in the active question language. */
+export function getDiscovered() {
+  return new Set([...cleanIds(loadIdMap('seen')[recentLang()], SEEN_MAX), ...loadRecent()]);
+}
+/**
+ * Collection progress over `questions` minus the works in `disabledWorks`: how many were discovered,
+ * overall, per world and per difficulty. Ids that no longer exist in the data don't count.
+ */
+export function collection(disabledWorks = app.settings.disabledWorks, questions = app.questions, seen = getDiscovered()) {
+  const off = new Set(disabledWorks || []);
+  const worlds = Object.fromEntries(CATEGORIES.map((c) => [c, { cat: c, seen: 0, total: 0 }]));
+  const diffs = Object.fromEntries(DIFFICULTIES.map((d) => [d, { d, seen: 0, total: 0 }]));
+  let total = 0;
+  let found = 0;
+  for (const q of questions) {
+    if (off.has(q.w) || !worlds[q.c]) continue;
+    const hit = seen.has(q.id) ? 1 : 0;
+    total++; found += hit;
+    worlds[q.c].total++; worlds[q.c].seen += hit;
+    if (diffs[q.d]) { diffs[q.d].total++; diffs[q.d].seen += hit; }
+  }
+  return { seen: found, total, worlds: Object.values(worlds), diffs: Object.values(diffs) };
+}
+// ---------- missed questions ("Review mistakes", practice "My mistakes") ----------
+// Per language (`missed` key): ids answered wrong in any mode, most recent last, capped at MISSED_MAX.
+// A question leaves the list when it is answered right in practice.
+function loadIdMap(key) { const m = store.load(key, null); return isObj(m) ? m : {}; }
+/** Missed question ids in the active question language (most recent last). */
+export function getMissed() { return cleanIds(loadIdMap('missed')[recentLang()], MISSED_MAX); }
+export function noteMissed(id) {
+  const all = loadIdMap('missed');
+  all[recentLang()] = addId(all[recentLang()], id, MISSED_MAX);
+  store.save('missed', all);
+}
+export function clearMissed(id) {
+  const all = loadIdMap('missed');
+  const list = removeId(all[recentLang()], id);
+  if (list.length) all[recentLang()] = list; else delete all[recentLang()];
+  store.save('missed', all);
+}
+
+// ---------- daily challenge state ----------
+const dailyHelpers = { isPermutation: (a, n) => Array.isArray(a) && a.length === n && [...Array(n).keys()].every((i) => a.includes(i)),
+  isValidClock: (c) => c === undefined || c === null || (isObj(c) && Number.isInteger(c.remaining) && c.remaining >= 0 && c.remaining <= 30000
+    && (c.savedAt === null || c.savedAt === undefined || (Number.isFinite(c.savedAt) && c.savedAt >= 0))) };
+/** The stored daily-challenge state, sanitized (an invalid run is dropped). */
+export function getDaily() { return sanitizeDaily(store.load('daily', null), dailyHelpers); }
+/** Saves the daily state; `check: false` for in-progress saves (the timer writes about once a second). */
+export function saveDaily(d, { check = true } = {}) { store.save('daily', d); if (check) checkAchievements(); }
+
+// ---------- achievements ----------
+export function getAchievements() { return sanitizeAchievements(store.load('achievements', null)); }
+/** What the achievement rules look at. Collection-based ones count every question of the language (no filter). */
+export function achievementContext() {
+  return { stats: getStats(), collection: collection([]), daily: getDaily(), langs: getAchievements().langs };
+}
+/** Remembers that a question was answered in the active question language (for "play in 3 languages"). */
+function noteLangPlayed() {
+  const lang = recentLang();
+  const a = getAchievements();
+  if (!LANGS.includes(lang) || a.langs.includes(lang)) return;
+  a.langs.push(lang);
+  store.save('achievements', a);
+}
+/** Unlocks achievement `id` (once) and announces it. */
+export function unlockAchievement(id, { silent = false } = {}) {
+  const a = getAchievements();
+  if (a.unlocked[id] || !ACHIEVEMENTS.some((x) => x.id === id)) return false;
+  a.unlocked[id] = Date.now();
+  store.save('achievements', a);
+  if (!silent) announce(id);
+  return true;
+}
+/** Unlocks every achievement whose rule the current progress meets; returns the new ids. */
+export function checkAchievements({ silent = false } = {}) {
+  if (!app.questions) return [];
+  let ids = [];
+  try { ids = newlyEarned(getAchievements(), achievementContext()); } catch (e) { console.warn(e); }
+  for (const id of ids) unlockAchievement(id, { silent });
+  return ids;
+}
+
+// Unlock notices: queued, one at a time, never while a question is unanswered (they wait for it).
+const achQueue = [];
+let achEl = null;
+let achTimer = null;
+function announce(id) {
+  achQueue.push(id);
+  whenIdle(nextAnnouncement);
+}
+function nextAnnouncement() {
+  if (achEl || !achQueue.length) return;
+  if (questionBusy) { whenIdle(nextAnnouncement); return; }
+  const id = achQueue.shift();
+  const def = ACHIEVEMENTS.find((x) => x.id === id);
+  const close = () => { clearTimeout(achTimer); achEl?.remove(); achEl = null; setTimeout(nextAnnouncement, 250); };
+  // Not clickable (pointer-events: none): it sits over the top bar and must never swallow a tap.
+  achEl = h('div', { class: 'ach-toast', role: 'status', 'aria-live': 'polite', dataset: { ach: id } },
+    h('span', { class: 'ach-toast-gem', 'aria-hidden': 'true', html: gemSvg(def.gem, { size: 34 }) }),
+    h('span', { class: 'ach-toast-text' },
+      h('span', { class: 'ach-toast-label' }, t('ach.unlocked')),
+      h('span', { class: 'ach-toast-name' }, t(`ach.${id}.name`))));
+  document.body.appendChild(achEl);
+  try { fx.infuse(); } catch { /* sound is optional */ }
+  achTimer = setTimeout(close, 3600);
+}
+
+// ---------- export / import ----------
+/** What a backup holds: settings, stats and records, missed and recently seen questions (no games in progress). */
+export function exportData() {
+  const { onbStep, ...settings } = sanitizeSettings(store.load('settings', null));
+  return {
+    settings,
+    stats: getStats(),
+    missed: cleanIdMap(store.load('missed', null), LANGS, MISSED_MAX),
+    recent: cleanIdMap(store.load('recent', null), LANGS, RECENT_MAX),
+    seen: cleanIdMap(store.load('seen', null), LANGS, SEEN_MAX),
+    achievements: getAchievements(),
+    daily: (({ run, ...d }) => d)(getDaily()), // no challenge in progress, like the other games
+  };
+}
+
+/**
+ * Replaces the progress with a decoded backup. Every part is sanitized like stored data; a part
+ * that is missing or has the wrong shape is left untouched. Returns false when nothing usable was found.
+ */
+export function importData(d) {
+  if (!isObj(d)) return false;
+  const parts = ['settings', 'stats', 'missed', 'recent', 'seen', 'achievements', 'daily'].filter((k) => isObj(d[k]));
+  if (!parts.length) return false;
+  if (isObj(d.settings)) {
+    // Never bring back the first-run introduction: whoever imports has already played.
+    store.save('settings', { ...sanitizeSettings(d.settings), onboarded: true, onbStep: null });
+    loadSettings();
+  }
+  if (isObj(d.stats)) store.save('stats', sanitizeStats(d.stats));
+  if (isObj(d.missed)) store.save('missed', cleanIdMap(d.missed, LANGS, MISSED_MAX));
+  if (isObj(d.recent)) store.save('recent', cleanIdMap(d.recent, LANGS, RECENT_MAX));
+  if (isObj(d.seen)) store.save('seen', cleanIdMap(d.seen, LANGS, SEEN_MAX));
+  if (isObj(d.achievements)) store.save('achievements', sanitizeAchievements(d.achievements));
+  if (isObj(d.daily)) {
+    // Today's challenge in progress (if any) stays: a backup never holds one.
+    const run = getDaily().run;
+    store.save('daily', { ...sanitizeDaily({ ...d.daily, run: null }), run });
+  }
+  return true;
+}
+
+// ---------- "a question is being answered" (no interruptions meanwhile) ----------
+let questionBusy = false;
+let idleQueue = [];
+const busyHooks = [];
+/** `fn` runs whenever a question starts being answered. */
+export function onQuestionBusy(fn) { busyHooks.push(fn); }
+/** Set by the question card: true while an unanswered question is on screen. */
+export function setQuestionBusy(v) {
+  const was = questionBusy;
+  questionBusy = !!v;
+  if (questionBusy && !was) for (const fn of busyHooks) { try { fn(); } catch (e) { console.error(e); } }
+  // Flushed a moment later: a question swapped for another (Breath, next question) is busy again by then.
+  if (!questionBusy) setTimeout(flushIdle, 0);
+}
+function flushIdle() {
+  if (questionBusy) return;
+  const q = idleQueue;
+  idleQueue = [];
+  for (const fn of q) { try { fn(); } catch (e) { console.error(e); } }
+}
+export function isQuestionBusy() { return questionBusy; }
+/** Runs `fn` now, or as soon as no unanswered question is on screen. */
+export function whenIdle(fn) { if (questionBusy) idleQueue.push(fn); else fn(); }
+
 /** Recency tracker for a Pool: rank(id) is -1 when not seen lately, higher = seen more recently. */
 function recentTracker() {
   const list = loadRecent();

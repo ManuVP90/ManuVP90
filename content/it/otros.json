@@ -265,14 +265,14 @@
  },
  {
   "id": "otros-025",
-  "q": "Perché le città di Canticle devono spostarsi di continuo?",
+  "q": "In «The Sunlit Man», perché le città devono spostarsi di continuo?",
   "a": "Per sfuggire all’alba letale",
   "wrong": [
    "Per seguire mandrie migranti",
    "Per sfuggire alle inondazioni",
    "Per restare vicino all’oceano"
   ],
-  "explain": "Chiunque venga colto dalla luce diretta del sole di Canticle si riduce in cenere."
+  "explain": "Chiunque venga colto dalla luce diretta del sole del pianeta si riduce in cenere."
  },
  {
   "id": "otros-026",
@@ -336,7 +336,7 @@
   "wrong": [
    "Un sunheart corrotto",
    "Un Ideale infranto",
-   "L’esposizione al sole di Canticle"
+   "L’esposizione al sole letale"
   ],
   "explain": "Portare un Frammento dell’Alba lascia un segno duraturo su chiunque l’abbia avuto."
  },
@@ -397,14 +397,14 @@
  },
  {
   "id": "otros-037",
-  "q": "Che cosa ha di particolare il Lato Oscuro di Taldain?",
-  "a": "È sempre rivolto verso una stella fioca",
+  "q": "In «Sabbia bianca», che cosa ha di particolare il Lato Oscuro del pianeta?",
+  "a": "È sempre notte",
   "wrong": [
    "È un unico oceano",
    "È sempre in tempesta",
    "Non ha aria"
   ],
-  "explain": "Khriss viene dal Lato Oscuro, rivolto verso una nana bianca nascosta dietro un anello di particelle."
+  "explain": "Il Lato Oscuro non è mai rivolto verso il luminoso sole principale del pianeta, che illumina solo il Lato Diurno."
  },
  {
   "id": "otros-038",
@@ -441,7 +441,7 @@
  },
  {
   "id": "otros-041",
-  "q": "Come si chiamano gli uccelli di Primo del Sole che conferiscono talenti?",
+  "q": "In «Sesto del Vespro», come si chiamano gli uccelli che conferiscono talenti?",
   "a": "Aviar",
   "wrong": [
    "Nightmaw",
@@ -518,7 +518,7 @@
  },
  {
   "id": "otros-048",
-  "q": "Quale metallo può distruggere le ombre di Threnody?",
+  "q": "In «Ombre per Silence nelle Foreste dell’Inferno», quale metallo può distruggere le ombre?",
   "a": "L’argento",
   "wrong": [
    "Il ferro",
@@ -639,7 +639,7 @@
  },
  {
   "id": "otros-059",
-  "q": "Che cosa sono gli hijo, gli spiriti che Yumi evoca su Komashi?",
+  "q": "Che cosa sono gli hijo, gli spiriti che Yumi evoca?",
   "a": "Schegge di Virtuosismo",
   "wrong": [
    "Ombre cognitive dei morti",
@@ -661,25 +661,25 @@
  },
  {
   "id": "otros-061",
-  "q": "Da dove provengono i sunheart di Canticle?",
+  "q": "In «The Sunlit Man», da dove provengono i sunheart?",
   "a": "Dall’Investitura di chi muore sul pianeta",
   "wrong": [
    "Da meteoriti che cadono all’alba",
    "Da cristalli estratti nell’oscurità",
    "Dalle ceneri di foreste bruciate"
   ],
-  "explain": "I sunheart si formano da chi muore nella luce Investita del sole di Canticle, e alimentano le città volanti."
+  "explain": "I sunheart si formano da chi muore nella luce Investita del sole del pianeta, e alimentano le città volanti."
  },
  {
   "id": "otros-062",
-  "q": "Gli abitanti di Canticle discendono da coloni giunti da quale pianeta?",
+  "q": "Gli abitanti del pianeta di «The Sunlit Man» discendono da coloni giunti da quale pianeta?",
   "a": "Threnody",
   "wrong": [
    "Scadrial",
    "Roshar",
    "Taldain"
   ],
-  "explain": "Gli abitanti di Canticle discendono da coloni threnoditi."
+  "explain": "Discendono da coloni threnoditi."
  },
  {
   "id": "otros-063",
@@ -694,7 +694,7 @@
  },
  {
   "id": "otros-064",
-  "q": "Di che cosa sono fatte le città volanti di Canticle, come Beacon?",
+  "q": "In «The Sunlit Man», di che cosa sono fatte le città volanti, come Beacon?",
   "a": "Di molte navi più piccole collegate",
   "wrong": [
    "Di un’unica montagna svuotata",
@@ -716,7 +716,7 @@
  },
  {
   "id": "otros-066",
-  "q": "Oltre alla maestria della sabbia, che cos’altro esaurisce il potere della sabbia bianca di Taldain?",
+  "q": "Oltre alla maestria della sabbia, che cos’altro esaurisce il potere della sabbia bianca?",
   "a": "Il contatto con l’acqua",
   "wrong": [
    "L’esposizione al buio",
@@ -727,14 +727,14 @@
  },
  {
   "id": "otros-067",
-  "q": "Che cosa dà il colore bianco alla sabbia Investita di Taldain?",
+  "q": "Sul pianeta di «Sabbia bianca», che cosa dà il colore bianco alla sabbia Investita?",
   "a": "Un microrganismo che vive sui granelli",
   "wrong": [
    "Sale incrostato sui granelli",
    "Ossa macinate",
    "Luce solare intrappolata nel vetro"
   ],
-  "explain": "L’organismo attinge alla luce del sole maggiore di Taldain, che ricarica anche la sabbia esaurita."
+  "explain": "L’organismo attinge alla luce del sole maggiore del pianeta, che ricarica anche la sabbia esaurita."
  },
  {
   "id": "otros-068",
@@ -811,18 +811,18 @@
    "Il defunto marito di Silence",
    "Un mercante d’argento itinerante"
   ],
-  "explain": "Red Young è uno dei cacciatori di taglie che operano dai forti di Threnody."
+  "explain": "Red Young è uno dei cacciatori di taglie che operano dai forti."
  },
  {
   "id": "otros-075",
-  "q": "Secondo il saggio di Khriss, quanti continenti ha Threnody?",
+  "q": "Secondo «Arcanum Unbounded», quanti continenti ha Threnody?",
   "a": "Due",
   "wrong": [
    "Uno",
    "Tre",
    "Cinque"
   ],
-  "explain": "Il continente più grande fu invaso dal Male, mentre quello più piccolo e boscoso divenne le Foreste dell’Inferno."
+  "explain": "Il Male invase il continente più grande e i sopravvissuti fuggirono su quello più piccolo."
  },
  {
   "id": "otros-076",

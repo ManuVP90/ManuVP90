@@ -32,7 +32,14 @@
     "newGameConfirmClassic": "Commencer une nouvelle partie effacera la partie classique en cours. Continuer ?",
     "newGameConfirmQuick": "Commencer une nouvelle partie effacera la partie rapide en cours. Continuer ?",
     "newGameYes": "En commencer une nouvelle",
-    "newGameNo": "Revenir"
+    "newGameNo": "Revenir",
+    "daily": "Défi du jour",
+    "dailyDesc": "5 questions, les mêmes pour tous aujourd’hui",
+    "dailyStreak": "Jours d’affilée : {n} · ne perdez pas la série !",
+    "dailyRun": "En cours : question {n} sur {total}",
+    "dailyContinue": "Reprendre le défi du jour",
+    "dailyDone": "Fait aujourd’hui : {n}/{total} · série de {streak}",
+    "achievements": "Succès"
   },
   "cat": {
     "roshar": "Roshar",
@@ -54,8 +61,8 @@
     "1": "Facile",
     "2": "Moyenne",
     "3": "Difficile",
-    "label": "Difficulté : {level}",
-    "4": "Expert"
+    "4": "Expert",
+    "label": "Difficulté : {level}"
   },
   "level": {
     "title": "Niveau de difficulté",
@@ -189,12 +196,14 @@
     "intro": "{n} questions sur tous les mondes, {s} secondes chacune. Plus vous répondez vite, plus vous marquez de points. Le chrono continue même si vous quittez l’application.",
     "introLifelines": "Vous disposez d’une aide de chaque type : Atium, Fulgiflamme et Souffle.",
     "start": "Commencer",
-    "bestScore": "Meilleur score : {n}",
     "quitTitle": "Abandonner la partie rapide ?",
     "quitBody": "Le score de cette partie sera perdu.",
     "quitYes": "Abandonner",
     "quitNo": "Continuer à jouer",
-    "emptySaved": "La partie est sauvegardée (question {n} sur {total}) : vous pourrez la reprendre en cochant d’autres œuvres."
+    "emptySaved": "La partie est sauvegardée (question {n} sur {total}) : vous pourrez la reprendre en cochant d’autres œuvres.",
+    "bestLevel": "Meilleur score ({level}) : {n}",
+    "noBestLevel": "Pas encore de record en niveau {level}.",
+    "bestLegacy": "Record des versions précédentes (tous niveaux) : {n}"
   },
   "practice": {
     "title": "Entraînement",
@@ -209,7 +218,16 @@
     "fallback": "Pas encore de questions de difficulté {level} ici : vous vous entraînerez avec celles de difficulté {fallback}.",
     "empty": "Pas encore de questions de difficulté {level} ici.",
     "noneFilter": "Aucune question disponible : le filtre anti-spoilers ne laisse aucune œuvre avec des questions. Cochez plus d’œuvres dans les Réglages.",
-    "allSeen": "Vous avez vu toutes les questions disponibles ; elles vont maintenant se répéter."
+    "allSeen": "Vous avez vu toutes les questions disponibles ; elles vont maintenant se répéter.",
+    "missed": "Mes erreurs ({n})",
+    "missedLabel": "Révision",
+    "missedHint": "Uniquement les questions manquées. Une bonne réponse les retire de la liste.",
+    "missedNone": "Les questions manquées dans n’importe quel mode apparaîtront ici.",
+    "missedAvailable": "Erreurs à revoir : {n}",
+    "missedTitle": "Mes erreurs",
+    "missedLeft": "Restantes : {n}",
+    "missedCleared": "Retirée de vos erreurs.",
+    "missedDone": "Vous avez revu toutes vos erreurs !"
   },
   "stats": {
     "title": "Statistiques",
@@ -221,7 +239,13 @@
     "byCategory": "Réussite par monde",
     "none": "Aucune réponse pour l’instant. À vous de jouer !",
     "of": "{correct} sur {total}",
-    "lifelines": "Aides utilisées"
+    "lifelines": "Aides utilisées",
+    "recordsByLevel": "Records en partie rapide par niveau",
+    "collection": "Collection",
+    "discovered": "{n}/{total} questions découvertes",
+    "discoveredOf": "{n}/{total}",
+    "collectionFiltered": "Seules comptent les œuvres cochées dans le filtre anti-spoilers.",
+    "byDifficulty": "Par difficulté"
   },
   "settings": {
     "title": "Réglages",
@@ -243,7 +267,27 @@
     "resetConfirm": "Vos statistiques, records, partie sauvegardée et réglages seront supprimés. Êtes-vous sûr ?",
     "resetDone": "Toutes les données ont été effacées.",
     "storageWarning": "Le stockage n’est pas disponible : les réglages et la progression ne seront pas conservés après la fermeture.",
-    "resetNo": "Ne rien effacer"
+    "resetNo": "Ne rien effacer",
+    "backup": "Sauvegarde",
+    "backupHint": "Enregistrez vos statistiques, records, erreurs et réglages dans un code pour les transférer sur un autre appareil ou les restaurer. Les parties en cours ne sont pas incluses.",
+    "backupExport": "Exporter la progression",
+    "backupCode": "Code de votre progression",
+    "backupCopy": "Copier le code",
+    "backupCopied": "Code copié. Conservez-le en lieu sûr.",
+    "backupCopyFailed": "Copie impossible : sélectionnez le code et copiez-le à la main.",
+    "backupPaste": "Importer : collez un code ici",
+    "backupImport": "Importer la progression",
+    "backupNo": "Ne pas importer",
+    "backupConfirmTitle": "Importer cette progression ?",
+    "backupConfirm": "Vos statistiques, records, erreurs et réglages actuels seront remplacés par ceux du code. Les parties en cours ne changent pas.",
+    "backupDone": "Progression importée.",
+    "backupError": {
+      "empty": "Collez d’abord un code.",
+      "format": "Ce code n’est pas valide. Vérifiez que vous l’avez copié en entier.",
+      "checksum": "Le code est incomplet ou abîmé. Copiez-le à nouveau.",
+      "version": "Ce code provient d’une autre version de l’application et ne peut pas être importé.",
+      "unsupported": "Ce navigateur ne peut pas lire le code. Mettez-le à jour ou utilisez-en un autre."
+    }
   },
   "about": {
     "title": "À propos",
@@ -301,5 +345,128 @@
     "orPick": "Ou cochez seulement ce que vous avez lu :",
     "pickOne": "Cochez au moins une œuvre pour continuer.",
     "skippedNoFilter": "Aucun filtre anti-spoilers : vous aurez des questions sur tous les livres. Vous pouvez le modifier dans les Paramètres."
+  },
+  "report": {
+    "link": "Signaler cette question",
+    "describe": "Qu’est-ce qui ne va pas ? (réponse, nom, traduction, spoiler…)",
+    "offlineCopied": "Vous êtes hors ligne : le signalement a été copié dans le presse-papiers pour l’envoyer plus tard.",
+    "offlineFailed": "Vous êtes hors ligne et le signalement n’a pas pu être copié. Réessayez une fois connecté."
+  },
+  "review": {
+    "title": "Revoir les erreurs ({n})",
+    "hint": "Les questions manquées dans cette partie, avec la bonne réponse. Revoyez-les dans Entraînement → Mes erreurs.",
+    "answer": "Bonne réponse : {answer}",
+    "none": "Aucune erreur dans cette partie !"
+  },
+  "update": {
+    "available": "Nouvelle version disponible",
+    "action": "Mettre à jour",
+    "later": "Plus tard",
+    "updating": "Mise à jour…"
+  },
+  "daily": {
+    "title": "Défi du jour",
+    "intro": "{n} questions de difficulté variée, {s} secondes chacune. Aujourd’hui, ce sont les mêmes pour tous ceux qui jouent dans votre langue.",
+    "once": "Un seul essai par jour. Revenez chaque jour pour garder votre série.",
+    "start": "Commencer le défi",
+    "streak": "Jours d’affilée : {n}",
+    "noStreak": "Pas encore de série",
+    "best": "Meilleure série : {n}",
+    "filterNote": "Votre filtre anti-spoilers masque certaines questions : votre défi est tiré uniquement parmi celles qui restent actives, il peut donc différer de celui des autres joueurs.",
+    "leaveTitle": "Quitter le défi du jour ?",
+    "marksLabel": "{n} bonnes réponses sur {total}",
+    "result": "{n} bonnes réponses sur {total}",
+    "comeBack": "Un nouveau défi vous attend demain.",
+    "share": "Partager le résultat",
+    "sharePreview": "Texte à partager",
+    "shareStreak": "Jours d’affilée : {n}",
+    "shareFiltered": "(filtre anti-spoilers actif)",
+    "copied": "Résultat copié dans le presse-papiers.",
+    "copyFailed": "Impossible de copier le résultat."
+  },
+  "ach": {
+    "title": "Succès",
+    "count": "{n} succès sur {total}",
+    "local": "Conservés uniquement sur cet appareil (et dans votre sauvegarde).",
+    "unlocked": "Succès débloqué !",
+    "unlockedOn": "Obtenu le {date}",
+    "locked": "Verrouillé",
+    "progress": "{n}/{total}",
+    "firstWin": {
+      "name": "Première victoire",
+      "desc": "Gagnez une partie classique."
+    },
+    "radiant": {
+      "name": "Radieux",
+      "desc": "Gagnez 5 parties classiques."
+    },
+    "fullTable": {
+      "name": "Table complète",
+      "desc": "Gagnez une partie classique à 6 joueurs."
+    },
+    "flawless": {
+      "name": "Six gemmes sans faute",
+      "desc": "Infusez les six gemmes d’une partie classique sans rater une seule question."
+    },
+    "expertPure": {
+      "name": "Sans aide",
+      "desc": "Gagnez une partie classique au niveau Expert sans utiliser d’aide."
+    },
+    "quickPerfect": {
+      "name": "Partie parfaite",
+      "desc": "Répondez juste aux 15 questions d’une partie rapide."
+    },
+    "quickScore": {
+      "name": "Contre la montre",
+      "desc": "Marquez 2000 points dans une partie rapide."
+    },
+    "allWorlds": {
+      "name": "De monde en monde",
+      "desc": "Répondez juste à au moins une question de chaque monde."
+    },
+    "answered100": {
+      "name": "Cent questions",
+      "desc": "Répondez à 100 questions, tous modes confondus."
+    },
+    "allLifelines": {
+      "name": "Les trois aides",
+      "desc": "Utilisez chaque aide au moins une fois : Atium, Fulgiflamme et Souffle."
+    },
+    "stormlightSave": {
+      "name": "Sauvé par la Fulgiflamme",
+      "desc": "Trompez-vous avec la Fulgiflamme active, puis trouvez la bonne réponse au second essai."
+    },
+    "compendium": {
+      "name": "Compendium",
+      "desc": "Découvrez toutes les questions d’un monde."
+    },
+    "halfCosmere": {
+      "name": "La moitié du Cosmère",
+      "desc": "Découvrez la moitié de toutes les questions."
+    },
+    "polyglot": {
+      "name": "Polyglotte",
+      "desc": "Jouez dans 3 langues."
+    },
+    "dailyFirst": {
+      "name": "Défi relevé",
+      "desc": "Terminez un défi du jour."
+    },
+    "dailyPerfect": {
+      "name": "Journée parfaite",
+      "desc": "Répondez juste aux 5 questions d’un défi du jour."
+    },
+    "dailyStreak3": {
+      "name": "Persévérance",
+      "desc": "Terminez le défi du jour 3 jours d’affilée."
+    },
+    "dailyStreak10": {
+      "name": "Dix jours d’affilée",
+      "desc": "Terminez le défi du jour 10 jours d’affilée."
+    },
+    "missedClear": {
+      "name": "Ardoise effacée",
+      "desc": "Révisez toutes vos erreurs en Entraînement jusqu’à vider la liste."
+    }
   }
 }

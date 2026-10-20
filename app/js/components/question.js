@@ -3,12 +3,13 @@
 import { h, svg } from '../dom.js';
 import { ICONS } from '../icons.js';
 import { t } from '../i18n.js';
-import { catPill, catStyle, diffPips, onCleanup } from '../core.js';
+import { catPill, catStyle, diffPips, onCleanup, setQuestionBusy } from '../core.js';
 import { fx, reducedMotion } from '../fx.js';
 import { TIMER_SECONDS, TIMER_MS } from '../config.js';
 import { shuffledOrder, shuffle } from '../data.js';
 import { clockLeft } from '../game.js';
 import { lifelineBar } from './lifelines.js';
+import { reportLink } from './review.js';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
 
@@ -39,6 +40,7 @@ const validRemaining = (ms) => Number.isInteger(ms) && ms >= 0 && ms <= TIMER_MS
  *        returns extra feedback content (e.g. "+1 charge") shown under the explanation.
  * @param {() => void} opts.onContinue
  * @param {string} [opts.continueLabel]
+ * @param {string} [opts.mode]   'classic' | 'quick' | 'practice' (goes into the question report)
  * @param {object} [opts.lifelines] omit for no lifelines (practice, final question)
  * @param {Record<string, number>} opts.lifelines.left   uses left per lifeline (read live; the screen decrements it)
  * @param {boolean} opts.lifelines.breathOk  another question of the same category and difficulty exists
@@ -51,9 +53,12 @@ const validRemaining = (ms) => Number.isInteger(ms) && ms >= 0 && ms <= TIMER_MS
  */
 export function questionView({
   question: q, order = shuffledOrder(), timer = false, clock = null, onClockChange = null, final = false, top = null,
-  onAnswer, onContinue, continueLabel = t('common.continue'), lifelines = null,
+  onAnswer, onContinue, continueLabel = t('common.continue'), lifelines = null, mode = '',
 }) {
   let answered = false;
+  // While unanswered, nothing may interrupt the question (e.g. the "new version" notice waits).
+  setQuestionBusy(true);
+  onCleanup(() => setQuestionBusy(false));
   let remaining = TIMER_SECONDS; // seconds left, for the score
   let interval = null;
   const pauses = new Set(); // why the countdown is stopped: 'dialog', 'hidden'
@@ -192,6 +197,7 @@ export function questionView({
     }
     if (timer) { halt(); remaining = clk.remaining / 1000; }
     answered = true;
+    setQuestionBusy(false);
     if (bar) bar.el.hidden = true;
     const correct = idx === 0;
     const timedOut = idx === -1;
@@ -216,6 +222,7 @@ export function questionView({
       correct ? null : h('p', { class: 'answer-was' }, t('question.answerWas', { answer: q.o[0] })),
       q.x ? h('p', { class: 'explain' }, q.x) : null,
       extra ? h('div', { class: 'feedback-extra' }, extra) : null,
+      h('p', { class: 'report-row' }, reportLink(q, mode)),
     ].filter(Boolean));
     continueBtn.hidden = false;
     continueBtn.focus({ preventScroll: true });

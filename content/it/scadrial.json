@@ -878,5 +878,115 @@
    "Il Cantone delle Finanze"
   ],
   "explain": "Il Conventicolo era la fortezza degli Inquisitori, e l’iscrizione d’acciaio citata negli epigrafi si trovava nelle sue profondità."
+ },
+ {
+  "id": "scadrial-081",
+  "q": "Ne «Le fasce del lutto», su che tipo di mezzo viaggiavano Allik e i suoi compagni?",
+  "a": "Un’aeronave",
+  "wrong": [
+   "Un piroscafo",
+   "Un treno",
+   "Un sottomarino"
+  ],
+  "explain": "La Brunstell, un’aeronave del sud, precipitò durante una tempesta e fu catturata dall’Ordine."
+ },
+ {
+  "id": "scadrial-082",
+  "q": "Ne «Il metallo perduto», quale membro della famiglia di Wax guida l’Ordine?",
+  "a": "Sua sorella, Telsin",
+  "wrong": [
+   "Suo zio, Edwarn",
+   "Sua moglie, Steris",
+   "Suo suocero, Lord Harms"
+  ],
+  "explain": "Telsin è tra i capi dell’Ordine e trama contro Elendel, mettendosi contro il fratello."
+ },
+ {
+  "id": "scadrial-083",
+  "q": "Ne «Il metallo perduto», che cosa cerca di far entrare l’Ordine a Elendel via nave?",
+  "a": "Una bomba devastante",
+  "wrong": [
+   "Un esercito di koloss",
+   "Una peste letale",
+   "Una scorta di atium"
+  ],
+  "explain": "Wax e Wayne scoprono che la bomba non è nella base dell’Ordine, ma a bordo di una nave diretta in città."
+ },
+ {
+  "id": "scadrial-084",
+  "q": "Ne «Le ombre residue», quale governante ha ucciso in segreto Salassa, impersonandolo per fomentare disordini a Elendel?",
+  "a": "Replar Innate",
+  "wrong": [
+   "Winsting Innate",
+   "Lord Harms",
+   "Edwarn Ladrian"
+  ],
+  "explain": "Salassa indossava il volto del governatore per aizzare i lavoratori della città contro chi li governava, e uccise anche Winsting, fratello del governatore."
+ },
+ {
+  "id": "scadrial-085",
+  "q": "Quale kandra diede a Wax l’orecchino attraverso cui Armonia può parlargli?",
+  "a": "MeLaan",
+  "wrong": [
+   "TenSoon",
+   "VenDell",
+   "KanPaar"
+  ],
+  "explain": "MeLaan glielo diede anni prima: ricavato da chiodi di Inquisitore fusi, permette ad Armonia di sentire i suoi pensieri."
+ },
+ {
+  "id": "scadrial-086",
+  "q": "Alla fine de «Le fasce del lutto», a chi vengono affidate le Fasce, come propone Steris?",
+  "a": "Ai kandra",
+  "wrong": [
+   "A Wax",
+   "All’Ordine",
+   "Al governatore di Elendel"
+  ],
+  "explain": "Il compromesso di Steris tiene le Fasce lontane sia da Elendel sia dai popoli del sud."
+ },
+ {
+  "id": "scadrial-087",
+  "q": "Ne «Le fasce del lutto», con quale titolo gli scadriani del sud ricordano la figura giunta da loro dopo la Morte di Ghiaccio?",
+  "a": "Il Sovrano",
+  "wrong": [
+   "La Guerriera Ascendente",
+   "L’Ultimo Imperatore",
+   "Il Campione delle Ere"
+  ],
+  "explain": "Secondo i popoli del sud, il Sovrano giunse ad aiutarli a sopravvivere al freddo dopo la Morte di Ghiaccio."
+ },
+ {
+  "id": "scadrial-088",
+  "q": "Ne «Il metallo perduto», la figlia di Wax e Steris porta lo stesso nome di quale personaggio dell’era 1?",
+  "a": "Tindwyl",
+  "wrong": [
+   "Allrianne",
+   "Valette",
+   "Mare"
+  ],
+  "explain": "Wax e Steris hanno due figli piccoli, Maxillium e Tindwyl."
+ },
+ {
+  "id": "scadrial-089",
+  "q": "Ne «Le fasce del lutto», in quale città Marasi e MeLaan trovano Allik prigioniero nel complesso dell’Ordine?",
+  "a": "Dulsing",
+  "wrong": [
+   "Bilming",
+   "Nuova Seran",
+   "Feltrel"
+  ],
+  "explain": "L’Ordine teneva Allik e il relitto della sua aeronave, la Brunstell, nel suo complesso di Dulsing."
+ },
+ {
+  "id": "scadrial-090",
+  "q": "Ne «Le ombre residue», con che cosa spara Wax a Salassa perché Armonia possa riprenderne il controllo?",
+  "a": "Con un proiettile ricavato dal suo orecchino",
+  "wrong": [
+   "Con un proiettile dalla punta di alluminio",
+   "Con un proiettile fuso nell’atium",
+   "Con un proiettile pieno di duralluminio liquido"
+  ],
+  "explain": "Il metallo emalurgico permise ad Armonia di raggiungere la mente di Salassa, che però scelse di morire piuttosto che sottomettersi."
  }
 ]

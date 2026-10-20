@@ -4616,5 +4616,286 @@
    "https://es.coppermind.net/wiki/Reino_Cognitivo"
   ],
   "notes": "\"Reino Cognitivo\", \"los Reinos\"."
+ },
+ "Honorbearer": {
+  "es": "Portador de Honor",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Elid-hija-Zeenid (\"una shin Portadora de Honor\")",
+   "https://es.coppermind.net/wiki/Rit-hija-Clutio"
+  ],
+  "notes": "Viento y verdad (Nova, 2024). Fem. \"Portadora de Honor\"; pl. \"Portadores de Honor\". Coppermind ES also writes \"portadora de Honor\" in lowercase; we follow the capitalized form of its page lead. Pending confirmation in the printed book."
+ },
+ "Honorbearers": {
+  "es": "Portadores de Honor",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Elid-hija-Zeenid"
+  ],
+  "notes": "Plural of Honorbearer (see that entry)."
+ },
+ "Stone Shaman": {
+  "es": "chamán de la piedra",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Chamanismo_de_la_piedra",
+   "https://es.coppermind.net/wiki/Rit-hija-Clutio (\"las túnicas grises de una chamana de la piedra\")"
+  ],
+  "notes": "Religion = \"chamanismo de la piedra\"; fem. \"chamana de la piedra\". Lowercase."
+ },
+ "Stone Shamans": {
+  "es": "chamanes de la piedra",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Chamanismo_de_la_piedra"
+  ],
+  "notes": "Plural of Stone Shaman."
+ },
+ "Truthless": {
+  "es": "Sinverdad",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sinverdad",
+   "https://es.coppermind.net/wiki/Valle_de_la_Verdad"
+  ],
+  "notes": "Invariable in plural (\"los Sinverdad\"). es.wikipedia (Palabras radiantes) writes \"Sin Verdad\"; Coppermind ES page title is \"Sinverdad\"."
+ },
+ "Thunderclasts": {
+  "es": "truenoclastos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Thunderclast. Translator choice following Nova conventions; not attested online in this pass. Searches for \"truenoclasto\" returned no hits; QA should check Juramentada (Nova), Battle of Thaylen Field chapters."
+ },
+ "Voidbinders": {
+  "es": "potenciadores del Vacío",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Especial:MobileDiff/93829 (page «Potenciación del Vacío» = Voidbinding)"
+  ],
+  "notes": "Built on Coppermind ES «Potenciación del Vacío» + glossary Surgebinder = potenciador."
+ },
+ "Azish": {
+  "es": "azishiano",
+  "status": "official",
+  "sources": [
+   "https://www.penguinrandomhouse.com/books/853211/danzante-del-filo--edgedancer-from-the-stormlight-archive-by-brandon-sanderson/ (Nova blurb: \"el joven emperador azishiano\")"
+  ],
+  "notes": "Adjective/gentilic; pl. \"azishianos\"."
+ },
+ "Wind": {
+  "es": "el Viento",
+  "status": "community",
+  "sources": [
+   "https://es.coppermind.net/wiki/Resumen:Viento_y_verdad"
+  ],
+  "notes": "The Wind (Wind and Truth). Capitalized as an entity."
+ },
+ "Almighty": {
+  "es": "Todopoderoso",
+  "status": "unverified",
+  "sources": [],
+  "notes": "\"el Todopoderoso\" (Vorin god). Translator choice following Nova conventions; not attested online in this pass."
+ },
+ "Vorinism": {
+  "es": "vorinismo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Lowercase, like \"vorin\". Translator choice following Nova conventions; not attested online in this pass."
+ },
+ "Fuzz": {
+  "es": "Pelusa",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Secret History nickname for Preservation; form already used in cosmere-070. Glossary lacks es. Translator choice following Nova conventions; not attested online in this pass."
+ },
+ "Prospector": {
+  "es": "Explorador",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Sunlit Man title (otros-029/063; fem. \"Exploradora\"). Glossary lacks es; form already used in es/otros.json. Translator choice following Nova conventions; not attested online in this pass."
+ },
+ "heliodor": {
+  "es": "heliodoro",
+  "status": "official",
+  "sources": [],
+  "notes": "Gem; same form already used in es/roshar.json. Lowercase."
+ },
+ "Imperial Guard": {
+  "es": "Guardia Imperial",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Azish Imperial Guard (\"Guardia Imperial azishiana\"). Translator choice following Nova conventions; not attested online in this pass."
+ },
+ "Commandant Supreme": {
+  "es": "comandante supremo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kushkam's rank. Lowercase as a rank. Translator choice following Nova conventions; not attested online in this pass."
+ },
+ "Sovereign": {
+  "es": "el Soberano",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Southern Scadrian name for Spook (Bands of Mourning). Translator choice following Nova conventions; not attested online in this pass."
+ },
+ "Ice Death": {
+  "es": "Muerte de Hielo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Bands of Mourning. Translator choice following Nova conventions; not attested online in this pass."
+ },
+ "Scadrians": {
+  "es": "scadrianos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Gentilic, lowercase (\"scadrianos del sur\"). Translator choice following Nova conventions; not attested online in this pass."
+ },
+ "Hemalurgic": {
+  "es": "hemalúrgico",
+  "status": "official",
+  "sources": [],
+  "notes": "Adjective of Hemalurgia; same form already used in es/scadrial.json and es/cosmere.json."
+ },
+ "Elantrians": {
+  "es": "elantrinos",
+  "status": "official",
+  "sources": [],
+  "notes": "Plural of Elantrian (glossary: elantrino)."
+ },
+ "Shardblades": {
+  "es": "hojas esquirladas",
+  "status": "official",
+  "sources": [],
+  "notes": "Plural of Shardblade (glossary: hoja esquirlada)."
+ },
+ "Shadows of Self": {
+  "es": "Sombras de identidad",
+  "status": "official",
+  "sources": [
+   "https://www.lecturalia.com/libro/98441/sombras-de-identidad"
+  ],
+  "notes": "Nova title (see WORK_TITLES.json)."
+ },
+ "The Bands of Mourning": {
+  "es": "Brazales de duelo",
+  "status": "official",
+  "sources": [],
+  "notes": "Nova title (see WORK_TITLES.json)."
+ },
+ "Shadows for Silence": {
+  "es": "Sombras por Silencio en los bosques del infierno",
+  "status": "official",
+  "sources": [
+   "https://es.coppermind.net/wiki/Sombras_por_Silencio_en_los_bosques_del_infierno"
+  ],
+  "notes": "Nova title (see WORK_TITLES.json); used in full in otros-048."
+ },
+ "Fen": {
+  "es": "Fen",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Gavinor": {
+  "es": "Gavinor",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Oroden": {
+  "es": "Oroden",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Rlain": {
+  "es": "Rlain",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Elid": {
+  "es": "Elid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Rit": {
+  "es": "Rit",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Zeenid": {
+  "es": "Zeenid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Sivi": {
+  "es": "Sivi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Abidi": {
+  "es": "Abidi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Gezamal": {
+  "es": "Gezamal",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Edwarn": {
+  "es": "Edwarn",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Maxillium": {
+  "es": "Maxillium",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Dulsing": {
+  "es": "Dulsing",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Brunstell": {
+  "es": "Brunstell",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Replar Innate": {
+  "es": "Replar Innate",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Winsting Innate": {
+  "es": "Winsting Innate",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "Human Fused": {
+  "es": "Fusionados humanos",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Wind and Truth (roshar-095): Stone Shaman Honorbearers. Built from glossary \"Fused\" → \"Fusionados\"; not attested online in this pass."
+ },
+ "Kushkam": {
+  "es": "Kushkam",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in Nova editions."
  }
 }

@@ -5,6 +5,7 @@ import { app, go, screen, confirmDialog, noQuestionsBanner, filterIsEmpty } from
 import { fx } from '../fx.js';
 import { loadSavedGame } from './classic.js';
 import { loadSavedRun, discardRun } from './quick.js';
+import { dailyStatus } from './daily.js';
 
 function logo() {
   // Six gems around a central Stormlight diamond.
@@ -40,6 +41,10 @@ export function homeScreen() {
     }
     go('quick');
   };
+  const daily = dailyStatus();
+  const dailyDesc = daily.state === 'run' ? t('home.dailyRun', { n: daily.n, total: daily.total })
+    : daily.state === 'done' ? t('home.dailyDone', { n: daily.score, total: daily.total, streak: num(daily.streak) })
+      : daily.streak ? t('home.dailyStreak', { n: num(daily.streak) }) : t('home.dailyDesc');
   const smallBtn = (icon, label, target) => h('button', { type: 'button', class: 'small-btn', onclick: () => { fx.tap(); go(target); } }, svg(ICONS[icon]), h('span', {}, label));
 
   return screen('home',
@@ -57,10 +62,12 @@ export function homeScreen() {
       savedQuick ? bigButton('bolt', t('home.continueQuick'), t('home.continueQuickDesc', { n: savedQuick.index + 1, total: savedQuick.total, score: num(savedQuick.score) }), () => go('quick', { resume: true }), 'menu-continue menu-continue-quick') : null,
       bigButton('users', t('home.classic'), t('home.classicDesc'), startClassic, saved || savedQuick ? '' : 'menu-primary'),
       bigButton('bolt', t('home.quick'), t('home.quickDesc'), startQuick, 'menu-quick'),
-      bigButton('book', t('home.practice'), t('home.practiceDesc'), () => go('practice-setup'))),
+      bigButton('book', t('home.practice'), t('home.practiceDesc'), () => go('practice-setup')),
+      bigButton('calendar', daily.state === 'run' ? t('home.dailyContinue') : t('home.daily'), dailyDesc, () => go('daily'), `menu-daily daily-${daily.state}`)),
     h('div', { class: 'small-row' },
       smallBtn('stats', t('home.stats'), 'stats'),
       smallBtn('settings', t('home.settings'), 'settings'),
-      smallBtn('info', t('home.about'), 'about')),
+      smallBtn('info', t('home.about'), 'about'),
+      smallBtn('medal', t('home.achievements'), 'achievements')),
   );
 }

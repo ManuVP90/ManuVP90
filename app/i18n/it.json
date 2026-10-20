@@ -32,7 +32,14 @@
     "newGameConfirmClassic": "Iniziando una nuova partita, la partita classica in corso andrà persa. Continuare?",
     "newGameConfirmQuick": "Iniziando una nuova partita, la partita veloce in corso andrà persa. Continuare?",
     "newGameYes": "Inizia una nuova",
-    "newGameNo": "Torna indietro"
+    "newGameNo": "Torna indietro",
+    "daily": "Sfida del giorno",
+    "dailyDesc": "5 domande, uguali per tutti oggi",
+    "dailyStreak": "Giorni di fila: {n} · non perdere la serie!",
+    "dailyRun": "In corso: domanda {n} di {total}",
+    "dailyContinue": "Continua la sfida del giorno",
+    "dailyDone": "Fatta oggi: {n}/{total} · serie di {streak}",
+    "achievements": "Traguardi"
   },
   "cat": {
     "roshar": "Roshar",
@@ -54,8 +61,8 @@
     "1": "Facile",
     "2": "Media",
     "3": "Difficile",
-    "label": "Difficoltà: {level}",
-    "4": "Esperto"
+    "4": "Esperto",
+    "label": "Difficoltà: {level}"
   },
   "level": {
     "title": "Livello di difficoltà",
@@ -189,12 +196,14 @@
     "intro": "{n} domande su tutti i mondi, {s} secondi ciascuna. Più rispondi in fretta, più punti fai. Il tempo continua a scorrere anche se esci dall’app.",
     "introLifelines": "Hai un aiuto di ciascun tipo: Atium, Folgoluce e Soffio.",
     "start": "Inizia",
-    "bestScore": "Miglior punteggio: {n}",
     "quitTitle": "Abbandonare la partita veloce?",
     "quitBody": "Perderai il punteggio di questa partita.",
     "quitYes": "Abbandona",
     "quitNo": "Continua a giocare",
-    "emptySaved": "La partita è salvata (domanda {n} di {total}): potrai riprenderla quando selezionerai altre opere."
+    "emptySaved": "La partita è salvata (domanda {n} di {total}): potrai riprenderla quando selezionerai altre opere.",
+    "bestLevel": "Miglior punteggio ({level}): {n}",
+    "noBestLevel": "Nessun record ancora a livello {level}.",
+    "bestLegacy": "Record delle versioni precedenti (tutti i livelli): {n}"
   },
   "practice": {
     "title": "Allenamento",
@@ -209,7 +218,16 @@
     "fallback": "Non ci sono ancora domande di difficoltà {level} qui: ti allenerai con quelle di difficoltà {fallback}.",
     "empty": "Non ci sono ancora domande di difficoltà {level} qui.",
     "noneFilter": "Nessuna domanda disponibile: il filtro spoiler non lascia nessuna opera con domande. Seleziona più opere nelle Impostazioni.",
-    "allSeen": "Hai visto tutte le domande disponibili; ora inizieranno a ripetersi."
+    "allSeen": "Hai visto tutte le domande disponibili; ora inizieranno a ripetersi.",
+    "missed": "I miei errori ({n})",
+    "missedLabel": "Ripasso",
+    "missedHint": "Solo le domande che hai sbagliato. Quando ne indovini una, esce dalla lista.",
+    "missedNone": "Qui compariranno le domande che sbagli in qualsiasi modalità.",
+    "missedAvailable": "Errori da ripassare: {n}",
+    "missedTitle": "I miei errori",
+    "missedLeft": "Rimasti: {n}",
+    "missedCleared": "Tolta dai tuoi errori.",
+    "missedDone": "Hai ripassato tutti i tuoi errori!"
   },
   "stats": {
     "title": "Statistiche",
@@ -221,7 +239,13 @@
     "byCategory": "Precisione per mondo",
     "none": "Nessuna risposta per ora. Inizia a giocare!",
     "of": "{correct} su {total}",
-    "lifelines": "Aiuti usati"
+    "lifelines": "Aiuti usati",
+    "recordsByLevel": "Record della partita veloce per livello",
+    "collection": "Collezione",
+    "discovered": "{n}/{total} domande scoperte",
+    "discoveredOf": "{n}/{total}",
+    "collectionFiltered": "Contano solo le opere selezionate nel filtro spoiler.",
+    "byDifficulty": "Per difficoltà"
   },
   "settings": {
     "title": "Impostazioni",
@@ -243,7 +267,27 @@
     "resetConfirm": "Verranno eliminati statistiche, record, partita salvata e impostazioni. Sei sicuro?",
     "resetDone": "Tutti i dati sono stati cancellati.",
     "storageWarning": "Memoria non disponibile: impostazioni e progressi non verranno conservati alla chiusura dell’app.",
-    "resetNo": "Non cancellare"
+    "resetNo": "Non cancellare",
+    "backup": "Backup",
+    "backupHint": "Salva statistiche, record, errori e impostazioni in un codice per portarli su un altro dispositivo o recuperarli. Le partite in corso non sono incluse.",
+    "backupExport": "Esporta i progressi",
+    "backupCode": "Codice dei tuoi progressi",
+    "backupCopy": "Copia il codice",
+    "backupCopied": "Codice copiato. Conservalo in un posto sicuro.",
+    "backupCopyFailed": "Impossibile copiare: seleziona il codice e copialo a mano.",
+    "backupPaste": "Importa: incolla qui un codice",
+    "backupImport": "Importa i progressi",
+    "backupNo": "Non importare",
+    "backupConfirmTitle": "Importare questi progressi?",
+    "backupConfirm": "Statistiche, record, errori e impostazioni attuali saranno sostituiti da quelli del codice. Le partite in corso non cambiano.",
+    "backupDone": "Progressi importati.",
+    "backupError": {
+      "empty": "Incolla prima un codice.",
+      "format": "Questo codice non è valido. Controlla di averlo copiato per intero.",
+      "checksum": "Il codice è incompleto o danneggiato. Copialo di nuovo.",
+      "version": "Questo codice proviene da un’altra versione dell’app e non si può importare.",
+      "unsupported": "Questo browser non riesce a leggere il codice. Aggiornalo o usane un altro."
+    }
   },
   "about": {
     "title": "Informazioni",
@@ -301,5 +345,128 @@
     "orPick": "Oppure seleziona solo quello che hai letto:",
     "pickOne": "Seleziona almeno un’opera per continuare.",
     "skippedNoFilter": "Nessun filtro spoiler: riceverai domande su tutti i libri. Puoi cambiarlo nelle Impostazioni."
+  },
+  "report": {
+    "link": "Segnala questa domanda",
+    "describe": "Che cosa non va? (risposta, nome, traduzione, spoiler…)",
+    "offlineCopied": "Sei offline: la segnalazione è stata copiata negli appunti per inviarla più tardi.",
+    "offlineFailed": "Sei offline e non è stato possibile copiare la segnalazione. Riprova quando sei online."
+  },
+  "review": {
+    "title": "Rivedi gli errori ({n})",
+    "hint": "Le domande sbagliate in questa partita, con la risposta giusta. Puoi ripassarle in Allenamento → I miei errori.",
+    "answer": "Risposta giusta: {answer}",
+    "none": "Nessun errore in questa partita!"
+  },
+  "update": {
+    "available": "Nuova versione disponibile",
+    "action": "Aggiorna",
+    "later": "Più tardi",
+    "updating": "Aggiornamento…"
+  },
+  "daily": {
+    "title": "Sfida del giorno",
+    "intro": "{n} domande di difficoltà varia, {s} secondi ciascuna. Oggi sono le stesse per tutti quelli che giocano nella tua lingua.",
+    "once": "Un solo tentativo al giorno. Torna ogni giorno per mantenere la serie.",
+    "start": "Inizia la sfida",
+    "streak": "Giorni di fila: {n}",
+    "noStreak": "Ancora nessuna serie",
+    "best": "Serie migliore: {n}",
+    "filterNote": "Il tuo filtro spoiler nasconde alcune domande: la tua sfida viene scelta solo tra quelle attive, quindi può essere diversa da quella degli altri giocatori.",
+    "leaveTitle": "Uscire dalla sfida del giorno?",
+    "marksLabel": "{n} risposte esatte su {total}",
+    "result": "{n} risposte esatte su {total}",
+    "comeBack": "Domani ci sarà una nuova sfida.",
+    "share": "Condividi il risultato",
+    "sharePreview": "Testo da condividere",
+    "shareStreak": "Giorni di fila: {n}",
+    "shareFiltered": "(con filtro spoiler)",
+    "copied": "Risultato copiato negli appunti.",
+    "copyFailed": "Impossibile copiare il risultato."
+  },
+  "ach": {
+    "title": "Traguardi",
+    "count": "{n} traguardi su {total}",
+    "local": "Salvati solo su questo dispositivo (e nel tuo backup).",
+    "unlocked": "Traguardo sbloccato!",
+    "unlockedOn": "Ottenuto il {date}",
+    "locked": "Bloccato",
+    "progress": "{n}/{total}",
+    "firstWin": {
+      "name": "Prima vittoria",
+      "desc": "Vinci una partita classica."
+    },
+    "radiant": {
+      "name": "Radioso",
+      "desc": "Vinci 5 partite classiche."
+    },
+    "fullTable": {
+      "name": "Tavolo al completo",
+      "desc": "Vinci una partita classica con 6 giocatori."
+    },
+    "flawless": {
+      "name": "Sei gemme senza errori",
+      "desc": "Infondi tutte e sei le gemme di una partita classica senza sbagliare nessuna domanda."
+    },
+    "expertPure": {
+      "name": "Senza aiuti",
+      "desc": "Vinci una partita classica a livello Esperto senza usare aiuti."
+    },
+    "quickPerfect": {
+      "name": "Partita perfetta",
+      "desc": "Rispondi esattamente a tutte le 15 domande di una partita veloce."
+    },
+    "quickScore": {
+      "name": "Contro il tempo",
+      "desc": "Ottieni 2000 punti in una partita veloce."
+    },
+    "allWorlds": {
+      "name": "Di mondo in mondo",
+      "desc": "Rispondi esattamente ad almeno una domanda di ogni mondo."
+    },
+    "answered100": {
+      "name": "Cento domande",
+      "desc": "Rispondi a 100 domande in qualsiasi modalità."
+    },
+    "allLifelines": {
+      "name": "I tre aiuti",
+      "desc": "Usa ogni aiuto almeno una volta: Atium, Folgoluce e Soffio."
+    },
+    "stormlightSave": {
+      "name": "Salvato dalla Folgoluce",
+      "desc": "Sbaglia con la Folgoluce attiva e indovina al secondo tentativo."
+    },
+    "compendium": {
+      "name": "Compendio",
+      "desc": "Scopri tutte le domande di un mondo."
+    },
+    "halfCosmere": {
+      "name": "Mezzo Cosmoverso",
+      "desc": "Scopri metà di tutte le domande."
+    },
+    "polyglot": {
+      "name": "Poliglotta",
+      "desc": "Gioca in 3 lingue."
+    },
+    "dailyFirst": {
+      "name": "Sfida vinta",
+      "desc": "Completa una sfida del giorno."
+    },
+    "dailyPerfect": {
+      "name": "Giornata perfetta",
+      "desc": "Rispondi esattamente a tutte le 5 domande di una sfida del giorno."
+    },
+    "dailyStreak3": {
+      "name": "Costanza",
+      "desc": "Completa la sfida del giorno 3 giorni di fila."
+    },
+    "dailyStreak10": {
+      "name": "Dieci giorni di fila",
+      "desc": "Completa la sfida del giorno 10 giorni di fila."
+    },
+    "missedClear": {
+      "name": "Conti saldati",
+      "desc": "Ripassa in Allenamento tutti i tuoi errori fino a svuotare la lista."
+    }
   }
 }

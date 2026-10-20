@@ -521,16 +521,16 @@
     "category": "otros",
     "difficulty": 1,
     "work": "sunlit-man",
-    "q": "Why must the cities of Canticle keep constantly moving?",
+    "q": "In The Sunlit Man, why must the cities keep constantly moving?",
     "a": "To outrun the deadly sunrise",
     "wrong": [
       "To follow migrating herds",
       "To escape rising floods",
       "To stay near the ocean"
     ],
-    "explain": "Anyone caught in Canticle's direct sunlight is burned to ash.",
+    "explain": "Anyone caught in the planet's direct sunlight is burned to ash.",
     "terms": [
-      "Canticle"
+      "The Sunlit Man"
     ],
     "source": "The Sunlit Man"
   },
@@ -654,7 +654,7 @@
     "wrong": [
       "A corrupted sunheart",
       "A broken Ideal",
-      "Exposure to Canticle's sun"
+      "Exposure to the deadly sun"
     ],
     "explain": "Holding a Dawnshard leaves a lasting mark on whoever carried it.",
     "terms": [
@@ -662,8 +662,7 @@
       "Torment",
       "Dawnshard",
       "Ideal",
-      "sunheart",
-      "Canticle"
+      "sunheart"
     ],
     "source": "The Sunlit Man"
   },
@@ -783,18 +782,18 @@
     "category": "otros",
     "difficulty": 2,
     "work": "white-sand",
-    "q": "What is distinctive about Taldain's Darkside?",
-    "a": "It always faces a dim star",
+    "q": "In White Sand, what is distinctive about the planet's Darkside?",
+    "a": "It is always night there",
     "wrong": [
       "It is a single ocean",
       "It is always stormy",
       "It has no air"
     ],
-    "explain": "Khriss hails from Darkside, which faces a white dwarf hidden behind a particle ring.",
+    "explain": "Darkside never faces the planet's bright main sun, which only lights Dayside.",
     "terms": [
-      "Taldain",
+      "White Sand",
       "Darkside",
-      "Khriss"
+      "Dayside"
     ],
     "source": "White Sand; Coppermind: Taldain system"
   },
@@ -872,7 +871,7 @@
     "category": "otros",
     "difficulty": 1,
     "work": "sixth-of-the-dusk",
-    "q": "What are the talent-granting birds of First of the Sun called?",
+    "q": "In Sixth of the Dusk, what are the talent-granting birds called?",
     "a": "Aviar",
     "wrong": [
       "Nightmaws",
@@ -881,7 +880,7 @@
     ],
     "explain": "Young Aviar must visit the island of Patji to gain their talents.",
     "terms": [
-      "First of the Sun",
+      "Sixth of the Dusk",
       "Aviar",
       "Patji",
       "Nightmaws",
@@ -1019,7 +1018,7 @@
     "category": "otros",
     "difficulty": 1,
     "work": "shadows-for-silence",
-    "q": "Which metal can destroy the shades of Threnody?",
+    "q": "In Shadows for Silence, which metal can destroy the shades?",
     "a": "Silver",
     "wrong": [
       "Iron",
@@ -1028,8 +1027,8 @@
     ],
     "explain": "Shades grow enraged if someone lights a fire, runs at night or sheds blood.",
     "terms": [
-      "shades",
-      "Threnody"
+      "Shadows for Silence",
+      "shades"
     ],
     "source": "Shadows for Silence in the Forests of Hell"
   },
@@ -1247,7 +1246,7 @@
     "category": "otros",
     "difficulty": 4,
     "work": "yumi",
-    "q": "What are the hijo, the spirits that Yumi summons on Komashi?",
+    "q": "What are the hijo, the spirits that Yumi summons?",
     "a": "Splinters of Virtuosity",
     "wrong": [
       "Cognitive Shadows of the dead",
@@ -1257,12 +1256,11 @@
     "explain": "Hijo live underground and are drawn to thoughts, emotions and art.",
     "terms": [
       "hijo",
-      "Komashi",
+      "Yumi",
       "Virtuosity",
       "Cognitive Shadows",
       "shroud",
-      "hion",
-      "Yumi"
+      "hion"
     ],
     "source": "Yumi and the Nightmare Painter; Coppermind: Hijo"
   },
@@ -1294,16 +1292,16 @@
     "category": "otros",
     "difficulty": 3,
     "work": "sunlit-man",
-    "q": "Where do Canticle's sunhearts come from?",
+    "q": "In The Sunlit Man, where do the sunhearts come from?",
     "a": "The Investiture of people who die there",
     "wrong": [
       "Meteorites that fall at dawn",
       "Crystals mined in the darkness",
       "The ashes of burned forests"
     ],
-    "explain": "Sunhearts form from people who perish in Canticle's Invested sunlight, and they power the flying cities.",
+    "explain": "Sunhearts form from people who perish in the planet's Invested sunlight, and they power the flying cities.",
     "terms": [
-      "Canticle",
+      "The Sunlit Man",
       "sunhearts",
       "Investiture"
     ],
@@ -1314,16 +1312,16 @@
     "category": "otros",
     "difficulty": 4,
     "work": "sunlit-man",
-    "q": "Canticle's people descend from settlers who came from which planet?",
+    "q": "The people of The Sunlit Man's world descend from settlers who came from which planet?",
     "a": "Threnody",
     "wrong": [
       "Scadrial",
       "Roshar",
       "Taldain"
     ],
-    "explain": "Canticle's people descend from Threnodite settlers.",
+    "explain": "They descend from Threnodite settlers.",
     "terms": [
-      "Canticle",
+      "The Sunlit Man",
       "Threnody",
       "Scadrial",
       "Roshar",
@@ -1360,7 +1358,7 @@
     "category": "otros",
     "difficulty": 4,
     "work": "sunlit-man",
-    "q": "What are Canticle's flying cities, such as Beacon, built from?",
+    "q": "In The Sunlit Man, what are the flying cities, such as Beacon, built from?",
     "a": "Many smaller ships linked together",
     "wrong": [
       "A single hollowed-out mountain",
@@ -1369,7 +1367,7 @@
     ],
     "explain": "The linked ships can be steered as one, kept aloft by sunhearts.",
     "terms": [
-      "Canticle",
+      "The Sunlit Man",
       "Beacon",
       "sunhearts"
     ],
@@ -1403,7 +1401,7 @@
     "category": "otros",
     "difficulty": 3,
     "work": "white-sand",
-    "q": "Besides sand mastery, what else uses up the power of Taldain's white sand?",
+    "q": "Besides sand mastery, what else uses up the power of the white sand?",
     "a": "Contact with water",
     "wrong": [
       "Exposure to darkness",
@@ -1412,8 +1410,7 @@
     ],
     "explain": "Wet sand loses its power just like sand that has been mastered, until sunlight recharges it.",
     "terms": [
-      "sand mastery",
-      "Taldain"
+      "sand mastery"
     ],
     "source": "White Sand; Coppermind: Sand mastery"
   },
@@ -1422,16 +1419,16 @@
     "category": "otros",
     "difficulty": 4,
     "work": "arcanum",
-    "q": "What gives Taldain's Invested sand its white color?",
+    "q": "On the world of White Sand, what gives the Invested sand its white color?",
     "a": "A microorganism living on the grains",
     "wrong": [
       "Salt crusted on the grains",
       "Ground-up bone",
       "Sunlight trapped inside the glass"
     ],
-    "explain": "The organism draws on the light of Taldain's larger sun, which also recharges spent sand.",
+    "explain": "The organism draws on the light of the planet's larger sun, which also recharges spent sand.",
     "terms": [
-      "Taldain"
+      "White Sand"
     ],
     "source": "Arcanum Unbounded, The Taldain System; Coppermind: Sand mastery"
   },
@@ -1581,12 +1578,11 @@
       "Silence's late husband",
       "A traveling silver merchant"
     ],
-    "explain": "Red Young is one of the bounty hunters working out of the forts on Threnody.",
+    "explain": "Red Young is one of the bounty hunters working out of the forts.",
     "terms": [
       "Red Young",
       "Chesterton",
-      "Silence",
-      "Threnody"
+      "Silence"
     ],
     "source": "Shadows for Silence in the Forests of Hell; Coppermind: Red Young"
   },
@@ -1595,19 +1591,18 @@
     "category": "otros",
     "difficulty": 4,
     "work": "arcanum",
-    "q": "According to Khriss's essay, how many continents does Threnody have?",
+    "q": "According to Arcanum Unbounded, how many continents does Threnody have?",
     "a": "Two",
     "wrong": [
       "One",
       "Three",
       "Five"
     ],
-    "explain": "The larger continent was overrun by the Evil, while the smaller, forested one became the Forests of Hell.",
+    "explain": "The Evil overran the larger continent, and the survivors fled to the smaller one.",
     "terms": [
-      "Khriss",
+      "Arcanum Unbounded",
       "Threnody",
-      "Evil",
-      "Forests of Hell"
+      "Evil"
     ],
     "source": "Arcanum Unbounded, The Threnodite System"
   },

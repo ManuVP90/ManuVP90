@@ -1371,5 +1371,293 @@
   "status": "unverified",
   "sources": [],
   "notes": "m."
+ },
+ "Recreance": {
+  "it": "Ritrattazione",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net/wiki/Day_of_Recreance → \"Giorno della Ritrattazione\""
+  ],
+  "notes": "f. (la Ritrattazione). Glossary had \"Tradimento\" (unverified); Coppermind IT uses Giorno della Ritrattazione. Mondadori text not checked."
+ },
+ "Truthless": {
+  "it": "Senzavero",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net/wiki/Senzavero"
+  ],
+  "notes": "Invariable (i Senzavero). Szeth’s title."
+ },
+ "Thunderclast": {
+  "it": "Tuonoclasta",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net/wiki/Tuonoclasta"
+  ],
+  "notes": "m. pl. Tuonoclasti."
+ },
+ "Thunderclasts": {
+  "it": "Tuonoclasti",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net/wiki/Tuonoclasta"
+  ],
+  "notes": "Plural of Tuonoclasta."
+ },
+ "Voidbinders": {
+  "it": "Legavuoto",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Invariable. No Italian source found (Coppermind IT/Mondadori); built on Forgialegami/Folgoluce patterns. Used only as a distractor (roshar-095)."
+ },
+ "Stone Shaman": {
+  "it": "Sciamano della Pietra",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Wind and Truth (Mondadori 2025, Gabriele Giorgi); term not found online. Questions avoid gendering Rit (\"Rit, degli Sciamani della Pietra\")."
+ },
+ "Stone Shamans": {
+  "it": "Sciamani della Pietra",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Stone Shaman."
+ },
+ "Honorbearer": {
+  "it": "Portatore d’Onore",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Wind and Truth term not found online; roshar-090/091 rephrase as \"porta un’Onorlama\" to avoid it; roshar-095 uses the plural."
+ },
+ "Honorbearers": {
+  "it": "Portatori d’Onore",
+  "status": "unverified",
+  "sources": [],
+  "notes": "See Honorbearer."
+ },
+ "Almighty": {
+  "it": "Onnipotente",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. (l’Onnipotente). Standard Italian rendering; Mondadori text not checked."
+ },
+ "Vorinism": {
+  "it": "vorinismo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Adjective vorin (invariable) as in existing questions."
+ },
+ "Wind": {
+  "it": "Vento",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. (il Vento), the entity in Vento e verità; matches the official title."
+ },
+ "Sovereign": {
+  "it": "Sovrano",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net/wiki/Sovereign (Italian summary: \"il Sovrano\")"
+  ],
+  "notes": "m. (il Sovrano). Le fasce del lutto."
+ },
+ "Ice Death": {
+  "it": "Morte di Ghiaccio",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. Le fasce del lutto; Italian term not found."
+ },
+ "Imperial Guard": {
+  "it": "Guardia Imperiale",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. Descriptive (Guardia Imperiale azish)."
+ },
+ "Commandant Supreme": {
+  "it": "Comandante Supremo",
+  "status": "unverified",
+  "sources": [],
+  "notes": "m. Descriptive; roshar-049 already used \"comandante Kushkam\"."
+ },
+ "Azish": {
+  "it": "azish",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Invariable adjective/noun (gli azish)."
+ },
+ "Shardblades": {
+  "it": "Stratolame",
+  "status": "official",
+  "sources": [
+   "Plural of Stratolama (official)"
+  ],
+  "notes": "f. pl."
+ },
+ "Hemalurgic": {
+  "it": "emalurgico",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Adjective from Emalurgia, as in existing questions."
+ },
+ "Scadrians": {
+  "it": "scadriani",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Already used in existing scadrial questions (gli scadriani del sud)."
+ },
+ "Elantrians": {
+  "it": "elantriani",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural of elantriano."
+ },
+ "Cohesion": {
+  "it": "Coesione",
+  "status": "unverified",
+  "sources": [],
+  "notes": "f. Surge; follows Tensione/Divisione/Trasformazione (community)."
+ },
+ "The Bands of Mourning": {
+  "it": "Le fasce del lutto",
+  "status": "official",
+  "sources": [
+   "content/it/WORK_TITLES.json"
+  ],
+  "notes": "Title; questions use \"Ne «Le fasce del lutto»\"; the object is \"le Fasce del lutto\"."
+ },
+ "Shadows of Self": {
+  "it": "Le ombre residue",
+  "status": "official",
+  "sources": [
+   "content/it/WORK_TITLES.json"
+  ],
+  "notes": "Title; \"Ne «Le ombre residue»\"."
+ },
+ "Shadows for Silence": {
+  "it": "Ombre per Silence nelle Foreste dell’Inferno",
+  "status": "official",
+  "sources": [
+   "content/it/WORK_TITLES.json"
+  ],
+  "notes": "Title."
+ },
+ "Abidi": {
+  "it": "Abidi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Brunstell": {
+  "it": "Brunstell",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "f. (la Brunstell), the airship. Proper name unchanged."
+ },
+ "Dulsing": {
+  "it": "Dulsing",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Edwarn": {
+  "it": "Edwarn",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Elid": {
+  "it": "Elid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Fen": {
+  "it": "Fen",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "la regina Fen. Proper name unchanged."
+ },
+ "Gavinor": {
+  "it": "Gavinor",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Gezamal": {
+  "it": "Gezamal",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Hanavanar": {
+  "it": "Hanavanar",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Maxillium": {
+  "it": "Maxillium",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Oroden": {
+  "it": "Oroden",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Replar Innate": {
+  "it": "Replar Innate",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Winsting Innate": {
+  "it": "Winsting Innate",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Rit": {
+  "it": "Rit",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Rlain": {
+  "it": "Rlain",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Renarin": {
+  "it": "Renarin",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Sivi": {
+  "it": "Sivi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Zeenid": {
+  "it": "Zeenid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Bilming": {
+  "it": "Bilming",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Feltrel": {
+  "it": "Feltrel",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
  }
 }

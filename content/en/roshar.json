@@ -1148,7 +1148,7 @@
       "Thaylen City",
       "Vedenar"
     ],
-    "explain": "Adolin fights alongside Emperor Yanagawn and Commandant Kushkam without any Radiant powers.",
+    "explain": "Adolin fights alongside Emperor Yanagawn's forces without any Radiant powers.",
     "terms": [
       "Wind and Truth",
       "Adolin",
@@ -1157,7 +1157,6 @@
       "Thaylen City",
       "Vedenar",
       "Yanagawn",
-      "Kushkam",
       "Radiant"
     ],
     "source": "Wind and Truth"
@@ -1766,7 +1765,7 @@
       "Notum",
       "Sylphrena"
     ],
-    "explain": "Caelinora first appears in Dawnshard, where she manifests as a living Shardhammer.",
+    "explain": "Caelinora can manifest as a living Shardhammer.",
     "terms": [
       "Huio",
       "honorspren",
@@ -1774,7 +1773,6 @@
       "Phendorana",
       "Notum",
       "Sylphrena",
-      "Dawnshard",
       "Shardhammer"
     ],
     "source": "Dawnshard"
@@ -1905,5 +1903,500 @@
       "Vanrial"
     ],
     "source": "The Way of Kings; Words of Radiance"
+  },
+  {
+    "id": "roshar-081",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, which Herald does Dalinar send Kaladin to find, hoping to restore the Oathpact?",
+    "a": "Ishar",
+    "wrong": [
+      "Kalak",
+      "Nale",
+      "Shalash"
+    ],
+    "explain": "Dalinar hopes Ishar, despite his madness, knows how the Oathpact can be restored.",
+    "terms": [
+      "Wind and Truth",
+      "Herald",
+      "Dalinar",
+      "Kaladin",
+      "Oathpact",
+      "Ishar",
+      "Kalak",
+      "Nale",
+      "Shalash"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-082",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "wind-and-truth",
+    "q": "At the start of Wind and Truth, to which kingdom does Jasnah go to help its queen defend her capital?",
+    "a": "Thaylenah",
+    "wrong": [
+      "Azir",
+      "Jah Keved",
+      "Herdaz"
+    ],
+    "explain": "Jasnah travels to Thaylenah to aid Queen Fen as Odium's forces close in on Thaylen City.",
+    "terms": [
+      "Wind and Truth",
+      "Jasnah",
+      "Thaylenah",
+      "Azir",
+      "Jah Keved",
+      "Herdaz",
+      "Fen",
+      "Odium",
+      "Thaylen City"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-083",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, who leads Bridge Four at the Shattered Plains while Kaladin is away?",
+    "a": "Sigzil",
+    "wrong": [
+      "Teft",
+      "Skar",
+      "Lopen"
+    ],
+    "explain": "With Kaladin gone, Sigzil takes command of the Windrunners of Bridge Four.",
+    "terms": [
+      "Wind and Truth",
+      "Bridge Four",
+      "Shattered Plains",
+      "Kaladin",
+      "Sigzil",
+      "Teft",
+      "Skar",
+      "Lopen",
+      "Windrunners"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-084",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "wind-and-truth",
+    "q": "At the start of Wind and Truth, what new ability does Syl show?",
+    "a": "She can take on human size",
+    "wrong": [
+      "She can turn into Shardplate",
+      "She can travel far from Kaladin unharmed",
+      "She can read people's thoughts"
+    ],
+    "explain": "In the opening chapters, Syl can appear as large as a person instead of only as a tiny figure.",
+    "terms": [
+      "Wind and Truth",
+      "Syl",
+      "Shardplate",
+      "Kaladin"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-085",
+    "category": "roshar",
+    "difficulty": 1,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, who enters the Spiritual Realm with Dalinar to look for an edge before the contest of champions?",
+    "a": "Navani",
+    "wrong": [
+      "Jasnah",
+      "Shallan",
+      "Renarin"
+    ],
+    "explain": "Both Bondsmiths enter together, hoping the Spiritual Realm holds a way to defeat Odium.",
+    "terms": [
+      "Wind and Truth",
+      "Spiritual Realm",
+      "Dalinar",
+      "Navani",
+      "Jasnah",
+      "Shallan",
+      "Renarin",
+      "Bondsmiths",
+      "Odium"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-086",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, which mysterious entity calls Kaladin by name and warns him that the worst storm is yet to come?",
+    "a": "The Wind",
+    "wrong": [
+      "Cultivation",
+      "The Nightwatcher",
+      "The Sibling"
+    ],
+    "explain": "The Wind asks Kaladin for help and urges him to listen to the Bondsmith.",
+    "terms": [
+      "Wind and Truth",
+      "Kaladin",
+      "Wind",
+      "Cultivation",
+      "Nightwatcher",
+      "Sibling",
+      "Bondsmith"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-087",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, which young child ends up trapped in the Spiritual Realm along with Dalinar and Navani?",
+    "a": "Gavinor",
+    "wrong": [
+      "Oroden",
+      "Tien",
+      "Lift"
+    ],
+    "explain": "Gavinor had followed the Bondsmiths, and when their anchors to the Physical Realm were cut he was swept away with them, while Wit protected Lift.",
+    "terms": [
+      "Wind and Truth",
+      "Spiritual Realm",
+      "Dalinar",
+      "Navani",
+      "Gavinor",
+      "Oroden",
+      "Tien",
+      "Lift",
+      "Bondsmiths",
+      "Physical Realm",
+      "Wit"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-088",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, where do Shallan, Renarin and Rlain learn that the prison of the Unmade they are hunting is held?",
+    "a": "In the Spiritual Realm",
+    "wrong": [
+      "In the bead ocean of Shadesmar",
+      "Inside the crystal pillar of Urithiru",
+      "Beneath the Shattered Plains"
+    ],
+    "explain": "The Unmade was sealed in a flawless heliodor and hidden in the Spiritual Realm long ago.",
+    "terms": [
+      "Wind and Truth",
+      "Shallan",
+      "Renarin",
+      "Rlain",
+      "Unmade",
+      "Spiritual Realm",
+      "Shadesmar",
+      "Urithiru",
+      "Shattered Plains",
+      "heliodor"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-089",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "wind-and-truth",
+    "q": "In a Wind and Truth flashback, young Szeth's father offers to move the family's home. What does Szeth choose to move instead?",
+    "a": "A stone",
+    "wrong": [
+      "A stream",
+      "A tree",
+      "A fence"
+    ],
+    "explain": "After the family's sheep uncovers a new stone, Szeth chooses to move it, sensing that his family had hoped he would.",
+    "terms": [
+      "Wind and Truth",
+      "Szeth"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-090",
+    "category": "roshar",
+    "difficulty": 2,
+    "work": "wind-and-truth",
+    "q": "What is the name of Szeth's older sister, who appears in Wind and Truth?",
+    "a": "Elid",
+    "wrong": [
+      "Rit",
+      "Zeenid",
+      "Sivi"
+    ],
+    "explain": "Elid-daughter-Zeenid is Szeth's older sister and, like him, an Honorbearer.",
+    "terms": [
+      "Wind and Truth",
+      "Szeth",
+      "Elid",
+      "Rit",
+      "Zeenid",
+      "Sivi",
+      "Honorbearer"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-091",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, the Stone Shaman Rit bears which Herald's Honorblade?",
+    "a": "Talenel",
+    "wrong": [
+      "Ishar",
+      "Jezrien",
+      "Chanarach"
+    ],
+    "explain": "The Stoneward monastery took Taln's Honorblade, and Rit fought Szeth there as its Honorbearer.",
+    "terms": [
+      "Wind and Truth",
+      "Stone Shaman",
+      "Rit",
+      "Herald",
+      "Honorblade",
+      "Talenel",
+      "Ishar",
+      "Jezrien",
+      "Chanarach",
+      "Stoneward",
+      "Taln",
+      "Szeth",
+      "Honorbearer"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-092",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, which Herald admits to Shallan that he helped capture the Unmade she is hunting?",
+    "a": "Kalak",
+    "wrong": [
+      "Ishar",
+      "Jezrien",
+      "Talenel"
+    ],
+    "explain": "Kalak was part of the team that captured that Unmade long ago, but is overwhelmed by the memory and flees.",
+    "terms": [
+      "Wind and Truth",
+      "Herald",
+      "Shallan",
+      "Unmade",
+      "Kalak",
+      "Ishar",
+      "Jezrien",
+      "Talenel"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-093",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, which Fused ambushes Adolin and Shallan in Shadesmar and later faces Adolin again in the defense of Azimir?",
+    "a": "Abidi",
+    "wrong": [
+      "Lezian",
+      "Leshwi",
+      "Raboniel"
+    ],
+    "explain": "Abidi, one of the finest Fused duelists, fights with aluminum-lined maces.",
+    "terms": [
+      "Wind and Truth",
+      "Fused",
+      "Adolin",
+      "Shallan",
+      "Shadesmar",
+      "Azimir",
+      "Abidi",
+      "Lezian",
+      "Leshwi",
+      "Raboniel"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-094",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, which moment of history does Dalinar reach in the Spiritual Realm, using a stone from Wit as his anchor?",
+    "a": "The arrival of humans on Roshar",
+    "wrong": [
+      "The Recreance",
+      "The First Desolation",
+      "Aharietiam"
+    ],
+    "explain": "Wit had picked the stone out himself before the migration, and it carried Dalinar and Navani to the arrival of the first humans.",
+    "terms": [
+      "Wind and Truth",
+      "Dalinar",
+      "Spiritual Realm",
+      "Wit",
+      "Roshar",
+      "Recreance",
+      "Desolation",
+      "Aharietiam",
+      "Navani"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-095",
+    "category": "roshar",
+    "difficulty": 3,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, what have the Honorbearers of the Stone Shamans been turned into, letting them come back after being killed?",
+    "a": "Human Fused",
+    "wrong": [
+      "Truthless",
+      "Thunderclasts",
+      "Voidbinders"
+    ],
+    "explain": "Ishar made them able to take a new body after dying, so Szeth needs Nightblood to end them for good.",
+    "terms": [
+      "Wind and Truth",
+      "Honorbearers",
+      "Stone Shamans",
+      "Fused",
+      "Truthless",
+      "Thunderclasts",
+      "Voidbinders",
+      "Ishar",
+      "Szeth",
+      "Nightblood"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-096",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, who is the Commandant Supreme of the Azish Imperial Guard?",
+    "a": "Kushkam",
+    "wrong": [
+      "Gezamal",
+      "Yanagawn",
+      "Hanavanar"
+    ],
+    "explain": "Zarb Kushkam leads the Azish forces guarding the Oathgate, while his son Gezamal leads the emperor's honor guard.",
+    "terms": [
+      "Wind and Truth",
+      "Azish",
+      "Imperial Guard",
+      "Commandant Supreme",
+      "Kushkam",
+      "Gezamal",
+      "Yanagawn",
+      "Hanavanar",
+      "Oathgate"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-097",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, how do the Azish plan to stop the enemy from using their Oathgate's control room?",
+    "a": "By flooding it and Soulcasting the water into bronze",
+    "wrong": [
+      "By collapsing it with Shardblades",
+      "By lining its walls with aluminum",
+      "By sealing it with crem"
+    ],
+    "explain": "A control room filled with solid metal would be useless to Odium's forces.",
+    "terms": [
+      "Wind and Truth",
+      "Azish",
+      "Oathgate",
+      "Soulcasting",
+      "Shardblades",
+      "crem",
+      "Odium"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-098",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "wind-and-truth",
+    "q": "In Szeth's Wind and Truth flashbacks, which instrument does his older sister play while he dances?",
+    "a": "A flute",
+    "wrong": [
+      "A drum",
+      "A harp",
+      "A horn"
+    ],
+    "explain": "Young Szeth dances in wide circles to the sound of his sister's flute.",
+    "terms": [
+      "Wind and Truth",
+      "Szeth"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-099",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "wind-and-truth",
+    "q": "In Wind and Truth, which Surge does the Stone Shaman Rit use to make the monastery floor flow and attack Szeth?",
+    "a": "Cohesion",
+    "wrong": [
+      "Tension",
+      "Division",
+      "Transformation"
+    ],
+    "explain": "Rit melts the stone floor, mural and all, and wields it against Szeth.",
+    "terms": [
+      "Wind and Truth",
+      "Surge",
+      "Stone Shaman",
+      "Rit",
+      "Szeth",
+      "Cohesion",
+      "Tension",
+      "Division",
+      "Transformation"
+    ],
+    "source": "Wind and Truth"
+  },
+  {
+    "id": "roshar-100",
+    "category": "roshar",
+    "difficulty": 4,
+    "work": "wind-and-truth",
+    "q": "How many interludes does Wind and Truth contain?",
+    "a": "Eighteen",
+    "wrong": [
+      "Nine",
+      "Twelve",
+      "Fifteen"
+    ],
+    "explain": "Wind and Truth has eighteen interludes, numbered I-1 to I-18.",
+    "terms": [
+      "Wind and Truth"
+    ],
+    "source": "Wind and Truth"
   }
 ]

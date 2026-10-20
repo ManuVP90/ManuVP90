@@ -51,23 +51,23 @@
     "category": "cosmere",
     "difficulty": 1,
     "work": "oathbringer",
-    "q": "Besides Honor and Cultivation, which Shard is present in the Rosharan system?",
-    "a": "Odium",
+    "q": "The Almighty worshipped in the Vorin religion is actually which Shard?",
+    "a": "Honor",
     "wrong": [
-      "Ruin",
-      "Autonomy",
-      "Preservation"
-    ],
-    "explain": "Odium came to Roshar long ago and has been confined to its system ever since.",
-    "terms": [
-      "Honor",
-      "Cultivation",
-      "Shard",
-      "Roshar",
       "Odium",
-      "Ruin",
-      "Autonomy",
-      "Preservation"
+      "Cultivation",
+      "Devotion"
+    ],
+    "explain": "Dalinar learns that the Almighty of Vorinism was Honor, and that he is dead.",
+    "terms": [
+      "Almighty",
+      "Vorin",
+      "Honor",
+      "Odium",
+      "Cultivation",
+      "Devotion",
+      "Dalinar",
+      "Vorinism"
     ],
     "source": "Oathbringer"
   },
@@ -686,7 +686,7 @@
       "Sel",
       "Scadrial"
     ],
-    "explain": "Khriss is a Darksider who travels to Taldain's Dayside in White Sand.",
+    "explain": "Khriss is a Darksider who travels to the Dayside of her world in White Sand.",
     "terms": [
       "Khriss",
       "Taldain",
@@ -883,7 +883,7 @@
       "Kredik Shaw",
       "The Conventical of Seran"
     ],
-    "explain": "In Secret History, the novella's dead protagonist spends years by the Well, where Preservation's power pools.",
+    "explain": "In Secret History, the novella's dead protagonist spends years beside the Well of Ascension.",
     "terms": [
       "Scadrial",
       "Preservation",
@@ -1664,14 +1664,18 @@
     "q": "In Secret History, what nickname does the protagonist give Preservation?",
     "a": "Fuzz",
     "wrong": [
-      "Old Man",
-      "Smudge",
-      "Ghost"
+      "Gemmel",
+      "Kwaan",
+      "Alendi"
     ],
     "explain": "He befriends the dying Preservation and calls him Fuzz.",
     "terms": [
       "Preservation",
-      "Secret History"
+      "Secret History",
+      "Gemmel",
+      "Kwaan",
+      "Alendi",
+      "Fuzz"
     ],
     "source": "Mistborn: Secret History"
   },
@@ -1770,7 +1774,7 @@
     "category": "cosmere",
     "difficulty": 4,
     "work": "arcanum",
-    "q": "According to Khriss's essay, how do people on Ashyn now gain magical powers?",
+    "q": "According to Arcanum Unbounded, how do people on Ashyn now gain magical powers?",
     "a": "By catching certain diseases",
     "wrong": [
       "By eating gemhearts",
@@ -1779,7 +1783,7 @@
     ],
     "explain": "After the cataclysm, Ashyn's magic became tied to illnesses.",
     "terms": [
-      "Khriss",
+      "Arcanum Unbounded",
       "Ashyn",
       "gemheart",
       "spren"

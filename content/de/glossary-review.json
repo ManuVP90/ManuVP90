@@ -393,9 +393,10 @@
   "status": "official",
   "sources": [
    "https://www.penguin.de/buecher/brandon-sanderson-winde-und-wahrheit/buch/9783453272743",
-   "https://www.jpc.de/jpcng/books/detail/-/art/brandon-sanderson-winde-und-wahrheit/hnum/12691451"
+   "https://www.jpc.de/jpcng/books/detail/-/art/brandon-sanderson-winde-und-wahrheit/hnum/12691451",
+   "https://www.penguin.de/buecher/brandon-sanderson-der-kampf-der-meister/buch/9783453273252"
   ],
-  "notes": "Split into two Heyne volumes."
+  "notes": "Split into two Heyne volumes. 2026-10: Heyne (transl. Michael Siefener) splits it into \"Winde und Wahrheit\" and \"Der Kampf der Meister\" (hardcover 10.09.2025; paperback announced). Questions cite only \"Winde und Wahrheit\" (house style); roshar-100 names both volumes."
  },
  "Shinovar": {
   "de": "Schinovar",
@@ -1061,7 +1062,7 @@
   "de": "Kuschkam",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified. Male (father of Gezamal): old roshar-049 \"Kommandantin\" was a gender error, removed."
  },
  "Windrunner": {
   "de": "Windläufer",
@@ -2485,7 +2486,7 @@
    "https://kosmeer.fandom.com/de/wiki/Odium",
    "https://kosmeer.fandom.com/de/wiki/Nachtschauerin"
   ],
-  "notes": "CHANGED from \"Kultivierung\": kosmeer consistently uses \"die Bebauerin\" (one page has Kultivierung). Use with article: die Bebauerin. Needs check against Heyne text. Beta-2 (Hannah): in answer-option lists use the bare name \"Bebauerin\" (like Ehr, Bewahr, Ruin) so the four options share one form; keep the article in running text. Beta-3: cosmere-019 no longer lists Cultivation; cosmere-039 (answer \"Die Bebauerin\") now has article-bearing distractors only: Der Sturmvater, Die Nachtschauerin, Der Zwilling."
+  "notes": "CHANGED from \"Kultivierung\": kosmeer consistently uses \"die Bebauerin\" (one page has Kultivierung). Use with article: die Bebauerin. Needs check against Heyne text. Beta-2 (Hannah): in answer-option lists use the bare name \"Bebauerin\" (like Ehr, Bewahr, Ruin) so the four options share one form; keep the article in running text. Beta-3: cosmere-019 no longer lists Cultivation; cosmere-039 (answer \"Die Bebauerin\") now has article-bearing distractors only: Der Sturmvater, Die Nachtschauerin, Der Zwilling. 2026-10: roshar-086 options aligned with EN (Die Bebauerin | Die Nachtschauerin | Der Zwilling, article form like cosmere-039)."
  },
  "Sixth of the Dusk": {
   "de": "Sixth of the Dusk",
@@ -4330,5 +4331,271 @@
   "status": "unchanged",
   "sources": [],
   "notes": "der Koloss, des Kolosses, pl. die Kolosse. Beta-3: genitive singular is \"eines Kolosses\" (pl. die Kolosse); fixed in scadrial-009."
+ },
+ "Fen": {
+  "de": "Fen",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name (Queen Fen of Thaylenah); Heyne keeps it."
+ },
+ "Wind": {
+  "de": "der Wind",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Literal; capitalised as an entity in questions („Der Wind“). Heyne volume title \"Winde und Wahrheit\" suggests \"Wind\" as base form."
+ },
+ "Gavinor": {
+  "de": "Gavinor",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, no sh/ch respelling needed."
+ },
+ "Oroden": {
+  "de": "Oroden",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name."
+ },
+ "Rlain": {
+  "de": "Rlain",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Proper name kept as in English."
+ },
+ "heliodor": {
+  "de": "Heliodor",
+  "status": "official",
+  "sources": [],
+  "notes": "Standard German gem name; already used in existing de questions (roshar)."
+ },
+ "Elid": {
+  "de": "Elid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name. Full Shin name rendered \"Elid-Tochter-Zeenid\" by analogy with Heyne's \"Szeth-Sohn-Neturo\"."
+ },
+ "Rit": {
+  "de": "Rit",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name. Questions avoid gendered nouns for Rit (\"Rit von den Steinschamanen\")."
+ },
+ "Zeenid": {
+  "de": "Zeenid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name."
+ },
+ "Sivi": {
+  "de": "Sivi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name."
+ },
+ "Honorbearer": {
+  "de": "Ehrenträger",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Calque consistent with Ehrenklinge; fem. Ehrenträgerin, pl. Ehrenträger."
+ },
+ "Honorbearers": {
+  "de": "Ehrenträger",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural of Ehrenträger; see Honorbearer."
+ },
+ "Stone Shaman": {
+  "de": "Steinschamane",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Calque (Stone Shamanism, Shin religion). Questions use the plural \"die Steinschamanen\" to avoid gender."
+ },
+ "Stone Shamans": {
+  "de": "Steinschamanen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural; see Stone Shaman."
+ },
+ "Abidi": {
+  "de": "Abidi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name (male Fused). Question phrased \"Wer von den Verschmolzenen\" to avoid a gender leak against Leschwi/Raboniel."
+ },
+ "Truthless": {
+  "de": "Wahrheitsloser",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Translator recall of the Heyne edition (Szeth's epithet), pl. die Wahrheitslosen; not confirmed online."
+ },
+ "Thunderclasts": {
+  "de": "Donnerbrocken",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. A search snippet of a Heyne excerpt (e-bookshelf Leseprobe) mentions \"Donnerbrocken\" for a stone creature; not confirmed in context."
+ },
+ "Voidbinders": {
+  "de": "Leerenbinder",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Formed by analogy with attested Heyne compounds Leerenlicht / Leerenbringer."
+ },
+ "Azish": {
+  "de": "azisch",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Adjective (azische Truppen, azisches Eidtor). Noun phrasing avoided."
+ },
+ "Imperial Guard": {
+  "de": "Kaiserliche Garde",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Descriptive."
+ },
+ "Commandant Supreme": {
+  "de": "Oberster Kommandant",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Descriptive title; Kushkam is male (fixed old explain that said \"Kommandantin\")."
+ },
+ "Gezamal": {
+  "de": "Gezamal",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name (Kushkam's son)."
+ },
+ "Hanavanar": {
+  "de": "Hanavanar",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name."
+ },
+ "Recreance": {
+  "de": "der Verrat",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept glossary form; used as option \"Den Verrat\" (roshar-094). Not verified in this pass."
+ },
+ "Shardblades": {
+  "de": "Splitterklingen",
+  "status": "official",
+  "sources": [],
+  "notes": "Plural of Splitterklinge (see Shardblade)."
+ },
+ "Cohesion": {
+  "de": "Kohäsion",
+  "status": "community",
+  "sources": [],
+  "notes": "Surge; consistent with existing entry note \"Steinwächter: Kohäsion und Tension\"."
+ },
+ "Almighty": {
+  "de": "der Allmächtige",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Vorin deity; translator recall of Heyne."
+ },
+ "Vorinism": {
+  "de": "Vorinismus",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Consistent with adjective vorinisch."
+ },
+ "Brunstell": {
+  "de": "Brunstell",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Ship name; proper names kept by Piper."
+ },
+ "Edwarn": {
+  "de": "Edwarn",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name (Edwarn Ladrian, Wax's uncle)."
+ },
+ "Replar Innate": {
+  "de": "Replar Innate",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name (governor)."
+ },
+ "Winsting Innate": {
+  "de": "Winsting Innate",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name."
+ },
+ "Hemalurgic": {
+  "de": "hämalurgisch",
+  "status": "official",
+  "sources": [],
+  "notes": "Adjective from Hämalurgie (glossary official)."
+ },
+ "Scadrians": {
+  "de": "Scadrianer",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Demonym (noun) matching adjective scadrianisch."
+ },
+ "Ice Death": {
+  "de": "Eistod",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. Calque; Bänder der Trauer (Piper) German text not checked."
+ },
+ "Sovereign": {
+  "de": "der Souverän",
+  "status": "unverified",
+  "sources": [],
+  "notes": "WebSearch 2026-10: no German source for this term found; German fan wiki (kosmeer.fandom.com) unreachable from this environment. English search showed only Allik's line in English; German form is a calque."
+ },
+ "Maxillium": {
+  "de": "Maxillium",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name."
+ },
+ "Dulsing": {
+  "de": "Dulsing",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Place name."
+ },
+ "The Bands of Mourning": {
+  "de": "Bänder der Trauer",
+  "status": "official",
+  "sources": [
+   "https://www.ebay.de/p/238781462"
+  ],
+  "notes": "Piper title (see WORK_TITLES.json); confirmed by ebay.de listing \"Bänder der Trauer (2017, Taschenbuch)\"."
+ },
+ "Shadows of Self": {
+  "de": "Schatten über Elantel",
+  "status": "official",
+  "sources": [],
+  "notes": "Piper title (WORK_TITLES.json)."
+ },
+ "Shadows for Silence": {
+  "de": "Shadows for Silence in the Forests of Hell",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "No German edition; title kept in English."
+ },
+ "Elantrians": {
+  "de": "Elantrier",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural of Elantrier (same form)."
+ },
+ "The Hope of Elantris": {
+  "de": "The Hope of Elantris",
+  "status": "unpublished",
+  "sources": [],
+  "notes": "No German edition; title kept in English (WORK_TITLES.json)."
+ },
+ "interlude": {
+  "de": "Zwischenspiel",
+  "status": "official",
+  "sources": [],
+  "notes": "Heyne uses \"Zwischenspiel\" for interludes (already used across existing de questions)."
  }
 }

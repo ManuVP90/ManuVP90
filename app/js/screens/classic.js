@@ -4,7 +4,7 @@ import { ICONS, gemSvg } from '../icons.js';
 import { t, num } from '../i18n.js';
 import {
   app, go, screen, topBar, iconButton, toggle, toast, makePool, recordAnswer, recordLifeline,
-  updateStats, catStyle, setBack, onCleanup, levelPicker, levelBadge, confirmDialog, noQuestionsBanner, filterIsEmpty,
+  updateStats, catStyle, setBack, onCleanup, levelPicker, levelBadge, confirmDialog, noQuestionsBanner, filterIsEmpty, noteMissed, unlockAchievement,
 } from '../core.js';
 import * as store from '../storage.js';
 import { CATEGORIES, MIN_PLAYERS, MAX_PLAYERS, MAX_STREAK, LEVELS, levelOrDefault, fullLifelines } from '../config.js';
@@ -15,6 +15,8 @@ import { fx, confetti } from '../fx.js';
 import { questionView, emptyFx, newClock } from '../components/question.js';
 import { wheel, WILDCARD } from '../components/wheel.js';
 import { board, avatar, gemRow, lifelinesLeft } from '../components/board.js';
+import { reviewSection } from '../components/review.js';
+import { addId } from '../progress.js';
 
 const SAVE_KEY = 'classic';
 let state = null; // current classic game (in memory)
@@ -421,13 +423,15 @@ function questionPhase() {
   };
   if (state.timer) pend.clock ||= newClock();
   liveQuestion = questionView({
-      question: q, order: pend.order, timer: state.timer, clock: pend.clock, onClockChange: save, final: pend.final, top, lifelines,
+      question: q, order: pend.order, timer: state.timer, clock: pend.clock, onClockChange: save, final: pend.final, top, lifelines, mode: 'classic',
       onAnswer: ({ correct }) => {
         recordAnswer(q.c, correct);
+        if (!correct) { noteMissed(q.id); state.missed = addId(state.missed, q.id); }
         const st = (p.stats ||= emptyPlayerStats());
         st.answered++;
         if (correct) st.correct++;
         const res = applyAnswer(state, correct);
+        classicAchievements(res, p, pend);
         if (res.won) updateStats((s) => { s.classicGames++; });
         save();
         return feedbackFor(res, p);
@@ -435,6 +439,19 @@ function questionPhase() {
       onContinue: () => go('classic'),
     });
   return screen('question', gameBar(pend.final ? t('question.final') : turnTitle(p.name)), liveQuestion);
+}
+
+/** Achievements earned by a moment of a classic game (the ones based on totals are checked by core). */
+function classicAchievements(res, p, pend) {
+  const st = p.stats || emptyPlayerStats();
+  // A wrong pick struck by Stormlight, then the right one.
+  if (res.correct && pend.fx?.struck?.length) unlockAchievement('stormlightSave');
+  // The six gems of a full game infused without a single miss by this player.
+  if (res.infused && res.allInfused && state.categories.length === CATEGORIES.length && st.answered === st.correct) unlockAchievement('flawless');
+  if (res.won) {
+    if (state.players.length === MAX_PLAYERS) unlockAchievement('fullTable');
+    if (state.level === 'expert' && st.lifelines === 0) unlockAchievement('expertPure');
+  }
 }
 
 function feedbackFor(res, player) {
@@ -503,7 +520,8 @@ function victoryView() {
         h('span', { class: 'victory-duration' }, t('victory.duration', { time: formatDuration(state.playMs) })),
         ' · ',
         h('span', {}, t('victory.answered', { n: state.asked }))),
-      playerStats()),
+      playerStats(),
+      reviewSection(state.missed || [], 'classic')),
     h('div', { class: 'stack-actions' },
       h('button', {
         type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '',

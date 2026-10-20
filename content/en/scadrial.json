@@ -1842,5 +1842,248 @@
       "Inquisitor"
     ],
     "source": "The Well of Ascension"
+  },
+  {
+    "id": "scadrial-081",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "bands-of-mourning",
+    "q": "In The Bands of Mourning, what kind of vessel had Allik and his crewmates been travelling in?",
+    "a": "An airship",
+    "wrong": [
+      "A steamship",
+      "A railway train",
+      "A submarine"
+    ],
+    "explain": "The Brunstell, a southern airship, crashed in a storm and was captured by the Set.",
+    "terms": [
+      "The Bands of Mourning",
+      "Allik",
+      "Brunstell",
+      "Set"
+    ],
+    "source": "Mistborn: The Bands of Mourning"
+  },
+  {
+    "id": "scadrial-082",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "lost-metal",
+    "q": "In The Lost Metal, which member of Wax's family leads the Set?",
+    "a": "His sister, Telsin",
+    "wrong": [
+      "His uncle, Edwarn",
+      "His wife, Steris",
+      "His father-in-law, Lord Harms"
+    ],
+    "explain": "Telsin is one of the Set's leaders and plots against Elendel, putting her at odds with her brother.",
+    "terms": [
+      "The Lost Metal",
+      "Wax",
+      "Set",
+      "Telsin",
+      "Edwarn",
+      "Steris",
+      "Lord Harms",
+      "Elendel"
+    ],
+    "source": "Mistborn: The Lost Metal"
+  },
+  {
+    "id": "scadrial-083",
+    "category": "scadrial",
+    "difficulty": 1,
+    "work": "lost-metal",
+    "q": "In The Lost Metal, what does the Set try to bring into Elendel by ship?",
+    "a": "A devastating bomb",
+    "wrong": [
+      "An army of koloss",
+      "A deadly plague",
+      "A hoard of atium"
+    ],
+    "explain": "Wax and Wayne discover that the bomb is not at the Set's base but aboard a ship bound for the city.",
+    "terms": [
+      "The Lost Metal",
+      "Set",
+      "Elendel",
+      "koloss",
+      "atium",
+      "Wax",
+      "Wayne"
+    ],
+    "source": "Mistborn: The Lost Metal"
+  },
+  {
+    "id": "scadrial-084",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "shadows-of-self",
+    "q": "In Shadows of Self, which leader has Bleeder secretly killed and been impersonating to stir up unrest in Elendel?",
+    "a": "Replar Innate",
+    "wrong": [
+      "Winsting Innate",
+      "Lord Harms",
+      "Edwarn Ladrian"
+    ],
+    "explain": "Bleeder wore the governor's face to turn the city's workers against their rulers, and also murdered his brother Winsting.",
+    "terms": [
+      "Shadows of Self",
+      "Bleeder",
+      "Elendel",
+      "Replar Innate",
+      "Winsting Innate",
+      "Lord Harms",
+      "Edwarn Ladrian"
+    ],
+    "source": "Mistborn: Shadows of Self"
+  },
+  {
+    "id": "scadrial-085",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "shadows-of-self",
+    "q": "Which kandra gave Wax the earring through which Harmony can speak to him?",
+    "a": "MeLaan",
+    "wrong": [
+      "TenSoon",
+      "VenDell",
+      "KanPaar"
+    ],
+    "explain": "MeLaan gave it to Wax years earlier; made from melted-down Inquisitor spikes, it lets Harmony hear his thoughts.",
+    "terms": [
+      "kandra",
+      "Wax",
+      "Harmony",
+      "MeLaan",
+      "TenSoon",
+      "VenDell",
+      "KanPaar",
+      "Inquisitor"
+    ],
+    "source": "Mistborn: Shadows of Self"
+  },
+  {
+    "id": "scadrial-086",
+    "category": "scadrial",
+    "difficulty": 2,
+    "work": "bands-of-mourning",
+    "q": "At the end of The Bands of Mourning, who is given the Bands, as Steris proposes?",
+    "a": "The kandra",
+    "wrong": [
+      "Wax",
+      "The Set",
+      "The governor of Elendel"
+    ],
+    "explain": "Steris's compromise keeps the Bands out of the hands of both Elendel and the southerners.",
+    "terms": [
+      "The Bands of Mourning",
+      "Bands of Mourning",
+      "Steris",
+      "kandra",
+      "Wax",
+      "Set",
+      "Elendel"
+    ],
+    "source": "Mistborn: The Bands of Mourning"
+  },
+  {
+    "id": "scadrial-087",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "bands-of-mourning",
+    "q": "In The Bands of Mourning, by what title do the southern Scadrians remember the figure who came to them after the Ice Death?",
+    "a": "The Sovereign",
+    "wrong": [
+      "The Ascendant Warrior",
+      "The Last Emperor",
+      "The Hero of Ages"
+    ],
+    "explain": "According to the southerners, the Sovereign came to help them survive the cold after the Ice Death.",
+    "terms": [
+      "The Bands of Mourning",
+      "Scadrians",
+      "Ice Death",
+      "Sovereign",
+      "Ascendant Warrior",
+      "Last Emperor",
+      "Hero of Ages"
+    ],
+    "source": "Mistborn: The Bands of Mourning"
+  },
+  {
+    "id": "scadrial-088",
+    "category": "scadrial",
+    "difficulty": 3,
+    "work": "lost-metal",
+    "q": "In The Lost Metal, Wax and Steris's daughter shares her name with which era 1 character?",
+    "a": "Tindwyl",
+    "wrong": [
+      "Allrianne",
+      "Valette",
+      "Mare"
+    ],
+    "explain": "Wax and Steris have two young children, Maxillium and Tindwyl.",
+    "terms": [
+      "The Lost Metal",
+      "Wax",
+      "Steris",
+      "Tindwyl",
+      "Allrianne",
+      "Valette",
+      "Mare",
+      "Maxillium"
+    ],
+    "source": "Mistborn: The Lost Metal"
+  },
+  {
+    "id": "scadrial-089",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "bands-of-mourning",
+    "q": "In The Bands of Mourning, in which town do Marasi and MeLaan find Allik held captive at the Set's compound?",
+    "a": "Dulsing",
+    "wrong": [
+      "Bilming",
+      "New Seran",
+      "Feltrel"
+    ],
+    "explain": "The Set held Allik and the wreck of his airship, the Brunstell, at its compound in Dulsing.",
+    "terms": [
+      "The Bands of Mourning",
+      "Marasi",
+      "MeLaan",
+      "Allik",
+      "Set",
+      "Dulsing",
+      "Bilming",
+      "New Seran",
+      "Feltrel",
+      "Brunstell"
+    ],
+    "source": "Mistborn: The Bands of Mourning"
+  },
+  {
+    "id": "scadrial-090",
+    "category": "scadrial",
+    "difficulty": 4,
+    "work": "shadows-of-self",
+    "q": "In Shadows of Self, what does Wax shoot Bleeder with so that Harmony can regain control of her?",
+    "a": "A bullet forged from his earring",
+    "wrong": [
+      "A bullet tipped with aluminum",
+      "A bullet cast from atium",
+      "A bullet filled with liquid duralumin"
+    ],
+    "explain": "The Hemalurgic metal let Harmony reach Bleeder's mind, but she chose to die rather than submit.",
+    "terms": [
+      "Shadows of Self",
+      "Wax",
+      "Bleeder",
+      "Harmony",
+      "atium",
+      "duralumin",
+      "Hemalurgic"
+    ],
+    "source": "Mistborn: Shadows of Self"
   }
 ]

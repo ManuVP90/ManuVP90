@@ -27,21 +27,30 @@ Source: GitHub Actions*). Ábrela en el móvil y usa *Añadir a pantalla de inic
   cuenta como comodín.
 - **Partida rápida**: 15 preguntas contrarreloj, con récord.
 - **Práctica**: eliges mundo y dificultad, con explicación de cada respuesta.
+- **Reto diario**: 5 preguntas (dificultad 1–3, con temporizador) iguales para todos los que juegan
+  ese día en el mismo idioma; un intento al día, racha de días seguidos y resultado para compartir
+  con cuadrados del color de cada gema (sin spoilers). Funciona sin conexión. Si tu filtro de
+  spoilers oculta preguntas, el reto se elige entre las que tienes activas (puede no coincidir con
+  el de otros, y la app lo avisa).
+- **Logros**: 19 logros locales (ganar una partida, seis gemas sin fallar, Experto sin ayudas,
+  rachas del reto diario, completar un mundo…), con vitrina desde Inicio y Estadísticas.
+- **Colección** (Estadísticas): «X/Y preguntas descubiertas» en total, por mundo y por dificultad,
+  según el filtro de spoilers.
 - **Filtro de spoilers** (Ajustes): marca solo los libros que has leído.
 
 ## Contenido
 
 | Mundo | Preguntas |
 |---|---|
-| Roshar | 80 |
-| Scadrial | 80 |
+| Roshar | 100 |
+| Scadrial | 90 |
 | Sel | 80 |
 | Nalthis | 60 |
 | Otros mundos | 80 |
 | El Cosmere | 80 |
 
-460 preguntas por idioma, 4 niveles de dificultad (fácil, media, difícil y experto), repartidas a partes iguales
-(Nalthis: 16/16/16/12). Cada pregunta está etiquetada con el libro más tardío que hace falta para
+490 preguntas por idioma, 4 niveles de dificultad (fácil, media, difícil y experto), incluidas 20 de
+*Viento y verdad* y 10 más de la era 2 de *Nacidos de la bruma*. Cada pregunta está etiquetada con el libro más tardío que hace falta para
 conocer la respuesta. En los mundos-planeta, las cuatro opciones son siempre del mismo planeta.
 
 **Nombres**: en cada idioma se usan los de la edición oficial publicada en ese idioma
@@ -56,7 +65,7 @@ término están en `content/glossary.json` (`official`, `community`, `unchanged`
 app/                PWA (HTML/CSS/JS sin dependencias) — ver docs/ENGINE.md
 content/en/*.json   preguntas canónicas (inglés)
 content/<lang>/     traducciones + revisión terminológica + títulos oficiales
-content/glossary.json  glosario de ~1.100 términos en 5 idiomas
+content/glossary.json  glosario de ~1.100 términos (listas de verificación para lectores nativos en `docs/verification/`) en 5 idiomas
 docs/SPEC.md        especificación y formato de datos
 tools/build.mjs     valida el contenido y genera app/data/questions.<lang>.json
 tools/terms.mjs     términos de las preguntas que faltan en el glosario
@@ -64,7 +73,7 @@ tools/check-terms.mjs  coherencia terminológica de las traducciones
 tools/merge-glossary.mjs  integra las revisiones de cada idioma en el glosario
 tools/changed-ids.mjs  ids nuevas o cambiadas desde una revisión (para traductores)
 tools/smoke.mjs     prueba de extremo a extremo en móvil emulado (Playwright)
-tools/edge.mjs      pruebas de casos límite de la beta 1 (guardados corruptos, temporizador, historial, repeticiones, 6 jugadores, texto al 200 %)
+tools/edge.mjs      pruebas de casos límite (guardados corruptos, temporizador, historial, repeticiones, 6 jugadores, texto al 200 %, reto diario, logros, colección)
 ```
 
 Flujo para cambiar preguntas: edita `content/en/<mundo>.json` y la misma `id` en cada

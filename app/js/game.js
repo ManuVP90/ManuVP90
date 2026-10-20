@@ -2,6 +2,7 @@
 import {
   CATEGORIES, CHARGES_TO_INFUSE, LIFELINES, LEVEL_IDS, MAX_PLAYERS, MAX_STREAK, TIMER_MS, fullLifelines, levelOrDefault,
 } from './config.js';
+import { cleanIds } from './progress.js';
 
 // v2 adds the game level and per-player lifelines; v3 adds the random first player, the
 // consecutive-answer limit (streak) and the question clock. Older saves are migrated on load.
@@ -34,6 +35,7 @@ export function newClassicGame({ players, timer, categories, level }) {
     winner: null,
     startedAt: Date.now(),
     playMs: 0, // time spent playing (screens of this game on display), for the victory screen
+    missed: [], // ids answered wrong in this game, for "Review mistakes" on the victory screen (1.5.0)
   };
 }
 
@@ -125,6 +127,7 @@ export function migrateState(s) {
     if (s.players.length > 1 && s.streak >= MAX_STREAK) s.streak = 0;
   }
   if (!isInt(s.playMs)) s.playMs = 0;
+  s.missed = cleanIds(s.missed); // saves from before 1.5.0 have none
   if (s.phase !== 'won') s.winner = null;
   return s;
 }

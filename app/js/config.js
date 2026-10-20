@@ -1,5 +1,5 @@
 // Global constants shared by every module.
-export const APP_VERSION = '1.4.0';
+export const APP_VERSION = '1.6.0';
 
 /** Category ids, in wheel / board order (SPEC §2). */
 export const CATEGORIES = ['roshar', 'scadrial', 'sel', 'nalthis', 'otros', 'cosmere'];
@@ -61,3 +61,10 @@ export const LIFELINES = ['atium', 'stormlight', 'breath'];
 export const fullLifelines = () => Object.fromEntries(LIFELINES.map((k) => [k, 1]));
 /** Recently seen question ids remembered per language (across games and sessions) to avoid repeats. */
 export const RECENT_MAX = 150;
+/** Missed question ids remembered per language for "Review mistakes" and practice "My mistakes". */
+export const MISSED_MAX = 200;
+/** Discovered question ids remembered per language (collection progress); far above any data file. */
+export const SEEN_MAX = 5000;
+/** Where "Report this question" opens a prefilled issue. */
+export const REPORT_URL = 'https://github.com/ManuVP90/ManuVP90/issues/new';
+export const REPORT_TEMPLATE = 'error-en-pregunta.md';

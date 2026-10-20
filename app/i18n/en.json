@@ -32,7 +32,14 @@
     "newGameConfirmClassic": "Starting a new game will discard the classic game in progress. Continue?",
     "newGameConfirmQuick": "Starting a new game will discard the quick game in progress. Continue?",
     "newGameYes": "Start a new one",
-    "newGameNo": "Go back"
+    "newGameNo": "Go back",
+    "daily": "Daily challenge",
+    "dailyDesc": "5 questions, the same for everyone today",
+    "dailyStreak": "Days in a row: {n} · keep it going!",
+    "dailyRun": "In progress: question {n} of {total}",
+    "dailyContinue": "Continue daily challenge",
+    "dailyDone": "Done today: {n}/{total} · streak {streak}",
+    "achievements": "Achievements"
   },
   "cat": {
     "roshar": "Roshar",
@@ -54,8 +61,8 @@
     "1": "Easy",
     "2": "Medium",
     "3": "Hard",
-    "label": "Difficulty: {level}",
-    "4": "Expert"
+    "4": "Expert",
+    "label": "Difficulty: {level}"
   },
   "level": {
     "title": "Difficulty level",
@@ -189,12 +196,14 @@
     "intro": "{n} questions from every world, {s} seconds each. The faster you answer, the more points you score. The clock keeps running even if you leave the app.",
     "introLifelines": "You get one of each lifeline: Atium, Stormlight and Breath.",
     "start": "Start",
-    "bestScore": "Best score: {n}",
     "quitTitle": "Quit this quick game?",
     "quitBody": "Your score for this game will be lost.",
     "quitYes": "Quit game",
     "quitNo": "Keep playing",
-    "emptySaved": "The game is saved (question {n} of {total}): you can continue it once you select more books."
+    "emptySaved": "The game is saved (question {n} of {total}): you can continue it once you select more books.",
+    "bestLevel": "Best score ({level}): {n}",
+    "noBestLevel": "No record yet on {level}.",
+    "bestLegacy": "Record from earlier versions (all levels): {n}"
   },
   "practice": {
     "title": "Practice",
@@ -209,7 +218,16 @@
     "fallback": "No {level} questions here yet: you’ll practice with {fallback} ones.",
     "empty": "No {level} questions here yet.",
     "noneFilter": "No questions available: the spoiler filter leaves no works with questions. Select more works in Settings.",
-    "allSeen": "You’ve seen every available question; they’ll start repeating now."
+    "allSeen": "You’ve seen every available question; they’ll start repeating now.",
+    "missed": "My mistakes ({n})",
+    "missedLabel": "Review",
+    "missedHint": "Only questions you got wrong. Answer one right and it leaves the list.",
+    "missedNone": "Questions you miss in any mode will show up here.",
+    "missedAvailable": "Mistakes to review: {n}",
+    "missedTitle": "My mistakes",
+    "missedLeft": "Left: {n}",
+    "missedCleared": "Removed from your mistakes.",
+    "missedDone": "You’ve cleared all your mistakes!"
   },
   "stats": {
     "title": "Stats",
@@ -221,7 +239,13 @@
     "byCategory": "Accuracy by world",
     "none": "No answers yet. Go play!",
     "of": "{correct} of {total}",
-    "lifelines": "Lifelines used"
+    "lifelines": "Lifelines used",
+    "recordsByLevel": "Quick game records by level",
+    "collection": "Collection",
+    "discovered": "{n}/{total} questions discovered",
+    "discoveredOf": "{n}/{total}",
+    "collectionFiltered": "Only the works ticked in the spoiler filter count.",
+    "byDifficulty": "By difficulty"
   },
   "settings": {
     "title": "Settings",
@@ -243,7 +267,27 @@
     "resetConfirm": "This deletes your stats, records, saved game and settings. Are you sure?",
     "resetDone": "All data has been reset.",
     "storageWarning": "Storage isn’t available, so settings and progress won’t be kept after closing the app.",
-    "resetNo": "Keep my data"
+    "resetNo": "Keep my data",
+    "backup": "Backup",
+    "backupHint": "Save your stats, records, mistakes and settings as a code to move them to another device or restore them. Games in progress are not included.",
+    "backupExport": "Export progress",
+    "backupCode": "Your progress code",
+    "backupCopy": "Copy code",
+    "backupCopied": "Code copied. Keep it somewhere safe.",
+    "backupCopyFailed": "Couldn’t copy: select the code and copy it by hand.",
+    "backupPaste": "Import: paste a code here",
+    "backupImport": "Import progress",
+    "backupNo": "Don’t import",
+    "backupConfirmTitle": "Import this progress?",
+    "backupConfirm": "Your current stats, records, mistakes and settings will be replaced by the ones in the code. Games in progress stay as they are.",
+    "backupDone": "Progress imported.",
+    "backupError": {
+      "empty": "Paste a code first.",
+      "format": "That code isn’t valid. Check that you copied all of it.",
+      "checksum": "The code is incomplete or damaged. Copy it again.",
+      "version": "This code comes from another version of the app and can’t be imported.",
+      "unsupported": "This browser can’t read the code. Update it or use another one."
+    }
   },
   "about": {
     "title": "About",
@@ -301,5 +345,128 @@
     "orPick": "Or select only what you’ve read:",
     "pickOne": "Select at least one book to continue.",
     "skippedNoFilter": "No spoiler filter: you will get questions from every book. You can change this in Settings."
+  },
+  "report": {
+    "link": "Report this question",
+    "describe": "What is wrong? (answer, name, translation, spoiler…)",
+    "offlineCopied": "You’re offline: the report was copied to the clipboard so you can send it later.",
+    "offlineFailed": "You’re offline and the report couldn’t be copied. Try again when you’re online."
+  },
+  "review": {
+    "title": "Review mistakes ({n})",
+    "hint": "The questions you missed in this game, with the right answer. Practise them again in Practice → My mistakes.",
+    "answer": "Right answer: {answer}",
+    "none": "No mistakes in this game!"
+  },
+  "update": {
+    "available": "New version available",
+    "action": "Update",
+    "later": "Later",
+    "updating": "Updating…"
+  },
+  "daily": {
+    "title": "Daily challenge",
+    "intro": "{n} questions of mixed difficulty, {s} seconds each. Today they are the same for everyone playing in your language.",
+    "once": "One attempt per day. Come back every day to keep your streak.",
+    "start": "Start the challenge",
+    "streak": "Days in a row: {n}",
+    "noStreak": "No streak yet",
+    "best": "Best streak: {n}",
+    "filterNote": "Your spoiler filter hides some questions: your challenge is picked only from the ones you have on, so it may differ from other players’.",
+    "leaveTitle": "Leave the daily challenge?",
+    "marksLabel": "{n} of {total} correct",
+    "result": "{n} of {total} correct",
+    "comeBack": "A new challenge arrives tomorrow.",
+    "share": "Share result",
+    "sharePreview": "Text to share",
+    "shareStreak": "Days in a row: {n}",
+    "shareFiltered": "(spoiler filter on)",
+    "copied": "Result copied to the clipboard.",
+    "copyFailed": "The result could not be copied."
+  },
+  "ach": {
+    "title": "Achievements",
+    "count": "{n} of {total} achievements",
+    "local": "Kept only on this device (and in your backup).",
+    "unlocked": "Achievement unlocked!",
+    "unlockedOn": "Earned on {date}",
+    "locked": "Locked",
+    "progress": "{n}/{total}",
+    "firstWin": {
+      "name": "First victory",
+      "desc": "Win a classic game."
+    },
+    "radiant": {
+      "name": "Radiant",
+      "desc": "Win 5 classic games."
+    },
+    "fullTable": {
+      "name": "Full table",
+      "desc": "Win a classic game with 6 players."
+    },
+    "flawless": {
+      "name": "Six gems, no misses",
+      "desc": "Infuse all six gems in a classic game without missing a single question."
+    },
+    "expertPure": {
+      "name": "No help needed",
+      "desc": "Win a classic game on Expert without using any lifeline."
+    },
+    "quickPerfect": {
+      "name": "Perfect game",
+      "desc": "Answer all 15 questions of a quick game correctly."
+    },
+    "quickScore": {
+      "name": "Against the clock",
+      "desc": "Score 2000 points in a quick game."
+    },
+    "allWorlds": {
+      "name": "World after world",
+      "desc": "Answer at least one question from every world correctly."
+    },
+    "answered100": {
+      "name": "A hundred questions",
+      "desc": "Answer 100 questions in any mode."
+    },
+    "allLifelines": {
+      "name": "All three lifelines",
+      "desc": "Use each lifeline at least once: Atium, Stormlight and Breath."
+    },
+    "stormlightSave": {
+      "name": "Saved by Stormlight",
+      "desc": "Miss with Stormlight on and get it right on the second try."
+    },
+    "compendium": {
+      "name": "Compendium",
+      "desc": "Discover every question of one world."
+    },
+    "halfCosmere": {
+      "name": "Half the Cosmere",
+      "desc": "Discover half of all the questions."
+    },
+    "polyglot": {
+      "name": "Polyglot",
+      "desc": "Play in 3 languages."
+    },
+    "dailyFirst": {
+      "name": "Challenge met",
+      "desc": "Complete a daily challenge."
+    },
+    "dailyPerfect": {
+      "name": "Perfect day",
+      "desc": "Answer all 5 questions of a daily challenge correctly."
+    },
+    "dailyStreak3": {
+      "name": "Persistence",
+      "desc": "Complete the daily challenge 3 days in a row."
+    },
+    "dailyStreak10": {
+      "name": "Ten days in a row",
+      "desc": "Complete the daily challenge 10 days in a row."
+    },
+    "missedClear": {
+      "name": "Clean slate",
+      "desc": "Review all your mistakes in Practice until the list is empty."
+    }
   }
 }

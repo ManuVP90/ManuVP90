@@ -878,5 +878,115 @@
       "El Cantón de Finanzas"
     ],
     "explain": "El Convento era la fortaleza de los Inquisidores, y la inscripción en acero citada en los epígrafes estaba en sus profundidades."
+  },
+  {
+    "id": "scadrial-081",
+    "q": "En Brazales de duelo, ¿en qué tipo de vehículo viajaban Allik y sus compañeros de tripulación?",
+    "a": "En una aeronave",
+    "wrong": [
+      "En un barco de vapor",
+      "En un tren",
+      "En un submarino"
+    ],
+    "explain": "La aeronave sureña Brunstell se estrelló durante una tormenta y cayó en manos del Grupo."
+  },
+  {
+    "id": "scadrial-082",
+    "q": "En El metal perdido, ¿qué miembro de la familia de Wax dirige el Grupo?",
+    "a": "Su hermana, Telsin",
+    "wrong": [
+      "Su tío, Edwarn",
+      "Su esposa, Steris",
+      "Su suegro, lord Harms"
+    ],
+    "explain": "Telsin es una de las líderes del Grupo y conspira contra Elendel, lo que la enfrenta a su hermano."
+  },
+  {
+    "id": "scadrial-083",
+    "q": "En El metal perdido, ¿qué intenta introducir el Grupo en Elendel por barco?",
+    "a": "Una bomba devastadora",
+    "wrong": [
+      "Un ejército de koloss",
+      "Una plaga mortal",
+      "Un alijo de atium"
+    ],
+    "explain": "Wax y Wayne descubren que la bomba no está en la base del Grupo, sino a bordo de un barco que se dirige a la ciudad."
+  },
+  {
+    "id": "scadrial-084",
+    "q": "En Sombras de identidad, ¿a qué dirigente ha matado en secreto Sangrador para suplantarlo y avivar el malestar en Elendel?",
+    "a": "Replar Innate",
+    "wrong": [
+      "Winsting Innate",
+      "Lord Harms",
+      "Edwarn Ladrian"
+    ],
+    "explain": "Sangrador adoptó el rostro del gobernador para volver a los trabajadores de la ciudad contra sus gobernantes, y también asesinó a su hermano Winsting."
+  },
+  {
+    "id": "scadrial-085",
+    "q": "¿Qué kandra le dio a Wax el pendiente a través del cual Armonía puede hablarle?",
+    "a": "MeLaan",
+    "wrong": [
+      "TenSoon",
+      "VenDell",
+      "KanPaar"
+    ],
+    "explain": "MeLaan se lo dio a Wax años atrás; hecho con clavos de Inquisidor fundidos, permite a Armonía oír sus pensamientos."
+  },
+  {
+    "id": "scadrial-086",
+    "q": "Al final de Brazales de duelo, ¿a quién se entregan los Brazales, como propone Steris?",
+    "a": "A los kandra",
+    "wrong": [
+      "A Wax",
+      "Al Grupo",
+      "Al gobernador de Elendel"
+    ],
+    "explain": "La solución de compromiso de Steris mantiene los Brazales fuera del alcance tanto de Elendel como de los sureños."
+  },
+  {
+    "id": "scadrial-087",
+    "q": "En Brazales de duelo, ¿con qué título recuerdan los scadrianos del sur a la figura que acudió a ellos tras la Muerte de Hielo?",
+    "a": "El Soberano",
+    "wrong": [
+      "La Guerrera Ascendente",
+      "El Último Emperador",
+      "El Héroe de las Eras"
+    ],
+    "explain": "Según los sureños, el Soberano acudió a ayudarlos a sobrevivir al frío tras la Muerte de Hielo."
+  },
+  {
+    "id": "scadrial-088",
+    "q": "En El metal perdido, la hija de Wax y Steris comparte nombre con un personaje de la primera era. ¿Cuál?",
+    "a": "Tindwyl",
+    "wrong": [
+      "Allrianne",
+      "Valette",
+      "Mare"
+    ],
+    "explain": "Wax y Steris tienen dos hijos pequeños, Maxillium y Tindwyl."
+  },
+  {
+    "id": "scadrial-089",
+    "q": "En Brazales de duelo, ¿en qué localidad encuentran Marasi y MeLaan a Allik, cautivo en el complejo del Grupo?",
+    "a": "Dulsing",
+    "wrong": [
+      "Bilming",
+      "Nueva Seran",
+      "Feltrel"
+    ],
+    "explain": "El Grupo retenía a Allik y los restos de su aeronave, la Brunstell, en su complejo de Dulsing."
+  },
+  {
+    "id": "scadrial-090",
+    "q": "En Sombras de identidad, ¿con qué dispara Wax a Sangrador para que Armonía pueda recuperar el control sobre ella?",
+    "a": "Con una bala forjada a partir de su pendiente",
+    "wrong": [
+      "Con una bala con punta de aluminio",
+      "Con una bala fundida en atium",
+      "Con una bala rellena de duraluminio líquido"
+    ],
+    "explain": "El metal hemalúrgico permitió a Armonía alcanzar la mente de Sangrador, pero ella prefirió morir antes que someterse."
   }
 ]

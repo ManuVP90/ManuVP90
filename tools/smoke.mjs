@@ -15,10 +15,17 @@ import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { startServer, APP_DIR } from './serve.mjs';
 
+// Playwright: a local install first (node_modules at the repo root, as in CI:
+// `npm install --no-save playwright@<version>`), then the global one (`npm root -g`).
 async function loadPlaywright() {
   try { return await import('playwright'); } catch { /* fall back to a global install */ }
-  const globalRoot = execSync('npm root -g').toString().trim();
-  return createRequire(join(globalRoot, 'noop.js'))('playwright');
+  try {
+    const globalRoot = execSync('npm root -g', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+    return createRequire(join(globalRoot, 'noop.js'))('playwright');
+  } catch (e) {
+    console.error('Playwright not found. Install it locally (npm install --no-save playwright@1.56.1 && npx playwright install chromium) or globally.');
+    throw e;
+  }
 }
 
 const { chromium, devices } = await loadPlaywright();
@@ -352,9 +359,9 @@ try {
   // ---------------------------------------------------------------- practice
   await page.click('.menu-btn >> nth=2');
   await page.waitForSelector('.practice-setup');
-  await page.click('.chips >> nth=0 >> .chip >> nth=1');
-  assert(await page.locator('.chips >> nth=1 >> .chip').count() === 5, 'practice offers any + 4 difficulties');
-  await page.click('.chips >> nth=1 >> .chip >> nth=4'); // Experto
+  await page.click('.chips-cat .chip >> nth=1');
+  assert(await page.locator('.chips-diff .chip').count() === 5, 'practice offers any + 4 difficulties');
+  await page.click('.chips-diff .chip >> nth=4'); // Experto
   if (!hasD4) {
     await page.waitForSelector('.practice-note:not([hidden])');
     assert((await page.textContent('.practice-note')).includes(T('es', 'difficulty.4')), 'fallback message names Experto');
@@ -446,8 +453,49 @@ try {
   await page.click('.menu-btn:has-text("' + T('es', 'home.practice') + '")');
   await page.click('.practice-setup .sticky-actions .btn-primary');
   await page.waitForSelector('.practice .qcard');
-  await context.setOffline(false);
   log('works offline after first load (service worker)');
+
+  // ---------------------------------------------------------------- daily challenge (still offline), achievements, collection
+  await page.click('.topbar .icon-btn'); // practice → practice setup
+  await page.waitForSelector('.practice-setup');
+  await page.click('.topbar .icon-btn');
+  await page.click('.home .menu-daily');
+  await page.waitForSelector('.daily-intro');
+  await shot('26-daily-intro');
+  await page.click('.daily-start');
+  for (let i = 0; i < 5; i++) {
+    await page.waitForSelector('.daily .qcard .timer');
+    const qd = diffOf[(await page.textContent('.qtext')).trim()];
+    assert(qd >= 1 && qd <= 3, `daily questions are difficulty 1–3 (got ${qd})`);
+    await answer(i !== 3);
+    if (i === 0) await shot('27-daily-question');
+    await page.click('.qcard .continue');
+  }
+  await page.waitForSelector('.daily-result');
+  assert((await page.textContent('.daily-result .result-score')).trim() === T('es', 'daily.result').replace('{n}', '4').replace('{total}', '5'), 'daily result 4/5');
+  assert(/^[🟦🟥🟩🟨🟪⬜⬛]{5} 4\/5$/mu.test(await page.textContent('.daily-share-preview')), 'share preview with gem squares');
+  await shot('28-daily-result');
+  await context.setOffline(false);
+  await page.click('.daily-result .stack-actions:last-child .btn-ghost');
+  await page.waitForSelector('.home .menu-daily.daily-done');
+  await page.click('.small-btn >> nth=0');
+  await page.waitForSelector('.stats .collection .col-total');
+  const discovered = Number((await page.textContent('.col-total strong')).match(/^\d+/)[0]);
+  assert(discovered >= 20, `collection counts discovered questions (${discovered})`);
+  await shot('29-stats-collection');
+  await page.click('.stats-ach');
+  await page.waitForSelector('.achievements .ach-card');
+  const unlocked = await page.locator('.ach-card.unlocked').count();
+  assert(unlocked >= 3 && await page.locator('.ach-card[data-ach="dailyFirst"].unlocked').count() === 1, `achievements unlocked by this run (${unlocked})`);
+  await shot('30-achievements');
+  await page.click('.topbar .icon-btn'); // → stats
+  await page.waitForSelector('.stats');
+  await page.click('.topbar .icon-btn');
+  await page.waitForSelector('.home');
+  await page.click('.home .menu-btn:has-text("' + T('es', 'home.practice') + '")');
+  await page.click('.practice-setup .sticky-actions .btn-primary');
+  await page.waitForSelector('.practice .qcard');
+  log(`daily challenge offline (4/5, share text), collection (${discovered} discovered), ${unlocked} achievements`);
 
   // ---------------------------------------------------------------- tablet / desktop sanity
   await page.setViewportSize({ width: 1024, height: 768 });

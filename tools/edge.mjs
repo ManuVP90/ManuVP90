@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-// Edge-case regression tests (Playwright + Chromium) for the Beta 1 and Beta 2 findings (docs/BETA-1.md).
+// Edge-case regression tests (Playwright + Chromium) for the Beta 1–3 findings (docs/BETA-1.md) and the 1.5.0 / 1.6.0 features.
 // Usage: node tools/edge.mjs          (SCREENSHOT_DIR=/some/dir to choose where PNGs go; ONLY=<regex> for a subset)
 // Deterministic: Math.random is seeded in every page and timers use Playwright's fake clock.
-// Each test opens a fresh context (service workers blocked so routes and storage are exact).
+// Each test opens a fresh context (service workers blocked so routes and storage are exact, except the
+// real update-flow test, which allows them).
 import { createRequire } from 'node:module';
 import { execSync } from 'node:child_process';
 import { mkdirSync, readFileSync } from 'node:fs';
@@ -10,11 +11,21 @@ import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { startServer, APP_DIR } from './serve.mjs';
 import { ALL_WORKS } from '../app/js/works.js';
+import { encodeBackup, checksum } from '../app/js/progress.js';
+import { APP_VERSION } from '../app/js/config.js';
+import { dailyPick, addDays, recordDaily, currentStreak, sanitizeDaily, emptyDaily, shareText, DAILY_DIFFS } from '../app/js/daily.js';
 
+// Playwright: a local install first (node_modules at the repo root, as in CI:
+// `npm install --no-save playwright@<version>`), then the global one (`npm root -g`).
 async function loadPlaywright() {
   try { return await import('playwright'); } catch { /* fall back to a global install */ }
-  const globalRoot = execSync('npm root -g').toString().trim();
-  return createRequire(join(globalRoot, 'noop.js'))('playwright');
+  try {
+    const globalRoot = execSync('npm root -g', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+    return createRequire(join(globalRoot, 'noop.js'))('playwright');
+  } catch (e) {
+    console.error('Playwright not found. Install it locally (npm install --no-save playwright@1.56.1 && npx playwright install chromium) or globally.');
+    throw e;
+  }
 }
 
 const { chromium, devices } = await loadPlaywright();
@@ -48,8 +59,8 @@ function seedRandom(seed) {
  * written before the app boots; `clock` installs the fake clock at T0. Unless `fresh` is set,
  * empty settings are stored too, so the first-run introduction stays out of the way.
  */
-async function open({ locale = 'es-ES', device = 'Pixel 7', viewport = null, seed = 7, storage = null, clock = false, before = null, allow = [], fresh = false } = {}) {
-  const context = await browser.newContext({ ...devices[device], ...(viewport ? { viewport } : {}), locale, serviceWorkers: 'block' });
+async function open({ locale = 'es-ES', device = 'Pixel 7', viewport = null, seed = 7, storage = null, clock = false, before = null, allow = [], fresh = false, swAllowed = false, url = BASE } = {}) {
+  const context = await browser.newContext({ ...devices[device], ...(viewport ? { viewport } : {}), locale, serviceWorkers: swAllowed ? 'allow' : 'block' });
   await context.addInitScript(seedRandom, seed);
   storage = fresh ? storage : { settings: '{}', ...(storage || {}) };
   if (!fresh && storage) {
@@ -72,7 +83,7 @@ async function open({ locale = 'es-ES', device = 'Pixel 7', viewport = null, see
   if (clock) await page.clock.install({ time: T0 });
   if (clock === 'paused') await page.clock.pauseAt(T0 + 1000); // time only moves with runFor (exact timer checks)
   if (before) await before(page, context);
-  await page.goto(BASE);
+  await page.goto(url);
   return { context, page, errors };
 }
 
@@ -643,13 +654,13 @@ await test('strings: German Roschar, "Am Zug", typographic apostrophes; French c
   assert(strings.de.cat.roshar === 'Roschar', 'de cat.roshar = Roschar');
   assert(strings.de.turn.turnOf.startsWith('Am Zug'), 'de turnOf = "Am Zug: {name}"');
   walk(strings.fr, (k, v) => assert(!/[^ \s]:(\s|$)/.test(v) || /https?:/.test(v), `fr ${k}: needs a space before ":"`));
-  assert(strings.fr.quick.bestScore === 'Meilleur score : {n}', 'fr bestScore with U+00A0');
-  // In the app: the German spoiler filter group and the French best score.
-  const { page, context } = await use({ locale: 'fr-FR', storage: { stats: '{"bestQuick":1234}' } });
+  assert(strings.fr.quick.bestLevel === 'Meilleur score ({level})\u00a0: {n}', 'fr bestLevel with U+00A0');
+  // In the app: the German spoiler filter group and the French best score (per level since 1.5.0).
+  const { page, context } = await use({ locale: 'fr-FR', storage: { stats: '{"bestQuick":1234,"bestByLevel":{"normal":1234}}' } });
   await page.click('.menu-quick');
   await page.waitForSelector('.quick-best');
   const fmt = await page.evaluate(() => new Intl.NumberFormat('fr').format(1234));
-  assert(await text(page, '.quick-best') === T('fr', 'quick.bestScore', { n: fmt }), `French best score from i18n (${await text(page, '.quick-best')})`);
+  assert(await text(page, '.quick-best') === T('fr', 'quick.bestLevel', { level: T('fr', 'level.normal'), n: fmt }), `French best score from i18n (${await text(page, '.quick-best')})`);
   await context.close();
   const de = await use({ locale: 'de-DE' });
   await de.page.click('.small-btn >> nth=1');
@@ -1395,6 +1406,675 @@ await test('B3 i18n: unambiguous dialog buttons (5 langs), French typography, IT
   assert(!m.title && m.lines <= 2, `game bar title fits in at most 2 lines (${JSON.stringify(m)})`);
   assert(!m.names.length, `compact board shows full names (${m.names})`);
   await shot(page, 'e-b3-long-names-390');
+});
+
+// ================================================================== 1.5.0 features
+const fmtEs = (n) => new Intl.NumberFormat('es').format(n);
+/** A quick run on its last question (index 14 of 15); `missed` ⊆ the questions already asked. */
+function quickRunNearEnd({ level = 'hard', score = 1400, correct = 7, missed = [] } = {}) {
+  const qs = QS.slice(0, 15);
+  return {
+    v: 1, plan: qs.map((q) => q.c), total: 15, index: 14, score, correct, level, lifelines: LL(),
+    seen: qs.map((q) => q.id), current: { id: qs[14].id, order: [0, 1, 2, 3], fx: null, clock: null }, missed,
+  };
+}
+const parseReport = (href) => {
+  const u = new URL(href);
+  return { origin: `${u.origin}${u.pathname}`, template: u.searchParams.get('template'), title: u.searchParams.get('title'), body: u.searchParams.get('body'), length: href.length };
+};
+
+await test('1.5 report: prefilled GitHub issue (id, language, text, options, version), length-safe, offline copy', async (use) => {
+  const { page, context } = await use({});
+  await context.grantPermissions(['clipboard-read', 'clipboard-write'], { origin: BASE });
+  await page.click('.menu-btn >> nth=2'); // Práctica
+  await page.click('.practice-setup .sticky-actions .btn-primary');
+  await page.waitForSelector('.practice .qcard .option');
+  assert(!(await page.$('.report-link')), 'no report link before answering');
+  const qtext = await text(page, '.qtext');
+  const q = QS.find((x) => x.q === qtext);
+  await answer(page, false);
+  await page.waitForSelector('.feedback .report-link');
+  assert(await text(page, '.feedback .report-link') === T('es', 'report.link'), 'link label');
+  const r = parseReport(await page.getAttribute('.feedback .report-link', 'href'));
+  assert(r.origin === 'https://github.com/ManuVP90/ManuVP90/issues/new' && r.template === 'error-en-pregunta.md', `issue URL + template (${r.origin} ${r.template})`);
+  assert(r.title.includes(q.id), 'title has the question id');
+  for (const part of [q.id, '**Idioma / Language:** es', q.q, ...q.o, APP_VERSION, T('es', 'report.describe')]) assert(r.body.includes(part), `body includes "${part}"`);
+  assert(r.length <= 6000, `URL length ${r.length}`);
+  assert(await page.getAttribute('.feedback .report-link', 'target') === '_blank' && (await page.getAttribute('.feedback .report-link', 'rel')).includes('noopener'), 'opens in a new tab, noopener');
+  // Huge texts stay under the limit and keep the id (pure builder, same module the app uses).
+  const big = await page.evaluate(async () => {
+    const { buildReport } = await import('./js/report.js');
+    const r = buildReport({ id: 'roshar-001', c: 'roshar', d: 2, q: '¿'.repeat(4000), o: ['ñ'.repeat(900), 'b', 'c', 'd'], x: '😀'.repeat(3000) }, { lang: 'es', version: '1.5.0' });
+    return { len: r.url.length, id: r.body.includes('roshar-001'), text: r.text.length };
+  });
+  assert(big.len <= 6000 && big.id, `long question keeps the URL short (${JSON.stringify(big)})`);
+  await shot(page, 'e-15-report-link');
+  // Offline: the report is copied to the clipboard instead of opening GitHub.
+  await context.setOffline(true);
+  const pages = context.pages().length;
+  await page.click('.feedback .report-link');
+  await page.waitForFunction((m) => document.getElementById('toast').textContent === m, T('es', 'report.offlineCopied'));
+  const clip = await page.evaluate(() => navigator.clipboard.readText());
+  assert(clip.includes(q.id) && clip.includes(q.q) && clip.includes(q.o[0]), 'clipboard holds the report');
+  assert(context.pages().length === pages, 'no tab opened offline');
+  await shot(page, 'e-15-report-offline');
+  await context.setOffline(false);
+  // French and German labels in the body.
+  for (const [locale, lang] of [['fr-FR', 'fr'], ['de-DE', 'de']]) {
+    const x = await use({ locale });
+    await x.page.click('.menu-btn >> nth=2');
+    await x.page.click('.practice-setup .sticky-actions .btn-primary');
+    await x.page.waitForSelector('.practice .qcard .option');
+    await x.page.click('.qcard .option >> nth=0');
+    await x.page.waitForSelector('.feedback .report-link');
+    const rr = parseReport(await x.page.getAttribute('.feedback .report-link', 'href'));
+    assert(rr.body.includes(`**Idioma / Language:** ${lang}`) && rr.body.includes(T(lang, 'report.describe')), `${lang}: language and localized prompt`);
+    assert(await text(x.page, '.feedback .report-link') === T(lang, 'report.link'), `${lang}: link label`);
+    await x.context.close();
+  }
+});
+
+await test('1.5 quick records per level: legacy best kept, per-level intro, record + reload', async (use) => {
+  let { page, context } = await use({ storage: { stats: '{"bestQuick":1234}', settings: '{"level":"normal"}' } });
+  await page.click('.menu-quick');
+  await page.waitForSelector('.quick-best');
+  assert(await text(page, '.quick-best') === T('es', 'quick.noBestLevel', { level: T('es', 'level.normal') }), 'no record yet for Normal');
+  assert(await text(page, '.quick-best-legacy') === T('es', 'quick.bestLegacy', { n: fmtEs(1234) }), 'legacy record shown');
+  await context.close();
+
+  const stats = { bestQuick: 1500, bestByLevel: { easy: 900, hard: 1500 } };
+  ({ page, context } = await use({ storage: { stats: JSON.stringify(stats), settings: '{"level":"normal"}' } }));
+  await page.click('.menu-quick');
+  await page.waitForSelector('.quick-best');
+  assert(!(await page.$('.quick-best-legacy')), 'no legacy line when a level record holds the best');
+  await page.click('.level-opt[data-level="easy"]');
+  assert(await text(page, '.quick-best') === T('es', 'quick.bestLevel', { level: T('es', 'level.easy'), n: fmtEs(900) }), 'intro follows the chosen level');
+  await shot(page, 'e-15-quick-intro-best');
+  await context.close();
+
+  // A record on Difícil: only that level changes; the results survive a reload.
+  ({ page, context } = await use({ storage: { stats: JSON.stringify(stats), quick: JSON.stringify(quickRunNearEnd({ level: 'hard', score: 1400, correct: 7 })) } }));
+  await page.click('.menu-continue-quick');
+  await answer(page, true);
+  await page.click('.qcard .continue');
+  await page.waitForSelector('.quick-result .record-badge');
+  const s = JSON.parse(await lsGet(page, 'stats'));
+  assert(s.bestByLevel.hard > 1500 && s.bestByLevel.easy === 900 && !s.bestByLevel.normal && s.bestQuick === s.bestByLevel.hard, `per-level records (${JSON.stringify(s.bestByLevel)}, ${s.bestQuick})`);
+  assert(await text(page, '.quick-result .quick-best') === T('es', 'quick.bestLevel', { level: T('es', 'level.hard'), n: fmtEs(s.bestByLevel.hard) }), 'results show the level record');
+  await page.reload();
+  await page.waitForSelector('.quick-result .record-badge');
+  await context.close();
+
+  // Records are per level: a first Fácil score is a record even below another level's best.
+  ({ page, context } = await use({ storage: { stats: JSON.stringify({ bestQuick: 3000, bestByLevel: { hard: 3000 } }), quick: JSON.stringify(quickRunNearEnd({ level: 'easy', score: 700, correct: 7 })) } }));
+  await page.click('.menu-continue-quick');
+  await answer(page, true);
+  await page.click('.qcard .continue');
+  await page.waitForSelector('.quick-result');
+  assert(await page.$('.quick-result .record-badge'), 'first Fácil score is a Fácil record even below another level');
+  await context.close();
+
+  // A results screen saved by 1.4.0 (record of the single best) still shows after the update.
+  ({ page, context } = await use({ storage: { stats: '{"bestQuick":1234,"quickGames":3}', quickResult: JSON.stringify({ score: 1234, correct: 7, total: 15, level: 'easy', record: true }) } }));
+  await page.waitForSelector('.quick-result .record-badge');
+  assert(await page.$('.quick-result .review-none, .quick-result .review') !== null, 'review area rendered for an old summary');
+  await context.close();
+  // Inconsistent per-level data: a level record above the overall one is clamped, not trusted blindly.
+  ({ page, context } = await use({ storage: { stats: JSON.stringify({ bestQuick: 10, bestByLevel: { normal: 'x', hard: -4, expert: 2500 } }) } }));
+  await page.click('.small-btn >> nth=0');
+  await page.waitForSelector('.stats .record-row');
+  const rows = await page.locator('.record-value').allTextContents();
+  assert(rows.join('|') === ['—', '—', '—', fmtEs(2500)].join('|'), `records per level in Stats (${rows})`);
+  assert((await page.locator('.tile-value').nth(2).textContent()).trim() === fmtEs(2500), 'overall record ≥ every level');
+  await shot(page, 'e-15-stats-records');
+});
+
+await test('1.5 review mistakes: quick results and classic victory list missed questions; missed ids saved', async (use) => {
+  const prev = QS[3];
+  const last = QS[14];
+  let { page, context } = await use({ storage: { quick: JSON.stringify(quickRunNearEnd({ level: 'normal', score: 1000, correct: 6, missed: [prev.id] })) } });
+  await page.click('.menu-continue-quick');
+  await answer(page, false);
+  await page.click('.qcard .continue');
+  await page.waitForSelector('.quick-result .review');
+  assert(await text(page, '.review-title') === T('es', 'review.title', { n: 2 }), 'summary counts 2 misses');
+  assert(!(await page.locator('.review-list').isVisible()), 'collapsed by default');
+  await page.click('.review-summary');
+  const items = page.locator('.review-item');
+  assert(await items.count() === 2, 'two items');
+  const all = (await items.allTextContents()).join('\n');
+  for (const q of [prev, last]) {
+    assert(all.includes(q.q) && all.includes(T('es', 'review.answer', { answer: q.o[0] })), `item for ${q.id}`);
+    if (q.x) assert(all.includes(q.x), `explanation for ${q.id}`);
+  }
+  assert(await page.locator('.review-item .report-link').count() === 2, 'each item can be reported');
+  const missed = JSON.parse(await lsGet(page, 'missed'));
+  assert(missed.es.includes(last.id), 'the miss is remembered for practice');
+  await shot(page, 'e-15-review-quick');
+  await page.reload();
+  await page.waitForSelector('.quick-result .review');
+  assert(await text(page, '.review-title') === T('es', 'review.title', { n: 2 }), 'review survives a reload');
+  await context.close();
+
+  // No misses: a short positive note instead of the list.
+  ({ page, context } = await use({ storage: { quick: JSON.stringify(quickRunNearEnd({ level: 'normal', score: 1400, correct: 14 })) } }));
+  await page.click('.menu-continue-quick');
+  await answer(page, true);
+  await page.click('.qcard .continue');
+  await page.waitForSelector('.quick-result .review-none');
+  assert(await text(page, '.review-none') === T('es', 'review.none'), 'no-miss note');
+  await context.close();
+
+  // Invalid missed lists in a saved run: the run is discarded.
+  for (const missedBad of [['nope-1'], QS.slice(0, 9).map((q) => q.id), 'x', [prev.id, prev.id]]) {
+    ({ page, context } = await use({ storage: { quick: JSON.stringify(quickRunNearEnd({ level: 'normal', score: 600, correct: 6, missed: missedBad })) } }));
+    await page.waitForSelector('.home');
+    assert(!(await page.$('.menu-continue-quick')), `invalid missed list ${JSON.stringify(missedBad).slice(0, 40)} rejected`);
+    assert(await lsGet(page, 'quick') === null, 'invalid run deleted');
+    await context.close();
+  }
+
+  // Classic: the victory screen lists the game's misses (kept in the saved game).
+  const fq = QS.find((q) => q.d >= 3);
+  const old = QS[7];
+  const save = classicSave({
+    timer: false, missed: [old.id],
+    players: [
+      { name: 'Ana', color: 'roshar', charges: Object.fromEntries(CATS.map((c) => [c, 2])), lifelines: LL() },
+      { name: 'Bea', color: 'sel', charges: {}, lifelines: LL() },
+    ],
+    pending: { id: fq.id, cat: fq.c, order: [0, 1, 2, 3], final: true },
+  });
+  ({ page, context } = await use({ storage: { classic: JSON.stringify(save) } }));
+  await page.click('.menu-continue-classic');
+  await page.click('.handoff .btn-primary');
+  await answer(page, false); // final missed: joins the list
+  await page.click('.qcard .continue');
+  const kept = JSON.parse(await lsGet(page, 'classic'));
+  assert(kept.missed.includes(old.id) && kept.missed.includes(fq.id), `classic save keeps the misses (${kept.missed})`);
+  await context.close();
+  ({ page, context } = await use({ storage: { classic: JSON.stringify(save) } }));
+  await page.click('.menu-continue-classic');
+  await page.click('.handoff .btn-primary');
+  await answer(page, true);
+  await page.click('.qcard .continue');
+  await page.waitForSelector('.victory .review');
+  assert(await text(page, '.victory .review-title') === T('es', 'review.title', { n: 1 }), 'victory review counts the game misses');
+  await page.click('.victory .review-summary');
+  assert((await text(page, '.victory .review-item')).includes(old.o[0]), 'victory review shows the right answer');
+  await shot(page, 'e-15-review-victory');
+  // A v3 save without the field (1.4.0) still loads.
+  const { missed: _m, ...noMissed } = save;
+  const x = await use({ storage: { classic: JSON.stringify(noMissed) } });
+  await x.page.waitForSelector('.menu-continue-classic');
+});
+
+await test('1.5 practice "My mistakes": only missed questions, removed when answered right, capped list', async (use) => {
+  const a = QS[20];
+  const b = QS[40];
+  let { page, context } = await use({ storage: { missed: JSON.stringify({ es: [a.id, b.id], en: ['roshar-001'] }) } });
+  await page.click('.menu-btn >> nth=2');
+  await page.waitForSelector('.practice-setup .chip-missed');
+  assert(await text(page, '.chip-missed') === T('es', 'practice.missed', { n: 2 }), 'chip counts the missed questions of this language');
+  await page.click('.chip-missed');
+  assert(await page.locator('.practice-diff').isHidden(), 'difficulty hidden for My mistakes');
+  assert(await page.locator('.chips-cat .chip[aria-checked="true"]').count() === 0, 'one choice across both cards');
+  assert((await page.locator('.practice-setup p[aria-live]').textContent()).trim() === T('es', 'practice.missedAvailable', { n: 2 }), 'count line');
+  await shot(page, 'e-15-practice-missed-setup');
+  await page.click('.practice-setup .sticky-actions .btn-primary');
+  const seen = [];
+  // First question: wrong → stays. Then right, right → list empty → back to setup.
+  await page.waitForSelector('.practice .qcard .option');
+  seen.push(await text(page, '.qtext'));
+  assert(await text(page, '.topbar-title') === T('es', 'practice.missedTitle'), 'title');
+  await answer(page, false);
+  await page.click('.qcard .continue');
+  await page.waitForSelector('.practice .qcard .option');
+  seen.push(await text(page, '.qtext'));
+  assert(seen[0] !== seen[1] && seen.every((q) => q === a.q || q === b.q), 'only missed questions, no repeat until both shown');
+  await answer(page, true);
+  await page.waitForSelector('.missed-cleared');
+  assert(await text(page, '.missed-left') === T('es', 'practice.missedLeft', { n: 1 }), 'one left');
+  await shot(page, 'e-15-practice-missed-cleared');
+  await page.click('.qcard .continue');
+  await page.waitForSelector('.practice .qcard .option');
+  assert(await text(page, '.qtext') === seen[0], 'the one still missed comes back');
+  await answer(page, true);
+  await page.click('.qcard .continue');
+  await page.waitForSelector('.practice-setup');
+  await page.waitForFunction((m) => document.getElementById('toast').textContent === m, T('es', 'practice.missedDone'));
+  assert(await page.locator('.chip-missed').isDisabled(), 'chip disabled with nothing left');
+  assert(await text(page, '.practice-missed-hint') === T('es', 'practice.missedNone'), 'empty hint');
+  const m = JSON.parse(await lsGet(page, 'missed'));
+  assert(!m.es && m.en.length === 1, `es list emptied, other languages kept (${JSON.stringify(m)})`);
+  await context.close();
+
+  // Normal practice: a miss joins the list; the spoiler filter hides missed questions it excludes.
+  ({ page, context } = await use({ storage: { settings: JSON.stringify({ disabledWorks: onlyWorks([QS[0].w]) }), missed: JSON.stringify({ es: [QS[0].id, QS.find((q) => q.w !== QS[0].w).id] }) } }));
+  await page.click('.menu-btn >> nth=2');
+  assert(await text(page, '.chip-missed') === T('es', 'practice.missed', { n: 1 }), 'filtered by the spoiler filter');
+  await context.close();
+
+  // The list is capped (most recent kept) and garbage is ignored.
+  ({ page, context } = await use({ storage: { missed: '{"es": "nope", "xx": [1,2]}' } }));
+  await page.click('.menu-btn >> nth=2');
+  assert(await page.locator('.chip-missed').isDisabled(), 'garbage missed list → empty');
+  const capped = await page.evaluate(async (ids) => {
+    const core = await import('./js/core.js');
+    ids.forEach((id) => core.noteMissed(id));
+    core.noteMissed(ids[0]); // seen again: becomes the most recent
+    return core.getMissed();
+  }, QS.slice(0, 205).map((q) => q.id));
+  assert(capped.length === 200 && capped[199] === QS[0].id && !capped.includes(QS[1].id) && capped[0] === QS[6].id, `capped at 200 (${capped.length}, ${capped[0]}, ${capped[199]})`);
+});
+
+await test('1.5 export / import progress: round trip, no games in progress, garbage rejected safely', async (use) => {
+  const stats = { classicGames: 3, quickGames: 5, bestQuick: 2100, bestByLevel: { hard: 2100, easy: 800 }, cats: { roshar: { a: 10, c: 7 } }, lifelines: { atium: 2, stormlight: 1, breath: 0 } };
+  const src = {
+    stats: JSON.stringify(stats), settings: JSON.stringify({ theme: 'light', sound: false, level: 'hard', disabledWorks: [ALL_WORKS[0]] }),
+    missed: JSON.stringify({ es: [QS[1].id, QS[2].id] }), recent: JSON.stringify({ es: QS.slice(0, 150).map((q) => q.id), en: ['roshar-001'] }),
+    classic: JSON.stringify(classicSave()),
+  };
+  let { page, context } = await use({ storage: src });
+  await page.click('.small-btn >> nth=1');
+  await page.click('.backup-export');
+  await page.waitForSelector('.backup-out:not([hidden])');
+  const code = await page.inputValue('.backup-code');
+  assert(/^CT1z?\.[A-Za-z0-9_-]+$/.test(code), `code format (${code.slice(0, 20)}…)`);
+  assert(code.length < 3000, `short code (${code.length} chars)`);
+  await shot(page, 'e-15-backup-export');
+  await context.close();
+
+  // Import on a "new phone".
+  ({ page, context } = await use({ storage: { stats: '{"quickGames":1}' } }));
+  await page.click('.small-btn >> nth=1');
+  const tryImport = async (value) => {
+    await page.fill('.backup-in', value);
+    await page.click('.backup-import');
+  };
+  const bad = {
+    empty: ['   ', 'empty'], words: ['hola, esto no es un código', 'format'], prefix: ['CT1.!!!!', 'format'],
+    notJson: [`CT1.${Buffer.from('not json').toString('base64url')}`, 'format'],
+    array: [`CT1.${Buffer.from('[1,2]').toString('base64url')}`, 'format'],
+    otherApp: [`CT1.${Buffer.from(JSON.stringify({ app: 'x', v: 1, d: {}, c: checksum('{}') })).toString('base64url')}`, 'format'],
+    version: ['CT2.abcd', 'version'],
+    tampered: [`CT1.${Buffer.from(JSON.stringify({ app: 'cosmere-trivia', v: 1, d: { stats: { bestQuick: 99999 } }, c: checksum('{"stats":{"bestQuick":1}}') })).toString('base64url')}`, 'checksum'],
+    cut: [code.slice(0, Math.floor(code.length / 2)), null],
+  };
+  for (const [name, [value, err]] of Object.entries(bad)) {
+    await tryImport(value);
+    await page.waitForSelector('.backup-error:not([hidden])');
+    const msg = await text(page, '.backup-error');
+    if (err) assert(msg === T('es', `settings.backupError.${err}`), `${name}: "${msg}"`);
+    else assert(Object.values(strings.es.settings.backupError).includes(msg), `${name}: rejected (${msg})`);
+    assert(!(await page.$('.modal')), `${name}: no confirmation`);
+  }
+  assert(JSON.parse(await lsGet(page, 'stats')).quickGames === 1, 'garbage changed nothing');
+  await shot(page, 'e-15-backup-error');
+  // Cancel keeps the data; confirm imports.
+  await tryImport(code);
+  await page.waitForSelector('.modal');
+  assert(await text(page, '.modal-title') === T('es', 'settings.backupConfirmTitle'), 'confirmation');
+  await page.click('.modal .btn-ghost');
+  assert(JSON.parse(await lsGet(page, 'stats')).quickGames === 1, 'cancel changes nothing');
+  await page.click('.backup-import');
+  await page.waitForSelector('.modal');
+  await page.click('.modal .btn-primary');
+  await page.waitForFunction((m) => document.getElementById('toast').textContent === m, T('es', 'settings.backupDone'));
+  const got = JSON.parse(await lsGet(page, 'stats'));
+  assert(got.quickGames === 5 && got.bestByLevel.hard === 2100 && got.bestByLevel.easy === 800 && got.cats.roshar.c === 7 && got.lifelines.atium === 2, `stats imported (${JSON.stringify(got)})`);
+  const set = JSON.parse(await lsGet(page, 'settings'));
+  assert(set.theme === 'light' && set.sound === false && set.level === 'hard' && set.disabledWorks[0] === ALL_WORKS[0] && set.onboarded === true, 'settings imported');
+  assert(await page.evaluate(() => document.documentElement.dataset.theme) === 'light', 'theme applied at once');
+  assert(JSON.parse(await lsGet(page, 'missed')).es.length === 2 && JSON.parse(await lsGet(page, 'recent')).es.length === 150, 'missed + recent imported');
+  assert(await lsGet(page, 'classic') === null, 'games in progress are not part of a backup');
+  await context.close();
+
+  // A valid code with odd values inside: sanitized like stored data, never crashes.
+  const d = { stats: { bestQuick: 'mucho', cats: { roshar: { a: -1, c: 9 } }, bestByLevel: [] }, settings: { lang: 'xx', theme: 5, disabledWorks: 'all' }, missed: { es: [1, null, 'ok-1'], zz: ['a'] }, recent: 'x' };
+  const weird = await encodeBackup(d, { compress: false });
+  ({ page, context } = await use({}));
+  await page.click('.small-btn >> nth=1');
+  await page.fill('.backup-in', weird);
+  await page.click('.backup-import');
+  await page.click('.modal .btn-primary');
+  await page.waitForFunction((m) => document.getElementById('toast').textContent === m, T('es', 'settings.backupDone'));
+  const s2 = JSON.parse(await lsGet(page, 'stats'));
+  assert(s2.bestQuick === 0 && s2.cats.roshar.a === 0, 'odd stats → 0');
+  assert(JSON.stringify(JSON.parse(await lsGet(page, 'missed'))) === '{"es":["ok-1"]}', 'only valid ids kept');
+  assert(await page.evaluate(() => document.documentElement.lang) === 'es', 'invalid language ignored');
+  assert(!(await leakedText(page)), 'no leaked values');
+  // Nothing usable at all → format error.
+  await page.fill('.backup-in', await encodeBackup({ foo: 1 }, { compress: false }));
+  await page.click('.backup-import');
+  await page.click('.modal .btn-primary');
+  await page.waitForSelector('.backup-error:not([hidden])');
+  assert(await text(page, '.backup-error') === T('es', 'settings.backupError.format'), 'empty backup rejected');
+});
+
+await test('1.5 update notice: waits while a question is open, "Update" sends skip-waiting; sw.js waits for it', async (use) => {
+  const sw = readFileSync(join(APP_DIR, 'sw.js'), 'utf8');
+  assert(/msg\.type === 'skip-waiting'[^\n]*self\.skipWaiting\(\)/.test(sw), 'sw.js answers skip-waiting');
+  assert(!/addAll\([^)]*\)\)\)\s*\.then\(\(\) => self\.skipWaiting\(\)\)/.test(sw), 'install no longer swaps silently');
+  const { page } = await use({ clock: true });
+  await page.waitForSelector('.home');
+  // Offered on Home: shown right away.
+  await page.evaluate(async () => {
+    const m = await import('./js/update.js');
+    window.__w1 = { msgs: [], postMessage(x) { this.msgs.push(x); } };
+    m.offerUpdate(window.__w1);
+  });
+  await page.waitForSelector('.update-toast');
+  assert(await text(page, '.update-text') === T('es', 'update.available') && await text(page, '.update-btn') === T('es', 'update.action'), `notice text (${await text(page, '.update-toast')})`);
+  await shot(page, 'e-15-update-home');
+  // A question starts: the notice hides; it comes back once the question is answered.
+  await page.click('.menu-quick');
+  await page.click('.quick-intro .sticky-actions .btn-primary');
+  await page.waitForSelector('.quick .qcard .option');
+  await page.waitForTimeout(50);
+  assert(!(await page.$('.update-toast')), 'hidden while answering');
+  await answer(page, true);
+  await page.waitForSelector('.update-toast');
+  await page.click('.qcard .continue');
+  await page.waitForSelector('.quick .qcard .option:not([disabled])');
+  await page.waitForTimeout(50);
+  assert(!(await page.$('.update-toast')), 'hidden again on the next question');
+  // A new version found mid-question waits too.
+  await page.evaluate(async () => {
+    const m = await import('./js/update.js');
+    window.__w2 = { msgs: [], postMessage(x) { this.msgs.push(x); } };
+    m.offerUpdate(window.__w2);
+  });
+  await page.waitForTimeout(100);
+  assert(!(await page.$('.update-toast')), 'not shown mid-question');
+  await answer(page, false);
+  await page.waitForSelector('.update-toast');
+  await shot(page, 'e-15-update-after-answer');
+  // "Later" closes it; nothing is sent.
+  await page.click('.update-close');
+  assert(!(await page.$('.update-toast')), 'closed');
+  assert((await page.evaluate(() => window.__w2.msgs.length)) === 0, 'nothing sent on "Later"');
+  // Offered again (e.g. next launch) → "Update" asks the waiting worker to take over.
+  await page.evaluate(async () => {
+    const m = await import('./js/update.js');
+    window.__w3 = { msgs: [], postMessage(x) { this.msgs.push(x); } };
+    m.offerUpdate(window.__w3);
+  });
+  await page.click('.update-btn');
+  assert(JSON.stringify(await page.evaluate(() => window.__w3.msgs)) === '[{"type":"skip-waiting"}]', 'skip-waiting sent');
+  assert(await text(page, '.update-btn') === T('es', 'update.updating'), 'button shows progress');
+  // No controller change (fake worker): the page reloads by itself after a moment, and the run resumes.
+  await Promise.all([page.waitForEvent('load'), page.clock.runFor(4500)]);
+  await page.waitForSelector('.home .menu-continue-quick');
+});
+
+await test('1.5 update flow with a real service worker: new version waits for "Update", then takes over', async (use) => {
+  // Its own origin, whose sw.js changes between "builds" (the rest is served from app/ as usual).
+  let build = 'A';
+  const { createServer } = await import('node:http');
+  const swServer = createServer(async (req, res) => {
+    const path = new URL(req.url, 'http://x').pathname;
+    if (path === '/sw.js') {
+      res.writeHead(200, { 'content-type': 'text/javascript; charset=utf-8', 'cache-control': 'no-store' });
+      res.end(`${readFileSync(join(APP_DIR, 'sw.js'), 'utf8')}\n// test build ${build}\n`);
+      return;
+    }
+    const up = await fetch(new URL(req.url, BASE));
+    res.writeHead(up.status, { 'content-type': up.headers.get('content-type') || 'application/octet-stream', 'cache-control': 'no-cache' });
+    res.end(Buffer.from(await up.arrayBuffer()));
+  });
+  await new Promise((r) => swServer.listen(0, '127.0.0.1', r));
+  try {
+    const { page } = await use({ swAllowed: true, url: `http://127.0.0.1:${swServer.address().port}/` });
+    await page.waitForSelector('.home');
+    await page.evaluate(() => navigator.serviceWorker.ready);
+    await page.reload();
+    await page.waitForSelector('.home');
+    await page.waitForFunction(() => !!navigator.serviceWorker.controller);
+    assert(!(await page.$('.update-toast')), 'first install: no notice');
+    build = 'B';
+    await page.evaluate(() => navigator.serviceWorker.getRegistration().then((r) => r.update()));
+    await page.waitForSelector('.update-toast', { timeout: 15000 });
+    assert(await page.evaluate(() => navigator.serviceWorker.getRegistration().then((r) => !!r.waiting)), 'new worker waits (no silent swap)');
+    await shot(page, 'e-15-update-real');
+    await Promise.all([page.waitForEvent('load', { timeout: 15000 }), page.click('.update-btn')]);
+    await page.waitForSelector('.home');
+    const after = await page.evaluate(() => navigator.serviceWorker.getRegistration().then((r) => ({ waiting: !!r.waiting, active: !!r.active, controlled: !!navigator.serviceWorker.controller })));
+    assert(!after.waiting && after.active && after.controlled, `new version in control after Update (${JSON.stringify(after)})`);
+    assert(!(await page.$('.update-toast')), 'no notice after the update');
+  } finally {
+    swServer.close();
+  }
+});
+
+// ------------------------------------------------------------------ 1.6.0: daily challenge, achievements, collection
+const byText = Object.fromEntries(QS.map((q) => [q.q, q]));
+const qById = Object.fromEntries(QS.map((q) => [q.id, q]));
+const lsJSON = async (page, key) => JSON.parse((await lsGet(page, key)) || 'null');
+/** Answers the visible daily questions (right unless its index is in `miss`) and returns their ids. */
+async function playDaily(page, { from = 0, to = 5, miss = [] } = {}) {
+  const ids = [];
+  for (let i = from; i < to; i++) {
+    await page.waitForSelector('.daily .qcard .option:not([disabled])');
+    ids.push(byText[await text(page, '.qtext')].id);
+    await answer(page, !miss.includes(i));
+    await page.click('.daily .continue');
+  }
+  return ids;
+}
+
+await test('1.6 daily engine: seeded per date + language, mixed 1–3, distinct worlds, filter = filtered pool; streak rules; spoiler-free share', async () => {
+  const a = dailyPick(QS, [], '2026-10-16', 'es');
+  const b = dailyPick([...QS].reverse(), [], '2026-10-16', 'es');
+  assert(a.length === 5 && JSON.stringify(a) === JSON.stringify(b), 'same date + language → same questions and option orders, whatever the data order');
+  assert(JSON.stringify(dailyPick(QS, [], '2026-10-17', 'es')) !== JSON.stringify(a), 'another date → another challenge');
+  assert(JSON.stringify(dailyPick(QS, [], '2026-10-16', 'en')) !== JSON.stringify(a), 'the language is part of the seed');
+  assert(JSON.stringify(a.map((x) => qById[x.id].d)) === JSON.stringify(DAILY_DIFFS), `difficulties ramp 1,2,2,3,3 (${a.map((x) => qById[x.id].d)})`);
+  assert(new Set(a.map((x) => qById[x.id].c)).size === 5, 'five different worlds');
+  assert(a.every((x) => [...x.order].sort().join() === '0,1,2,3'), 'option orders are permutations');
+  // Spoiler filter: the selection is computed over the filtered pool (and stays deterministic).
+  const few = ['mistborn-final-empire', 'way-of-kings'];
+  const f = dailyPick(QS, onlyWorks(few), '2026-10-16', 'es');
+  assert(f.length === 5 && f.every((x) => few.includes(qById[x.id].w)), 'filtered challenge only uses allowed works');
+  assert(JSON.stringify(f) === JSON.stringify(dailyPick(QS, onlyWorks(few), '2026-10-16', 'es')), 'filtered challenge is deterministic too');
+  assert(dailyPick(QS, ALL_WORKS, '2026-10-16', 'es').length === 0, 'empty filter → no challenge');
+  const tiny = poolOf(['warbreaker']).slice(0, 3);
+  assert(dailyPick(tiny, [], '2026-10-16', 'es').length === 3, 'a tiny pool gives what it has');
+  // Calendar and streak.
+  assert(addDays('2026-12-31', 1) === '2027-01-01' && addDays('2024-03-01', -1) === '2024-02-29' && addDays('2026-03-29', 1) === '2026-03-30', 'addDays across years, leap days, DST');
+  let s = emptyDaily();
+  const marks = (n) => Array.from({ length: 5 }, (_, i) => ({ c: CATS[i], ok: i < n }));
+  s = recordDaily(s, { date: '2026-10-14', lang: 'es', marks: marks(5) });
+  s = recordDaily(s, { date: '2026-10-15', lang: 'es', marks: marks(3) });
+  assert(s.streak === 2 && s.best === 2 && s.played === 2 && s.perfect === 1, `consecutive days (${JSON.stringify(s)})`);
+  assert(JSON.stringify(recordDaily(s, { date: '2026-10-15', lang: 'es', marks: marks(5) })) === JSON.stringify(s), 'one result per date');
+  assert(currentStreak(s, '2026-10-16') === 2 && currentStreak(s, '2026-10-17') === 0, 'streak alive the next day, broken after a missed day');
+  s = recordDaily(s, { date: '2026-10-18', lang: 'es', marks: marks(1) });
+  assert(s.streak === 1 && s.best === 2 && s.played === 3, 'a gap restarts the streak, best kept');
+  const odd = sanitizeDaily({ last: 'ayer', streak: -4, best: 'x', played: 2, perfect: 9, result: { date: '2026-10-18', lang: 'es', marks: [{ c: 'urithiru', ok: 1 }] }, run: { date: 'x' } });
+  assert(odd.last === null && odd.streak === 0 && odd.perfect === 2 && odd.result === null && odd.run === null, `sanitized (${JSON.stringify(odd)})`);
+  const share = shareText({ title: 'T', date: '2026-10-16', marks: [{ c: 'roshar', ok: true }, { c: 'sel', ok: false }, { c: 'nalthis', ok: true }], streakLabel: 'S' });
+  assert(share === 'T · 2026-10-16\n🟦⬛🟨 2/3\nS', `share text: ${JSON.stringify(share)}`);
+});
+
+await test('1.6 daily UI: today’s 5 questions with timer, resume after reload, one attempt, streak + share, offline-safe', async (use) => {
+  const { page } = await use({ clock: true });
+  const day = await page.evaluate(async () => (await import('./js/daily.js')).dateKey());
+  const expected = dailyPick(QS, [], day, 'es').map((x) => x.id);
+  await page.click('.menu-daily');
+  await page.waitForSelector('.daily-intro');
+  assert(!(await page.$('.daily-filter-note')), 'no filter note without a spoiler filter');
+  await shot(page, 'e-16-daily-intro');
+  await page.click('.daily-start');
+  await page.waitForSelector('.daily .qcard .timer');
+  const order = await page.locator('.daily .option-text').allTextContents();
+  const first = qById[expected[0]];
+  assert(JSON.stringify(order.map((s) => s.trim())) === JSON.stringify(dailyPick(QS, [], day, 'es')[0].order.map((i) => first.o[i])), 'option order from the seed');
+  const ids = await playDaily(page, { from: 0, to: 2, miss: [1] });
+  // Reload mid-challenge: Home offers to continue, and it resumes at question 3.
+  await page.reload();
+  await page.waitForSelector('.home .menu-daily.daily-run');
+  assert((await text(page, '.menu-daily .menu-title')) === T('es', 'home.dailyContinue'), 'continue label');
+  await page.click('.menu-daily');
+  await page.waitForSelector('.daily .progress-label');
+  assert((await text(page, '.daily .progress-label')) === T('es', 'question.progress', { n: 3, total: 5 }), 'resumes at question 3');
+  assert((await page.locator('.daily-top .daily-mark.ok').count()) === 1 && (await page.locator('.daily-top .daily-mark.bad').count()) === 1, 'marks so far');
+  ids.push(...await playDaily(page, { from: 2, to: 5 }));
+  assert(JSON.stringify(ids) === JSON.stringify(expected), `the seeded questions, in order (${ids} vs ${expected})`);
+  await page.waitForSelector('.daily-result');
+  assert((await text(page, '.daily-result .result-score')) === T('es', 'daily.result', { n: 4, total: 5 }), 'score 4/5');
+  assert((await page.locator('.daily-result .review-list .review-item').count()) === 1, 'the missed question can be reviewed');
+  const st = await lsJSON(page, 'daily');
+  assert(st.last === day && st.streak === 1 && st.played === 1 && !st.run, `stored result (${JSON.stringify(st)})`);
+  // Share: no navigator.share here → clipboard, spoiler-free text with gem squares.
+  await page.evaluate(() => { window.__copied = null; Object.defineProperty(navigator, 'share', { value: undefined, configurable: true }); navigator.clipboard.writeText = async (s) => { window.__copied = s; }; });
+  await page.click('.daily-share');
+  await page.waitForFunction(() => window.__copied);
+  const shared = await page.evaluate(() => window.__copied);
+  const lines = shared.split('\n');
+  assert(lines[0].includes(day) && /^[🟦🟥🟩🟨🟪⬜⬛]{5} 4\/5$/u.test(lines[1]) && (lines[1].match(/⬛/gu) || []).length === 1, `share squares: ${JSON.stringify(shared)}`);
+  assert(ids.every((id) => !shared.includes(qById[id].q) && !shared.includes(qById[id].o[0])), 'no question or answer in the share text');
+  assert((await text(page, '#toast')) === T('es', 'daily.copied'), 'copied toast');
+  await shot(page, 'e-16-daily-result');
+  // One attempt per day: Home says done, and the challenge screen shows the result again.
+  await page.click('.daily-result .stack-actions:last-child .btn-ghost');
+  await page.waitForSelector('.home .menu-daily.daily-done');
+  assert((await text(page, '.menu-daily .menu-desc')) === T('es', 'home.dailyDone', { n: 4, total: 5, streak: 1 }), 'home: done today');
+  await page.click('.menu-daily');
+  await page.waitForSelector('.daily-result');
+  assert(!(await page.$('.daily-start')), 'no second attempt');
+  assert(!(await leakedText(page)), 'no leaked null/undefined');
+});
+
+await test('1.6 daily: 10-day streak and perfect day unlock achievements; a broken streak shows none; spoiler filter note', async (use) => {
+  const day = (await (await use({ clock: true })).page.evaluate(async () => (await import('./js/daily.js')).dateKey()));
+  const prev = addDays(day, -1);
+  const { page } = await use({ clock: true, storage: { daily: JSON.stringify({ v: 1, last: prev, streak: 9, best: 9, played: 9, perfect: 0, result: null, run: null }) } });
+  assert((await text(page, '.menu-daily .menu-desc')) === T('es', 'home.dailyStreak', { n: 9 }), 'home shows the streak at stake');
+  await page.click('.menu-daily');
+  await page.click('.daily-start');
+  await playDaily(page);
+  await page.waitForSelector('.daily-result');
+  const st = await lsJSON(page, 'daily');
+  assert(st.streak === 10 && st.best === 10 && st.perfect === 1, `streak 10 (${JSON.stringify(st)})`);
+  const ach = await lsJSON(page, 'achievements');
+  for (const id of ['dailyFirst', 'dailyPerfect', 'dailyStreak3', 'dailyStreak10']) assert(ach.unlocked[id] > 0, `${id} unlocked`);
+  await page.waitForSelector('.ach-toast');
+  assert((await page.locator('.ach-toast').count()) === 1, 'one notice at a time (queued)');
+  // A streak whose last day is 3 days ago is broken.
+  const old = await use({ clock: true, storage: { daily: JSON.stringify({ v: 1, last: addDays(day, -3), streak: 5, best: 5, played: 5, perfect: 0 }) } });
+  await old.page.click('.menu-daily');
+  assert((await text(old.page, '.daily-streak span:not(.icon)')) === T('es', 'daily.noStreak'), 'broken streak');
+  // Spoiler filter: note on the intro and only allowed works.
+  const few = ['mistborn-final-empire', 'way-of-kings', 'elantris', 'warbreaker', 'emperors-soul'];
+  const fl = await use({ clock: true, storage: { settings: JSON.stringify({ disabledWorks: onlyWorks(few) }) } });
+  await fl.page.click('.menu-daily');
+  await fl.page.waitForSelector('.daily-filter-note');
+  await fl.page.click('.daily-start');
+  const ids = await playDaily(fl.page);
+  assert(JSON.stringify(ids) === JSON.stringify(dailyPick(QS, onlyWorks(few), day, 'es').map((x) => x.id)), 'filtered pool selection');
+  await fl.page.click('.daily-share').catch(() => {});
+  assert((await text(fl.page, '.daily-share-preview')).includes(T('es', 'daily.shareFiltered')), 'share text says the filter was on');
+});
+
+await test('1.6 achievements: retroactive and silent at start, showcase, notice waits for the question, classic moments, corrupt state', async (use) => {
+  // Progress from before 1.6.0: unlocked quietly at start.
+  const { page } = await use({ storage: { stats: JSON.stringify({ classicGames: 5, bestQuick: 2100, bestByLevel: { normal: 2100 }, lifelines: { atium: 1, stormlight: 1, breath: 0 }, cats: { roshar: { a: 40, c: 30 } } }) } });
+  await page.waitForSelector('.home');
+  let ach = await lsJSON(page, 'achievements');
+  assert(['firstWin', 'radiant', 'quickScore'].every((id) => ach.unlocked[id]) && Object.keys(ach.unlocked).length === 3, `retroactive (${JSON.stringify(ach)})`);
+  assert(!(await page.$('.ach-toast')), 'no notices at start');
+  await page.click('.small-btn:has-text("' + T('es', 'home.achievements') + '")');
+  await page.waitForSelector('.achievements');
+  assert((await page.locator('.ach-card.unlocked').count()) === 3 && (await page.locator('.ach-card.locked .ach-lock').count()) === 16, 'showcase: 3 unlocked, 16 locked with a lock');
+  assert((await text(page, '.ach-card[data-ach="answered100"] .ach-count')) === '40/100', 'progress of a locked goal');
+  assert((await text(page, '.ach-summary-count')) === T('es', 'ach.count', { n: 3, total: 19 }), 'summary');
+  await shot(page, 'e-16-achievements');
+  await page.click('.topbar-back');
+  // Breath is the last lifeline missing: the notice waits until the question is answered.
+  await page.click('.menu-quick');
+  await page.click('.quick-intro .sticky-actions .btn-primary');
+  await page.waitForSelector('.quick .qcard');
+  await page.click('.lifeline[data-kind="breath"], .lifeline-breath').catch(async () => { await page.locator('.lifeline').nth(2).click(); });
+  await page.waitForSelector('.quick .qcard .option:not([disabled])');
+  ach = await lsJSON(page, 'achievements');
+  assert(ach.unlocked.allLifelines, 'allLifelines unlocked');
+  await page.waitForTimeout(400);
+  assert(!(await page.$('.ach-toast')), 'no notice while the question is open');
+  await answer(page, true);
+  await page.waitForSelector('.ach-toast[data-ach="allLifelines"]');
+  assert((await text(page, '.ach-toast-name')) === T('es', 'ach.allLifelines.name'), 'notice names it');
+  // Classic: winning the final with 6 players on Expert without lifelines.
+  const fq = QS.find((q) => q.d === 4);
+  const six = CATS.map((c, i) => ({ name: `P${i + 1}`, color: c, charges: i ? {} : Object.fromEntries(CATS.map((x) => [x, 2])), lifelines: { atium: 1, stormlight: 1, breath: 1 }, stats: { answered: 12, correct: 12, lifelines: 0 } }));
+  const win = await use({ storage: { classic: JSON.stringify(classicSave({ players: six, level: 'expert', timer: false, pending: { id: fq.id, cat: fq.c, order: [0, 1, 2, 3], final: true }, asked: 20 })) } });
+  await win.page.click('.menu-continue-classic');
+  await win.page.click('.handoff .btn-primary').catch(() => {});
+  await answer(win.page, true);
+  await win.page.click('.continue');
+  await win.page.waitForSelector('.victory');
+  ach = await lsJSON(win.page, 'achievements');
+  assert(ach.unlocked.fullTable && ach.unlocked.expertPure && ach.unlocked.firstWin, `classic win achievements (${JSON.stringify(ach)})`);
+  // Infusing the sixth gem without a miss.
+  const sq = QS.find((q) => q.c === 'cosmere' && q.d <= 2);
+  const solo = [{ name: 'Ana', color: 'roshar', charges: { ...Object.fromEntries(CATS.map((x) => [x, 2])), cosmere: 1 }, lifelines: { atium: 1, stormlight: 1, breath: 1 }, stats: { answered: 11, correct: 11, lifelines: 0 } }];
+  const fl = await use({ storage: { classic: JSON.stringify(classicSave({ players: solo, timer: false, pending: { id: sq.id, cat: 'cosmere', order: [0, 1, 2, 3], final: false } })) } });
+  await fl.page.click('.menu-continue-classic');
+  await answer(fl.page, true);
+  await fl.page.waitForSelector('.ach-toast[data-ach="flawless"]');
+  // Corrupt achievement / daily / seen state never breaks the app and is sanitized.
+  const bad = await use({ storage: { achievements: '{"unlocked":{"nope":1,"firstWin":"yes","polyglot":-3},"langs":["xx","es",5]}', daily: '"garbage"', seen: '[1,2]' } });
+  await bad.page.waitForSelector('.home');
+  const ex = await bad.page.evaluate(async () => (await import('./js/core.js')).exportData());
+  assert(JSON.stringify(ex.achievements) === '{"unlocked":{},"langs":["es"]}' && ex.daily.played === 0 && !('run' in ex.daily) && JSON.stringify(ex.seen) === '{}', `sanitized (${JSON.stringify(ex.achievements)})`);
+});
+
+await test('1.6 collection: X/Y discovered overall, per world and difficulty, respecting the spoiler filter; polyglot; export/import', async (use) => {
+  const ro = QS.filter((q) => q.c === 'roshar').slice(0, 3).map((q) => q.id);
+  const se = QS.filter((q) => q.c === 'sel').slice(0, 2).map((q) => q.id);
+  const other = QS.find((q) => q.c === 'nalthis').id;
+  const storage = { seen: JSON.stringify({ es: [...ro, ...se, 'gone-999'] }), recent: JSON.stringify({ es: [other, ro[0]] }), achievements: JSON.stringify({ unlocked: {}, langs: ['en', 'fr'] }) };
+  const { page } = await use({ storage });
+  await page.click('.small-btn >> nth=0');
+  await page.waitForSelector('.stats .collection');
+  assert((await text(page, '.col-total strong')) === T('es', 'stats.discovered', { n: 6, total: QS.length }), `overall (${await text(page, '.col-total strong')})`);
+  const rTotal = QS.filter((q) => q.c === 'roshar').length;
+  assert((await text(page, '.col-world[data-cat="roshar"] .col-value')) === T('es', 'stats.discoveredOf', { n: 3, total: rTotal }), 'roshar row');
+  const d = (n) => QS.filter((q) => q.d === n);
+  const seenAll = new Set([...ro, ...se, other]);
+  for (const n of [1, 2, 3, 4]) {
+    if (!d(n).length) continue;
+    assert((await text(page, `.col-diff[data-d="${n}"] .col-value`)) === T('es', 'stats.discoveredOf', { n: d(n).filter((q) => seenAll.has(q.id)).length, total: d(n).length }), `difficulty ${n} row`);
+  }
+  assert(!(await page.$('.col-filter')), 'no filter note');
+  await shot(page, 'e-16-collection');
+  // Practice: a new question is discovered, and answering in a 3rd language unlocks Polyglot.
+  await page.click('.topbar-back');
+  await page.click('.menu-btn >> nth=2');
+  await page.click('.practice-setup .sticky-actions .btn-primary');
+  await page.waitForSelector('.practice .qcard');
+  await answer(page, true);
+  const ach = await lsJSON(page, 'achievements');
+  assert(ach.unlocked.polyglot && JSON.stringify(ach.langs) === '["es","en","fr"]', `polyglot (${JSON.stringify(ach)})`);
+  const seen = await lsJSON(page, 'seen');
+  assert(seen.es.length === 7, `seen set grew (${seen.es.length})`);
+  // Export / import round trip includes seen, achievements and daily (never a challenge in progress).
+  const roundTrip = await page.evaluate(async () => {
+    const core = await import('./js/core.js');
+    localStorage.setItem('cosmere-trivia:daily', JSON.stringify({ v: 1, last: '2026-10-15', streak: 4, best: 6, played: 8, perfect: 2, result: null, run: null }));
+    const d = core.exportData();
+    for (const k of ['seen', 'achievements', 'daily']) localStorage.removeItem(`cosmere-trivia:${k}`);
+    const ok = core.importData(JSON.parse(JSON.stringify(d)));
+    return { ok, d, seen: core.getDiscovered().size, ach: core.getAchievements(), daily: core.getDaily() };
+  });
+  assert(roundTrip.ok && roundTrip.ach.unlocked.polyglot && roundTrip.daily.best === 6 && roundTrip.daily.streak === 4 && roundTrip.seen >= 8, `round trip (${JSON.stringify({ ...roundTrip, d: undefined })})`);
+  // Spoiler filter: hidden works don't count and their world disappears.
+  const fl = await use({ storage: { ...storage, settings: JSON.stringify({ disabledWorks: [...new Set(QS.filter((q) => q.c === 'roshar').map((q) => q.w))] }) } });
+  await fl.page.click('.small-btn >> nth=0');
+  await fl.page.waitForSelector('.stats .collection .col-filter');
+  assert(!(await fl.page.$('.col-world[data-cat="roshar"]')), 'filtered world hidden');
+  const allowed = QS.filter((q) => !QS.some((r) => r.c === 'roshar' && r.w === q.w));
+  assert((await text(fl.page, '.col-total strong')) === T('es', 'stats.discovered', { n: allowed.filter((q) => seenAll.has(q.id)).length, total: allowed.length }), 'filtered overall');
 });
 
 await browser.close();

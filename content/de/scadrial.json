@@ -878,5 +878,115 @@
    "Dem Amt für Finanzwesen"
   ],
   "explain": "Das Konventikel war die Festung der Inquisitoren; in seinen Tiefen lag die stählerne Inschrift aus den Kapitelmottos."
+ },
+ {
+  "id": "scadrial-081",
+  "q": "In was für einem Fahrzeug waren Allik und seine Kameraden in „Bänder der Trauer“ unterwegs?",
+  "a": "In einem Luftschiff",
+  "wrong": [
+   "In einem Dampfschiff",
+   "In einem Eisenbahnzug",
+   "In einem U-Boot"
+  ],
+  "explain": "Die Brunstell, ein Luftschiff aus dem Süden, stürzte in einem Sturm ab und fiel dem Kreis in die Hände."
+ },
+ {
+  "id": "scadrial-082",
+  "q": "Welches Mitglied von Wax’ Familie führt in „Metall der Götter“ den Kreis an?",
+  "a": "Seine Schwester Telsin",
+  "wrong": [
+   "Sein Onkel Edwarn",
+   "Seine Frau Steris",
+   "Sein Schwiegervater Lord Harms"
+  ],
+  "explain": "Telsin gehört zu den Anführern des Kreises und schmiedet Pläne gegen Elantel, was sie zur Gegenspielerin ihres Bruders macht."
+ },
+ {
+  "id": "scadrial-083",
+  "q": "Was versucht der Kreis in „Metall der Götter“ per Schiff nach Elantel zu bringen?",
+  "a": "Eine verheerende Bombe",
+  "wrong": [
+   "Ein Heer von Koloss",
+   "Eine tödliche Seuche",
+   "Einen Atiumschatz"
+  ],
+  "explain": "Wax und Wayne finden heraus, dass die Bombe nicht im Stützpunkt des Kreises ist, sondern an Bord eines Schiffes auf dem Weg in die Stadt."
+ },
+ {
+  "id": "scadrial-084",
+  "q": "Welchen Machthaber hat Bluter in „Schatten über Elantel“ heimlich getötet und verkörpert, um in Elantel Unruhe zu stiften?",
+  "a": "Replar Innate",
+  "wrong": [
+   "Winsting Innate",
+   "Lord Harms",
+   "Edwarn Ladrian"
+  ],
+  "explain": "Bluter trug das Gesicht des Gouverneurs, um die Arbeiter der Stadt gegen ihre Herrscher aufzubringen, und ermordete auch dessen Bruder Winsting."
+ },
+ {
+  "id": "scadrial-085",
+  "q": "Wer von den Kandra gab Wax den Ohrring, durch den der Einträchtige zu ihm sprechen kann?",
+  "a": "MeLaan",
+  "wrong": [
+   "TenSoon",
+   "VenDell",
+   "KanPaar"
+  ],
+  "explain": "MeLaan gab ihn Wax schon Jahre zuvor; der Ohrring besteht aus eingeschmolzenen Stacheln von Inquisitoren und lässt den Einträchtigen Wax’ Gedanken hören."
+ },
+ {
+  "id": "scadrial-086",
+  "q": "Wer erhält am Ende von „Bänder der Trauer“ auf Steris’ Vorschlag die Bänder?",
+  "a": "Die Kandra",
+  "wrong": [
+   "Wax",
+   "Der Kreis",
+   "Der Gouverneur von Elantel"
+  ],
+  "explain": "Durch Steris’ Kompromiss gelangen die Bänder weder in die Hände Elantels noch in die der Südländer."
+ },
+ {
+  "id": "scadrial-087",
+  "q": "Unter welchem Titel erinnern sich die südlichen Scadrianer in „Bänder der Trauer“ an die Gestalt, die nach dem Eistod zu ihnen kam?",
+  "a": "Der Souverän",
+  "wrong": [
+   "Die Aufgestiegene Kriegerin",
+   "Der Letzte Kaiser",
+   "Der Held aller Zeiten"
+  ],
+  "explain": "Laut den Südländern kam der Souverän, um ihnen zu helfen, die Kälte nach dem Eistod zu überleben."
+ },
+ {
+  "id": "scadrial-088",
+  "q": "Mit welcher Figur des ersten Zeitalters teilt die Tochter von Wax und Steris in „Metall der Götter“ ihren Namen?",
+  "a": "Tindwyl",
+  "wrong": [
+   "Allrianne",
+   "Valette",
+   "Mare"
+  ],
+  "explain": "Wax und Steris haben zwei kleine Kinder, Maxillium und Tindwyl."
+ },
+ {
+  "id": "scadrial-089",
+  "q": "In welcher Stadt finden Marasi und MeLaan in „Bänder der Trauer“ Allik als Gefangenen auf dem Anwesen des Kreises?",
+  "a": "Dulsing",
+  "wrong": [
+   "Bilming",
+   "Neu-Seran",
+   "Feltrel"
+  ],
+  "explain": "Der Kreis hielt Allik und das Wrack seines Luftschiffs, der Brunstell, auf seinem Anwesen in Dulsing fest."
+ },
+ {
+  "id": "scadrial-090",
+  "q": "Womit schießt Wax in „Schatten über Elantel“ auf Bluter, damit der Einträchtige wieder die Kontrolle über sie erlangen kann?",
+  "a": "Mit einer Kugel aus seinem Ohrring",
+  "wrong": [
+   "Mit einer Kugel mit Aluminiumspitze",
+   "Mit einer Kugel aus Atium",
+   "Mit einer Kugel voll flüssigem Duralumin"
+  ],
+  "explain": "Das hämalurgische Metall ließ den Einträchtigen Bluters Geist erreichen, doch sie zog den Tod der Unterwerfung vor."
  }
 ]

@@ -1,5 +1,5 @@
 // App start (loaded by app.js): settings → strings → questions → screens → service worker.
-import { app, loadSettings, updateSettings, register, go, setFatalHandler, needsOnboarding, getStats } from './core.js';
+import { app, loadSettings, updateSettings, register, go, setFatalHandler, needsOnboarding, getStats, checkAchievements } from './core.js';
 import { showBootError } from './boot-error.js';
 import { setLang, detectLang, getLang } from './i18n.js';
 import { loadQuestions } from './data.js';
@@ -11,6 +11,9 @@ import { statsScreen } from './screens/stats.js';
 import { settingsScreen, settingsHooks } from './screens/settings.js';
 import { aboutScreen } from './screens/about.js';
 import { onboardingScreen } from './screens/onboarding.js';
+import { dailyScreen } from './screens/daily.js';
+import { achievementsScreen } from './screens/achievements.js';
+import { watchRegistration } from './update.js';
 
 register('home', homeScreen);
 register('classic-setup', setupScreen);
@@ -22,6 +25,8 @@ register('stats', statsScreen);
 register('settings', settingsScreen);
 register('about', aboutScreen);
 register('onboarding', onboardingScreen);
+register('daily', dailyScreen);
+register('achievements', achievementsScreen);
 
 async function useLanguage(lang) {
   await setLang(lang);
@@ -73,6 +78,8 @@ export async function main() {
   // corrupt or null settings show it). Players with stats or saved games just get the flag.
   let onboard = needsOnboarding();
   if (onboard && app.settings.onbStep === null && hasPlayed()) { updateSettings({ onboarded: true }); onboard = false; }
+  // Achievements already earned by progress from before 1.6.0 (or elsewhere) unlock quietly.
+  checkAchievements({ silent: true });
   document.body.classList.remove('booting');
   go('home');
   // Home stays underneath, so Back from these screens lands there.
@@ -80,6 +87,6 @@ export async function main() {
   else if (loadSavedResult()) go('quick', { results: true }); // reloaded on the quick-game results
 
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-    navigator.serviceWorker.register('sw.js').catch((e) => console.warn('SW registration failed', e));
+    navigator.serviceWorker.register('sw.js').then(watchRegistration).catch((e) => console.warn('SW registration failed', e));
   }
 }

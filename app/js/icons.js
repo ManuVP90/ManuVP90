@@ -25,6 +25,16 @@ export const ICONS = {
   phone: stroke('<rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/>'),
   sparkle: stroke('<path d="M12 3l1.8 5.6L19.5 10l-5.7 1.6L12 17l-1.8-5.4L4.5 10l5.7-1.4z"/><path d="M19 16l.7 2 2 .7-2 .6L19 21l-.7-1.7-2-.6 2-.7z"/>'),
   help: stroke('<circle cx="12" cy="12" r="9"/><path d="M9.4 9.4a2.7 2.7 0 0 1 5.2 1c0 1.9-2.6 2.3-2.6 3.9"/><path d="M12 17.2v.01"/>'),
+  flag: stroke('<path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/>'),
+  chevron: stroke('<path d="M6 9l6 6 6-6"/>'),
+  upload: stroke('<path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 16v4h16v-4"/>'),
+  download: stroke('<path d="M12 4v12"/><path d="M7 11l5 5 5-5"/><path d="M4 16v4h16v-4"/>'),
+  copy: stroke('<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/>'),
+  calendar: stroke('<rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17"/><path d="M8 3v4M16 3v4"/><path d="M12 13.2l1 2 2.2.3-1.6 1.5.4 2.2-2-1.1-2 1.1.4-2.2-1.6-1.5 2.2-.3z"/>'),
+  flame: stroke('<path d="M12 22a7 7 0 0 0 7-7c0-4-3-6.5-4.5-10C13 7.5 12 9 10.5 9.5 10 7.5 9.4 6.6 8.6 5.6 6.8 8.4 5 11 5 15a7 7 0 0 0 7 7z"/><path d="M12 22a3 3 0 0 1-3-3c0-1.8 1.4-2.8 3-5 1.6 2.2 3 3.2 3 5a3 3 0 0 1-3 3z"/>'),
+  share: stroke('<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.5M8.2 13.2l7.6 4.5"/>'),
+  medal: stroke('<path d="M8 2.5l2.5 6M16 2.5l-2.5 6"/><circle cx="12" cy="15" r="6"/><path d="M12 11.8l1 2 2.2.3-1.6 1.5.4 2.2-2-1.1-2 1.1.4-2.2-1.6-1.5 2.2-.3z"/>'),
+  lock: stroke('<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/>'),
   globe: stroke('<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/>'),
 };
 

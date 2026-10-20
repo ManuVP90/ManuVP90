@@ -32,7 +32,14 @@
     "newGameConfirmClassic": "Wenn du ein neues Spiel startest, wird das laufende klassische Spiel verworfen. Fortfahren?",
     "newGameConfirmQuick": "Wenn du ein neues Spiel startest, wird das laufende schnelle Spiel verworfen. Fortfahren?",
     "newGameYes": "Neues Spiel starten",
-    "newGameNo": "Zurück"
+    "newGameNo": "Zurück",
+    "daily": "Tägliche Herausforderung",
+    "dailyDesc": "5 Fragen, heute für alle gleich",
+    "dailyStreak": "Tage in Folge: {n} · nicht abreißen lassen!",
+    "dailyRun": "Läuft: Frage {n} von {total}",
+    "dailyContinue": "Tägliche Herausforderung fortsetzen",
+    "dailyDone": "Heute erledigt: {n}/{total} · Serie {streak}",
+    "achievements": "Erfolge"
   },
   "cat": {
     "roshar": "Roschar",
@@ -54,8 +61,8 @@
     "1": "Leicht",
     "2": "Mittel",
     "3": "Schwer",
-    "label": "Schwierigkeit: {level}",
-    "4": "Experte"
+    "4": "Experte",
+    "label": "Schwierigkeit: {level}"
   },
   "level": {
     "title": "Schwierigkeitsstufe",
@@ -189,12 +196,14 @@
     "intro": "{n} Fragen aus allen Welten, je {s} Sekunden. Je schneller du antwortest, desto mehr Punkte gibt es. Die Zeit läuft weiter, auch wenn du die App verlässt.",
     "introLifelines": "Du hast jede Hilfe einmal: Atium, Sturmlicht und Hauch.",
     "start": "Los geht’s",
-    "bestScore": "Bestleistung: {n}",
     "quitTitle": "Schnelles Spiel beenden?",
     "quitBody": "Deine Punkte aus diesem Spiel gehen verloren.",
     "quitYes": "Spiel beenden",
     "quitNo": "Weiterspielen",
-    "emptySaved": "Das Spiel ist gespeichert (Frage {n} von {total}): Du kannst es fortsetzen, sobald du mehr Werke auswählst."
+    "emptySaved": "Das Spiel ist gespeichert (Frage {n} von {total}): Du kannst es fortsetzen, sobald du mehr Werke auswählst.",
+    "bestLevel": "Bestleistung ({level}): {n}",
+    "noBestLevel": "Noch kein Rekord auf Stufe {level}.",
+    "bestLegacy": "Rekord aus früheren Versionen (alle Stufen): {n}"
   },
   "practice": {
     "title": "Üben",
@@ -209,7 +218,16 @@
     "fallback": "Hier gibt es noch keine Fragen der Stufe {level}: Du übst mit Fragen der Stufe {fallback}.",
     "empty": "Hier gibt es noch keine Fragen der Stufe {level}.",
     "noneFilter": "Keine Fragen verfügbar: Der Spoilerfilter lässt kein Werk mit Fragen übrig. Wähle in den Einstellungen mehr Werke aus.",
-    "allSeen": "Du hast alle verfügbaren Fragen gesehen; ab jetzt wiederholen sie sich."
+    "allSeen": "Du hast alle verfügbaren Fragen gesehen; ab jetzt wiederholen sie sich.",
+    "missed": "Meine Fehler ({n})",
+    "missedLabel": "Wiederholen",
+    "missedHint": "Nur Fragen, die du falsch beantwortet hast. Beantwortest du eine richtig, verschwindet sie aus der Liste.",
+    "missedNone": "Hier erscheinen die Fragen, die du in irgendeinem Modus falsch beantwortest.",
+    "missedAvailable": "Fehler zum Wiederholen: {n}",
+    "missedTitle": "Meine Fehler",
+    "missedLeft": "Übrig: {n}",
+    "missedCleared": "Aus deinen Fehlern entfernt.",
+    "missedDone": "Du hast alle deine Fehler wiederholt!"
   },
   "stats": {
     "title": "Statistik",
@@ -221,7 +239,13 @@
     "byCategory": "Trefferquote nach Welt",
     "none": "Noch keine Antworten. Auf geht’s!",
     "of": "{correct} von {total}",
-    "lifelines": "Benutzte Hilfen"
+    "lifelines": "Benutzte Hilfen",
+    "recordsByLevel": "Rekorde im schnellen Spiel nach Stufe",
+    "collection": "Sammlung",
+    "discovered": "{n}/{total} Fragen entdeckt",
+    "discoveredOf": "{n}/{total}",
+    "collectionFiltered": "Es zählen nur die im Spoilerfilter markierten Werke.",
+    "byDifficulty": "Nach Schwierigkeit"
   },
   "settings": {
     "title": "Einstellungen",
@@ -243,7 +267,27 @@
     "resetConfirm": "Damit werden Statistik, Rekorde, gespeichertes Spiel und Einstellungen gelöscht. Bist du sicher?",
     "resetDone": "Alle Daten wurden gelöscht.",
     "storageWarning": "Speicher nicht verfügbar: Einstellungen und Fortschritt gehen beim Schließen der App verloren.",
-    "resetNo": "Nicht löschen"
+    "resetNo": "Nicht löschen",
+    "backup": "Sicherung",
+    "backupHint": "Speichere deine Statistiken, Rekorde, Fehler und Einstellungen als Code, um sie auf ein anderes Gerät zu übertragen oder wiederherzustellen. Laufende Spiele sind nicht enthalten.",
+    "backupExport": "Fortschritt exportieren",
+    "backupCode": "Code deines Fortschritts",
+    "backupCopy": "Code kopieren",
+    "backupCopied": "Code kopiert. Bewahre ihn gut auf.",
+    "backupCopyFailed": "Kopieren nicht möglich: Markiere den Code und kopiere ihn von Hand.",
+    "backupPaste": "Importieren: Code hier einfügen",
+    "backupImport": "Fortschritt importieren",
+    "backupNo": "Nicht importieren",
+    "backupConfirmTitle": "Diesen Fortschritt importieren?",
+    "backupConfirm": "Deine aktuellen Statistiken, Rekorde, Fehler und Einstellungen werden durch die aus dem Code ersetzt. Laufende Spiele bleiben unverändert.",
+    "backupDone": "Fortschritt importiert.",
+    "backupError": {
+      "empty": "Füge zuerst einen Code ein.",
+      "format": "Dieser Code ist ungültig. Prüfe, ob du ihn vollständig kopiert hast.",
+      "checksum": "Der Code ist unvollständig oder beschädigt. Kopiere ihn erneut.",
+      "version": "Dieser Code stammt aus einer anderen Version der App und kann nicht importiert werden.",
+      "unsupported": "Dieser Browser kann den Code nicht lesen. Aktualisiere ihn oder nimm einen anderen."
+    }
   },
   "about": {
     "title": "Info",
@@ -301,5 +345,128 @@
     "orPick": "Oder wähle nur aus, was du gelesen hast:",
     "pickOne": "Wähle mindestens ein Werk aus, um weiterzumachen.",
     "skippedNoFilter": "Kein Spoilerfilter: Du bekommst Fragen zu allen Büchern. Das kannst du in den Einstellungen ändern."
+  },
+  "report": {
+    "link": "Diese Frage melden",
+    "describe": "Was ist falsch? (Antwort, Name, Übersetzung, Spoiler …)",
+    "offlineCopied": "Du bist offline: Die Meldung wurde in die Zwischenablage kopiert, damit du sie später senden kannst.",
+    "offlineFailed": "Du bist offline und die Meldung konnte nicht kopiert werden. Versuch es wieder, wenn du online bist."
+  },
+  "review": {
+    "title": "Fehler ansehen ({n})",
+    "hint": "Die Fragen, die du in diesem Spiel falsch beantwortet hast, mit der richtigen Antwort. Üben kannst du sie unter Üben → Meine Fehler.",
+    "answer": "Richtige Antwort: {answer}",
+    "none": "Keine Fehler in diesem Spiel!"
+  },
+  "update": {
+    "available": "Neue Version verfügbar",
+    "action": "Aktualisieren",
+    "later": "Später",
+    "updating": "Wird aktualisiert …"
+  },
+  "daily": {
+    "title": "Tägliche Herausforderung",
+    "intro": "{n} Fragen mit gemischtem Schwierigkeitsgrad, je {s} Sekunden. Heute sind sie für alle gleich, die in deiner Sprache spielen.",
+    "once": "Ein Versuch pro Tag. Komm jeden Tag wieder, um deine Serie zu halten.",
+    "start": "Herausforderung starten",
+    "streak": "Tage in Folge: {n}",
+    "noStreak": "Noch keine Serie",
+    "best": "Beste Serie: {n}",
+    "filterNote": "Dein Spoilerfilter blendet einige Fragen aus: Deine Herausforderung wird nur aus den aktiven Fragen gewählt und kann daher von der anderer Spieler abweichen.",
+    "leaveTitle": "Tägliche Herausforderung verlassen?",
+    "marksLabel": "{n} von {total} richtig",
+    "result": "{n} von {total} richtig",
+    "comeBack": "Morgen gibt es eine neue Herausforderung.",
+    "share": "Ergebnis teilen",
+    "sharePreview": "Text zum Teilen",
+    "shareStreak": "Tage in Folge: {n}",
+    "shareFiltered": "(mit Spoilerfilter)",
+    "copied": "Ergebnis in die Zwischenablage kopiert.",
+    "copyFailed": "Das Ergebnis konnte nicht kopiert werden."
+  },
+  "ach": {
+    "title": "Erfolge",
+    "count": "{n} von {total} Erfolgen",
+    "local": "Nur auf diesem Gerät gespeichert (und in deiner Sicherung).",
+    "unlocked": "Erfolg freigeschaltet!",
+    "unlockedOn": "Erreicht am {date}",
+    "locked": "Gesperrt",
+    "progress": "{n}/{total}",
+    "firstWin": {
+      "name": "Erster Sieg",
+      "desc": "Gewinne ein klassisches Spiel."
+    },
+    "radiant": {
+      "name": "Strahlender",
+      "desc": "Gewinne 5 klassische Spiele."
+    },
+    "fullTable": {
+      "name": "Volle Runde",
+      "desc": "Gewinne ein klassisches Spiel mit 6 Spielern."
+    },
+    "flawless": {
+      "name": "Sechs Edelsteine ohne Fehler",
+      "desc": "Lade in einem klassischen Spiel alle sechs Edelsteine auf, ohne eine einzige Frage falsch zu beantworten."
+    },
+    "expertPure": {
+      "name": "Ohne Hilfe",
+      "desc": "Gewinne ein klassisches Spiel auf Experte, ohne eine Hilfe zu nutzen."
+    },
+    "quickPerfect": {
+      "name": "Perfektes Spiel",
+      "desc": "Beantworte alle 15 Fragen eines schnellen Spiels richtig."
+    },
+    "quickScore": {
+      "name": "Gegen die Uhr",
+      "desc": "Erreiche 2000 Punkte in einem schnellen Spiel."
+    },
+    "allWorlds": {
+      "name": "Von Welt zu Welt",
+      "desc": "Beantworte mindestens eine Frage aus jeder Welt richtig."
+    },
+    "answered100": {
+      "name": "Hundert Fragen",
+      "desc": "Beantworte 100 Fragen in beliebigen Modi."
+    },
+    "allLifelines": {
+      "name": "Alle drei Hilfen",
+      "desc": "Nutze jede Hilfe mindestens einmal: Atium, Sturmlicht und Hauch."
+    },
+    "stormlightSave": {
+      "name": "Vom Sturmlicht gerettet",
+      "desc": "Liege mit aktivem Sturmlicht daneben und antworte im zweiten Versuch richtig."
+    },
+    "compendium": {
+      "name": "Kompendium",
+      "desc": "Entdecke alle Fragen einer Welt."
+    },
+    "halfCosmere": {
+      "name": "Das halbe Kosmeer",
+      "desc": "Entdecke die Hälfte aller Fragen."
+    },
+    "polyglot": {
+      "name": "Polyglott",
+      "desc": "Spiele in 3 Sprachen."
+    },
+    "dailyFirst": {
+      "name": "Herausforderung gemeistert",
+      "desc": "Schließe eine tägliche Herausforderung ab."
+    },
+    "dailyPerfect": {
+      "name": "Perfekter Tag",
+      "desc": "Beantworte alle 5 Fragen einer täglichen Herausforderung richtig."
+    },
+    "dailyStreak3": {
+      "name": "Beständigkeit",
+      "desc": "Schließe die tägliche Herausforderung 3 Tage in Folge ab."
+    },
+    "dailyStreak10": {
+      "name": "Zehn Tage in Folge",
+      "desc": "Schließe die tägliche Herausforderung 10 Tage in Folge ab."
+    },
+    "missedClear": {
+      "name": "Reine Weste",
+      "desc": "Wiederhole beim Üben alle deine Fehler, bis die Liste leer ist."
+    }
   }
 }

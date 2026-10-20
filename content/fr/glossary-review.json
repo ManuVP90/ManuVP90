@@ -4274,5 +4274,323 @@
   "status": "unverified",
   "sources": [],
   "notes": ""
+ },
+ "Wind": {
+  "fr": "le Vent",
+  "status": "unverified",
+  "sources": [],
+  "notes": "The Wind (Vent et vérité), capitalised as an entity, matching the title « Vent et vérité ». WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt). Re-searched 2026-10-20 (QA pass): still no French source."
+ },
+ "Fen": {
+  "fr": "Fen",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Gavinor": {
+  "fr": "Gavinor",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Oroden": {
+  "fr": "Oroden",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Rlain": {
+  "fr": "Rlain",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Elid": {
+  "fr": "Elid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Full name rendered « Elid-fille-Zeenid », following the LdP pattern « Szeth-fils-fils-Vallano »."
+ },
+ "Rit": {
+  "fr": "Rit",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Female Stone Shaman Honorbearer (Vent et vérité)."
+ },
+ "Zeenid": {
+  "fr": "Zeenid",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Sivi": {
+  "fr": "Sivi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Abidi": {
+  "fr": "Abidi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Gezamal": {
+  "fr": "Gezamal",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Brunstell": {
+  "fr": "Brunstell",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Airship name (Les Bracelets des Larmes)."
+ },
+ "Edwarn": {
+  "fr": "Edwarn",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Replar Innate": {
+  "fr": "Replar Innate",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Winsting Innate": {
+  "fr": "Winsting Innate",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Maxillium": {
+  "fr": "Maxillium",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Dulsing": {
+  "fr": "Dulsing",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Personal/place name; not translated in LdP editions."
+ },
+ "Fuzz": {
+  "fr": "Fuzz",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Nickname for Preservation in Fils-des-Brumes : l'histoire secrète; kept as in the original (VF form not checked)."
+ },
+ "heliodor": {
+  "fr": "héliodore",
+  "status": "official",
+  "sources": [],
+  "notes": "Gem; same form already used in fr/roshar.json. Lowercase."
+ },
+ "Honorbearer": {
+  "fr": "Porteur d'Honneur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Fem. « Porteuse d'Honneur »; pl. « Porteurs d'Honneur ». Built on « Lame d'Honneur » (Honorblade). WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Honorbearers": {
+  "fr": "Porteurs d'Honneur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural of Honorbearer."
+ },
+ "Stone Shaman": {
+  "fr": "chamane de pierre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Lowercase, epicene (« la chamane de pierre Rit »). es uses « chamán de la piedra ». WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Stone Shamans": {
+  "fr": "chamanes de pierre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural of Stone Shaman."
+ },
+ "Truthless": {
+  "fr": "Sans-Vérité",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Invariable. Translator recollection of the LdP prologue (« Szeth-fils-fils-Vallano, Sans-Vérité de Shinovar »); not confirmed online. WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Thunderclasts": {
+  "fr": "Tonnerreclastes",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Translator choice modelled on es « truenoclastos » / it « Tuonoclasta »; LdP form not found. QA priority. WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Voidbinders": {
+  "fr": "Lieurs du Néant",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Built on glossary Surgebinder = « lieur de Flux » and Voidbringers = « Néantifères ». WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Azish": {
+  "fr": "d'Azir",
+  "status": "unverified",
+  "sources": [],
+  "notes": "No French gentilic attested; questions rephrase as « d'Azir » (« la Garde impériale d'Azir », « les défenseurs d'Azir ») to avoid an unverified adjective."
+ },
+ "Imperial Guard": {
+  "fr": "Garde impériale",
+  "status": "unverified",
+  "sources": [],
+  "notes": "« la Garde impériale d'Azir ». WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Commandant Supreme": {
+  "fr": "commandant suprême",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kushkam's rank; lowercase. WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Shardblades": {
+  "fr": "Lames d'éclat",
+  "status": "community",
+  "sources": [],
+  "notes": "Plural of Shardblade (see that entry)."
+ },
+ "Hemalurgic": {
+  "fr": "hémalurgique",
+  "status": "official",
+  "sources": [],
+  "notes": "Adjective of Hémalurgie; « pointe hémalurgique » already used in fr/scadrial.json and fr/cosmere.json."
+ },
+ "Scadrians": {
+  "fr": "Scadriens",
+  "status": "unverified",
+  "sources": [],
+  "notes": "« les Scadriens du Sud », as already used in fr/scadrial.json. Cf. Scadrian (unverified)."
+ },
+ "Ice Death": {
+  "fr": "Mort de glace",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Les Bracelets des Larmes. WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Sovereign": {
+  "fr": "le Souverain",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Southern Scadrian name for Spook (Les Bracelets des Larmes). WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Elantrians": {
+  "fr": "Elantriens",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Plural of Elantrian (glossary: Elantrien, unverified)."
+ },
+ "Almighty": {
+  "fr": "Tout-Puissant",
+  "status": "unverified",
+  "sources": [],
+  "notes": "« le Tout-Puissant » (Vorin god). Standard French rendering; not confirmed against LdP text. WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Vorinism": {
+  "fr": "vorinisme",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Lowercase, like « vorin ». WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Recreance": {
+  "fr": "Recréance",
+  "status": "unverified",
+  "sources": [],
+  "notes": "« la Recréance ». Glossary form kept. WebSearch 2026-10-20: no French-language source found (fr.wikipedia/fr Coppermind not reachable; search snippets only in en/es/it/pt)."
+ },
+ "Cohesion": {
+  "fr": "Cohésion",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Surge; « la Cohésion ». Glossary form kept, parallel with Tension/Division/Transformation."
+ },
+ "Stoneward": {
+  "fr": "Gardepierre",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Singular of Stonewards (Gardepierres, official per review)."
+ },
+ "Shadows of Self": {
+  "fr": "Jeux de masques",
+  "status": "official",
+  "sources": [],
+  "notes": "LdP title (see WORK_TITLES.json)."
+ },
+ "The Bands of Mourning": {
+  "fr": "Les Bracelets des Larmes",
+  "status": "official",
+  "sources": [],
+  "notes": "LdP title; « À la fin des Bracelets des Larmes » with contraction."
+ },
+ "Shadows for Silence": {
+  "fr": "Des ombres pour Silence dans les forêts de l'enfer",
+  "status": "official",
+  "sources": [],
+  "notes": "Full LdP title (see WORK_TITLES.json)."
+ },
+ "Lopen": {
+  "fr": "le Lopen",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Article kept as in English (« the Lopen » → « le Lopen »); capitalised « Le Lopen » at the start of an option. Used consistently across fr files (roshar-005, roshar-083, otros)."
+ },
+ "Reshi": {
+  "fr": "Reshi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, invariable (« îles Reshi », « les Reshi »)."
+ },
+ "Cett": {
+  "fr": "Cett",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name (Ashweather Cett), as used in fr scadrial content."
+ },
+ "Tan": {
+  "fr": "Tan",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name; « Bloody Tan » → « Tan le Sanglant »."
+ },
+ "Lord Shezler": {
+  "fr": "Lord Shezler",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept « Lord » as in existing fr content (Lord Harms, Lord Tresting, etc.); LdP Mistborn usage not re-verified online."
+ },
+ "Lord Tresting": {
+  "fr": "Lord Tresting",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept « Lord » as in existing fr content (Lord Harms, Lord Tresting, etc.); LdP Mistborn usage not re-verified online."
+ },
+ "Lord Hasting": {
+  "fr": "Lord Hasting",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept « Lord » as in existing fr content (Lord Harms, Lord Tresting, etc.); LdP Mistborn usage not re-verified online."
+ },
+ "Lord Tekiel": {
+  "fr": "Lord Tekiel",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Kept « Lord » as in existing fr content (Lord Harms, Lord Tresting, etc.); LdP Mistborn usage not re-verified online."
+ },
+ "Prospector": {
+  "fr": "Prospecteur",
+  "status": "unverified",
+  "sources": [],
+  "notes": "The Sunlit Man ability/title; « le Prospecteur ». Matches existing fr otros content."
+ },
+ "Hordeling": {
+  "fr": "hordelin",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Singular of Hordelings."
  }
 }
