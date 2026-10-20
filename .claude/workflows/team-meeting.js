@@ -4,6 +4,13 @@ export const meta = {
   whenToUse: 'Planning. args: {topic: "optional focus question"}',
   phases: [{ title: 'Reviews' }, { title: 'Minutes' }],
 }
+
+// Project roles live in .claude/agents/<name>.md. A session that started before a role file existed
+// does not have it registered, so fall back to a general agent that loads the role file itself.
+const run = (prompt, opts = {}) => !opts.agentType ? agent(prompt, opts) : agent(prompt, opts).catch(() => {
+  const { agentType, ...rest } = opts
+  return agent(`Your role is defined in /home/user/ManuVP90/.claude/agents/${agentType}.md. Read that file first and follow it exactly as your instructions.\n\n${prompt}`, rest)
+})
 const topic = (args && args.topic) || 'What should we do next, and in which order?'
 const ROLES = [
   { agentType: 'product-designer', lens: 'game design and player retention' },
@@ -18,10 +25,10 @@ const SCHEMA = { type: 'object', properties: {
   riesgos: { type: 'string' }, preguntas_para_el_cliente: { type: 'array', items: { type: 'string' } },
 }, required: ['diagnostico', 'propuestas', 'riesgos', 'preguntas_para_el_cliente'] }
 phase('Reviews')
-const inputs = (await parallel(ROLES.map(r => () => agent(
+const inputs = (await parallel(ROLES.map(r => () => run(
   `TEAM MEETING (you are one participant; this is a review, do not change any file). Topic: ${topic}. Your lens: ${r.lens}. Ground every point in what you actually find in the repo; up to 6 prioritized proposals; answer in Spanish.`,
   { label: `meeting:${r.agentType}`, phase: 'Reviews', agentType: r.agentType, schema: SCHEMA }).then(x => x && ({ rol: r.agentType, ...x }))))).filter(Boolean)
 phase('Minutes')
-const minutes = await agent(`Write the meeting minutes in Spanish markdown (for docs/ROADMAP.md): common diagnosis, consensus and disagreements (with a lead recommendation), a phased plan table (task, area, impact, effort), and the deduplicated questions for the owner.\n\nINPUTS JSON:\n${JSON.stringify(inputs)}`,
+const minutes = await run(`Write the meeting minutes in Spanish markdown (for docs/ROADMAP.md): common diagnosis, consensus and disagreements (with a lead recommendation), a phased plan table (task, area, impact, effort), and the deduplicated questions for the owner.\n\nINPUTS JSON:\n${JSON.stringify(inputs)}`,
   { label: 'minutes', phase: 'Minutes', agentType: 'product-designer' })
 return { inputs, minutes }
