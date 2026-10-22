@@ -56,3 +56,5 @@ itself cannot be fetched here). Same id across all languages; keep files in Engl
 - Commits: imperative subject, explanatory body. Feature branch + PR to `main`; never push to `main`.
 - Rate limits can kill agents mid-task: when resuming, tell them partial edits exist and to inspect
   `git diff` first.
+- Owner's standing order: whenever a limit interrupts unfinished work, schedule a self check-in
+  (`send_later`) a few minutes after the stated reset time and resume the task then, without asking.
