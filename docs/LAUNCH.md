@@ -1,4 +1,4 @@
-# Lanzamiento de la 2.0.2
+# Lanzamiento de la 2.0.3
 
 Estado: **listo para publicar** a falta de los pasos del dueño. Condición de lanzamiento cumplida
 en la beta 6 (todas las notas > 8, sin hallazgos bloqueantes ni graves; ver `docs/BETA-6.md`).
