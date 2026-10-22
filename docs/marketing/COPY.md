@@ -6,7 +6,7 @@
 > Brandon Sanderson ni por Dragonsteel. Todo lo publica el dueño (ManuVP90); los agentes solo
 > redactan.
 
-**Datos comprobados contra la app (rama actual, `APP_VERSION` 2.0.1):** 490 preguntas por idioma
+**Datos comprobados contra la app (rama actual, `APP_VERSION` 2.0.1):** 496 preguntas por idioma
 en `app/data/` (100 Roshar · 90 Scadrial · 80 Sel · 60 Nalthis · 80 Otros mundos · 80 El Cosmere);
 4 niveles (Fácil, Normal, Difícil, Experto); partida clásica de 1 a 6 jugadores o equipos; partida
 rápida de 15 preguntas; práctica con explicación y «Mis fallos»; reto diario de 5 preguntas con
