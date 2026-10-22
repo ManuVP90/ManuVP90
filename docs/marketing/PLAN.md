@@ -14,28 +14,30 @@
 
 ## 1. Posicionamiento
 
-**Frase corta (es):** El trivial del Cosmere para jugar con tu grupo pasándote el móvil, sin spoilers
-de los libros que aún no has leído.
+**Frase corta (es):** El juego de preguntas del Cosmere para jugar con tu grupo pasándote el móvil, sin
+spoilers de los libros que aún no has leído.
 
 **One-liner (en):** A pass-the-phone Cosmere trivia game for your book club, with a spoiler filter
 for the books you haven't read yet.
 
 **Presentación de 30 segundos (es):**
-Trivia del Cosmere es un juego de preguntas tipo *Trivial* sobre el Cosmere de Brandon Sanderson,
-hecho por un fan. Se juega en un solo móvil: de 1 a 6 jugadores o equipos se lo van pasando, giran
+Trivia del Cosmere es un juego de preguntas sobre el Cosmere de Brandon Sanderson, hecho por un fan
+con ayuda de agentes de IA. Se juega en un solo móvil: de 1 a 6 jugadores o equipos se lo van pasando, giran
 la ruleta de los seis mundos e intentan infundir las seis gemas. Marcas los libros que has leído y
 solo te salen preguntas de esos. Tiene casi 500 preguntas, cuatro niveles de dificultad, reto
 diario, partida rápida y modo práctica con explicaciones. Está en español, inglés, francés, alemán e
-italiano, con los nombres de la edición publicada en cada idioma (en español, los de Nova). Es
+italiano, y busca usar los nombres de la edición publicada en cada idioma (en español, los de Nova;
+parte de la terminología aún está en revisión). Es
 gratis, sin anuncios, sin cuentas y sin rastreo, y funciona sin conexión. Es un proyecto no oficial.
 
 **Elevator pitch (en):**
-Trivia del Cosmere is a fan-made trivia game about Brandon Sanderson's Cosmere. You play on one
+Trivia del Cosmere is a fan-made trivia game about Brandon Sanderson's Cosmere, built with the help
+of AI agents. You play on one
 phone: 1–6 players or teams pass it around, spin the wheel of six worlds and try to infuse all six
 gems. Tick the books you've read and you'll only get questions from those. Almost 500 questions,
 four difficulty levels, a daily challenge, a quick mode and a practice mode with explanations. It
-comes in English, Spanish, French, German and Italian, using each language's published-edition
-names. Free, no ads, no accounts, no tracking, works offline. Unofficial fan project.
+comes in English, Spanish, French, German and Italian, aiming for each language's published-edition
+names (some terms are still under review). Free, no ads, no accounts, no tracking, works offline. Unofficial fan project.
 
 **Qué no somos (para no prometer de más):** no hay juego en línea ni clasificaciones, no es una app
 de tienda (es una web que se instala en la pantalla de inicio) y no es oficial.
@@ -50,27 +52,32 @@ de tienda (es una web que se instala en la pantalla de inicio) y no es oficial.
 | Secundaria | **Fans franceses, alemanes e italianos** | Jugar en su idioma con los nombres de su edición (Le Livre de Poche, Heyne/Piper, Mondadori) | Un único mensaje por idioma en su comunidad principal, con aviso de terminología en revisión |
 
 Para fr/de/it el objetivo no es volumen, sino **conseguir lectores nativos que revisen nombres**:
-el glosario aún tiene muchos términos `unverified` (es 281 · fr 429 · de 435 · it 510 de 1.125).
+el glosario aún tiene muchos términos `unverified` (es 281 · fr 429 · de 437 · it 509 de 1.127, a
+22-10-2026).
 
 ## 3. Mensajes clave y pruebas
 
-| Mensaje | Prueba (beta y datos reales) |
+| Mensaje | Prueba (solo datos comprobables de la app) |
 |---|---|
-| Para jugar en grupo con un solo móvil | Partida clásica de 1 a 6 jugadores o equipos; Marc (club de lectura, 4–6 jugadores) pone un 9 en la ronda 5 |
-| Sin spoilers | Cada pregunta lleva el libro más tardío necesario; el filtro de spoilers solo saca preguntas de lo que has leído. Lucía (lectora casual, filtro estrecho) pone un 9 |
-| Los nombres de tu edición | Glosario de ~1.100 términos en 5 idiomas. Hannah (traductora): DE 9 · FR 8,5 · IT 9 · ES 8,5 |
-| Contenido cuidado | 496 preguntas por idioma, revisadas por verificadores; Ignacio (editor de la Coppermind) dijo ya en la ronda 1: «El contenido aguanta mi auditoría» |
+| Para jugar en grupo con un solo móvil | Partida clásica de 1 a 6 jugadores o equipos, con turnos justos y victoria compartida |
+| Sin spoilers | Cada pregunta lleva internamente el libro más tardío necesario; el filtro de spoilers solo saca preguntas de lo que has marcado |
+| Los nombres de tu edición | Glosario de ~1.100 términos en 5 idiomas con el estado de cada uno; se dice siempre que parte está en revisión |
+| Contenido cuidado y corregible | 496 preguntas por idioma, con los datos contrastados por agentes de IA con la Coppermind; botón «Avisar de un error» en cada pregunta |
 | Gratis y respetuoso | Sin anuncios, sin cuentas, sin rastreo, sin compras; funciona sin conexión |
-| Hecho por un fan | Lo hace una persona que está aprendiendo a programar; el código está en GitHub |
+| Hecho por un fan, con IA y sin esconderlo | Lo dirige una persona que está aprendiendo a programar; el código, las preguntas y las traducciones los han escrito agentes de IA; el código está en GitHub |
 
-Evolución de la beta (media de los 4 testers): ronda 4 = 7,75 · ronda 5 = 8,75. **Solo se citan
-notas en público si la ronda 6 se cumple**, y siempre como «pruebas con 4 lectores», nunca como
-reseñas.
+**Nada de testers como prueba social.** Lucía, Marc, Hannah e Ignacio son perfiles de prueba
+**simulados por agentes de IA**, no lectores reales. Sus notas, frases y perfiles (incluido «editor de
+la Coppermind») **no se citan nunca en público**, ni como «pruebas con 4 lectores» ni de ninguna otra
+forma: sería engañoso y, en el caso de Ignacio, insinuaría un aval de la Coppermind que no existe. Las
+rondas de beta son control de calidad interno. Si se quiere prueba social, que sea real: comentarios
+de quien juegue tras el lanzamiento suave (L-3), citados solo con su permiso.
 
-**Prohibido en el texto público:** spoilers más allá del primer libro de cada saga (nada de giros
-de *El camino de los reyes* en adelante ni de *El Pozo de la Ascensión* en adelante; ojo con los
-ejemplos de preguntas), logos o portadas, palabras como «oficial» o «aprobado», y promesas de
-funciones que no existen.
+**Prohibido en el texto público:** spoilers más allá del primer libro de cada saga (ni siquiera
+los giros del propio primer libro, y nada de *Palabras radiantes* ni de *El Pozo de la Ascensión*
+en adelante; ojo con los ejemplos de preguntas), logos o portadas, palabras como «oficial» o
+«aprobado» (salvo en «no oficial»), testers de la beta como prueba, la palabra «Trivial» y promesas
+de funciones que no existen.
 
 ## 4. Calendario de canales (una persona, ~2 semanas)
 
@@ -83,8 +90,8 @@ todos los comentarios de las primeras 48 h.
 |---|---|---|---|---|
 | L-7 | Fusionar el PR #1 y activar *Settings → Pages → Source: GitHub Actions*; comprobar el enlace en Android e iPhone (instalar, jugar sin conexión) | GitHub | ManuVP90 | 45 min |
 | L-7 | Elegir 5–8 comunidades (2–3 en español, 1–2 en inglés, 1 por fr/de/it) y anotar sus normas de autopromoción en una tabla | Todas | ManuVP90 (agentes ayudan a resumir normas) | 1 h |
-| L-6 | Pedir a los agentes los textos: publicación corta y larga (es/en), una por fr/de/it, mensaje a moderadores, respuesta a preguntas frecuentes | — | Agentes redactan, ManuVP90 revisa | 30 min de revisión |
-| L-5 | Hacer 3–4 capturas propias de la app (ruleta, filtro de spoilers, pregunta, resultado del reto diario) en español e inglés; **sin portadas ni arte oficial** | — | ManuVP90 | 45 min |
+| L-6 | Revisar los textos ya redactados (`COPY*.md`, `posts/`, `COMMUNITIES.md`) y reescribirlos con tus palabras | — | ManuVP90 | 30 min de revisión |
+| L-5 | Elegir capturas del kit (`ASSETS.md`, ya hechas sin portadas ni arte oficial) o rehacerlas si cambió la interfaz | — | ManuVP90 | 15 min |
 | L-5 | Revisar que las preguntas visibles en las capturas no revelan nada más allá del primer libro | — | ManuVP90 (agente de cumplimiento revisa) | 15 min |
 | L-4 | Escribir a la moderación de las comunidades que lo pidan | Según la tabla | ManuVP90 | 30 min |
 | L-3 | «Lanzamiento suave»: enviar el enlace a 3–5 conocidos o a un club de lectura hispanohablante para una partida real | Mensaje directo, es | ManuVP90 | 20 min |
@@ -98,7 +105,7 @@ todos los comentarios de las primeras 48 h.
 | L+5 | Igual en **alemán** | de | ManuVP90 | 20 min |
 | L+6 | Igual en **italiano** | it | ManuVP90 | 20 min |
 | L+7 | Arreglar lo urgente que haya salido (versión 2.0.x+1) y agradecer en los hilos con lo corregido | GitHub + hilos | ManuVP90 + agentes de desarrollo | 1–2 h |
-| L+8 | Invitar al reto diario: compartir un resultado propio (cuadrados de colores, sin spoilers) | es / en | ManuVP90 | 10 min |
+| L+8 | Invitar al reto diario: compartir un resultado propio (✅/❌, sin spoilers) | es / en | ManuVP90 | 10 min |
 | L+10 | Pedir revisores nativos con los libros (lotes de 20 términos de `docs/verification/`) a quien haya mostrado interés | fr / de / it / es | ManuVP90 | 30 min |
 | L+14 | Balance con las métricas de §5 y decisión: seguir, pausar o preparar una segunda ola | — | ManuVP90 (agentes resumen) | 30 min |
 
@@ -130,6 +137,8 @@ qué mejorarías, idioma). Si no, basta con las issues de GitHub.
 | **Spoilers** en el texto, en las capturas o en las preguntas de ejemplo | Media | Solo ejemplos del primer libro de cada saga; revisión de cumplimiento antes de publicar; recordar en cada mensaje que el filtro de spoilers se configura al empezar |
 | **Prohibición de autopromoción** o mensaje borrado | Alta en las comunidades grandes | Leer normas antes; preguntar a moderación; usar los hilos de autopromoción o de fan works; presentarlo como «proyecto de fan, gratis, busco opiniones»; no repetir si lo borran |
 | **Queja de marca o de derechos** | Baja | Aviso de no oficial visible en la app y en cada mensaje; sin logos, portadas ni arte; sin dinero. Si llega una petición de Dragonsteel o de una editorial, se atiende enseguida y se retira lo que pidan |
+| **Rechazo por estar hecho con IA** (normas que lo prohíben o comentarios negativos) | Media-alta | Decirlo claro desde el primer mensaje, nunca esconderlo ni minimizarlo; leer la norma de IA de cada comunidad igual que la de autopromoción; en el 17th Shard (prohíbe contenido «generado o asistido» por IA) no publicar sin permiso escrito; no discutir si alguien lo critica |
+| **Marca de terceros** («Trivial», Trivial Pursuit de Hasbro) | Baja | No usar «Trivial» en ningún texto ni imagen; describirlo como «juego de preguntas» |
 | **Críticas a los nombres** («en mi edición se dice X») | Alta, sobre todo en fr/de/it | Avisar desde el primer mensaje de que parte de la terminología está en revisión; agradecer, pedir la fuente (edición y página) y corregir en la siguiente versión; nunca discutir |
 | **Errores en preguntas** | Media | Botón «Reportar esta pregunta» con plantilla; responder en ≤ 3 días; agrupar arreglos en una versión semanal |
 | **Fallo técnico en el lanzamiento** (Pages sin activar, caché antigua en el móvil) | Media | Probar el enlace en dos móviles en L-7 y L-1; no lanzar sin CI en verde |
@@ -145,8 +154,8 @@ la comunidad o preferís que lo ponga en algún hilo concreto? Gracias.»
 **Lanzar solo si todo está marcado.** Si falla algo de la parte A, no se lanza.
 
 **A. Bloqueantes**
-- [ ] Beta ronda 6 hecha y **todos los testers con nota mayor que 8/10** (umbral decidido por el
-      líder tras la ronda 5; en la ronda 5 Ignacio se quedó en 8).
+- [ ] Beta ronda 6 hecha y **todos los testers con nota mayor que 8/10** (umbral interno de calidad
+      decidido por el líder tras la ronda 5; los testers son simulados y sus notas no se publican).
 - [ ] Sin hallazgos bloqueantes ni graves abiertos en el informe de la ronda 6.
 - [ ] Arreglos de la sección «ya» de la ronda 5 (doble toque, Ajustes al 200 %, test de la final
       fallada, sel-020 y «la Shaod») integrados y todas las comprobaciones de `CLAUDE.md` en verde.
@@ -156,12 +165,17 @@ la comunidad o preferís que lo ponga en algún hilo concreto? Gracias.»
       Sanderson ni con Dragonsteel.
 - [ ] Ningún texto ni captura con logos, portadas o arte oficial, ni con spoilers más allá del primer
       libro.
+- [ ] Cada publicación dice que el juego se ha hecho con agentes de IA, y en las comunidades que
+      prohíben el contenido hecho o asistido por IA (17th Shard) no se publica sin permiso escrito del
+      staff.
+- [ ] Ningún texto público usa «Trivial» ni «Trivial Pursuit» (marca de Hasbro).
 
 **B. Recomendables (si faltan, se lanza igual pero se anota)**
-- [ ] Las 6 preguntas nuevas de El Cosmere para *El imperio final* y *Elantris* publicadas.
+- [x] Las 6 preguntas nuevas de El Cosmere para *El imperio final* y *Elantris* publicadas (496 por
+      idioma en v2.0.1).
 - [ ] Normas de autopromoción revisadas en todas las comunidades elegidas.
-- [ ] Textos revisados por el agente de cumplimiento.
-- [ ] 3–4 capturas propias listas en es y en.
+- [x] Textos revisados por el agente de cumplimiento (`COMPLIANCE.md`, 22-10-2026).
+- [x] Capturas propias listas en es y en (`ASSETS.md`).
 - [ ] Al menos una partida real con un grupo de conocidos (L-3) sin problemas graves.
 
 ## 8. Decisiones pendientes del dueño
@@ -173,3 +187,5 @@ la comunidad o preferís que lo ponga en algún hilo concreto? Gracias.»
 3. **Si publicas desde una cuenta personal** o creas una del proyecto (recomendación: la personal; da
    más confianza en comunidades de fans).
 4. **Si quieres un formulario de opinión** o solo issues de GitHub.
+5. **Resto de decisiones abiertas** (licencia del código, cómo describir tu papel frente al de la IA,
+   17th Shard, nombre en inglés): ver `COMPLIANCE.md` §5 y `README.md`.

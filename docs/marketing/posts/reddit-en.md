@@ -10,6 +10,8 @@
 > - **Una sola subreddit por semana.** Empezar por r/Cosmere; r/brandonsanderson solo si la primera
 >   fue bien y han pasado unos días.
 > - Mejor publicar desde tu cuenta personal y, antes, haber comentado algo en la comunidad.
+> - Comprueba también si la subreddit tiene norma sobre contenido hecho con IA. La frase de
+>   transparencia sobre la IA no se quita nunca; si la norma lo prohíbe, no se publica.
 > - Responde a todo en las primeras 48 h (banco de respuestas en `COMMUNITIES.md` §3).
 
 ---
@@ -47,14 +49,18 @@
 > It's an **unofficial fan project**, not affiliated with or endorsed by Brandon Sanderson or
 > Dragonsteel. There's no online multiplayer: it's meant for playing together in the same room.
 >
+> Full disclosure: I directed it, but the code, questions and translations were written by AI agents,
+> and the facts were checked against the Coppermind. That's exactly why error reports matter to me.
+>
 > I'd really appreciate feedback, especially wrong or ambiguous questions (there's a "Report a
 > mistake" button on each one) and anything confusing in the rules. Thanks for reading!
 
 ### Body (short version, for a weekly self-promo / fan-works thread)
 > I made a free, unofficial Cosmere trivia game for playing in a group on one phone. It has a spoiler
 > filter (tick the books you've read), almost 500 questions, a daily challenge and works offline. No
-> ads or accounts. Not affiliated with Brandon Sanderson or Dragonsteel. Feedback and error reports
-> very welcome: https://manuvp90.github.io/ManuVP90/
+> ads or accounts. Not affiliated with Brandon Sanderson or Dragonsteel. Built with AI agents (code,
+> questions and translations), so feedback and error reports are very welcome:
+> https://manuvp90.github.io/ManuVP90/
 
 ---
 
@@ -71,7 +77,7 @@ Different angle on purpose: the solo player and the daily challenge.
 > friends on one phone, but it also works solo:
 >
 > - **Daily challenge:** 5 questions, the same for everyone that day. You get a streak and a
->   spoiler-free result made of colored squares to share.
+>   spoiler-free ✅/❌ result to share.
 > - **Quick game:** 15 questions against the clock, with a high score.
 > - **Practice:** pick a world and a difficulty and read an explanation after each answer.
 >
@@ -81,7 +87,8 @@ Different angle on purpose: the solo player and the daily challenge.
 > Free, no ads, no accounts, works offline, in five languages:
 > https://manuvp90.github.io/ManuVP90/
 >
-> Unofficial fan project, not affiliated with or endorsed by Brandon Sanderson or Dragonsteel. If you
+> Unofficial fan project, not affiliated with or endorsed by Brandon Sanderson or Dragonsteel. To be
+> upfront: I directed it, but AI agents wrote the code, the questions and the translations. If you
 > find a question that's wrong or unclear, there's a "Report a mistake" button on each one. I'd love
 > to hear what you think!
 

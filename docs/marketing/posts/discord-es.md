@@ -14,12 +14,12 @@ Tono: cercano, de fan a fan, corto (Discord se lee en el móvil). Sin @everyone 
 
 > ¡Hola, cosmereanos! 👋
 >
-> Soy Manu, fan del Cosmere, y he hecho **Trivia del Cosmere**, un juego de preguntas tipo *Trivial*
-> para jugar en grupo con **un solo móvil**: de 1 a 6 jugadores o equipos os lo vais pasando, giráis
+> Soy Manu, fan del Cosmere, y he hecho **Trivia del Cosmere**, un juego de preguntas para jugar en
+> grupo con **un solo móvil**: de 1 a 6 jugadores o equipos os lo vais pasando, giráis
 > la ruleta de los seis mundos e intentáis infundir las seis gemas.
 >
 > 📚 **Sin spoilers:** marcas los libros que has leído y solo salen preguntas de esos.
-> 🗺️ **Nombres de Nova:** usa los nombres de la edición en español.
+> 🗺️ **Nombres de Nova:** busca usar los de la edición en español (algunos aún en revisión).
 > 🎲 Casi 500 preguntas, 4 dificultades, reto diario, partida rápida y modo práctica con
 > explicaciones.
 > 📴 Gratis, sin anuncios, sin cuentas y funciona sin conexión (se instala desde el navegador).
@@ -27,7 +27,8 @@ Tono: cercano, de fan a fan, corto (Discord se lee en el móvil). Sin @everyone 
 > 👉 https://manuvp90.github.io/ManuVP90/
 >
 > Es un **proyecto de fans no oficial**, sin relación con Brandon Sanderson ni con Dragonsteel.
-> Estoy aprendiendo a programar, así que me vendría genial que lo probarais y me dijerais qué
+> Estoy aprendiendo a programar y lo he hecho dirigiendo a agentes de IA, que han escrito el código,
+> las preguntas y las traducciones, así que me vendría genial que lo probarais y me dijerais qué
 > mejoraríais. Si veis una pregunta mal o un nombre que no coincide con vuestra edición, cada
 > pregunta tiene un botón «Avisar de un error». ¡Gracias!
 
@@ -44,8 +45,9 @@ canal del Cosmere. Texto distinto al de Cosmere.es a propósito.
 >
 > He hecho un juego de preguntas del Cosmere para jugar en la misma mesa pasándose el móvil. Lo que
 > más me importaba es que **nadie se coma un spoiler**: al empezar marcas los libros que has leído y
-> el juego solo te pregunta de esos. Usa los nombres de la edición de Nova, tiene reto diario y
-> modo práctica, y funciona sin conexión.
+> el juego solo te pregunta de esos. Busca usar los nombres de la edición de Nova, tiene reto diario
+> y modo práctica, y funciona sin conexión. Lo he hecho con agentes de IA (código, preguntas y
+> traducciones), así que cualquier error que veáis me ayuda.
 >
 > Gratis, sin anuncios ni cuentas. Proyecto de fans **no oficial** (nada que ver con Brandon
 > Sanderson ni Dragonsteel).
@@ -74,12 +76,12 @@ solo si dicen que sí, en el canal que indiquen.
 >
 > 👉 https://manuvp90.github.io/ManuVP90/
 >
-> Es un proyecto de fans **no oficial**, sin relación con Brandon Sanderson ni con Dragonsteel. Si lo
-> probáis en una reunión, me encantaría saber qué tal fue y qué cambiaríais. ¡Gracias!
+> Es un proyecto de fans **no oficial**, sin relación con Brandon Sanderson ni con Dragonsteel, y lo he
+> hecho dirigiendo a agentes de IA (código, preguntas y traducciones). Si lo probáis en una reunión, me encantaría saber qué tal fue y qué cambiaríais. ¡Gracias!
 
 ---
 
 ## Títulos o primeras líneas alternativas (por si el canal usa hilos o foros)
-1. «He hecho un trivial del Cosmere para jugar en grupo con un móvil (sin spoilers)»
+1. «He hecho un juego de preguntas del Cosmere para jugar en grupo con un móvil (sin spoilers)»
 2. «Juego de preguntas del Cosmere, gratis y no oficial, con filtro de spoilers»
-3. «¿Os animáis a probar un trivial del Cosmere hecho por un fan?»
+3. «¿Os animáis a probar un juego de preguntas del Cosmere hecho por un fan?»

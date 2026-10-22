@@ -59,7 +59,7 @@ mondi e Il Cosmoverso) e ogni due risposte esatte su un mondo infondete la sua g
 le gemme si arriva alla domanda finale.
 
 **Niente spoiler.** Prima di iniziare segni i libri che hai letto e ricevi domande solo su quelli.
-Ogni domanda indica l’ultimo libro che serve per conoscere la risposta. Se nel gruppo qualcuno è
+Ogni domanda è legata all’ultimo libro che serve per conoscere la risposta. Se nel gruppo qualcuno è
 ancora al primo libro, regolate il filtro sul suo ritmo.
 
 **I nomi della tua edizione.** Il gioco è in italiano, inglese, spagnolo, francese e tedesco, e in
@@ -89,6 +89,10 @@ alla schermata Home». Non c’è gioco online: si gioca di persona, con un solo
 **Hai trovato un errore?** Ogni domanda ha un pulsante «Segnala un errore» che prepara la
 segnalazione con tutti i dati. Le correzioni arrivano nelle versioni successive.
 
+**Come è stato fatto.** Lo dirige un fan che sta imparando a programmare; il codice, le domande e le
+traduzioni sono stati scritti da agenti di IA. I fatti sono stati verificati sulla Coppermind e ogni
+domanda si può segnalare se qualcosa non torna.
+
 Progetto amatoriale non ufficiale, non affiliato a Brandon Sanderson né a Dragonsteel. Il Cosmoverso
 e tutti i nomi correlati appartengono ai rispettivi proprietari.
 
@@ -104,7 +108,7 @@ e tutti i nomi correlati appartengono ai rispettivi proprietari.
 - Partita veloce, allenamento con spiegazioni e ripasso degli errori.
 - Tre aiuti: Atium, Folgoluce e Soffio.
 - Gratis, senza pubblicità, senza account, senza tracciamento e anche offline.
-- Progetto amatoriale non ufficiale, con il codice aperto su GitHub.
+- Progetto amatoriale non ufficiale, realizzato con agenti di IA e con il codice pubblico su GitHub.
 
 ---
 
@@ -120,7 +124,7 @@ telefono. Tutto è nato da una domanda semplice: come si gioca a un quiz sul Cos
 sono arrivati a libri diversi, senza che nessuno si becchi uno spoiler?
 
 La risposta è il **filtro spoiler**. Prima di giocare, il gruppo segna i libri che ha letto e il
-gioco propone solo domande su quelli. Ogni domanda indica l’ultimo libro necessario per rispondere.
+gioco propone solo domande su quelli. Ogni domanda è legata all’ultimo libro necessario per rispondere.
 
 Si gioca **passandosi un solo telefono**: da 1 a 6 giocatori o squadre girano una ruota con sei
 mondi (Roshar, Scadrial, Sel, Nalthis, Altri mondi e Il Cosmoverso) e cercano di infondere tutte e
@@ -137,7 +141,8 @@ tantissimo.»
 
 Trivia del Cosmere è **gratuito, senza pubblicità, senza account e senza tracciamento**. Funziona
 offline e si installa dal browser, senza passare da uno store. Ogni domanda ha un pulsante per
-segnalare errori e il codice è su GitHub.
+segnalare errori e il codice è su GitHub. L’autore l’ha realizzato guidando agenti di IA, che hanno
+scritto il codice, le domande e le traduzioni.
 
 **Link:** https://manuvp90.github.io/ManuVP90/
 
@@ -162,6 +167,8 @@ primo caricamento e per gli aggiornamenti.
 Nessuno. Niente account, pubblicità, statistiche di utilizzo o tracciamento. Statistiche, traguardi
 e impostazioni restano solo sul tuo telefono. Per spostarli su un altro dispositivo, vai in
 Impostazioni → Backup, esporta un codice e importalo sull’altro dispositivo.
+(Il sito è ospitato su GitHub Pages che, come qualsiasi server web, può registrare dati tecnici
+della visita, come l’indirizzo IP. Il gioco non contatta servizi esterni.)
 
 **In quali lingue è disponibile, e perché quei nomi?**
 Italiano, inglese, spagnolo, francese e tedesco. La regola è che ogni lingua usa i nomi
@@ -194,12 +201,12 @@ ufficiali. Il Cosmoverso e tutti i nomi correlati appartengono ai rispettivi pro
 **Costa qualcosa?**
 No. È gratis, senza pubblicità né acquisti, e lo resterà.
 
-### Domanda facoltativa (decide il proprietario, vedi §9)
+### Domanda sull’IA (obbligatoria nelle community con regole sull’IA, consigliata ovunque)
 
 **Come è stato fatto?**
-Lo sviluppa un fan che sta imparando a programmare, con l’aiuto di strumenti di IA per scrivere il
-codice, preparare e tradurre le domande e verificare i fatti. Ogni domanda indica il libro da cui
-proviene e si può segnalare se c’è qualcosa che non va.
+Lo dirige un fan che sta imparando a programmare. Il codice, le domande e le traduzioni sono stati
+scritti da agenti di IA, e i fatti sono stati verificati sulla Coppermind (non sui libri stampati).
+Ogni domanda è legata al libro da cui dipende e si può segnalare se c’è qualcosa che non va.
 
 ---
 
@@ -237,9 +244,9 @@ leggere le regole il giorno stesso e, se non è chiaro, scrivere prima alla mode
 > ditemelo. E se non è adatto, nessun problema. Grazie!
 
 Frase da aggiungere se la community ha regole sui contenuti generati con IA:
-> Per trasparenza: l’ho realizzato con l’aiuto di assistenti di IA (per il codice e per le bozze di
-> domande e traduzioni, poi riviste e verificate). Se rientra nelle vostre regole sui contenuti IA,
-> lo capisco e non lo pubblico.
+> Per trasparenza: il codice, le domande e le traduzioni sono stati scritti da agenti di IA che ho
+> guidato io, e i fatti sono stati verificati sulla Coppermind. Se rientra nelle vostre regole sui
+> contenuti IA, lo capisco e non lo pubblico.
 
 ---
 
@@ -249,7 +256,7 @@ Frase da aggiungere se la community ha regole sui contenuti generati con IA:
 |---|---|---|
 | Titolo | 30 | 18 |
 | Descrizione breve | 80 | 72 |
-| Descrizione lunga | 4000 | 2721 |
+| Descrizione lunga | 4000 | 2976 |
 
 Caratteri contati con la formattazione Markdown inclusa; senza, qualcuno in meno.
 

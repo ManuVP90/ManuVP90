@@ -25,7 +25,7 @@
 | 4 | **Cosmere Uruguay / #ExplorandoelCosmere** (club de lectura con Discord propio) | es | L+1 o L+3 | Página del evento del club con enlace a su Discord. Normas no encontradas | Es justo el público principal (club de lectura). Escribir primero a quien organiza y ofrecerlo para una quedada | `posts/discord-es.md` §C |
 | 5 | **r/Cosmere** | en | L+2 | Su wiki de spoilers (copia espejo): flair de spoilers obligatoria y **nada de spoilers en el título ni en la miniatura**. Norma de autopromoción no encontrada | Leer la barra lateral. Si hay hilo semanal o flair para *fan works*, usarlo. Si no queda claro, modmail antes | `posts/reddit-en.md` §A |
 | 6 | **r/brandonsanderson** | en | L+3 (o en lugar de r/Cosmere) | Norma de autopromoción no encontrada. Comunidad general sobre la obra de Sanderson | **Una sola** de las dos subreddits el mismo día; si en r/Cosmere va bien, esperar una semana antes de esta | `posts/reddit-en.md` §B |
-| 7 | **17th Shard** (foro) | en | L+3 | Hilo del staff de 2018 «Policy on self promotion»: se permite promocionar algo que has creado tú; **no** se permite pedir donaciones; la cuenta no puede existir solo para anunciar; se retiran productos de Sanderson no autorizados. El staff reconocía que la norma no estaba en el reglamento. Su página de políticas de foro y Discord prohíbe el **contenido generado por IA** | Presentarse primero y participar algo antes. Ver aviso sobre IA abajo. Si hay dudas, preguntar en el subforo de ayuda | `posts/17thshard-en.md` |
+| 7 | **17th Shard** (foro) | en | L+3 | Hilo del staff de 2018 «Policy on self promotion»: se permite promocionar algo que has creado tú; **no** se permite pedir donaciones; la cuenta no puede existir solo para anunciar; se retiran productos de Sanderson no autorizados. El staff reconocía que la norma no estaba en el reglamento. Su página de políticas de foro y Discord dice que el contenido **generado o asistido por IA** no se permite en ningún sitio del foro ni del Discord | **Por defecto, no publicar.** Solo si el staff lo autoriza por escrito tras leer el aviso sobre IA (abajo). Presentarse y participar antes | `posts/17thshard-en.md` |
 
 **Descartadas por ahora:** r/Stormlight_Archive y r/Mistborn (solo se encontraron sus políticas de
 spoilers; son de una sola saga y el juego cubre todo el Cosmere, así que repetirse ahí parecería
@@ -35,17 +35,21 @@ aparecieron en la búsqueda; si tú ya estás en alguno, **ese funciona mejor** 
 tabla (plan §8.2). Usa el borrador de Discord adaptado.
 
 ### Aviso importante: contenido generado por IA (17th Shard y quizá otras)
-La página de políticas del 17th Shard prohíbe el contenido generado por IA. El juego lo has hecho tú
-con ayuda de agentes de IA (código, preguntas y traducciones, revisadas). Recomendación: **sé
-transparente si alguien pregunta** (respuesta R9 abajo) y, en el 17th Shard, pregunta antes al staff
-si un proyecto hecho con ayuda de IA cabe en el foro. Los textos de los borradores los has de
-revisar y reescribir con tus palabras antes de publicar: así suenan a ti, que es lo que los fans
-valoran.
+La página de políticas del 17th Shard dice que el contenido «generado o asistido» por IA no se permite
+en ningún sitio del foro ni del Discord (y la Coppermind, su wiki, tiene una norma parecida). El juego
+lo has dirigido tú, pero el código, las preguntas y las traducciones los han escrito agentes de IA, y
+los datos se han contrastado con la Coppermind, no con los libros. Eso entra de lleno en esa norma.
+Recomendación: **no publicar en el 17th Shard** salvo que el staff, después de leer el añadido sobre IA
+de §2.2, diga por escrito que sí. En todas las demás comunidades, **decirlo en el propio mensaje**
+(los borradores de `posts/` ya lo incluyen) y no solo si alguien pregunta; leer su norma sobre IA
+igual que la de autopromoción. No presentes nunca el juego como «revisado con los libros».
+Los textos de los borradores los has de revisar y reescribir con tus palabras antes de publicar (también
+los ha redactado un agente de IA): así suenan a ti, que es lo que los fans valoran.
 
 ### Reglas que se aplican a todas
 1. Leer las normas el mismo día de publicar (pueden haber cambiado desde esta investigación).
 2. Un texto por comunidad y por día; nunca el mismo texto pegado en varios sitios.
-3. El aviso de **no oficial** va siempre en el texto.
+3. El aviso de **no oficial** va siempre en el texto, y también que está **hecho con agentes de IA**.
 4. Sin logos, portadas ni arte oficial; solo capturas propias de la app.
 5. Sin spoilers: nada más allá del primer libro de cada saga, ni en el texto ni en las capturas.
    Los borradores no ponen ninguna pregunta de ejemplo a propósito.
@@ -59,8 +63,9 @@ valoran.
 ### 2.1 Español (Discord: Cosmere.es, El Diagrama, Cosmere Uruguay)
 > ¡Hola! Soy Manu, fan del Cosmere. He hecho un juego de preguntas sobre el Cosmere para jugar en
 > grupo pasándose un solo móvil. Es gratis, sin anuncios, sin cuentas y no oficial (no tiene ninguna
-> relación con Brandon Sanderson ni con Dragonsteel). Tiene filtro de spoilers y usa los nombres de
-> la edición de Nova. ¿Puedo compartirlo en el servidor? Si preferís que vaya en un canal concreto,
+> relación con Brandon Sanderson ni con Dragonsteel). Tiene filtro de spoilers y busca usar los
+> nombres de la edición de Nova. Para ser transparente: lo he hecho dirigiendo a agentes de IA, que
+> han escrito el código, las preguntas y las traducciones. ¿Puedo compartirlo en el servidor? Si preferís que vaya en un canal concreto,
 > decídmelo y lo pongo ahí. Y si no encaja, sin problema. ¡Gracias!
 
 Variante para Cosmere Uruguay (organización del club):
@@ -77,10 +82,11 @@ Variante para Cosmere Uruguay (organización del club):
 > get questions from books you've read. Would it be OK to share it here, and is there a specific
 > thread or flair you'd prefer? If it doesn't fit, no worries. Thanks!
 
-Añadido solo para el 17th Shard (por su norma sobre IA):
-> One thing to be upfront about: I built it with help from AI coding assistants (code, and drafts of
-> questions and translations that I reviewed and fact-checked). If that falls under your AI-content
-> policy, I understand and won't post it.
+Añadido para el 17th Shard (obligatorio) y para cualquier comunidad con norma sobre IA:
+> One thing to be upfront about: I directed the project, but the code, the questions and the
+> translations were written by AI agents, and the facts were checked against the Coppermind rather
+> than the printed books. I know that falls under your AI-content policy, so I'll only post it if you
+> tell me it's OK. Thanks either way!
 
 ---
 
@@ -155,12 +161,14 @@ Enlace de reportes: https://github.com/ManuVP90/ManuVP90/issues (o el botón «A
   you can share your result.
 
 ### R9. «¿Está hecho con IA?»
-- **es:** Lo he hecho yo con ayuda de asistentes de IA para programar y para preparar borradores de
-  preguntas y traducciones, que luego se revisan y se comprueban con los libros. Si ves algo mal,
-  avísame y lo corrijo.
-- **en:** I built it with help from AI coding assistants, which also drafted questions and
-  translations that were then reviewed and checked against the books. If you spot anything wrong,
-  tell me and I'll fix it.
+- **es:** Sí. Lo he dirigido yo, pero el código, las preguntas y las traducciones los han escrito
+  agentes de IA, y los datos se han contrastado con la Coppermind (no con los libros en papel). Por
+  eso me ayuda tanto que me aviséis de cualquier error.
+- **en:** Yes. I directed it, but the code, questions and translations were written by AI agents,
+  and the facts were checked against the Coppermind rather than the printed books. That's why error
+  reports help so much.
+- Nunca decir que está «revisado con los libros» ni minimizarlo; si alguien lo critica, agradecer y
+  no discutir.
 
 ### R10. «¿Puedo proponer preguntas?»
 - **es:** ¡Claro! En GitHub hay una plantilla para proponer preguntas. Solo pido que sean comprobables
@@ -180,6 +188,8 @@ mensaje a moderación).
 ## 5. Fuentes (consultadas el 22-10-2026)
 - 17th Shard, «Policy on self promotion» (2018): https://www.17thshard.com/forums/topic/66820-policy-on-self-promotion/
 - 17th Shard, «17S Forum and Discord Policies»: https://www.17thshard.com/topic/89569-17s-forum-and-discord-policies/
+  (revisado de nuevo por el agente de cumplimiento el 22-10-2026: «AI-generated or assisted content is
+  not allowed anywhere on the forums or discord»)
 - r/Cosmere, política de spoilers (copia espejo): https://lr.in.psf.lt/r/Cosmere/wiki/spoilers
 - r/Stormlight_Archive, política de spoilers (copia espejo): https://lr.in.psf.lt/r/Stormlight_Archive/wiki/spoilers
 - r/Mistborn, política de spoilers (copia espejo): https://lr.eu.psf.lt/r/mistborn/wiki/spoilers

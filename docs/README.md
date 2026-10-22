@@ -1,6 +1,6 @@
 # Trivia del Cosmere
 
-Juego de preguntas tipo *Trivial* sobre el Cosmere de Brandon Sanderson, para móvil,
+Juego de preguntas sobre el Cosmere de Brandon Sanderson, para móvil,
 con partidas locales (se pasa el móvil) y en 5 idiomas: español, inglés, francés, alemán e italiano.
 Proyecto de fans, no oficial.
 
@@ -54,8 +54,8 @@ Source: GitHub Actions*). Ábrela en el móvil y usa *Añadir a pantalla de inic
 conocer la respuesta. En los mundos-planeta, las cuatro opciones son siempre del mismo planeta.
 
 **Nombres**: en cada idioma se usan los de la edición oficial publicada en ese idioma
-(p. ej. *Hoja esquirlada* / *Lame d'éclat* / *Splitterklinge* / *Stratolama*; *Sagaz*, *Sondeluz*,
-*Alezkar*; *Cosmère*, *Kosmeer*, *Cosmoverso*). El criterio y el estado de verificación de cada
+(p. ej. *El Archivo de las Tormentas* / *Les Archives de Roshar* / *Die Sturmlicht-Chroniken* /
+*Le Cronache della Folgoluce*; *Pozos de Hathsin*, *Sondeluz*; *Cosmère*, *Kosmeer*, *Cosmoverso*). El criterio y el estado de verificación de cada
 término están en `content/glossary.json` (`official`, `community`, `unchanged`, `unpublished`,
 `unverified`).
 

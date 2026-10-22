@@ -90,6 +90,10 @@ joue en personne, sur un seul téléphone.
 **Une erreur ?** Chaque question a un bouton « Signaler une erreur » qui prépare le signalement avec
 toutes les informations utiles. Les corrections arrivent dans les versions suivantes.
 
+**Comment il a été fait.** Il est dirigé par un fan qui apprend à programmer ; le code, les
+questions et les traductions ont été écrits par des agents d’IA. Les informations ont été vérifiées
+avec la Coppermind, et chaque question peut être signalée si quelque chose cloche.
+
 Projet de fan non officiel, sans lien avec Brandon Sanderson ni avec Dragonsteel, et non approuvé
 par eux. Le Cosmère et tous les noms associés appartiennent à leurs propriétaires respectifs.
 
@@ -105,7 +109,7 @@ par eux. Le Cosmère et tous les noms associés appartiennent à leurs propriét
 - Partie rapide, entraînement avec explications et révision de vos erreurs.
 - Trois aides : Atium, Fulgiflamme et Souffle.
 - Gratuit, sans publicité, sans compte, sans pistage, et hors connexion.
-- Projet de fan non officiel, au code ouvert sur GitHub.
+- Projet de fan non officiel, réalisé avec des agents d’IA, au code public sur GitHub.
 
 ---
 
@@ -121,8 +125,8 @@ comment jouer à un quiz du Cosmère avec des amis qui n’en sont pas au même 
 ne se fasse spoiler ?
 
 La réponse, c’est le **filtre anti-spoilers**. Avant la partie, le groupe coche les livres qu’il a
-lus, et le jeu ne pose des questions que sur ceux-là. Chaque question indique le dernier livre
-nécessaire pour y répondre.
+lus, et le jeu ne pose des questions que sur ceux-là. Chaque question est associée au dernier
+livre nécessaire pour y répondre.
 
 On joue **en se passant un seul téléphone** : de 1 à 6 joueurs ou équipes font tourner une roue de
 six mondes (Roshar, Scadrial, Sel, Nalthis, Autres mondes et Le Cosmère) et tentent d’infuser les
@@ -139,7 +143,8 @@ les livres dans votre langue et qu’un nom vous paraît bizarre, me le signaler
 
 Quiz du Cosmère est **gratuit, sans publicité, sans compte et sans pistage**. Il fonctionne hors
 connexion et s’installe depuis le navigateur, sans passer par une boutique d’applications. Chaque
-question a un bouton pour signaler une erreur, et le code est sur GitHub.
+question a un bouton pour signaler une erreur, et le code est sur GitHub. L’auteur l’a réalisé en
+dirigeant des agents d’IA, qui ont écrit le code, les questions et les traductions.
 
 **Lien :** https://manuvp90.github.io/ManuVP90/
 
@@ -165,6 +170,8 @@ n’est nécessaire que pour le premier chargement et pour recevoir les mises à
 Aucune. Pas de compte, pas de publicité, pas de mesure d’audience, pas de pistage. Vos statistiques,
 succès et réglages sont enregistrés uniquement sur votre téléphone. Pour les transférer sur un autre
 appareil, allez dans Réglages → Sauvegarde, copiez le code et importez-le sur l’autre appareil.
+(Le site est hébergé sur GitHub Pages, qui, comme tout serveur web, peut enregistrer des données
+techniques de la visite, comme l’adresse IP. Le jeu, lui, ne contacte aucun service extérieur.)
 
 **Quelles langues, et pourquoi ces noms ?**
 Français, anglais, espagnol, allemand et italien. La règle : chaque langue reprend les noms de
@@ -199,12 +206,13 @@ respectifs.
 **Est-ce payant ?**
 Non. C’est gratuit, sans publicité ni achats, et ça le restera.
 
-### Question optionnelle (décision de Manu, voir COPY.md §8.3)
+### Question sur l’IA (obligatoire dans les communautés qui ont une règle sur l’IA, recommandée partout)
 
 **Comment le jeu a-t-il été fait ?**
-Il est créé par un fan qui apprend à programmer, avec l’aide d’outils d’IA pour écrire le code,
-rédiger et traduire les questions et vérifier les informations. Chaque question indique le livre
-dont elle est tirée et peut être signalée en cas d’erreur.
+Il est dirigé par un fan qui apprend à programmer. Le code, les questions et les traductions ont été
+écrits par des agents d’IA, et les informations ont été vérifiées avec la Coppermind (pas avec les
+livres papier). Chaque question est associée au livre dont elle dépend et peut être signalée en cas
+d’erreur.
 
 ---
 
@@ -261,6 +269,9 @@ tout aussi sûre : une question étiquetée `final-empire` (*L’Empire ultime*
 >
 > Lien : https://manuvp90.github.io/ManuVP90/
 >
+> Pour être transparent : je l’ai fait en dirigeant des agents d’IA, qui ont écrit le code, les
+> questions et les traductions. C’est pour ça que vos corrections comptent autant.
+>
 > *Projet de fan non officiel, sans lien avec Brandon Sanderson ni avec Dragonsteel. Je ne demande
 > ni argent ni dons.*
 
@@ -273,9 +284,9 @@ tout aussi sûre : une question étiquetée `final-empire` (*L’Empire ultime*
 > dites-le-moi et je le publierai là. Et si ça ne convient pas, aucun souci. Merci !
 
 Ajout si la communauté a une règle sur l’IA :
-> Pour être transparent : je l’ai réalisé avec l’aide d’assistants d’IA (le code, et des brouillons
-> de questions et de traductions que j’ai relus et vérifiés). Si cela tombe sous votre règlement sur
-> l’IA, je comprends tout à fait et je ne le publierai pas.
+> Pour être transparent : le code, les questions et les traductions ont été écrits par des agents
+> d’IA que j’ai dirigés, et les informations ont été vérifiées avec la Coppermind. Si cela tombe sous
+> votre règlement sur l’IA, je comprends tout à fait et je ne le publierai pas.
 
 ### 7.3 Réponses types (à reformuler avec vos mots)
 
@@ -289,9 +300,9 @@ Ajout si la communauté a une règle sur l’IA :
   utiliser « Signaler une erreur » dessus) et quels livres étaient cochés dans le filtre ? Si elle
   dévoilait un livre qu’elle n’aurait pas dû, je corrige au plus vite. (Ne pas répéter le spoiler
   dans la réponse.)
-- **« C’est fait avec de l’IA ? » :** Je l’ai fait avec l’aide d’assistants d’IA pour le code et pour
-  des brouillons de questions et de traductions, ensuite relus et vérifiés. Si vous voyez une
-  erreur, dites-le-moi et je la corrige.
+- **« C’est fait avec de l’IA ? » :** Oui : je l’ai dirigé, mais le code, les questions et les
+  traductions ont été écrits par des agents d’IA, et les informations vérifiées avec la Coppermind.
+  Si vous voyez une erreur, dites-le-moi et je la corrige.
 
 ---
 
@@ -301,7 +312,7 @@ Ajout si la communauté a une règle sur l’IA :
 |---|---|---|
 | Titre | 30 | 15 |
 | Description courte | 80 | 76 |
-| Description longue | 4000 | 3014 |
+| Description longue | 4000 | 3290 |
 
 Caractères comptés avec la mise en forme Markdown ; sans elle, un peu moins.
 
@@ -317,7 +328,7 @@ Caractères comptés avec la mise en forme Markdown ; sans elle, un peu moins.
    Les Archives de Roshar, atium y los nombres de los mundos.
 2. **« Cosmère » con tilde.** Es la forma del glosario (`title-saga:cosmere`, `official`) y la de la
    interfaz francesa. El nombre del proyecto « Trivia del Cosmere » no se toca.
-3. **Ejemplos de nombres.** En lugar de los de Nova (*Hoja esquirlada*, *Sagaz*…), la versión
+3. **Ejemplos de nombres.** En lugar de los de Nova (*Pozos de Hathsin*, *Sondeluz*…), la versión
    francesa pone ejemplos de Le Livre de Poche/Orbit con estado `official`.
 4. **Cifras.** Los textos largos dicen « près de 500 » y el bloque « En bref » da la cifra exacta
    (496). El glosario tiene 1 127 términos (« environ 1 100 »); 429 están `unverified` en francés:

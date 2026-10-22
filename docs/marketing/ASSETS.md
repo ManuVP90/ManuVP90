@@ -5,8 +5,13 @@
 > oficial» / «Fan project · unofficial» y no usan logos, portadas ni arte oficial: solo capturas
 > reales de la app, su icono, su paleta de gemas y su fondo azul marino.
 
-Todas están en `docs/marketing/assets/` (PNG, 22 archivos, unos 5,9 MB en total). Hay una versión en
-español (`-es`) y otra en inglés (`-en`) de cada imagen.
+Todas están en `docs/marketing/assets/` (PNG, 22 archivos, unos 5,9 MB en total). Hay una versión en español (`-es`) y otra en inglés (`-en`) de cada imagen.
+
+> **Cambio de cumplimiento (22-10-2026):** `feature-graphic-es.png` y `social-card-es.png` decían
+> «Trivial del Cosmere…» en el texto pequeño («Trivial» es la marca de Trivial Pursuit en España). Se han
+> sustituido por versiones corregidas con el mismo nombre (mismo diseño; el texto
+> dice «Juego de preguntas del Cosmere de Brandon Sanderson para jugar en grupo pasándote el móvil.
+> Gratis, sin anuncios y sin conexión. 5 idiomas.»). Ver `COMPLIANCE.md`.
 
 ## Cómo se hicieron
 
@@ -47,14 +52,14 @@ Si solo hacen falta 6, recomiendo 01, 02, 03, 05, 07 y 04.
 
 | Archivo | Texto | Texto alternativo |
 |---|---|---|
-| `feature-graphic-es.png` | Icono de la app, «Trivia del Cosmere», «Seis mundos, un móvil y ningún spoiler.», presentación corta y la marca de proyecto no oficial. | es: Logotipo de Trivia del Cosmere junto a dos capturas de la app: la ruleta de seis mundos y una pregunta de Roshar con tres ayudas. |
+| `feature-graphic-es.png` (sustituye a `feature-graphic-es.png`) | Icono de la app, «Trivia del Cosmere», «Seis mundos, un móvil y ningún spoiler.», presentación corta y la marca de proyecto no oficial. | es: Logotipo de Trivia del Cosmere junto a dos capturas de la app: la ruleta de seis mundos y una pregunta de Roshar con tres ayudas. |
 | `feature-graphic-en.png` | Icono, «Trivia del Cosmere», «Six worlds, one phone, zero spoilers.», presentación corta y la marca. | en: Trivia del Cosmere logo next to two app screenshots: the wheel of six worlds and a Roshar question with three lifelines. |
 
 ## Tarjeta para redes (1200 × 630, Open Graph / X / Mastodon)
 
 | Archivo | Texto alternativo |
 |---|---|
-| `social-card-es.png` | Trivia del Cosmere, «Seis mundos, un móvil y ningún spoiler.», con las capturas del filtro de spoilers y de una pregunta de Roshar, la dirección manuvp90.github.io/ManuVP90 y la marca «Proyecto de fans · no oficial». |
+| `social-card-es.png` (sustituye a `social-card-es.png`) | Trivia del Cosmere, «Seis mundos, un móvil y ningún spoiler.», con las capturas del filtro de spoilers y de una pregunta de Roshar, la dirección manuvp90.github.io/ManuVP90 y la marca «Proyecto de fans · no oficial». |
 | `social-card-en.png` | Trivia del Cosmere, "Six worlds, one phone, zero spoilers.", with screenshots of the spoiler filter and a Roshar question, the address manuvp90.github.io/ManuVP90 and the "Fan project · unofficial" mark. |
 
 ## Cuadrada (1080 × 1080, Instagram / Discord)
@@ -85,3 +90,10 @@ Si solo hacen falta 6, recomiendo 01, 02, 03, 05, 07 y 04.
 - **Fecha:** las capturas del reto diario y de los logros muestran el 22 de octubre de 2026 (día en
   que se hicieron).
 - **Si cambia la app:** si cambia la interfaz antes del lanzamiento, conviene repetir las capturas.
+- **«Código abierto» / «Open source» (`store-*-08-free-offline.png`):** el repositorio no tiene
+  licencia, así que en sentido estricto el código es público pero no «abierto». O añades una licencia
+  antes del lanzamiento (decisión del dueño, ver `COMPLIANCE.md`) o no uses la captura 08 (la
+  selección recomendada de 6 no la incluye).
+- **Revisión de cumplimiento:** las 24 imágenes revisadas una a una: sin logos de Dragonsteel, sin
+  portadas ni arte oficial (el icono es propio: un diamante con seis gemas), aviso de no oficial en
+  todas, solo contenido de *El camino de los reyes* y sin testers.

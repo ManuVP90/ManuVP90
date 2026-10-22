@@ -87,6 +87,10 @@ Online-Modus ist nicht vorgesehen: Gespielt wird gemeinsam vor Ort, auf einem Ha
 **Einen Fehler entdeckt?** Jede Frage hat einen Button „Problem melden“, der alle nötigen Angaben
 für dich vorbereitet. Korrekturen kommen mit den nächsten Versionen.
 
+**So ist es entstanden.** Ein Fan, der gerade programmieren lernt, leitet das Projekt; Code, Fragen
+und Übersetzungen haben KI-Agenten geschrieben. Die Fakten wurden mit der Coppermind abgeglichen,
+und jede Frage lässt sich melden, wenn etwas nicht stimmt.
+
 Inoffizielles Fanprojekt, nicht verbunden mit Brandon Sanderson oder Dragonsteel. Das Kosmeer und
 alle zugehörigen Namen gehören ihren jeweiligen Inhabern.
 
@@ -103,7 +107,7 @@ alle zugehörigen Namen gehören ihren jeweiligen Inhabern.
 - Schnelles Spiel, Üben mit Erklärungen und Wiederholen deiner Fehler.
 - Drei Hilfen: Atium, Sturmlicht und Hauch.
 - Kostenlos, ohne Werbung, ohne Konto, ohne Tracking, funktioniert offline.
-- Inoffizielles Fanprojekt, der Code ist offen auf GitHub.
+- Inoffizielles Fanprojekt, mit KI-Agenten gebaut, der Code liegt öffentlich auf GitHub.
 
 ---
 
@@ -137,7 +141,8 @@ Italienisch, wird noch überprüft“, sagt der Entwickler. „Wer die Bücher i
 
 Trivia del Cosmere ist **kostenlos, ohne Werbung, ohne Konten und ohne Tracking**. Es funktioniert
 offline und wird direkt aus dem Browser installiert, ganz ohne App-Store. Jede Frage hat einen
-Button, um Fehler zu melden, und der Code liegt auf GitHub.
+Button, um Fehler zu melden, und der Code liegt auf GitHub. Entstanden ist es, indem der Entwickler
+KI-Agenten angeleitet hat, die Code, Fragen und Übersetzungen geschrieben haben.
 
 **Link:** https://manuvp90.github.io/ManuVP90/
 
@@ -162,6 +167,8 @@ beim ersten Laden und für Updates.
 Keine. Es gibt keine Konten, keine Werbung, keine Analyse und kein Tracking. Statistik, Erfolge und
 Einstellungen werden nur auf deinem Handy gespeichert. Willst du sie auf ein anderes Gerät
 mitnehmen, exportierst du unter Einstellungen → Sicherung einen Code und importierst ihn dort.
+(Die Seite läuft über GitHub Pages; wie jeder Webserver kann GitHub technische Zugriffsdaten wie
+die IP-Adresse protokollieren. Das Spiel selbst ruft keine externen Dienste auf.)
 
 **Welche Sprachen gibt es, und warum diese Namen?**
 Deutsch, Englisch, Spanisch, Französisch und Italienisch. Die Regel: Jede Sprache verwendet die
@@ -197,12 +204,13 @@ jeweiligen Inhabern.
 **Kostet es etwas?**
 Nein. Es ist kostenlos, ohne Werbung und ohne Käufe, und das bleibt auch so.
 
-### Optionale Frage (Entscheidung des Owners, siehe COPY.md §8 Nr. 3)
+### Frage zur KI (Pflicht in Communitys mit KI-Regeln, sonst empfohlen)
 
 **Wie ist das Spiel entstanden?**
-Es stammt von einem Fan, der gerade programmieren lernt, mit Unterstützung von KI-Werkzeugen beim
-Programmieren, beim Entwerfen und Übersetzen der Fragen und beim Prüfen der Fakten. Zu jeder Frage
-ist angegeben, aus welchem Buch sie stammt, und jede lässt sich melden, wenn etwas nicht stimmt.
+Ein Fan, der gerade programmieren lernt, leitet das Projekt. Code, Fragen und Übersetzungen haben
+KI-Agenten geschrieben, und die Fakten wurden mit der Coppermind abgeglichen (nicht mit den
+gedruckten Büchern). Jede Frage ist intern mit dem Buch verknüpft, von dem sie abhängt, und lässt
+sich melden, wenn etwas nicht stimmt.
 
 ---
 
@@ -255,11 +263,11 @@ Ebenso sicher ist jede Frage mit dem Werk `final-empire` (*Kinder des Nebels*) o
 >
 > Inoffizielles Fanprojekt, nicht verbunden mit Brandon Sanderson oder Dragonsteel.
 
-Optionaler Zusatz zur Transparenz (siehe COPY.md §8 Nr. 3 und die KI-Regeln der Community):
+Zusatz zur Transparenz (immer mitposten, siehe COPY.md §8 Nr. 3 und die KI-Regeln der Community):
 
-> Offen gesagt: Ich habe es mit Hilfe von KI-Assistenten gebaut (Code sowie Entwürfe der Fragen und
-> Übersetzungen, die danach geprüft wurden). Wenn ihr etwas Falsches findet, sagt Bescheid, dann
-> korrigiere ich es.
+> Offen gesagt: Ich habe das Projekt geleitet, aber Code, Fragen und Übersetzungen haben KI-Agenten
+> geschrieben; die Fakten wurden mit der Coppermind abgeglichen. Wenn ihr etwas Falsches findet,
+> sagt Bescheid, dann korrigiere ich es.
 
 ### 7.2 Nachricht an die Moderation
 
@@ -270,6 +278,11 @@ Optionaler Zusatz zur Transparenz (siehe COPY.md §8 Nr. 3 und die KI-Regeln der
 > deutschen Ausgaben. Darf ich es hier vorstellen, und gibt es einen Thread oder Kanal, den ihr dafür
 > bevorzugt? Falls es nicht passt, kein Problem. Danke!
 
+Zusatz, wenn die Community eine KI-Regel hat:
+> Offen gesagt: Code, Fragen und Übersetzungen haben KI-Agenten geschrieben, die ich angeleitet habe,
+> und die Fakten wurden mit der Coppermind abgeglichen. Falls das unter eure KI-Regeln fällt, verstehe
+> ich das und poste es nicht.
+
 ---
 
 ## 8. Längenkontrolle
@@ -278,7 +291,7 @@ Optionaler Zusatz zur Transparenz (siehe COPY.md §8 Nr. 3 und die KI-Regeln der
 |---|---|---|
 | Titel | 30 | 18 |
 | Kurzbeschreibung | 80 | 69 |
-| Ausführliche Beschreibung | 4000 | 2860 |
+| Ausführliche Beschreibung | 4000 | 3118 |
 
 Zeichen inklusive Markdown gezählt; ohne Formatierung etwas weniger.
 
@@ -299,7 +312,7 @@ Zeichen inklusive Markdown gezählt; ohne Formatierung etwas weniger.
 4. **Nombre del juego.** En la app alemana el título es «Kosmeer-Quiz», pero el manifiesto y la web
    dicen «Trivia del Cosmere». Mantengo «Trivia del Cosmere» como nombre del proyecto y menciono
    «Kosmeer-Quiz» una vez. Si prefieres otra cosa, se cambia en un minuto.
-5. **Sin marca registrada.** El español dice «tipo *Trivial*»; en alemán evito «Trivial Pursuit» en
+5. **Sin marca registrada.** Ningún texto dice «Trivial» (el español ya tampoco); en alemán evito «Trivial Pursuit» en
    el texto público (la pantalla «Info» de la app sí lo menciona).
 6. **«Primer libro».** En alemán cada tomo de Stormlight está partido en dos; en los textos digo
    «erster Band» y la pregunta de la captura (`roshar-001`) es de *Der Weg der Könige*.

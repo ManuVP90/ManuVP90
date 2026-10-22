@@ -5,9 +5,11 @@
 
 ## Versión para un club de lectura (por privado a quien lo organiza)
 > ¡Hola, [nombre]! Te escribo porque sé que lleváis el club del Cosmere. He hecho un juego de
-> preguntas tipo *Trivial* del Cosmere para jugar con un solo móvil, pasándoselo (de 1 a 6
+> preguntas del Cosmere para jugar con un solo móvil, pasándoselo (de 1 a 6
 > jugadores o equipos). Tiene filtro de spoilers: marcáis los libros que habéis leído y solo salen
-> preguntas de esos. Usa los nombres de Nova, es gratis y no tiene anuncios.
+> preguntas de esos. Busca usar los nombres de Nova, es gratis y no tiene anuncios. Lo he hecho
+> dirigiendo a agentes de IA (código, preguntas y traducciones), así que los errores que veáis me
+> ayudan mucho.
 >
 > https://manuvp90.github.io/ManuVP90/
 >

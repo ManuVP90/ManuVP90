@@ -4,9 +4,13 @@
 > - Según un hilo del staff de 2018, se puede promocionar algo que has creado tú, pero **no pedir
 >   donaciones**, y la cuenta **no puede existir solo para anunciar**. Regístrate y participa un poco
 >   antes (preséntate en el subforo de bienvenida, comenta en algún hilo).
-> - Su página de políticas de foro y Discord **prohíbe el contenido generado por IA**. Como el juego se
->   ha hecho con ayuda de IA, pregunta antes al staff (mensaje en `docs/marketing/COMMUNITIES.md`
->   §2.2 con el añadido sobre IA). **Si dicen que no, no se publica.**
+> - Su página de políticas de foro y Discord dice que el contenido **generado o asistido por IA** no se
+>   permite en ningún sitio. Este juego lo es (código, preguntas y traducciones escritos por agentes de
+>   IA). **Por defecto no se publica aquí.** Solo si el staff, tras leer el mensaje de
+>   `docs/marketing/COMMUNITIES.md` §2.2 con el añadido sobre IA, dice **por escrito** que sí. Si no
+>   contestan o dicen que no, no se publica.
+> - Este borrador también lo ha escrito un agente de IA: si llegas a publicarlo, reescríbelo con tus
+>   palabras.
 > - Usa el subforo que indique el staff (probablemente uno de creaciones de fans o de off-topic).
 > - Los foros aceptan textos algo más largos y un tono más tranquilo que Reddit.
 
@@ -44,9 +48,10 @@
 > https://manuvp90.github.io/ManuVP90/
 >
 > To be clear: this is an **unofficial fan project**, not affiliated with or endorsed by Brandon
-> Sanderson or Dragonsteel. I built it with help from AI coding assistants, and the questions and
-> translations were reviewed and checked against the books. *(Quitar esta frase si el staff pide no
-> mencionarlo; mantenerla si dicen que es necesario declararlo.)*
+> Sanderson or Dragonsteel. And to be upfront, as I told the staff: I directed it, but the code, the
+> questions and the translations were written by AI agents, and the facts were checked against the
+> Coppermind. The staff OK'd posting it here. *(Mantener siempre esta frase; la última solo si el
+> staff lo ha autorizado por escrito.)*
 >
 > What I'd love from you: questions that are wrong, ambiguous or too easy for their level (each
 > question has a "Report a mistake" button), and anything about the rules that's confusing. Thank
