@@ -132,8 +132,16 @@ export function sanitizeDaily(s, helpers) {
 /** The streak as it stands on `today`: it is broken once a whole day passed without a challenge. */
 export function currentStreak(state, today) {
   if (!state.last) return 0;
-  return state.last === today || state.last === addDays(today, -1) ? state.streak : 0;
+  // A device date at or before the last challenge (clock moved back, a trip west) breaks nothing.
+  return state.last >= today || state.last === addDays(today, -1) ? state.streak : 0;
 }
+
+/**
+ * Can the challenge of `today` still be played? Only dates after the last finished one: the
+ * challenge of a date at or before it (same day, or the device clock moved back / a trip west)
+ * can't be replayed (beta 4, M3).
+ */
+export const canPlayDaily = (state, today) => !state.last || today > state.last;
 
 /** Records a finished challenge of `date` (once per date): streak, best, counters, last result. */
 export function recordDaily(state, { date, lang, marks, ids = [], filtered = false }) {
@@ -151,16 +159,16 @@ export function recordDaily(state, { date, lang, marks, ids = [], filtered = fal
   return s;
 }
 
-/** Emoji square per world (gem color) for a right answer; a black square for a miss. */
-export const SQUARES = { roshar: '🟦', scadrial: '🟥', sel: '🟩', nalthis: '🟨', otros: '🟪', cosmere: '⬜' };
-export const MISS_SQUARE = '⬛';
+/** Share marks (beta 4): a check for a right answer, a cross for a miss, nothing else to decode. */
+export const HIT_MARK = '✅';
+export const MISS_MARK = '❌';
 
 /**
- * Spoiler-free share text: title + date, one square per question (gem color when right, black when
- * missed: worlds only, no question or answer), score, streak and an optional link.
+ * Spoiler-free share text: title + date (already localized by the caller), one ✅/❌ per question
+ * (no world, question or answer), score, streak and an optional link.
  */
 export function shareText({ title, date, marks, streakLabel = '', filteredLabel = '', url = '' }) {
-  const squares = marks.map((m) => (m.ok ? SQUARES[m.c] || '🟦' : MISS_SQUARE)).join('');
+  const squares = marks.map((m) => (m.ok ? HIT_MARK : MISS_MARK)).join('');
   const score = `${marks.filter((m) => m.ok).length}/${marks.length}`;
   return [`${title} · ${date}`, `${squares} ${score}`, streakLabel, filteredLabel, url].filter(Boolean).join('\n');
 }

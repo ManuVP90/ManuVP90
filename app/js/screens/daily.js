@@ -8,7 +8,7 @@ import { ICONS, gemSvg } from '../icons.js';
 import { t, num } from '../i18n.js';
 import { app, go, screen, topBar, setBack, confirmDialog, toast, recordAnswer, noteMissed, noteSeen, getDaily, saveDaily, noQuestionsBanner, filterIsEmpty, catStyle, makePool } from '../core.js';
 import { TIMER_SECONDS } from '../config.js';
-import { dateKey, dailyPick, recordDaily, currentStreak, shareText, DAILY_LENGTH } from '../daily.js';
+import { dateKey, addDays, dailyPick, recordDaily, currentStreak, canPlayDaily, shareText, DAILY_LENGTH } from '../daily.js';
 import { questionView, emptyFx, newClock } from '../components/question.js';
 import { reviewSection, copyText } from '../components/review.js';
 import { fx, confetti } from '../fx.js';
@@ -26,8 +26,10 @@ export function dailyStatus() {
   const d = getDaily();
   const day = today();
   if (d.run) return { state: 'run', n: d.run.index + 1, total: d.run.items.length };
-  if (d.last === day && d.result?.date === day) {
-    return { state: 'done', score: d.result.marks.filter((m) => m.ok).length, total: d.result.marks.length, streak: currentStreak(d, day) };
+  if (!canPlayDaily(d, day)) {
+    const r = d.result?.date === d.last ? d.result : null;
+    if (!r) return { state: 'locked' };
+    return { state: 'done', score: r.marks.filter((m) => m.ok).length, total: r.marks.length, streak: currentStreak(d, day) };
   }
   return { state: 'todo', streak: currentStreak(d, day) };
 }
@@ -36,8 +38,23 @@ export function dailyScreen() {
   const d = getDaily();
   if (d.run) return runView(d);
   const day = today();
-  if (d.last === day && d.result?.date === day) return resultView(d);
+  // Today's challenge was played, or the device date is at or before the last one played (clock
+  // moved back, a trip west): no replay, the last result is shown instead (beta 4, M3).
+  if (!canPlayDaily(d, day)) return d.result?.date === d.last ? resultView(d) : lockedView(d);
   return introView(d);
+}
+
+/** The last result isn't stored (very old save): just say when the next challenge comes. */
+function lockedView(d) {
+  setBack(() => go('home'));
+  return screen('daily-result',
+    topBar(t('daily.title')),
+    h('div', { class: 'result-body daily-locked-body' },
+      svg(ICONS.calendar, 'result-icon'),
+      h('p', { class: 'banner banner-info daily-clock-note', role: 'note' }, t('daily.clockBack', { date: formatDate(addDays(d.last, 1)) })),
+      streakLine(d, today())),
+    h('div', { class: 'stack-actions' },
+      h('button', { type: 'button', class: 'btn btn-ghost btn-block', 'data-autofocus': '', onclick: () => go('home') }, t('common.home'))));
 }
 
 function streakLine(d, day) {
@@ -55,7 +72,7 @@ function introView(d) {
     if (!items.length) { toast(t('errors.noQuestions')); return; }
     fx.tap();
     const cur = getDaily();
-    if (cur.run || cur.last === day) { go('daily'); return; } // started or finished in another tab
+    if (cur.run || !canPlayDaily(cur, day)) { go('daily'); return; } // started or finished in another tab
     saveDaily({ ...cur, run: { date: day, lang: qLang(), items, index: 0, marks: [], filtered: filterActive(), current: null } });
     go('daily');
   };
@@ -146,12 +163,14 @@ function finish(run, render = true) {
   return render ? dailyScreen() : null;
 }
 
-function formatDate(key) {
+function formatDate(key, style = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) {
   try {
     const [y, m, dd] = key.split('-').map(Number);
-    return new Intl.DateTimeFormat(document.documentElement.lang || undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(y, m - 1, dd));
+    return new Intl.DateTimeFormat(document.documentElement.lang || undefined, style).format(new Date(y, m - 1, dd));
   } catch { return key; }
 }
+/** The share text's date: localized, without the weekday ("21 de octubre de 2026", "21. Oktober 2026"). */
+const shareDate = (key) => formatDate(key, { day: 'numeric', month: 'long', year: 'numeric' });
 
 function resultView(d) {
   const r = d.result;
@@ -161,7 +180,7 @@ function resultView(d) {
   const streak = currentStreak(d, day);
   setBack(() => go('home'));
   const text = shareText({
-    title: `${t('app.title')} · ${t('daily.title')}`, date: r.date, marks: r.marks,
+    title: `${t('app.title')} · ${t('daily.title')}`, date: shareDate(r.date), marks: r.marks,
     streakLabel: streak ? t('daily.shareStreak', { n: streak }) : '',
     filteredLabel: r.filtered ? t('daily.shareFiltered') : '',
     url: /^https?:/.test(location.href) ? location.href.split(/[?#]/)[0] : '',
@@ -179,10 +198,11 @@ function resultView(d) {
     h('div', { class: 'result-body daily-result-body' },
       svg(ICONS.calendar, 'result-icon'),
       h('p', { class: 'daily-date' }, formatDate(r.date)),
+      r.date !== day ? h('p', { class: 'banner banner-info daily-clock-note', role: 'note' }, t('daily.clockBack', { date: formatDate(addDays(d.last, 1)) })) : null,
       h('p', { class: 'result-score', 'aria-live': 'polite' }, t('daily.result', { n: ok, total })),
       marksRow(r.marks, total, 34),
       streakLine(d, day),
-      h('p', { class: 'muted daily-next' }, t('daily.comeBack'))),
+      r.date === day ? h('p', { class: 'muted daily-next' }, t('daily.comeBack')) : null),
     h('pre', { class: 'daily-share-preview', 'aria-label': t('daily.sharePreview') }, text),
     h('div', { class: 'stack-actions' },
       h('button', { type: 'button', class: 'btn btn-primary btn-block daily-share', 'data-autofocus': '', onclick: share }, svg(ICONS.share), t('daily.share'))),

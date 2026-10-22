@@ -19,12 +19,13 @@ import { test, describe, before } from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
-  CATEGORIES, LEVELS, LEVEL_IDS, LIFELINES, MAX_STREAK, TIMER_MS, RECENT_MAX, fullLifelines, levelOrDefault,
+  CATEGORIES, LEVELS, LEVEL_IDS, LIFELINES, MAX_STREAK, TIMER_MS, RECENT_MAX, QUICK_MAX_SCORE, fullLifelines, levelOrDefault,
 } from '../app/js/config.js';
+import { recordDaily, canPlayDaily, currentStreak, emptyDaily, shareText, HIT_MARK, MISS_MARK } from '../app/js/daily.js';
 import { Pool, quickPlan, nearestDifficulty, shuffle, shuffledOrder } from '../app/js/data.js';
 import {
   STATE_VERSION, newClassicGame, migrateState, isValidState, applyAnswer, isValidFx, isValidClock, isValidLifelines,
-  clockLeft, migrateClock, allInfused, isInfused, startPhase,
+  clockLeft, migrateClock, allInfused, isInfused, startPhase, isGroupGame, roundRest, isClosingRound,
 } from '../app/js/game.js';
 import { graphemes, initialOf, cleanName } from '../app/js/text.js';
 import { ALL_WORKS, WORK_TITLES, workTitle } from '../app/js/works.js';
@@ -157,11 +158,35 @@ describe('fallback when a difficulty is exhausted or missing', () => {
     assert.deepEqual(ds.slice(0, 3), [1, 1, 1]);
     assert.deepEqual(ds.slice(3), [2, 2, 2, 2, 2], 'one step outside the level, never 3');
   });
-  test('easy recycles its own questions once 1 and 2 are used up (never 3)', () => {
+  test('easy with 1 and 2 used up takes unused harder questions before repeating any (beta 4, M1)', () => {
     seed(13);
-    const pool = new Pool(makeQuestions({ sel: { 1: 2, 2: 2, 3: 20 } }));
-    const ds = Array.from({ length: 12 }, () => pool.drawLeveled('sel', 'easy').d);
-    assert.ok(ds.every((d) => d <= 2), JSON.stringify(ds));
+    const pool = new Pool(makeQuestions({ sel: { 1: 2, 2: 2, 3: 3 } }));
+    const qs = Array.from({ length: 7 }, () => pool.drawLeveled('sel', 'easy'));
+    assert.deepEqual(qs.map((q) => q.d), [1, 1, 2, 2, 3, 3, 3], 'the level first, then the nearest unused difficulty');
+    assert.equal(new Set(qs.map((q) => q.id)).size, 7, 'no repeat while an unused question exists');
+  });
+  test('beta 4 M1: Easy with a narrow filter (cosmere 1 + 4) never serves the same question twice in a row', () => {
+    for (const s of [1, 2, 3, 4, 5]) {
+      seed(s);
+      const pool = new Pool(makeQuestions({ cosmere: { 1: 1, 4: 1 } }));
+      const ids = Array.from({ length: 12 }, () => pool.drawLeveled('cosmere', 'easy').id);
+      assert.equal(ids[0], 'cosmere-d1-0', 'the level\'s own question first');
+      assert.equal(ids[1], 'cosmere-d4-0', 'then the unused one, even outside the range');
+      for (let i = 1; i < ids.length; i++) assert.notEqual(ids[i], ids[i - 1], `seed ${s}: draw ${i} repeats the previous question`);
+    }
+  });
+  test('beta 4 M1: recycling never returns the question asked last when another exists (also with a stored `used`)', () => {
+    seed(21);
+    const pool = new Pool(makeQuestions({ sel: { 1: 1, 2: 1, 3: 1 } }));
+    pool.used = { sel: ['sel-d3-0', 'sel-d2-0', 'sel-d1-0'] }; // everything asked, d1 last
+    for (let i = 0; i < 20; i++) {
+      const last = pool.used.sel.at(-1);
+      const q = pool.drawLeveled('sel', 'easy');
+      assert.notEqual(q.id, last, `draw ${i}`);
+    }
+    const one = new Pool(makeQuestions({ sel: { 1: 1 } }));
+    assert.equal(one.drawLeveled('sel', 'easy').id, 'sel-d1-0');
+    assert.equal(one.drawLeveled('sel', 'easy').id, 'sel-d1-0', 'a single question still comes back (nothing else exists)');
   });
   test('expert with no 3/4 in a category draws 2', () => {
     seed(14);
@@ -200,6 +225,36 @@ describe('fallback when a difficulty is exhausted or missing', () => {
 });
 
 // =====================================================================================
+describe('daily challenge: no replay, share text (beta 4)', () => {
+  const marks = (n) => Array.from({ length: 5 }, (_, i) => ({ c: CATEGORIES[i], ok: i < n }));
+  test('M3: a date at or before the last challenge played can never be played again', () => {
+    let s = emptyDaily();
+    assert.equal(canPlayDaily(s, '2026-10-20'), true, 'nothing played yet');
+    s = recordDaily(s, { date: '2026-10-20', lang: 'es', marks: marks(3) });
+    assert.equal(canPlayDaily(s, '2026-10-20'), false, 'same day');
+    assert.equal(canPlayDaily(s, '2026-10-19'), false, 'clock moved back one day (or a trip west)');
+    assert.equal(canPlayDaily(s, '2025-01-01'), false, 'clock moved back a year');
+    assert.equal(canPlayDaily(s, '2026-10-21'), true, 'the next day');
+    // An older run finished late counts but neither moves `last` back nor replaces the result.
+    const late = recordDaily(s, { date: '2026-10-18', lang: 'es', marks: marks(5) });
+    assert.equal(late.last, '2026-10-20'); assert.equal(late.result.date, '2026-10-20'); assert.equal(late.played, 2);
+    assert.equal(canPlayDaily(late, '2026-10-19'), false);
+  });
+  test('M3: the streak is not broken while the device date is at or before the last challenge', () => {
+    let s = recordDaily(emptyDaily(), { date: '2026-10-19', lang: 'es', marks: marks(1) });
+    s = recordDaily(s, { date: '2026-10-20', lang: 'es', marks: marks(1) });
+    assert.equal(currentStreak(s, '2026-10-17'), 2);
+    assert.equal(currentStreak(s, '2026-10-21'), 2);
+    assert.equal(currentStreak(s, '2026-10-22'), 0);
+  });
+  test('share text: one check or cross per question, the date as given (localized by the caller)', () => {
+    const txt = shareText({ title: 'T', date: '21 de octubre de 2026', marks: [{ c: 'scadrial', ok: false }, { c: 'cosmere', ok: true }, { c: 'roshar', ok: true }], streakLabel: 'S', filteredLabel: 'F' });
+    assert.equal(txt, `T · 21 de octubre de 2026\n${MISS_MARK}${HIT_MARK}${HIT_MARK} 2/3\nS\nF`);
+    assert.equal(HIT_MARK, '✅'); assert.equal(MISS_MARK, '❌');
+    assert.ok(!/[🟦🟥🟩🟨🟪⬜⬛]/u.test(txt), 'no world squares that read as hit/miss');
+  });
+});
+
 describe('spoiler filter', () => {
   const qs = makeQuestions({ roshar: full(4), sel: { 1: 4 } }, ['way-of-kings', 'oathbringer']);
   test('disabled works never come out of any draw', () => {
@@ -336,7 +391,8 @@ describe('save validation and migration (classic)', () => {
       { phase: 'handoff', resume: 'question', pending: pend('roshar') },
       { phase: 'question', pending: { ...pend('sel'), fx: { removed: [1, 2], struck: [], armed: false }, clock: { remaining: 12000, savedAt: Date.now() } } },
       { phase: 'question', pending: { ...pend('sel'), fx: { removed: [], struck: [3], armed: false }, clock: { remaining: 0, savedAt: null } } },
-      { phase: 'won', winner: 1 },
+      { phase: 'won', winner: 1, winners: [1] },
+      { phase: 'won', winner: 1, winners: [1, 0] },
     ];
     for (const v of variants) assert.equal(isValidState({ ...clone(base), ...v }), true, JSON.stringify(v));
     const fin = clone(base);
@@ -345,11 +401,13 @@ describe('save validation and migration (classic)', () => {
     assert.equal(isValidState(fin), true);
     assert.equal(isValidState({ ...fin, phase: 'question', pending: pend('sel', true) }), true);
   });
-  test('v1 save migrates to v3: level normal, full lifelines, streak 0, stats added', () => {
+  test('v1 save migrates to v4: level normal, full lifelines, streak 0, stats added, no full round', () => {
     const v1 = { v: 1, players: [{ name: 'Ana', color: 'roshar', charges: { roshar: 1 } }, { name: 'Bo', color: 'sel', charges: {} }],
       current: 1, phase: 'spin', timer: true, categories: [...CATEGORIES], used: {}, pending: null, asked: 3, winner: null };
     const s = migrateState(clone(v1));
-    assert.equal(s.v, 3);
+    assert.equal(s.v, 4);
+    assert.equal(s.fullRound, false);
+    assert.deepEqual([s.starter, s.winners, s.roundLeft], [1, [], null]);
     assert.equal(s.level, 'normal');
     assert.equal(s.streak, 0);
     assert.equal(s.first, false);
@@ -520,12 +578,12 @@ describe('applyAnswer rules', () => {
     assert.equal(r.allInfused, true); assert.equal(s.phase, 'final-intro'); assert.equal(s.current, 0);
     assert.equal(isValidState(s), true);
   });
-  test('final question: right answer wins, wrong passes the turn', () => {
-    let s = game(); s.current = 0; infuseAll(s.players[0]);
+  test('final question (full round off): right answer wins, wrong passes the turn', () => {
+    let s = game(P2, { fullRound: false }); s.current = 0; infuseAll(s.players[0]);
     let r = ask(s, 'sel', true, true);
     assert.equal(r.won, true); assert.equal(s.phase, 'won'); assert.equal(s.winner, 0);
     assert.equal(isValidState(s), true);
-    s = game(); s.current = 0; infuseAll(s.players[0]);
+    s = game(P2, { fullRound: false }); s.current = 0; infuseAll(s.players[0]);
     r = ask(s, 'sel', false, true);
     assert.equal(r.won, false); assert.equal(s.current, 1); assert.equal(s.winner, null);
     assert.equal(isValidState(s), true);
@@ -535,6 +593,103 @@ describe('applyAnswer rules', () => {
     infuseAll(s.players[0], ['roshar', 'sel']);
     assert.equal(allInfused(s, s.players[0]), true);
     assert.equal(allInfused({ categories: [] }, s.players[0]), false);
+  });
+});
+
+// =====================================================================================
+describe('full round and group games (2.0.0, lead decisions 2 and 3)', () => {
+  const P4 = [...P2, { name: 'Cy', color: 'nalthis' }, { name: 'Di', color: 'otros' }];
+  const ask = (s, cat, correct, final = false) => { s.phase = 'question'; s.pending = pend(cat, final); return applyAnswer(s, correct); };
+  /** A 4-player game started by `starter`, with `current` holding every gem. */
+  const setup = (starter, current, opts = {}) => {
+    const s = game(P4, opts); s.starter = starter; s.current = current; infuseAll(s.players[current]); s.phase = 'final-intro';
+    return s;
+  };
+
+  test('defaults: on with 2+ players, never solo; the starter is the random first player', () => {
+    const s = game(P4);
+    assert.equal(s.fullRound, true); assert.equal(s.starter, s.current);
+    assert.deepEqual([s.winners, s.roundLeft], [[], null]);
+    assert.equal(game(P4, { fullRound: false }).fullRound, false);
+    assert.equal(game([{ name: 'Solo', color: 'roshar' }]).fullRound, false);
+    assert.equal(isValidState(s), true);
+  });
+  test('isGroupGame: 2+ players only', () => {
+    assert.equal(isGroupGame(game(P2)), true);
+    assert.equal(isGroupGame(game([{ name: 'Solo', color: 'roshar' }])), false);
+    assert.equal(isGroupGame(null), false);
+  });
+  test('roundRest: the players after the current one, up to the one before the starter', () => {
+    assert.deepEqual(roundRest({ ...setup(1, 1) }), [2, 3, 0]);
+    assert.deepEqual(roundRest({ ...setup(1, 3) }), [0]);
+    assert.deepEqual(roundRest({ ...setup(1, 0) }), []);
+    assert.deepEqual(roundRest({ ...setup(0, 0) }), [1, 2, 3]);
+  });
+  test('a right final with players left in the round: they play on, then one who also answers right shares the victory', () => {
+    const s = setup(0, 1); // Bo (2nd in the round) answers the final right; Cy and Di still play
+    let r = ask(s, 'sel', true, true);
+    assert.equal(r.finalWin, true); assert.equal(r.won, false); assert.equal(r.roundGoesOn, true); assert.equal(r.shared, false);
+    assert.deepEqual(s.winners, [1]); assert.deepEqual(s.roundLeft, [3]); assert.equal(s.current, 2); assert.equal(s.phase, 'handoff');
+    assert.equal(r.next, 'Cy');
+    assert.equal(isValidState(s), true);
+    // Cy misses an ordinary question: the turn goes to Di (the last of the round), not back to Ana.
+    s.phase = 'spin';
+    r = ask(s, 'roshar', false);
+    assert.equal(r.won, false); assert.equal(s.current, 3); assert.deepEqual(s.roundLeft, []); assert.equal(r.next, 'Di');
+    assert.equal(isValidState(s), true);
+    // Di has every gem and answers the final right: shared victory, the round is over.
+    infuseAll(s.players[3]);
+    r = ask(s, 'cosmere', true, true);
+    assert.equal(r.won, true); assert.equal(r.shared, true); assert.equal(r.roundOver, true);
+    assert.deepEqual(s.winners, [1, 3]); assert.deepEqual(r.winners, [1, 3]); assert.equal(s.winner, 1);
+    assert.equal(s.phase, 'won'); assert.equal(s.roundLeft, null);
+    assert.equal(isValidState(s), true);
+  });
+  test('the closing round ends after the last player even on a miss or a 3-answer streak: one winner', () => {
+    let s = setup(2, 0); // Ana answers right; only Bo is left (Cy started)
+    ask(s, 'sel', true, true);
+    assert.deepEqual([s.current, s.roundLeft], [1, []]);
+    s.phase = 'spin';
+    let r = ask(s, 'roshar', false);
+    assert.equal(r.won, true); assert.equal(r.roundOver, true); assert.equal(r.shared, false); assert.deepEqual(s.winners, [0]);
+    s = setup(2, 0);
+    ask(s, 'sel', true, true);
+    s.phase = 'spin';
+    for (let i = 0; i < MAX_STREAK - 1; i++) assert.equal(ask(s, CATEGORIES[i], true).won, false);
+    r = ask(s, 'nalthis', true);
+    assert.equal(r.streakEnd, true); assert.equal(r.won, true); assert.equal(r.roundOver, true);
+  });
+  test('the last player of the round answering the final right wins at once; full round off wins at once', () => {
+    let s = setup(1, 0); // Ana is the last of the round started by Bo
+    let r = ask(s, 'sel', true, true);
+    assert.equal(r.won, true); assert.equal(r.roundOver, false); assert.deepEqual(s.winners, [0]);
+    s = setup(0, 0, { fullRound: false });
+    r = ask(s, 'sel', true, true);
+    assert.equal(r.won, true); assert.deepEqual(s.winners, [0]);
+  });
+  test('validation of the new fields and migration of a 1.6 (v3) save', () => {
+    const s = setup(0, 1);
+    ask(s, 'sel', true, true);
+    const ok = clone(s);
+    assert.equal(isValidState(ok), true);
+    const bad = [
+      { fullRound: 'yes' }, { starter: 9 }, { starter: -1 }, { winners: [1, 1] }, { winners: [7] }, { winners: 'x' },
+      { roundLeft: [1] }, { roundLeft: [2] }, { roundLeft: [3, 3] }, { roundLeft: [9] }, { roundLeft: [3], winners: [] },
+      { roundLeft: null }, { fullRound: false }, { phase: 'won', winner: 0, winners: [1] }, { phase: 'won', winner: 1, winners: [] },
+    ];
+    for (const b of bad) assert.equal(isValidState({ ...clone(ok), ...b }), false, JSON.stringify(b));
+    assert.equal(isValidState({ ...game([{ name: 'Solo', color: 'roshar' }]), fullRound: true }), false, 'solo can\'t have a full round');
+    // A 1.6.0 save in progress (v3): the old rules stay (first right final wins), nothing else changes.
+    const v3 = { ...clone(game(P4)), v: 3, current: 2 };
+    for (const k of ['fullRound', 'starter', 'winners', 'roundLeft']) delete v3[k];
+    const m = migrateState(v3);
+    assert.equal(m.v, STATE_VERSION);
+    assert.deepEqual([m.fullRound, m.starter, m.winners, m.roundLeft], [false, 2, [], null]);
+    assert.equal(isValidState(m), true);
+    // Odd values in a v4 save get safe defaults only where that is harmless.
+    const odd = migrateState({ ...clone(game(P4)), fullRound: 1, starter: 'x' });
+    assert.deepEqual([odd.fullRound, odd.starter], [false, 0]);
+    assert.equal(isValidState(odd), true);
   });
 });
 
@@ -639,9 +794,53 @@ describe('report question link', async () => {
     assert.ok(r.body.includes('roshar-001'));
     assert.ok(!/[\uD800-\uDBFF]$/.test(r.title), 'no half emoji');
   });
+  test('2.0.0: the body is fully in the reporter\'s language (no Spanish/English mix); English by default', { skip: !report && 'app/js/report.js not present' }, () => {
+    const labels = { id: 'ID', language: 'Sprache', world: 'Welt', difficulty: 'Schwierigkeit', mode: 'Modus', version: 'Version', question: 'Frage', explanation: 'Erklärung', describe: 'Was ist falsch?', worldName: 'Roschar', modeName: 'Klassisches Spiel' };
+    const r = report.buildReport(q, { lang: 'de', version: '2.0.0', mode: 'classic', labels });
+    for (const part of ['**Sprache:** de', '**Welt:** Roschar · **Schwierigkeit:** 1', '**Modus:** Klassisches Spiel', '**Version:** 2.0.0', `**Frage:** ${q.q}`, '**Erklärung:** Explicación.', '**Was ist falsch?**']) assert.ok(r.body.includes(part), part);
+    assert.ok(!/Idioma|Language|Mundo|Pregunta|Question|Explanation|Versión/.test(r.body), r.body);
+    assert.ok(r.text.includes('**Frage:**'));
+    const en = report.buildReport(q, { lang: 'en', version: '2.0.0', mode: 'quick' });
+    for (const part of ['**Language:** en', '**World:** roshar', '**Mode:** quick', '**Question:**', '**What is wrong?**']) assert.ok(en.body.includes(part), part);
+    assert.ok(!/Idioma|Mundo|Pregunta/.test(en.body));
+    const fr = report.buildReport(q, { lang: 'fr', version: '2.0.0', labels: { language: 'Langue', format: '{label}\u00a0: {text}' } });
+    assert.ok(fr.body.includes('**Langue\u00a0:** fr'), 'French colon with a no-break space');
+  });
   test('the issue template the app links to exists', { skip: !cfg.REPORT_TEMPLATE && 'no REPORT_TEMPLATE' }, async () => {
     const { existsSync } = await import('node:fs');
     assert.ok(existsSync(new URL(`../.github/ISSUE_TEMPLATE/${cfg.REPORT_TEMPLATE}`, import.meta.url)), cfg.REPORT_TEMPLATE);
+  });
+});
+
+// =====================================================================================
+describe('achievements unreachable under the spoiler filter (2.0.0)', async () => {
+  const { isBlocked, ACHIEVEMENTS } = await import('../app/js/achievements.js');
+  const world = (cat, seen, total) => ({ cat, seen, total });
+  const col = (worlds) => ({ seen: worlds.reduce((n, w) => n + w.seen, 0), total: worlds.reduce((n, w) => n + w.total, 0), worlds });
+  const stats = (hit = []) => ({ cats: Object.fromEntries(CATEGORIES.map((c) => [c, { a: 1, c: hit.includes(c) ? 1 : 0 }])) });
+  const all = col(CATEGORIES.map((c) => world(c, 0, 10)));
+  test('no filter: nothing is blocked', () => {
+    const ctx = { stats: stats(), collection: all, filtered: all };
+    for (const a of ACHIEVEMENTS) assert.equal(isBlocked(a.id, ctx), false, a.id);
+  });
+  test('a filter hiding a whole world blocks the six-gem and every-world ones, unless already done', () => {
+    const filtered = col(CATEGORIES.map((c) => world(c, 0, c === 'otros' ? 0 : 10)));
+    const ctx = { stats: stats(), collection: all, filtered };
+    assert.equal(isBlocked('flawless', ctx), true);
+    assert.equal(isBlocked('allWorlds', ctx), true);
+    assert.equal(isBlocked('allWorlds', { ...ctx, stats: stats(['otros']) }), false, 'a world answered right before still counts');
+    assert.equal(isBlocked('compendium', ctx), false, 'another world can still be completed');
+    assert.equal(isBlocked('halfCosmere', ctx), false, '50 of 60 still reachable');
+    assert.equal(isBlocked('firstWin', ctx), false);
+  });
+  test('a narrow filter blocks compendium, half the Cosmere and the perfect quick game', () => {
+    const filtered = col(CATEGORIES.map((c) => world(c, 0, c === 'sel' ? 4 : 0)));
+    const ctx = { stats: stats(), collection: all, filtered };
+    for (const id of ['compendium', 'halfCosmere', 'quickPerfect', 'flawless']) assert.equal(isBlocked(id, ctx), true, id);
+    // Questions seen before the filter count: a world already discovered but for what the filter allows.
+    const seenAll = col(CATEGORIES.map((c) => world(c, c === 'sel' ? 6 : 0, 10)));
+    assert.equal(isBlocked('compendium', { ...ctx, collection: seenAll, filtered: col(CATEGORIES.map((c) => world(c, 0, c === 'sel' ? 4 : 0))) }), false);
+    assert.equal(isBlocked('compendium', { stats: stats(), collection: all }), false, 'no filter info: never blocked');
   });
 });
 
@@ -686,6 +885,26 @@ describe('stored data through the app loaders (stubbed storage)', () => {
     assert.deepEqual(st.cats.roshar, { a: 2, c: 2 }); assert.deepEqual(st.cats.sel, { a: 0, c: 0 });
     assert.equal(st.lifelines.atium, 0); assert.equal(st.lifelines.breath, 4);
     put('stats', '{not json'); assert.equal(core.getStats().bestQuick, 0);
+  });
+  test('stats 2.0.0: group games are a separate counter (missing in older saves → 0; odd → 0; imported)', () => {
+    put('stats', { classicGames: 2 });
+    assert.equal(core.getStats().groupGames, 0);
+    put('stats', { groupGames: -1 }); assert.equal(core.getStats().groupGames, 0);
+    put('stats', { groupGames: 4.5 }); assert.equal(core.getStats().groupGames, 0);
+    put('stats', { groupGames: 7, classicGames: 1 });
+    assert.deepEqual([core.getStats().groupGames, core.getStats().classicGames], [7, 1]);
+    assert.equal(core.sanitizeStats({ groupGames: 3 }).groupGames, 3);
+  });
+  test(`stats: quick records are clamped to the best possible score (${QUICK_MAX_SCORE}), also on import`, () => {
+    assert.equal(QUICK_MAX_SCORE, 3000);
+    put('stats', { bestQuick: 99999, bestByLevel: { easy: 3001, hard: 2500, expert: 1e9 } });
+    const st = core.getStats();
+    assert.equal(st.bestQuick, 3000);
+    assert.deepEqual(st.bestByLevel, { easy: 3000, normal: 0, hard: 2500, expert: 3000 });
+    assert.equal(core.sanitizeStats({ bestQuick: 3000 }).bestQuick, 3000, 'the maximum itself is kept');
+    assert.ok(core.importData({ stats: { bestQuick: 123456, bestByLevel: { normal: 5000 } } }));
+    const imp = core.getStats();
+    assert.equal(imp.bestQuick, 3000); assert.equal(imp.bestByLevel.normal, 3000);
   });
 
   test(`recently seen: ring buffer of ${RECENT_MAX} per language, most recent last, no duplicates`, () => {
@@ -746,12 +965,12 @@ describe('stored data through the app loaders (stubbed storage)', () => {
     assert.equal(quick.loadSavedResult(), null, 'not a record but above the best');
   });
 
-  test('classic: a v1 save is migrated and written back as v3', () => {
+  test('classic: a v1 save is migrated and written back as v4', () => {
     put('classic', { v: 1, players: [{ name: 'Ana', color: 'roshar', charges: {} }, { name: 'Bo', color: 'sel', charges: {} }],
       current: 0, phase: 'spin', timer: false, categories: [...CATEGORIES], used: {}, pending: null, asked: 0, winner: null });
     const s = classic.loadSavedGame();
-    assert.ok(s); assert.equal(s.v, 3);
-    assert.equal(JSON.parse(mem.get(PREFIX + 'classic')).v, 3);
+    assert.ok(s); assert.equal(s.v, 4);
+    assert.equal(JSON.parse(mem.get(PREFIX + 'classic')).v, 4);
   });
   test('classic: corrupt, invalid or finished saves are deleted', () => {
     for (const bad of ['{oops', 'null', JSON.stringify({ v: 3 }), JSON.stringify({ ...game(), phase: 'won', winner: 0 })]) {
@@ -763,3 +982,95 @@ describe('stored data through the app loaders (stubbed storage)', () => {
 });
 
 process.on('exit', () => { Math.random = realRandom; });
+
+// ============================================================================================
+// Glossary merge (tools/merge-glossary.mjs) — beta round 4, m8 + m9. Separate block owned by the
+// terminologist; it only reads content files, never writes them.
+// ============================================================================================
+{
+  const M = await import('./merge-glossary.mjs');
+  const { readFileSync, existsSync } = await import('node:fs');
+  const ROOT = new URL('..', import.meta.url);
+  const clone = (o) => JSON.parse(JSON.stringify(o));
+  const fixture = () => ({
+    glossary: {
+      Raboniel: { es: 'Raboniel', status: { es: 'unchanged' }, notes: 'Proper name. [es] X. [es] X. [es] X.', sources: ['https://coppermind.net', 'https://coppermind.net'] },
+      Shardblade: { es: 'Hoja Esquirlada', status: { es: 'official' }, notes: '', sources: ['https://www.penguinlibros.com/es/fantasia/x-el-camino-de-los-reyes (Nova blurb)'] },
+      Lone: { es: 'Solo', status: { es: 'official' }, notes: '', sources: [] },
+      Jak: { es: 'Alomante Jak', status: { es: 'official' }, notes: '', sources: ['https://tercerafundacion.net/ficha/1 ; https://archive.org/details/arcanum-ilimitado (contents)'] },
+    },
+    reviews: { es: { Raboniel: { es: 'Rabeniel', status: 'official', sources: ['https://es.coppermind.net/wiki/Rabeniel'], notes: 'page title' } } },
+  });
+
+  describe('merge-glossary (beta 4, m8/m9)', () => {
+    test('m9: triplicated note segments and duplicated sources collapse to one', () => {
+      assert.equal(M.dedupeNotes('Base. [es] A b. [fr] C. [es] A b. [fr] C. [es] A b.  [fr] C. '), 'Base. [es] A b. [fr] C.');
+      const { glossary } = fixture();
+      M.normalize(glossary);
+      assert.equal(glossary.Raboniel.notes, 'Proper name. [es] X.');
+      assert.deepEqual(glossary.Raboniel.sources, ['https://coppermind.net']);
+    });
+    test('m9: running the merge twice never changes the result (idempotent)', () => {
+      const { glossary, reviews } = fixture();
+      M.run(glossary, reviews);
+      const once = JSON.stringify(glossary);
+      for (let i = 0; i < 3; i++) M.run(glossary, clone(reviews));
+      assert.equal(JSON.stringify(glossary), once);
+      assert.equal(M.splitNotes(glossary.Raboniel.notes).filter((s) => s === '[es] page title').length, 1);
+    });
+    test('m8: es.coppermind alone is community, nothing at all is unverified, an edition source stays official', () => {
+      const { glossary, reviews } = fixture();
+      const { downgrades } = M.run(glossary, reviews);
+      assert.equal(glossary.Raboniel.status.es, 'community', 'Rabeniel: only es.coppermind');
+      assert.equal(glossary.Lone.status.es, 'unverified');
+      assert.equal(glossary.Shardblade.status.es, 'official');
+      assert.equal(glossary.Jak.status.es, 'official', 'a compound "wiki ; archive.org" source counts as edition evidence');
+      assert.deepEqual(downgrades.map((d) => `${d.term}:${d.to}`).sort(), ['Lone:unverified', 'Raboniel:community']);
+      assert.match(glossary.Raboniel.notes, /\[audit\] es: downgraded from official to community/);
+    });
+    test('source classification', () => {
+      assert.equal(M.sourceKind('https://es.coppermind.net/wiki/Esquirla'), 'wiki');
+      assert.equal(M.sourceKind('https://kosmeer.fandom.com/de/ (German fan wiki citing Heyne/Piper editions)wiki/X'), 'wiki');
+      assert.equal(M.sourceKind('glossary (status official)'), 'internal');
+      assert.equal(M.sourceKind('https://www.mondadori.it/libri/x/'), 'edition');
+      assert.equal(M.sourceKind('https://www.babelio.com/livres/x'), 'review');
+      assert.equal(M.sourceLang('https://it.coppermind.net/wiki/Cosmoverso'), 'it');
+      assert.equal(M.sourceLang('https://www.livredepoche.com/livre/x'), 'fr');
+    });
+    test('content/glossary.json is already merged: no duplicates, no official without an edition source, a re-run is a no-op', () => {
+      const gPath = new URL('content/glossary.json', ROOT);
+      const glossary = JSON.parse(readFileSync(gPath, 'utf8'));
+      const reviews = {};
+      for (const lang of M.LANGS) {
+        const p = new URL(`content/${lang}/glossary-review.json`, ROOT);
+        if (existsSync(p)) reviews[lang] = JSON.parse(readFileSync(p, 'utf8'));
+      }
+      const before = JSON.stringify(glossary);
+      for (const [term, e] of Object.entries(glossary)) {
+        const segs = M.splitNotes(e.notes);
+        assert.equal(new Set(segs).size, segs.length, `duplicated note segment in "${term}"`);
+        assert.equal(new Set(e.sources ?? []).size, (e.sources ?? []).length, `duplicated source in "${term}"`);
+      }
+      M.run(glossary, reviews);
+      assert.equal(JSON.stringify(glossary), before, 'node tools/merge-glossary.mjs would change the glossary: run it');
+      for (const [term, e] of Object.entries(glossary)) for (const lang of M.LANGS) {
+        if (e.status?.[lang] !== 'official') continue;
+        const own = M.sourcesFor(e, lang, reviews[lang]?.[term]?.sources ?? []);
+        assert.ok(own.some((s) => ['edition', 'review'].includes(M.sourceKind(s))), `${lang} "${term}" is official without an edition source`);
+      }
+    });
+  });
+}
+
+describe('beta 5: closing round messages', () => {
+  test('isClosingRound is true only after a right final with players left in a full round', () => {
+    const players = ['A', 'B', 'C'].map((name, i) => ({ name, color: ['roshar', 'sel', 'nalthis'][i] }));
+    const s = newClassicGame({ players, timer: false, categories: ['roshar', 'sel'], level: 'normal', fullRound: true });
+    assert.equal(isClosingRound(s), false, 'fresh game');
+    s.winners = [0]; s.roundLeft = [1, 2];
+    assert.equal(isClosingRound(s), true, 'someone won, round still closing');
+    s.fullRound = false;
+    assert.equal(isClosingRound(s), false, 'no full round option');
+    assert.equal(isClosingRound(null), false);
+  });
+});

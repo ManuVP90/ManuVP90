@@ -3,7 +3,7 @@ import { h, svg } from './dom.js';
 import { ICONS, gemSvg } from './icons.js';
 import { t } from './i18n.js';
 import * as store from './storage.js';
-import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LANGS, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, RECENT_MAX, MISSED_MAX, SEEN_MAX, levelOrDefault } from './config.js';
+import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LANGS, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, RECENT_MAX, MISSED_MAX, SEEN_MAX, QUICK_MAX_SCORE, levelOrDefault } from './config.js';
 import { ACHIEVEMENTS, sanitizeAchievements, newlyEarned } from './achievements.js';
 import { sanitizeDaily } from './daily.js';
 import { addId, removeId, cleanIds, cleanIdMap } from './progress.js';
@@ -63,7 +63,9 @@ function applySettings() {
 }
 
 const emptyStats = () => ({
-  classicGames: 0, quickGames: 0, bestQuick: 0,
+  // classicGames: solo classic games won. groupGames (2.0.0): classic games of 2+ players finished;
+  // they feed nothing else (lead decision 2: group play isn't the device owner's progress).
+  classicGames: 0, groupGames: 0, quickGames: 0, bestQuick: 0,
   // Quick-game best score per level (1.5.0). `bestQuick` stays the best of all (older saves only have it).
   bestByLevel: Object.fromEntries(LEVEL_IDS.map((l) => [l, 0])),
   cats: Object.fromEntries(CATEGORIES.map((c) => [c, { a: 0, c: 0 }])),
@@ -74,8 +76,12 @@ const emptyStats = () => ({
 export function sanitizeStats(s) {
   const base = emptyStats();
   if (!isObj(s)) return base;
-  for (const k of ['classicGames', 'quickGames', 'bestQuick']) base[k] = count(s[k]);
+  for (const k of ['classicGames', 'groupGames', 'quickGames', 'bestQuick']) base[k] = count(s[k]);
   if (isObj(s.bestByLevel)) for (const l of LEVEL_IDS) base.bestByLevel[l] = count(s.bestByLevel[l]);
+  // No record above the best possible score (edited storage, a tampered import): clamped to it.
+  const score = (n) => Math.min(n, QUICK_MAX_SCORE);
+  base.bestQuick = score(base.bestQuick);
+  for (const l of LEVEL_IDS) base.bestByLevel[l] = score(base.bestByLevel[l]);
   // The overall record is never below a level's record.
   base.bestQuick = Math.max(base.bestQuick, ...Object.values(base.bestByLevel));
   if (isObj(s.cats)) {
@@ -196,9 +202,12 @@ export function saveDaily(d, { check = true } = {}) { store.save('daily', d); if
 
 // ---------- achievements ----------
 export function getAchievements() { return sanitizeAchievements(store.load('achievements', null)); }
-/** What the achievement rules look at. Collection-based ones count every question of the language (no filter). */
+/**
+ * What the achievement rules look at. Collection-based ones count every question of the language
+ * (no filter); `filtered` (the collection under the spoiler filter) only says what is unreachable.
+ */
 export function achievementContext() {
-  return { stats: getStats(), collection: collection([]), daily: getDaily(), langs: getAchievements().langs };
+  return { stats: getStats(), collection: collection([]), filtered: collection(), daily: getDaily(), langs: getAchievements().langs };
 }
 /** Remembers that a question was answered in the active question language (for "play in 3 languages"). */
 function noteLangPlayed() {

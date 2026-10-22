@@ -63,7 +63,7 @@
    "Kandra",
    "Custodi"
   ],
-  "explain": "Gli Inquisitori ottengono i loro poteri con l’Emalurgia, tramite chiodi piantati nel corpo."
+  "explain": "Nonostante i chiodi conficcati negli occhi, gli Inquisitori riescono comunque a vedere."
  },
  {
   "id": "scadrial-007",
@@ -914,7 +914,7 @@
  },
  {
   "id": "scadrial-084",
-  "q": "Ne «Le ombre residue», quale governante ha ucciso in segreto Salassa, impersonandolo per fomentare disordini a Elendel?",
+  "q": "Ne «Le ombre residue», quale governante è stato ucciso in segreto da Salassa, che poi lo ha impersonato per fomentare disordini a Elendel?",
   "a": "Replar Innate",
   "wrong": [
    "Winsting Innate",
@@ -925,14 +925,14 @@
  },
  {
   "id": "scadrial-085",
-  "q": "Quale kandra diede a Wax l’orecchino attraverso cui Armonia può parlargli?",
+  "q": "Secondo Brandon Sanderson, quale kandra diede a Wax il suo orecchino?",
   "a": "MeLaan",
   "wrong": [
    "TenSoon",
    "VenDell",
    "KanPaar"
   ],
-  "explain": "MeLaan glielo diede anni prima: ricavato da chiodi di Inquisitore fusi, permette ad Armonia di sentire i suoi pensieri."
+  "explain": "Sanderson lo rivelò durante un firmacopie nel 2011: MeLaan glielo aveva consegnato di persona anni prima che Wax tornasse a Elendel."
  },
  {
   "id": "scadrial-086",

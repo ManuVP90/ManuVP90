@@ -1,7 +1,8 @@
 import { h, svg } from '../dom.js';
 import { ICONS } from '../icons.js';
 import { t, getLang, num } from '../i18n.js';
-import { app, go, screen, confirmDialog, noQuestionsBanner, filterIsEmpty } from '../core.js';
+import { app, go, screen, confirmDialog, noQuestionsBanner, filterIsEmpty, makePool } from '../core.js';
+import { CATEGORIES } from '../config.js';
 import { fx } from '../fx.js';
 import { loadSavedGame } from './classic.js';
 import { loadSavedRun, discardRun } from './quick.js';
@@ -44,7 +45,15 @@ export function homeScreen() {
   const daily = dailyStatus();
   const dailyDesc = daily.state === 'run' ? t('home.dailyRun', { n: daily.n, total: daily.total })
     : daily.state === 'done' ? t('home.dailyDone', { n: daily.score, total: daily.total, streak: num(daily.streak) })
+      : daily.state === 'locked' ? t('home.dailyLocked')
       : daily.streak ? t('home.dailyStreak', { n: num(daily.streak) }) : t('home.dailyDesc');
+  // Texts follow the spoiler filter (beta 4, m2): "all your gems" when it leaves fewer than six worlds.
+  const allWorlds = app.loadError || filterIsEmpty() || makePool({}).categories().length >= CATEGORIES.length;
+  // "Continue game" says whose turn it is (beta 4, m3).
+  const continueDesc = () => {
+    const players = saved.players.map((p) => p.name).join(', ');
+    return saved.players.length > 1 ? t('home.continueTurn', { name: saved.players[saved.current].name, players }) : t('home.continueDesc', { players });
+  };
   const smallBtn = (icon, label, target) => h('button', { type: 'button', class: 'small-btn', onclick: () => { fx.tap(); go(target); } }, svg(ICONS[icon]), h('span', {}, label));
 
   return screen('home',
@@ -58,9 +67,9 @@ export function homeScreen() {
     // The spoiler filter leaves no question: warn before any game is started.
     !app.loadError && filterIsEmpty() ? noQuestionsBanner('home-empty') : null,
     h('nav', { class: 'menu', 'aria-label': t('app.title') },
-      saved ? bigButton('play', t('home.continue'), t('home.continueDesc', { players: saved.players.map((p) => p.name).join(', ') }), () => go('classic', { resume: true }), 'menu-continue menu-continue-classic') : null,
+      saved ? bigButton('play', t('home.continue'), continueDesc(), () => go('classic', { resume: true }), 'menu-continue menu-continue-classic') : null,
       savedQuick ? bigButton('bolt', t('home.continueQuick'), t('home.continueQuickDesc', { n: savedQuick.index + 1, total: savedQuick.total, score: num(savedQuick.score) }), () => go('quick', { resume: true }), 'menu-continue menu-continue-quick') : null,
-      bigButton('users', t('home.classic'), t('home.classicDesc'), startClassic, saved || savedQuick ? '' : 'menu-primary'),
+      bigButton('users', t('home.classic'), t(allWorlds ? 'home.classicDesc' : 'home.classicDescFiltered'), startClassic, saved || savedQuick ? '' : 'menu-primary'),
       bigButton('bolt', t('home.quick'), t('home.quickDesc'), startQuick, 'menu-quick'),
       bigButton('book', t('home.practice'), t('home.practiceDesc'), () => go('practice-setup')),
       bigButton('calendar', daily.state === 'run' ? t('home.dailyContinue') : t('home.daily'), dailyDesc, () => go('daily'), `menu-daily daily-${daily.state}`)),

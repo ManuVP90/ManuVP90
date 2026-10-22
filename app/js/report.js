@@ -10,31 +10,44 @@ export function clip(s, max) {
   return chars.length <= max ? chars.join('') : `${chars.slice(0, Math.max(0, max - 1)).join('')}…`;
 }
 
+/** English field names, used for any label the caller doesn't pass. */
+export const REPORT_LABELS = {
+  id: 'ID', language: 'Language', world: 'World', difficulty: 'Difficulty', mode: 'Mode', version: 'Version',
+  question: 'Question', explanation: 'Explanation', describe: 'What is wrong?',
+};
+
 /**
  * The issue for question `q` ({ id, c, d, q, o, x }; o[0] is the correct answer).
- * `labels` holds the localized lines ({ describe }) so the reporter sees their own language.
+ * `labels` holds the localized field names (see REPORT_LABELS), `worldName` / `modeName` and `format`
+ * (a "{label}: {text}" template for the language's colon), so the
+ * whole body is in the reporter's language (beta 4: no Spanish/English mix).
  * Returns { title, body, url, text } where `text` is the plain report (title + body) to copy
- * when offline. The URL never exceeds REPORT_MAX_URL: the explanation is shortened first,
- * then dropped, then the question and options are shortened.
+ * ("Copy report", or the link when offline). The URL never exceeds REPORT_MAX_URL: the
+ * explanation is shortened first, then dropped, then the question and options are shortened.
  */
 export function buildReport(q, { lang = 'en', version = '', mode = '', labels = {} } = {}) {
+  const L = { ...REPORT_LABELS, ...Object.fromEntries(Object.entries(labels).filter(([k, v]) => k !== 'format' && typeof v === 'string' && v)) };
   const id = clip(q?.id || '?', 64);
   const title = clip(`[${id}] ${q?.q || ''}`, 120);
+  // "Label:" in the language's typography (French puts a no-break space before the colon), from
+  // a "{label}: {text}" template (i18n common.labelled).
+  const head = (labels.format || '{label}: {text}').split('{text}')[0].trimEnd();
+  const field = (name, value) => `**${head.replace('{label}', L[name])}** ${value}`;
   const make = (qMax, oMax, xMax) => {
     const opts = (Array.isArray(q?.o) ? q.o : []).map((o, i) => `- ${i === 0 ? '✅' : '❌'} ${clip(o, oMax)}`);
     const lines = [
-      `**ID:** ${id}`,
-      `**Idioma / Language:** ${lang}`,
-      q?.c ? `**Mundo / World:** ${q.c} · **Dificultad / Difficulty:** ${q.d ?? '?'}` : null,
-      mode ? `**Modo / Mode:** ${mode}` : null,
-      `**Versión / Version:** ${version}`,
+      field('id', id),
+      field('language', lang),
+      q?.c ? `${field('world', L.worldName || q.c)} · ${field('difficulty', q.d ?? '?')}` : null,
+      mode ? field('mode', L.modeName || mode) : null,
+      field('version', version),
       '',
-      `**Pregunta / Question:** ${clip(q?.q, qMax)}`,
+      field('question', clip(q?.q, qMax)),
       '',
       ...opts,
-      xMax > 0 && q?.x ? `\n**Explicación / Explanation:** ${clip(q.x, xMax)}` : null,
+      xMax > 0 && q?.x ? `\n${field('explanation', clip(q.x, xMax))}` : null,
       '',
-      `**${labels.describe || 'What is wrong?'}**`,
+      `**${L.describe}**`,
       '',
     ].filter((l) => l !== null);
     return lines.join('\n');
@@ -47,6 +60,6 @@ export function buildReport(q, { lang = 'en', version = '', mode = '', labels = 
     body = make(qm, om, xm);
     if (url(body).length <= REPORT_MAX_URL) break;
   }
-  if (url(body).length > REPORT_MAX_URL) body = `**ID:** ${id}\n**Idioma / Language:** ${lang}\n**Versión / Version:** ${version}`;
+  if (url(body).length > REPORT_MAX_URL) body = [field('id', id), field('language', lang), field('version', version)].join('\n');
   return { title, body, url: url(body), text: `${title}\n\n${make(2000, 500, 2000)}` };
 }

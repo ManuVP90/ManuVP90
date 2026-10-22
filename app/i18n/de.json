@@ -39,7 +39,10 @@
     "dailyRun": "Läuft: Frage {n} von {total}",
     "dailyContinue": "Tägliche Herausforderung fortsetzen",
     "dailyDone": "Heute erledigt: {n}/{total} · Serie {streak}",
-    "achievements": "Erfolge"
+    "achievements": "Erfolge",
+    "dailyLocked": "Du hast die letzte Herausforderung schon gespielt",
+    "classicDescFiltered": "1–6 Spieler · lade alle deine Edelsteine auf",
+    "continueTurn": "{name} ist dran · {players}"
   },
   "cat": {
     "roshar": "Roschar",
@@ -70,7 +73,7 @@
     "normal": "Normal",
     "hard": "Schwer",
     "expert": "Experte",
-    "easyDesc": "Nur leichte Fragen.",
+    "easyDesc": "Vor allem leichte Fragen (wenn sie ausgehen, auch mittlere).",
     "normalDesc": "Eine Mischung aus leichten und mittleren Fragen, dazu ein paar schwere.",
     "hardDesc": "Mittlere, schwere und Expertenfragen.",
     "expertDesc": "Nur schwere und Expertenfragen – für alle, die die Bücher mehrmals gelesen haben.",
@@ -79,7 +82,7 @@
   "lifeline": {
     "title": "Hilfen",
     "help": "So funktionieren die Hilfen",
-    "rules": "Jeder Spieler hat pro Partie jede Hilfe einmal (auch im schnellen Spiel). Bei der Finalfrage und beim Üben gibt es keine Hilfen, und Atium und Sturmlicht lassen sich bei derselben Frage nicht kombinieren.",
+    "rules": "Jeder Spieler hat pro Spiel jede Hilfe einmal (auch im schnellen Spiel). Bei der Finalfrage und beim Üben gibt es keine Hilfen, und Atium und Sturmlicht lassen sich bei derselben Frage nicht kombinieren.",
     "used": "Schon benutzt: {name}",
     "atium": {
       "name": "Atium",
@@ -115,14 +118,19 @@
     "start": "Spiel starten",
     "fewer": "Spieler entfernen",
     "more": "Spieler hinzufügen",
-    "timerPause": "Ohne Timer kannst du jederzeit pausieren."
+    "timerPause": "Ohne Timer kannst du jederzeit pausieren.",
+    "fullRound": "Runde zu Ende spielen",
+    "fullRoundHint": "Beantwortet jemand die Finalfrage richtig, sind die übrigen Spieler dieser Runde noch einmal dran; wer die Finalfrage ebenfalls richtig beantwortet, teilt sich den Sieg. So haben alle gleich viele Züge."
   },
   "turn": {
     "passTo": "Gib das Handy weiter an",
     "ready": "Ich bin bereit",
     "noPeek": "Alle anderen: nicht spicken!",
     "turnOf": "Am Zug: {name}",
-    "starts": "Es beginnt: {name}"
+    "starts": "Es beginnt: {name}",
+    "lastTurn": "Letzte Runde. Finalfrage richtig beantwortet: {names}. Das ist dein letzter Zug: Beantworte die Finalfrage auch richtig, dann teilt ihr euch den Sieg.",
+    "clockRunning": "Diese Frage wurde schon angezeigt und ihre Zeit ist weitergelaufen: noch {s} s.",
+    "clockOut": "Diese Frage wurde schon angezeigt und ihre Zeit ist abgelaufen."
   },
   "wheel": {
     "label": "Kategorienrad",
@@ -133,7 +141,9 @@
     "landed": "{category}!",
     "chooseTitle": "Joker!",
     "chooseHint": "Wähle eine beliebige Welt",
-    "infusedPick": "Edelstein schon aufgeladen: {category}. Wähle eine andere Welt!"
+    "infusedPick": "Edelstein schon aufgeladen: {category}. Wähle eine andere Welt!",
+    "wildcardOnly": "Joker! Nur noch eine Welt übrig: {category}",
+    "infusedOnly": "Edelstein schon aufgeladen. Nur noch eine Welt übrig: {category}"
   },
   "question": {
     "correct": "Richtig!",
@@ -168,7 +178,13 @@
     "leaveTimerBody": "Wenn du gehst, läuft die Zeit der Frage weiter.",
     "leaveTimerYes": "Verlassen",
     "leaveTimerNo": "Weiterspielen",
-    "emptySaved": "Das Spiel ist gespeichert: Du kannst es fortsetzen, sobald du mehr Werke auswählst."
+    "emptySaved": "Das Spiel ist gespeichert: Du kannst es fortsetzen, sobald du mehr Werke auswählst.",
+    "finalRoundOn": "Finalfrage richtig! Die übrigen Spieler dieser Runde sind noch dran: Wer sie auch richtig beantwortet, teilt sich den Sieg.",
+    "finalShare": "Finalfrage richtig! Du teilst dir den Sieg.",
+    "roundOver": "Die Runde ist vorbei.",
+    "finalDone": "Finalfrage richtig beantwortet",
+    "finalFailLast": "Diesmal nicht – und das war deine letzte Chance: Die Runde endet ohne weiteren Zug für dich.",
+    "lastChanceGone": "Alle Edelsteine aufgeladen! Aber die Runde wird abgeschlossen: Du bekommst keinen weiteren Zug."
   },
   "victory": {
     "title": "{name} gewinnt!",
@@ -181,7 +197,10 @@
     "percent": "{n} %",
     "lifelines": "Benutzte Hilfen",
     "gems": "Edelsteine",
-    "duration": "Dauer: {time}"
+    "duration": "Dauer: {time}",
+    "titleShared": "Geteilter Sieg: {names}!",
+    "subtitleShared": "Finalfrage in derselben Runde richtig beantwortet.",
+    "groupNote": "Gruppenspiel: Es zählt nicht für die persönliche Statistik, Fehler oder Erfolge (Gruppenerfolge schon)."
   },
   "quick": {
     "title": "Schnelles Spiel",
@@ -203,7 +222,8 @@
     "emptySaved": "Das Spiel ist gespeichert (Frage {n} von {total}): Du kannst es fortsetzen, sobald du mehr Werke auswählst.",
     "bestLevel": "Bestleistung ({level}): {n}",
     "noBestLevel": "Noch kein Rekord auf Stufe {level}.",
-    "bestLegacy": "Rekord aus früheren Versionen (alle Stufen): {n}"
+    "bestLegacy": "Rekord aus früheren Versionen (alle Stufen): {n}",
+    "introFiltered": "{n} Fragen aus deinen Welten, je {s} Sekunden. Je schneller du antwortest, desto mehr Punkte gibt es. Die Zeit läuft weiter, auch wenn du die App verlässt."
   },
   "practice": {
     "title": "Üben",
@@ -244,8 +264,10 @@
     "collection": "Sammlung",
     "discovered": "{n}/{total} Fragen entdeckt",
     "discoveredOf": "{n}/{total}",
-    "collectionFiltered": "Es zählen nur die im Spoilerfilter markierten Werke.",
-    "byDifficulty": "Nach Schwierigkeit"
+    "collectionFiltered": "Es zählen nur die im Spoilerfilter angehakten Werke.",
+    "byDifficulty": "Nach Schwierigkeit",
+    "groupGames": "Gruppenspiele",
+    "groupNote": "Klassische Spiele mit 2 oder mehr Spielern werden getrennt als Gruppenspiele gezählt: Sie zählen nicht für deine Antworten, „Meine Fehler“ oder deine persönlichen Erfolge."
   },
   "settings": {
     "title": "Einstellungen",
@@ -287,7 +309,8 @@
       "checksum": "Der Code ist unvollständig oder beschädigt. Kopiere ihn erneut.",
       "version": "Dieser Code stammt aus einer anderen Version der App und kann nicht importiert werden.",
       "unsupported": "Dieser Browser kann den Code nicht lesen. Aktualisiere ihn oder nimm einen anderen."
-    }
+    },
+    "noQuestionsYet": "noch keine Fragen"
   },
   "about": {
     "title": "Info",
@@ -303,9 +326,13 @@
     "levels": "Schwierigkeitsstufen",
     "levelsFinal": "Die Finalfrage im klassischen Spiel ist bei Leicht mittelschwer, bei Normal schwer und bei Schwer und Experte eine Expertenfrage.",
     "lifelines": "Hilfen",
-    "rule5": "Wer beginnt, wird ausgelost. Nach 3 richtigen Antworten in Folge ist trotzdem der nächste Spieler dran.",
+    "rule5": "Wer beginnt, wird ausgelost. Nach 3 richtigen Antworten in Folge ist trotzdem der nächste Spieler dran; allein gibt es keine Grenze.",
     "rule6": "Landet das Rad auf einem Edelstein, den du schon aufgeladen hast, wählst du eine andere Welt.",
-    "intro": "Einführung ansehen"
+    "intro": "Einführung ansehen",
+    "rule7": "Beantwortest du die Finalfrage falsch, ist der nächste Spieler dran, und in deinem nächsten Zug versuchst du es mit einer anderen Frage erneut.",
+    "rule8": "Mit Timer hast du 30 Sekunden pro Frage; läuft die Zeit ab, zählt die Antwort als falsch. Sobald eine Frage angezeigt wird, läuft ihre Zeit weiter, auch wenn du die App verlässt.",
+    "rule9": "Runde zu Ende spielen (ab 2 Spielern, standardmäßig an): Beantwortet jemand die Finalfrage richtig, sind die übrigen Spieler dieser Runde noch dran, und wer sie auch richtig beantwortet, teilt sich den Sieg.",
+    "rule10": "Spiele mit 2 oder mehr Spielern zählen als Gruppenspiele und nicht für deine persönliche Statistik."
   },
   "errors": {
     "load": "Die Fragen konnten nicht geladen werden. Prüfe deine Verbindung und lade die Seite neu.",
@@ -329,14 +356,14 @@
     "next": "Weiter",
     "welcome": "Willkommen",
     "readTitle": "Was hast du gelesen?",
-    "readHint": "Hake die Bücher ab, die du gelesen hast – dann kommen nur Fragen dazu. Du kannst das jederzeit in den Einstellungen ändern.",
+    "readHint": "Hake die Bücher an, die du gelesen hast – dann kommen nur Fragen dazu. Du kannst das jederzeit in den Einstellungen ändern.",
     "all": "Alles",
     "none": "Nichts",
-    "noneWarn": "Ohne abgehakte Bücher gibt es keine Fragen.",
+    "noneWarn": "Ohne angehakte Bücher gibt es keine Fragen.",
     "rulesTitle": "So wird gespielt",
     "ruleWheel": "Dreh das Rad: Es bestimmt, aus welcher Welt die Frage kommt. Beim Joker wählst du selbst.",
     "ruleGems": "Jede richtige Antwort lädt den Edelstein dieser Welt; zwei Ladungen laden ihn ganz auf. Lade alle auf und beantworte die Finalfrage, um zu gewinnen.",
-    "ruleLifelines": "Pro Partie hast du drei Hilfen: Atium entfernt zwei falsche Antworten, Sturmlicht lässt dich neu wählen und Hauch tauscht die Frage aus.",
+    "ruleLifelines": "Pro Spiel hast du drei Hilfen: Atium entfernt zwei falsche Antworten, Sturmlicht lässt dich neu wählen und Hauch tauscht die Frage aus.",
     "startTitle": "Alles bereit!",
     "startBody": "Spiel allein oder gib das Handy weiter. Diese Einführung findest du jederzeit unter „Info“.",
     "start": "Los geht’s",
@@ -347,16 +374,30 @@
     "skippedNoFilter": "Kein Spoilerfilter: Du bekommst Fragen zu allen Büchern. Das kannst du in den Einstellungen ändern."
   },
   "report": {
-    "link": "Diese Frage melden",
+    "link": "Fehler melden",
     "describe": "Was ist falsch? (Antwort, Name, Übersetzung, Spoiler …)",
     "offlineCopied": "Du bist offline: Die Meldung wurde in die Zwischenablage kopiert, damit du sie später senden kannst.",
-    "offlineFailed": "Du bist offline und die Meldung konnte nicht kopiert werden. Versuch es wieder, wenn du online bist."
+    "offlineFailed": "Du bist offline und die Meldung konnte nicht kopiert werden. Versuch es wieder, wenn du online bist.",
+    "copy": "Meldung kopieren",
+    "copied": "Meldung in die Zwischenablage kopiert: Füge sie dort ein, wohin du sie senden möchtest.",
+    "copyFailed": "Die Meldung konnte nicht kopiert werden.",
+    "field": {
+      "id": "ID",
+      "language": "Sprache",
+      "world": "Welt",
+      "difficulty": "Schwierigkeit",
+      "mode": "Modus",
+      "version": "Version",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    }
   },
   "review": {
     "title": "Fehler ansehen ({n})",
     "hint": "Die Fragen, die du in diesem Spiel falsch beantwortet hast, mit der richtigen Antwort. Üben kannst du sie unter Üben → Meine Fehler.",
     "answer": "Richtige Antwort: {answer}",
-    "none": "Keine Fehler in diesem Spiel!"
+    "none": "Keine Fehler in diesem Spiel!",
+    "hintGroup": "Die in diesem Spiel falsch beantworteten Fragen mit der richtigen Antwort. Gruppenspiele werden nicht in „Meine Fehler“ gespeichert."
   },
   "update": {
     "available": "Neue Version verfügbar",
@@ -382,7 +423,8 @@
     "shareStreak": "Tage in Folge: {n}",
     "shareFiltered": "(mit Spoilerfilter)",
     "copied": "Ergebnis in die Zwischenablage kopiert.",
-    "copyFailed": "Das Ergebnis konnte nicht kopiert werden."
+    "copyFailed": "Das Ergebnis konnte nicht kopiert werden.",
+    "clockBack": "Das Datum deines Geräts liegt vor dem deiner letzten Herausforderung, deshalb kann sie nicht erneut gespielt werden. Nächste Herausforderung: {date}."
   },
   "ach": {
     "title": "Erfolge",
@@ -394,11 +436,11 @@
     "progress": "{n}/{total}",
     "firstWin": {
       "name": "Erster Sieg",
-      "desc": "Gewinne ein klassisches Spiel."
+      "desc": "Gewinne ein klassisches Einzelspiel."
     },
     "radiant": {
       "name": "Strahlender",
-      "desc": "Gewinne 5 klassische Spiele."
+      "desc": "Gewinne 5 klassische Einzelspiele."
     },
     "fullTable": {
       "name": "Volle Runde",
@@ -406,11 +448,11 @@
     },
     "flawless": {
       "name": "Sechs Edelsteine ohne Fehler",
-      "desc": "Lade in einem klassischen Spiel alle sechs Edelsteine auf, ohne eine einzige Frage falsch zu beantworten."
+      "desc": "Lade in einem klassischen Einzelspiel alle sechs Edelsteine auf, ohne eine einzige Frage falsch zu beantworten."
     },
     "expertPure": {
       "name": "Ohne Hilfe",
-      "desc": "Gewinne ein klassisches Spiel auf Experte, ohne eine Hilfe zu nutzen."
+      "desc": "Gewinne ein klassisches Einzelspiel auf Experte, ohne eine Hilfe zu nutzen."
     },
     "quickPerfect": {
       "name": "Perfektes Spiel",
@@ -418,7 +460,7 @@
     },
     "quickScore": {
       "name": "Gegen die Uhr",
-      "desc": "Erreiche 2000 Punkte in einem schnellen Spiel."
+      "desc": "Erreiche {n} Punkte in einem schnellen Spiel."
     },
     "allWorlds": {
       "name": "Von Welt zu Welt",
@@ -434,7 +476,7 @@
     },
     "stormlightSave": {
       "name": "Vom Sturmlicht gerettet",
-      "desc": "Liege mit aktivem Sturmlicht daneben und antworte im zweiten Versuch richtig."
+      "desc": "Wähle mit aktivem Sturmlicht eine falsche Antwort und triff im zweiten Versuch die richtige."
     },
     "compendium": {
       "name": "Kompendium",
@@ -467,6 +509,8 @@
     "missedClear": {
       "name": "Reine Weste",
       "desc": "Wiederhole beim Üben alle deine Fehler, bis die Liste leer ist."
-    }
+    },
+    "groupNote": "Gruppenspiele zählen nur für Gruppenerfolge wie „Volle Runde“.",
+    "blocked": "Mit deinem aktuellen Spoilerfilter nicht erreichbar."
   }
 }

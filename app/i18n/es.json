@@ -39,7 +39,10 @@
     "dailyRun": "En curso: pregunta {n} de {total}",
     "dailyContinue": "Continuar reto diario",
     "dailyDone": "Hecho hoy: {n}/{total} · racha de {streak}",
-    "achievements": "Logros"
+    "achievements": "Logros",
+    "dailyLocked": "Ya has jugado el último reto",
+    "classicDescFiltered": "De 1 a 6 jugadores · infunde todas tus gemas",
+    "continueTurn": "Turno de {name} · {players}"
   },
   "cat": {
     "roshar": "Roshar",
@@ -70,7 +73,7 @@
     "normal": "Normal",
     "hard": "Difícil",
     "expert": "Experto",
-    "easyDesc": "Solo preguntas fáciles.",
+    "easyDesc": "Sobre todo preguntas fáciles (si se agotan, alguna media).",
     "normalDesc": "Mezcla de preguntas fáciles y medias, con alguna difícil.",
     "hardDesc": "Preguntas medias, difíciles y de experto.",
     "expertDesc": "Solo preguntas difíciles y de experto, para quienes releen.",
@@ -115,14 +118,19 @@
     "start": "Empezar partida",
     "fewer": "Quitar un jugador",
     "more": "Añadir un jugador",
-    "timerPause": "Sin temporizador puedes pausar cuando quieras."
+    "timerPause": "Sin temporizador puedes pausar cuando quieras.",
+    "fullRound": "Ronda completa",
+    "fullRoundHint": "Si alguien acierta la pregunta final, los jugadores que faltan en esa ronda juegan su turno; quien también acierte la final comparte la victoria. Así todos tienen los mismos turnos."
   },
   "turn": {
     "passTo": "Pasa el móvil a",
     "ready": "Empezar mi turno",
     "noPeek": "Los demás, ¡no miréis!",
     "turnOf": "Turno de {name}",
-    "starts": "Empieza: {name}"
+    "starts": "Empieza: {name}",
+    "lastTurn": "Última ronda. Pregunta final acertada: {names}. Es tu último turno: si tú también aciertas la final, compartirás la victoria.",
+    "clockRunning": "Esta pregunta ya estaba en pantalla y su tiempo sigue corriendo: quedan {s} s.",
+    "clockOut": "Esta pregunta ya estaba en pantalla y se le ha acabado el tiempo."
   },
   "wheel": {
     "label": "Ruleta de categorías",
@@ -133,7 +141,9 @@
     "landed": "¡{category}!",
     "chooseTitle": "¡Comodín!",
     "chooseHint": "Elige el mundo que quieras",
-    "infusedPick": "Gema ya infundida: {category}. ¡Elige otro mundo!"
+    "infusedPick": "Gema ya infundida: {category}. ¡Elige otro mundo!",
+    "wildcardOnly": "¡Comodín! Solo te queda un mundo: {category}",
+    "infusedOnly": "Gema ya infundida. Solo te queda un mundo: {category}"
   },
   "question": {
     "correct": "¡Correcto!",
@@ -168,7 +178,13 @@
     "leaveTimerBody": "Si sales, el tiempo de la pregunta sigue corriendo.",
     "leaveTimerYes": "Salir",
     "leaveTimerNo": "Seguir jugando",
-    "emptySaved": "La partida está guardada: podrás continuarla cuando marques más obras."
+    "emptySaved": "La partida está guardada: podrás continuarla cuando marques más obras.",
+    "finalRoundOn": "¡Pregunta final acertada! Los jugadores que faltan en esta ronda juegan su turno: quien también la acierte compartirá la victoria.",
+    "finalShare": "¡Pregunta final acertada! Compartes la victoria.",
+    "roundOver": "Se acabó la ronda.",
+    "finalDone": "pregunta final acertada",
+    "finalFailLast": "Esta vez no, y era tu última oportunidad: la ronda termina sin otro turno para ti.",
+    "lastChanceGone": "¡Todas las gemas infundidas! Pero la ronda se cierra: ya no tendrás otro turno."
   },
   "victory": {
     "title": "¡{name} gana!",
@@ -181,7 +197,10 @@
     "percent": "{n} %",
     "lifelines": "Ayudas usadas",
     "gems": "Gemas",
-    "duration": "Duración: {time}"
+    "duration": "Duración: {time}",
+    "titleShared": "¡Victoria compartida: {names}!",
+    "subtitleShared": "Pregunta final acertada en la misma ronda.",
+    "groupNote": "Partida en grupo: no cuenta en las estadísticas, los fallos ni los logros personales (sí en los logros de grupo)."
   },
   "quick": {
     "title": "Partida rápida",
@@ -203,7 +222,8 @@
     "emptySaved": "La partida está guardada (pregunta {n} de {total}): podrás continuarla cuando marques más obras.",
     "bestLevel": "Mejor puntuación ({level}): {n}",
     "noBestLevel": "Aún no tienes récord en el nivel {level}.",
-    "bestLegacy": "Récord de versiones anteriores (todos los niveles): {n}"
+    "bestLegacy": "Récord de versiones anteriores (todos los niveles): {n}",
+    "introFiltered": "{n} preguntas de tus mundos, {s} segundos cada una. Cuanto antes aciertes, más puntos. El reloj sigue corriendo aunque salgas de la app."
   },
   "practice": {
     "title": "Práctica",
@@ -245,7 +265,9 @@
     "discovered": "{n}/{total} preguntas descubiertas",
     "discoveredOf": "{n}/{total}",
     "collectionFiltered": "Solo cuentan las obras marcadas en el filtro de spoilers.",
-    "byDifficulty": "Por dificultad"
+    "byDifficulty": "Por dificultad",
+    "groupGames": "Partidas en grupo",
+    "groupNote": "Las partidas clásicas de 2 o más jugadores se cuentan aparte, como partidas en grupo: no suman a tus aciertos, a «Mis fallos» ni a tus logros personales."
   },
   "settings": {
     "title": "Ajustes",
@@ -287,7 +309,8 @@
       "checksum": "El código está incompleto o dañado. Cópialo de nuevo.",
       "version": "Este código es de otra versión de la app y no se puede importar.",
       "unsupported": "Este navegador no puede leer el código. Actualízalo o usa otro."
-    }
+    },
+    "noQuestionsYet": "sin preguntas todavía"
   },
   "about": {
     "title": "Acerca de",
@@ -303,9 +326,13 @@
     "levels": "Niveles de dificultad",
     "levelsFinal": "La pregunta final de la partida clásica es media en Fácil, difícil en Normal y de experto en Difícil y Experto.",
     "lifelines": "Ayudas",
-    "rule5": "Un sorteo decide quién empieza. Con 3 aciertos seguidos el turno pasa al siguiente jugador aunque aciertes.",
+    "rule5": "Un sorteo decide quién empieza. Con 3 aciertos seguidos el turno pasa al siguiente jugador aunque aciertes; en solitario no hay límite.",
     "rule6": "Si la ruleta cae en una gema que ya has infundido, eliges otro mundo.",
-    "intro": "Ver introducción"
+    "intro": "Ver introducción",
+    "rule7": "Si fallas la pregunta final, el turno pasa y la intentarás de nuevo, con otra pregunta, en tu siguiente turno.",
+    "rule8": "Con temporizador tienes 30 segundos por pregunta y, si se acaba, cuenta como fallo. Una vez mostrada la pregunta, su tiempo sigue corriendo aunque salgas de la app.",
+    "rule9": "Ronda completa (con 2 o más jugadores, activada por defecto): si alguien acierta la final, los que faltan en esa ronda juegan su turno y quien también la acierte comparte la victoria.",
+    "rule10": "Las partidas de 2 o más jugadores cuentan como partidas en grupo y no suman a tus estadísticas personales."
   },
   "errors": {
     "load": "No se han podido cargar las preguntas. Comprueba la conexión y recarga.",
@@ -347,16 +374,30 @@
     "skippedNoFilter": "Sin filtro de spoilers: te saldrán preguntas de todos los libros. Puedes cambiarlo en Ajustes."
   },
   "report": {
-    "link": "Reportar esta pregunta",
+    "link": "Avisar de un error",
     "describe": "¿Qué está mal? (respuesta, nombre, traducción, spoiler…)",
     "offlineCopied": "Sin conexión: hemos copiado el informe al portapapeles para que lo envíes más tarde.",
-    "offlineFailed": "Sin conexión y no se ha podido copiar el informe. Inténtalo de nuevo con conexión."
+    "offlineFailed": "Sin conexión y no se ha podido copiar el informe. Inténtalo de nuevo con conexión.",
+    "copy": "Copiar informe",
+    "copied": "Informe copiado al portapapeles: pégalo donde quieras enviarlo.",
+    "copyFailed": "No se ha podido copiar el informe.",
+    "field": {
+      "id": "ID",
+      "language": "Idioma",
+      "world": "Mundo",
+      "difficulty": "Dificultad",
+      "mode": "Modo",
+      "version": "Versión",
+      "question": "Pregunta",
+      "explanation": "Explicación"
+    }
   },
   "review": {
     "title": "Repasar fallos ({n})",
     "hint": "Las preguntas que fallaste en esta partida, con la respuesta correcta. Puedes repasarlas en Práctica → Mis fallos.",
     "answer": "Respuesta correcta: {answer}",
-    "none": "¡Sin fallos en esta partida!"
+    "none": "¡Sin fallos en esta partida!",
+    "hintGroup": "Las preguntas que se fallaron en esta partida, con la respuesta correcta. Las partidas en grupo no se guardan en «Mis fallos»."
   },
   "update": {
     "available": "Nueva versión disponible",
@@ -382,7 +423,8 @@
     "shareStreak": "Días seguidos: {n}",
     "shareFiltered": "(con filtro de spoilers)",
     "copied": "Resultado copiado al portapapeles.",
-    "copyFailed": "No se ha podido copiar el resultado."
+    "copyFailed": "No se ha podido copiar el resultado.",
+    "clockBack": "La fecha de tu dispositivo es anterior a la de tu último reto, así que no se puede volver a jugar. Próximo reto: {date}."
   },
   "ach": {
     "title": "Logros",
@@ -394,11 +436,11 @@
     "progress": "{n}/{total}",
     "firstWin": {
       "name": "Primera victoria",
-      "desc": "Gana una partida clásica."
+      "desc": "Gana una partida clásica en solitario."
     },
     "radiant": {
       "name": "Radiante",
-      "desc": "Gana 5 partidas clásicas."
+      "desc": "Gana 5 partidas clásicas en solitario."
     },
     "fullTable": {
       "name": "Mesa completa",
@@ -406,11 +448,11 @@
     },
     "flawless": {
       "name": "Seis gemas sin un fallo",
-      "desc": "Infunde las seis gemas de una partida clásica sin fallar ninguna pregunta."
+      "desc": "Infunde las seis gemas de una partida clásica en solitario sin fallar ninguna pregunta."
     },
     "expertPure": {
       "name": "Sin ayudas",
-      "desc": "Gana una partida clásica en nivel Experto sin usar ninguna ayuda."
+      "desc": "Gana una partida clásica en solitario en nivel Experto sin usar ninguna ayuda."
     },
     "quickPerfect": {
       "name": "Partida perfecta",
@@ -418,7 +460,7 @@
     },
     "quickScore": {
       "name": "Contrarreloj",
-      "desc": "Consigue 2000 puntos en una partida rápida."
+      "desc": "Consigue {n} puntos en una partida rápida."
     },
     "allWorlds": {
       "name": "De mundo en mundo",
@@ -467,6 +509,8 @@
     "missedClear": {
       "name": "Cuentas saldadas",
       "desc": "Repasa en Práctica todos tus fallos hasta vaciar la lista."
-    }
+    },
+    "groupNote": "Las partidas en grupo solo cuentan para los logros de grupo, como «Mesa completa».",
+    "blocked": "Con tu filtro de spoilers actual no se puede conseguir."
   }
 }

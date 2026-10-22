@@ -428,7 +428,7 @@
     "difficulty": 2,
     "work": "elantris",
     "q": "How does Hrathen stage a fake 'cure' after he is thrown into Elantris?",
-    "a": "He drinks a mimicking potion",
+    "a": "He drinks a potion that mimics the Shaod",
     "wrong": [
       "He forges a soulstamp",
       "He bribes the guards",
@@ -439,7 +439,8 @@
       "Hrathen",
       "Elantris",
       "Jaddeth",
-      "Aon"
+      "Aon",
+      "Shaod"
     ],
     "source": "Elantris"
   },

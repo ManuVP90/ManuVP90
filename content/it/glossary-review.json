@@ -416,7 +416,7 @@
   "sources": [
    "it.coppermind.net (page title via search) \"Disfatti\""
   ],
-  "notes": "m. pl. (i Disfatti; sg. il Disfatto, also used for female Unmade)."
+  "notes": "m. pl. (i Disfatti; sg. il Disfatto, also used for female Unmade). A specific female Unmade takes the feminine «la Disfatta» (Sja-anat in roshar-023; Ba-Ado-Mishram in roshar-088/-092, beta round 4 m12); generic «Quale Disfatto…?» in which-Unmade questions. Supersedes the earlier note about using «il Disfatto» for female Unmade."
  },
  "Herald": {
   "it": "Araldo",
@@ -1659,5 +1659,11 @@
   "status": "unchanged",
   "sources": [],
   "notes": "Proper name kept as in English (added for Wind and Truth / era-2 questions)."
+ },
+ "Melishi": {
+  "it": "Melishi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Melishi is male in canon (Coppermind: he/him); beta round 4 review fixed roshar-045, which had made him a woman. «il Forgialegami Melishi»."
  }
 }

@@ -2058,24 +2058,22 @@
     "category": "roshar",
     "difficulty": 2,
     "work": "wind-and-truth",
-    "q": "In Wind and Truth, which young child ends up trapped in the Spiritual Realm along with Dalinar and Navani?",
+    "q": "In Wind and Truth, which young child ends up trapped in the Spiritual Realm along with Dalinar?",
     "a": "Gavinor",
     "wrong": [
       "Oroden",
       "Tien",
       "Lift"
     ],
-    "explain": "Gavinor had followed the Bondsmiths, and when their anchors to the Physical Realm were cut he was swept away with them, while Wit protected Lift.",
+    "explain": "Gavinor had followed Dalinar, and when the anchors to the Physical Realm were cut he was swept away with him, while Wit protected Lift.",
     "terms": [
       "Wind and Truth",
       "Spiritual Realm",
       "Dalinar",
-      "Navani",
       "Gavinor",
       "Oroden",
       "Tien",
       "Lift",
-      "Bondsmiths",
       "Physical Realm",
       "Wit"
     ],
@@ -2245,7 +2243,7 @@
       "The First Desolation",
       "Aharietiam"
     ],
-    "explain": "Wit had picked the stone out himself before the migration, and it carried Dalinar and Navani to the arrival of the first humans.",
+    "explain": "Wit had picked the stone out himself before the migration, and it carried Dalinar to the arrival of the first humans.",
     "terms": [
       "Wind and Truth",
       "Dalinar",
@@ -2254,8 +2252,7 @@
       "Roshar",
       "Recreance",
       "Desolation",
-      "Aharietiam",
-      "Navani"
+      "Aharietiam"
     ],
     "source": "Wind and Truth"
   },

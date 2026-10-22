@@ -500,7 +500,7 @@
   "sources": [
    "https://kosmeer.fandom.com/de/wiki/Ungemachte"
   ],
-  "notes": "CHANGED from unattested \"Unerschaffene\": the German Kosmeer wiki uses \"die Ungemachten\" (der Ungemachte, pl. die Ungemachten). de files updated (roshar-023/025/041/045 + new entries). QA: confirm against Heyne text if possible."
+  "notes": "CHANGED from unattested \"Unerschaffene\": the German Kosmeer wiki uses \"die Ungemachten\" (der Ungemachte, pl. die Ungemachten). de files updated (roshar-023/025/041/045 + new entries). QA: confirm against Heyne text if possible. A specific female Unmade takes the feminine: «die Ungemachte» (Sja-anat in roshar-023; Ba-Ado-Mischram in roshar-088/-092, beta round 4 m12); generic «Welcher Ungemachte…?» in which-Unmade questions."
  },
  "Sibling": {
   "de": "Zwilling",
@@ -984,13 +984,13 @@
   "de": "Melischi",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified. Melishi is male in canon (Coppermind: he/him); beta round 4 review fixed roshar-045, which had made him a woman. «der Bindeschmied Melischi»."
  },
  "Ba-Ado-Mishram": {
   "de": "Ba-Ado-Mischram",
   "status": "unverified",
   "sources": [],
-  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified."
+  "notes": "Kept glossary form; not independently verified in this pass (search snippets only). Heyne (translator Michael Siefener) transliterates English \"sh\" as \"sch\" in Roshar names (attested: Roschar, Schallan, Ischar, Schinovar, Schadesmar); this form follows that rule but was not individually verified. Female (she/her in canon): «die Ungemachte», «ihre Gefangenschaft»."
  },
  "singer": {
   "de": "Sänger",
@@ -4597,5 +4597,11 @@
   "status": "official",
   "sources": [],
   "notes": "Heyne uses \"Zwischenspiel\" for interludes (already used across existing de questions)."
+ },
+ "Dor": {
+  "de": "Dor",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Masculine: «der Dor» (den/dem/des Dor), used consistently in sel-049, sel-050, cosmere files (beta round 4, m11). Gender not verified against the Heyne Elantris text."
  }
 }

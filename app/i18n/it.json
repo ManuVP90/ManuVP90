@@ -39,7 +39,10 @@
     "dailyRun": "In corso: domanda {n} di {total}",
     "dailyContinue": "Continua la sfida del giorno",
     "dailyDone": "Fatta oggi: {n}/{total} · serie di {streak}",
-    "achievements": "Traguardi"
+    "achievements": "Traguardi",
+    "dailyLocked": "Hai già giocato l’ultima sfida",
+    "classicDescFiltered": "Da 1 a 6 giocatori · infondi tutte le tue gemme",
+    "continueTurn": "Turno di {name} · {players}"
   },
   "cat": {
     "roshar": "Roshar",
@@ -70,7 +73,7 @@
     "normal": "Normale",
     "hard": "Difficile",
     "expert": "Esperto",
-    "easyDesc": "Solo domande facili.",
+    "easyDesc": "Soprattutto domande facili (se finiscono, qualcuna media).",
     "normalDesc": "Un mix di domande facili e medie, con qualche difficile.",
     "hardDesc": "Domande medie, difficili e da esperti.",
     "expertDesc": "Solo domande difficili e da esperti, per chi rilegge.",
@@ -115,14 +118,19 @@
     "start": "Inizia la partita",
     "fewer": "Rimuovi un giocatore",
     "more": "Aggiungi un giocatore",
-    "timerPause": "Senza timer puoi metterti in pausa quando vuoi."
+    "timerPause": "Senza timer puoi metterti in pausa quando vuoi.",
+    "fullRound": "Giro completo",
+    "fullRoundHint": "Se qualcuno risponde bene alla domanda finale, i giocatori che mancano in quel giro giocano il loro turno; chi indovina a sua volta la finale condivide la vittoria. Così tutti hanno lo stesso numero di turni."
   },
   "turn": {
     "passTo": "Passa il telefono a",
     "ready": "Inizia il mio turno",
     "noPeek": "Tutti gli altri: niente sbirciate!",
     "turnOf": "Tocca a {name}",
-    "starts": "Inizia: {name}"
+    "starts": "Inizia: {name}",
+    "lastTurn": "Ultimo giro. Domanda finale indovinata da: {names}. È il tuo ultimo turno: se indovini anche tu la finale, condividerai la vittoria.",
+    "clockRunning": "Questa domanda era già sullo schermo e il suo tempo ha continuato a scorrere: restano {s} s.",
+    "clockOut": "Questa domanda era già sullo schermo e il suo tempo è scaduto."
   },
   "wheel": {
     "label": "Ruota delle categorie",
@@ -133,7 +141,9 @@
     "landed": "{category}!",
     "chooseTitle": "Jolly!",
     "chooseHint": "Scegli il mondo che preferisci",
-    "infusedPick": "Gemma già infusa: {category}. Scegli un altro mondo!"
+    "infusedPick": "Gemma già infusa: {category}. Scegli un altro mondo!",
+    "wildcardOnly": "Jolly! Ti resta un solo mondo: {category}",
+    "infusedOnly": "Gemma già infusa. Ti resta un solo mondo: {category}"
   },
   "question": {
     "correct": "Esatto!",
@@ -168,7 +178,13 @@
     "leaveTimerBody": "Se esci, il tempo della domanda continua a scorrere.",
     "leaveTimerYes": "Esci",
     "leaveTimerNo": "Continua a giocare",
-    "emptySaved": "La partita è salvata: potrai riprenderla quando selezionerai altre opere."
+    "emptySaved": "La partita è salvata: potrai riprenderla quando selezionerai altre opere.",
+    "finalRoundOn": "Domanda finale indovinata! I giocatori che mancano in questo giro giocano il loro turno: chi risponde bene anche alla finale condividerà la vittoria.",
+    "finalShare": "Domanda finale indovinata! Condividi la vittoria.",
+    "roundOver": "Il giro è finito.",
+    "finalDone": "domanda finale indovinata",
+    "finalFailLast": "Non questa volta, ed era la tua ultima occasione: il giro finisce senza un altro turno per te.",
+    "lastChanceGone": "Tutte le gemme infuse! Ma il giro si sta chiudendo: non avrai un altro turno."
   },
   "victory": {
     "title": "Vince {name}!",
@@ -181,7 +197,10 @@
     "percent": "{n}%",
     "lifelines": "Aiuti usati",
     "gems": "Gemme",
-    "duration": "Durata: {time}"
+    "duration": "Durata: {time}",
+    "titleShared": "Vittoria condivisa: {names}!",
+    "subtitleShared": "Domanda finale indovinata nello stesso giro.",
+    "groupNote": "Partita di gruppo: non conta per le statistiche, gli errori o i traguardi personali (quelli di gruppo sì)."
   },
   "quick": {
     "title": "Partita veloce",
@@ -203,7 +222,8 @@
     "emptySaved": "La partita è salvata (domanda {n} di {total}): potrai riprenderla quando selezionerai altre opere.",
     "bestLevel": "Miglior punteggio ({level}): {n}",
     "noBestLevel": "Nessun record ancora a livello {level}.",
-    "bestLegacy": "Record delle versioni precedenti (tutti i livelli): {n}"
+    "bestLegacy": "Record delle versioni precedenti (tutti i livelli): {n}",
+    "introFiltered": "{n} domande sui tuoi mondi, {s} secondi ciascuna. Più rispondi in fretta, più punti fai. Il tempo continua a scorrere anche se esci dall’app."
   },
   "practice": {
     "title": "Allenamento",
@@ -245,7 +265,9 @@
     "discovered": "{n}/{total} domande scoperte",
     "discoveredOf": "{n}/{total}",
     "collectionFiltered": "Contano solo le opere selezionate nel filtro spoiler.",
-    "byDifficulty": "Per difficoltà"
+    "byDifficulty": "Per difficoltà",
+    "groupGames": "Partite di gruppo",
+    "groupNote": "Le partite classiche con 2 o più giocatori si contano a parte, come partite di gruppo: non si sommano alle tue risposte, a «I miei errori» né ai tuoi traguardi personali."
   },
   "settings": {
     "title": "Impostazioni",
@@ -287,7 +309,8 @@
       "checksum": "Il codice è incompleto o danneggiato. Copialo di nuovo.",
       "version": "Questo codice proviene da un’altra versione dell’app e non si può importare.",
       "unsupported": "Questo browser non riesce a leggere il codice. Aggiornalo o usane un altro."
-    }
+    },
+    "noQuestionsYet": "ancora senza domande"
   },
   "about": {
     "title": "Informazioni",
@@ -303,9 +326,13 @@
     "levels": "Livelli di difficoltà",
     "levelsFinal": "Nella partita classica la domanda finale è media in Facile, difficile in Normale e da esperti in Difficile ed Esperto.",
     "lifelines": "Aiuti",
-    "rule5": "Chi inizia viene sorteggiato. Dopo 3 risposte esatte di fila il turno passa comunque al giocatore successivo.",
+    "rule5": "Chi inizia viene sorteggiato. Dopo 3 risposte esatte di fila il turno passa comunque al giocatore successivo; in solitario non c’è limite.",
     "rule6": "Se la ruota si ferma su una gemma che hai già infuso, scegli un altro mondo.",
-    "intro": "Rivedi l’introduzione"
+    "intro": "Rivedi l’introduzione",
+    "rule7": "Se sbagli la domanda finale, il turno passa e la riproverai, con un’altra domanda, al tuo prossimo turno.",
+    "rule8": "Con il timer hai 30 secondi per domanda; se il tempo scade, la risposta conta come sbagliata. Una volta mostrata la domanda, il suo tempo continua a scorrere anche se esci dall’app.",
+    "rule9": "Giro completo (con 2 o più giocatori, attivo di default): se qualcuno indovina la finale, i giocatori che mancano in quel giro giocano il loro turno e chi la indovina a sua volta condivide la vittoria.",
+    "rule10": "Le partite con 2 o più giocatori contano come partite di gruppo e non si sommano alle tue statistiche personali."
   },
   "errors": {
     "load": "Impossibile caricare le domande. Controlla la connessione e ricarica la pagina.",
@@ -347,16 +374,30 @@
     "skippedNoFilter": "Nessun filtro spoiler: riceverai domande su tutti i libri. Puoi cambiarlo nelle Impostazioni."
   },
   "report": {
-    "link": "Segnala questa domanda",
+    "link": "Segnala un errore",
     "describe": "Che cosa non va? (risposta, nome, traduzione, spoiler…)",
     "offlineCopied": "Sei offline: la segnalazione è stata copiata negli appunti per inviarla più tardi.",
-    "offlineFailed": "Sei offline e non è stato possibile copiare la segnalazione. Riprova quando sei online."
+    "offlineFailed": "Sei offline e non è stato possibile copiare la segnalazione. Riprova quando sei online.",
+    "copy": "Copia la segnalazione",
+    "copied": "Segnalazione copiata negli appunti: incollala dove vuoi inviarla.",
+    "copyFailed": "Impossibile copiare la segnalazione.",
+    "field": {
+      "id": "ID",
+      "language": "Lingua",
+      "world": "Mondo",
+      "difficulty": "Difficoltà",
+      "mode": "Modalità",
+      "version": "Versione",
+      "question": "Domanda",
+      "explanation": "Spiegazione"
+    }
   },
   "review": {
     "title": "Rivedi gli errori ({n})",
     "hint": "Le domande sbagliate in questa partita, con la risposta giusta. Puoi ripassarle in Allenamento → I miei errori.",
     "answer": "Risposta giusta: {answer}",
-    "none": "Nessun errore in questa partita!"
+    "none": "Nessun errore in questa partita!",
+    "hintGroup": "Le domande sbagliate in questa partita, con la risposta giusta. Le partite di gruppo non vengono salvate in «I miei errori»."
   },
   "update": {
     "available": "Nuova versione disponibile",
@@ -382,7 +423,8 @@
     "shareStreak": "Giorni di fila: {n}",
     "shareFiltered": "(con filtro spoiler)",
     "copied": "Risultato copiato negli appunti.",
-    "copyFailed": "Impossibile copiare il risultato."
+    "copyFailed": "Impossibile copiare il risultato.",
+    "clockBack": "La data del tuo dispositivo è precedente a quella della tua ultima sfida, quindi non si può rigiocare. Prossima sfida: {date}."
   },
   "ach": {
     "title": "Traguardi",
@@ -394,11 +436,11 @@
     "progress": "{n}/{total}",
     "firstWin": {
       "name": "Prima vittoria",
-      "desc": "Vinci una partita classica."
+      "desc": "Vinci una partita classica in solitario."
     },
     "radiant": {
       "name": "Radioso",
-      "desc": "Vinci 5 partite classiche."
+      "desc": "Vinci 5 partite classiche in solitario."
     },
     "fullTable": {
       "name": "Tavolo al completo",
@@ -406,11 +448,11 @@
     },
     "flawless": {
       "name": "Sei gemme senza errori",
-      "desc": "Infondi tutte e sei le gemme di una partita classica senza sbagliare nessuna domanda."
+      "desc": "Infondi tutte e sei le gemme di una partita classica in solitario senza sbagliare nessuna domanda."
     },
     "expertPure": {
       "name": "Senza aiuti",
-      "desc": "Vinci una partita classica a livello Esperto senza usare aiuti."
+      "desc": "Vinci una partita classica in solitario a livello Esperto senza usare aiuti."
     },
     "quickPerfect": {
       "name": "Partita perfetta",
@@ -418,7 +460,7 @@
     },
     "quickScore": {
       "name": "Contro il tempo",
-      "desc": "Ottieni 2000 punti in una partita veloce."
+      "desc": "Ottieni {n} punti in una partita veloce."
     },
     "allWorlds": {
       "name": "Di mondo in mondo",
@@ -467,6 +509,8 @@
     "missedClear": {
       "name": "Conti saldati",
       "desc": "Ripassa in Allenamento tutti i tuoi errori fino a svuotare la lista."
-    }
+    },
+    "groupNote": "Le partite di gruppo contano solo per i traguardi di gruppo, come «Tavolo al completo».",
+    "blocked": "Non ottenibile con il tuo filtro spoiler attuale."
   }
 }

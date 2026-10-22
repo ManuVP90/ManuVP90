@@ -1,5 +1,5 @@
 // Global constants shared by every module.
-export const APP_VERSION = '1.6.0';
+export const APP_VERSION = '2.0.0';
 
 /** Category ids, in wheel / board order (SPEC §2). */
 export const CATEGORIES = ['roshar', 'scadrial', 'sel', 'nalthis', 'otros', 'cosmere'];
@@ -32,6 +32,10 @@ export const LANG_NAMES = { es: 'Español', en: 'English', fr: 'Français', de: 
 export const TIMER_SECONDS = 30;
 export const TIMER_MS = TIMER_SECONDS * 1000;
 export const QUICK_LENGTH = 15;
+/** Best possible quick-game score: every answer right (100) with the full speed bonus (100). */
+export const QUICK_MAX_SCORE = QUICK_LENGTH * 200;
+/** Taps on a question's options are ignored this long after it is painted (beta 4, G1: double tap on "Next"). */
+export const INPUT_GUARD_MS = 350;
 export const CHARGES_TO_INFUSE = 2;
 export const MIN_PLAYERS = 1;
 export const MAX_PLAYERS = 6;

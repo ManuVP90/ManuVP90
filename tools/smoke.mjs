@@ -387,7 +387,10 @@ try {
   await page.click('.small-btn >> nth=0');
   await page.waitForSelector('.stats .bar-row');
   const llUses = (await page.locator('.lifeline-stats-value').allTextContents()).map(Number);
-  assert(llUses.length === 3 && llUses[0] >= 2 && llUses[1] >= 1 && llUses[2] >= 1, `lifeline uses counted (${llUses})`);
+  // 2.0.0 (lead decision 2): the 2-player classic game is a group game, so only the quick game's Atium counts.
+  assert(llUses.length === 3 && llUses[0] === 1 && llUses[1] === 0 && llUses[2] === 0, `lifeline uses counted: quick only, not the group game (${llUses})`);
+  const tiles = await page.locator('.stats .tile .tile-value').allTextContents();
+  assert(tiles[0] === '0' && tiles[1] === '1', `classic solo wins 0, group games 1 (${tiles})`);
   await shot('21-stats');
   await page.click('.topbar .icon-btn');
   await page.click('.small-btn >> nth=2');
@@ -438,11 +441,11 @@ try {
   await page.waitForSelector('.question .qcard');
   assert((await page.textContent('.level-badge-text')).trim() === T('es', 'level.normal'), 'v1 save migrates to Normal');
   assert(await page.locator('.qcard .lifeline:not([disabled])').count() === 3, 'v1 save gets lifelines');
-  assert(await page.evaluate(() => JSON.parse(localStorage.getItem('cosmere-trivia:classic')).v) === 3, 'save upgraded to v3');
+  assert(await page.evaluate(() => JSON.parse(localStorage.getItem('cosmere-trivia:classic')).v) === 4, 'save upgraded to v4');
   await page.evaluate(() => localStorage.removeItem('cosmere-trivia:classic'));
   await page.click('.topbar .icon-btn');
   await page.waitForSelector('.home');
-  log('v1 saved game migrated to v3 (level Normal, full lifelines)');
+  log('v1 saved game migrated to v4 (level Normal, full lifelines)');
 
   // ---------------------------------------------------------------- offline
   await page.evaluate(() => navigator.serviceWorker.ready);
@@ -473,7 +476,7 @@ try {
   }
   await page.waitForSelector('.daily-result');
   assert((await page.textContent('.daily-result .result-score')).trim() === T('es', 'daily.result').replace('{n}', '4').replace('{total}', '5'), 'daily result 4/5');
-  assert(/^[🟦🟥🟩🟨🟪⬜⬛]{5} 4\/5$/mu.test(await page.textContent('.daily-share-preview')), 'share preview with gem squares');
+  assert(/^✅✅✅❌✅ 4\/5$/mu.test(await page.textContent('.daily-share-preview')), 'share preview: ✅/❌ per question (beta 4)');
   await shot('28-daily-result');
   await context.setOffline(false);
   await page.click('.daily-result .stack-actions:last-child .btn-ghost');

@@ -181,13 +181,22 @@ export class Pool {
     for (const q of this.notRecent(unused.filter((x) => x.d >= lo0 && x.d <= hi0)).concat(unused.filter((x) => x.d < lo0 || x.d > hi0))) {
       fresh[q.d] = (fresh[q.d] || 0) + 1;
     }
-    // Unused questions may come from one step outside the level (Easy → 2, Expert → 2);
-    // past that, the level's own questions are recycled instead.
+    // Unused questions may come from one step outside the level (Easy → 2, Expert → 2); when the
+    // level's range has none left, any unused difficulty comes first (beta 4, M1: a narrow filter
+    // must not serve the same question twice while another one is unused); only when every
+    // question of the category was asked are they recycled, never the one asked last if there is
+    // any other.
     const [lo, hi] = levelRange(level);
     const near = Object.fromEntries(Object.entries(fresh).filter(([d]) => d >= lo && d <= hi));
-    const counts = Object.keys(near).length ? near : all;
-    const d = nearestDifficulty(weightedPick(weights), counts, weights);
-    return d ? this.draw(cat, (q) => q.d === d) : null;
+    if (Object.keys(near).length || Object.keys(fresh).length) {
+      const d = nearestDifficulty(weightedPick(weights), Object.keys(near).length ? near : fresh, weights);
+      return d ? this.draw(cat, (q) => q.d === d) : null;
+    }
+    const lastId = list.length > 1 ? (this.used[cat] || []).at(-1) : undefined;
+    const others = {};
+    for (const q of list) if (q.id !== lastId) others[q.d] = (others[q.d] || 0) + 1;
+    const d = nearestDifficulty(weightedPick(weights), Object.keys(others).length ? others : all, weights);
+    return d ? this.draw(cat, (q) => q.d === d && q.id !== lastId) : null;
   }
 
   /** Any available category (weighted by its questions), drawn for a level. */

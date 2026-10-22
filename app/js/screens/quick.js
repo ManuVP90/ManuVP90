@@ -146,7 +146,8 @@ function introView() {
     empty ? noQuestionsBanner() : null,
     h('section', { class: 'card quick-intro-card' },
       svg(ICONS.bolt, 'quick-intro-icon'),
-      h('p', { class: 'lead' }, t('quick.intro', { n: QUICK_LENGTH, s: TIMER_SECONDS })),
+      // "from every world" only while the spoiler filter leaves all six (beta 4, m2).
+      h('p', { class: 'lead' }, t(empty || makePool({}).categories().length >= CATEGORIES.length ? 'quick.intro' : 'quick.introFiltered', { n: QUICK_LENGTH, s: TIMER_SECONDS })),
       lifelinesLeft({ lifelines: fullLifelines() }, 28),
       h('p', { class: 'muted' }, t('quick.introLifelines')),
       bestEl,

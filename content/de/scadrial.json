@@ -63,7 +63,7 @@
    "Kandra",
    "Bewahrer"
   ],
-  "explain": "Inquisitoren erhalten ihre Kräfte durch Hämalurgie – durch Stacheln, die man ihnen in den Körper treibt."
+  "explain": "Trotz der Stacheln, die ihnen durch die Augen getrieben wurden, können die Inquisitoren sehen."
  },
  {
   "id": "scadrial-007",
@@ -925,14 +925,14 @@
  },
  {
   "id": "scadrial-085",
-  "q": "Wer von den Kandra gab Wax den Ohrring, durch den der Einträchtige zu ihm sprechen kann?",
+  "q": "Wer von den Kandra gab Wax laut Brandon Sanderson seinen Ohrring?",
   "a": "MeLaan",
   "wrong": [
    "TenSoon",
    "VenDell",
    "KanPaar"
   ],
-  "explain": "MeLaan gab ihn Wax schon Jahre zuvor; der Ohrring besteht aus eingeschmolzenen Stacheln von Inquisitoren und lässt den Einträchtigen Wax’ Gedanken hören."
+  "explain": "Sanderson verriet es 2011 bei einer Signierstunde: MeLaan hatte ihn Wax persönlich überreicht, Jahre bevor er nach Elantel zurückkehrte."
  },
  {
   "id": "scadrial-086",

@@ -386,7 +386,7 @@
   "fr": "Défaits",
   "status": "unverified",
   "sources": [],
-  "notes": "No source found. Used « un Défait / une Défaite »."
+  "notes": "No source found. Used « un Défait / une Défaite ». A specific female Unmade (Sja-anat, Ba-Ado-Mishram) takes the feminine «la Défaite» (roshar-023, -088, -092); generic «Quel Défait…?» in which-Unmade questions."
  },
  "Honorblade": {
   "fr": "Lame d'Honneur",
@@ -2472,10 +2472,10 @@
   "notes": "Glossary official form kept (not independently re-verified)."
  },
  "crem": {
-  "fr": "crème",
+  "fr": "crem",
   "status": "unverified",
   "sources": [],
-  "notes": "No French source found in searches; glossary form kept as best guess."
+  "notes": "CHANGED from «crème» (beta round 4, m10): no attestation of the Livre de Poche form found in web searches, and «crème» reads as \"cream\". Golden-rule fallback to the English form (masc.: «du crem») until the French edition is checked. Note: the attested-looking «crémillons» for cremlings could derive from either «crème» or «crem»; QA must check La Voie des rois (highstorm water sediment passages)."
  },
  "Sliver": {
   "fr": "Esquille",
@@ -4238,10 +4238,12 @@
   "notes": "Coined; no attestation."
  },
  "Cremlings": {
-  "fr": "crémlings",
+  "fr": "crémillons",
   "status": "unverified",
-  "sources": [],
-  "notes": "Coined; existing review has crem = crème. QA check."
+  "sources": [
+   "Babelio reader review of La Voie des rois (search snippet only; page not fetchable): «…aux chulls, aux démons des gouffres et aux sempiternels \"crémillons\"»"
+  ],
+  "notes": "CHANGED (beta round 4, m10 follow-up) from «cremlings»: a reader review of the Livre de Poche edition quotes «crémillons» next to «chulls» and «démons des gouffres» (both our forms), which suggests it is the Mélanie Fazi rendering. Single snippet, not confirmed against the book: QA should check La Voie des rois. Does not settle crem (kept «crem»)."
  },
  "Larkins": {
   "fr": "larquins",
@@ -4592,5 +4594,11 @@
   "status": "unverified",
   "sources": [],
   "notes": "Singular of Hordelings."
+ },
+ "Melishi": {
+  "fr": "Melishi",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Melishi is male in canon (Coppermind: he/him); beta round 4 review fixed roshar-045, which had made him a woman. «le Forgelien Melishi»."
  }
 }

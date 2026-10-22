@@ -222,7 +222,7 @@ svg { display: block; }
 .logo svg { filter: drop-shadow(0 0 18px rgba(143, 211, 255, .35)); animation: float 6s ease-in-out infinite; }
 .title {
   margin: 0; font-family: var(--font-display);
-  font-size: clamp(2rem, 9vw, 2.6rem); line-height: 1.1; font-weight: 700;
+  font-size: clamp(2rem, 9vw, 2.6rem); line-height: 1.1; font-weight: 700; overflow-wrap: break-word; hyphens: auto;
   background: linear-gradient(180deg, var(--text) 30%, var(--accent));
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
@@ -244,7 +244,7 @@ svg { display: block; }
 }
 .menu-icon svg { width: 24px; height: 24px; }
 .menu-text { display: flex; flex-direction: column; min-width: 0; }
-.menu-title { font-weight: 700; font-size: 1.12rem; }
+.menu-title { font-weight: 700; font-size: 1.12rem; overflow-wrap: break-word; hyphens: auto; }
 .menu-desc { color: var(--text-dim); font-size: .92rem; hyphens: auto; overflow-wrap: break-word; }
 .menu-primary, .menu-continue {
   border-color: color-mix(in srgb, var(--accent) 55%, transparent);
@@ -263,6 +263,9 @@ svg { display: block; }
   background: var(--surface); color: var(--text); font-size: .9rem; font-weight: 600;
 }
 .small-btn .icon { color: var(--accent); }
+/* A label never breaks between its words ("Acerca / de" at 393 px, beta 4 m19): the button is at least
+   as wide as its label and the row wraps instead. */
+.small-btn > span { white-space: nowrap; }
 
 .banner { margin: 0; padding: 12px 14px; border-radius: var(--radius-sm); font-weight: 600; }
 .banner-error { background: var(--bad-bg); color: var(--bad); border: 1px solid currentColor; }
@@ -314,7 +317,7 @@ svg { display: block; }
 .board.compact .board-name { font-size: .9rem; line-height: 1.25; }
 /* Long names on the compact board: up to two lines, then an ellipsis. */
 .board.compact .board-name {
-  white-space: normal; overflow-wrap: anywhere;
+  white-space: normal; overflow-wrap: anywhere; hyphens: auto;
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;
 }
 .board.compact .gems { gap: 2px; flex-wrap: nowrap; }
@@ -364,7 +367,7 @@ svg { display: block; }
 /* ---------- switch / settings rows ---------- */
 .row-setting { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 52px; }
 .row-setting + .row-setting { border-top: 1px solid var(--border); }
-.row-label { display: flex; flex-direction: column; font-weight: 600; }
+.row-label { display: flex; flex-direction: column; font-weight: 600; flex: 1; min-width: 0; overflow-wrap: break-word; hyphens: auto; }
 .row-label small { font-weight: 400; color: var(--text-dim); font-size: .85rem; }
 .row-label .icon { display: none; }
 .switch {
@@ -493,7 +496,7 @@ svg { display: block; }
 .qcard-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; min-height: 48px; }
 .final-badge { display: inline-flex; align-items: center; gap: 4px; color: var(--gold); font-weight: 700; font-size: .9rem; }
 .final-badge .icon { width: 18px; height: 18px; }
-.qtext { margin: 0; font-size: clamp(1.12rem, 4.8vw, 1.32rem); line-height: 1.38; font-weight: 650; overflow-wrap: anywhere; }
+.qtext { margin: 0; font-size: clamp(1.12rem, 4.8vw, 1.32rem); line-height: 1.38; font-weight: 650; overflow-wrap: break-word; hyphens: auto; }
 
 .options { display: flex; flex-direction: column; gap: 10px; }
 .option {
@@ -509,7 +512,9 @@ svg { display: block; }
   flex: none; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 9px;
   background: color-mix(in srgb, var(--cat) 25%, transparent); color: var(--text); font-weight: 800; font-size: .9rem;
 }
-.option-text { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+/* Words break only at hyphenation points (the card carries the questions' lang) or, if one is longer
+   than the whole line, wherever it must; never "La esmerald/a" while the word fits a line. */
+.option-text { flex: 1; min-width: 0; overflow-wrap: break-word; hyphens: auto; }
 .option-mark { flex: none; width: 24px; height: 24px; }
 .option-mark svg { width: 24px; height: 24px; }
 .option:disabled { cursor: default; }
@@ -535,18 +540,22 @@ svg { display: block; }
 .outcome { font-weight: 700; }
 .points { font-weight: 800; color: var(--accent); font-size: 1.1rem; }
 
-.timer { position: relative; width: 48px; height: 48px; flex: none; }
-.timer svg { transform: rotate(-90deg); }
+.timer { position: relative; width: max(48px, 2.75rem); height: max(48px, 2.75rem); flex: none; margin-inline-start: auto; }
+/* The ring grows with the text size, so "30" always fits inside it (beta 4, m17). */
+.timer svg { transform: rotate(-90deg); width: 100%; height: 100%; }
 .timer-track { fill: none; stroke: var(--surface-2); stroke-width: 4; }
 .timer-ring { fill: none; stroke: var(--accent); stroke-width: 4; stroke-linecap: round; transition: stroke-dashoffset .2s linear, stroke .3s; }
 .timer.low .timer-ring { stroke: var(--bad); }
-.timer-num { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 800; font-variant-numeric: tabular-nums; }
+.timer-num { position: absolute; inset: 0; display: grid; place-items: center; font-size: 1rem; font-weight: 800; font-variant-numeric: tabular-nums; }
 .timer.low .timer-num { color: var(--bad); }
 
 .tally { font-variant-numeric: tabular-nums; }
 
 /* ---------- game level (picker + badge) ---------- */
+/* Four in a row; with big text (narrow card in em) 2×2 instead of splitting "Normal" mid-word. */
+.level-card { container: levelcard / inline-size; }
 .level-group { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+@container levelcard (max-width: 14em) { .level-group { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .level-opt {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px;
   min-height: 64px; padding: 8px 4px; border-radius: 12px;
@@ -554,7 +563,7 @@ svg { display: block; }
   font-weight: 700; font-size: .92rem; line-height: 1.15; text-align: center;
   transition: background .15s, border-color .15s, color .15s;
 }
-.level-name { overflow-wrap: anywhere; }
+.level-name { overflow-wrap: break-word; hyphens: auto; }
 .level-opt .pips i { width: 7px; height: 7px; border-width: 1.5px; }
 .level-opt .pips i.on { background: var(--text-dim); border-color: var(--text-dim); }
 .level-opt[aria-checked="true"] {
@@ -581,10 +590,11 @@ svg { display: block; }
 
 /* ---------- lifelines ---------- */
 .lifelines { display: flex; flex-direction: column; gap: 8px; }
-.lifeline-row { display: flex; align-items: stretch; gap: 8px; }
+.lifeline-row { display: flex; align-items: stretch; gap: 6px; }
 .lifeline {
   --ll: #8fd3ff;
-  flex: 1 1 0; min-width: 0; min-height: 58px; padding: 6px 4px;
+  /* Equal cells, but never narrower than the longest word ("tormentosa", "Fulgiflamme" at 320 px). */
+  flex: 1 1 0; min-width: min-content; min-height: 58px; padding: 6px 4px;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
   border-radius: 14px; border: 1.5px solid color-mix(in srgb, var(--ll) 45%, var(--border));
   background: radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--ll) 16%, transparent), transparent 70%), var(--surface-2);
@@ -618,7 +628,7 @@ svg { display: block; }
   animation: armed 1.6s ease-in-out infinite;
 }
 .lifeline-help-btn {
-  flex: none; width: 44px; display: grid; place-items: center; padding: 0;
+  flex: none; width: 40px; display: grid; place-items: center; padding: 0;
   border-radius: 14px; border: 1px solid var(--border); background: var(--surface); color: var(--text-dim);
 }
 .lifeline-help-btn[aria-expanded="true"] { color: var(--accent); border-color: var(--accent); }
@@ -827,6 +837,17 @@ svg { display: block; }
 .onb-or { margin: 4px 0 0; text-align: center; font-weight: 600; }
 .onb-why { margin: 0; text-align: center; font-weight: 600; color: var(--text); }
 .onb-actions { gap: 8px; }
+/* The notice sits on the bar's opaque background, never over the list scrolling under it (beta 4, m18);
+   a short fade above the bar keeps the edge soft. */
+.onboarding .onb-actions {
+  background: var(--bg);
+  margin-inline: calc(-1 * var(--sal) - 16px) calc(-1 * var(--sar) - 16px);
+  padding-inline: calc(var(--sal) + 16px) calc(var(--sar) + 16px);
+}
+.onboarding .onb-actions::before {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 18px;
+  background: linear-gradient(to top, var(--bg), transparent); pointer-events: none;
+}
 /* With very big text the bar would cover the list: it then simply follows the content. */
 @media (max-height: 600px) { .onboarding .onb-actions { position: static; margin-bottom: 0; } }
 
@@ -863,6 +884,14 @@ svg { display: block; }
 }
 .report-link .icon { width: 15px; height: 15px; flex: none; }
 .report-link:hover, .report-link:focus-visible { color: var(--text); }
+/* 2.0.0: "Report a mistake" + "Copy report" side by side; they wrap (right-aligned) when narrow. */
+.report-actions { display: inline-flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; column-gap: 10px; max-width: 100%; }
+.report-copy {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 6px 4px;
+  background: none; border: 0; border-radius: 8px; color: var(--text-dim); font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer;
+}
+.report-copy .icon { width: 15px; height: 15px; flex: none; }
+.report-copy:hover, .report-copy:focus-visible { color: var(--text); }
 .feedback .report-row { margin-top: -2px; }
 
 .review { width: 100%; text-align: left; padding: 0; overflow: hidden; }
@@ -888,7 +917,7 @@ svg { display: block; }
 .review-a { display: flex; align-items: flex-start; gap: 6px; color: var(--ok); font-weight: 700; overflow-wrap: anywhere; }
 .review-a .icon { width: 18px; height: 18px; flex: none; margin-top: 2px; }
 .review-x { color: var(--text-dim); font-size: .92rem; }
-.review-item .report-link { align-self: flex-end; }
+.review-item .report-actions { align-self: flex-end; }
 .review-none { display: inline-flex; align-items: center; gap: 6px; margin: 0; font-weight: 600; }
 .review-none .icon { width: 18px; height: 18px; color: var(--ok); }
 .victory-body .review, .result-body + .review { margin-top: 4px; }
@@ -1030,3 +1059,60 @@ svg { display: block; }
 @media (prefers-reduced-motion: reduce) { .ach-toast { animation: none; } }
 .daily-result-body { flex: 0 0 auto; padding-top: 8px; }
 .daily-result-body p { margin: 0; }
+
+/* ---------- Stats with big text / narrow screens (beta 4, M4) ----------
+   The fixed label columns of the rows (7–7.5em) don't fit at 200 % text on 320 px: below 17.5em the
+   tiles go to one column (only with enlarged text: 17.5em is 280 px at 100 %) and each row puts icon, label and value on one line and the bar under them. */
+.screen.stats { container: stats / inline-size; }
+@container stats (max-width: 17.5em) {
+  .tiles { grid-template-columns: minmax(0, 1fr); }
+  .tile:last-child:nth-child(odd) { grid-column: auto; }
+  .tile-value { overflow-wrap: anywhere; }
+  .bar-row, .col-row {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: "icon label label" "track track value";
+    row-gap: 4px;
+  }
+  .bar-row > :first-child, .col-row > :first-child { grid-area: icon; }
+  .bar-label, .col-label { grid-area: label; white-space: normal; overflow-wrap: break-word; hyphens: auto; }
+  .bar-track, .col-track { grid-area: track; }
+  .bar-value, .col-value { grid-area: value; }
+  .record-row { flex-wrap: wrap; row-gap: 0; }
+  .record-level { min-width: max-content; }
+  .lifeline-stats { grid-template-columns: minmax(0, 1fr); }
+  .lifeline-stats li { flex-direction: row; flex-wrap: wrap; gap: 0 10px; text-align: start; }
+  .lifeline-stats-label { min-width: 0; overflow-wrap: break-word; }
+  .lifeline-stats-value { min-width: 1.5em; }
+}
+
+/* ---------- Question card with big text (beta 4, m17) ----------
+   Below 13em (about 150 % text on a 320 px phone) the card's chrome shrinks so whole words fit on
+   an option line; the empty answer-mark slot is dropped until it holds a mark. */
+.question-wrap { container: question / inline-size; }
+@container question (max-width: 13em) {
+  .qcard { padding: 12px; gap: 12px; }
+  .options { gap: 8px; }
+  .option { gap: 8px; padding: 8px; }
+  .option-letter { width: 1.45em; height: 1.45em; font-size: .8rem; border-radius: 7px; }
+  .option-mark:empty { display: none; }
+}
+/* Input guard (beta 4, G1): options and lifelines ignore taps for a moment after the card is painted. */
+.qcard.input-guard .option, .qcard.input-guard .lifeline { pointer-events: none; }
+/* Home menu with big text: the icon goes above the title so long words ("Herausforderung") keep the whole width. */
+.menu { container: menu / inline-size; }
+@container menu (max-width: 15em) {
+  .menu-btn { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+
+/* ---------- 2.0.0: full round, shared victory, group games ---------- */
+.board-trophy { display: inline-block; width: 1em; height: 1em; margin-right: 3px; vertical-align: -0.12em; color: var(--gold); }
+.board-trophy svg { width: 100%; height: 100%; }
+.board-player.finalist .avatar { box-shadow: 0 0 0 2px var(--gold); }
+.handoff-closing, .handoff-clock { margin: 4px 0; max-width: 28rem; text-align: center; }
+.victory-avatars { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: -4px; }
+.victory-shared .victory-title { overflow-wrap: break-word; hyphens: auto; }
+.victory-group, .stats-group-note, .ach-group-note, .ach-blocked { margin: 0; font-size: .9rem; }
+.ach-blocked { color: var(--text-dim); font-style: italic; }
+.setup-fullround[hidden] { display: none; }
+.work-empty { display: block; color: var(--text-dim); font-size: .8rem; font-weight: 400; }
+.menu-desc .menu-turn { font-weight: 700; color: var(--text); }

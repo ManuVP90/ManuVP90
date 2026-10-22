@@ -63,7 +63,7 @@
       "Kandra",
       "Guardadores"
     ],
-    "explain": "Los Inquisidores obtienen sus poderes mediante la hemalurgia, con clavos hincados en el cuerpo."
+    "explain": "Pese a los clavos que les atraviesan los ojos, los Inquisidores pueden ver."
   },
   {
     "id": "scadrial-007",
@@ -925,14 +925,14 @@
   },
   {
     "id": "scadrial-085",
-    "q": "¿Qué kandra le dio a Wax el pendiente a través del cual Armonía puede hablarle?",
+    "q": "Según Brandon Sanderson, ¿qué kandra le dio a Wax su pendiente?",
     "a": "MeLaan",
     "wrong": [
       "TenSoon",
       "VenDell",
       "KanPaar"
     ],
-    "explain": "MeLaan se lo dio a Wax años atrás; hecho con clavos de Inquisidor fundidos, permite a Armonía oír sus pensamientos."
+    "explain": "Sanderson lo reveló en una firma de libros en 2011: MeLaan se lo había entregado en persona a Wax años antes de que él regresara a Elendel."
   },
   {
     "id": "scadrial-086",

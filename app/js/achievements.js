@@ -4,14 +4,23 @@
 //  - a `check(ctx)` evaluated against the player's progress (stats, discovered questions, daily
 //    challenge, languages played), so progress made before 1.6.0 counts too; or
 //  - `event: true`: unlocked by a moment in a game (core.unlockAchievement(id)).
+// An optional `blocked(ctx)` says the current spoiler filter makes it unreachable (beta 4: the
+// showcase notes it, like the Collection does); ctx.filtered is the collection under the filter.
+// Since 2.0.0 classic games of 2+ players feed no individual achievement (lead decision 2): only
+// group ones such as `fullTable`.
 // Names and descriptions live in i18n under `ach.<id>.name` / `ach.<id>.desc`. Names only use
 // terms whose glossary status is `official` in each language (or generic wording).
-import { CATEGORIES, LIFELINES, LANGS } from './config.js';
+import { CATEGORIES, LIFELINES, LANGS, QUICK_LENGTH } from './config.js';
 
 export const QUICK_SCORE_GOAL = 2000;
 export const ANSWERED_GOAL = 100;
 export const RADIANT_WINS = 5;
 export const POLYGLOT_LANGS = 3;
+
+/** A world of the collection under the spoiler filter (ctx.filtered), or an empty one. */
+const fw = (x, c) => x.filtered?.worlds?.find((w) => w.cat === c) || { seen: 0, total: 0 };
+/** Questions still to discover that the filter lets come out, in world `c`. */
+const openIn = (x, c) => { const w = fw(x, c); return Math.max(0, w.total - w.seen); };
 
 const answered = (s) => CATEGORIES.reduce((n, c) => n + (s.cats[c]?.a || 0), 0);
 
@@ -20,16 +29,16 @@ export const ACHIEVEMENTS = [
   { id: 'firstWin', gem: 'roshar', check: (x) => x.stats.classicGames >= 1 },
   { id: 'radiant', gem: 'roshar', check: (x) => x.stats.classicGames >= RADIANT_WINS, goal: (x) => [x.stats.classicGames, RADIANT_WINS] },
   { id: 'fullTable', gem: 'otros', event: true },
-  { id: 'flawless', gem: 'sel', event: true },
+  { id: 'flawless', gem: 'sel', event: true, blocked: (x) => CATEGORIES.some((c) => !(fw(x, c).total > 0)) },
   { id: 'expertPure', gem: 'scadrial', event: true },
-  { id: 'quickPerfect', gem: 'nalthis', event: true },
+  { id: 'quickPerfect', gem: 'nalthis', event: true, blocked: (x) => (x.filtered?.total ?? QUICK_LENGTH) < QUICK_LENGTH },
   { id: 'quickScore', gem: 'nalthis', check: (x) => x.stats.bestQuick >= QUICK_SCORE_GOAL, goal: (x) => [x.stats.bestQuick, QUICK_SCORE_GOAL] },
-  { id: 'allWorlds', gem: 'cosmere', check: (x) => CATEGORIES.every((c) => (x.stats.cats[c]?.c || 0) > 0), goal: (x) => [CATEGORIES.filter((c) => (x.stats.cats[c]?.c || 0) > 0).length, CATEGORIES.length] },
+  { id: 'allWorlds', gem: 'cosmere', check: (x) => CATEGORIES.every((c) => (x.stats.cats[c]?.c || 0) > 0), goal: (x) => [CATEGORIES.filter((c) => (x.stats.cats[c]?.c || 0) > 0).length, CATEGORIES.length], blocked: (x) => CATEGORIES.some((c) => !((x.stats.cats[c]?.c || 0) > 0) && !(fw(x, c).total > 0)) },
   { id: 'answered100', gem: 'sel', check: (x) => answered(x.stats) >= ANSWERED_GOAL, goal: (x) => [answered(x.stats), ANSWERED_GOAL] },
   { id: 'allLifelines', gem: 'otros', check: (x) => LIFELINES.every((k) => (x.stats.lifelines[k] || 0) > 0), goal: (x) => [LIFELINES.filter((k) => (x.stats.lifelines[k] || 0) > 0).length, LIFELINES.length] },
   { id: 'stormlightSave', gem: 'roshar', event: true },
-  { id: 'compendium', gem: 'sel', check: (x) => x.collection.worlds.some((w) => w.total > 0 && w.seen >= w.total), goal: (x) => { const w = bestWorld(x.collection); return w ? [w.seen, w.total] : null; } },
-  { id: 'halfCosmere', gem: 'cosmere', check: (x) => x.collection.total > 0 && x.collection.seen * 2 >= x.collection.total, goal: (x) => [x.collection.seen, Math.ceil(x.collection.total / 2)] },
+  { id: 'compendium', gem: 'sel', check: (x) => x.collection.worlds.some((w) => w.total > 0 && w.seen >= w.total), goal: (x) => { const w = bestWorld(x.collection); return w ? [w.seen, w.total] : null; }, blocked: (x) => !x.collection.worlds.some((w) => w.total > 0 && w.seen + openIn(x, w.cat) >= w.total) },
+  { id: 'halfCosmere', gem: 'cosmere', check: (x) => x.collection.total > 0 && x.collection.seen * 2 >= x.collection.total, goal: (x) => [x.collection.seen, Math.ceil(x.collection.total / 2)], blocked: (x) => x.collection.seen + CATEGORIES.reduce((n, c) => n + openIn(x, c), 0) < Math.ceil(x.collection.total / 2) },
   { id: 'polyglot', gem: 'otros', check: (x) => x.langs.length >= POLYGLOT_LANGS, goal: (x) => [x.langs.length, POLYGLOT_LANGS] },
   { id: 'dailyFirst', gem: 'nalthis', check: (x) => x.daily.played >= 1 },
   { id: 'dailyPerfect', gem: 'scadrial', check: (x) => x.daily.perfect >= 1 },
@@ -79,6 +88,12 @@ export function progressOf(id, ctx) {
   const g = safe(() => a.goal(ctx));
   if (!Array.isArray(g)) return null;
   return [Math.min(g[0], g[1]), g[1]];
+}
+
+/** True when the current spoiler filter makes achievement `id` unreachable (ctx needs `filtered`). */
+export function isBlocked(id, ctx) {
+  const a = ACHIEVEMENTS.find((x) => x.id === id);
+  return !!(a?.blocked && ctx?.filtered && safe(() => a.blocked(ctx)));
 }
 
 function safe(fn) { try { return fn(); } catch { return null; } }

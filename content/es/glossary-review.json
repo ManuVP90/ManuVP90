@@ -2338,7 +2338,7 @@
   "sources": [
    "glossary (status official)"
   ],
-  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass. A specific female Unmade (Sja-anat, Ba-Ado-Mishram) takes the feminine: «la Deshecha» (roshar-023, -088, -092); generic «¿Qué Deshecho…?» in which-Unmade questions to avoid gender leaks."
  },
  "Valley": {
   "es": "el Valle",
@@ -4897,5 +4897,23 @@
   "status": "unchanged",
   "sources": [],
   "notes": "Personal/place name; not translated in Nova editions."
+ },
+ "T'Telir": {
+  "es": "T’Telir",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Typographic apostrophe (U+2019) in Spanish text, per beta round 4 (m16); spelling otherwise unchanged."
+ },
+ "Mulla'dil": {
+  "es": "Mulla’dil",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Typographic apostrophe (U+2019) in Spanish text, per beta round 4 (m16); lowercase «los mulla’dil» for the people."
+ },
+ "D'Denir": {
+  "es": "D’Denir",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Typographic apostrophe (U+2019) in Spanish text, per beta round 4 (m16)."
  }
 }

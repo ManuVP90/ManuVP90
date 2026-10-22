@@ -121,15 +121,14 @@
       "Kandra",
       "Keepers"
     ],
-    "explain": "Inquisitors gain their powers through Hemalurgy, using spikes driven into their bodies.",
+    "explain": "Despite the spikes driven through their eyes, the Inquisitors can still see.",
     "terms": [
       "Lord Ruler",
       "Steel Inquisitor",
       "Obligator",
       "kandra",
       "Keeper",
-      "Inquisitor",
-      "Hemalurgy"
+      "Inquisitor"
     ],
     "source": "The Final Empire"
   },
@@ -1941,26 +1940,25 @@
     "id": "scadrial-085",
     "category": "scadrial",
     "difficulty": 2,
-    "work": "shadows-of-self",
-    "q": "Which kandra gave Wax the earring through which Harmony can speak to him?",
+    "work": "wob",
+    "q": "According to Brandon Sanderson, which kandra gave Wax his earring?",
     "a": "MeLaan",
     "wrong": [
       "TenSoon",
       "VenDell",
       "KanPaar"
     ],
-    "explain": "MeLaan gave it to Wax years earlier; made from melted-down Inquisitor spikes, it lets Harmony hear his thoughts.",
+    "explain": "Sanderson revealed it at a 2011 book signing: MeLaan had handed it to Wax in person, years before he returned to Elendel.",
     "terms": [
       "kandra",
       "Wax",
-      "Harmony",
       "MeLaan",
       "TenSoon",
       "VenDell",
       "KanPaar",
-      "Inquisitor"
+      "Elendel"
     ],
-    "source": "Mistborn: Shadows of Self"
+    "source": "Words of Brandon"
   },
   {
     "id": "scadrial-086",

@@ -26,6 +26,9 @@ export function spoilerPicker({
   const boxes = new Map();
   const groupBoxes = new Map();
   const counts = new Map(); // "3/7" per world in the collapsed view
+  // Works that have no question yet are labelled so (beta 4): ticking them changes nothing today.
+  const withQuestions = new Set((app.questions || []).map((q) => q.w));
+  const noneYet = (w) => app.questions?.length > 0 && !withQuestions.has(w);
 
   function commit() {
     updateSettings({ disabledWorks: ALL_WORKS.filter((w) => off.has(w)) });
@@ -58,7 +61,8 @@ export function spoilerPicker({
       const id = `${idPrefix}-${w}`;
       const box = h('input', { type: 'checkbox', id, class: 'check', onchange: (e) => { if (e.target.checked) off.delete(w); else off.add(w); commit(); } });
       boxes.set(w, box);
-      return h('li', {}, h('label', { class: 'check-row', for: id }, box, h('span', {}, workTitle(w, lang))));
+      return h('li', { class: noneYet(w) ? 'work-noq' : null }, h('label', { class: 'check-row', for: id }, box,
+        h('span', {}, workTitle(w, lang), noneYet(w) ? h('small', { class: 'work-empty' }, t('settings.noQuestionsYet')) : null)));
     }));
     const head = h('label', { class: 'check-row group-row', for: gid }, gb,
       h('span', { class: 'group-gem', 'aria-hidden': 'true', html: gemSvg(g.id, { size: 20 }) }),

@@ -11,17 +11,25 @@ import { cleanIds } from './progress.js';
 // time (epoch ms) at which `remaining` was measured while the question was revealed: the time
 // spent away (Home, another app, a reload) is deducted on return. null = paused / never shown.
 // 1.4.0 also adds per-player stats ({ answered, correct, lifelines }) and the game's play time.
-export const STATE_VERSION = 3;
+// v4 (2.0.0) adds the "full round" option (beta 4, lead decision 3): `fullRound`, the starting
+// player (`starter`), the players who answered the final right (`winners`) and the players still
+// to play in the closing round (`roundLeft`, null while nobody has won).
+export const STATE_VERSION = 4;
 export const PHASES = ['handoff', 'spin', 'choose', 'final-intro', 'question', 'won'];
 
 const randomIndex = (n) => Math.floor(Math.random() * n);
 
-export function newClassicGame({ players, timer, categories, level }) {
+export function newClassicGame({ players, timer, categories, level, fullRound = true }) {
   const multi = players.length > 1;
+  const current = multi ? randomIndex(players.length) : 0; // SPEC: the starting player is drawn at random
   return {
     v: STATE_VERSION,
     players: players.map((p) => ({ name: p.name, color: p.color, charges: {}, lifelines: fullLifelines(), stats: emptyPlayerStats() })),
-    current: multi ? randomIndex(players.length) : 0, // SPEC: the starting player is drawn at random
+    current,
+    starter: current, // a round runs from this player to the one before them
+    fullRound: multi && fullRound !== false, // after a right final, the rest of the round still plays
+    winners: [], // players who answered the final right (several when they share the victory)
+    roundLeft: null, // closing round: players still to play their turn after the first right final
     phase: multi ? 'handoff' : 'spin',
     first: multi, // show "Starts: {name}" on the first handoff
     streak: 0, // correct answers in a row in the current turn
@@ -32,7 +40,7 @@ export function newClassicGame({ players, timer, categories, level }) {
     pending: null, // { id, cat, order, final, fx: { removed, struck, armed }, clock: { remaining } }
     resume: null, // phase to restore after the handoff shown when a saved game is resumed
     asked: 0,
-    winner: null,
+    winner: null, // the first winner (kept for older code paths); see `winners`
     startedAt: Date.now(),
     playMs: 0, // time spent playing (screens of this game on display), for the victory screen
     missed: [], // ids answered wrong in this game, for "Review mistakes" on the victory screen (1.5.0)
@@ -106,6 +114,14 @@ export function migrateState(s) {
     s.first = false;
     s.v = 3;
   }
+  if (s.v === 3) {
+    // Games started before 2.0.0 keep their rules: the first right final wins at once.
+    s.fullRound = false;
+    s.starter = isInt(s.current) ? s.current : 0;
+    s.winners = s.phase === 'won' && isInt(s.winner) ? [s.winner] : [];
+    s.roundLeft = null;
+    s.v = 4;
+  }
   if (s.v !== STATE_VERSION) return s;
   // Light normalization of fields that have a safe default.
   if (!LEVEL_IDS.includes(s.level)) s.level = levelOrDefault(s.level);
@@ -128,9 +144,16 @@ export function migrateState(s) {
   }
   if (!isInt(s.playMs)) s.playMs = 0;
   s.missed = cleanIds(s.missed); // saves from before 1.5.0 have none
+  if (typeof s.fullRound !== 'boolean') s.fullRound = false;
+  if (Array.isArray(s.players) && s.players.length < 2) s.fullRound = false;
+  if (!isInt(s.starter, 0, Array.isArray(s.players) ? Math.max(0, s.players.length - 1) : 0)) s.starter = 0;
+  if (s.winners === undefined) s.winners = [];
+  if (s.roundLeft === undefined) s.roundLeft = null;
   if (s.phase !== 'won') s.winner = null;
   return s;
 }
+
+const indexList = (a, n) => Array.isArray(a) && a.every((i) => isInt(i, 0, n - 1)) && new Set(a).size === a.length;
 
 function isValidPlayer(p) {
   return isObj(p) && typeof p.name === 'string' && p.name.length <= 64 && CATEGORIES.includes(p.color)
@@ -159,6 +182,14 @@ export function isValidState(s) {
     if (!isValidPending(s.pending, s.categories)) return false;
     if (s.phase === 'question' && !s.pending) return false;
     if (s.phase === 'won' && !isInt(s.winner, 0, s.players.length - 1)) return false;
+    // Full round (v4): winners and the closing round must agree with each other and the turn.
+    const n = s.players.length;
+    if (typeof s.fullRound !== 'boolean' || (s.fullRound && n < 2) || !isInt(s.starter, 0, n - 1)) return false;
+    if (!indexList(s.winners, n)) return false;
+    if (s.roundLeft !== null && (!s.fullRound || !s.winners.length || !indexList(s.roundLeft, n)
+      || s.roundLeft.some((i) => s.winners.includes(i) || i === s.current))) return false;
+    if (s.phase === 'won' && (!s.winners.length || s.winners[0] !== s.winner)) return false;
+    if (s.phase !== 'won' && s.winners.length && (s.roundLeft === null || s.winners.includes(s.current))) return false;
     if (s.phase === 'handoff' && s.resume === 'question' && !s.pending) return false;
     // A player with every gem infused only plays the final question, and only they get one.
     const ready = allInfused(s, s.players[s.current]);
@@ -183,9 +214,32 @@ export function startPhase(state) {
   return allInfused(state, state.players[state.current]) ? 'final-intro' : 'spin';
 }
 
+/** A classic game with 2+ players: it doesn't feed personal stats, "My mistakes" or individual achievements. */
+export const isGroupGame = (state) => (state?.players?.length || 0) > 1;
+
+/** Players who still play in this round after `state.current` (up to the one before the starter). */
+export function roundRest(state) {
+  const n = state.players.length;
+  const out = [];
+  for (let i = (state.current + 1) % n; i !== state.starter && out.length < n; i = (i + 1) % n) out.push(i);
+  return out;
+}
+
+function endGame(state, result) {
+  state.winner = state.winners[0];
+  state.roundLeft = null;
+  state.phase = 'won';
+  result.won = true;
+  result.winners = [...state.winners];
+}
+
 function passTurn(state, result) {
-  state.current = (state.current + 1) % state.players.length;
   state.streak = 0;
+  if (state.roundLeft) {
+    // Closing round: only the players left in it play, then the game ends.
+    if (!state.roundLeft.length) { result.roundOver = true; endGame(state, result); return; }
+    state.current = state.roundLeft.shift();
+  } else state.current = (state.current + 1) % state.players.length;
   result.next = state.players[state.current].name;
   state.phase = state.players.length > 1 ? 'handoff' : startPhase(state);
 }
@@ -197,14 +251,22 @@ function passTurn(state, result) {
 export function applyAnswer(state, correct) {
   const p = state.players[state.current];
   const { cat, final } = state.pending;
-  const result = { correct, final, cat, player: p.name, gained: false, infused: false, alreadyInfused: false, won: false, streakEnd: false };
+  const result = { correct, final, cat, player: p.name, gained: false, infused: false, alreadyInfused: false, won: false, streakEnd: false, finalWin: false, shared: false, roundOver: false };
   state.pending = null;
   state.asked++;
 
   if (correct && final) {
-    state.winner = state.current;
-    state.phase = 'won';
-    result.won = true;
+    state.winners = [...(state.winners || []), state.current];
+    result.finalWin = true;
+    result.shared = state.winners.length > 1;
+    // Full round (lead decision 3): the players left in this round still play their turn, and
+    // whoever also answers the final right shares the victory.
+    if (state.fullRound && state.players.length > 1) {
+      if (state.roundLeft === null) state.roundLeft = roundRest(state);
+      if (state.roundLeft.length) { result.roundGoesOn = !result.shared; passTurn(state, result); return result; }
+      result.roundOver = result.shared;
+    }
+    endGame(state, result);
     return result;
   }
   if (correct) {
@@ -230,4 +292,9 @@ export function applyAnswer(state, correct) {
   // Wrong (or timed out): turn passes.
   passTurn(state, result);
   return result;
+}
+
+/** True while a full round is closing after someone answered the final right: nobody gets another turn. */
+export function isClosingRound(state) {
+  return Boolean(state && state.fullRound && state.roundLeft != null && Array.isArray(state.winners) && state.winners.length > 0);
 }

@@ -589,7 +589,7 @@ await test('engine: final prefers unseen, random starter, 3-answer turns, migrat
   assert(out.streak.passed && JSON.stringify(out.streak.streakEnd) === '[false,false,true]' && out.streak.phase === 'handoff' && out.streak.streakAfter === 0,
     `turn passes after 3 correct answers (${JSON.stringify(out.streak)})`);
   assert(out.solo.current === 0 && out.solo.phase !== 'handoff' && out.solo.first === false, 'no limit and no handoff for a single player');
-  assert(JSON.stringify(out.migr) === JSON.stringify([true, 3, 'normal', true, 'hard', 0]), `v1/v2 saves migrate to v3 (${out.migr})`);
+  assert(JSON.stringify(out.migr) === JSON.stringify([true, 4, 'normal', true, 'hard', 0]), `v1/v2 saves migrate to v4 (${out.migr})`);
   assert(JSON.stringify(out.lang) === JSON.stringify(['es', 'es', 'es', 'es', 'de', null, null]), `ca/gl/eu → es (${out.lang})`);
   assert(JSON.stringify(out.initials) === JSON.stringify(['🔥', '👨‍👩‍👧', 'Á', 'V', '🇪🇸', '?']), `grapheme initials (${out.initials})`);
 });
@@ -924,7 +924,8 @@ await test('B2 UI: live setup avatars, specific "new game" confirmations, alread
 
   // Wheel lands on an infused gem: the rule stays on screen ~2.5 s, or until tapped.
   const ana = { name: 'Ana', color: 'roshar', charges: { roshar: 2 }, lifelines: { atium: 1, stormlight: 1, breath: 1 } };
-  const save = classicSave({ players: [ana], categories: ['roshar', 'sel'], phase: 'spin', pending: null });
+  // Two worlds still open (with only one, 2.0.0 goes straight to it: see the 2.0 wildcard test).
+  const save = classicSave({ players: [ana], categories: ['roshar', 'sel', 'nalthis'], phase: 'spin', pending: null });
   for (const tap of [false, true]) {
     ({ page, context } = await use({ clock: 'paused', storage: { classic: JSON.stringify(save) } }));
     await page.emulateMedia({ reducedMotion: 'reduce' });
@@ -998,7 +999,7 @@ await test('B2 onboarding: first launch asks what you read, explains the rules, 
     assert(!(await page.$('.onboarding')), 'not shown again');
     await page.click('.small-btn >> nth=2');
     await page.waitForSelector('.about .about-intro');
-    assert(await page.locator('.about ol li').count() === 6, 'About lists 6 rules (already-infused gem included)');
+    assert(await page.locator('.about ol li').count() === 10, 'About lists 10 rules (already-infused gem, timer, final miss, full round, group games)');
     await page.click('.about-intro');
     await page.waitForSelector('.onboarding');
     assert(await page.isChecked('#onb-final-empire') && !(await page.isChecked('#onb-well-of-ascension')), 'introduction reflects the saved filter');
@@ -1438,7 +1439,7 @@ await test('1.5 report: prefilled GitHub issue (id, language, text, options, ver
   const r = parseReport(await page.getAttribute('.feedback .report-link', 'href'));
   assert(r.origin === 'https://github.com/ManuVP90/ManuVP90/issues/new' && r.template === 'error-en-pregunta.md', `issue URL + template (${r.origin} ${r.template})`);
   assert(r.title.includes(q.id), 'title has the question id');
-  for (const part of [q.id, '**Idioma / Language:** es', q.q, ...q.o, APP_VERSION, T('es', 'report.describe')]) assert(r.body.includes(part), `body includes "${part}"`);
+  for (const part of [q.id, '**Idioma:** es', q.q, ...q.o, APP_VERSION, T('es', 'report.describe')]) assert(r.body.includes(part), `body includes "${part}"`);
   assert(r.length <= 6000, `URL length ${r.length}`);
   assert(await page.getAttribute('.feedback .report-link', 'target') === '_blank' && (await page.getAttribute('.feedback .report-link', 'rel')).includes('noopener'), 'opens in a new tab, noopener');
   // Huge texts stay under the limit and keep the id (pure builder, same module the app uses).
@@ -1468,7 +1469,7 @@ await test('1.5 report: prefilled GitHub issue (id, language, text, options, ver
     await x.page.click('.qcard .option >> nth=0');
     await x.page.waitForSelector('.feedback .report-link');
     const rr = parseReport(await x.page.getAttribute('.feedback .report-link', 'href'));
-    assert(rr.body.includes(`**Idioma / Language:** ${lang}`) && rr.body.includes(T(lang, 'report.describe')), `${lang}: language and localized prompt`);
+    assert(rr.body.includes(`**${T(lang, 'report.field.language')}${lang === 'fr' ? '\u00a0:' : ':'}** ${lang}`) && rr.body.includes(T(lang, 'report.describe')), `${lang}: language and localized prompt`);
     assert(await text(x.page, '.feedback .report-link') === T(lang, 'report.link'), `${lang}: link label`);
     await x.context.close();
   }
@@ -1525,7 +1526,7 @@ await test('1.5 quick records per level: legacy best kept, per-level intro, reco
   await page.waitForSelector('.stats .record-row');
   const rows = await page.locator('.record-value').allTextContents();
   assert(rows.join('|') === ['—', '—', '—', fmtEs(2500)].join('|'), `records per level in Stats (${rows})`);
-  assert((await page.locator('.tile-value').nth(2).textContent()).trim() === fmtEs(2500), 'overall record ≥ every level');
+  assert((await page.locator('.tile-value').nth(3).textContent()).trim() === fmtEs(2500), 'overall record ≥ every level');
   await shot(page, 'e-15-stats-records');
 });
 
@@ -1894,7 +1895,7 @@ await test('1.6 daily engine: seeded per date + language, mixed 1–3, distinct 
   const odd = sanitizeDaily({ last: 'ayer', streak: -4, best: 'x', played: 2, perfect: 9, result: { date: '2026-10-18', lang: 'es', marks: [{ c: 'urithiru', ok: 1 }] }, run: { date: 'x' } });
   assert(odd.last === null && odd.streak === 0 && odd.perfect === 2 && odd.result === null && odd.run === null, `sanitized (${JSON.stringify(odd)})`);
   const share = shareText({ title: 'T', date: '2026-10-16', marks: [{ c: 'roshar', ok: true }, { c: 'sel', ok: false }, { c: 'nalthis', ok: true }], streakLabel: 'S' });
-  assert(share === 'T · 2026-10-16\n🟦⬛🟨 2/3\nS', `share text: ${JSON.stringify(share)}`);
+  assert(share === 'T · 2026-10-16\n✅❌✅ 2/3\nS', `share text: ${JSON.stringify(share)}`);
 });
 
 await test('1.6 daily UI: today’s 5 questions with timer, resume after reload, one attempt, streak + share, offline-safe', async (use) => {
@@ -1932,7 +1933,11 @@ await test('1.6 daily UI: today’s 5 questions with timer, resume after reload,
   await page.waitForFunction(() => window.__copied);
   const shared = await page.evaluate(() => window.__copied);
   const lines = shared.split('\n');
-  assert(lines[0].includes(day) && /^[🟦🟥🟩🟨🟪⬜⬛]{5} 4\/5$/u.test(lines[1]) && (lines[1].match(/⬛/gu) || []).length === 1, `share squares: ${JSON.stringify(shared)}`);
+  // Beta 4: ✅/❌ per question (no world colors to misread) and the date in the player's language.
+  const [yy, mm, dd] = day.split('-').map(Number);
+  const localDay = new Intl.DateTimeFormat('es', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(yy, mm - 1, dd));
+  assert(lines[0].endsWith(` · ${localDay}`) && !lines[0].includes(day), `localized share date: ${JSON.stringify(lines[0])}`);
+  assert(lines[1] === '✅❌✅✅✅ 4/5', `share marks: ${JSON.stringify(shared)}`);
   assert(ids.every((id) => !shared.includes(qById[id].q) && !shared.includes(qById[id].o[0])), 'no question or answer in the share text');
   assert((await text(page, '#toast')) === T('es', 'daily.copied'), 'copied toast');
   await shot(page, 'e-16-daily-result');
@@ -2014,7 +2019,18 @@ await test('1.6 achievements: retroactive and silent at start, showcase, notice 
   await win.page.click('.continue');
   await win.page.waitForSelector('.victory');
   ach = await lsJSON(win.page, 'achievements');
-  assert(ach.unlocked.fullTable && ach.unlocked.expertPure && ach.unlocked.firstWin, `classic win achievements (${JSON.stringify(ach)})`);
+  // 2.0.0 (lead decision 2): a group game only unlocks group achievements and counts as a group game.
+  const st6 = await lsJSON(win.page, 'stats');
+  assert(ach.unlocked.fullTable && !ach.unlocked.expertPure && !ach.unlocked.firstWin && st6.groupGames === 1 && !st6.classicGames, `group win: only fullTable (${JSON.stringify(ach)} ${JSON.stringify(st6)})`);
+  // The same win playing solo unlocks the individual ones.
+  const one = [{ ...six[0], name: 'Ana' }];
+  const solo1 = await use({ storage: { classic: JSON.stringify(classicSave({ players: one, level: 'expert', timer: false, pending: { id: fq.id, cat: fq.c, order: [0, 1, 2, 3], final: true }, asked: 20 })) } });
+  await solo1.page.click('.menu-continue-classic');
+  await answer(solo1.page, true);
+  await solo1.page.click('.continue');
+  await solo1.page.waitForSelector('.victory');
+  ach = await lsJSON(solo1.page, 'achievements');
+  assert(ach.unlocked.expertPure && ach.unlocked.firstWin && !ach.unlocked.fullTable, `solo win achievements (${JSON.stringify(ach)})`);
   // Infusing the sixth gem without a miss.
   const sq = QS.find((q) => q.c === 'cosmere' && q.d <= 2);
   const solo = [{ name: 'Ana', color: 'roshar', charges: { ...Object.fromEntries(CATS.map((x) => [x, 2])), cosmere: 1 }, lifelines: { atium: 1, stormlight: 1, breath: 1 }, stats: { answered: 11, correct: 11, lifelines: 0 } }];
@@ -2075,6 +2091,475 @@ await test('1.6 collection: X/Y discovered overall, per world and difficulty, re
   assert(!(await fl.page.$('.col-world[data-cat="roshar"]')), 'filtered world hidden');
   const allowed = QS.filter((q) => !QS.some((r) => r.c === 'roshar' && r.w === q.w));
   assert((await text(fl.page, '.col-total strong')) === T('es', 'stats.discovered', { n: allowed.filter((q) => seenAll.has(q.id)).length, total: allowed.length }), 'filtered overall');
+});
+
+// ================================================================== Beta 4 findings (docs/BETA-4.md)
+/**
+ * The double tap of beta 4 G1: a real tap on `sel` (the "Next"/"Ready" button), then — in the same
+ * frame of fake time — taps where the next question's options are, plus programmatic clicks on
+ * them (which bypass `pointer-events`, so the JS guard is checked too).
+ */
+async function doubleTap(page, sel) {
+  await page.locator(sel).scrollIntoViewIfNeeded();
+  const b = await page.locator(sel).boundingBox();
+  const x = b.x + b.width / 2; const y = b.y + b.height / 2;
+  await page.mouse.click(x, y);
+  await page.mouse.click(x, y);
+  const pts = await page.evaluate(() => [...document.querySelectorAll('.qcard .option')].map((o) => { const r = o.getBoundingClientRect(); return [r.x + r.width / 2, r.y + r.height / 2]; }).filter(([, py]) => py > 0 && py < innerHeight));
+  for (const [px, py] of pts) await page.mouse.click(px, py);
+  await page.evaluate(() => document.querySelectorAll('.qcard .option, .qcard .lifeline').forEach((o) => o.click()));
+}
+const unanswered = (page) => page.evaluate(() => !!document.querySelector('.qcard') && !document.querySelector('.qcard .option[disabled], .qcard .option.correct, .qcard .option.wrong, .qcard .lifeline.used') && document.querySelector('.qcard .continue').hidden);
+
+await test('B4 G1: a double tap on "Next"/"Ready" never answers the next question (quick, daily, practice, classic)', async (use) => {
+  // Quick game, 320×568 like the tester's iPhone SE; time only moves with runFor.
+  let { page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 } });
+  await page.click('.menu-quick');
+  await page.click('.quick-intro .sticky-actions .btn-primary');
+  await page.waitForSelector('.quick .qcard.input-guard');
+  await page.clock.runFor(400);
+  await answer(page, true);
+  const q1 = await text(page, '.qtext');
+  await doubleTap(page, '.qcard .continue');
+  assert((await text(page, '.progress-label')) === T('es', 'question.progress', { n: 2, total: 15 }), `one tap = one question (${await text(page, '.progress-label')})`);
+  assert(await text(page, '.qtext') !== q1, 'the next question is shown');
+  assert(await unanswered(page), 'quick: the second tap did not answer question 2');
+  assert(JSON.parse(await lsGet(page, 'quick')).index === 1 && JSON.parse(await lsGet(page, 'quick')).lifelines.atium === 1, 'quick: save untouched (index 1, lifelines kept)');
+  await page.clock.runFor(200);
+  await page.evaluate(() => document.querySelector('.qcard .option').click());
+  assert(await unanswered(page), 'still guarded 200 ms after painting');
+  await page.clock.runFor(200);
+  assert(!(await page.$('.qcard.input-guard')), 'guard lifted after 350 ms');
+  await answer(page, false);
+  assert(!(await unanswered(page)), 'a tap after the guard answers normally');
+  // The old "Next" can't fire twice either: two synchronous clicks advance exactly one question.
+  await page.evaluate(() => { const b = document.querySelector('.qcard .continue'); b.click(); b.click(); });
+  assert((await text(page, '.progress-label')) === T('es', 'question.progress', { n: 3, total: 15 }), 'two clicks on "Next" = one question');
+  await context.close();
+
+  // Daily challenge: the double tap must not spend question 2.
+  ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 } }));
+  await page.click('.menu-daily');
+  await page.click('.daily-start');
+  await page.waitForSelector('.daily .qcard');
+  await page.clock.runFor(400);
+  await answer(page, true);
+  await doubleTap(page, '.daily .continue');
+  assert(await unanswered(page), 'daily: question 2 not answered by the second tap');
+  const run = (await lsJSON(page, 'daily')).run;
+  assert(run.index === 1 && run.marks.length === 1, `daily: one mark only (${JSON.stringify(run.marks)})`);
+  await shot(page, 'e-b4-g1-daily-after-double-tap');
+  await context.close();
+
+  // Practice.
+  ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 } }));
+  await page.click('.menu-btn >> nth=2');
+  await page.click('.practice-setup .sticky-actions .btn-primary');
+  await page.waitForSelector('.practice .qcard');
+  await page.clock.runFor(400);
+  await answer(page, true);
+  await doubleTap(page, '.qcard .continue');
+  assert(await unanswered(page), 'practice: the next question not answered');
+  assert((await text(page, '.tally')) === T('es', 'practice.tally', { correct: 1, total: 1 }), 'practice: tally counts one answer');
+  await context.close();
+
+  // Classic: the handoff's "Ready" (same place as the options) and the answer's "Continue".
+  ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 }, storage: { classic: JSON.stringify(classicSave()) } }));
+  await page.click('.menu-continue-classic');
+  await page.waitForSelector('.handoff');
+  await doubleTap(page, '.handoff .btn-primary');
+  await page.waitForSelector('.classic .qcard, .qcard');
+  assert(await unanswered(page), 'classic: the tap after "Ready" did not answer');
+  await page.clock.runFor(400);
+  await answer(page, true);
+  await page.evaluate(() => { const b = document.querySelector('.qcard .continue'); b.click(); b.click(); });
+  const st = JSON.parse(await lsGet(page, 'classic'));
+  assert(st.asked === 3 && st.players[0].stats?.a !== 2, `classic: one answer recorded (${JSON.stringify({ asked: st.asked, phase: st.phase })})`);
+});
+
+await test('B4 M3: the daily challenge of a date at or before the last one played can’t be replayed (clock moved back)', async (use) => {
+  const day = (await (await use({ clock: true })).page.evaluate(async () => (await import('./js/daily.js')).dateKey()));
+  const later = addDays(day, 2);
+  const marks = CATS.slice(0, 5).map((c, i) => ({ c, ok: i !== 2 }));
+  // The device date went back two days after playing: the last result is shown, no "Start".
+  const daily = { v: 1, last: later, streak: 3, best: 3, played: 3, perfect: 0, result: { date: later, lang: 'es', marks, ids: [], filtered: false }, run: null };
+  let { page, context } = await use({ clock: true, viewport: { width: 320, height: 568 }, storage: { daily: JSON.stringify(daily) } });
+  await page.waitForSelector('.home .menu-daily');
+  assert((await text(page, '.menu-daily .menu-desc')) === T('es', 'home.dailyDone', { n: 4, total: 5, streak: 3 }), 'home: done, streak kept');
+  await page.click('.menu-daily');
+  await page.waitForSelector('.daily-result');
+  assert(!(await page.$('.daily-start')), 'no replay with the clock moved back');
+  assert(await page.$('.daily-clock-note'), 'the screen says why');
+  assert(!(await page.$('.daily-next')), 'no "come back tomorrow" (it would be wrong)');
+  assert((await text(page, '.daily-result .result-score')) === T('es', 'daily.result', { n: 4, total: 5 }), 'the last result');
+  await shot(page, 'e-b4-m3-daily-clock-back');
+  await context.close();
+  // No result stored with that date (old save): a locked screen, never the intro.
+  ({ page, context } = await use({ clock: true, viewport: { width: 390, height: 844 }, storage: { daily: JSON.stringify({ ...daily, result: null }) } }));
+  await page.waitForSelector('.home .menu-daily');
+  assert((await text(page, '.menu-daily .menu-desc')) === T('es', 'home.dailyLocked'), 'home: locked');
+  await page.click('.menu-daily');
+  await page.waitForSelector('.daily-clock-note');
+  assert(!(await page.$('.daily-start')), 'locked: no start');
+  await shot(page, 'e-b4-m3-daily-locked');
+  await context.close();
+  // The day after the last one played is playable again.
+  ({ page, context } = await use({ clock: true, storage: { daily: JSON.stringify({ ...daily, last: addDays(day, -1), result: { ...daily.result, date: addDays(day, -1) } }) } }));
+  await page.click('.menu-daily');
+  await page.waitForSelector('.daily-start');
+});
+
+await test('B4 layout: Stats at 200 % / 320 px, question card at 200 % (no mid-word breaks, timer in its ring), lifelines at 320 px, hyphenation lang', async (use) => {
+  const stats = { classicGames: 12, quickGames: 34, bestQuick: 2980, bestByLevel: { easy: 2100, normal: 2980, hard: 1500, expert: 900 }, cats: Object.fromEntries(CATS.map((c, i) => [c, { a: 100 + i, c: 60 + i }])), lifelines: { atium: 12, stormlight: 7, breath: 3 } };
+  for (const lang of ['es', 'de', 'fr']) {
+    const { page, context } = await use({ locale: `${lang}-${lang.toUpperCase()}`, viewport: { width: 320, height: 568 }, storage: { stats: JSON.stringify(stats) } });
+    await page.waitForSelector('.home');
+    await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+    await page.click('.small-btn >> nth=0');
+    await page.waitForSelector('.stats .tile');
+    const m = await page.evaluate(() => ({
+      sw: document.documentElement.scrollWidth,
+      out: [...document.querySelectorAll('.stats .tile, .stats .bar-row, .stats .col-row, .stats .record-row, .stats .lifeline-stats li')].filter((e) => e.getBoundingClientRect().right > innerWidth + 0.5 || e.scrollWidth > e.clientWidth + 1).map((e) => `${e.className || e.tagName}: ${e.textContent} ${e.scrollWidth}/${e.clientWidth}`),
+    }));
+    assert(m.sw <= 320 && !m.out.length, `${lang}: Stats fit 320 px at 200 % (${JSON.stringify(m)})`);
+    await page.screenshot({ path: join(SHOTS, `e-b4-stats-200-${lang}.png`), fullPage: true });
+    await context.close();
+  }
+  // Question card at 200 %, 320 px: the tester's "La esmerald/a" question.
+  const q = QS.find((x) => x.o.includes('La esmeralda'));
+  const run = { ...quickRun(), current: { id: q.id, order: [0, 1, 2, 3], fx: null, clock: { remaining: 30000, savedAt: null } } };
+  run.plan[run.index] = q.c;
+  const { page } = await use({ viewport: { width: 320, height: 568 }, storage: { quick: JSON.stringify(run) } });
+  await page.waitForSelector('.home');
+  await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+  await page.click('.menu-continue-quick');
+  await page.waitForSelector('.quick .qcard .timer-num');
+  const c = await page.evaluate(() => {
+    // A word drawn on two lines although it fits on one: split mid-word for no reason.
+    const split = [];
+    for (const e of document.querySelectorAll('.option-text, .qtext')) {
+      const node = e.firstChild; if (!node || node.nodeType !== 3) continue;
+      const re = /\S+/g; let mm;
+      while ((mm = re.exec(node.data))) {
+        const r = document.createRange(); r.setStart(node, mm.index); r.setEnd(node, mm.index + mm[0].length);
+        const tops = new Set([...r.getClientRects()].map((x) => Math.round(x.top)));
+        const width = [...r.getClientRects()].reduce((s, x) => s + x.width, 0);
+        if (tops.size > 1 && width <= e.clientWidth) split.push(mm[0]);
+      }
+    }
+    const num = document.querySelector('.timer-num'); const ring = document.querySelector('.timer');
+    const r = document.createRange(); r.selectNodeContents(num); const tb = r.getBoundingClientRect(); const rb = ring.getBoundingClientRect();
+    const ll = [...document.querySelectorAll('.lifeline')].filter((b) => b.scrollWidth > b.clientWidth + 1).map((b) => b.textContent);
+    return { split, timer: { text: num.textContent, tw: tb.width, th: tb.height, rw: rb.width, rh: rb.height }, ll, lang: document.querySelector('.qcard').lang, hy: getComputedStyle(document.querySelector('.option-text')).hyphens, sw: document.documentElement.scrollWidth };
+  });
+  assert(!c.split.length, `no word broken while it fits a line (${c.split})`);
+  // The digits sit inside the ring's inner circle (stroke 4 of a 48 viewBox: about 83 % of the width).
+  assert(c.timer.text === '30' && c.timer.tw <= c.timer.rw * 0.8 && c.timer.th <= c.timer.rh * 0.8, `"30" fits its ring (${JSON.stringify(c.timer)})`);
+  assert(c.lang === 'es' && c.hy === 'auto', `the card carries the questions' language for hyphenation (${c.lang}, ${c.hy})`);
+  assert(!c.ll.length && c.sw <= 320, `lifelines and page fit (${JSON.stringify(c)})`);
+  await page.screenshot({ path: join(SHOTS, 'e-b4-quick-200.png'), fullPage: true });
+  // 320 px, normal text: "Luz tormentosa" used (struck through) still fits its button.
+  for (const lang of ['es', 'fr', 'de', 'it', 'en']) {
+    const { page: p, context } = await use({ locale: `${lang}-${lang.toUpperCase()}`, viewport: { width: 320, height: 568 }, storage: { quick: JSON.stringify({ ...quickRun(), lifelines: { atium: 0, stormlight: 0, breath: 1 } }) } });
+    await p.click('.menu-continue-quick');
+    await p.waitForSelector('.quick .qcard .lifeline');
+    const ll = await p.evaluate(() => [...document.querySelectorAll('.lifeline')].map((b) => {
+      const n = b.querySelector('.lifeline-name'); const r = document.createRange(); r.selectNodeContents(n); const t = r.getBoundingClientRect(); const o = b.getBoundingClientRect();
+      return { name: n.textContent, inside: t.left >= o.left && t.right <= o.right + 0.5, right: o.right };
+    }));
+    assert(ll.every((x) => x.inside && x.right <= 320), `${lang}: lifeline labels inside their buttons at 320 px (${JSON.stringify(ll)})`);
+    if (lang === 'es' || lang === 'fr') await p.screenshot({ path: join(SHOTS, `e-b4-lifelines-320-${lang}.png`), fullPage: true });
+    await context.close();
+  }
+});
+
+await test('B4 layout: onboarding notice never over the list; Home "Acerca de" on one line at 393 px', async (use) => {
+  for (const vp of [{ width: 320, height: 640 }, { width: 390, height: 844 }]) {
+    const { page, context } = await use({ fresh: true, viewport: vp });
+    await page.waitForSelector('.onboarding .onb-next');
+    await page.click('.onb-next', { force: true }).catch(() => {}); // disabled: shows the reason
+    await page.evaluate(() => { const w = document.getElementById('onb-why'); if (w) w.hidden = false; });
+    await page.waitForSelector('#onb-why:not([hidden])');
+    // At the top the list runs under the sticky bar (the tester's screenshot): the notice's area must
+    // be painted by the bar itself, never show a list row through it.
+    await page.evaluate(() => window.scrollTo(0, 0));
+    assert(await page.evaluate(() => { const r = document.getElementById('onb-why').getBoundingClientRect(); return [...document.querySelectorAll('.onb-works .spoiler-group, .onb-works li, .onb-works label')].some((e) => { const b = e.getBoundingClientRect(); return b.top < r.bottom && b.bottom > r.top; }); }), `${vp.width}: the list really passes under the bar here`);
+    const m = await page.evaluate(() => {
+      const why = document.getElementById('onb-why'); const bar = why.closest('.onb-actions');
+      const r = why.getBoundingClientRect();
+      const hits = [];
+      for (let x = r.left + 4; x < r.right; x += 12) for (const y of [r.top + 2, r.top + r.height / 2, r.bottom - 2]) {
+        const e = document.elementFromPoint(x, y); if (e && !bar.contains(e)) hits.push(e.className || e.tagName);
+      }
+      const bg = getComputedStyle(bar).backgroundColor;
+      return { hits, bg, opaque: !/rgba\(.*, 0\)$/.test(bg) && bg !== 'transparent' };
+    });
+    assert(!m.hits.length && m.opaque, `${vp.width}: the notice sits on the bar's own background (${JSON.stringify(m)})`);
+    await shot(page, `e-b4-onb-notice-${vp.width}`);
+    await context.close();
+  }
+  for (const [lang, width] of [['es', 393], ['es', 390], ['es', 320], ['de', 393], ['fr', 393], ['it', 393]]) {
+    const { page, context } = await use({ locale: `${lang}-${lang.toUpperCase()}`, viewport: { width, height: 852 } });
+    await page.waitForSelector('.home .small-btn');
+    const m = await page.evaluate(() => ({
+      sw: document.documentElement.scrollWidth,
+      two: [...document.querySelectorAll('.small-btn > span')].filter((s) => { const r = document.createRange(); r.selectNodeContents(s); return new Set([...r.getClientRects()].map((x) => Math.round(x.top))).size > 1; }).map((s) => s.textContent),
+      out: [...document.querySelectorAll('.small-btn')].filter((b) => b.getBoundingClientRect().right > innerWidth + 0.5).length,
+    }));
+    assert(!m.two.length && !m.out && m.sw <= width, `${lang} ${width}: bottom labels on one line, inside (${JSON.stringify(m)})`);
+    if (lang === 'es' && width !== 390) await shot(page, `e-b4-home-${width}`);
+    await context.close();
+  }
+});
+
+await test('B4 records: an imported or stored quick record above 3000 is clamped', async (use) => {
+  const { page } = await use({ storage: { stats: JSON.stringify({ bestQuick: 99999, quickGames: 1, bestByLevel: { hard: 5000 } }) } });
+  await page.waitForSelector('.home');
+  const s = await page.evaluate(async () => { const core = await import('./js/core.js'); const a = core.getStats(); core.importData({ stats: { bestQuick: 1e9 } }); return [a, core.getStats()]; });
+  assert(s[0].bestQuick === 3000 && s[0].bestByLevel.hard === 3000 && s[1].bestQuick === 3000, `clamped (${JSON.stringify(s)})`);
+});
+
+// ------------------------------------------------------------------ 2.0.0: beta 4 batch 2 (lead decisions 2–4, m1–m4, m14, suggestions)
+/** A v4 classic save (2.0.0 fields) on top of classicSave. */
+const save4 = (over = {}) => classicSave({ v: 4, fullRound: true, starter: 0, winners: [], roundLeft: null, ...over });
+const allGems = () => Object.fromEntries(CATS.map((c) => [c, 2]));
+const pl = (name, color, charges = {}) => ({ name, color, charges, lifelines: { atium: 1, stormlight: 1, breath: 1 }, stats: { answered: 4, correct: 3, lifelines: 0 } });
+
+await test('2.0 group games: 2+ players feed no personal stats, "My mistakes", lifeline counts or individual achievements', async (use) => {
+  const q = QS.find((x) => x.c === 'roshar' && x.d <= 2);
+  const { page } = await use({ storage: { classic: JSON.stringify(save4({ players: [pl('Ana', 'roshar'), pl('Bea', 'sel')], pending: { id: q.id, cat: 'roshar', order: [0, 1, 2, 3], final: false } })) } });
+  // m3: "Continue game" says whose turn it is.
+  assert(await text(page, '.menu-continue-classic .menu-desc') === T('es', 'home.continueTurn', { name: 'Ana', players: 'Ana, Bea' }), 'continue says whose turn it is');
+  await page.click('.menu-continue-classic');
+  await page.click('.handoff .btn-primary');
+  await page.waitForSelector('.qcard .option');
+  await page.waitForTimeout(400); // input guard
+  await page.click('.lifeline >> nth=0'); // Atium
+  await answer(page, false);
+  await page.waitForSelector('.feedback .report-link');
+  const st = await lsJSON(page, 'stats');
+  const answered = st ? CATS.reduce((n, c) => n + (st.cats?.[c]?.a || 0), 0) : 0;
+  assert(!answered && !(st?.lifelines?.atium), `no personal answers or lifelines recorded (${JSON.stringify(st)})`);
+  assert(!(await lsJSON(page, 'missed'))?.es?.length, '"My mistakes" untouched');
+  assert((await lsJSON(page, 'classic')).missed.includes(q.id), 'the game still keeps its own list for the victory review');
+  assert(!Object.keys((await lsJSON(page, 'achievements'))?.unlocked || {}).length, 'no achievement');
+  // A group victory: counted apart, explained, review hint without "My mistakes".
+  const fq = QS.find((x) => x.d === 3);
+  const win = await use({ storage: { classic: JSON.stringify(save4({ fullRound: false, players: [pl('Ana', 'roshar', allGems()), pl('Bea', 'sel')], missed: [q.id], pending: { id: fq.id, cat: fq.c, order: [0, 1, 2, 3], final: true } })) } });
+  await win.page.click('.menu-continue-classic');
+  await win.page.click('.handoff .btn-primary');
+  await answer(win.page, true);
+  await win.page.click('.continue');
+  await win.page.waitForSelector('.victory');
+  assert(await text(win.page, '.victory-group') === T('es', 'victory.groupNote'), 'victory explains the group game');
+  await win.page.click('.review-summary');
+  assert(await text(win.page, '.review-hint') === T('es', 'review.hintGroup'), 'group review hint');
+  const s2 = await lsJSON(win.page, 'stats');
+  assert(s2.groupGames === 1 && !s2.classicGames, `counted as a group game (${JSON.stringify(s2)})`);
+  assert(!(await lsJSON(win.page, 'achievements'))?.unlocked?.firstWin, 'no firstWin from a group game');
+  // Stats: "Group games" tile + note; achievements: the group note.
+  await win.page.click('.victory .btn-ghost');
+  await win.page.click('.small-btn >> nth=0');
+  await win.page.waitForSelector('.stats .tiles');
+  const tiles = await win.page.locator('.tile').allTextContents();
+  assert(tiles.some((x) => x.includes(T('es', 'stats.groupGames')) && x.includes('1')), `group games tile (${tiles})`);
+  assert(await text(win.page, '.stats-group-note') === T('es', 'stats.groupNote'), 'stats note');
+  for (const w of [320, 390]) { await win.page.setViewportSize({ width: w, height: 760 }); await shot(win.page, `e-20-stats-${w}`); }
+  await win.page.click('.stats-ach');
+  assert(await text(win.page, '.ach-group-note') === T('es', 'ach.groupNote'), 'achievements note');
+  assert(await text(win.page, '.ach-card[data-ach="firstWin"] .ach-desc') === T('es', 'ach.firstWin.desc'), 'firstWin says solo');
+});
+
+await test('2.0 full round: setup option (default on with 2+ players), closing round, shared victory with 2 winners', async (use) => {
+  // Setup: on by default with 2 players, hidden solo, kept by "Play again".
+  let { page } = await use({});
+  await page.click('.menu-btn >> nth=0');
+  await page.waitForSelector('.setup');
+  assert(await page.isVisible('.setup-fullround') && await page.getAttribute('.setup-fullround .switch', 'aria-checked') === 'true', 'on by default with 2 players');
+  assert(await text(page, '.setup-fullround .row-label small') === T('es', 'setup.fullRoundHint'), 'explained in setup');
+  for (const w of [320, 390]) { await page.setViewportSize({ width: w, height: 900 }); await page.locator('.setup-fullround').scrollIntoViewIfNeeded(); await shot(page, `e-20-setup-${w}`); }
+  await page.setViewportSize({ width: 320, height: 900 });
+  const big = await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+  assert(await page.evaluate(() => document.documentElement.scrollWidth) <= 320, 'setup: no overflow at 320 with 200 % text');
+  await page.locator('.setup-fullround').scrollIntoViewIfNeeded();
+  await shot(page, 'e-20-setup-320-200');
+  await big.evaluate((el) => el.remove());
+  await page.click('.stepper-btn >> nth=0');
+  assert(!(await page.isVisible('.setup-fullround')), 'hidden with 1 player');
+  await page.click('.stepper-btn >> nth=1');
+  await page.click('.setup-fullround .switch');
+  await page.click('.setup .sticky-actions .btn-primary');
+  await page.waitForSelector('.handoff');
+  assert((await lsJSON(page, 'classic')).fullRound === false, 'switched off → saved off');
+  // Closing round: Ana started; Bea answers the final right; Cy plays on and also answers it right.
+  const fq = QS.filter((x) => x.d === 3);
+  const players = [pl('Ana', 'roshar'), pl('Bea', 'sel', allGems()), pl('Cy', 'nalthis', allGems())];
+  ({ page } = await use({ viewport: { width: 390, height: 844 }, storage: { classic: JSON.stringify(save4({ players, current: 1, starter: 0, missed: [], pending: { id: fq[0].id, cat: fq[0].c, order: [0, 1, 2, 3], final: true } })) } }));
+  await page.click('.menu-continue-classic');
+  await page.click('.handoff .btn-primary');
+  await answer(page, true);
+  await page.waitForSelector('.feedback-extra');
+  const fb = await text(page, '.feedback-extra');
+  assert(fb.includes(T('es', 'classic.finalRoundOn')) && fb.includes(T('es', 'classic.passTurn', { name: 'Cy' })), `the round goes on (${fb})`);
+  await page.click('.continue');
+  await page.waitForSelector('.handoff .handoff-closing');
+  assert(await text(page, '.handoff-closing') === T('es', 'turn.lastTurn', { names: 'Bea' }), 'last-turn notice');
+  assert(await text(page, '.handoff-name') === 'Cy', 'Cy plays the rest of the round');
+  await shot(page, 'e-20-closing-handoff');
+  await page.click('.handoff .btn-primary');
+  await page.waitForSelector('.final-intro');
+  await page.click('.btn-final');
+  await answer(page, true);
+  await page.waitForSelector('.feedback-extra');
+  const fb2 = await text(page, '.feedback-extra');
+  assert(fb2.includes(T('es', 'classic.finalShare')) && fb2.includes(T('es', 'classic.roundOver')), `shared + round over (${fb2})`);
+  await page.click('.continue');
+  await page.waitForSelector('.victory.victory-shared');
+  assert(await text(page, '.victory-title') === T('es', 'victory.titleShared', { names: 'Bea y Cy' }), `shared title (${await text(page, '.victory-title')})`);
+  assert(await page.locator('.vstats-player.winner').count() === 2 && await page.locator('.victory-avatars .avatar').count() === 2, 'two winners marked');
+  assert(await page.evaluate(() => document.documentElement.scrollWidth) <= 390, 'no overflow at 390');
+  await shot(page, 'e-20-victory-2-winners-390');
+  await page.setViewportSize({ width: 320, height: 640 });
+  assert(await page.evaluate(() => document.documentElement.scrollWidth) <= 320, 'no overflow at 320');
+  await shot(page, 'e-20-victory-2-winners-320');
+  await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+  assert(await page.evaluate(() => document.documentElement.scrollWidth) <= 320, 'no overflow at 320 with 200 % text');
+  await shot(page, 'e-20-victory-2-winners-320-200');
+  // "Play again" keeps the option.
+  await page.click('.victory .stack-actions .btn-primary');
+  await page.waitForSelector('.setup');
+  assert(await page.getAttribute('.setup-fullround .switch', 'aria-checked') === 'true', 'play again keeps the full round');
+  // German: the list of names follows the language.
+  ({ page } = await use({ locale: 'de-DE', storage: { classic: JSON.stringify(save4({ players: [pl('Ana', 'roshar', allGems()), pl('Bea', 'sel', allGems()), pl('Cy', 'nalthis', allGems())], current: 2, starter: 0, winners: [0, 1], roundLeft: [], missed: [], pending: { id: fq[1].id, cat: fq[1].c, order: [0, 1, 2, 3], final: true } })) } }));
+  await page.click('.menu-continue-classic');
+  await page.click('.handoff .btn-primary');
+  await page.waitForSelector('.qcard .option');
+  await page.waitForTimeout(400);
+  await page.locator('.qcard .option').nth(0).click();
+  await page.click('.continue');
+  await page.waitForSelector('.victory');
+  assert(await text(page, '.victory-title') === T('de', 'victory.titleShared', { names: 'Ana, Bea und Cy' }), `de title (${await text(page, '.victory-title')})`);
+});
+
+await test('2.0 report: "Avisar de un error" + "Copiar informe" (no GitHub needed), body fully localized', async (use) => {
+  for (const [locale, lang] of [['es-ES', 'es'], ['de-DE', 'de'], ['fr-FR', 'fr']]) {
+    const { page, context } = await use({ locale, viewport: { width: 320, height: 640 } });
+    await context.grantPermissions(['clipboard-read', 'clipboard-write'], { origin: BASE });
+    await page.click('.menu-btn >> nth=2');
+    await page.click('.practice-setup .sticky-actions .btn-primary');
+    await page.waitForSelector('.practice .qcard .option');
+    await page.waitForTimeout(400);
+    await page.click('.qcard .option >> nth=0');
+    await page.waitForSelector('.feedback .report-copy');
+    assert(await text(page, '.feedback .report-link') === T(lang, 'report.link') && await text(page, '.feedback .report-copy') === T(lang, 'report.copy'), `${lang}: labels`);
+    await page.click('.feedback .report-copy');
+    await page.waitForFunction((m) => document.getElementById('toast').textContent === m, T(lang, 'report.copied'));
+    const clip = await page.evaluate(() => navigator.clipboard.readText());
+    const colon = lang === 'fr' ? '\u00a0:' : ':';
+    for (const k of ['id', 'language', 'world', 'difficulty', 'mode', 'version', 'question']) assert(clip.includes(`**${T(lang, `report.field.${k}`)}${colon}**`), `${lang}: field ${k} localized`);
+    assert(clip.includes(T(lang, 'home.practice')) && clip.includes(T(lang, 'report.describe')), `${lang}: mode name and prompt`);
+    if (lang !== 'es') assert(!/Idioma|Pregunta|Versión/.test(clip), `${lang}: no Spanish labels`);
+    const out = await page.evaluate(() => [...document.querySelectorAll('.report-actions, .report-actions > *')].filter((e) => e.getBoundingClientRect().right > innerWidth + 0.5).length);
+    assert(!out && await page.evaluate(() => document.documentElement.scrollWidth) <= 320, `${lang}: actions fit at 320`);
+    await shot(page, `e-20-report-${lang}-320`);
+    await context.close();
+  }
+});
+
+await test('2.0 texts: Easy says "mostly", texts follow the spoiler filter, About rules, German register and number format', async (use) => {
+  assert(strings.es.level.easyDesc.startsWith('Sobre todo preguntas fáciles'), 'm1: Easy says "mostly easy"');
+  // m2: the whole Cosmere vs a filter that leaves one world.
+  let { page, context } = await use({});
+  assert(await text(page, '.menu-btn:has-text("' + T('es', 'home.classic') + '") .menu-desc') === T('es', 'home.classicDesc'), 'all worlds: six gems');
+  await context.close();
+  const scadrialOnly = ALL_WORKS.filter((w) => QS.some((q) => q.w === w && q.c === 'scadrial'));
+  ({ page, context } = await use({ storage: { settings: JSON.stringify({ disabledWorks: onlyWorks(scadrialOnly) }) } }));
+  assert(await text(page, '.menu-btn:has-text("' + T('es', 'home.classic') + '") .menu-desc') === T('es', 'home.classicDescFiltered'), 'filtered: all your gems');
+  await page.click('.menu-quick');
+  assert(await text(page, '.quick-intro .lead') === T('es', 'quick.introFiltered', { n: 15, s: 30 }), 'quick intro: your worlds');
+  // Achievements out of reach with this filter carry a note; reachable ones don't.
+  await page.goto(BASE);
+  await page.click('.small-btn >> nth=3');
+  await page.waitForSelector('.achievements');
+  for (const id of ['flawless', 'allWorlds', 'halfCosmere']) assert(await page.$(`.ach-card[data-ach="${id}"] .ach-blocked`), `${id}: blocked note`);
+  for (const id of ['firstWin', 'dailyFirst']) assert(!(await page.$(`.ach-card[data-ach="${id}"] .ach-blocked`)), `${id}: no note`);
+  assert(await text(page, '.ach-card[data-ach="flawless"] .ach-blocked') === T('es', 'ach.blocked'), 'note text');
+  await shot(page, 'e-20-ach-blocked');
+  await context.close();
+  // m4: About explains the timer, failing the final, no cap solo, the full round and group games.
+  ({ page, context } = await use({ viewport: { width: 390, height: 844 } }));
+  await page.click('.small-btn >> nth=2');
+  await page.waitForSelector('.about');
+  const about = await text(page, '.about');
+  for (const k of ['rule5', 'rule7', 'rule8', 'rule9', 'rule10']) assert(about.includes(T('es', `about.${k}`)), `About ${k}`);
+  assert(/en solitario no hay límite/.test(T('es', 'about.rule5')), 'no cap solo');
+  await shot(page, 'e-20-about-390');
+  await page.setViewportSize({ width: 320, height: 640 });
+  await shot(page, 'e-20-about-320');
+  await context.close();
+  // m14: German register ("Spiel", "anhaken") and localized numbers.
+  const de = JSON.stringify(strings.de);
+  assert(!/Partie|abhak|abgehakt/.test(de), 'German: no "Partie" / "abhaken"');
+  assert(!/\b2000\b/.test(JSON.stringify(strings.de.ach)), 'no hard-coded 2000');
+  assert(strings.de.ach.stormlightSave.desc !== 'Liege mit aktivem Sturmlicht daneben und antworte im zweiten Versuch richtig.', 'reworded Stormlight achievement');
+  ({ page, context } = await use({ locale: 'de-DE' }));
+  await page.click('.small-btn >> nth=3');
+  assert(await text(page, '.ach-card[data-ach="quickScore"] .ach-desc') === T('de', 'ach.quickScore.desc', { n: '2.000' }), 'German number format');
+  await context.close();
+});
+
+await test('2.0 resume: the handoff warns that a revealed question’s clock kept running (live), or ran out', async (use) => {
+  const q = QS.find((x) => x.d <= 2);
+  const mk = (remaining) => save4({ players: [pl('Ana', 'roshar'), pl('Bea', 'sel')], current: 1, phase: 'question', pending: { id: q.id, cat: q.c, order: [0, 1, 2, 3], final: false, clock: { remaining, savedAt: T0 } } });
+  let { page, context } = await use({ clock: 'paused', storage: { classic: JSON.stringify(mk(20_000)) } });
+  await page.click('.menu-continue-classic');
+  await page.waitForSelector('.handoff-clock');
+  assert(await text(page, '.handoff-clock') === T('es', 'turn.clockRunning', { s: 19 }), `seconds left (${await text(page, '.handoff-clock')})`);
+  await page.clock.runFor(5_000);
+  assert(await text(page, '.handoff-clock') === T('es', 'turn.clockRunning', { s: 14 }), 'updated live');
+  await shot(page, 'e-20-handoff-clock');
+  await context.close();
+  ({ page, context } = await use({ clock: 'paused', storage: { classic: JSON.stringify(mk(800)) } }));
+  await page.click('.menu-continue-classic');
+  assert(await text(page, '.handoff-clock') === T('es', 'turn.clockOut'), 'ran out');
+  await context.close();
+  // Never revealed (no savedAt): no warning.
+  ({ page, context } = await use({ clock: 'paused', storage: { classic: JSON.stringify(save4({ players: [pl('Ana', 'roshar'), pl('Bea', 'sel')], pending: { id: q.id, cat: q.c, order: [0, 1, 2, 3], final: false, clock: { remaining: 30_000, savedAt: null } } })) } }));
+  await page.click('.menu-continue-classic');
+  await page.waitForSelector('.handoff');
+  assert(!(await page.$('.handoff-clock')), 'no warning for a question never shown');
+  await context.close();
+});
+
+await test('2.0 spoiler picker and wildcard: works without questions say so; a single free world skips the choice', async (use) => {
+  const withQ = new Set(QS.map((q) => q.w));
+  const empty = ALL_WORKS.filter((w) => !withQ.has(w));
+  let { page, context } = await use({});
+  await page.click('.small-btn >> nth=1');
+  await page.waitForSelector('.spoiler-picker');
+  assert(await page.locator('.work-empty').count() === empty.length, `${empty.length} works labelled (${empty})`);
+  for (const w of empty) assert((await text(page, `label[for="work-${w}"]`)).includes(T('es', 'settings.noQuestionsYet')), `${w} labelled`);
+  if (empty.length) { await page.locator(`label[for="work-${empty[0]}"]`).scrollIntoViewIfNeeded(); await shot(page, 'e-20-spoilers-empty'); }
+  await context.close();
+  // Wheel on an infused gem (Math.random 0.01 → Roshar) or the wildcard (0.99) with one world open: straight to it.
+  const ana = { name: 'Ana', color: 'roshar', charges: { roshar: 2 }, lifelines: { atium: 1, stormlight: 1, breath: 1 } };
+  for (const [r, key] of [[0.01, 'wheel.infusedOnly'], [0.99, 'wheel.wildcardOnly']]) {
+    ({ page, context } = await use({ clock: 'paused', storage: { classic: JSON.stringify(classicSave({ players: [ana], categories: ['roshar', 'sel'], phase: 'spin', pending: null })) } }));
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.click('.menu-continue-classic');
+    await page.waitForSelector('.spin');
+    await page.evaluate((x) => { Math.random = () => x; }, r);
+    await page.click('.spin .sticky-actions .btn-primary');
+    await page.clock.runFor(700);
+    await page.waitForSelector('.wheel-status.notice');
+    assert(await text(page, '.wheel-status') === T('es', key, { category: 'Sel' }), `${key}: says it`);
+    const saved = await lsJSON(page, 'classic');
+    assert(saved.phase === 'question' && saved.pending.cat === 'sel', 'the Sel question is already drawn');
+    await page.clock.runFor(2_600);
+    await page.waitForSelector('.question .qcard');
+    assert(!(await page.$('.choose')), 'no choice screen');
+    await context.close();
+  }
 });
 
 await browser.close();

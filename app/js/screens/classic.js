@@ -1,7 +1,7 @@
 // Classic mode: setup, turn handoff, wheel, wildcard, questions, final question, victory.
 import { h, svg } from '../dom.js';
 import { ICONS, gemSvg } from '../icons.js';
-import { t, num } from '../i18n.js';
+import { t, num, getLang } from '../i18n.js';
 import {
   app, go, screen, topBar, iconButton, toggle, toast, makePool, recordAnswer, recordLifeline,
   updateStats, catStyle, setBack, onCleanup, levelPicker, levelBadge, confirmDialog, noQuestionsBanner, filterIsEmpty, noteMissed, unlockAchievement,
@@ -9,7 +9,7 @@ import {
 import * as store from '../storage.js';
 import { CATEGORIES, MIN_PLAYERS, MAX_PLAYERS, MAX_STREAK, LEVELS, levelOrDefault, fullLifelines } from '../config.js';
 import { cleanName, initialOf } from '../text.js';
-import { newClassicGame, isValidState, migrateState, applyAnswer, startPhase, isInfused, allInfused, infusedCount, emptyPlayerStats } from '../game.js';
+import { newClassicGame, isValidState, migrateState, applyAnswer, startPhase, isInfused, allInfused, infusedCount, emptyPlayerStats, isGroupGame, clockLeft, isClosingRound } from '../game.js';
 import { shuffledOrder } from '../data.js';
 import { fx, confetti } from '../fx.js';
 import { questionView, emptyFx, newClock } from '../components/question.js';
@@ -79,6 +79,10 @@ export function setupScreen(params = {}) {
   }));
   let timer = params.timer ?? app.settings.timer;
   let level = levelOrDefault(params.level ?? app.settings.level);
+  // Full round (lead decision 3): on by default; only meaningful with 2+ players.
+  let fullRound = params.fullRound ?? true;
+  const fullRoundCard = h('section', { class: 'card setup-fullround' },
+    toggle(t('setup.fullRound'), fullRound, (v) => { fullRound = v; }, { hint: t('setup.fullRoundHint') }));
 
   const list = h('ol', { class: 'setup-players' });
   const countLabel = h('output', { class: 'stepper-value', 'aria-live': 'polite' });
@@ -97,6 +101,7 @@ export function setupScreen(params = {}) {
 
   function renderList() {
     countLabel.textContent = String(players.length);
+    fullRoundCard.hidden = players.length < 2;
     minus.disabled = players.length <= MIN_PLAYERS;
     plus.disabled = players.length >= MAX_PLAYERS;
     list.replaceChildren(...players.map((p, i) => {
@@ -143,7 +148,7 @@ export function setupScreen(params = {}) {
     if (!categories.length) { toast(t('errors.emptyFilter')); return; }
     const named = players.map((p, i) => ({ name: cleanName(p.name) || t('setup.namePlaceholder', { n: i + 1 }), color: p.color }));
     store.save('lastPlayers', players.map((p) => ({ name: cleanName(p.name), color: p.color })));
-    state = newClassicGame({ players: named, timer, categories, level });
+    state = newClassicGame({ players: named, timer, categories, level, fullRound });
     save();
     fx.tap();
     go('classic');
@@ -159,6 +164,7 @@ export function setupScreen(params = {}) {
     levelPicker(level, (l) => { level = l; }),
     h('section', { class: 'card' }, toggle(t('setup.timer'), timer, (v) => { timer = v; }, { hint: t('setup.timerHint') }),
       h('p', { class: 'muted setup-timer-note' }, t('setup.timerPause'))),
+    fullRoundCard,
     h('div', { class: 'sticky-actions' },
       h('button', { type: 'button', class: 'btn btn-primary btn-block', onclick: start, disabled: empty }, svg(ICONS.play), t('setup.start'))),
   );
@@ -271,12 +277,40 @@ export function classicScreen(params = {}) {
   }
 }
 
+/** Names joined the way the language lists them ("Ana y Bea", "Ana, Bea und Carl"). */
+function listNames(names) {
+  try { return new Intl.ListFormat(getLang(), { type: 'conjunction' }).format(names); } catch { return names.join(', '); }
+}
+
+/**
+ * Resuming a question that was already revealed: its time kept running while away (SPEC timer
+ * rule), so the handoff says so, with the seconds left updated live (beta 4, m3).
+ */
+function runningClockNote() {
+  const clock = state.pending?.clock;
+  if (!state.timer || state.resume !== 'question' || typeof clock?.savedAt !== 'number') return null;
+  const note = h('p', { class: 'banner banner-warn handoff-clock', role: 'status' });
+  const paint = () => {
+    const s = Math.ceil(clockLeft(clock) / 1000);
+    note.textContent = s > 0 ? t('turn.clockRunning', { s }) : t('turn.clockOut');
+    return s;
+  };
+  if (paint() > 0) {
+    const iv = setInterval(() => { if (paint() <= 0) clearInterval(iv); }, 1000);
+    onCleanup(() => clearInterval(iv));
+  }
+  return note;
+}
+
 function handoffView() {
   const p = cur();
+  const closing = state.roundLeft !== null && state.winners?.length;
   return screen('handoff', gameBar(''),
     h('div', { class: 'handoff-body', ...catStyle(p.color) },
       svg(ICONS.phone, 'handoff-phone'),
       state.first ? h('p', { class: 'handoff-starts', role: 'status' }, t('turn.starts', { name: p.name })) : null,
+      closing ? h('p', { class: 'banner banner-info handoff-closing', role: 'status' }, t('turn.lastTurn', { names: listNames(state.winners.map((i) => state.players[i].name)) })) : null,
+      runningClockNote(),
       h('p', { class: 'handoff-pass' }, t('turn.passTo')),
       avatar(p.color, p.name, 96),
       h('h1', { class: 'handoff-name' }, p.name),
@@ -306,7 +340,15 @@ function spinView() {
   const w = wheel(state.categories, (result) => {
     spinBtn.disabled = true;
     let delay = 1100;
-    if (result === WILDCARD) {
+    // Only one world left to infuse: a wildcard or an infused gem goes straight to it (no choice).
+    const open = state.categories.filter((c) => !isInfused(p, c));
+    if ((result === WILDCARD || isInfused(p, result)) && open.length === 1) {
+      status.textContent = t(result === WILDCARD ? 'wheel.wildcardOnly' : 'wheel.infusedOnly', { category: t(`cat.${open[0]}`) });
+      status.classList.add('notice');
+      status.setAttribute('style', `--cat: var(--c-${open[0]})`);
+      setPending(open[0], false);
+      delay = 2500;
+    } else if (result === WILDCARD) {
       status.textContent = t('wheel.landed', { category: t('wheel.wildcard') });
       state.phase = 'choose';
     } else if (isInfused(p, result)) {
@@ -408,7 +450,7 @@ function questionPhase() {
     onUse: (kind) => {
       p.lifelines[kind] = Math.max(0, (p.lifelines[kind] || 0) - 1);
       (p.stats ||= emptyPlayerStats()).lifelines++;
-      recordLifeline(kind);
+      if (!isGroupGame(state)) recordLifeline(kind); // group games keep no personal stats (lead decision 2)
       if (kind === 'breath') {
         const alt = pool.drawAlternative(q);
         // An armed Stormlight carries over to the new question; the new question gets a new clock.
@@ -425,14 +467,17 @@ function questionPhase() {
   liveQuestion = questionView({
       question: q, order: pend.order, timer: state.timer, clock: pend.clock, onClockChange: save, final: pend.final, top, lifelines, mode: 'classic',
       onAnswer: ({ correct }) => {
-        recordAnswer(q.c, correct);
-        if (!correct) { noteMissed(q.id); state.missed = addId(state.missed, q.id); }
+        // Group games (2+ players) don't feed the owner's stats or "My mistakes" (lead decision 2);
+        // the game's own list still feeds "Review mistakes" on the victory screen.
+        const group = isGroupGame(state);
+        if (!group) recordAnswer(q.c, correct);
+        if (!correct) { if (!group) noteMissed(q.id); state.missed = addId(state.missed, q.id); }
         const st = (p.stats ||= emptyPlayerStats());
         st.answered++;
         if (correct) st.correct++;
         const res = applyAnswer(state, correct);
         classicAchievements(res, p, pend);
-        if (res.won) updateStats((s) => { s.classicGames++; });
+        if (res.won) updateStats((s) => { if (group) s.groupGames++; else s.classicGames++; });
         save();
         return feedbackFor(res, p);
       },
@@ -444,34 +489,40 @@ function questionPhase() {
 /** Achievements earned by a moment of a classic game (the ones based on totals are checked by core). */
 function classicAchievements(res, p, pend) {
   const st = p.stats || emptyPlayerStats();
+  // Group achievements count in group games; individual ones only in solo games (lead decision 2).
+  if (res.won && state.players.length === MAX_PLAYERS) unlockAchievement('fullTable');
+  if (isGroupGame(state)) return;
   // A wrong pick struck by Stormlight, then the right one.
   if (res.correct && pend.fx?.struck?.length) unlockAchievement('stormlightSave');
   // The six gems of a full game infused without a single miss by this player.
   if (res.infused && res.allInfused && state.categories.length === CATEGORIES.length && st.answered === st.correct) unlockAchievement('flawless');
-  if (res.won) {
-    if (state.players.length === MAX_PLAYERS) unlockAchievement('fullTable');
-    if (state.level === 'expert' && st.lifelines === 0) unlockAchievement('expertPure');
-  }
+  if (res.won && state.level === 'expert' && st.lifelines === 0) unlockAchievement('expertPure');
 }
 
 function feedbackFor(res, player) {
   const cat = t(`cat.${res.cat}`);
   const lines = [];
-  if (res.won) return null;
-  if (res.correct) {
+  // A plain win goes straight to the victory screen; the end of a closing round says so first.
+  if (res.won && !res.roundOver) return null;
+  if (res.finalWin) {
+    lines.push(t(res.shared ? 'classic.finalShare' : 'classic.finalRoundOn'));
+    lines.push(res.roundOver ? t('classic.roundOver') : t('classic.passTurn', { name: res.next }));
+  } else if (res.correct) {
     if (res.alreadyInfused) lines.push(t('classic.alreadyInfused', { category: cat }));
     else if (res.infused) { lines.push(t('classic.infused', { category: cat })); setTimeout(() => fx.infuse(), 350); }
     else lines.push(t('classic.charge', { category: cat, n: res.charges }));
-    if (res.streakEnd) {
-      // The 3rd answer in a row can also infuse the last gem: say both, the final comes next turn.
-      if (res.allInfused) lines.push(t('classic.allInfusedNext'));
+    if (res.roundOver) lines.push(t('classic.roundOver'));
+    else if (res.streakEnd) {
+      // The 3rd answer in a row can also infuse the last gem: say both, the final comes next turn
+      // (in a closing round there is no next turn, so don't promise one).
+      if (res.allInfused) lines.push(t(isClosingRound(state) ? 'classic.lastChanceGone' : 'classic.allInfusedNext'));
       lines.push(t('classic.streakPass', { n: MAX_STREAK, name: res.next }));
     } else lines.push(res.allInfused ? t('classic.allInfused') : t('classic.spinAgain'));
   } else {
-    if (res.final) lines.push(t('classic.finalFail'));
-    lines.push(state.players.length > 1 ? t('classic.passTurn', { name: res.next }) : t('classic.soloMiss'));
+    if (res.final && !res.roundOver) lines.push(t(isClosingRound(state) ? 'classic.finalFailLast' : 'classic.finalFail'));
+    lines.push(res.roundOver ? t('classic.roundOver') : state.players.length > 1 ? t('classic.passTurn', { name: res.next }) : t('classic.soloMiss'));
   }
-  const p = res.correct ? player : null;
+  const p = res.correct && !res.finalWin ? player : null;
   return [
     ...lines.map((l) => h('p', { class: 'outcome' }, l)),
     p ? gemRow(state, p, 24) : null,
@@ -488,16 +539,17 @@ function formatDuration(ms) {
 }
 
 /** Per-player summary on the victory screen: right answers, accuracy, lifelines used, gems. */
-function playerStats() {
+function playerStats(winners) {
   const rows = state.players.map((p, i) => {
     const st = p.stats || emptyPlayerStats();
     const acc = st.answered ? Math.round((st.correct / st.answered) * 100) : 0;
     const item = (cls, label, value) => h('div', { class: `vstat ${cls}` }, h('dt', {}, label), h('dd', {}, value));
-    return h('li', { class: `vstats-player ${i === state.winner ? 'winner' : ''}`, '--pc': `var(--c-${p.color})` },
+    const won = winners.includes(i);
+    return h('li', { class: `vstats-player ${won ? 'winner' : ''}`, '--pc': `var(--c-${p.color})` },
       h('div', { class: 'vstats-head' },
         avatar(p.color, p.name, 32),
         h('span', { class: 'vstats-name' }, p.name),
-        i === state.winner ? svg(ICONS.trophy, 'vstats-trophy') : null),
+        won ? svg(ICONS.trophy, 'vstats-trophy') : null),
       h('dl', { class: 'vstats-grid' },
         item('vstat-correct', t('victory.correct'), t('victory.correctOf', { n: num(st.correct), total: num(st.answered) })),
         item('vstat-acc', t('victory.accuracy'), t('victory.percent', { n: num(acc) })),
@@ -510,18 +562,24 @@ function playerStats() {
 }
 
 function victoryView() {
-  const winner = state.players[state.winner ?? state.current];
-  const el = screen('victory',
+  // One winner, or several who answered the final right in the same (full) round.
+  const winners = state.winners?.length ? state.winners : [state.winner ?? state.current];
+  const winner = state.players[winners[0]];
+  const shared = winners.length > 1;
+  const names = listNames(winners.map((i) => state.players[i].name));
+  const el = screen(`victory ${shared ? 'victory-shared' : ''}`,
     h('div', { class: 'victory-body', ...catStyle(winner.color) },
       svg(ICONS.trophy, 'victory-trophy'),
-      h('h1', { class: 'victory-title' }, t('victory.title', { name: winner.name })),
-      h('p', { class: 'lead' }, t('victory.subtitle')),
+      shared ? h('div', { class: 'victory-avatars', 'aria-hidden': 'true' }, winners.map((i) => avatar(state.players[i].color, state.players[i].name, 44))) : null,
+      h('h1', { class: 'victory-title' }, shared ? t('victory.titleShared', { names }) : t('victory.title', { name: winner.name })),
+      h('p', { class: 'lead' }, t(shared ? 'victory.subtitleShared' : 'victory.subtitle')),
+      isGroupGame(state) ? h('p', { class: 'muted victory-group' }, t('victory.groupNote')) : null,
       h('p', { class: 'muted victory-meta' },
         h('span', { class: 'victory-duration' }, t('victory.duration', { time: formatDuration(state.playMs) })),
         ' · ',
         h('span', {}, t('victory.answered', { n: state.asked }))),
-      playerStats(),
-      reviewSection(state.missed || [], 'classic')),
+      playerStats(winners),
+      reviewSection(state.missed || [], 'classic', { group: isGroupGame(state) })),
     h('div', { class: 'stack-actions' },
       h('button', {
         type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '',
@@ -530,9 +588,10 @@ function victoryView() {
           const players = state.players.map((p) => ({ name: p.name, color: p.color }));
           const timer = state.timer;
           const level = state.level;
+          const fullRound = state.players.length > 1 ? state.fullRound : undefined;
           state = null;
           activeSince = null;
-          go('classic-setup', { players, timer, level });
+          go('classic-setup', { players, timer, level, fullRound });
         },
       }, svg(ICONS.refresh), t('common.playAgain')),
       h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: () => { state = null; activeSince = null; go('home'); } }, t('common.home'))));

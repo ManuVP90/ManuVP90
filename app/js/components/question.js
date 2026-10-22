@@ -3,9 +3,9 @@
 import { h, svg } from '../dom.js';
 import { ICONS } from '../icons.js';
 import { t } from '../i18n.js';
-import { catPill, catStyle, diffPips, onCleanup, setQuestionBusy } from '../core.js';
+import { app, catPill, catStyle, diffPips, onCleanup, setQuestionBusy } from '../core.js';
 import { fx, reducedMotion } from '../fx.js';
-import { TIMER_SECONDS, TIMER_MS } from '../config.js';
+import { TIMER_SECONDS, TIMER_MS, INPUT_GUARD_MS } from '../config.js';
 import { shuffledOrder, shuffle } from '../data.js';
 import { clockLeft } from '../game.js';
 import { lifelineBar } from './lifelines.js';
@@ -63,6 +63,12 @@ export function questionView({
   let interval = null;
   const pauses = new Set(); // why the countdown is stopped: 'dialog', 'hidden'
   const shownAt = Date.now();
+  // Input guard (beta 4, G1): a second tap on "Next" lands on the new question's options, so taps
+  // on options and lifelines are ignored for INPUT_GUARD_MS after the card is painted. Measured
+  // with performance.now() (system clock changes don't matter); `.input-guard` also turns pointer
+  // events off on the options meanwhile, so no pressed state flashes.
+  const paintedAt = performance.now();
+  const guarded = () => performance.now() - paintedAt < INPUT_GUARD_MS;
 
   const live = h('div', { class: 'feedback', 'aria-live': 'polite', 'aria-atomic': 'true' });
   // The option's data index (0 = correct) lives only in this closure, never in the DOM.
@@ -71,7 +77,7 @@ export function questionView({
     const b = h('button', {
       type: 'button',
       class: 'option',
-      onclick: () => answer(idx),
+      onclick: () => { if (!guarded()) answer(idx); },
     }, h('span', { class: 'option-letter', 'aria-hidden': 'true' }, LETTERS[pos]),
     h('span', { class: 'option-text' }, q.o[idx]),
     h('span', { class: 'option-mark', 'aria-hidden': 'true' }));
@@ -179,7 +185,18 @@ export function questionView({
     });
   }
 
-  const continueBtn = h('button', { type: 'button', class: 'btn btn-primary btn-block continue', hidden: true, onclick: () => { fx.tap(); onContinue(); } }, continueLabel);
+  // "Next"/"Continue" works once: a double tap can't skip a screen or fire onContinue twice.
+  let continued = false;
+  const continueBtn = h('button', {
+    type: 'button', class: 'btn btn-primary btn-block continue', hidden: true,
+    onclick: () => {
+      if (continued) return;
+      continued = true;
+      continueBtn.disabled = true;
+      fx.tap();
+      onContinue();
+    },
+  }, continueLabel);
 
   function answer(idx) {
     if (answered || pauses.has('dialog')) return;
@@ -265,7 +282,7 @@ export function questionView({
     });
   }
   function useLifeline(kind) {
-    if (answered || pauses.has('dialog') || !((lifelines.left?.[kind] || 0) > 0)) return;
+    if (guarded() || answered || pauses.has('dialog') || !((lifelines.left?.[kind] || 0) > 0)) return;
     if (kind === 'atium') {
       if (stormlightUsedHere()) return;
       const gone = shuffle(wrongLeft()).slice(0, 2);
@@ -287,7 +304,8 @@ export function questionView({
   }
   if (lifelines) bar = lifelineBar(useLifeline);
 
-  const card = h('section', { class: `qcard ${final ? 'final' : ''}`, ...catStyle(q.c), 'aria-labelledby': `q-${q.id}` },
+  // The question's own language (English while a translation is missing) drives hyphenation.
+  const card = h('section', { class: `qcard ${final ? 'final' : ''}`, ...catStyle(q.c), lang: app.questionsLang || null, 'aria-labelledby': `q-${q.id}` },
     h('div', { class: 'qcard-head' },
       catPill(q.c),
       diffPips(q.d),
@@ -309,6 +327,9 @@ export function questionView({
   }
 
   const wrap = h('div', { class: 'question-wrap' }, top, card);
+  card.classList.add('input-guard');
+  const unguard = setTimeout(() => card.classList.remove('input-guard'), INPUT_GUARD_MS);
+  onCleanup(() => clearTimeout(unguard));
   /** Stops the countdown while a "quit?" dialog is open (time left is persisted); resumeTimer restarts it. */
   wrap.pauseTimer = () => {
     if (!timer || answered || pauses.has('dialog')) return;
