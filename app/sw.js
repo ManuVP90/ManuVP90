@@ -4,7 +4,7 @@
 // A new version installs in the background and waits: the page offers "New version available ·
 // Update" (js/update.js) and sends 'skip-waiting' when the player taps it, so the app never swaps
 // versions in the middle of a question.
-const CACHE_VERSION = 'v18';
+const CACHE_VERSION = 'v19';
 const CACHE = `cosmere-trivia-${CACHE_VERSION}`;
 
 const SHELL = [

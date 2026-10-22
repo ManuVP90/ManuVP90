@@ -233,11 +233,11 @@
  {
   "id": "otros-022",
   "q": "Masaka lavora come pittrice di incubi, ma che cosa è in segreto?",
-  "a": "Un’Insonne",
+  "a": "Insonne",
   "wrong": [
-   "Una hijo",
-   "Un incubo",
-   "Una Criptica"
+   "Hijo",
+   "Incubo",
+   "Criptico"
   ],
   "explain": "Masaka, il cui nome da Insonne è Chinikdakordich, si finge una comune pittrice di incubi a Kilahito."
  },

@@ -683,7 +683,7 @@
  },
  {
   "id": "scadrial-063",
-  "q": "Nell’iscrizione citata negli epigrafi de «Il pozzo dell’ascensione», l’autore si definisce filosofo, studioso e che cos’altro?",
+  "q": "Nell’iscrizione citata nelle epigrafi de «Il pozzo dell’ascensione», l’autore si definisce filosofo, studioso e che cos’altro?",
   "a": "Traditore",
   "wrong": [
    "Profeta",
@@ -694,7 +694,7 @@
  },
  {
   "id": "scadrial-064",
-  "q": "Su che cosa incise il suo ultimo resoconto l’autore degli epigrafi de «Il pozzo dell’ascensione»?",
+  "q": "Su che cosa incise il suo ultimo resoconto l’autore delle epigrafi de «Il pozzo dell’ascensione»?",
   "a": "Una lastra d’acciaio",
   "wrong": [
    "Un muro di pietra",
@@ -877,7 +877,7 @@
    "Il Cantone delle Risorse",
    "Il Cantone delle Finanze"
   ],
-  "explain": "Il Conventicolo era la fortezza degli Inquisitori, e l’iscrizione d’acciaio citata negli epigrafi si trovava nelle sue profondità."
+  "explain": "Il Conventicolo era la fortezza degli Inquisitori, e l’iscrizione d’acciaio citata nelle epigrafi si trovava nelle sue profondità."
  },
  {
   "id": "scadrial-081",

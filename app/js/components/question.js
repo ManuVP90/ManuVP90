@@ -7,7 +7,7 @@ import { app, catPill, catStyle, diffPips, onCleanup, setQuestionBusy } from '..
 import { fx, reducedMotion } from '../fx.js';
 import { TIMER_SECONDS, TIMER_MS, INPUT_GUARD_MS } from '../config.js';
 import { shuffledOrder, shuffle } from '../data.js';
-import { clockLeft } from '../game.js';
+import { clockLeft, stampClock } from '../game.js';
 import { lifelineBar } from './lifelines.js';
 import { reportLink } from './review.js';
 
@@ -114,7 +114,8 @@ export function questionView({
     if (answered) return;
     commit();
     // The dialog only pauses while it is on screen: hidden or unloaded, the time runs again.
-    clk.savedAt = pauses.has('dialog') && !pauses.has('hidden') ? null : Date.now();
+    // Wall time for a reload, performance.now() + session id for time away within this page (beta 6, item 2).
+    stampClock(clk, !(pauses.has('dialog') && !pauses.has('hidden')));
     lastPersist = now();
     onClockChange?.();
   }

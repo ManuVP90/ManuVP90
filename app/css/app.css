@@ -1025,7 +1025,7 @@ svg { display: block; }
 .stats-ach { margin-bottom: 4px; }
 .stats-ach .menu-icon { color: var(--gold); }
 .collection .col-total { margin: 0 0 4px; font-size: 1.05rem; }
-.collection .col-pct { white-space: nowrap; } /* "· 42 %" never splits (beta 5, item 8) */
+.collection .col-pct { white-space: nowrap; } /* "(42 %)" never splits (beta 5 item 8, beta 6 item 5) */
 .col-filter { margin: 0 0 8px; font-size: .88rem; }
 .col-subtitle { font-size: .95rem; margin: 14px 0 6px; color: var(--text-dim); }
 .col-list { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
@@ -1125,13 +1125,19 @@ svg { display: block; }
 }
 /* Input guard (beta 4, G1): options and lifelines ignore taps for a moment after the card is painted. */
 .qcard.input-guard .option, .qcard.input-guard .lifeline { pointer-events: none; }
-/* Beta 5 (item 1): a screen reached by a tap ignores taps on its main actions for a moment (core.guardTap). */
-.screen.input-guard .tap-guard { pointer-events: none; }
+/* Beta 5 (item 1) / beta 6 (item 1): a screen reached by a tap ignores taps on all its controls for a moment (core.go). */
+.screen.input-guard :is(button, a, input, select, textarea, label, summary, [role="button"], .tap-guard) { pointer-events: none; }
 /* Home menu with big text: the icon goes above the title so long words ("Herausforderung") keep the whole width. */
 .menu { container: menu / inline-size; }
 @container menu (max-width: 15em) {
   .menu-btn { flex-direction: column; align-items: flex-start; gap: 8px; }
+  /* Beta 6 (item 3): the longest title word ("Herausforderung") fits the card even without hyphenation. */
+  /* "Herausforderung" is 8.4em wide in bold: capped so it fits the card's text box (100cqi − 34px). */
+  .menu-title { font-size: min(1.12rem, 10.4cqi); }
 }
+/* Beta 6 (item 3): with big text the home title shrinks to the width so "Cosmoverso" isn't split without a hyphen. */
+.hero { container-type: inline-size; }
+.title { font-size: min(clamp(2rem, 9vw, 2.6rem), 18.5cqi); } /* "Cosmoverso" is 5.2em wide */
 
 /* ---------- 2.0.0: full round, shared victory, group games ---------- */
 .board-trophy { display: inline-block; width: 1em; height: 1em; margin-right: 3px; vertical-align: -0.12em; color: var(--gold); }

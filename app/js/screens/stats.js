@@ -76,7 +76,9 @@ function collectionCard() {
   return h('section', { class: 'card collection' },
     h('h2', { class: 'section-title' }, t('stats.collection')),
     h('p', { class: 'col-total' }, h('strong', {}, t('stats.discovered', { n: num(col.seen), total: num(col.total) })),
-      ' ', h('span', { class: 'muted col-pct' }, `· ${pctText(col.seen, col.total)}`)),
+      // Beta 6 (item 5): the percent goes in brackets: "· 3 %" could start a line when the count
+      // takes the whole width (200 % text), "(3 %)" reads well there. It never splits.
+      ' ', h('span', { class: 'muted col-pct' }, `(${pctText(col.seen, col.total)})`)),
     filtered ? h('p', { class: 'muted col-filter' }, t('stats.collectionFiltered')) : null,
     h('ul', { class: 'col-list col-worlds' }, col.worlds.filter((w) => w.total > 0).map((w) => row(`col-world`, h('span', { class: 'bar-gem', 'aria-hidden': 'true', html: gemSvg(w.cat, { size: 20, charges: w.seen >= w.total ? 2 : w.seen ? 1 : 0 }) }), t(`cat.${w.cat}`), w, { ...catStyle(w.cat), dataset: { cat: w.cat } }))),
     h('h3', { class: 'col-subtitle' }, t('stats.byDifficulty')),

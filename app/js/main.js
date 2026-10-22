@@ -82,9 +82,10 @@ export async function main() {
   checkAchievements({ silent: true });
   document.body.classList.remove('booting');
   go('home');
-  // Home stays underneath, so Back from these screens lands there.
-  if (onboard) go('onboarding', { step: app.settings.onbStep ?? 0 });
-  else if (loadSavedResult()) go('quick', { results: true }); // reloaded on the quick-game results
+  // Home stays underneath, so Back from these screens lands there. No input guard: they are the
+  // first screen the player sees, no tap led there.
+  if (onboard) go('onboarding', { step: app.settings.onbStep ?? 0 }, { guard: false });
+  else if (loadSavedResult()) go('quick', { results: true }, { guard: false }); // reloaded on the quick-game results
 
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     navigator.serviceWorker.register('sw.js').then(watchRegistration).catch((e) => console.warn('SW registration failed', e));

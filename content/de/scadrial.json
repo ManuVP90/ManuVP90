@@ -188,7 +188,7 @@
  },
  {
   "id": "scadrial-018",
-  "q": "Kandra ahmen Menschen nach, indem sie eine Leiche verdauen und dann was von ihr verwenden?",
+  "q": "Was verwenden Kandra von einer verdauten Leiche, um einen Menschen nachzuahmen?",
   "a": "Die Knochen",
   "wrong": [
    "Das Blut",
@@ -375,7 +375,7 @@
  },
  {
   "id": "scadrial-035",
-  "q": "Die Bänder der Trauer sollen die Metallgeister von wem sein?",
+  "q": "Von wem sollen die Bänder der Trauer als Metallgeister stammen?",
   "a": "Vom Obersten Herrscher",
   "wrong": [
    "Von Kelsier",

@@ -9,7 +9,7 @@ import {
 import * as store from '../storage.js';
 import { CATEGORIES, MIN_PLAYERS, MAX_PLAYERS, MAX_STREAK, LEVELS, levelOrDefault, fullLifelines } from '../config.js';
 import { cleanName, initialOf, limitGraphemes, NAME_MAX } from '../text.js';
-import { newClassicGame, isValidState, migrateState, applyAnswer, startPhase, isInfused, allInfused, infusedCount, emptyPlayerStats, isGroupGame, clockLeft, isClosingRound } from '../game.js';
+import { newClassicGame, isValidState, migrateState, applyAnswer, startPhase, isInfused, allInfused, infusedCount, emptyPlayerStats, isGroupGame, clockLeft, isClosingRound, localizeAutoNames } from '../game.js';
 import { shuffledOrder } from '../data.js';
 import { fx, confetti } from '../fx.js';
 import { questionView, emptyFx, newClock } from '../components/question.js';
@@ -37,6 +37,7 @@ export function loadSavedGame() {
     const s = migrateState(raw);
     if (!isValidState(s) || s.phase === 'won' || !pendingMatchesData(s)) { store.remove(SAVE_KEY); return null; }
     if (oldVersion !== s.v) store.save(SAVE_KEY, s); // keep the upgraded save
+    localizeAutoNames(s, defaultName);
     return s;
   } catch (e) {
     console.warn('discarding saved game', e);
@@ -67,6 +68,9 @@ function save() {
   if (state.phase === 'won') store.remove(SAVE_KEY);
   else store.save(SAVE_KEY, state);
 }
+
+/** The name of player `i` who left it empty, in the current language ("Jugador 1"). */
+const defaultName = (i) => t('setup.namePlaceholder', { n: i + 1 });
 
 // ---------------------------------------------------------------- setup
 export function setupScreen(params = {}) {
@@ -149,7 +153,10 @@ export function setupScreen(params = {}) {
     const pool = makePool({});
     const categories = pool.categories();
     if (!categories.length) { toast(t('errors.emptyFilter')); return; }
-    const named = players.map((p, i) => ({ name: cleanName(p.name) || t('setup.namePlaceholder', { n: i + 1 }), color: p.color }));
+    const named = players.map((p, i) => {
+      const name = cleanName(p.name);
+      return name ? { name, color: p.color } : { name: defaultName(i), auto: true, color: p.color };
+    });
     store.save('lastPlayers', players.map((p) => ({ name: cleanName(p.name), color: p.color })));
     state = newClassicGame({ players: named, timer, categories, level, fullRound });
     save();
@@ -177,6 +184,7 @@ export function setupScreen(params = {}) {
 function ensureState() {
   if (!state) state = loadSavedGame();
   if (!state) return false;
+  localizeAutoNames(state, defaultName); // the language may have changed meanwhile
   const before = JSON.stringify([state.categories, state.phase, state.resume]);
   // Respect the current spoiler filter: drop categories that no longer have questions, except
   // the one of a question already drawn (it stays pending, see questionPhase).
@@ -590,7 +598,7 @@ function victoryView() {
         class: 'btn btn-primary btn-block', 'data-autofocus': '',
         onclick: () => {
           // Same players, colors, timer and level: straight back to a prefilled setup.
-          const players = state.players.map((p) => ({ name: p.name, color: p.color }));
+          const players = state.players.map((p) => ({ name: p.auto ? '' : p.name, color: p.color }));
           const timer = state.timer;
           const level = state.level;
           const fullRound = state.players.length > 1 ? state.fullRound : undefined;

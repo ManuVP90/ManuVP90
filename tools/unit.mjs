@@ -26,7 +26,9 @@ import { Pool, quickPlan, nearestDifficulty, shuffle, shuffledOrder } from '../a
 import {
   STATE_VERSION, newClassicGame, migrateState, isValidState, applyAnswer, isValidFx, isValidClock, isValidLifelines,
   clockLeft, migrateClock, allInfused, isInfused, startPhase, isGroupGame, roundRest, isClosingRound,
+  stampClock, SESSION_ID, localizeAutoNames,
 } from '../app/js/game.js';
+import { readFileSync } from 'node:fs';
 import { graphemes, initialOf, cleanName, limitGraphemes, NAME_MAX } from '../app/js/text.js';
 import { mergeIdMaps } from '../app/js/progress.js';
 import { ALL_WORKS, WORK_TITLES, workTitle } from '../app/js/works.js';
@@ -1137,5 +1139,70 @@ describe('beta 5: names, Easy fallback, collection merge', () => {
     const out = mergeIdMaps({ es: ['a', 'b'], xx: ['z'] }, { es: ['b', 'c', 5], en: ['d'] }, ['es', 'en'], 3);
     assert.deepEqual(out, { es: ['c', 'a', 'b'], en: ['d'] });
     assert.deepEqual(mergeIdMaps(null, 'x', ['es']), {});
+  });
+});
+
+describe('Beta 6 (2.0.2)', () => {
+  const LANG_CODES = ['es', 'en', 'fr', 'de', 'it'];
+  const strings = Object.fromEntries(LANG_CODES.map((l) => [l, JSON.parse(readFileSync(new URL(`../app/i18n/${l}.json`, import.meta.url), 'utf8'))]));
+  const flat = (o, p = '') => Object.entries(o).flatMap(([k, v]) => (typeof v === 'object' ? flat(v, `${p}${k}.`) : [[`${p}${k}`, v]]));
+  test('no UI string names "Trivial" (Hasbro trademark); the disclaimer says not affiliated nor endorsed', () => {
+    for (const l of LANG_CODES) {
+      for (const [k, v] of flat(strings[l])) assert.ok(!/trivial/i.test(v), `${l} ${k}: "${v}"`);
+    }
+    const endorsed = { es: /ni cuenta con su respaldo/, en: /not affiliated with or endorsed by/, fr: /non approuvé/, de: /nicht unterstützt/, it: /né da loro approvato/ };
+    for (const l of LANG_CODES) assert.match(strings[l].about.disclaimer, endorsed[l], l);
+    assert.ok(/\u00A0/.test(strings.fr.about.disclaimer) || !/[?!:;]/.test(strings.fr.about.disclaimer), 'fr typography');
+  });
+  test('item 5: strings (es reset without "¿Seguro?", de closing-round texts, middle dots glued in Home)', () => {
+    assert.ok(!/Seguro/.test(strings.es.settings.resetConfirm) && /¿Quieres borrarlo todo\?$/.test(strings.es.settings.resetConfirm));
+    assert.match(strings.de.classic.finalRoundOn, /Wer die Finalfrage ebenfalls richtig beantwortet, teilt sich den Sieg\.$/);
+    assert.match(strings.de.classic.lastChanceGone, /Aber die Runde endet jetzt: Du bekommst keinen weiteren Zug\.$/);
+    for (const l of LANG_CODES) for (const [k, v] of Object.entries(strings[l].home)) assert.ok(!v.includes(' · '), `${l} home.${k}: "·" can start a line`);
+  });
+  test('item 2: clockLeft within a session uses the monotonic clock (system clock moved back gives nothing back)', () => {
+    const wall = 1_800_000_000_000;
+    const c = stampClock({ remaining: 25_000 }, true, wall, 1_000);
+    assert.equal(c.savedAt, wall);
+    assert.equal(c.sid, SESSION_ID);
+    assert.ok(isValidClock(c));
+    // 20 s away, the system clock moved back 60 s meanwhile: 20 s are deducted, not 0.
+    assert.equal(clockLeft(c, wall + 20_000 - 60_000, 21_000), 5_000);
+    // Clock moved forward: the wall time counts (never more time than the monotonic one gives).
+    assert.equal(clockLeft(c, wall + 30_000, 6_000), 0);
+    // Device asleep (performance.now() stopped): the wall time still counts.
+    assert.equal(clockLeft(c, wall + 10_000, 1_000), 15_000);
+    // Another page session (a reload): only the wall time, never a stale monotonic value.
+    const other = { ...c, sid: 'other-session' };
+    assert.equal(clockLeft(other, wall + 4_000, 999_999), 21_000);
+    assert.equal(clockLeft(other, wall - 60_000, 999_999), 25_000);
+    // Paused: no stamp, time kept.
+    const paused = stampClock({ ...c }, false);
+    assert.equal(paused.savedAt, null);
+    assert.ok(!('mono' in paused) && !('sid' in paused));
+    assert.equal(clockLeft(paused), 25_000);
+  });
+  test('item 2: isValidClock checks the session fields', () => {
+    assert.ok(isValidClock({ remaining: 1000, savedAt: 5, mono: 3.5, sid: 'a-b' }));
+    assert.ok(isValidClock({ remaining: 1000, savedAt: 5 }), 'older saves without them');
+    for (const bad of [{ mono: -1 }, { mono: 'x' }, { sid: 5 }, { sid: 'x'.repeat(41) }, { savedAt: -3 }]) {
+      assert.ok(!isValidClock({ remaining: 1000, savedAt: 5, ...bad }), JSON.stringify(bad));
+    }
+  });
+  test('item 4: default player names are stored as such and follow the language', () => {
+    seed(4);
+    const s = newClassicGame({ players: [{ name: 'Jugador 1', auto: true, color: 'roshar' }, { name: 'Ana', color: 'scadrial' }], timer: false, categories: [...CATEGORIES], level: 'normal' });
+    assert.equal(s.players[0].auto, true);
+    assert.ok(!('auto' in s.players[1]));
+    assert.ok(isValidState(s));
+    assert.ok(!isValidState({ ...s, players: [{ ...s.players[0], auto: 'yes' }, s.players[1]] }), 'auto must be a boolean');
+    assert.equal(localizeAutoNames(s, (i) => `Player ${i + 1}`), true);
+    assert.deepEqual(s.players.map((p) => p.name), ['Player 1', 'Ana']);
+    assert.equal(localizeAutoNames(s, (i) => `Player ${i + 1}`), false, 'nothing to change');
+    const old = migrateState(JSON.parse(JSON.stringify(s)));
+    delete old.players[0].auto;
+    assert.ok(isValidState(old), 'saves from before 2.0.2 (no auto) stay valid');
+    localizeAutoNames(old, () => 'X');
+    assert.equal(old.players[0].name, 'Player 1', 'a name without the flag is kept');
   });
 });

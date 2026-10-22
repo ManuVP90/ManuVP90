@@ -1,5 +1,5 @@
 // Global constants shared by every module.
-export const APP_VERSION = '2.0.1';
+export const APP_VERSION = '2.0.2';
 
 /** Category ids, in wheel / board order (SPEC §2). */
 export const CATEGORIES = ['roshar', 'scadrial', 'sel', 'nalthis', 'otros', 'cosmere'];

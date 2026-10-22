@@ -24,7 +24,9 @@ export function newClassicGame({ players, timer, categories, level, fullRound = 
   const current = multi ? randomIndex(players.length) : 0; // SPEC: the starting player is drawn at random
   return {
     v: STATE_VERSION,
-    players: players.map((p) => ({ name: p.name, color: p.color, charges: {}, lifelines: fullLifelines(), stats: emptyPlayerStats() })),
+    // `auto` (beta 6, item 4): the player left the name empty, so `name` is the default "Player n"
+    // of the current language (localizeAutoNames refreshes it after a language change).
+    players: players.map((p) => ({ name: p.name, ...(p.auto ? { auto: true } : {}), color: p.color, charges: {}, lifelines: fullLifelines(), stats: emptyPlayerStats() })),
     current,
     starter: current, // a round runs from this player to the one before them
     fullRound: multi && fullRound !== false, // after a right final, the rest of the round still plays
@@ -70,11 +72,19 @@ export function isValidFx(fx) {
   return true;
 }
 /**
- * Question countdown ({ remaining: ms left, 0..TIMER_MS, savedAt: epoch ms | null }); null/undefined
- * means not started. `savedAt` set = the question was revealed and its time keeps running.
+ * Question countdown ({ remaining: ms left, 0..TIMER_MS, savedAt: epoch ms | null, mono?, sid? });
+ * null/undefined means not started. `savedAt` set = the question was revealed and its time keeps
+ * running. Beta 6 (item 2): `mono` is performance.now() at the same moment and `sid` the page
+ * session (SESSION_ID) it belongs to, so time away within one page session is measured with the
+ * monotonic clock and a system clock moved back gives nothing back; after a reload (another
+ * session) only the wall time is left.
  */
+const isTime = (n) => Number.isFinite(n) && n >= 0;
 export const isValidClock = (c) => c === undefined || c === null
-  || (isObj(c) && isInt(c.remaining, 0, TIMER_MS) && (c.savedAt === undefined || c.savedAt === null || typeof c.savedAt === 'number'));
+  || (isObj(c) && isInt(c.remaining, 0, TIMER_MS)
+    && (c.savedAt === undefined || c.savedAt === null || isTime(c.savedAt))
+    && (c.mono === undefined || isTime(c.mono))
+    && (c.sid === undefined || (typeof c.sid === 'string' && c.sid.length <= 40)));
 /** Converts a pre-1.3 clock ({ deadline: epoch ms }) to the time it had left. Other shapes are left as they are. */
 export function migrateClock(c) {
   if (!isObj(c) || 'remaining' in c || !('deadline' in c)) return c;
@@ -83,15 +93,35 @@ export function migrateClock(c) {
   return { remaining: Math.max(0, Math.min(TIMER_MS, Math.round(c.deadline - Date.now()))), savedAt: null };
 }
 
+/** This page load (a reload is another session): tags clocks whose `mono` can be compared. */
+export const SESSION_ID = (() => {
+  try { return Array.from(crypto.getRandomValues(new Uint32Array(2)), (n) => n.toString(36)).join('-'); } catch { return `s${Date.now().toString(36)}${Math.random().toString(36).slice(2)}`; }
+})();
+const monoNow = () => (typeof performance !== 'undefined' ? performance.now() : NaN);
+
 /**
- * Time left on a clock now, deducting the wall time elapsed since it was saved while running.
- * A negative or unreadable elapsed time counts as 0 (a clock moved backwards gives nothing back).
+ * Marks clock `c` as measured now (savedAt + mono + sid), or paused (`running` false: savedAt null).
+ * Mutates and returns it.
  */
-export function clockLeft(c, now = Date.now()) {
+export function stampClock(c, running = true, now = Date.now(), mono = monoNow()) {
+  c.savedAt = running ? now : null;
+  if (running && isTime(mono)) { c.mono = mono; c.sid = SESSION_ID; } else { delete c.mono; delete c.sid; }
+  return c;
+}
+
+/**
+ * Time left on a clock now, deducting the time elapsed since it was saved while running.
+ * Same page session (`sid` = SESSION_ID): the larger of the monotonic and the wall elapsed time
+ * (moving the system clock back gives nothing back; a device asleep, where performance.now() may
+ * stop, still counts by the wall clock). Another session (a reload): the wall time only. A
+ * negative or unreadable elapsed time counts as 0.
+ */
+export function clockLeft(c, now = Date.now(), mono = monoNow()) {
   if (!isObj(c) || !isInt(c.remaining, 0, TIMER_MS)) return TIMER_MS;
   if (typeof c.savedAt !== 'number') return c.remaining;
-  let away = now - c.savedAt;
-  if (!Number.isFinite(away) || away < 0) away = 0;
+  const pos = (n) => (Number.isFinite(n) && n > 0 ? n : 0);
+  let away = pos(now - c.savedAt);
+  if (c.sid === SESSION_ID && typeof c.mono === 'number') away = Math.max(away, pos(mono - c.mono));
   return Math.max(0, Math.round(c.remaining - away));
 }
 export const isValidLifelines = (l) => isObj(l) && LIFELINES.every((k) => isInt(l[k], 0, 1));
@@ -153,10 +183,26 @@ export function migrateState(s) {
   return s;
 }
 
+/**
+ * Gives every player without a chosen name (`auto`) the default name `nameOf(index)` of the
+ * current language (beta 6, item 4: "Jugador 1" becomes "Player 1" after switching to English).
+ * Mutates the state; returns true when a name changed.
+ */
+export function localizeAutoNames(state, nameOf) {
+  let changed = false;
+  state?.players?.forEach((p, i) => {
+    if (p?.auto !== true) return;
+    const name = nameOf(i);
+    if (typeof name === 'string' && name && name !== p.name) { p.name = name; changed = true; }
+  });
+  return changed;
+}
+
 const indexList = (a, n) => Array.isArray(a) && a.every((i) => isInt(i, 0, n - 1)) && new Set(a).size === a.length;
 
 function isValidPlayer(p) {
   return isObj(p) && typeof p.name === 'string' && p.name.length <= 64 && CATEGORIES.includes(p.color)
+    && (p.auto === undefined || typeof p.auto === 'boolean')
     && isObj(p.charges) && Object.entries(p.charges).every(([c, n]) => CATEGORIES.includes(c) && isInt(n, 0, CHARGES_TO_INFUSE))
     && isValidLifelines(p.lifelines) && isValidPlayerStats(p.stats);
 }

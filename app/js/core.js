@@ -8,6 +8,7 @@ import { ACHIEVEMENTS, sanitizeAchievements, newlyEarned } from './achievements.
 import { sanitizeDaily } from './daily.js';
 import { addId, removeId, cleanIds, cleanIdMap, mergeIdMaps } from './progress.js';
 import { Pool } from './data.js';
+import { isValidClock } from './game.js';
 import { setFxPrefs, fx } from './fx.js';
 
 // ---------- settings & stats ----------
@@ -210,8 +211,7 @@ export function clearMissed(id) {
 
 // ---------- daily challenge state ----------
 const dailyHelpers = { isPermutation: (a, n) => Array.isArray(a) && a.length === n && [...Array(n).keys()].every((i) => a.includes(i)),
-  isValidClock: (c) => c === undefined || c === null || (isObj(c) && Number.isInteger(c.remaining) && c.remaining >= 0 && c.remaining <= 30000
-    && (c.savedAt === null || c.savedAt === undefined || (Number.isFinite(c.savedAt) && c.savedAt >= 0))) };
+  isValidClock };
 /** The stored daily-challenge state, sanitized (an invalid run is dropped). */
 export function getDaily() { return sanitizeDaily(store.load('daily', null), dailyHelpers); }
 /** Saves the daily state; `check: false` for in-progress saves (the timer writes about once a second). */
@@ -393,7 +393,11 @@ export function onCleanup(fn) { cleanups.push(fn); }
 export function setBack(fn) { backHandler = fn; }
 export function currentScreen() { return current; }
 
-export function go(name, params = {}) {
+/**
+ * Shows screen `name`. `{ guard: false }` skips the input guard: only for the screens painted at
+ * boot (Home and the introduction or quick results opened over it), which no tap led to.
+ */
+export function go(name, params = {}, { guard = true } = {}) {
   for (const fn of cleanups) { try { fn(); } catch (e) { console.error(e); } }
   cleanups = [];
   backHandler = null;
@@ -415,10 +419,10 @@ export function go(name, params = {}) {
   renderFailures = 0;
   el.classList.add('screen-enter');
   root.replaceChildren(el);
-  // Input guard (beta 5, item 1): a screen reached from another one ignores taps on its guarded
-  // actions for INPUT_GUARD_MS, so the second tap of a double tap never lands on them. Not at
-  // boot (no tap led there).
-  if (current) armScreenGuard(el);
+  // Input guard (beta 5, item 1; beta 6, item 1: every control, not opt-in): a screen reached
+  // from another one ignores every tap for INPUT_GUARD_MS, so the second tap of a double tap
+  // never lands on it. Not at boot (no tap led there).
+  if (guard && current) armScreenGuard(el); else disarmScreenGuard();
   current = { name, params };
   window.scrollTo(0, 0);
   const focusTarget = el.querySelector('[data-autofocus]') || el.querySelector('h1');
@@ -451,14 +455,30 @@ window.addEventListener('popstate', () => {
 });
 
 // ---------- input guard for freshly painted screens (beta 5, item 1) ----------
+// Beta 6 (item 1): the guard covers the whole screen, not only the buttons built with
+// actionButton: `.input-guard` turns off pointer events on every control (CSS), and a capture
+// listener drops any click inside the fresh screen (programmatic clicks, keyboard activation,
+// listeners on non-button elements such as the landed wheel's "tap to continue").
 let paintedAt = -Infinity;
 let guardTimer = null;
+let guardedEl = null;
 function armScreenGuard(el) {
   paintedAt = performance.now();
+  guardedEl = el;
   clearTimeout(guardTimer);
   el.classList.add('input-guard');
   guardTimer = setTimeout(() => el.classList.remove('input-guard'), INPUT_GUARD_MS);
 }
+function disarmScreenGuard() {
+  paintedAt = -Infinity;
+  guardedEl = null;
+  clearTimeout(guardTimer);
+}
+document.addEventListener('click', (e) => {
+  if (!guardedEl || !screenIsFresh() || !(e.target instanceof Node) || !guardedEl.contains(e.target)) return;
+  e.preventDefault();
+  e.stopImmediatePropagation();
+}, true);
 /** True while the screen on display was painted less than INPUT_GUARD_MS ago (performance.now()). */
 export function screenIsFresh() { return performance.now() - paintedAt < INPUT_GUARD_MS; }
 /**

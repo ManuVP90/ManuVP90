@@ -81,7 +81,17 @@ async function open({ locale = 'es-ES', device = 'Pixel 7', viewport = null, see
   page.on('pageerror', (e) => { if (!allowed(e.message)) errors.push(`pageerror: ${e.message}`); });
   page.on('requestfailed', (r) => { if (!r.url().includes('favicon') && !allowed(r.url())) errors.push(`requestfailed: ${r.url()}`); });
   if (clock) await page.clock.install({ time: T0 });
-  if (clock === 'paused') await page.clock.pauseAt(T0 + 1000); // time only moves with runFor (exact timer checks)
+  if (clock === 'paused') {
+    await page.clock.pauseAt(T0 + 1000); // time only moves with runFor (exact timer checks)
+    // Beta 6 (item 1): every screen reached by a tap ignores all taps for INPUT_GUARD_MS. With time
+    // paused, page.click() first lets the guard of a fresh screen run out (Playwright would wait for
+    // pointer events forever). Tests of the guard itself use mouse / programmatic clicks.
+    const click = page.click.bind(page);
+    page.click = async (sel, opts) => {
+      if (await page.evaluate(() => !!document.querySelector('#app .screen.input-guard')).catch(() => false)) await page.clock.runFor(INPUT_GUARD_MS);
+      return click(sel, opts);
+    };
+  }
   if (before) await before(page, context);
   await page.goto(url);
   return { context, page, errors };
@@ -823,7 +833,9 @@ await test('B2 spoiler filter: a question already shown stays pending (classic a
   await page.click('.menu-continue-classic');
   await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard');
-  assert(await text(page, '.qtext') === q.q && await text(page, '.timer-num') === '12', 'classic: settings change mid-question gives no re-draw');
+  // Only the input guards' INPUT_GUARD_MS on the screens in between ran (beta 6: page.click lets them run out).
+  const left = Number(await text(page, '.timer-num'));
+  assert(await text(page, '.qtext') === q.q && left >= 10 && left <= 12, `classic: settings change mid-question gives no re-draw (${left})`);
   await context.close();
   const run = { v: 1, plan: Array(15).fill('roshar'), total: 15, index: 3, score: 300, correct: 3, level: 'normal', lifelines: { atium: 1, stormlight: 1, breath: 1 }, seen: [q.id], current: { id: q.id, order: [3, 2, 1, 0], fx: { removed: [], struck: [], armed: false }, clock: { remaining: 9_000 } } };
   ({ page, context } = await use({ clock: 'paused', storage: { quick: JSON.stringify(run), settings: hideIt } }));
@@ -2816,8 +2828,8 @@ await test('B5 items 7–9, 12, 13 + suggestions: texts, percent, name field, ac
     await page.waitForSelector('.stats .collection');
     const total = JSON.parse(readFileSync(join(APP_DIR, 'data', `questions.${lang}.json`), 'utf8')).length;
     const n = Math.round((49 / total) * 100);
-    assert(await text(page, '.col-pct') === `· ${T(lang, 'victory.percent', { n })}`, `${lang}: collection percent (${await text(page, '.col-pct')})`);
-    assert(await page.evaluate(() => document.querySelector('.col-pct').getClientRects().length) === 1, `${lang}: "· n %" on one line`);
+    assert(await text(page, '.col-pct') === `(${T(lang, 'victory.percent', { n })})`, `${lang}: collection percent (${await text(page, '.col-pct')})`);
+    assert(await page.evaluate(() => document.querySelector('.col-pct').getClientRects().length) === 1, `${lang}: "(n %)" on one line`);
     const tiles = await page.locator('.tile-value').allTextContents();
     assert(tiles.includes(T(lang, 'victory.percent', { n: 67 })), `${lang}: accuracy tile (${tiles})`);
     await context.close();
@@ -2865,6 +2877,229 @@ await test('B5 items 7–9, 12, 13 + suggestions: texts, percent, name field, ac
     await page.click('.topbar-back');
     await page.waitForSelector('.home');
     await context.close();
+  }
+});
+
+// ================================================================== Beta 6 findings (docs/BETA-6.md)
+await test('B6 item 1: every control of a fresh screen is guarded (wheel "Girar", Home menu, onboarding), not the first screen at boot', async (use) => {
+  const fresh = (page) => page.evaluate(() => !!document.querySelector('#app .screen.input-guard'));
+  const tapAt = async (page, sel) => { await page.locator(sel).first().scrollIntoViewIfNeeded(); const b = await page.locator(sel).first().boundingBox(); await page.mouse.click(b.x + b.width / 2, b.y + b.height / 2); };
+  // Solo classic, 320×568: the double tap on "Empezar" must not spin the wheel ("Girar" sits where "Empezar" was).
+  let { page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 } });
+  await page.waitForSelector('.home');
+  assert(!(await fresh(page)), 'Home at boot: no guard');
+  await page.evaluate(() => document.querySelector('.menu-primary').click()); // works at once (boot screen)
+  await page.waitForSelector('.setup');
+  assert(await fresh(page), 'setup starts guarded');
+  await page.evaluate(() => document.querySelector('.stepper-btn').click());
+  assert(await page.locator('.setup-player').count() === 2, 'the stepper (a plain button) is guarded too');
+  await page.click('.stepper-btn >> nth=0');
+  assert(await page.locator('.setup-player').count() === 1, 'then it works');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  const sb = await page.locator('.setup-start').boundingBox();
+  await page.mouse.click(sb.x + sb.width / 2, sb.y + sb.height / 2);
+  await page.mouse.click(sb.x + sb.width / 2, sb.y + sb.height / 2); // lands on "Girar"
+  await page.waitForSelector('.spin');
+  await page.evaluate(() => { document.querySelector('.spin .sticky-actions .btn').click(); document.querySelector('.spin .wheel').click(); });
+  await tapAt(page, '.spin .wheel');
+  await page.clock.runFor(100);
+  assert(await text(page, '.wheel-status') === T('es', 'wheel.tapToSpin') && !(await page.$eval('.spin .sticky-actions .btn', (b) => b.disabled)), 'the wheel did not spin');
+  assert((await lsJSON(page, 'classic')).phase === 'spin', 'still the spin phase');
+  await shot(page, 'e-b6-1-spin-after-double-tap');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await page.click('.spin .sticky-actions .btn');
+  assert(await text(page, '.wheel-status') === T('es', 'wheel.spinning'), '"Girar" works after the guard');
+  await context.close();
+
+  // Home reached from Settings: its menu ignores the second tap.
+  ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 } }));
+  await page.click('.small-btn >> nth=1');
+  await page.waitForSelector('.settings');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await tapAt(page, '.topbar-back');
+  await page.waitForSelector('.home');
+  assert(await fresh(page), 'Home reached by a tap starts guarded');
+  await page.evaluate(() => document.querySelectorAll('.home .menu-btn, .home .small-btn').forEach((b) => b.click()));
+  await tapAt(page, '.menu-btn >> nth=2');
+  assert(await page.$('.home') && !(await page.$('.modal')), 'no menu entry opened (Práctica, Ajustes…)');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await page.evaluate(() => document.querySelectorAll('.home .menu-btn')[2].click());
+  await page.waitForSelector('.practice-setup');
+  await context.close();
+
+  // First-run introduction: step 1 at boot is not guarded; steps 2 and 3 are.
+  ({ page, context } = await use({ clock: 'paused', fresh: true, viewport: { width: 320, height: 568 } }));
+  await page.waitForSelector('.onboarding .onb-readall');
+  assert(!(await fresh(page)), 'the introduction at boot has no guard');
+  await page.evaluate(() => document.querySelector('.onb-readall').click());
+  await page.waitForSelector('.onboarding .onb-next');
+  const step = () => text(page, '.onb-step');
+  assert(await step() === T('es', 'onboarding.step', { n: 2, total: 3 }), 'step 2');
+  await page.evaluate(() => document.querySelector('.onb-next').click());
+  await tapAt(page, '.onb-next');
+  assert(await step() === T('es', 'onboarding.step', { n: 2, total: 3 }), 'a tap on the fresh step 2 does nothing');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await page.locator('.onb-next').scrollIntoViewIfNeeded();
+  const nb = await page.locator('.onb-next').boundingBox();
+  await page.mouse.click(nb.x + nb.width / 2, nb.y + nb.height / 2);
+  await page.mouse.click(nb.x + nb.width / 2, nb.y + nb.height / 2); // where "Empezar" appears
+  await page.waitForSelector('.onboarding .onb-start');
+  assert(await step() === T('es', 'onboarding.step', { n: 3, total: 3 }), 'the double tap on "Siguiente" does not press "Empezar"');
+  await page.evaluate(() => document.querySelector('.onb-start').click());
+  assert(await page.$('.onboarding'), 'step 3 guarded');
+  await page.click('.onb-start');
+  await page.waitForSelector('.home');
+  assert(JSON.parse(await lsGet(page, 'settings')).onboarded === true, 'then "Empezar" finishes the introduction');
+});
+
+await test('B6 item 2: moving the system clock back while away gives no time back (quick and classic); a reload uses the wall time', async (use) => {
+  // Quick game: 2 s on screen, 20 s hidden while the clock is moved back 60 s → 8 s left, not 28.
+  let { page, context } = await use({ clock: 'paused' });
+  await page.click('.menu-quick');
+  await tapReady(page, '.quick-intro .sticky-actions .btn-primary');
+  await page.waitForSelector('.quick .qcard .timer-num');
+  assert(await secs(page) === 30, 'starts at 30');
+  await page.clock.runFor(2_000);
+  await hide(page, true);
+  const c = (await lsJSON(page, 'quick')).current.clock;
+  assert(c.remaining === 28_000 && typeof c.mono === 'number' && typeof c.sid === 'string', `saved with the monotonic stamp (${JSON.stringify(c)})`);
+  await page.clock.runFor(20_000);
+  await page.clock.setSystemTime(await page.evaluate(() => Date.now()) - 60_000);
+  await hide(page, false);
+  assert(await secs(page) === 8, `20 s away count although the clock went back (${await secs(page)})`);
+  await page.clock.runFor(1_000);
+  assert(await secs(page) === 7, 'and it counts on');
+  // A reload is another session: the wall time since the last save counts (here 2 s).
+  await page.reload();
+  await page.waitForSelector('.home .menu-continue-quick');
+  await page.clock.runFor(2_000);
+  await page.click('.menu-continue-quick');
+  await page.waitForSelector('.quick .qcard .timer-num');
+  const afterReload = await secs(page);
+  assert(afterReload >= 4 && afterReload <= 5, `reload: wall time counted (${afterReload})`);
+  await context.close();
+
+  // Classic (timer on): the same with Home in between instead of a hidden page.
+  ({ page, context } = await use({ clock: 'paused', storage: { classic: JSON.stringify(classicSave()) } }));
+  await page.click('.menu-continue-classic');
+  await tapReady(page, '.handoff .btn-primary');
+  await page.waitForSelector('.qcard .timer-num');
+  await page.clock.runFor(5_000);
+  await leaveClassic(page);
+  await page.clock.runFor(10_000);
+  await page.clock.setSystemTime(await page.evaluate(() => Date.now()) - 120_000);
+  await page.click('.menu-continue-classic');
+  await page.waitForSelector('.handoff .handoff-clock');
+  await tapReady(page, '.handoff .btn-primary');
+  await page.waitForSelector('.qcard .timer-num');
+  const left = await secs(page);
+  assert(left >= 14 && left <= 15, `classic: Home time counted despite the clock moved back (${left})`);
+});
+
+await test('B6 item 3: Home at 200 % text, 320/390 px: "Herausforderung" and "Cosmoverso" fit, no word split', async (use) => {
+  for (const width of [320, 390]) {
+    for (const [locale, lang] of [['es-ES', 'es'], ['en-US', 'en'], ['fr-FR', 'fr'], ['de-DE', 'de'], ['it-IT', 'it']]) {
+      const { page, context } = await use({ locale, viewport: { width, height: 700 } });
+      await page.waitForSelector('.home .menu-daily');
+      await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+      await page.waitForTimeout(50);
+      const r = await page.evaluate(() => {
+        const W = document.documentElement.clientWidth;
+        const over = [...document.querySelectorAll('#app *')].filter((e) => { const b = e.getBoundingClientRect(); return b.width && (b.right > W + 0.5 || b.left < -0.5); }).map((e) => e.className);
+        const split = [];
+        for (const el of document.querySelectorAll('.title, .menu-title')) {
+          const box = el.closest('.menu-btn, .hero').getBoundingClientRect();
+          if (el.getBoundingClientRect().right > box.right + 0.5) over.push(el.className);
+          const n = el.firstChild;
+          for (const m of n.data.matchAll(/[^\s-]+/g)) {
+            const rg = document.createRange(); rg.setStart(n, m.index); rg.setEnd(n, m.index + m[0].length);
+            if ([...rg.getClientRects()].filter((x) => x.width > 0).length > 1) split.push(m[0]);
+          }
+        }
+        return { over, split, sw: document.documentElement.scrollWidth, W };
+      });
+      assert(r.sw <= r.W && !r.over.length && !r.split.length, `${lang} ${width}: ${JSON.stringify(r)}`);
+      if (width === 320 && (lang === 'de' || lang === 'it')) await page.screenshot({ path: join(SHOTS, `e-b6-3-home-200-${lang}.png`), fullPage: true });
+      await context.close();
+    }
+  }
+});
+
+await test('B6 item 4: default player names follow the language (setup, saved game, Home, handoff, victory, Play again)', async (use) => {
+  // Empty names in Spanish: "Jugador 1/2" stored as defaults.
+  let { page, context } = await use({ clock: true });
+  await page.click('.menu-primary');
+  await tapReady(page, '.setup-start');
+  await page.waitForSelector('.handoff');
+  const s = await lsJSON(page, 'classic');
+  assert(JSON.stringify(s.players.map((p) => [p.name, p.auto])) === JSON.stringify([['Jugador 1', true], ['Jugador 2', true]]), `defaults stored (${JSON.stringify(s.players.map((p) => [p.name, p.auto]))})`);
+  await context.close();
+
+  // The same kind of save opened in English: Home, handoff and victory say "Player 1"; Play again leaves the field empty.
+  const EN = JSON.parse(readFileSync(join(APP_DIR, 'data', 'questions.en.json'), 'utf8'));
+  const enAnswers = Object.fromEntries(EN.map((q) => [q.q, q.o[0]]));
+  const fq = EN.find((x) => x.d === 3);
+  const save = save4({ fullRound: false, timer: false, players: [{ ...pl('Jugador 1', 'roshar', allGems()), auto: true }, pl('Bea', 'sel')], pending: { id: fq.id, cat: fq.c, order: [0, 1, 2, 3], final: true } });
+  ({ page, context } = await use({ locale: 'en-US', clock: true, storage: { settings: JSON.stringify({ lang: 'en' }), classic: JSON.stringify(save) } }));
+  await page.waitForSelector('.home .menu-continue-classic');
+  assert(await text(page, '.menu-continue-classic .menu-desc') === T('en', 'home.continueTurn', { name: 'Player 1', players: 'Player 1, Bea' }), `Home (${await text(page, '.menu-continue-classic .menu-desc')})`);
+  await page.click('.menu-continue-classic');
+  await page.waitForSelector('.handoff');
+  assert(await text(page, '.handoff-name') === 'Player 1', 'handoff in English');
+  await tapReady(page, '.handoff .btn-primary');
+  await page.waitForSelector('.qcard .option');
+  await page.waitForTimeout(INPUT_GUARD_MS + 50);
+  const right = enAnswers[await text(page, '.qtext')];
+  const opts = page.locator('.qcard .option .option-text');
+  const texts = (await opts.allTextContents()).map((x) => x.trim());
+  await page.locator('.qcard .option').nth(texts.indexOf(right)).click();
+  await tapReady(page, '.qcard .continue');
+  await page.waitForSelector('.victory');
+  assert(await text(page, '.victory-title') === T('en', 'victory.title', { name: 'Player 1' }), `victory (${await text(page, '.victory-title')})`);
+  await tapReady(page, '.victory .stack-actions .btn-primary');
+  await page.waitForSelector('.setup');
+  const fields = await page.$$eval('.setup-player .text-input', (els) => els.map((e) => [e.value, e.placeholder]));
+  assert(JSON.stringify(fields) === JSON.stringify([['', 'Player 1'], ['Bea', 'Player 2']]), `Play again keeps the default as a default (${JSON.stringify(fields)})`);
+});
+
+await test('B6 item 5: es reset text, de closing-round texts, no line starting with "·" on Home or Stats, Stats "(n %)" whole (200 %, 320/390 px)', async (use) => {
+  assert(T('es', 'settings.resetConfirm').endsWith('¿Quieres borrarlo todo?') && !T('es', 'settings.resetConfirm').includes('Seguro'), 'es reset');
+  assert(T('de', 'classic.finalRoundOn').endsWith('Wer die Finalfrage ebenfalls richtig beantwortet, teilt sich den Sieg.'), 'de finalRoundOn');
+  assert(T('de', 'classic.lastChanceGone').endsWith('Aber die Runde endet jetzt: Du bekommst keinen weiteren Zug.'), 'de lastChanceGone');
+  const ids = QS.slice(0, 15).map((q) => q.id);
+  for (const width of [320, 390]) {
+    for (const [locale, lang] of [['fr-FR', 'fr'], ['it-IT', 'it'], ['de-DE', 'de'], ['es-ES', 'es'], ['en-US', 'en']]) {
+      const { page, context } = await use({ locale, viewport: { width, height: 700 }, storage: { seen: JSON.stringify({ [lang]: ids }), stats: JSON.stringify({ quickGames: 1, cats: { roshar: { a: 15, c: 15 } } }) } });
+      await page.waitForSelector('.home');
+      await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+      // A middle dot is never the first thing on a line (Home descriptions and the Stats percent).
+      const dotStartsLine = () => page.evaluate(() => {
+        const bad = [];
+        const walker = document.createTreeWalker(document.querySelector('#app'), NodeFilter.SHOW_TEXT);
+        let n;
+        while ((n = walker.nextNode())) {
+          for (const m of n.data.matchAll(/·/g)) {
+            const rg = document.createRange(); rg.setStart(n, m.index); rg.setEnd(n, m.index + 1);
+            const dot = rg.getBoundingClientRect();
+            const block = n.parentElement.closest('p, li, .menu-desc, .menu-text, div');
+            const left = block.getBoundingClientRect().left + parseFloat(getComputedStyle(block).paddingLeft);
+            if (dot.left - left < 2) bad.push(n.data);
+          }
+        }
+        return bad;
+      });
+      let bad = await dotStartsLine();
+      assert(!bad.length, `${lang} ${width} Home: ${JSON.stringify(bad)}`);
+      await page.click('.small-btn >> nth=0');
+      await page.waitForSelector('.stats .collection .col-pct');
+      await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+      bad = await dotStartsLine();
+      assert(!bad.length, `${lang} ${width} Stats: ${JSON.stringify(bad)}`);
+      assert(/^\(.+\)$/.test(await text(page, '.col-pct')) && await page.evaluate(() => document.querySelector('.col-pct').getClientRects().length) === 1, `${lang} ${width}: percent "(n %)" in one piece`);
+      assert(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth), `${lang} ${width}: no overflow`);
+      if (lang === 'fr' && width === 320) await shot(page, 'e-b6-5-stats-fr-200');
+      await context.close();
+    }
   }
 });
 

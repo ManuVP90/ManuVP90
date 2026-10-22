@@ -77,19 +77,19 @@ Términos 41–60. Revisor/a: ________ · Fecha: ________
 | 45 | Cosmere | Kosmeer | community | 5 | `cosmere-001` `cosmere-016` `cosmere-017` … | [buchtipp.de](https://www.buchtipp.de/reihenfolgen/brandon-sanderson-reihenfolge/)<br>[es.coppermind.net](https://es.coppermind.net)<br>[cosmere.fr](https://cosmere.fr) | ☐ confirmado<br>☐ corregir a: ______ |
 | 46 | Dockson | Dockson | community | 5 | `cosmere-085` `scadrial-001` `scadrial-010` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
 | 47 | Forgery | Fälschen | unverified | 5 | `cosmere-080` `sel-011` `sel-033` … | [zauberspiegel-online.de](https://www.zauberspiegel-online.de/index.php/phantastisches1/21038-shai-und-das-seelenschmieden-the-emperor-s-soul-von-b-sanderson)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/12674)<br>Italian blurb snippet of L'anima dell'imperatore | ☐ confirmado<br>☐ corregir a: ______ |
-| 48 | gyorn | Gyorn | unverified | 5 | `cosmere-082` `sel-003` `sel-051` … | it.coppermind.net (search snippet) "Gyorn Hrathen" | ☐ confirmado<br>☐ corregir a: ______ |
-| 49 | harmonium | Harmonium | unverified | 5 | `cosmere-065` `cosmere-073` `scadrial-020` … | By analogy with atium/lerasium<br>[es.coppermind.net](https://es.coppermind.net/wiki/Armonium)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Metal_divino) | ☐ confirmado<br>☐ corregir a: ______ |
-| 50 | hion | Hion | unverified | 5 | `otros-016` `otros-018` `otros-019` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 51 | Honorblade | Ehrenklinge | community | 5 | `cosmere-013` `cosmere-041` `cosmere-057` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Herold)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Hoja_de_Honor)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 52 | Idrian | idrisch | unverified | 5 | `nalthis-018` `nalthis-030` `nalthis-042` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 53 | Keeper | Bewahrer | community | 5 | `scadrial-006` `scadrial-008` `scadrial-026` … | [de.wikipedia.org](https://de.wikipedia.org/wiki/Kinder_des_Nebels)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sazed)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Tindwyl) | ☐ confirmado<br>☐ corregir a: ______ |
-| 54 | Mistborn | Nebelgeborener | community | 5 | `cosmere-016` `cosmere-021` `scadrial-020` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebelgeborener)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Inquisidor_de_acero)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 55 | Oathbringer | Eidbringer | unverified | 5 | `cosmere-013` `cosmere-014` `cosmere-041` … | [es.coppermind.net](https://es.coppermind.net/wiki/Juramentada_(hoja_esquirlada)<br>[it.coppermind.net](https://it.coppermind.net/wiki/Giuramento_(Stratolama)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 56 | Rashek | Raschek | community | 5 | `scadrial-016` `scadrial-028` `scadrial-048` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Raschek)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia) | ☐ confirmado<br>☐ corregir a: ______ |
-| 57 | Rose Empire | Rosenreich | unverified | 5 | `sel-033` `sel-047` `sel-060` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 58 | Seeker | Sucher | community | 5 | `scadrial-022` `scadrial-023` `scadrial-044` … | [de.kosmeer.wikia.com](http://de.kosmeer.wikia.com/wiki/Nebelgeborener)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebeling)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Marsch) | ☐ confirmado<br>☐ corregir a: ______ |
-| 59 | Shadesmar | Schadesmar | community | 5 | `cosmere-009` `roshar-010` `roshar-022` … | [himmelsblau.org](https://himmelsblau.org/2019/08/sturmlichtarchive-6-die-splitter-der-macht/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 60 | shroud | Leichentuch | unverified | 5 | `otros-015` `otros-016` `otros-018` … | [entreteclasytinta.com](https://entreteclasytinta.com/2023/07/27/resena-yumi-y-el-pintor-de-pesadillas-de-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 48 | harmonium | Harmonium | unverified | 5 | `cosmere-065` `cosmere-073` `scadrial-020` … | By analogy with atium/lerasium<br>[es.coppermind.net](https://es.coppermind.net/wiki/Armonium)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Metal_divino) | ☐ confirmado<br>☐ corregir a: ______ |
+| 49 | hion | Hion | unverified | 5 | `otros-016` `otros-018` `otros-019` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 50 | Honorblade | Ehrenklinge | community | 5 | `cosmere-013` `cosmere-041` `cosmere-057` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Herold)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Hoja_de_Honor)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 51 | Idrian | idrisch | unverified | 5 | `nalthis-018` `nalthis-030` `nalthis-042` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 52 | Keeper | Bewahrer | community | 5 | `scadrial-006` `scadrial-008` `scadrial-026` … | [de.wikipedia.org](https://de.wikipedia.org/wiki/Kinder_des_Nebels)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sazed)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Tindwyl) | ☐ confirmado<br>☐ corregir a: ______ |
+| 53 | Mistborn | Nebelgeborener | community | 5 | `cosmere-016` `cosmere-021` `scadrial-020` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebelgeborener)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Inquisidor_de_acero)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 54 | Oathbringer | Eidbringer | unverified | 5 | `cosmere-013` `cosmere-014` `cosmere-041` … | [es.coppermind.net](https://es.coppermind.net/wiki/Juramentada_(hoja_esquirlada)<br>[it.coppermind.net](https://it.coppermind.net/wiki/Giuramento_(Stratolama)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 55 | Rashek | Raschek | community | 5 | `scadrial-016` `scadrial-028` `scadrial-048` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Raschek)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia) | ☐ confirmado<br>☐ corregir a: ______ |
+| 56 | Rose Empire | Rosenreich | unverified | 5 | `sel-033` `sel-047` `sel-060` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 57 | Seeker | Sucher | community | 5 | `scadrial-022` `scadrial-023` `scadrial-044` … | [de.kosmeer.wikia.com](http://de.kosmeer.wikia.com/wiki/Nebelgeborener)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebeling)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Marsch) | ☐ confirmado<br>☐ corregir a: ______ |
+| 58 | Shadesmar | Schadesmar | community | 5 | `cosmere-009` `roshar-010` `roshar-022` … | [himmelsblau.org](https://himmelsblau.org/2019/08/sturmlichtarchive-6-die-splitter-der-macht/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 59 | shroud | Leichentuch | unverified | 5 | `otros-015` `otros-016` `otros-018` … | [entreteclasytinta.com](https://entreteclasytinta.com/2023/07/27/resena-yumi-y-el-pintor-de-pesadillas-de-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 60 | Shu-Dereth | Shu-Dereth | unverified | 5 | `sel-004` `sel-024` `sel-030` … | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 4
 
@@ -97,26 +97,26 @@ Términos 61–80. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 61 | Shu-Dereth | Shu-Dereth | unverified | 5 | `sel-004` `sel-024` `sel-030` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 62 | Shu-Korath | Shu-Korath | unverified | 5 | `sel-004` `sel-028` `sel-030` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 63 | spike | Stachel | community | 5 | `cosmere-071` `scadrial-012` `scadrial-049` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Inquisitor)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Ruin)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 64 | Spook | Spuki | community | 5 | `cosmere-077` `scadrial-014` `scadrial-042` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 65 | Steel Ministry | Stahlministerium | unverified | 5 | `cosmere-026` `cosmere-084` `scadrial-034` … | [es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero)<br>[it.wikipedia.org](https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/97675) | ☐ confirmado<br>☐ corregir a: ______ |
-| 66 | worldhopper | Weltenspringer | unverified | 5 | `cosmere-049` `cosmere-055` `cosmere-056` … | [es.coppermind.net](https://es.coppermind.net/wiki/Hoid)<br>content/fr/otros.json, content/fr/cosmere.json (existing usage) | ☐ confirmado<br>☐ corregir a: ______ |
-| 67 | Wyndle | Wyndel | community | 5 | `cosmere-033` `roshar-002` `roshar-010` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[buchwurm.org](https://buchwurm.org/tag/sturmlicht-chroniken/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 68 | Alethi | Alethi | unverified | 4 | `roshar-011` `roshar-020` `roshar-025` … | [melaniefazi.net](https://www.melaniefazi.net/blog/tag/les-archives-de-roshar/)<br>[es.wikipedia.org](https://es.wikipedia.org/wiki/Juramentada) | ☐ confirmado<br>☐ corregir a: ______ |
-| 69 | Awakener | Erwecker | unverified | 4 | `nalthis-027` `nalthis-038` `nalthis-044` … | [eligeunlibro.blogspot.com](https://eligeunlibro.blogspot.com/2016/12/aliento-dioses.html)<br>[cosmere.fr](https://cosmere.fr/nalthis/livres/warbreaker) | ☐ confirmado<br>☐ corregir a: ______ |
-| 70 | Bleeder | Bluter | unverified | 4 | `scadrial-038` `scadrial-068` `scadrial-084` … | Mondadori blurb of Le ombre residue (via search summary: "Salassa, uno dei ka… | ☐ confirmado<br>☐ corregir a: ______ |
-| 71 | Bloodsealer | Blutsiegler | unverified | 4 | `sel-040` `sel-043` `sel-046` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 72 | Conventical of Seran | Konventikel von Seran | unverified | 4 | `cosmere-037` `scadrial-025` `scadrial-056` … | [es.coppermind.net](https://es.coppermind.net/wiki/Convento_de_Seran) | ☐ confirmado<br>☐ corregir a: ______ |
-| 73 | Cryptic | Kryptiker | community | 4 | `cosmere-033` `cosmere-069` `otros-022` … | [penguin.de](https://www.penguin.de/content/edition/excerpts_extended/Leseprobe_978-3-453-27325-2.pdf)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Muster)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 74 | Dayside | Tagseite | unverified | 4 | `cosmere-029` `otros-033` `otros-036` … | [izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793) | ☐ confirmado<br>☐ corregir a: ______ |
-| 75 | Devotion | Devotion | community | 4 | `cosmere-003` `cosmere-005` `cosmere-023` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Devoci%C3%B3n)<br>[everybodywiki.com](https://everybodywiki.com/Cosm%C3%A8re) | ☐ confirmado<br>☐ corregir a: ______ |
-| 76 | Eelakin | Eelakin | unpublished | 4 | `cosmere-072` `otros-041` `otros-076` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 77 | Everstorm | Ewigsturm | unverified | 4 | `cosmere-038` `roshar-003` `roshar-015` … | [es.coppermind.net](https://es.coppermind.net/wiki/Tormenta_eterna)<br>glossary (status official)<br>[hachette.fr](https://www.hachette.fr/livre/justiciere-volume-1-les-archives-de-roshar-tome-3-9791035412203/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 78 | Fadrex City | Fadrex | unverified | 4 | `cosmere-037` `scadrial-052` `scadrial-058` … | [es.coppermind.net](https://es.coppermind.net/wiki/Hammond)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 79 | Feruchemy | Ferrochemie | community | 4 | `scadrial-029` `scadrial-049` `scadrial-067` … | [es.coppermind.net](https://es.coppermind.net/wiki/Feruquimia)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes)<br>[german.wikibrief.org](https://german.wikibrief.org/wiki/Mistborn) | ☐ confirmado<br>☐ corregir a: ______ |
-| 80 | First of the Sun | First of the Sun | unpublished | 4 | `cosmere-066` `otros-024` `otros-040` … | [tercerafundacion.net](https://tercerafundacion.net/biblioteca/ver/ficha/33522/)<br>[penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 61 | Shu-Korath | Shu-Korath | unverified | 5 | `sel-004` `sel-028` `sel-030` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 62 | spike | Stachel | community | 5 | `cosmere-071` `scadrial-012` `scadrial-049` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Inquisitor)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Ruin)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 63 | Spook | Spuki | community | 5 | `cosmere-077` `scadrial-014` `scadrial-042` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 64 | Steel Ministry | Stahlministerium | unverified | 5 | `cosmere-026` `cosmere-084` `scadrial-034` … | [es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero)<br>[it.wikipedia.org](https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/97675) | ☐ confirmado<br>☐ corregir a: ______ |
+| 65 | worldhopper | Weltenspringer | unverified | 5 | `cosmere-049` `cosmere-055` `cosmere-056` … | [es.coppermind.net](https://es.coppermind.net/wiki/Hoid)<br>content/fr/otros.json, content/fr/cosmere.json (existing usage) | ☐ confirmado<br>☐ corregir a: ______ |
+| 66 | Wyndle | Wyndel | community | 5 | `cosmere-033` `roshar-002` `roshar-010` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[buchwurm.org](https://buchwurm.org/tag/sturmlicht-chroniken/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 67 | Alethi | Alethi | unverified | 4 | `roshar-011` `roshar-020` `roshar-025` … | [melaniefazi.net](https://www.melaniefazi.net/blog/tag/les-archives-de-roshar/)<br>[es.wikipedia.org](https://es.wikipedia.org/wiki/Juramentada) | ☐ confirmado<br>☐ corregir a: ______ |
+| 68 | Awakener | Erwecker | unverified | 4 | `nalthis-027` `nalthis-038` `nalthis-044` … | [eligeunlibro.blogspot.com](https://eligeunlibro.blogspot.com/2016/12/aliento-dioses.html)<br>[cosmere.fr](https://cosmere.fr/nalthis/livres/warbreaker) | ☐ confirmado<br>☐ corregir a: ______ |
+| 69 | Bleeder | Bluter | unverified | 4 | `scadrial-038` `scadrial-068` `scadrial-084` … | Mondadori blurb of Le ombre residue (via search summary: "Salassa, uno dei ka… | ☐ confirmado<br>☐ corregir a: ______ |
+| 70 | Bloodsealer | Blutsiegler | unverified | 4 | `sel-040` `sel-043` `sel-046` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 71 | Conventical of Seran | Konventikel von Seran | unverified | 4 | `cosmere-037` `scadrial-025` `scadrial-056` … | [es.coppermind.net](https://es.coppermind.net/wiki/Convento_de_Seran) | ☐ confirmado<br>☐ corregir a: ______ |
+| 72 | Cryptic | Kryptiker | community | 4 | `cosmere-033` `cosmere-069` `otros-022` … | [penguin.de](https://www.penguin.de/content/edition/excerpts_extended/Leseprobe_978-3-453-27325-2.pdf)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Muster)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 73 | Dayside | Tagseite | unverified | 4 | `cosmere-029` `otros-033` `otros-036` … | [izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793) | ☐ confirmado<br>☐ corregir a: ______ |
+| 74 | Devotion | Devotion | community | 4 | `cosmere-003` `cosmere-005` `cosmere-023` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Devoci%C3%B3n)<br>[everybodywiki.com](https://everybodywiki.com/Cosm%C3%A8re) | ☐ confirmado<br>☐ corregir a: ______ |
+| 75 | Eelakin | Eelakin | unpublished | 4 | `cosmere-072` `otros-041` `otros-076` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 76 | Everstorm | Ewigsturm | unverified | 4 | `cosmere-038` `roshar-003` `roshar-015` … | [es.coppermind.net](https://es.coppermind.net/wiki/Tormenta_eterna)<br>glossary (status official)<br>[hachette.fr](https://www.hachette.fr/livre/justiciere-volume-1-les-archives-de-roshar-tome-3-9791035412203/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 77 | Fadrex City | Fadrex | unverified | 4 | `cosmere-037` `scadrial-052` `scadrial-058` … | [es.coppermind.net](https://es.coppermind.net/wiki/Hammond)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 78 | Feruchemy | Ferrochemie | community | 4 | `scadrial-029` `scadrial-049` `scadrial-067` … | [es.coppermind.net](https://es.coppermind.net/wiki/Feruquimia)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes)<br>[german.wikibrief.org](https://german.wikibrief.org/wiki/Mistborn) | ☐ confirmado<br>☐ corregir a: ______ |
+| 79 | First of the Sun | First of the Sun | unpublished | 4 | `cosmere-066` `otros-024` `otros-040` … | [tercerafundacion.net](https://tercerafundacion.net/biblioteca/ver/ficha/33522/)<br>[penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 80 | Five Scholars | Fünf Gelehrten | unverified | 4 | `nalthis-033` `nalthis-034` `nalthis-035` … | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/150218) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 5
 
@@ -124,9 +124,9 @@ Términos 81–100. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 81 | Five Scholars | Fünf Gelehrten | unverified | 4 | `nalthis-033` `nalthis-034` `nalthis-035` … | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/150218) | ☐ confirmado<br>☐ corregir a: ______ |
-| 82 | Forests of Hell | Höllenwälder | unverified | 4 | `cosmere-055` `otros-046` `otros-047` … | [tercerafundacion.net](https://tercerafundacion.net/biblioteca/ver/ficha/33522/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Sombras_por_Silencio_en_los_bosques_del_infierno)<br>[goodreads.com](https://www.goodreads.com/fr/book/show/42613578) | ☐ confirmado<br>☐ corregir a: ______ |
-| 83 | Fused | Verschmolzene | community | 4 | `roshar-038` `roshar-048` `roshar-093` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Herold)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Portadores_del_Vac%C3%ADo)<br>[it.coppermind.net](https://it.coppermind.net/wiki/Coalescente) | ☐ confirmado<br>☐ corregir a: ______ |
+| 81 | Forests of Hell | Höllenwälder | unverified | 4 | `cosmere-055` `otros-046` `otros-047` … | [tercerafundacion.net](https://tercerafundacion.net/biblioteca/ver/ficha/33522/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Sombras_por_Silencio_en_los_bosques_del_infierno)<br>[goodreads.com](https://www.goodreads.com/fr/book/show/42613578) | ☐ confirmado<br>☐ corregir a: ______ |
+| 82 | Fused | Verschmolzene | community | 4 | `roshar-038` `roshar-048` `roshar-093` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Herold)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Portadores_del_Vac%C3%ADo)<br>[it.coppermind.net](https://it.coppermind.net/wiki/Coalescente) | ☐ confirmado<br>☐ corregir a: ______ |
+| 83 | gyorn | Gyorn | unverified | 4 | `sel-003` `sel-051` `sel-061` … | it.coppermind.net (search snippet) "Gyorn Hrathen" | ☐ confirmado<br>☐ corregir a: ______ |
 | 84 | Heightening | Steigerung | unverified | 4 | `nalthis-020` `nalthis-038` `nalthis-049` … | [es.coppermind.net](https://es.coppermind.net/wiki/Sondeluz)<br>[eligeunlibro.blogspot.com](https://eligeunlibro.blogspot.com/2016/12/aliento-dioses.html)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Elevación) | ☐ confirmado<br>☐ corregir a: ______ |
 | 85 | hijo | Hijo | unverified | 4 | `otros-015` `otros-022` `otros-056` … | — | ☐ confirmado<br>☐ corregir a: ______ |
 | 86 | Jeskeri Mysteries | Jeskeri-Mysterien | unverified | 4 | `sel-004` `sel-028` `sel-030` … | — | ☐ confirmado<br>☐ corregir a: ______ |
@@ -134,16 +134,16 @@ Términos 81–100. Revisor/a: ________ · Fecha: ________
 | 88 | Manywar | Vielkrieg | unverified | 4 | `nalthis-022` `nalthis-039` `nalthis-047` … | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/181172)<br>[es.coppermind.net](https://es.coppermind.net/wiki/El_aliento_de_los_dioses) | ☐ confirmado<br>☐ corregir a: ______ |
 | 89 | Mercystar | Gnadenstern | unverified | 4 | `cosmere-031` `nalthis-036` `nalthis-041` … | [es.coppermind.net](https://es.coppermind.net/wiki/Mercestrella)<br>[piumedicarta.it](https://www.piumedicarta.it/2013/11/il-conciliatore-di-brandon-sanderson.html) | ☐ confirmado<br>☐ corregir a: ______ |
 | 90 | metalmind | Metallgeist | community | 4 | `cosmere-053` `scadrial-012` `scadrial-035` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Zinn)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sazed)<br>[livredepoche.com](https://www.livredepoche.com/livre/les-bracelets-des-larmes-fils-des-brumes-wax-wayne-tome-3-9782253191407/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 91 | Moash | Moasch | unverified | 4 | `roshar-004` `roshar-012` `roshar-014` … | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 92 | New Elantris | Neu-Elantris | unverified | 4 | `sel-048` `sel-067` `sel-068` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 93 | Nightwatcher | Nachtschauerin | community | 4 | `cosmere-039` `roshar-024` `roshar-033` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nachtschauerin)<br>it.coppermind.net (page title via search) "Guardiana della Notte" | ☐ confirmado<br>☐ corregir a: ______ |
-| 94 | Obligator | Obligator | community | 4 | `cosmere-063` `cosmere-084` `scadrial-006` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 95 | Pattern | Muster | community | 4 | `cosmere-033` `roshar-002` `roshar-010` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Muster)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Patr%C3%B3n)<br>[buchwurm.org](https://buchwurm.org/tag/sturmlicht-chroniken/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 96 | Physical Realm | Physisches Reich | unverified | 4 | `cosmere-010` `cosmere-018` `cosmere-027` … | [cosmere.fr](https://cosmere.fr/actualites/l-ile-de-noirebraise)<br>it.coppermind.net (page title via search) (Reame Cognitivo article) | ☐ confirmado<br>☐ corregir a: ______ |
-| 97 | Pits of Hathsin | Gruben von Hathsin | unverified | 4 | `cosmere-008` `scadrial-001` `scadrial-019` … | [it.coppermind.net](https://it.coppermind.net)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179790)<br>[penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/853210/mistborn-historia-secreta--mistborn-secret-history-by-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 98 | Sand Masters | Sandmeister | unverified | 4 | `otros-034` `otros-038` `otros-068` … | [anikaentrelibros.com](https://anikaentrelibros.com/arena-blanca-novela-grafica)<br>[izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793) | ☐ confirmado<br>☐ corregir a: ______ |
-| 99 | Shin | Schin | unverified | 4 | `roshar-020` `roshar-042` `roshar-069` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 100 | Shu-Keseg | Shu-Keseg | unverified | 4 | `sel-004` `sel-028` `sel-030` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 91 | Mistborn: The Final Empire | — | no-entry | 4 | `cosmere-082` `cosmere-083` `cosmere-085` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 92 | Moash | Moasch | unverified | 4 | `roshar-004` `roshar-012` `roshar-014` … | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 93 | New Elantris | Neu-Elantris | unverified | 4 | `sel-048` `sel-067` `sel-068` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 94 | Nightwatcher | Nachtschauerin | community | 4 | `cosmere-039` `roshar-024` `roshar-033` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nachtschauerin)<br>it.coppermind.net (page title via search) "Guardiana della Notte" | ☐ confirmado<br>☐ corregir a: ______ |
+| 95 | Obligator | Obligator | community | 4 | `cosmere-063` `cosmere-084` `scadrial-006` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 96 | Pattern | Muster | community | 4 | `cosmere-033` `roshar-002` `roshar-010` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Muster)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Patr%C3%B3n)<br>[buchwurm.org](https://buchwurm.org/tag/sturmlicht-chroniken/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 97 | Physical Realm | Physisches Reich | unverified | 4 | `cosmere-010` `cosmere-018` `cosmere-027` … | [cosmere.fr](https://cosmere.fr/actualites/l-ile-de-noirebraise)<br>it.coppermind.net (page title via search) (Reame Cognitivo article) | ☐ confirmado<br>☐ corregir a: ______ |
+| 98 | Pits of Hathsin | Gruben von Hathsin | unverified | 4 | `cosmere-008` `scadrial-001` `scadrial-019` … | [it.coppermind.net](https://it.coppermind.net)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179790)<br>[penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/853210/mistborn-historia-secreta--mistborn-secret-history-by-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 99 | Sand Masters | Sandmeister | unverified | 4 | `otros-034` `otros-038` `otros-068` … | [anikaentrelibros.com](https://anikaentrelibros.com/arena-blanca-novela-grafica)<br>[izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793) | ☐ confirmado<br>☐ corregir a: ______ |
+| 100 | Shin | Schin | unverified | 4 | `roshar-020` `roshar-042` `roshar-069` … | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 6
 
@@ -151,26 +151,26 @@ Términos 101–120. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 101 | Sleepless | Schlaflose | unverified | 4 | `cosmere-058` `cosmere-078` `otros-022` … | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/135180) | ☐ confirmado<br>☐ corregir a: ______ |
-| 102 | Stonewards | Steinwächter | community | 4 | `roshar-007` `roshar-023` `roshar-052` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Herold) | ☐ confirmado<br>☐ corregir a: ______ |
-| 103 | Stormfather | Sturmvater | community | 4 | `cosmere-019` `cosmere-039` `roshar-008` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Padre_Tormenta)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 104 | Valor | Tapferkeit | unverified | 4 | `cosmere-045` `cosmere-061` `otros-023` … | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 105 | Warbreaker | Warbreaker | unverified | 4 | `cosmere-016` `cosmere-023` `cosmere-031` … | [penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/589093/el-aliento-de-los-dioses--warbreaker-by-brandon-sanderson/9791387652074) | ☐ confirmado<br>☐ corregir a: ______ |
-| 106 | White Sand | White Sand | unpublished | 4 | `cosmere-029` `otros-033` `otros-037` … | [lecturalia.com](https://www.lecturalia.com/libro/98436/arena-blanca)<br>[izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793)<br>Mondadori graphic novel / Arcanum Unbounded | ☐ confirmado<br>☐ corregir a: ______ |
-| 107 | Windrunners | Windläufer | community | 4 | `roshar-007` `roshar-008` `roshar-040` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
-| 108 | Wit | Witz | unverified | 4 | `cosmere-011` `cosmere-069` `roshar-087` … | [es.coppermind.net](https://es.coppermind.net/wiki/Hoid)<br>[lesescapadesculturellesdefrankie.com](http://www.lesescapadesculturellesdefrankie.com/2017/08/la-voie-des-rois-les-archives-de-roshar.html)<br>glossary (official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 109 | Aimian | Aimianer | unverified | 3 | `cosmere-078` `roshar-047` `roshar-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 110 | Arcanum Unbounded | Arcanum Unbounded | unpublished | 3 | `cosmere-028` `cosmere-075` `otros-075` | glossary (status official)<br>[goodreads.com](https://www.goodreads.com/fr/book/show/42613578)<br>[blog.flore.nz](https://blog.flore.nz/blog/arcanum-unbounded-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 111 | ardent | Glühender | unverified | 3 | `cosmere-011` `roshar-059` `roshar-067` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 112 | arteth | Arteth | unverified | 3 | `cosmere-084` `sel-061` `sel-062` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Dilaf) | ☐ confirmado<br>☐ corregir a: ______ |
-| 113 | Ashyn | Ashyn | unverified | 3 | `cosmere-051` `cosmere-052` `cosmere-075` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 114 | Austrism | Austrismus | unverified | 3 | `nalthis-016` `nalthis-054` `nalthis-059` | [es.coppermind.net](https://es.coppermind.net/wiki/Austrismo) | ☐ confirmado<br>☐ corregir a: ______ |
-| 115 | Awakening | Erweckung | community | 3 | `nalthis-010` `nalthis-033` `nalthis-052` | [phantastik-couch.de](https://www.phantastik-couch.de/titel/7931-sturmklaenge/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Sondeluz)<br>[cosmere.fr](https://cosmere.fr/nalthis/livres/warbreaker) | ☐ confirmado<br>☐ corregir a: ______ |
-| 116 | babsk | Babsk | unverified | 3 | `cosmere-049` `roshar-055` `roshar-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 117 | Beacon | Beacon | unverified | 3 | `otros-063` `otros-064` `otros-065` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 118 | Bloodsealing | Blutsiegelung | unverified | 3 | `sel-011` `sel-033` `sel-060` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 119 | Book of Endless Pages | Buch der endlosen Seiten | unverified | 3 | `roshar-058` `roshar-077` `roshar-080` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 120 | Breeze | Weher | community | 3 | `cosmere-077` `scadrial-001` `scadrial-010` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Weher_Ladrian)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Fantasma) | ☐ confirmado<br>☐ corregir a: ______ |
+| 101 | Shu-Keseg | Shu-Keseg | unverified | 4 | `sel-004` `sel-028` `sel-030` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 102 | Sleepless | Schlaflose | unverified | 4 | `cosmere-058` `cosmere-078` `otros-022` … | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/135180) | ☐ confirmado<br>☐ corregir a: ______ |
+| 103 | Stonewards | Steinwächter | community | 4 | `roshar-007` `roshar-023` `roshar-052` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Herold) | ☐ confirmado<br>☐ corregir a: ______ |
+| 104 | Stormfather | Sturmvater | community | 4 | `cosmere-019` `cosmere-039` `roshar-008` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Padre_Tormenta)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 105 | Valor | Tapferkeit | unverified | 4 | `cosmere-045` `cosmere-061` `otros-023` … | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 106 | Warbreaker | Warbreaker | unverified | 4 | `cosmere-016` `cosmere-023` `cosmere-031` … | [penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/589093/el-aliento-de-los-dioses--warbreaker-by-brandon-sanderson/9791387652074) | ☐ confirmado<br>☐ corregir a: ______ |
+| 107 | White Sand | White Sand | unpublished | 4 | `cosmere-029` `otros-033` `otros-037` … | [lecturalia.com](https://www.lecturalia.com/libro/98436/arena-blanca)<br>[izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793)<br>Mondadori graphic novel / Arcanum Unbounded | ☐ confirmado<br>☐ corregir a: ______ |
+| 108 | Windrunners | Windläufer | community | 4 | `roshar-007` `roshar-008` `roshar-040` … | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 109 | Wit | Witz | unverified | 4 | `cosmere-011` `cosmere-069` `roshar-087` … | [es.coppermind.net](https://es.coppermind.net/wiki/Hoid)<br>[lesescapadesculturellesdefrankie.com](http://www.lesescapadesculturellesdefrankie.com/2017/08/la-voie-des-rois-les-archives-de-roshar.html)<br>glossary (official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 110 | Aimian | Aimianer | unverified | 3 | `cosmere-078` `roshar-047` `roshar-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 111 | Arcanum Unbounded | Arcanum Unbounded | unpublished | 3 | `cosmere-028` `cosmere-075` `otros-075` | glossary (status official)<br>[goodreads.com](https://www.goodreads.com/fr/book/show/42613578)<br>[blog.flore.nz](https://blog.flore.nz/blog/arcanum-unbounded-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 112 | ardent | Glühender | unverified | 3 | `cosmere-011` `roshar-059` `roshar-067` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 113 | arteth | Arteth | unverified | 3 | `cosmere-084` `sel-061` `sel-062` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Dilaf) | ☐ confirmado<br>☐ corregir a: ______ |
+| 114 | Ashyn | Ashyn | unverified | 3 | `cosmere-051` `cosmere-052` `cosmere-075` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 115 | Austrism | Austrismus | unverified | 3 | `nalthis-016` `nalthis-054` `nalthis-059` | [es.coppermind.net](https://es.coppermind.net/wiki/Austrismo) | ☐ confirmado<br>☐ corregir a: ______ |
+| 116 | Awakening | Erweckung | community | 3 | `nalthis-010` `nalthis-033` `nalthis-052` | [phantastik-couch.de](https://www.phantastik-couch.de/titel/7931-sturmklaenge/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Sondeluz)<br>[cosmere.fr](https://cosmere.fr/nalthis/livres/warbreaker) | ☐ confirmado<br>☐ corregir a: ______ |
+| 117 | babsk | Babsk | unverified | 3 | `cosmere-049` `roshar-055` `roshar-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 118 | Beacon | Beacon | unverified | 3 | `otros-063` `otros-064` `otros-065` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 119 | Bloodsealing | Blutsiegelung | unverified | 3 | `sel-011` `sel-033` `sel-060` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 120 | Book of Endless Pages | Buch der endlosen Seiten | unverified | 3 | `roshar-058` `roshar-077` `roshar-080` | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 7
 
@@ -178,26 +178,26 @@ Términos 121–140. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 121 | Cadmium | Kadmium | community | 3 | `scadrial-053` `scadrial-054` `scadrial-070` | [marjorie-wiki.de](https://marjorie-wiki.de/wiki/Allomant)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 122 | Coinshot | Münzwerfer | community | 3 | `scadrial-002` `scadrial-022` `scadrial-041` | [de.kosmeer.wikia.com](http://de.kosmeer.wikia.com/wiki/Allomant)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[cosmere.fr](https://cosmere.fr/scadrial/allomancie) | ☐ confirmado<br>☐ corregir a: ______ |
-| 123 | Daggon | Daggon | unpublished | 3 | `otros-071` `otros-072` `otros-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 124 | Damnation | Verdammnis | community | 3 | `cosmere-009` `cosmere-051` `roshar-026` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Herold) | ☐ confirmado<br>☐ corregir a: ______ |
-| 125 | Dominion | Dominion | community | 3 | `cosmere-005` `cosmere-023` `cosmere-030` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Dominio)<br>[everybodywiki.com](https://everybodywiki.com/Cosm%C3%A8re) | ☐ confirmado<br>☐ corregir a: ______ |
-| 126 | duralumin | Duralumin | unverified | 3 | `scadrial-023` `scadrial-069` `scadrial-090` | [es.coppermind.net](https://es.coppermind.net/wiki/Duraluminio)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 127 | electrum | Elektrum | unverified | 3 | `scadrial-020` `scadrial-054` `scadrial-074` | [it.everybodywiki.com](https://it.everybodywiki.com/Allomanzia)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Electro) | ☐ confirmado<br>☐ corregir a: ______ |
-| 128 | Essence | Essenz | community | 3 | `roshar-061` `roshar-062` `roshar-063` | [gedankenfunken.de](https://gedankenfunken.de/buecher/rezensionen/der-weg-der-koenige-von-brandon-sanderson)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Diez_Esencias) | ☐ confirmado<br>☐ corregir a: ______ |
-| 129 | Essence Mark | Essenzmal | unverified | 3 | `sel-044` `sel-076` `sel-078` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/12674) | ☐ confirmado<br>☐ corregir a: ______ |
-| 130 | Fellise | Fellise | unverified | 3 | `cosmere-086` `scadrial-005` `scadrial-058` | [coppermind.net](https://coppermind.net)<br>[coppermind.net](https://coppermind.net/wiki/Fellise) | ☐ confirmado<br>☐ corregir a: ______ |
-| 131 | Forger | Fälscherin | community | 3 | `sel-033` `sel-037` `sel-079` | [lovelybooks.de](https://www.lovelybooks.de/autor/Brandon-Sanderson/?seite=3)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/12674)<br>[librairie-gallimard.com](https://www.librairie-gallimard.com/livre/9782253177142-l-ame-de-l-empereur-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 132 | Glory Faction | Fraktion des Ruhms | unverified | 3 | `sel-040` `sel-046` `sel-074` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 133 | grador | Grador | unverified | 3 | `cosmere-084` `sel-061` `sel-062` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Dilaf) | ☐ confirmado<br>☐ corregir a: ______ |
-| 134 | Greater Good | Höheres Wohl | unverified | 3 | `otros-028` `otros-029` `otros-063` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 135 | Ham | Hamm | community | 3 | `cosmere-077` `cosmere-085` `scadrial-010` | [forum.fanfiktion.de](https://forum.fanfiktion.de/t/4684/1)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Hammond)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Hammond) | ☐ confirmado<br>☐ corregir a: ______ |
-| 136 | Heritage Faction | Fraktion des Erbes | unverified | 3 | `sel-040` `sel-046` `sel-074` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 137 | highstorm | Großsturm | community | 3 | `cosmere-036` `roshar-003` `roshar-015` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alta_tormenta)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 138 | honorspren | Ehrensprengsel | community | 3 | `roshar-007` `roshar-074` `roshar-075` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sylphrena)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento) | ☐ confirmado<br>☐ corregir a: ______ |
-| 139 | Ivory | Elfenbein | community | 3 | `roshar-022` `roshar-024` `roshar-057` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter) | ☐ confirmado<br>☐ corregir a: ______ |
-| 140 | Kalad's Phantoms | Kalads Phantome | unverified | 3 | `nalthis-023` `nalthis-047` `nalthis-057` | [es.coppermind.net](https://es.coppermind.net/wiki/Fantasmas_de_Kalad) | ☐ confirmado<br>☐ corregir a: ______ |
+| 121 | Breeze | Weher | community | 3 | `cosmere-077` `scadrial-001` `scadrial-010` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Weher_Ladrian)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Fantasma) | ☐ confirmado<br>☐ corregir a: ______ |
+| 122 | Cadmium | Kadmium | community | 3 | `scadrial-053` `scadrial-054` `scadrial-070` | [marjorie-wiki.de](https://marjorie-wiki.de/wiki/Allomant)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 123 | Coinshot | Münzwerfer | community | 3 | `scadrial-002` `scadrial-022` `scadrial-041` | [de.kosmeer.wikia.com](http://de.kosmeer.wikia.com/wiki/Allomant)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[cosmere.fr](https://cosmere.fr/scadrial/allomancie) | ☐ confirmado<br>☐ corregir a: ______ |
+| 124 | Daggon | Daggon | unpublished | 3 | `otros-071` `otros-072` `otros-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 125 | Damnation | Verdammnis | community | 3 | `cosmere-009` `cosmere-051` `roshar-026` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Herold) | ☐ confirmado<br>☐ corregir a: ______ |
+| 126 | Dominion | Dominion | community | 3 | `cosmere-005` `cosmere-023` `cosmere-030` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Dominio)<br>[everybodywiki.com](https://everybodywiki.com/Cosm%C3%A8re) | ☐ confirmado<br>☐ corregir a: ______ |
+| 127 | duralumin | Duralumin | unverified | 3 | `scadrial-023` `scadrial-069` `scadrial-090` | [es.coppermind.net](https://es.coppermind.net/wiki/Duraluminio)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 128 | electrum | Elektrum | unverified | 3 | `scadrial-020` `scadrial-054` `scadrial-074` | [it.everybodywiki.com](https://it.everybodywiki.com/Allomanzia)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Electro) | ☐ confirmado<br>☐ corregir a: ______ |
+| 129 | Essence | Essenz | community | 3 | `roshar-061` `roshar-062` `roshar-063` | [gedankenfunken.de](https://gedankenfunken.de/buecher/rezensionen/der-weg-der-koenige-von-brandon-sanderson)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Diez_Esencias) | ☐ confirmado<br>☐ corregir a: ______ |
+| 130 | Essence Mark | Essenzmal | unverified | 3 | `sel-044` `sel-076` `sel-078` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/12674) | ☐ confirmado<br>☐ corregir a: ______ |
+| 131 | Fellise | Fellise | unverified | 3 | `cosmere-086` `scadrial-005` `scadrial-058` | [coppermind.net](https://coppermind.net)<br>[coppermind.net](https://coppermind.net/wiki/Fellise) | ☐ confirmado<br>☐ corregir a: ______ |
+| 132 | Forger | Fälscherin | community | 3 | `sel-033` `sel-037` `sel-079` | [lovelybooks.de](https://www.lovelybooks.de/autor/Brandon-Sanderson/?seite=3)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/12674)<br>[librairie-gallimard.com](https://www.librairie-gallimard.com/livre/9782253177142-l-ame-de-l-empereur-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 133 | Glory Faction | Fraktion des Ruhms | unverified | 3 | `sel-040` `sel-046` `sel-074` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 134 | grador | Grador | unverified | 3 | `cosmere-084` `sel-061` `sel-062` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Dilaf) | ☐ confirmado<br>☐ corregir a: ______ |
+| 135 | Greater Good | Höheres Wohl | unverified | 3 | `otros-028` `otros-029` `otros-063` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 136 | Ham | Hamm | community | 3 | `cosmere-077` `cosmere-085` `scadrial-010` | [forum.fanfiktion.de](https://forum.fanfiktion.de/t/4684/1)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Hammond)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Hammond) | ☐ confirmado<br>☐ corregir a: ______ |
+| 137 | Heritage Faction | Fraktion des Erbes | unverified | 3 | `sel-040` `sel-046` `sel-074` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 138 | highstorm | Großsturm | community | 3 | `cosmere-036` `roshar-003` `roshar-015` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alta_tormenta)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 139 | honorspren | Ehrensprengsel | community | 3 | `roshar-007` `roshar-074` `roshar-075` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sylphrena)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento) | ☐ confirmado<br>☐ corregir a: ______ |
+| 140 | Ivory | Elfenbein | community | 3 | `roshar-022` `roshar-024` `roshar-057` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 8
 
@@ -205,8 +205,8 @@ Términos 141–160. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 141 | Leshwi | Leschwi | unverified | 3 | `roshar-038` `roshar-048` `roshar-093` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 142 | Mistborn: The Final Empire | — | no-entry | 3 | `cosmere-083` `cosmere-085` `cosmere-086` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 141 | Kalad's Phantoms | Kalads Phantome | unverified | 3 | `nalthis-023` `nalthis-047` `nalthis-057` | [es.coppermind.net](https://es.coppermind.net/wiki/Fantasmas_de_Kalad) | ☐ confirmado<br>☐ corregir a: ______ |
+| 142 | Leshwi | Leschwi | unverified | 3 | `roshar-038` `roshar-048` `roshar-093` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
 | 143 | Mister Suit | Herr Anzug | unverified | 3 | `cosmere-067` `scadrial-037` `scadrial-068` | [es.coppermind.net](https://es.coppermind.net/wiki/Edwarn_Ladrian) | ☐ confirmado<br>☐ corregir a: ______ |
 | 144 | Misting | Nebeling | community | 3 | `scadrial-022` `scadrial-053` `scadrial-074` | [marjorie-wiki.de](https://marjorie-wiki.de/wiki/Allomant)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[cosmere.fr](https://cosmere.fr/scadrial/allomancie) | ☐ confirmado<br>☐ corregir a: ______ |
 | 145 | New Seran | Neu-Seran | unverified | 3 | `scadrial-031` `scadrial-059` `scadrial-089` | — | ☐ confirmado<br>☐ corregir a: ______ |
@@ -222,9 +222,9 @@ Términos 141–160. Revisor/a: ________ · Fecha: ________
 | 155 | soulstamp | Seelenstempel | unverified | 3 | `cosmere-050` `sel-037` `sel-038` | — | ☐ confirmado<br>☐ corregir a: ______ |
 | 156 | Spark | Funke | community | 3 | `roshar-052` `roshar-061` `roshar-062` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Diez_Esencias)<br>stormlightarchive.fandom.com/it (via search) Polverizzanti page (Malata's spren) | ☐ confirmado<br>☐ corregir a: ______ |
 | 157 | Splintered | zersplittert | community | 3 | `cosmere-004` `cosmere-045` `sel-050` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Invenci%C3%B3n)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 158 | Striker | Schläger | unverified | 3 | `sel-040` `sel-042` `sel-046` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 159 | Survivor | Überlebender | unverified | 3 | `scadrial-021` `scadrial-034` `scadrial-042` | [es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes)<br>[it.wikipedia.org](https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero) | ☐ confirmado<br>☐ corregir a: ______ |
-| 160 | Taishin | Taishin | unverified | 3 | `otros-038` `otros-068` `otros-070` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 158 | Steel Inquisitor | Stahlinquisitor | community | 3 | `cosmere-082` `scadrial-006` `scadrial-030` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Inquisitor)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Inquisidor_de_acero)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 159 | Striker | Schläger | unverified | 3 | `sel-040` `sel-042` `sel-046` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 160 | Survivor | Überlebender | unverified | 3 | `scadrial-021` `scadrial-034` `scadrial-042` | [es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes)<br>[it.wikipedia.org](https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 9
 
@@ -232,26 +232,26 @@ Términos 161–180. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 161 | Teullu | Teullu | unverified | 3 | `sel-060` `sel-075` `sel-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 162 | Thaylen City | Thaylen-Stadt | unverified | 3 | `roshar-027` `roshar-049` `roshar-082` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 163 | The Hope of Elantris | The Hope of Elantris | unpublished | 3 | `sel-068` `sel-069` `sel-070` | content/fr/WORK_TITLES.json<br>[mondadori.it](https://www.mondadori.it/libri/arcanum-unbounded-brandon-sanderson/)<br>[prestatest.bazzacco.net](https://prestatest.bazzacco.net/libri/726343-arcanum-unbounded-la-collezione-cosmoverso-9788804727361.html) | ☐ confirmado<br>☐ corregir a: ______ |
-| 164 | The Well of Ascension | — | missing | 3 | `scadrial-056` `scadrial-063` `scadrial-064` | content/fr/WORK_TITLES.json<br>[mondadori.it](https://www.mondadori.it/libri/mistborn-era-uno-2-il-pozzo-dellascensione-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 165 | Theopolis | Theopolis | unpublished | 3 | `otros-071` `otros-072` `otros-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 166 | Third Ideal | Drittes Ideal | unverified | 3 | `roshar-029` `roshar-050` `roshar-064` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 167 | Timbre | Timbre | unverified | 3 | `cosmere-033` `roshar-010` `roshar-035` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 168 | Towerlight | Turmlicht | unverified | 3 | `cosmere-054` `cosmere-060` `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179142) | ☐ confirmado<br>☐ corregir a: ______ |
-| 169 | trellium | Trellium | unverified | 3 | `cosmere-073` `scadrial-060` `scadrial-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 170 | Voidlight | Leerenlicht | unverified | 3 | `cosmere-054` `roshar-038` `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179142) | ☐ confirmado<br>☐ corregir a: ______ |
-| 171 | aether | Äther | unverified | 2 | `otros-001` `otros-052` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 172 | Allmother | Allmutter | unverified | 2 | `cosmere-031` `nalthis-048` | [coppermind.net](https://coppermind.net)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Madretodos)<br>Italian reader reviews of Il conciliatore (via search) naming Onnimadre, godd… | ☐ confirmado<br>☐ corregir a: ______ |
-| 173 | aluminum | Aluminium | unverified | 2 | `scadrial-029` `scadrial-078` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 174 | Ascendant Warrior | Aufgestiegene Kriegerin | unverified | 2 | `scadrial-042` `scadrial-087` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 175 | Ashertmarn | Aschertmarn | unverified | 2 | `roshar-025` `roshar-079` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 176 | ashspren | Aschesprengsel | community | 2 | `roshar-052` `roshar-053` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Cenizaspren) | ☐ confirmado<br>☐ corregir a: ______ |
-| 177 | Ashweather Cett | Aschwetter Cett | community | 2 | `scadrial-027` `scadrial-052` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Aschwetter_Cett)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Allrianne_Cett)<br>[coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 178 | Augur | Augur | unverified | 2 | `scadrial-067` `scadrial-074` | [es.coppermind.net](https://es.coppermind.net/wiki/Oro)<br>[plus.wikimonde.com](https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 179 | Azish | azisch | unverified | 2 | `roshar-096` `roshar-097` | [penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/853211/danzante-del-filo--edgedancer-from-the-stormlight-archive-by-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 180 | Azure | Azure | unverified | 2 | `cosmere-050` `nalthis-026` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 161 | Taishin | Taishin | unverified | 3 | `otros-038` `otros-068` `otros-070` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 162 | Teullu | Teullu | unverified | 3 | `sel-060` `sel-075` `sel-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 163 | Thaylen City | Thaylen-Stadt | unverified | 3 | `roshar-027` `roshar-049` `roshar-082` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 164 | The Hope of Elantris | The Hope of Elantris | unpublished | 3 | `sel-068` `sel-069` `sel-070` | content/fr/WORK_TITLES.json<br>[mondadori.it](https://www.mondadori.it/libri/arcanum-unbounded-brandon-sanderson/)<br>[prestatest.bazzacco.net](https://prestatest.bazzacco.net/libri/726343-arcanum-unbounded-la-collezione-cosmoverso-9788804727361.html) | ☐ confirmado<br>☐ corregir a: ______ |
+| 165 | The Well of Ascension | — | missing | 3 | `scadrial-056` `scadrial-063` `scadrial-064` | content/fr/WORK_TITLES.json<br>[mondadori.it](https://www.mondadori.it/libri/mistborn-era-uno-2-il-pozzo-dellascensione-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 166 | Theopolis | Theopolis | unpublished | 3 | `otros-071` `otros-072` `otros-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 167 | Third Ideal | Drittes Ideal | unverified | 3 | `roshar-029` `roshar-050` `roshar-064` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 168 | Timbre | Timbre | unverified | 3 | `cosmere-033` `roshar-010` `roshar-035` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 169 | Towerlight | Turmlicht | unverified | 3 | `cosmere-054` `cosmere-060` `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179142) | ☐ confirmado<br>☐ corregir a: ______ |
+| 170 | trellium | Trellium | unverified | 3 | `cosmere-073` `scadrial-060` `scadrial-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 171 | Voidlight | Leerenlicht | unverified | 3 | `cosmere-054` `roshar-038` `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179142) | ☐ confirmado<br>☐ corregir a: ______ |
+| 172 | aether | Äther | unverified | 2 | `otros-001` `otros-052` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 173 | Allmother | Allmutter | unverified | 2 | `cosmere-031` `nalthis-048` | [coppermind.net](https://coppermind.net)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Madretodos)<br>Italian reader reviews of Il conciliatore (via search) naming Onnimadre, godd… | ☐ confirmado<br>☐ corregir a: ______ |
+| 174 | aluminum | Aluminium | unverified | 2 | `scadrial-029` `scadrial-078` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 175 | Ascendant Warrior | Aufgestiegene Kriegerin | unverified | 2 | `scadrial-042` `scadrial-087` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 176 | Ashertmarn | Aschertmarn | unverified | 2 | `roshar-025` `roshar-079` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 177 | ashspren | Aschesprengsel | community | 2 | `roshar-052` `roshar-053` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Cenizaspren) | ☐ confirmado<br>☐ corregir a: ______ |
+| 178 | Ashweather Cett | Aschwetter Cett | community | 2 | `scadrial-027` `scadrial-052` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Aschwetter_Cett)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Allrianne_Cett)<br>[coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 179 | Augur | Augur | unverified | 2 | `scadrial-067` `scadrial-074` | [es.coppermind.net](https://es.coppermind.net/wiki/Oro)<br>[plus.wikimonde.com](https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 180 | Azish | azisch | unverified | 2 | `roshar-096` `roshar-097` | [penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/853211/danzante-del-filo--edgedancer-from-the-stormlight-archive-by-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 10
 
@@ -259,26 +259,26 @@ Términos 181–200. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 181 | Beyond | das Jenseits | unverified | 2 | `cosmere-027` `scadrial-079` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 182 | Blessing | Segen | community | 2 | `scadrial-030` `scadrial-062` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/TenSoon)<br>[es.coppermind.net](https://es.coppermind.net/wiki/TenSoon)<br>[nacidos-de-la-bruma.fandom.com](https://nacidos-de-la-bruma.fandom.com/es/wiki/Kandra) | ☐ confirmado<br>☐ corregir a: ______ |
-| 183 | Bondsmith | Bindeschmied | community | 2 | `roshar-045` `roshar-086` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
-| 184 | Bondsmiths | Bindeschmiede | community | 2 | `roshar-008` `roshar-085` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
-| 185 | broam | Broam | unverified | 2 | `roshar-031` `roshar-060` | [es.coppermind.net](https://es.coppermind.net/wiki/Esferas) | ☐ confirmado<br>☐ corregir a: ______ |
-| 186 | Chemoarish | Chemoarisch | unverified | 2 | `roshar-041` `roshar-079` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 187 | Chesterton Divide | Chesterton Divide | unpublished | 2 | `otros-071` `otros-072` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 188 | chull | Chull | unverified | 2 | `roshar-011` `roshar-028` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 189 | Clubs | Keuler | community | 2 | `cosmere-083` `scadrial-010` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Cladent)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 190 | Cognitive Shadow | kognitiver Schatten | unverified | 2 | `cosmere-027` `scadrial-079` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 191 | Cognitive Shadows | kognitive Schatten | unverified | 2 | `otros-056` `otros-059` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 192 | coppermind | Kupfergeist | community | 2 | `scadrial-058` `scadrial-079` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sazed)<br>[epdf.pub](https://epdf.pub/le-heros-des-siecles42212bc21ad464c6b9938194525ef79672282.html) | ☐ confirmado<br>☐ corregir a: ______ |
-| 193 | crem | Krem | unverified | 2 | `cosmere-018` `roshar-097` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 194 | Crimson Sea | Purpurmeer | unverified | 2 | `otros-005` `otros-012` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 195 | Darkside | Dunkelseite | unverified | 2 | `otros-033` `otros-037` | [izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793) | ☐ confirmado<br>☐ corregir a: ______ |
-| 196 | Desolation | Wüstwerdung | community | 2 | `cosmere-051` `roshar-094` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Die_Splitter_der_Macht)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Desolaci%C3%B3n) | ☐ confirmado<br>☐ corregir a: ______ |
-| 197 | Diagram | das Diagramm | community | 2 | `cosmere-015` `roshar-058` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Taravangian)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nachtschauerin)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Diagrama_(literatura) | ☐ confirmado<br>☐ corregir a: ______ |
-| 198 | Divine Breath | Göttlicher Hauch | unverified | 2 | `nalthis-019` `nalthis-021` | [es.coppermind.net](https://es.coppermind.net/wiki/Sondeluz)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 199 | Division | Division | community | 2 | `roshar-040` `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
-| 200 | Dob | Dob | unpublished | 2 | `otros-072` `otros-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 181 | Azure | Azure | unverified | 2 | `cosmere-050` `nalthis-026` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 182 | Beyond | das Jenseits | unverified | 2 | `cosmere-027` `scadrial-079` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 183 | Blessing | Segen | community | 2 | `scadrial-030` `scadrial-062` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/TenSoon)<br>[es.coppermind.net](https://es.coppermind.net/wiki/TenSoon)<br>[nacidos-de-la-bruma.fandom.com](https://nacidos-de-la-bruma.fandom.com/es/wiki/Kandra) | ☐ confirmado<br>☐ corregir a: ______ |
+| 184 | Bondsmith | Bindeschmied | community | 2 | `roshar-045` `roshar-086` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 185 | Bondsmiths | Bindeschmiede | community | 2 | `roshar-008` `roshar-085` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 186 | broam | Broam | unverified | 2 | `roshar-031` `roshar-060` | [es.coppermind.net](https://es.coppermind.net/wiki/Esferas) | ☐ confirmado<br>☐ corregir a: ______ |
+| 187 | Chemoarish | Chemoarisch | unverified | 2 | `roshar-041` `roshar-079` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 188 | Chesterton Divide | Chesterton Divide | unpublished | 2 | `otros-071` `otros-072` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 189 | chull | Chull | unverified | 2 | `roshar-011` `roshar-028` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 190 | Clubs | Keuler | community | 2 | `cosmere-083` `scadrial-010` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Cladent)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 191 | Cognitive Shadow | kognitiver Schatten | unverified | 2 | `cosmere-027` `scadrial-079` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 192 | Cognitive Shadows | kognitive Schatten | unverified | 2 | `otros-056` `otros-059` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 193 | coppermind | Kupfergeist | community | 2 | `scadrial-058` `scadrial-079` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sazed)<br>[epdf.pub](https://epdf.pub/le-heros-des-siecles42212bc21ad464c6b9938194525ef79672282.html) | ☐ confirmado<br>☐ corregir a: ______ |
+| 194 | crem | Krem | unverified | 2 | `cosmere-018` `roshar-097` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 195 | Crimson Sea | Purpurmeer | unverified | 2 | `otros-005` `otros-012` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 196 | Darkside | Dunkelseite | unverified | 2 | `otros-033` `otros-037` | [izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793) | ☐ confirmado<br>☐ corregir a: ______ |
+| 197 | Desolation | Wüstwerdung | community | 2 | `cosmere-051` `roshar-094` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Die_Splitter_der_Macht)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Desolaci%C3%B3n) | ☐ confirmado<br>☐ corregir a: ______ |
+| 198 | Diagram | das Diagramm | community | 2 | `cosmere-015` `roshar-058` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Taravangian)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nachtschauerin)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Diagrama_(literatura) | ☐ confirmado<br>☐ corregir a: ______ |
+| 199 | Divine Breath | Göttlicher Hauch | unverified | 2 | `nalthis-019` `nalthis-021` | [es.coppermind.net](https://es.coppermind.net/wiki/Sondeluz)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 200 | Division | Division | community | 2 | `roshar-040` `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 11
 
@@ -286,26 +286,26 @@ Términos 201–220. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 201 | dorven | Dorven | unverified | 2 | `sel-061` `sel-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 202 | Dustbringers | Staubbringer | community | 2 | `roshar-008` `roshar-052` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
-| 203 | Edgedancer | Grattänzer | community | 2 | `roshar-027` `roshar-064` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 204 | Edgedancers | Grattänzer | community | 2 | `roshar-007` `roshar-064` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 205 | Elegy | Elegie | community | 2 | `otros-063` `otros-065` | [teilzeithelden.de](https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/)<br>[himmelsblau.org](https://himmelsblau.org/2024/03/das-herz-der-sonne/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 206 | Elegy Salvage | Elegie Salvage | unverified | 2 | `otros-063` `otros-065` | [teilzeithelden.de](https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 207 | Eleventh Metal | Elftes Metall | unverified | 2 | `scadrial-024` `scadrial-047` | [babelio.com](https://www.babelio.com/serie/Fils-des-Brumes/305)<br>[archive.org](https://archive.org/details/arcanum-ilimitado-brandon-sanderson_202208)<br>[bdfi.net](https://www.bdfi.net/recueils/pages/fils_des_brumes.php) | ☐ confirmado<br>☐ corregir a: ______ |
-| 208 | Elsecallers | Aufscheiner | community | 2 | `roshar-008` `roshar-023` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
-| 209 | Envisagers | Visionäre | unverified | 2 | `cosmere-015` `roshar-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 210 | fabrial | Fabrial | unverified | 2 | `roshar-030` `roshar-071` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 211 | father machine | Vatermaschine | unverified | 2 | `otros-056` `otros-057` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 212 | Five Visions | Fünf Visionen | unverified | 2 | `nalthis-054` `nalthis-059` | [es.coppermind.net](https://es.coppermind.net/wiki/Cinco_Visiones) | ☐ confirmado<br>☐ corregir a: ______ |
-| 213 | Frostlands | Frostlande | unverified | 2 | `cosmere-048` `roshar-056` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 214 | gemheart | Gemmenherz | unverified | 2 | `cosmere-075` `roshar-011` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/93621)<br>[babelio.com](https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-1--La-voie-des-rois-/943770/critiques)<br>it.coppermind.net (page title via search) "Cuorgemma" | ☐ confirmado<br>☐ corregir a: ______ |
-| 215 | Ghostblood | Geisterblut | unverified | 2 | `cosmere-026` `roshar-059` | glossary: Ghostbloods | ☐ confirmado<br>☐ corregir a: ______ |
-| 216 | highprince | Großprinz | community | 2 | `cosmere-011` `roshar-011` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Dalinar_Kholin)<br>[prestelpublishing.penguinrandomhouse.de](https://prestelpublishing.penguinrandomhouse.de/leseprobe/Der-Weg-der-Koenige/leseprobe_9783453317109.pdf)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Kaladin) | ☐ confirmado<br>☐ corregir a: ______ |
-| 217 | Honorbearer | Ehrenträger | unverified | 2 | `roshar-090` `roshar-091` | [es.coppermind.net](https://es.coppermind.net/wiki/Elid-hija-Zeenid)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Rit-hija-Clutio) | ☐ confirmado<br>☐ corregir a: ______ |
-| 218 | Hopefinder | Hoffnungsfinder | unverified | 2 | `nalthis-048` `nalthis-056` | [es.coppermind.net](https://es.coppermind.net/wiki/Hallaesperanzas)<br>[piumedicarta.it](https://www.piumedicarta.it/2013/11/il-conciliatore-di-brandon-sanderson.html) | ☐ confirmado<br>☐ corregir a: ______ |
-| 219 | Hrovell | Hrovell | unverified | 2 | `sel-059` `sel-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 220 | Ideal | Ideal | unverified | 2 | `otros-031` `roshar-039` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 201 | Dob | Dob | unpublished | 2 | `otros-072` `otros-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 202 | dorven | Dorven | unverified | 2 | `sel-061` `sel-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 203 | Dustbringers | Staubbringer | community | 2 | `roshar-008` `roshar-052` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 204 | Edgedancer | Grattänzer | community | 2 | `roshar-027` `roshar-064` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 205 | Edgedancers | Grattänzer | community | 2 | `roshar-007` `roshar-064` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 206 | Elegy | Elegie | community | 2 | `otros-063` `otros-065` | [teilzeithelden.de](https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/)<br>[himmelsblau.org](https://himmelsblau.org/2024/03/das-herz-der-sonne/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 207 | Elegy Salvage | Elegie Salvage | unverified | 2 | `otros-063` `otros-065` | [teilzeithelden.de](https://www.teilzeithelden.de/2024/10/24/das-herz-der-sonne-ein-kosmeer-roman-brandon-sanderson-ein-weltraumnomade-auf-umwegen-rezension/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 208 | Eleventh Metal | Elftes Metall | unverified | 2 | `scadrial-024` `scadrial-047` | [babelio.com](https://www.babelio.com/serie/Fils-des-Brumes/305)<br>[archive.org](https://archive.org/details/arcanum-ilimitado-brandon-sanderson_202208)<br>[bdfi.net](https://www.bdfi.net/recueils/pages/fils_des_brumes.php) | ☐ confirmado<br>☐ corregir a: ______ |
+| 209 | Elsecallers | Aufscheiner | community | 2 | `roshar-008` `roshar-023` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
+| 210 | Envisagers | Visionäre | unverified | 2 | `cosmere-015` `roshar-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 211 | fabrial | Fabrial | unverified | 2 | `roshar-030` `roshar-071` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 212 | father machine | Vatermaschine | unverified | 2 | `otros-056` `otros-057` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 213 | Five Visions | Fünf Visionen | unverified | 2 | `nalthis-054` `nalthis-059` | [es.coppermind.net](https://es.coppermind.net/wiki/Cinco_Visiones) | ☐ confirmado<br>☐ corregir a: ______ |
+| 214 | Frostlands | Frostlande | unverified | 2 | `cosmere-048` `roshar-056` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 215 | gemheart | Gemmenherz | unverified | 2 | `cosmere-075` `roshar-011` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/93621)<br>[babelio.com](https://www.babelio.com/livres/Sanderson-Les-archives-de-Roshar-tome-1--La-voie-des-rois-/943770/critiques)<br>it.coppermind.net (page title via search) "Cuorgemma" | ☐ confirmado<br>☐ corregir a: ______ |
+| 216 | Ghostblood | Geisterblut | unverified | 2 | `cosmere-026` `roshar-059` | glossary: Ghostbloods | ☐ confirmado<br>☐ corregir a: ______ |
+| 217 | highprince | Großprinz | community | 2 | `cosmere-011` `roshar-011` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Dalinar_Kholin)<br>[prestelpublishing.penguinrandomhouse.de](https://prestelpublishing.penguinrandomhouse.de/leseprobe/Der-Weg-der-Koenige/leseprobe_9783453317109.pdf)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Kaladin) | ☐ confirmado<br>☐ corregir a: ______ |
+| 218 | Honorbearer | Ehrenträger | unverified | 2 | `roshar-090` `roshar-091` | [es.coppermind.net](https://es.coppermind.net/wiki/Elid-hija-Zeenid)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Rit-hija-Clutio) | ☐ confirmado<br>☐ corregir a: ______ |
+| 219 | Hopefinder | Hoffnungsfinder | unverified | 2 | `nalthis-048` `nalthis-056` | [es.coppermind.net](https://es.coppermind.net/wiki/Hallaesperanzas)<br>[piumedicarta.it](https://www.piumedicarta.it/2013/11/il-conciliatore-di-brandon-sanderson.html) | ☐ confirmado<br>☐ corregir a: ______ |
+| 220 | Hrovell | Hrovell | unverified | 2 | `sel-059` `sel-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 12
 
@@ -313,26 +313,26 @@ Términos 221–240. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 221 | Intent | Absicht | unverified | 2 | `cosmere-002` `cosmere-043` | [es.coppermind.net](https://es.coppermind.net/wiki/Honor)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 222 | Ironeyes | Eisenauge | community | 2 | `cosmere-067` `scadrial-050` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Marsch)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 223 | Kabsal | — | missing | 2 | `roshar-059` `roshar-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 224 | larkin | Larkin | unverified | 2 | `cosmere-066` `roshar-028` | [catalogue.bnf.fr](https://catalogue.bnf.fr) | ☐ confirmado<br>☐ corregir a: ______ |
-| 225 | Last Emperor | Letzter Kaiser | unverified | 2 | `scadrial-042` `scadrial-087` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 226 | Lifelight | Lebenslicht | unverified | 2 | `cosmere-054` `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179142) | ☐ confirmado<br>☐ corregir a: ______ |
-| 227 | Lightweaver | Lichtweber | unverified | 2 | `cosmere-033` `roshar-002` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
-| 228 | Malwish | Malwisch | unverified | 2 | `scadrial-008` `scadrial-046` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 229 | medallion | Medaillon | unverified | 2 | `scadrial-012` `scadrial-049` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 230 | Mercy | Gnade | unverified | 2 | `cosmere-045` `cosmere-061` | [es.coppermind.net](https://es.coppermind.net/wiki/Esquirla)<br>[17thshard.com](https://www.17thshard.com/forums/topic/6487-stormlight-archive-translation-guide/)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 231 | Midnight Sea | Mitternachtsmeer | unverified | 2 | `otros-005` `otros-012` | [anikaentrelibros.com](https://anikaentrelibros.com/trenza-del-mar-esmeralda)<br>[penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/735885/trenza-del-mar-esmeralda--tress-of-the-emerald-sea-by-brandon-sanderson-manuel-viciano-delibano-tr-howard-lyon-ils/)<br>Mondadori blurb of Tress del mare smeraldo | ☐ confirmado<br>☐ corregir a: ______ |
-| 232 | mist spirit | Nebelwesen | unverified | 2 | `scadrial-030` `scadrial-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 233 | Mythica | Mythica | unverified | 2 | `roshar-077` `roshar-080` | [es.coppermind.net](https://es.coppermind.net/wiki/Mítica)<br>coppermind.net/wiki/Epigraphs (in-world title is Latin-like) | ☐ confirmado<br>☐ corregir a: ______ |
-| 234 | nightmaws | Nightmaws | unpublished | 2 | `otros-041` `otros-077` | [cosmere.fr](https://cosmere.fr/premiere-du-soleil/lexique/ile-de-patji) | ☐ confirmado<br>☐ corregir a: ______ |
-| 235 | Ones Above | Ones Above | unpublished | 2 | `cosmere-072` `otros-080` | [livredepoche.com](https://www.livredepoche.com/livre/lile-de-noirebraise-edition-collector-9782253255178/)<br>[bibliotheques.paris.fr](https://bibliotheques.paris.fr/doc/SYRACUSE/1480488)<br>searched together with Sesto del Vespro (Arcanum Unbounded, Mondadori): no hit | ☐ confirmado<br>☐ corregir a: ______ |
-| 236 | Pantheon | Pantheon | unverified | 2 | `otros-043` `otros-076` | [babelio.com](https://www.babelio.com/livres/Sanderson-Sixieme-du-crepuscule-et-autres-nouvelles/1064048) | ☐ confirmado<br>☐ corregir a: ______ |
-| 237 | Parshendi | Parschendi | unverified | 2 | `roshar-012` `roshar-020` | [es.coppermind.net](https://es.coppermind.net/wiki/Parshendi)<br>glossary (status official)<br>[cosmere.fr](https://cosmere.fr/cross-cosmere/lexique) | ☐ confirmado<br>☐ corregir a: ______ |
-| 238 | Peacegiver | Friedensbringer | unverified | 2 | `nalthis-022` `nalthis-047` | [es.coppermind.net](https://es.coppermind.net/wiki/Tesoro_de_Dalapaz)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Tonos_iridiscentes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 239 | Purelake | Reiner See | unverified | 2 | `cosmere-048` `roshar-056` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/192730)<br>es/it Coppermind page title "Lagopuro" (via search) | ☐ confirmado<br>☐ corregir a: ______ |
-| 240 | Push | drücken | unverified | 2 | `scadrial-002` `scadrial-029` | [es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 221 | Ideal | Ideal | unverified | 2 | `otros-031` `roshar-039` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 222 | Intent | Absicht | unverified | 2 | `cosmere-002` `cosmere-043` | [es.coppermind.net](https://es.coppermind.net/wiki/Honor)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 223 | Ironeyes | Eisenauge | community | 2 | `cosmere-067` `scadrial-050` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Marsch)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 224 | Kabsal | — | missing | 2 | `roshar-059` `roshar-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 225 | larkin | Larkin | unverified | 2 | `cosmere-066` `roshar-028` | [catalogue.bnf.fr](https://catalogue.bnf.fr) | ☐ confirmado<br>☐ corregir a: ______ |
+| 226 | Last Emperor | Letzter Kaiser | unverified | 2 | `scadrial-042` `scadrial-087` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 227 | Lifelight | Lebenslicht | unverified | 2 | `cosmere-054` `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179142) | ☐ confirmado<br>☐ corregir a: ______ |
+| 228 | Lightweaver | Lichtweber | unverified | 2 | `cosmere-033` `roshar-002` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 229 | Malwish | Malwisch | unverified | 2 | `scadrial-008` `scadrial-046` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 230 | medallion | Medaillon | unverified | 2 | `scadrial-012` `scadrial-049` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 231 | Mercy | Gnade | unverified | 2 | `cosmere-045` `cosmere-061` | [es.coppermind.net](https://es.coppermind.net/wiki/Esquirla)<br>[17thshard.com](https://www.17thshard.com/forums/topic/6487-stormlight-archive-translation-guide/)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 232 | Midnight Sea | Mitternachtsmeer | unverified | 2 | `otros-005` `otros-012` | [anikaentrelibros.com](https://anikaentrelibros.com/trenza-del-mar-esmeralda)<br>[penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/735885/trenza-del-mar-esmeralda--tress-of-the-emerald-sea-by-brandon-sanderson-manuel-viciano-delibano-tr-howard-lyon-ils/)<br>Mondadori blurb of Tress del mare smeraldo | ☐ confirmado<br>☐ corregir a: ______ |
+| 233 | mist spirit | Nebelwesen | unverified | 2 | `scadrial-030` `scadrial-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 234 | mistwraith | Nebelgeist | unverified | 2 | `cosmere-082` `scadrial-030` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 235 | Mythica | Mythica | unverified | 2 | `roshar-077` `roshar-080` | [es.coppermind.net](https://es.coppermind.net/wiki/Mítica)<br>coppermind.net/wiki/Epigraphs (in-world title is Latin-like) | ☐ confirmado<br>☐ corregir a: ______ |
+| 236 | nightmaws | Nightmaws | unpublished | 2 | `otros-041` `otros-077` | [cosmere.fr](https://cosmere.fr/premiere-du-soleil/lexique/ile-de-patji) | ☐ confirmado<br>☐ corregir a: ______ |
+| 237 | Ones Above | Ones Above | unpublished | 2 | `cosmere-072` `otros-080` | [livredepoche.com](https://www.livredepoche.com/livre/lile-de-noirebraise-edition-collector-9782253255178/)<br>[bibliotheques.paris.fr](https://bibliotheques.paris.fr/doc/SYRACUSE/1480488)<br>searched together with Sesto del Vespro (Arcanum Unbounded, Mondadori): no hit | ☐ confirmado<br>☐ corregir a: ______ |
+| 238 | Pantheon | Pantheon | unverified | 2 | `otros-043` `otros-076` | [babelio.com](https://www.babelio.com/livres/Sanderson-Sixieme-du-crepuscule-et-autres-nouvelles/1064048) | ☐ confirmado<br>☐ corregir a: ______ |
+| 239 | Parshendi | Parschendi | unverified | 2 | `roshar-012` `roshar-020` | [es.coppermind.net](https://es.coppermind.net/wiki/Parshendi)<br>glossary (status official)<br>[cosmere.fr](https://cosmere.fr/cross-cosmere/lexique) | ☐ confirmado<br>☐ corregir a: ______ |
+| 240 | Peacegiver | Friedensbringer | unverified | 2 | `nalthis-022` `nalthis-047` | [es.coppermind.net](https://es.coppermind.net/wiki/Tesoro_de_Dalapaz)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Tonos_iridiscentes) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 13
 
@@ -340,26 +340,26 @@ Términos 241–260. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 241 | ragnat | Ragnat | unverified | 2 | `sel-061` `sel-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 242 | Reshi Isles | Reshi-Inseln | unverified | 2 | `roshar-056` `roshar-069` | [pt.coppermind.net](https://pt.coppermind.net/wiki/Ilhas_Reshi) | ☐ confirmado<br>☐ corregir a: ______ |
-| 243 | Rose Sea | Rosenmeer | unverified | 2 | `otros-005` `otros-012` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 244 | Roseite spores | Roseitsporen | unverified | 2 | `otros-007` `otros-054` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 245 | Rosharan system | System von Roschar | community | 2 | `cosmere-051` `cosmere-052` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 246 | Royal Locks | Königliche Locken | unverified | 2 | `nalthis-013` `nalthis-042` | [es.coppermind.net](https://es.coppermind.net/wiki/Idris)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Siri) | ☐ confirmado<br>☐ corregir a: ______ |
-| 247 | sandling | Sandling | unverified | 2 | `otros-069` `otros-070` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 248 | shades | Schatten | unverified | 2 | `otros-046` `otros-048` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/190527)<br>[goodreads.com](https://www.goodreads.com/fr/book/show/42613578) | ☐ confirmado<br>☐ corregir a: ______ |
-| 249 | Shadows of Self | Schatten über Elantel | unverified | 2 | `scadrial-084` `scadrial-090` | [lecturalia.com](https://www.lecturalia.com/libro/98441/sombras-de-identidad)<br>content/it/WORK_TITLES.json | ☐ confirmado<br>☐ corregir a: ______ |
-| 250 | Shaizan | Shaizan | unverified | 2 | `sel-076` `sel-078` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 251 | Shardblade | Splitterklinge | community | 2 | `roshar-021` `roshar-057` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Hoja_esquirlada)<br>[chemins-khatovar.com](https://www.chemins-khatovar.com/forum/viewtopic.php?t=7863) | ☐ confirmado<br>☐ corregir a: ______ |
-| 252 | Sixth of the Dusk | Sixth of the Dusk | unpublished | 2 | `otros-040` `otros-041` | [tercerafundacion.net](https://tercerafundacion.net/biblioteca/ver/ficha/33522/)<br>[penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/)<br>[babelio.com](https://www.babelio.com/livres/Sanderson-Sixieme-du-crepuscule-et-autres-nouvelles/1064048) | ☐ confirmado<br>☐ corregir a: ______ |
-| 253 | Skybreakers | Himmelsbrecher | community | 2 | `roshar-007` `roshar-052` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
-| 254 | skyeel | Himmelsaal | unverified | 2 | `cosmere-066` `roshar-028` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 255 | Slider | Gleiter | unverified | 2 | `scadrial-053` `scadrial-054` | [es.coppermind.net](https://es.coppermind.net/wiki/Wayne)<br>[plus.wikimonde.com](https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes)<br>it.everybodywiki.com/Allomanzia: "Un Misting che brucia cerrobend è detto Tra… | ☐ confirmado<br>☐ corregir a: ______ |
-| 256 | Smoker | Raucher | unverified | 2 | `cosmere-083` `scadrial-053` | [es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[cosmere.fr](https://cosmere.fr/scadrial/allomancie)<br>[it.wikipedia.org](https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero) | ☐ confirmado<br>☐ corregir a: ______ |
-| 257 | Soother | Besänftiger | community | 2 | `scadrial-010` `scadrial-072` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Gef%C3%BChlsallomantie)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Aplacador) | ☐ confirmado<br>☐ corregir a: ______ |
-| 258 | Soulcast | — | missing | 2 | `roshar-059` `roshar-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 259 | Soulcasting | Seelengießen | community | 2 | `cosmere-009` `roshar-097` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/134104)<br>it.coppermind.net (page title via search) "Animutazione" | ☐ confirmado<br>☐ corregir a: ______ |
-| 260 | Spanreed | Spannfeder | community | 2 | `roshar-030` `roshar-065` | [penguin.de](https://www.penguin.de/content/edition/excerpts_extended/Leseprobe_978-3-453-27325-2.pdf)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Fabrial)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Resumen:Juramentada) | ☐ confirmado<br>☐ corregir a: ______ |
+| 241 | Purelake | Reiner See | unverified | 2 | `cosmere-048` `roshar-056` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/192730)<br>es/it Coppermind page title "Lagopuro" (via search) | ☐ confirmado<br>☐ corregir a: ______ |
+| 242 | Push | drücken | unverified | 2 | `scadrial-002` `scadrial-029` | [es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 243 | ragnat | Ragnat | unverified | 2 | `sel-061` `sel-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 244 | Reshi Isles | Reshi-Inseln | unverified | 2 | `roshar-056` `roshar-069` | [pt.coppermind.net](https://pt.coppermind.net/wiki/Ilhas_Reshi) | ☐ confirmado<br>☐ corregir a: ______ |
+| 245 | Rose Sea | Rosenmeer | unverified | 2 | `otros-005` `otros-012` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 246 | Roseite spores | Roseitsporen | unverified | 2 | `otros-007` `otros-054` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 247 | Rosharan system | System von Roschar | community | 2 | `cosmere-051` `cosmere-052` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 248 | Royal Locks | Königliche Locken | unverified | 2 | `nalthis-013` `nalthis-042` | [es.coppermind.net](https://es.coppermind.net/wiki/Idris)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Siri) | ☐ confirmado<br>☐ corregir a: ______ |
+| 249 | sandling | Sandling | unverified | 2 | `otros-069` `otros-070` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 250 | shades | Schatten | unverified | 2 | `otros-046` `otros-048` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/190527)<br>[goodreads.com](https://www.goodreads.com/fr/book/show/42613578) | ☐ confirmado<br>☐ corregir a: ______ |
+| 251 | Shadows of Self | Schatten über Elantel | unverified | 2 | `scadrial-084` `scadrial-090` | [lecturalia.com](https://www.lecturalia.com/libro/98441/sombras-de-identidad)<br>content/it/WORK_TITLES.json | ☐ confirmado<br>☐ corregir a: ______ |
+| 252 | Shaizan | Shaizan | unverified | 2 | `sel-076` `sel-078` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 253 | Shardblade | Splitterklinge | community | 2 | `roshar-021` `roshar-057` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Hoja_esquirlada)<br>[chemins-khatovar.com](https://www.chemins-khatovar.com/forum/viewtopic.php?t=7863) | ☐ confirmado<br>☐ corregir a: ______ |
+| 254 | Sixth of the Dusk | Sixth of the Dusk | unpublished | 2 | `otros-040` `otros-041` | [tercerafundacion.net](https://tercerafundacion.net/biblioteca/ver/ficha/33522/)<br>[penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/827530/islas-de-la-ascuaoscura--isles-of-the-emberdark-by-brandon-sanderson/)<br>[babelio.com](https://www.babelio.com/livres/Sanderson-Sixieme-du-crepuscule-et-autres-nouvelles/1064048) | ☐ confirmado<br>☐ corregir a: ______ |
+| 255 | Skybreakers | Himmelsbrecher | community | 2 | `roshar-007` `roshar-052` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 256 | skyeel | Himmelsaal | unverified | 2 | `cosmere-066` `roshar-028` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 257 | Slider | Gleiter | unverified | 2 | `scadrial-053` `scadrial-054` | [es.coppermind.net](https://es.coppermind.net/wiki/Wayne)<br>[plus.wikimonde.com](https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes)<br>it.everybodywiki.com/Allomanzia: "Un Misting che brucia cerrobend è detto Tra… | ☐ confirmado<br>☐ corregir a: ______ |
+| 258 | Smoker | Raucher | unverified | 2 | `cosmere-083` `scadrial-053` | [es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[cosmere.fr](https://cosmere.fr/scadrial/allomancie)<br>[it.wikipedia.org](https://it.wikipedia.org/wiki/Mistborn:_L%27Ultimo_Impero) | ☐ confirmado<br>☐ corregir a: ______ |
+| 259 | Soother | Besänftiger | community | 2 | `scadrial-010` `scadrial-072` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Gef%C3%BChlsallomantie)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Aplacador) | ☐ confirmado<br>☐ corregir a: ______ |
+| 260 | Soulcast | — | missing | 2 | `roshar-059` `roshar-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 14
 
@@ -367,26 +367,26 @@ Términos 261–280. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 261 | Splinter | Splitter | community | 2 | `cosmere-036` `sel-050` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nachtschauerin)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Deshecho)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 262 | Steel Inquisitor | Stahlinquisitor | community | 2 | `scadrial-006` `scadrial-030` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Inquisitor)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Inquisidor_de_acero)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 263 | Stone Shaman | Steinschamane | unverified | 2 | `roshar-091` `roshar-099` | [es.coppermind.net](https://es.coppermind.net/wiki/Chamanismo_de_la_piedra)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Rit-hija-Clutio) | ☐ confirmado<br>☐ corregir a: ______ |
-| 264 | Stormwarden | Sturmwächter | unverified | 2 | `cosmere-011` `roshar-073` | [melaniefazi.net](https://www.melaniefazi.net/blog/livres/words-of-radiance-un-voyage-au-long-cours/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 265 | Straff Venture | Straff Wager | community | 2 | `scadrial-027` `scadrial-065` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Straff_Wager)<br>[coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 266 | Strikers | Schläger | unverified | 2 | `sel-060` `sel-075` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 267 | sunhearts | Sonnenherzen | unverified | 2 | `otros-061` `otros-064` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 268 | Sunlit One | Sonnenbeschienene | unverified | 2 | `otros-029` `otros-063` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 269 | Surge | Woge | community | 2 | `roshar-040` `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento) | ☐ confirmado<br>☐ corregir a: ______ |
-| 270 | Svorden | Svorden | unverified | 2 | `sel-059` `sel-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 271 | Talus | Talus | unverified | 2 | `roshar-061` `roshar-063` | [es.coppermind.net](https://es.coppermind.net/wiki/Diez_Esencias) | ☐ confirmado<br>☐ corregir a: ______ |
-| 272 | Tears of Edgli | Tränen von Edgli | unverified | 2 | `nalthis-029` `nalthis-037` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 273 | Tension | Tension | community | 2 | `roshar-040` `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden)<br>stormlightarchive.fandom.com/it (via search) Vincolaflussi / Corrivento | ☐ confirmado<br>☐ corregir a: ______ |
-| 274 | The Alloy of Law | — | missing | 2 | `cosmere-064` `scadrial-068` | content/fr/WORK_TITLES.json<br>[mondadori.it](https://www.mondadori.it/libri/mistborn-era-due-1-la-legge-delle-lande-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 275 | Thresh | Thresh | unverified | 2 | `roshar-055` `roshar-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 276 | Thug | Schläger | community | 2 | `scadrial-003` `scadrial-072` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebeling)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wei%C3%9Fblech)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla) | ☐ confirmado<br>☐ corregir a: ______ |
-| 277 | Tineye | Zinnauge | community | 2 | `scadrial-021` `scadrial-022` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebeling)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla) | ☐ confirmado<br>☐ corregir a: ______ |
-| 278 | Torment | Qual | unverified | 2 | `otros-030` `otros-031` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 279 | Transformation | Transformation | community | 2 | `roshar-040` `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 280 | Truthwatchers | Wahrheitswächter | community | 2 | `roshar-023` `roshar-043` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 261 | Soulcasting | Seelengießen | community | 2 | `cosmere-009` `roshar-097` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/134104)<br>it.coppermind.net (page title via search) "Animutazione" | ☐ confirmado<br>☐ corregir a: ______ |
+| 262 | Spanreed | Spannfeder | community | 2 | `roshar-030` `roshar-065` | [penguin.de](https://www.penguin.de/content/edition/excerpts_extended/Leseprobe_978-3-453-27325-2.pdf)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Fabrial)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Resumen:Juramentada) | ☐ confirmado<br>☐ corregir a: ______ |
+| 263 | Splinter | Splitter | community | 2 | `cosmere-036` `sel-050` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nachtschauerin)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Deshecho)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 264 | Stone Shaman | Steinschamane | unverified | 2 | `roshar-091` `roshar-099` | [es.coppermind.net](https://es.coppermind.net/wiki/Chamanismo_de_la_piedra)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Rit-hija-Clutio) | ☐ confirmado<br>☐ corregir a: ______ |
+| 265 | Stormwarden | Sturmwächter | unverified | 2 | `cosmere-011` `roshar-073` | [melaniefazi.net](https://www.melaniefazi.net/blog/livres/words-of-radiance-un-voyage-au-long-cours/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 266 | Straff Venture | Straff Wager | community | 2 | `scadrial-027` `scadrial-065` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Straff_Wager)<br>[coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 267 | Strikers | Schläger | unverified | 2 | `sel-060` `sel-075` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 268 | sunhearts | Sonnenherzen | unverified | 2 | `otros-061` `otros-064` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 269 | Sunlit One | Sonnenbeschienene | unverified | 2 | `otros-029` `otros-063` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 270 | Surge | Woge | community | 2 | `roshar-040` `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento) | ☐ confirmado<br>☐ corregir a: ______ |
+| 271 | Svorden | Svorden | unverified | 2 | `sel-059` `sel-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 272 | Talus | Talus | unverified | 2 | `roshar-061` `roshar-063` | [es.coppermind.net](https://es.coppermind.net/wiki/Diez_Esencias) | ☐ confirmado<br>☐ corregir a: ______ |
+| 273 | Tears of Edgli | Tränen von Edgli | unverified | 2 | `nalthis-029` `nalthis-037` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 274 | Tension | Tension | community | 2 | `roshar-040` `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden)<br>stormlightarchive.fandom.com/it (via search) Vincolaflussi / Corrivento | ☐ confirmado<br>☐ corregir a: ______ |
+| 275 | The Alloy of Law | — | missing | 2 | `cosmere-064` `scadrial-068` | content/fr/WORK_TITLES.json<br>[mondadori.it](https://www.mondadori.it/libri/mistborn-era-due-1-la-legge-delle-lande-brandon-sanderson/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 276 | Thresh | Thresh | unverified | 2 | `roshar-055` `roshar-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 277 | Thug | Schläger | community | 2 | `scadrial-003` `scadrial-072` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebeling)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wei%C3%9Fblech)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla) | ☐ confirmado<br>☐ corregir a: ______ |
+| 278 | Tineye | Zinnauge | community | 2 | `scadrial-021` `scadrial-022` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebeling)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla) | ☐ confirmado<br>☐ corregir a: ______ |
+| 279 | Torment | Qual | unverified | 2 | `otros-030` `otros-031` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 280 | Transformation | Transformation | community | 2 | `roshar-040` `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 15
 
@@ -394,26 +394,26 @@ Términos 281–300. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 281 | Twinborn | Zwillingsgeborener | community | 2 | `scadrial-041` `scadrial-067` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebelgeborener)<br>[german.wikibrief.org](https://german.wikibrief.org/wiki/Mistborn)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Waxillium_Ladrian) | ☐ confirmado<br>☐ corregir a: ______ |
-| 282 | Vanishers | Verschwinder | unverified | 2 | `cosmere-064` `scadrial-037` | Fanucci/Mondadori blurb of La legge delle lande ("una banda di rapinatori che… | ☐ confirmado<br>☐ corregir a: ______ |
-| 283 | Veil | Schleier | unverified | 2 | `cosmere-015` `roshar-009` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 284 | Virtuosity | Virtuosität | unverified | 2 | `otros-023` `otros-059` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 285 | Vorin | vorinisch | unverified | 2 | `cosmere-003` `roshar-016` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 286 | Wandersail | Wandersail | unverified | 2 | `cosmere-032` `roshar-076` | [lecturalia.com](https://www.lecturalia.com/libro/104821/esquirla-del-amanecer)<br>Spanish edition excerpt of Esquirla del Amanecer ("su barco, el Vela Errante"…<br>WORK_TITLES: Dawnshard has no Italian edition | ☐ confirmado<br>☐ corregir a: ______ |
-| 287 | Warlight | Kriegslicht | unverified | 2 | `cosmere-054` `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179142) | ☐ confirmado<br>☐ corregir a: ______ |
-| 288 | Willshapers | Willensformer | community | 2 | `roshar-023` `roshar-052` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
-| 289 | Adhesion | Haftung | community | 1 | `roshar-040` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
-| 290 | aether spores | Äthersporen | unverified | 1 | `otros-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 291 | Alethela | — | missing | 1 | `roshar-072` | [es.coppermind.net](https://es.coppermind.net/wiki/Reinos_Plateados) | ☐ confirmado<br>☐ corregir a: ______ |
-| 292 | Allomancer Jak | Allomancer Jak | unpublished | 1 | `scadrial-048` | [tercerafundacion.net](https://tercerafundacion.net/biblioteca/ver/ficha/33522/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/68193)<br>[bdfi.net](https://www.bdfi.net/recueils/pages/fils_des_brumes.php) | ☐ confirmado<br>☐ corregir a: ______ |
-| 293 | Allomancer Jak and the Pits of Eltania | — | missing | 1 | `scadrial-078` | [es.coppermind.net](https://es.coppermind.net/wiki/Alomante_Jak_y_los_Pozos_de_Eltania)<br>content/fr/WORK_TITLES.json<br>[prestatest.bazzacco.net](https://prestatest.bazzacco.net/libri/726343-arcanum-unbounded-la-collezione-cosmoverso-9788804727361.html) | ☐ confirmado<br>☐ corregir a: ______ |
-| 294 | Almighty | der Allmächtige | unverified | 1 | `cosmere-003` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 295 | Anti-Stormlight | Anti-Sturmlicht | unverified | 1 | `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Antiluz_tormentosa)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 296 | Antillius Shezler | — | missing | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 297 | Aon Tia | — | missing | 1 | `sel-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 298 | Assassin in White | Attentäter in Weiß | community | 1 | `roshar-012` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Szeth)<br>[lesmillemondes.com](https://lesmillemondes.com/2026/02/21/les-archives-de-roshar-vent-et-verite-2-de-brandon-sanderson-le-cosmere-en-danger/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 299 | Auxiliary | Auxiliar | unverified | 1 | `otros-032` | [cosmere.fr](https://cosmere.fr/cantique/lexique/auxiliaire) | ☐ confirmado<br>☐ corregir a: ______ |
-| 300 | Awaken | erwecken | community | 1 | `nalthis-006` | [es.coppermind.net](https://es.coppermind.net/wiki/Sondeluz)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 281 | Truthwatchers | Wahrheitswächter | community | 2 | `roshar-023` `roshar-043` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 282 | Twinborn | Zwillingsgeborener | community | 2 | `scadrial-041` `scadrial-067` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Nebelgeborener)<br>[german.wikibrief.org](https://german.wikibrief.org/wiki/Mistborn)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Waxillium_Ladrian) | ☐ confirmado<br>☐ corregir a: ______ |
+| 283 | Vanishers | Verschwinder | unverified | 2 | `cosmere-064` `scadrial-037` | Fanucci/Mondadori blurb of La legge delle lande ("una banda di rapinatori che… | ☐ confirmado<br>☐ corregir a: ______ |
+| 284 | Veil | Schleier | unverified | 2 | `cosmere-015` `roshar-009` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 285 | Virtuosity | Virtuosität | unverified | 2 | `otros-023` `otros-059` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 286 | Vorin | vorinisch | unverified | 2 | `cosmere-003` `roshar-016` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 287 | Wandersail | Wandersail | unverified | 2 | `cosmere-032` `roshar-076` | [lecturalia.com](https://www.lecturalia.com/libro/104821/esquirla-del-amanecer)<br>Spanish edition excerpt of Esquirla del Amanecer ("su barco, el Vela Errante"…<br>WORK_TITLES: Dawnshard has no Italian edition | ☐ confirmado<br>☐ corregir a: ______ |
+| 288 | Warlight | Kriegslicht | unverified | 2 | `cosmere-054` `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/179142) | ☐ confirmado<br>☐ corregir a: ______ |
+| 289 | Willshapers | Willensformer | community | 2 | `roshar-023` `roshar-052` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 290 | Adhesion | Haftung | community | 1 | `roshar-040` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
+| 291 | aether spores | Äthersporen | unverified | 1 | `otros-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 292 | Alethela | — | missing | 1 | `roshar-072` | [es.coppermind.net](https://es.coppermind.net/wiki/Reinos_Plateados) | ☐ confirmado<br>☐ corregir a: ______ |
+| 293 | Allomancer Jak | Allomancer Jak | unpublished | 1 | `scadrial-048` | [tercerafundacion.net](https://tercerafundacion.net/biblioteca/ver/ficha/33522/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/68193)<br>[bdfi.net](https://www.bdfi.net/recueils/pages/fils_des_brumes.php) | ☐ confirmado<br>☐ corregir a: ______ |
+| 294 | Allomancer Jak and the Pits of Eltania | — | missing | 1 | `scadrial-078` | [es.coppermind.net](https://es.coppermind.net/wiki/Alomante_Jak_y_los_Pozos_de_Eltania)<br>content/fr/WORK_TITLES.json<br>[prestatest.bazzacco.net](https://prestatest.bazzacco.net/libri/726343-arcanum-unbounded-la-collezione-cosmoverso-9788804727361.html) | ☐ confirmado<br>☐ corregir a: ______ |
+| 295 | Almighty | der Allmächtige | unverified | 1 | `cosmere-003` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 296 | Anti-Stormlight | Anti-Sturmlicht | unverified | 1 | `roshar-046` | [es.coppermind.net](https://es.coppermind.net/wiki/Antiluz_tormentosa)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 297 | Antillius Shezler | — | missing | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 298 | Aon Tia | — | missing | 1 | `sel-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 299 | Assassin in White | Attentäter in Weiß | community | 1 | `roshar-012` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Szeth)<br>[lesmillemondes.com](https://lesmillemondes.com/2026/02/21/les-archives-de-roshar-vent-et-verite-2-de-brandon-sanderson-le-cosmere-en-danger/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 300 | Auxiliary | Auxiliar | unverified | 1 | `otros-032` | [cosmere.fr](https://cosmere.fr/cantique/lexique/auxiliaire) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 16
 
@@ -421,26 +421,26 @@ Términos 301–320. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 301 | axehound | Axthund | unverified | 1 | `roshar-028` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 302 | Axies the Collector | — | missing | 1 | `roshar-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 303 | Ba-Ado-Mishram | Ba-Ado-Mischram | unverified | 1 | `roshar-045` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 304 | Beaconites | Beaconiter | unverified | 1 | `otros-028` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 305 | Bendalloy | Biegmetall | community | 1 | `scadrial-054` | [marjorie-wiki.de](https://marjorie-wiki.de/wiki/Allomant)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 306 | Blackbane | Schwarzbann | unverified | 1 | `roshar-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 307 | Blessing of Awareness | Segen der Wahrnehmung | unverified | 1 | `scadrial-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 308 | Blessing of Potency | Segen der Stärke | unverified | 1 | `scadrial-062` | [nacidos-de-la-bruma.fandom.com](https://nacidos-de-la-bruma.fandom.com/es/wiki/Kandra)<br>[es.coppermind.net](https://es.coppermind.net/wiki/TenSoon) | ☐ confirmado<br>☐ corregir a: ______ |
-| 309 | Blessing of Presence | Segen der Präsenz | unverified | 1 | `scadrial-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 310 | Blessing of Stability | Segen der Stabilität | unverified | 1 | `scadrial-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 311 | Bloodmaker | Blutmacher | unverified | 1 | `scadrial-067` | [es.coppermind.net](https://es.coppermind.net/wiki/Oro)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Miles_Dagouter)<br>[franco.wiki](https://franco.wiki/fr/Fils-des-brumes.html) | ☐ confirmado<br>☐ corregir a: ______ |
-| 312 | Bloodsealed | — | missing | 1 | `sel-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 313 | Bloody Tan | Bloody Tan | unverified | 1 | `scadrial-068` | [es.coppermind.net](https://es.coppermind.net/wiki/Sangriento_Tan) | ☐ confirmado<br>☐ corregir a: ______ |
-| 314 | boxing | Boxing | unverified | 1 | `scadrial-076` | [cosmere.es](https://cosmere.es/kickstarter/the-shire-post-mint-nacidos-de-la-bruma/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 315 | Bridge Eighteen | Brücke Achtzehn | unverified | 1 | `roshar-001` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/83618)<br>[pretemoitaplumeblog.wordpress.com](https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 316 | Bridge Seventeen | Brücke Siebzehn | unverified | 1 | `roshar-001` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/83618)<br>[pretemoitaplumeblog.wordpress.com](https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 317 | Bridge Two | Brücke Zwei | unverified | 1 | `roshar-001` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/83618)<br>[pretemoitaplumeblog.wordpress.com](https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 318 | Bright Sea | Helles Meer | unverified | 1 | `nalthis-058` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 319 | Canton | Amt | community | 1 | `scadrial-080` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero)<br>[epdf.pub](https://epdf.pub/le-puits-de-lascension42624b518590a26f19ab7c18965a9fe558939.html) | ☐ confirmado<br>☐ corregir a: ______ |
-| 320 | Canton of Finance | Amt für Finanzwesen | community | 1 | `scadrial-080` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/El_Imperio_Final)<br>[epdf.pub](https://epdf.pub/le-puits-de-lascension42624b518590a26f19ab7c18965a9fe558939.html) | ☐ confirmado<br>☐ corregir a: ______ |
+| 301 | Awaken | erwecken | community | 1 | `nalthis-006` | [es.coppermind.net](https://es.coppermind.net/wiki/Sondeluz)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 302 | axehound | Axthund | unverified | 1 | `roshar-028` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 303 | Axies the Collector | — | missing | 1 | `roshar-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 304 | Ba-Ado-Mishram | Ba-Ado-Mischram | unverified | 1 | `roshar-045` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 305 | Beaconites | Beaconiter | unverified | 1 | `otros-028` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 306 | Bendalloy | Biegmetall | community | 1 | `scadrial-054` | [marjorie-wiki.de](https://marjorie-wiki.de/wiki/Allomant)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 307 | Blackbane | Schwarzbann | unverified | 1 | `roshar-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 308 | Blessing of Awareness | Segen der Wahrnehmung | unverified | 1 | `scadrial-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 309 | Blessing of Potency | Segen der Stärke | unverified | 1 | `scadrial-062` | [nacidos-de-la-bruma.fandom.com](https://nacidos-de-la-bruma.fandom.com/es/wiki/Kandra)<br>[es.coppermind.net](https://es.coppermind.net/wiki/TenSoon) | ☐ confirmado<br>☐ corregir a: ______ |
+| 310 | Blessing of Presence | Segen der Präsenz | unverified | 1 | `scadrial-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 311 | Blessing of Stability | Segen der Stabilität | unverified | 1 | `scadrial-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 312 | Bloodmaker | Blutmacher | unverified | 1 | `scadrial-067` | [es.coppermind.net](https://es.coppermind.net/wiki/Oro)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Miles_Dagouter)<br>[franco.wiki](https://franco.wiki/fr/Fils-des-brumes.html) | ☐ confirmado<br>☐ corregir a: ______ |
+| 313 | Bloodsealed | — | missing | 1 | `sel-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 314 | Bloody Tan | Bloody Tan | unverified | 1 | `scadrial-068` | [es.coppermind.net](https://es.coppermind.net/wiki/Sangriento_Tan) | ☐ confirmado<br>☐ corregir a: ______ |
+| 315 | boxing | Boxing | unverified | 1 | `scadrial-076` | [cosmere.es](https://cosmere.es/kickstarter/the-shire-post-mint-nacidos-de-la-bruma/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 316 | Bridge Eighteen | Brücke Achtzehn | unverified | 1 | `roshar-001` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/83618)<br>[pretemoitaplumeblog.wordpress.com](https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 317 | Bridge Seventeen | Brücke Siebzehn | unverified | 1 | `roshar-001` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/83618)<br>[pretemoitaplumeblog.wordpress.com](https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 318 | Bridge Two | Brücke Zwei | unverified | 1 | `roshar-001` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/83618)<br>[pretemoitaplumeblog.wordpress.com](https://pretemoitaplumeblog.wordpress.com/2021/04/01/parlons-saga-les-archives-de-roshar-de-brandon-sanderson-partie-1/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 319 | Bright Sea | Helles Meer | unverified | 1 | `nalthis-058` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 320 | Canton | Amt | community | 1 | `scadrial-080` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero)<br>[epdf.pub](https://epdf.pub/le-puits-de-lascension42624b518590a26f19ab7c18965a9fe558939.html) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 17
 
@@ -448,26 +448,26 @@ Términos 321–340. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 321 | Canton of Inquisition | Amt für Inquisition | community | 1 | `scadrial-080` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Convento_de_Seran) | ☐ confirmado<br>☐ corregir a: ______ |
-| 322 | Canton of Orthodoxy | Amt für Orthodoxie | community | 1 | `scadrial-080` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero) | ☐ confirmado<br>☐ corregir a: ______ |
-| 323 | Canton of Resource | Amt für Ressourcen | unverified | 1 | `scadrial-080` | [es.coppermind.net](https://es.coppermind.net/wiki/El_Imperio_Final) | ☐ confirmado<br>☐ corregir a: ______ |
-| 324 | Celebrant | Celebrant | unverified | 1 | `cosmere-056` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 325 | Cett | — | missing | 1 | `scadrial-052` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 326 | Chach | — | missing | 1 | `roshar-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 327 | Chasm Line | Schluchtlinie | unverified | 1 | `sel-054` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 328 | chasmfiend | Kluftteufel | community | 1 | `roshar-011` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Zerbrochene_Ebene)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alta_tormenta)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/93621) | ☐ confirmado<br>☐ corregir a: ______ |
-| 329 | Chesterton | Chesterton | unpublished | 1 | `otros-074` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 330 | chip | Splitter | unverified | 1 | `roshar-060` | [es.coppermind.net](https://es.coppermind.net/wiki/Esferas)<br>[forum-elbakin.net](https://www.forum-elbakin.net/viewtopic.php?t=6160&start=780) | ☐ confirmado<br>☐ corregir a: ______ |
-| 331 | Chromium | Chrom | unverified | 1 | `scadrial-054` | [marjorie-wiki.de](https://marjorie-wiki.de/wiki/Allomant)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 332 | Citizen | Bürger | community | 1 | `scadrial-072` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Quellion)<br>[coppermind.net](https://coppermind.net/wiki/Quellion) | ☐ confirmado<br>☐ corregir a: ______ |
-| 333 | Clod | Klumpen | unverified | 1 | `nalthis-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 334 | Cohesion | Kohäsion | community | 1 | `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 335 | Commandant Supreme | Oberster Kommandant | unverified | 1 | `roshar-096` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 336 | conjoiner | Vereiniger | community | 1 | `roshar-071` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Fabrial)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Conjuntador) | ☐ confirmado<br>☐ corregir a: ______ |
-| 337 | Connection | Verbindung | unverified | 1 | `cosmere-053` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 338 | Corvana's Analectics | Corvanas Analektik | unverified | 1 | `roshar-080` | [es.coppermind.net](https://es.coppermind.net/wiki/Corvana) | ☐ confirmado<br>☐ corregir a: ______ |
-| 339 | Creationspren | Schöpfungssprengsel | community | 1 | `roshar-067` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Categoría:Spren) | ☐ confirmado<br>☐ corregir a: ______ |
-| 340 | Cremlings | Kremlinge | unverified | 1 | `cosmere-058` | Babelio reader review of La Voie des rois (search snippet only; page not fetc… | ☐ confirmado<br>☐ corregir a: ______ |
+| 321 | Canton of Finance | Amt für Finanzwesen | community | 1 | `scadrial-080` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/El_Imperio_Final)<br>[epdf.pub](https://epdf.pub/le-puits-de-lascension42624b518590a26f19ab7c18965a9fe558939.html) | ☐ confirmado<br>☐ corregir a: ______ |
+| 322 | Canton of Inquisition | Amt für Inquisition | community | 1 | `scadrial-080` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Convento_de_Seran) | ☐ confirmado<br>☐ corregir a: ______ |
+| 323 | Canton of Orthodoxy | Amt für Orthodoxie | community | 1 | `scadrial-080` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Obligator)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Ministerio_del_Acero) | ☐ confirmado<br>☐ corregir a: ______ |
+| 324 | Canton of Resource | Amt für Ressourcen | unverified | 1 | `scadrial-080` | [es.coppermind.net](https://es.coppermind.net/wiki/El_Imperio_Final) | ☐ confirmado<br>☐ corregir a: ______ |
+| 325 | Celebrant | Celebrant | unverified | 1 | `cosmere-056` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 326 | Cett | — | missing | 1 | `scadrial-052` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 327 | Chach | — | missing | 1 | `roshar-062` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 328 | Chasm Line | Schluchtlinie | unverified | 1 | `sel-054` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 329 | chasmfiend | Kluftteufel | community | 1 | `roshar-011` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Zerbrochene_Ebene)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alta_tormenta)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/93621) | ☐ confirmado<br>☐ corregir a: ______ |
+| 330 | Chesterton | Chesterton | unpublished | 1 | `otros-074` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 331 | chip | Splitter | unverified | 1 | `roshar-060` | [es.coppermind.net](https://es.coppermind.net/wiki/Esferas)<br>[forum-elbakin.net](https://www.forum-elbakin.net/viewtopic.php?t=6160&start=780) | ☐ confirmado<br>☐ corregir a: ______ |
+| 332 | Chromium | Chrom | unverified | 1 | `scadrial-054` | [marjorie-wiki.de](https://marjorie-wiki.de/wiki/Allomant)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 333 | Citizen | Bürger | community | 1 | `scadrial-072` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Quellion)<br>[coppermind.net](https://coppermind.net/wiki/Quellion) | ☐ confirmado<br>☐ corregir a: ______ |
+| 334 | Clod | Klumpen | unverified | 1 | `nalthis-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 335 | Cohesion | Kohäsion | community | 1 | `roshar-099` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 336 | Commandant Supreme | Oberster Kommandant | unverified | 1 | `roshar-096` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 337 | conjoiner | Vereiniger | community | 1 | `roshar-071` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Fabrial)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Conjuntador) | ☐ confirmado<br>☐ corregir a: ______ |
+| 338 | Connection | Verbindung | unverified | 1 | `cosmere-053` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 339 | Corvana's Analectics | Corvanas Analektik | unverified | 1 | `roshar-080` | [es.coppermind.net](https://es.coppermind.net/wiki/Corvana) | ☐ confirmado<br>☐ corregir a: ______ |
+| 340 | Creationspren | Schöpfungssprengsel | community | 1 | `roshar-067` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Categoría:Spren) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 18
 
@@ -475,26 +475,26 @@ Términos 341–360. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 341 | Crimson spores | Purpursporen | unverified | 1 | `otros-007` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 342 | Crow | Krähe | unverified | 1 | `otros-010` | [criticasfrikis.com](https://criticasfrikis.com/critica-de-trenza-del-mar-esmeralda/)<br>[booknode.com](https://booknode.com/tress_de_la_mer_emeraude_03484140/personnages) | ☐ confirmado<br>☐ corregir a: ______ |
-| 343 | cultivationspren | Bebauungssprengsel | community | 1 | `roshar-010` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 344 | Darksider | Dunkelseitler | unverified | 1 | `cosmere-029` | [anikaentrelibros.com](https://anikaentrelibros.com/arena-blanca-novela-grafica)<br>[izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793) | ☐ confirmado<br>☐ corregir a: ______ |
-| 345 | Dashe | Dashe | unverified | 1 | `sel-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 346 | Dawnchant | Morgengesang | unverified | 1 | `roshar-080` | [es.coppermind.net](https://es.coppermind.net/wiki/Corvana) | ☐ confirmado<br>☐ corregir a: ______ |
-| 347 | deadeye | Totauge | community | 1 | `roshar-057` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Juramentada_(hoja_esquirlada) | ☐ confirmado<br>☐ corregir a: ______ |
-| 348 | Death Rattles | Todesröcheln | community | 1 | `roshar-079` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Ungemachte)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/wiki/Rantoli_della_Morte) | ☐ confirmado<br>☐ corregir a: ______ |
-| 349 | Deepest Ones | Tiefsten | unverified | 1 | `roshar-038` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 350 | deepwalker | Deepwalker | unpublished | 1 | `otros-080` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 351 | Deepwalkers | Deepwalker | unpublished | 1 | `otros-041` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 352 | Design | Design | unverified | 1 | `cosmere-033` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 353 | Divinity | Divinity | unverified | 1 | `otros-065` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 354 | Drab | Fahler | unverified | 1 | `nalthis-011` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 355 | Drlwan | — | missing | 1 | `roshar-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 356 | Dukar | — | missing | 1 | `roshar-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 357 | Dzhamarian | — | missing | 1 | `sel-060` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 358 | Eila Stele | Eila-Stele | unverified | 1 | `roshar-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 359 | Elantrians | Elantrier | unverified | 1 | `sel-023` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 360 | Elendel Basin | Elantel-Becken | community | 1 | `scadrial-031` | [es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>glossary (status official)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/wiki/Lestiborner) | ☐ confirmado<br>☐ corregir a: ______ |
+| 341 | Cremlings | Kremlinge | unverified | 1 | `cosmere-058` | Babelio reader review of La Voie des rois (search snippet only; page not fetc… | ☐ confirmado<br>☐ corregir a: ______ |
+| 342 | Crimson spores | Purpursporen | unverified | 1 | `otros-007` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 343 | Crow | Krähe | unverified | 1 | `otros-010` | [criticasfrikis.com](https://criticasfrikis.com/critica-de-trenza-del-mar-esmeralda/)<br>[booknode.com](https://booknode.com/tress_de_la_mer_emeraude_03484140/personnages) | ☐ confirmado<br>☐ corregir a: ______ |
+| 344 | cultivationspren | Bebauungssprengsel | community | 1 | `roshar-010` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 345 | Darksider | Dunkelseitler | unverified | 1 | `cosmere-029` | [anikaentrelibros.com](https://anikaentrelibros.com/arena-blanca-novela-grafica)<br>[izneo.com](https://www.izneo.com/fr/bd/fantastique/white-sand-24793) | ☐ confirmado<br>☐ corregir a: ______ |
+| 346 | Dashe | Dashe | unverified | 1 | `sel-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 347 | Dawnchant | Morgengesang | unverified | 1 | `roshar-080` | [es.coppermind.net](https://es.coppermind.net/wiki/Corvana) | ☐ confirmado<br>☐ corregir a: ______ |
+| 348 | deadeye | Totauge | community | 1 | `roshar-057` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Juramentada_(hoja_esquirlada) | ☐ confirmado<br>☐ corregir a: ______ |
+| 349 | Death Rattles | Todesröcheln | community | 1 | `roshar-079` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Ungemachte)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/wiki/Rantoli_della_Morte) | ☐ confirmado<br>☐ corregir a: ______ |
+| 350 | Deepest Ones | Tiefsten | unverified | 1 | `roshar-038` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 351 | deepwalker | Deepwalker | unpublished | 1 | `otros-080` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 352 | Deepwalkers | Deepwalker | unpublished | 1 | `otros-041` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 353 | Design | Design | unverified | 1 | `cosmere-033` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 354 | Divinity | Divinity | unverified | 1 | `otros-065` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 355 | Drab | Fahler | unverified | 1 | `nalthis-011` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 356 | Drlwan | — | missing | 1 | `roshar-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 357 | Dukar | — | missing | 1 | `roshar-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 358 | Dzhamarian | — | missing | 1 | `sel-060` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 359 | Eila Stele | Eila-Stele | unverified | 1 | `roshar-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 360 | Elantrians | Elantrier | unverified | 1 | `sel-023` | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 19
 
@@ -502,26 +502,26 @@ Términos 361–380. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 361 | Elsecaller | Aufscheiner | community | 1 | `roshar-022` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
-| 362 | Emerald | Smaragd | unverified | 1 | `roshar-031` | [es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 363 | Emerald Crown | Smaragdkrone | unverified | 1 | `otros-011` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 364 | Emerald Sea | smaragdgrüne See | unverified | 1 | `otros-001` | glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
-| 365 | Emul | — | missing | 1 | `roshar-078` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 366 | Eshonai | Eschonai | unverified | 1 | `roshar-032` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 367 | ettmetal | Ettmetall | unverified | 1 | `scadrial-069` | [es.coppermind.net](https://es.coppermind.net/wiki/Ettmetal) | ☐ confirmado<br>☐ corregir a: ______ |
-| 368 | Evil | das Böse | unverified | 1 | `otros-075` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 369 | Faceless Immortals | Gesichtslose Unsterbliche | unverified | 1 | `scadrial-044` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 370 | Final Empire | Letztes Reich | community | 1 | `scadrial-005` | [de.wikipedia.org](https://de.wikipedia.org/wiki/Kinder_des_Nebels)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 371 | Firemoss | Feuermoos | unverified | 1 | `roshar-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 372 | Firesoul | Firesoul | unverified | 1 | `scadrial-075` | [es.coppermind.net](https://es.coppermind.net/wiki/Feruquimia)<br>[franco.wiki](https://franco.wiki/fr/Fils-des-brumes.html) | ☐ confirmado<br>☐ corregir a: ______ |
-| 373 | First Dreams | Erste Träume | unverified | 1 | `roshar-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 374 | First Heightening | Erste Steigerung | unverified | 1 | `nalthis-051` | [es.coppermind.net](https://es.coppermind.net/wiki/Elevación)<br>[cosmere.fr](https://cosmere.fr/src/documents/warbreaker-resume-complet.pdf) | ☐ confirmado<br>☐ corregir a: ______ |
-| 375 | First Ideal | Erstes Ideal | unverified | 1 | `roshar-013` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 376 | Fjeldor | Fjeldor | unverified | 1 | `sel-064` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 377 | Fjon | Fjon | unverified | 1 | `sel-058` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 378 | Flamespren | Flammensprengsel | community | 1 | `roshar-067` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Spren)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/wiki/Parole_di_Luce:_Capitolo_7) | ☐ confirmado<br>☐ corregir a: ______ |
-| 379 | Formless | Formlose | unverified | 1 | `roshar-009` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 380 | Forton | Forton | unverified | 1 | `sel-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 361 | Elendel Basin | Elantel-Becken | community | 1 | `scadrial-031` | [es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>glossary (status official)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/wiki/Lestiborner) | ☐ confirmado<br>☐ corregir a: ______ |
+| 362 | Elsecaller | Aufscheiner | community | 1 | `roshar-022` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
+| 363 | Emerald | Smaragd | unverified | 1 | `roshar-031` | [es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento)<br>glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 364 | Emerald Crown | Smaragdkrone | unverified | 1 | `otros-011` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 365 | Emerald Sea | smaragdgrüne See | unverified | 1 | `otros-001` | glossary (status official) | ☐ confirmado<br>☐ corregir a: ______ |
+| 366 | Emul | — | missing | 1 | `roshar-078` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 367 | Eshonai | Eschonai | unverified | 1 | `roshar-032` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 368 | ettmetal | Ettmetall | unverified | 1 | `scadrial-069` | [es.coppermind.net](https://es.coppermind.net/wiki/Ettmetal) | ☐ confirmado<br>☐ corregir a: ______ |
+| 369 | Evil | das Böse | unverified | 1 | `otros-075` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 370 | Faceless Immortals | Gesichtslose Unsterbliche | unverified | 1 | `scadrial-044` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 371 | Final Empire | Letztes Reich | community | 1 | `scadrial-005` | [de.wikipedia.org](https://de.wikipedia.org/wiki/Kinder_des_Nebels)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 372 | Firemoss | Feuermoos | unverified | 1 | `roshar-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 373 | Firesoul | Firesoul | unverified | 1 | `scadrial-075` | [es.coppermind.net](https://es.coppermind.net/wiki/Feruquimia)<br>[franco.wiki](https://franco.wiki/fr/Fils-des-brumes.html) | ☐ confirmado<br>☐ corregir a: ______ |
+| 374 | First Dreams | Erste Träume | unverified | 1 | `roshar-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 375 | First Heightening | Erste Steigerung | unverified | 1 | `nalthis-051` | [es.coppermind.net](https://es.coppermind.net/wiki/Elevación)<br>[cosmere.fr](https://cosmere.fr/src/documents/warbreaker-resume-complet.pdf) | ☐ confirmado<br>☐ corregir a: ______ |
+| 376 | First Ideal | Erstes Ideal | unverified | 1 | `roshar-013` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 377 | Fjeldor | Fjeldor | unverified | 1 | `sel-064` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 378 | Fjon | Fjon | unverified | 1 | `sel-058` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 379 | Flamespren | Flammensprengsel | community | 1 | `roshar-067` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Spren)<br>[stormlightarchive.fandom.com](https://stormlightarchive.fandom.com/it/wiki/Parole_di_Luce:_Capitolo_7) | ☐ confirmado<br>☐ corregir a: ______ |
+| 380 | Formless | Formlose | unverified | 1 | `roshar-009` | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 20
 
@@ -529,26 +529,26 @@ Términos 381–400. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 381 | Fortune | Glück | unverified | 1 | `cosmere-053` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 382 | Fourth Bridge | Vierte Brücke | unverified | 1 | `roshar-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 383 | Fuzz | Fuzz | unpublished | 1 | `cosmere-070` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 384 | Gasper | Gasper | unverified | 1 | `scadrial-070` | [es.coppermind.net](https://es.coppermind.net/wiki/Feruquimia)<br>[everybodywiki.com](https://everybodywiki.com/Magie_dans_Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 385 | Gaz | — | missing | 1 | `roshar-059` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 386 | Generation | Generation | community | 1 | `scadrial-061` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/TenSoon) | ☐ confirmado<br>☐ corregir a: ______ |
-| 387 | Geranid | — | missing | 1 | `roshar-067` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 388 | Ghajan | Ghajan | unverified | 1 | `sel-064` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 389 | gloryspren | Ruhmsprengsel | community | 1 | `roshar-067` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Spren)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Categoría:Spren) | ☐ confirmado<br>☐ corregir a: ______ |
-| 390 | god metal | Göttermetall | community | 1 | `cosmere-073` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kategorie:Allomantische_Metalle)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Metal_divino) | ☐ confirmado<br>☐ corregir a: ______ |
-| 391 | Goradel | — | missing | 1 | `scadrial-057` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 392 | Grands | die Großen | unverified | 1 | `sel-075` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 393 | Graves | — | missing | 1 | `roshar-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 394 | Gravitation | Gravitation | community | 1 | `roshar-040` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
-| 395 | greatshell | Großpanzer | unverified | 1 | `roshar-011` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 396 | Hearthstone | Herdstein | unverified | 1 | `roshar-051` | coppermind / fandom searches returned only the English name | ☐ confirmado<br>☐ corregir a: ______ |
-| 397 | Heavenly Ones | Himmlische | unverified | 1 | `roshar-038` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 398 | Heliodor | Heliodor | unverified | 1 | `roshar-088` | [es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento) | ☐ confirmado<br>☐ corregir a: ______ |
-| 399 | Hemalurgic | hämalurgisch | unverified | 1 | `scadrial-090` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 400 | Herdazian | Herdazianer | unverified | 1 | `roshar-050` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 381 | Forton | Forton | unverified | 1 | `sel-066` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 382 | Fortune | Glück | unverified | 1 | `cosmere-053` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 383 | Fourth Bridge | Vierte Brücke | unverified | 1 | `roshar-076` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 384 | Fuzz | Fuzz | unpublished | 1 | `cosmere-070` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 385 | Gasper | Gasper | unverified | 1 | `scadrial-070` | [es.coppermind.net](https://es.coppermind.net/wiki/Feruquimia)<br>[everybodywiki.com](https://everybodywiki.com/Magie_dans_Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 386 | Gaz | — | missing | 1 | `roshar-059` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 387 | Generation | Generation | community | 1 | `scadrial-061` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/TenSoon) | ☐ confirmado<br>☐ corregir a: ______ |
+| 388 | Geranid | — | missing | 1 | `roshar-067` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 389 | Ghajan | Ghajan | unverified | 1 | `sel-064` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 390 | gloryspren | Ruhmsprengsel | community | 1 | `roshar-067` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Spren)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Categoría:Spren) | ☐ confirmado<br>☐ corregir a: ______ |
+| 391 | god metal | Göttermetall | community | 1 | `cosmere-073` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kategorie:Allomantische_Metalle)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Metal_divino) | ☐ confirmado<br>☐ corregir a: ______ |
+| 392 | Goradel | — | missing | 1 | `scadrial-057` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 393 | Grands | die Großen | unverified | 1 | `sel-075` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 394 | Graves | — | missing | 1 | `roshar-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 395 | Gravitation | Gravitation | community | 1 | `roshar-040` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Wogenbinden) | ☐ confirmado<br>☐ corregir a: ______ |
+| 396 | greatshell | Großpanzer | unverified | 1 | `roshar-011` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 397 | Hearthstone | Herdstein | unverified | 1 | `roshar-051` | coppermind / fandom searches returned only the English name | ☐ confirmado<br>☐ corregir a: ______ |
+| 398 | Heavenly Ones | Himmlische | unverified | 1 | `roshar-038` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 399 | Heliodor | Heliodor | unverified | 1 | `roshar-088` | [es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento) | ☐ confirmado<br>☐ corregir a: ______ |
+| 400 | Hemalurgic | hämalurgisch | unverified | 1 | `scadrial-090` | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 21
 
@@ -556,26 +556,26 @@ Términos 401–420. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 401 | Herdazians | Herdazianer | unverified | 1 | `roshar-020` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 402 | highspren | Hochsprengsel | unverified | 1 | `roshar-053` | [es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Rompedores_del_Cielo)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Altospren_de_Szeth)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Categoría:Spren) | ☐ confirmado<br>☐ corregir a: ______ |
-| 403 | Holstep | Holschrit | community | 1 | `scadrial-057` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Yeden) | ☐ confirmado<br>☐ corregir a: ______ |
-| 404 | Homeland | die Heimat | unverified | 1 | `otros-050` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 405 | Honorbearers | Ehrenträger | unverified | 1 | `roshar-095` | [es.coppermind.net](https://es.coppermind.net/wiki/Elid-hija-Zeenid) | ☐ confirmado<br>☐ corregir a: ______ |
-| 406 | Hordelings | Hordlinge | unverified | 1 | `cosmere-058` | [es.coppermind.net](https://es.coppermind.net/wiki/Caelinora) | ☐ confirmado<br>☐ corregir a: ______ |
-| 407 | Horneater | Hornesser | unverified | 1 | `roshar-005` | it.coppermind.net (page title via search) "Picchi dei Mangiacorno", "Gli ocea… | ☐ confirmado<br>☐ corregir a: ______ |
-| 408 | Horneater Peaks | Hornesser-Gipfel | unverified | 1 | `cosmere-048` | it.coppermind.net (page title via search) "Picchi dei Mangiacorno" | ☐ confirmado<br>☐ corregir a: ______ |
-| 409 | House Hasting | Haus Hasting | unverified | 1 | `scadrial-007` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 410 | House Lekal | Haus Lekal | unverified | 1 | `scadrial-007` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 411 | House Renoux | Haus Rennoux | unverified | 1 | `scadrial-007` | [de.wikipedia.org](https://de.wikipedia.org/wiki/Kinder_des_Nebels) | ☐ confirmado<br>☐ corregir a: ______ |
-| 412 | House Venture | Haus Wager | community | 1 | `scadrial-007` | [de.wikipedia.org](https://de.wikipedia.org/wiki/Kinder_des_Nebels)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Elant_Wager)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Straff_Wager) | ☐ confirmado<br>☐ corregir a: ______ |
-| 413 | Ice Death | Eistod | unverified | 1 | `scadrial-087` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 414 | ichor-alcohol | Ichor-Alkohol | unverified | 1 | `nalthis-035` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/150218) | ☐ confirmado<br>☐ corregir a: ______ |
-| 415 | Identity | Identität | unverified | 1 | `cosmere-053` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 416 | Illumination | Illumination | community | 1 | `roshar-040` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 417 | Imperial Fool | Kaiserlicher Narr | unverified | 1 | `sel-057` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 418 | Imperial Guard | Kaiserliche Garde | unverified | 1 | `roshar-096` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 419 | inkspren | Tintensprengsel | community | 1 | `roshar-022` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 420 | Inner Sea | Inneres Meer | unverified | 1 | `nalthis-058` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 401 | Herdazian | Herdazianer | unverified | 1 | `roshar-050` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 402 | Herdazians | Herdazianer | unverified | 1 | `roshar-020` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 403 | highspren | Hochsprengsel | unverified | 1 | `roshar-053` | [es.coppermind.net](https://es.coppermind.net/wiki/Orden_de_los_Rompedores_del_Cielo)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Altospren_de_Szeth)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Categoría:Spren) | ☐ confirmado<br>☐ corregir a: ______ |
+| 404 | Holstep | Holschrit | community | 1 | `scadrial-057` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Yeden) | ☐ confirmado<br>☐ corregir a: ______ |
+| 405 | Homeland | die Heimat | unverified | 1 | `otros-050` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 406 | Honorbearers | Ehrenträger | unverified | 1 | `roshar-095` | [es.coppermind.net](https://es.coppermind.net/wiki/Elid-hija-Zeenid) | ☐ confirmado<br>☐ corregir a: ______ |
+| 407 | Hordelings | Hordlinge | unverified | 1 | `cosmere-058` | [es.coppermind.net](https://es.coppermind.net/wiki/Caelinora) | ☐ confirmado<br>☐ corregir a: ______ |
+| 408 | Horneater | Hornesser | unverified | 1 | `roshar-005` | it.coppermind.net (page title via search) "Picchi dei Mangiacorno", "Gli ocea… | ☐ confirmado<br>☐ corregir a: ______ |
+| 409 | Horneater Peaks | Hornesser-Gipfel | unverified | 1 | `cosmere-048` | it.coppermind.net (page title via search) "Picchi dei Mangiacorno" | ☐ confirmado<br>☐ corregir a: ______ |
+| 410 | House Hasting | Haus Hasting | unverified | 1 | `scadrial-007` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 411 | House Lekal | Haus Lekal | unverified | 1 | `scadrial-007` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 412 | House Renoux | Haus Rennoux | unverified | 1 | `scadrial-007` | [de.wikipedia.org](https://de.wikipedia.org/wiki/Kinder_des_Nebels) | ☐ confirmado<br>☐ corregir a: ______ |
+| 413 | House Venture | Haus Wager | community | 1 | `scadrial-007` | [de.wikipedia.org](https://de.wikipedia.org/wiki/Kinder_des_Nebels)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Elant_Wager)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Straff_Wager) | ☐ confirmado<br>☐ corregir a: ______ |
+| 414 | Ice Death | Eistod | unverified | 1 | `scadrial-087` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 415 | ichor-alcohol | Ichor-Alkohol | unverified | 1 | `nalthis-035` | [es.coppermind.net](https://es.coppermind.net/wiki/Especial:MobileDiff/150218) | ☐ confirmado<br>☐ corregir a: ______ |
+| 416 | Identity | Identität | unverified | 1 | `cosmere-053` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 417 | Illumination | Illumination | community | 1 | `roshar-040` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 418 | Imperial Fool | Kaiserlicher Narr | unverified | 1 | `sel-057` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 419 | Imperial Guard | Kaiserliche Garde | unverified | 1 | `roshar-096` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 420 | inkspren | Tintensprengsel | community | 1 | `roshar-022` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Strahlende_Ritter)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes) | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 22
 
@@ -583,26 +583,26 @@ Términos 421–440. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 421 | Ire | Ire | unpublished | 1 | `cosmere-071` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 422 | Iridescent Tones | Schillernde Töne | unverified | 1 | `nalthis-059` | [es.coppermind.net](https://es.coppermind.net/wiki/Tonos_iridiscentes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 423 | Ishikk | — | missing | 1 | `roshar-056` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 424 | Jalla | Jalla | unverified | 1 | `sel-059` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 425 | Jushu | Juschu | unverified | 1 | `roshar-021` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 426 | Kalami | — | missing | 1 | `roshar-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 427 | Kar | — | missing | 1 | `scadrial-065` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 428 | Keep Hasting | Festung Hasting | unverified | 1 | `scadrial-025` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 429 | Keep Venture | Festung Wager | unverified | 1 | `scadrial-025` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 430 | Kerztian | kerztianisch | unverified | 1 | `otros-070` | content/fr/otros.json (otros-038 already uses « Kerztiens ») | ☐ confirmado<br>☐ corregir a: ______ |
-| 431 | Kmakl | — | missing | 1 | `roshar-078` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 432 | Knobweed | Knotenkraut | unverified | 1 | `roshar-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 433 | Koloss-blooded | Koloss-Blütige | unverified | 1 | `scadrial-046` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 434 | Kushkam | Kuschkam | unverified | 1 | `roshar-096` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 435 | Kylrm | — | missing | 1 | `roshar-055` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 436 | Ladrian | — | missing | 1 | `scadrial-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 437 | Lady of Wishes | Herrin der Wünsche | unverified | 1 | `roshar-048` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 438 | Laral | — | missing | 1 | `roshar-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 439 | Larkins | Larkin | unverified | 1 | `cosmere-058` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 440 | Lashing | Peitsche | community | 1 | `roshar-040` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 421 | Inner Sea | Inneres Meer | unverified | 1 | `nalthis-058` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 422 | Ire | Ire | unpublished | 1 | `cosmere-071` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 423 | Iridescent Tones | Schillernde Töne | unverified | 1 | `nalthis-059` | [es.coppermind.net](https://es.coppermind.net/wiki/Tonos_iridiscentes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 424 | Ishikk | — | missing | 1 | `roshar-056` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 425 | Jalla | Jalla | unverified | 1 | `sel-059` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 426 | Jushu | Juschu | unverified | 1 | `roshar-021` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 427 | Kalami | — | missing | 1 | `roshar-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 428 | Kar | — | missing | 1 | `scadrial-065` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 429 | Keep Hasting | Festung Hasting | unverified | 1 | `scadrial-025` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 430 | Keep Venture | Festung Wager | unverified | 1 | `scadrial-025` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 431 | Kerztian | kerztianisch | unverified | 1 | `otros-070` | content/fr/otros.json (otros-038 already uses « Kerztiens ») | ☐ confirmado<br>☐ corregir a: ______ |
+| 432 | Kmakl | — | missing | 1 | `roshar-078` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 433 | Knobweed | Knotenkraut | unverified | 1 | `roshar-034` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 434 | Koloss-blooded | Koloss-Blütige | unverified | 1 | `scadrial-046` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 435 | Kushkam | Kuschkam | unverified | 1 | `roshar-096` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 436 | Kylrm | — | missing | 1 | `roshar-055` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 437 | Ladrian | — | missing | 1 | `scadrial-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 438 | Lady of Wishes | Herrin der Wünsche | unverified | 1 | `roshar-048` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 439 | Laral | — | missing | 1 | `roshar-051` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 440 | Larkins | Larkin | unverified | 1 | `cosmere-058` | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 23
 
@@ -610,26 +610,26 @@ Términos 441–460. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 441 | Laughing Ann | Lachende Ann | unverified | 1 | `otros-010` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 442 | Leecher | Egel | unverified | 1 | `scadrial-074` | [es.coppermind.net](https://es.coppermind.net/wiki/Cromo)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[plus.wikimonde.com](https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
-| 443 | Lestibournes | Lestiborner | community | 1 | `scadrial-051` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/wiki/Lestiborner) | ☐ confirmado<br>☐ corregir a: ______ |
-| 444 | Light | — | missing | 1 | `cosmere-054` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 445 | Lightweavers | Lichtweber | unverified | 1 | `roshar-039` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
-| 446 | Lodestar | Leitstern | unverified | 1 | `otros-063` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 447 | Lord Hasting | — | missing | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 448 | Lord Mistborn | Oberster Nebelgeborener | community | 1 | `scadrial-042` | [es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>glossary (status official)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/wiki/Lestiborner) | ☐ confirmado<br>☐ corregir a: ______ |
-| 449 | Lord Prelan | Hochprälan | community | 1 | `scadrial-065` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Tevidian) | ☐ confirmado<br>☐ corregir a: ______ |
-| 450 | Lord Renoux | Lord Renoux | unverified | 1 | `scadrial-055` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande) | ☐ confirmado<br>☐ corregir a: ______ |
-| 451 | Lord Shezler | Lord Shezler | unpublished | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 452 | Lord Tekiel | — | missing | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 453 | Lord Tresting | — | missing | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 454 | Lurcher | Eisenzieher | unverified | 1 | `scadrial-022` | [es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[cosmere.fr](https://cosmere.fr/scadrial/allomancie)<br>[it.everybodywiki.com](https://it.everybodywiki.com/Allomanzia) | ☐ confirmado<br>☐ corregir a: ______ |
-| 455 | Magnified Ones | Vergrößerte | unverified | 1 | `roshar-038` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 456 | Makabakam | — | missing | 1 | `roshar-072` | [es.coppermind.net](https://es.coppermind.net/wiki/Makabakam) | ☐ confirmado<br>☐ corregir a: ______ |
-| 457 | Mantiz | Mantiz | unpublished | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 458 | mark | Mark | unverified | 1 | `roshar-060` | [es.coppermind.net](https://es.coppermind.net/wiki/Esferas) | ☐ confirmado<br>☐ corregir a: ______ |
-| 459 | Masked Ones | Maskierte | unverified | 1 | `roshar-038` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 460 | Mastrell's Path | Pfad des Mastrell | unverified | 1 | `otros-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 441 | Lashing | Peitsche | community | 1 | `roshar-040` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 442 | Laughing Ann | Lachende Ann | unverified | 1 | `otros-010` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 443 | Leecher | Egel | unverified | 1 | `scadrial-074` | [es.coppermind.net](https://es.coppermind.net/wiki/Cromo)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[plus.wikimonde.com](https://plus.wikimonde.com/wiki/Magie_dans_Fils-des-brumes) | ☐ confirmado<br>☐ corregir a: ______ |
+| 444 | Lestibournes | Lestiborner | community | 1 | `scadrial-051` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/wiki/Lestiborner) | ☐ confirmado<br>☐ corregir a: ______ |
+| 445 | Light | — | missing | 1 | `cosmere-054` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 446 | Lightweavers | Lichtweber | unverified | 1 | `roshar-039` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Caballeros_Radiantes)<br>[fr.wikipedia.org](https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar) | ☐ confirmado<br>☐ corregir a: ______ |
+| 447 | Lodestar | Leitstern | unverified | 1 | `otros-063` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 448 | Lord Hasting | — | missing | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 449 | Lord Mistborn | Oberster Nebelgeborener | community | 1 | `scadrial-042` | [es.coppermind.net](https://es.coppermind.net/wiki/Fantasma)<br>glossary (status official)<br>[kosmeer.fandom.com](https://kosmeer.fandom.com/wiki/Lestiborner) | ☐ confirmado<br>☐ corregir a: ______ |
+| 450 | Lord Prelan | Hochprälan | community | 1 | `scadrial-065` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Tevidian) | ☐ confirmado<br>☐ corregir a: ______ |
+| 451 | Lord Renoux | Lord Renoux | unverified | 1 | `scadrial-055` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Kelsiers_Diebesbande) | ☐ confirmado<br>☐ corregir a: ______ |
+| 452 | Lord Shezler | Lord Shezler | unpublished | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 453 | Lord Tekiel | — | missing | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 454 | Lord Tresting | — | missing | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 455 | Lurcher | Eisenzieher | unverified | 1 | `scadrial-022` | [es.coppermind.net](https://es.coppermind.net/wiki/Alomancia/tabla)<br>[cosmere.fr](https://cosmere.fr/scadrial/allomancie)<br>[it.everybodywiki.com](https://it.everybodywiki.com/Allomanzia) | ☐ confirmado<br>☐ corregir a: ______ |
+| 456 | Magnified Ones | Vergrößerte | unverified | 1 | `roshar-038` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 457 | Makabakam | — | missing | 1 | `roshar-072` | [es.coppermind.net](https://es.coppermind.net/wiki/Makabakam) | ☐ confirmado<br>☐ corregir a: ______ |
+| 458 | Mantiz | Mantiz | unpublished | 1 | `scadrial-077` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 459 | mark | Mark | unverified | 1 | `roshar-060` | [es.coppermind.net](https://es.coppermind.net/wiki/Esferas) | ☐ confirmado<br>☐ corregir a: ______ |
+| 460 | Masked Ones | Maskierte | unverified | 1 | `roshar-038` | — | ☐ confirmado<br>☐ corregir a: ______ |
 
 ## Lote 24
 
@@ -637,14 +637,14 @@ Términos 461–480. Revisor/a: ________ · Fecha: ________
 
 | # | Inglés | Forma actual | Estado | Nº preg. | Ejemplos | Fuentes | Revisión |
 |---|---|---|---|---|---|---|---|
-| 461 | Mateform | Paarungsform | unverified | 1 | `roshar-032` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Odium) | ☐ confirmado<br>☐ corregir a: ______ |
-| 462 | Melishi | Melischi | unverified | 1 | `roshar-045` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
-| 463 | Midnight Mother | Mitternachtsmutter | unverified | 1 | `roshar-041` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 464 | Midnight Rose | Mitternachtsrose | unverified | 1 | `otros-011` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 465 | Midnight spores | Mitternachtssporen | unverified | 1 | `otros-007` | — | ☐ confirmado<br>☐ corregir a: ______ |
-| 466 | Mistborn: Secret History | Mistborn: Secret History | unpublished | 1 | `cosmere-027` | [es.coppermind.net](https://es.coppermind.net/wiki/Resumen:Mistborn:_Secret_History)<br>glossary (status official)<br>[bibliotheque.sceaux.fr](https://bibliotheque.sceaux.fr/EXPLOITATION/doc/SYRACUSE/950108/) | ☐ confirmado<br>☐ corregir a: ______ |
-| 467 | mistspren | Nebelsprengsel | community | 1 | `roshar-053` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Potenciación) | ☐ confirmado<br>☐ corregir a: ______ |
-| 468 | mistwraith | Nebelgeist | unverified | 1 | `scadrial-030` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 461 | Mastrell's Path | Pfad des Mastrell | unverified | 1 | `otros-069` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 462 | Mateform | Paarungsform | unverified | 1 | `roshar-032` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Odium) | ☐ confirmado<br>☐ corregir a: ______ |
+| 463 | Melishi | Melischi | unverified | 1 | `roshar-045` | [coppermind.net](https://coppermind.net) | ☐ confirmado<br>☐ corregir a: ______ |
+| 464 | Midnight Mother | Mitternachtsmutter | unverified | 1 | `roshar-041` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 465 | Midnight Rose | Mitternachtsrose | unverified | 1 | `otros-011` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 466 | Midnight spores | Mitternachtssporen | unverified | 1 | `otros-007` | — | ☐ confirmado<br>☐ corregir a: ______ |
+| 467 | Mistborn: Secret History | Mistborn: Secret History | unpublished | 1 | `cosmere-027` | [es.coppermind.net](https://es.coppermind.net/wiki/Resumen:Mistborn:_Secret_History)<br>glossary (status official)<br>[bibliotheque.sceaux.fr](https://bibliotheque.sceaux.fr/EXPLOITATION/doc/SYRACUSE/950108/) | ☐ confirmado<br>☐ corregir a: ______ |
+| 468 | mistspren | Nebelsprengsel | community | 1 | `roshar-053` | [kosmeer.fandom.com](https://kosmeer.fandom.com/de/wiki/Sprengsel)<br>[es.coppermind.net](https://es.coppermind.net/wiki/Potenciación) | ☐ confirmado<br>☐ corregir a: ______ |
 | 469 | Moon Scepter | Mondzepter | unverified | 1 | `sel-038` | Italian blurb snippet of L'anima dell'imperatore ("lo Scettro della Luna") | ☐ confirmado<br>☐ corregir a: ______ |
 | 470 | Moonlight | Mondlicht | unverified | 1 | `cosmere-050` | — | ☐ confirmado<br>☐ corregir a: ______ |
 | 471 | Mrall | — | missing | 1 | `roshar-073` | — | ☐ confirmado<br>☐ corregir a: ______ |
