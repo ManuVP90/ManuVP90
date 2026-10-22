@@ -30,6 +30,12 @@ dispone del mismo equipo, las mismas reglas y los mismos flujos.
 | `beta-marc` | Tester 2/4: club de lectura, iPhone, 4–6 jugadores | — | ídem |
 | `beta-hannah` | Tester 3/4: traductora alemana, calidad lingüística | — | ídem |
 | `beta-ignacio` | Tester 4/4: editor de la Coppermind, intenta romper la app | — | ídem |
+| `marketing-lead` | Plan de lanzamiento, posicionamiento, calendario y riesgos | `docs/marketing/` | lectura, edición, terminal, búsqueda web |
+| `marketing-copywriter` | Textos de marca en es/en: ficha tipo tienda, nota de prensa, FAQ | `docs/marketing/` | ídem |
+| `marketing-localizer` | Adapta los textos a fr/de/it con los nombres oficiales | `docs/marketing/` | ídem |
+| `community-manager` | Normas de cada comunidad, borradores de publicaciones y respuestas tipo | `docs/marketing/` | ídem |
+| `press-kit-designer` | Capturas reales de la app e imágenes para tienda y redes | `docs/marketing/assets/` | lectura, edición, terminal |
+| `brand-compliance` | Revisa marca, política de fans de Dragonsteel, spoilers, IA y veracidad | `docs/marketing/` | lectura, edición, terminal, búsqueda web |
 
 Principios de trabajo:
 - **Propiedad de ficheros disjunta:** los agentes que trabajan en paralelo nunca tocan los mismos
@@ -51,6 +57,7 @@ Se lanzan pidiéndoselo a Claude, por ejemplo: «ejecuta el flujo `beta-round` c
 | `beta-round` | Los 4 testers en paralelo → triaje deduplicado y priorizado | `round`, `previous`, `focus`, `testers` |
 | `team-meeting` | 5 perfiles revisan el proyecto → acta con plan por fases | `topic` |
 | `release` | Integra, regenera datos, pasa puertas, commit y push → QA posterior | `summary` |
+| `marketing-launch` | Plan → textos, comunidades y kit de prensa en paralelo → fr/de/it → cumplimiento | `goal`, `languages` |
 
 Ciclo habitual de una versión:
 
@@ -59,6 +66,8 @@ Ciclo habitual de una versión:
 3. `beta-round` y, después, los arreglos.
 4. `beta-round` en modo regresión, con `previous`.
 5. `release`.
+6. `marketing-launch` cuando la versión vaya a difundirse. El departamento de marketing solo
+   redacta: publica siempre el dueño. Ver `docs/marketing/README.md`.
 
 ## Ampliar el equipo
 
