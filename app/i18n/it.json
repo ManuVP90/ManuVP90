@@ -73,7 +73,7 @@
     "normal": "Normale",
     "hard": "Difficile",
     "expert": "Esperto",
-    "easyDesc": "Soprattutto domande facili (se finiscono, qualcuna media).",
+    "easyDesc": "Soprattutto domande facili (se finiscono, qualcuna più difficile).",
     "normalDesc": "Un mix di domande facili e medie, con qualche difficile.",
     "hardDesc": "Domande medie, difficili e da esperti.",
     "expertDesc": "Solo domande difficili e da esperti, per chi rilegge.",
@@ -200,7 +200,7 @@
     "duration": "Durata: {time}",
     "titleShared": "Vittoria condivisa: {names}!",
     "subtitleShared": "Domanda finale indovinata nello stesso giro.",
-    "groupNote": "Partita di gruppo: non conta per le statistiche, gli errori o i traguardi personali (quelli di gruppo sì)."
+    "groupNote": "Partita di gruppo: non conta per le statistiche, la collezione, gli errori o i traguardi personali (quelli di gruppo sì)."
   },
   "quick": {
     "title": "Partita veloce",
@@ -267,7 +267,7 @@
     "collectionFiltered": "Contano solo le opere selezionate nel filtro spoiler.",
     "byDifficulty": "Per difficoltà",
     "groupGames": "Partite di gruppo",
-    "groupNote": "Le partite classiche con 2 o più giocatori si contano a parte, come partite di gruppo: non si sommano alle tue risposte, a «I miei errori» né ai tuoi traguardi personali."
+    "groupNote": "Le partite classiche con 2 o più giocatori si contano a parte, come partite di gruppo: non si sommano alle tue risposte, alla tua collezione, a «I miei errori» né ai tuoi traguardi personali."
   },
   "settings": {
     "title": "Impostazioni",
@@ -286,7 +286,7 @@
     "none": "Deseleziona tutto",
     "data": "Dati",
     "reset": "Cancella tutti i dati",
-    "resetConfirm": "Verranno eliminati statistiche, record, partita salvata e impostazioni. Sei sicuro?",
+    "resetConfirm": "Verranno eliminati statistiche, record, partita salvata e impostazioni. Vuoi davvero cancellare tutto?",
     "resetDone": "Tutti i dati sono stati cancellati.",
     "storageWarning": "Memoria non disponibile: impostazioni e progressi non verranno conservati alla chiusura dell’app.",
     "resetNo": "Non cancellare",
@@ -314,7 +314,7 @@
   },
   "about": {
     "title": "Informazioni",
-    "body": "Un quiz in stile Trivial Pursuit sui mondi del Cosmoverso di Brandon Sanderson. Gioca da solo o passa il telefono agli amici.",
+    "body": "Un quiz in stile Trivial Pursuit sui mondi del Cosmoverso di Brandon Sanderson. Gioca in solitario o passa il telefono agli amici.",
     "howTo": "Come si gioca",
     "rule1": "Gira la ruota e rispondi a una domanda sul mondo su cui si ferma.",
     "rule2": "Risposta esatta: ottieni una carica di quel mondo e giri di nuovo. Risposta sbagliata: il turno passa al giocatore successivo.",
@@ -365,7 +365,7 @@
     "ruleGems": "Ogni risposta esatta carica la gemma di quel mondo; con due cariche è infusa. Infondile tutte e rispondi alla domanda finale per vincere.",
     "ruleLifelines": "Hai tre aiuti per partita: l’Atium elimina due risposte sbagliate, la Folgoluce ti fa scegliere di nuovo e il Soffio cambia la domanda.",
     "startTitle": "Tutto pronto!",
-    "startBody": "Gioca da solo o passa il telefono agli amici. Puoi rivedere questa introduzione da «Informazioni».",
+    "startBody": "Gioca in solitario o passa il telefono agli amici. Puoi rivedere questa introduzione da «Informazioni».",
     "start": "Inizia a giocare",
     "showWorks": "Mostra i libri: {world}",
     "readAll": "Ho letto tutto",
@@ -379,7 +379,7 @@
     "offlineCopied": "Sei offline: la segnalazione è stata copiata negli appunti per inviarla più tardi.",
     "offlineFailed": "Sei offline e non è stato possibile copiare la segnalazione. Riprova quando sei online.",
     "copy": "Copia la segnalazione",
-    "copied": "Segnalazione copiata negli appunti: incollala dove vuoi inviarla.",
+    "copied": "Segnalazione copiata. Incollala su GitHub o inviala a chi gestisce il gioco.",
     "copyFailed": "Impossibile copiare la segnalazione.",
     "field": {
       "id": "ID",

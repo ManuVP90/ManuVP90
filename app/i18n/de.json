@@ -73,7 +73,7 @@
     "normal": "Normal",
     "hard": "Schwer",
     "expert": "Experte",
-    "easyDesc": "Vor allem leichte Fragen (wenn sie ausgehen, auch mittlere).",
+    "easyDesc": "Vor allem leichte Fragen (wenn sie ausgehen, auch schwerere).",
     "normalDesc": "Eine Mischung aus leichten und mittleren Fragen, dazu ein paar schwere.",
     "hardDesc": "Mittlere, schwere und Expertenfragen.",
     "expertDesc": "Nur schwere und Expertenfragen – für alle, die die Bücher mehrmals gelesen haben.",
@@ -200,7 +200,7 @@
     "duration": "Dauer: {time}",
     "titleShared": "Geteilter Sieg: {names}!",
     "subtitleShared": "Finalfrage in derselben Runde richtig beantwortet.",
-    "groupNote": "Gruppenspiel: Es zählt nicht für die persönliche Statistik, Fehler oder Erfolge (Gruppenerfolge schon)."
+    "groupNote": "Gruppenspiel: Es zählt nicht für die persönliche Statistik, die Sammlung, Fehler oder Erfolge (Gruppenerfolge schon)."
   },
   "quick": {
     "title": "Schnelles Spiel",
@@ -267,7 +267,7 @@
     "collectionFiltered": "Es zählen nur die im Spoilerfilter angehakten Werke.",
     "byDifficulty": "Nach Schwierigkeit",
     "groupGames": "Gruppenspiele",
-    "groupNote": "Klassische Spiele mit 2 oder mehr Spielern werden getrennt als Gruppenspiele gezählt: Sie zählen nicht für deine Antworten, „Meine Fehler“ oder deine persönlichen Erfolge."
+    "groupNote": "Klassische Spiele mit 2 oder mehr Spielern werden getrennt als Gruppenspiele gezählt: Sie zählen nicht für deine Antworten, deine Sammlung, „Meine Fehler“ oder deine persönlichen Erfolge."
   },
   "settings": {
     "title": "Einstellungen",
@@ -374,12 +374,12 @@
     "skippedNoFilter": "Kein Spoilerfilter: Du bekommst Fragen zu allen Büchern. Das kannst du in den Einstellungen ändern."
   },
   "report": {
-    "link": "Fehler melden",
+    "link": "Problem melden",
     "describe": "Was ist falsch? (Antwort, Name, Übersetzung, Spoiler …)",
     "offlineCopied": "Du bist offline: Die Meldung wurde in die Zwischenablage kopiert, damit du sie später senden kannst.",
     "offlineFailed": "Du bist offline und die Meldung konnte nicht kopiert werden. Versuch es wieder, wenn du online bist.",
     "copy": "Meldung kopieren",
-    "copied": "Meldung in die Zwischenablage kopiert: Füge sie dort ein, wohin du sie senden möchtest.",
+    "copied": "Meldung kopiert. Füge sie auf GitHub ein oder schick sie an die Person, die das Spiel betreut.",
     "copyFailed": "Die Meldung konnte nicht kopiert werden.",
     "field": {
       "id": "ID",

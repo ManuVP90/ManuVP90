@@ -73,7 +73,7 @@
     "normal": "Normal",
     "hard": "Hard",
     "expert": "Expert",
-    "easyDesc": "Mostly easy questions (a few medium ones if they run out).",
+    "easyDesc": "Mostly easy questions (a few harder ones if they run out).",
     "normalDesc": "A mix of easy and medium questions, with a few hard ones.",
     "hardDesc": "Medium, hard and expert questions.",
     "expertDesc": "Hard and expert questions only, for rereaders.",
@@ -200,7 +200,7 @@
     "duration": "Duration: {time}",
     "titleShared": "Shared victory: {names}!",
     "subtitleShared": "Final question answered in the same round.",
-    "groupNote": "Group game: it doesn’t count towards personal stats, mistakes or achievements (group achievements do count)."
+    "groupNote": "Group game: it doesn’t count towards personal stats, the collection, mistakes or achievements (group achievements do count)."
   },
   "quick": {
     "title": "Quick game",
@@ -267,7 +267,7 @@
     "collectionFiltered": "Only the works ticked in the spoiler filter count.",
     "byDifficulty": "By difficulty",
     "groupGames": "Group games",
-    "groupNote": "Classic games with 2 or more players are counted apart, as group games: they don’t add to your answers, “My mistakes” or your personal achievements."
+    "groupNote": "Classic games with 2 or more players are counted apart, as group games: they don’t add to your answers, your collection, “My mistakes” or your personal achievements."
   },
   "settings": {
     "title": "Settings",
@@ -379,7 +379,7 @@
     "offlineCopied": "You’re offline: the report was copied to the clipboard so you can send it later.",
     "offlineFailed": "You’re offline and the report couldn’t be copied. Try again when you’re online.",
     "copy": "Copy report",
-    "copied": "Report copied to the clipboard: paste it wherever you want to send it.",
+    "copied": "Report copied. Paste it on GitHub or send it to whoever maintains the game.",
     "copyFailed": "The report couldn’t be copied.",
     "field": {
       "id": "ID",

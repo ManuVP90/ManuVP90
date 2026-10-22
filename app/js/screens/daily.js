@@ -6,7 +6,7 @@
 import { h, svg } from '../dom.js';
 import { ICONS, gemSvg } from '../icons.js';
 import { t, num } from '../i18n.js';
-import { app, go, screen, topBar, setBack, confirmDialog, toast, recordAnswer, noteMissed, noteSeen, getDaily, saveDaily, noQuestionsBanner, filterIsEmpty, catStyle, makePool } from '../core.js';
+import { app, go, screen, topBar, setBack, confirmDialog, toast, recordAnswer, noteMissed, noteSeen, getDaily, saveDaily, noQuestionsBanner, filterIsEmpty, catStyle, makePool, actionButton } from '../core.js';
 import { TIMER_SECONDS } from '../config.js';
 import { dateKey, addDays, dailyPick, recordDaily, currentStreak, canPlayDaily, shareText, DAILY_LENGTH } from '../daily.js';
 import { questionView, emptyFx, newClock } from '../components/question.js';
@@ -27,7 +27,9 @@ export function dailyStatus() {
   const day = today();
   if (d.run) return { state: 'run', n: d.run.index + 1, total: d.run.items.length };
   if (!canPlayDaily(d, day)) {
-    const r = d.result?.date === d.last ? d.result : null;
+    // "Done today" only for today's result: with the device date moved back (beta 5, item 13)
+    // the last result is from a later date, so Home just says the latest challenge was played.
+    const r = d.result?.date === d.last && d.result.date === day ? d.result : null;
     if (!r) return { state: 'locked' };
     return { state: 'done', score: r.marks.filter((m) => m.ok).length, total: r.marks.length, streak: currentStreak(d, day) };
   }
@@ -54,7 +56,7 @@ function lockedView(d) {
       h('p', { class: 'banner banner-info daily-clock-note', role: 'note' }, t('daily.clockBack', { date: formatDate(addDays(d.last, 1)) })),
       streakLine(d, today())),
     h('div', { class: 'stack-actions' },
-      h('button', { type: 'button', class: 'btn btn-ghost btn-block', 'data-autofocus': '', onclick: () => go('home') }, t('common.home'))));
+      actionButton({ class: 'btn btn-ghost btn-block', 'data-autofocus': '', onclick: () => go('home') }, t('common.home'))));
 }
 
 function streakLine(d, day) {
@@ -87,7 +89,7 @@ function introView(d) {
       streakLine(d, day)),
     filterActive() && !empty ? h('p', { class: 'banner banner-info daily-filter-note', role: 'note' }, t('daily.filterNote')) : null,
     h('div', { class: 'sticky-actions' },
-      h('button', { type: 'button', class: 'btn btn-primary btn-block daily-start', 'data-autofocus': '', disabled: empty, onclick: start }, svg(ICONS.play), t('daily.start'))));
+      actionButton({ class: 'btn btn-primary btn-block daily-start', 'data-autofocus': '', disabled: empty, onclick: start }, svg(ICONS.play), t('daily.start'))));
 }
 
 /** Leaving a timed question asks first: its time keeps running. */
@@ -205,10 +207,10 @@ function resultView(d) {
       r.date === day ? h('p', { class: 'muted daily-next' }, t('daily.comeBack')) : null),
     h('pre', { class: 'daily-share-preview', 'aria-label': t('daily.sharePreview') }, text),
     h('div', { class: 'stack-actions' },
-      h('button', { type: 'button', class: 'btn btn-primary btn-block daily-share', 'data-autofocus': '', onclick: share }, svg(ICONS.share), t('daily.share'))),
+      actionButton({ class: 'btn btn-primary btn-block daily-share', 'data-autofocus': '', onclick: share, once: false }, svg(ICONS.share), t('daily.share'))),
     r.ids?.length ? reviewSection(missedIds, 'daily') : null,
     h('div', { class: 'stack-actions' },
-      h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: () => go('home') }, t('common.home'))));
+      actionButton({ class: 'btn btn-ghost btn-block daily-home', onclick: () => go('home') }, t('common.home'))));
   // A perfect day: confetti once per session (not on every visit to the result).
   if (ok === total && total === DAILY_LENGTH && cheered !== r.date) {
     cheered = r.date;

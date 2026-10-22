@@ -539,11 +539,11 @@
  },
  "honorspren": {
   "es": "honorspren",
-  "status": "official",
+  "status": "community",
   "sources": [
    "https://es.coppermind.net/wiki/Especial:MobileDiff/153468 (Kaladin page; \"honorspren\" kept untranslated)"
   ],
-  "notes": "Spot-check OK: kept untranslated."
+  "notes": "Kept untranslated. Status aligned with the beta round 4 audit (community): no Nova text found online (searches 2026-10 returned only en/it Coppermind and the Nova blurb, which names Syl but not the term). Gender varies per spren (Syl, Phendorana f.; Notum m.): avoid article/adjective agreement in questions where honorspren names are options (roshar-074/075)."
  },
  "Fused": {
   "es": "Fusionados",
@@ -1954,11 +1954,11 @@
  },
  "Shaod": {
   "es": "Shaod",
-  "status": "official",
+  "status": "community",
   "sources": [
-   "glossary (status official)"
+   "glossary (es note: LA Shaod, feminine)"
   ],
-  "notes": "Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass."
+  "notes": "Feminine: «la Shaod». All es questions unified to the feminine (sel-020, sel-066, sel-067, sel-069 fixed from «el/del Shaod»). Status aligned with the beta round 4 audit (community); Nova text not confirmed online."
  },
  "Shard": {
   "es": "Esquirla",
@@ -4915,5 +4915,13 @@
   "status": "unchanged",
   "sources": [],
   "notes": "Typographic apostrophe (U+2019) in Spanish text, per beta round 4 (m16)."
+ },
+ "odiv": {
+  "es": "odiv",
+  "status": "unchanged",
+  "sources": [
+   "https://coppermind.net/wiki/Odiv (Derethi rank)"
+  ],
+  "notes": "Derethi rank (cosmere-084). No Spanish form found; kept as in English (golden rule fallback), lowercase like arteth/grador. Needs QA against Nova Elantris."
  }
 }

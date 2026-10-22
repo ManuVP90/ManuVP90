@@ -73,7 +73,7 @@
     "normal": "Normal",
     "hard": "Difficile",
     "expert": "Expert",
-    "easyDesc": "Surtout des questions faciles (quelques moyennes si elles sont épuisées).",
+    "easyDesc": "Surtout des questions faciles (quelques-unes plus difficiles si elles sont épuisées).",
     "normalDesc": "Un mélange de questions faciles et moyennes, avec quelques difficiles.",
     "hardDesc": "Des questions moyennes, difficiles et de niveau expert.",
     "expertDesc": "Uniquement des questions difficiles et de niveau expert, pour ceux qui relisent.",
@@ -200,7 +200,7 @@
     "duration": "Durée : {time}",
     "titleShared": "Victoire partagée : {names} !",
     "subtitleShared": "Question finale réussie dans la même manche.",
-    "groupNote": "Partie en groupe : elle ne compte ni dans les statistiques, ni dans les erreurs, ni dans les succès personnels (les succès de groupe, si)."
+    "groupNote": "Partie en groupe : elle ne compte ni dans les statistiques, ni dans la collection, ni dans les erreurs, ni dans les succès personnels (les succès de groupe, si)."
   },
   "quick": {
     "title": "Partie rapide",
@@ -267,7 +267,7 @@
     "collectionFiltered": "Seules comptent les œuvres cochées dans le filtre anti-spoilers.",
     "byDifficulty": "Par difficulté",
     "groupGames": "Parties en groupe",
-    "groupNote": "Les parties classiques à 2 joueurs ou plus sont comptées à part, comme parties en groupe : elles ne s’ajoutent ni à vos réponses, ni à « Mes erreurs », ni à vos succès personnels."
+    "groupNote": "Les parties classiques à 2 joueurs ou plus sont comptées à part, comme parties en groupe : elles ne s’ajoutent ni à vos réponses, ni à votre collection, ni à « Mes erreurs », ni à vos succès personnels."
   },
   "settings": {
     "title": "Réglages",
@@ -286,7 +286,7 @@
     "none": "Tout décocher",
     "data": "Données",
     "reset": "Effacer toutes les données",
-    "resetConfirm": "Vos statistiques, records, partie sauvegardée et réglages seront supprimés. Êtes-vous sûr ?",
+    "resetConfirm": "Vos statistiques, records, partie sauvegardée et réglages seront supprimés. Voulez-vous vraiment tout effacer ?",
     "resetDone": "Toutes les données ont été effacées.",
     "storageWarning": "Le stockage n’est pas disponible : les réglages et la progression ne seront pas conservés après la fermeture.",
     "resetNo": "Ne rien effacer",
@@ -314,7 +314,7 @@
   },
   "about": {
     "title": "À propos",
-    "body": "Un jeu de questions façon Trivial Pursuit sur les mondes du Cosmère de Brandon Sanderson. Jouez seul ou faites passer le téléphone entre amis.",
+    "body": "Un jeu de questions façon Trivial Pursuit sur les mondes du Cosmère de Brandon Sanderson. Jouez en solo ou faites passer le téléphone entre amis.",
     "howTo": "Règles du jeu",
     "rule1": "Faites tourner la roue et répondez à une question sur le monde désigné.",
     "rule2": "Bonne réponse : vous gagnez une charge de ce monde et vous rejouez. Mauvaise réponse : la main passe au joueur suivant.",
@@ -365,7 +365,7 @@
     "ruleGems": "Chaque bonne réponse charge la gemme de ce monde ; deux charges l’infusent. Infusez-les toutes et réussissez la question finale pour gagner.",
     "ruleLifelines": "Vous avez trois aides par partie : l’Atium élimine deux mauvaises réponses, la Fulgiflamme vous laisse choisir à nouveau et le Souffle change la question.",
     "startTitle": "C’est parti !",
-    "startBody": "Jouez seul ou faites passer le téléphone. Vous pourrez revoir cette introduction depuis « À propos ».",
+    "startBody": "Jouez en solo ou faites passer le téléphone. Vous pourrez revoir cette introduction depuis « À propos ».",
     "start": "Commencer à jouer",
     "showWorks": "Afficher les livres : {world}",
     "readAll": "J’ai tout lu",
@@ -377,9 +377,9 @@
     "link": "Signaler une erreur",
     "describe": "Qu’est-ce qui ne va pas ? (réponse, nom, traduction, spoiler…)",
     "offlineCopied": "Vous êtes hors ligne : le signalement a été copié dans le presse-papiers pour l’envoyer plus tard.",
-    "offlineFailed": "Vous êtes hors ligne et le signalement n’a pas pu être copié. Réessayez une fois connecté.",
+    "offlineFailed": "Vous êtes hors ligne et le signalement n’a pas pu être copié. Réessayez quand vous serez en ligne.",
     "copy": "Copier le signalement",
-    "copied": "Signalement copié dans le presse-papiers : collez-le là où vous voulez l’envoyer.",
+    "copied": "Signalement copié. Collez-le sur GitHub ou envoyez-le à la personne qui gère le jeu.",
     "copyFailed": "Impossible de copier le signalement.",
     "field": {
       "id": "ID",

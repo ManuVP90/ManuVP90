@@ -6,6 +6,8 @@ import { ACHIEVEMENTS } from '../achievements.js';
 import { CATEGORIES, LIFELINES, LEVEL_IDS, DIFFICULTIES } from '../config.js';
 
 const pct = (c, a) => (a ? Math.round((c / a) * 100) : 0);
+/** "42 %" / "42%" as the language writes it (victory.percent: no-break space where one is used; beta 5, item 8). */
+const pctText = (c, a) => t('victory.percent', { n: num(pct(c, a)) });
 
 export function statsScreen() {
   const s = getStats();
@@ -29,7 +31,7 @@ export function statsScreen() {
       tile(t('stats.quickGames'), num(s.quickGames)),
       tile(t('stats.bestQuick'), num(s.bestQuick)),
       tile(t('stats.answered'), num(answered)),
-      tile(t('stats.accuracy'), answered ? `${pct(correct, answered)} %` : '—')),
+      tile(t('stats.accuracy'), answered ? pctText(correct, answered) : '—')),
     h('p', { class: 'muted stats-group-note', role: 'note' }, t('stats.groupNote')),
     collectionCard(),
     h('section', { class: 'card quick-records' },
@@ -47,9 +49,9 @@ export function statsScreen() {
         return h('li', { class: 'bar-row', ...catStyle(c) },
           h('span', { class: 'bar-gem', 'aria-hidden': 'true', html: gemSvg(c, { size: 22 }) }),
           h('span', { class: 'bar-label' }, t(`cat.${c}`)),
-          h('span', { class: 'bar-track', role: 'img', 'aria-label': `${t(`cat.${c}`)}: ${p} % (${t('stats.of', { correct: ok, total: a })})` },
+          h('span', { class: 'bar-track', role: 'img', 'aria-label': `${t(`cat.${c}`)}: ${pctText(ok, a)} (${t('stats.of', { correct: ok, total: a })})` },
             h('span', { class: 'bar-fill', style: { width: `${p}%` } })),
-          h('span', { class: 'bar-value', 'aria-hidden': 'true' }, a ? `${p} %` : '—'));
+          h('span', { class: 'bar-value', 'aria-hidden': 'true' }, a ? pctText(ok, a) : '—'));
       }))),
     h('section', { class: 'card' },
       h('h2', { class: 'section-title' }, t('stats.lifelines')),
@@ -74,7 +76,7 @@ function collectionCard() {
   return h('section', { class: 'card collection' },
     h('h2', { class: 'section-title' }, t('stats.collection')),
     h('p', { class: 'col-total' }, h('strong', {}, t('stats.discovered', { n: num(col.seen), total: num(col.total) })),
-      h('span', { class: 'muted' }, ` · ${pct(col.seen, col.total)} %`)),
+      ' ', h('span', { class: 'muted col-pct' }, `· ${pctText(col.seen, col.total)}`)),
     filtered ? h('p', { class: 'muted col-filter' }, t('stats.collectionFiltered')) : null,
     h('ul', { class: 'col-list col-worlds' }, col.worlds.filter((w) => w.total > 0).map((w) => row(`col-world`, h('span', { class: 'bar-gem', 'aria-hidden': 'true', html: gemSvg(w.cat, { size: 20, charges: w.seen >= w.total ? 2 : w.seen ? 1 : 0 }) }), t(`cat.${w.cat}`), w, { ...catStyle(w.cat), dataset: { cat: w.cat } }))),
     h('h3', { class: 'col-subtitle' }, t('stats.byDifficulty')),

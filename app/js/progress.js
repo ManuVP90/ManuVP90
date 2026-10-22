@@ -42,6 +42,24 @@ export function cleanIdMap(map, langs, max = MISSED_MAX) {
   return out;
 }
 
+/**
+ * `base` with the ids of `extra` added per language (ids already in `base` keep their place),
+ * every list cleaned and capped at `max`. Used once to seed the collection from the recently-seen
+ * ring of players from before 1.6.0 (beta 5: the ring itself is no longer merged).
+ */
+export function mergeIdMaps(base, extra, langs, max = MISSED_MAX) {
+  const a = cleanIdMap(base, langs, max);
+  const b = cleanIdMap(extra, langs, max);
+  const out = {};
+  for (const l of langs) {
+    const own = a[l] || [];
+    const have = new Set(own);
+    const ids = cleanIds([...(b[l] || []).filter((id) => !have.has(id)), ...own], max);
+    if (ids.length) out[l] = ids;
+  }
+  return out;
+}
+
 // ---------- export / import code ----------
 // Code = "CT1." + base64url(JSON) or, when the browser can compress, "CT1z." + base64url(deflate-raw(JSON)).
 // JSON = { app: 'cosmere-trivia', v: 1, d: <data>, c: <checksum of JSON.stringify(d)> }.

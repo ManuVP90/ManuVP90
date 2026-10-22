@@ -73,7 +73,7 @@
     "normal": "Normal",
     "hard": "Difícil",
     "expert": "Experto",
-    "easyDesc": "Sobre todo preguntas fáciles (si se agotan, alguna media).",
+    "easyDesc": "Sobre todo preguntas fáciles (si se agotan, alguna más difícil).",
     "normalDesc": "Mezcla de preguntas fáciles y medias, con alguna difícil.",
     "hardDesc": "Preguntas medias, difíciles y de experto.",
     "expertDesc": "Solo preguntas difíciles y de experto, para quienes releen.",
@@ -200,7 +200,7 @@
     "duration": "Duración: {time}",
     "titleShared": "¡Victoria compartida: {names}!",
     "subtitleShared": "Pregunta final acertada en la misma ronda.",
-    "groupNote": "Partida en grupo: no cuenta en las estadísticas, los fallos ni los logros personales (sí en los logros de grupo)."
+    "groupNote": "Partida en grupo: no cuenta en las estadísticas, la colección, los fallos ni los logros personales (sí en los logros de grupo)."
   },
   "quick": {
     "title": "Partida rápida",
@@ -267,7 +267,7 @@
     "collectionFiltered": "Solo cuentan las obras marcadas en el filtro de spoilers.",
     "byDifficulty": "Por dificultad",
     "groupGames": "Partidas en grupo",
-    "groupNote": "Las partidas clásicas de 2 o más jugadores se cuentan aparte, como partidas en grupo: no suman a tus aciertos, a «Mis fallos» ni a tus logros personales."
+    "groupNote": "Las partidas clásicas de 2 o más jugadores se cuentan aparte, como partidas en grupo: no suman a tus aciertos, a tu colección, a «Mis fallos» ni a tus logros personales."
   },
   "settings": {
     "title": "Ajustes",
@@ -379,7 +379,7 @@
     "offlineCopied": "Sin conexión: hemos copiado el informe al portapapeles para que lo envíes más tarde.",
     "offlineFailed": "Sin conexión y no se ha podido copiar el informe. Inténtalo de nuevo con conexión.",
     "copy": "Copiar informe",
-    "copied": "Informe copiado al portapapeles: pégalo donde quieras enviarlo.",
+    "copied": "Informe copiado. Pégalo en GitHub o envíaselo a quien mantiene el juego.",
     "copyFailed": "No se ha podido copiar el informe.",
     "field": {
       "id": "ID",

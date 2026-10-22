@@ -1665,5 +1665,45 @@
   "status": "unchanged",
   "sources": [],
   "notes": "Melishi is male in canon (Coppermind: he/him); beta round 4 review fixed roshar-045, which had made him a woman. «il Forgialegami Melishi»."
+ },
+ "gyorn": {
+  "it": "gyorn",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net (search snippet) \"Gyorn Hrathen\""
+  ],
+  "notes": "m., invariable (il gyorn, i gyorn). Already used in sel-003, sel-061, sel-063."
+ },
+ "Obligator": {
+  "it": "Obbligatore",
+  "status": "community",
+  "sources": [
+   "it.coppermind.net \"Culto d’Acciaio\" page (search snippets)"
+  ],
+  "notes": "m. (l’Obbligatore, gli Obbligatori). Already used in scadrial and cosmere-063; Mondadori text not checked directly."
+ },
+ "Arteth": {
+  "it": "arteth",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Derethi rank; no Italian form found, kept English (already used in sel-061/062)."
+ },
+ "Grador": {
+  "it": "grador",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Derethi rank; no Italian form found, kept English (already used in sel-061/062)."
+ },
+ "Odiv": {
+  "it": "odiv",
+  "status": "unverified",
+  "sources": [],
+  "notes": "Derethi rank (Dilaf is Hrathen’s odiv); no Italian form found, kept English."
+ },
+ "Renoux": {
+  "it": "Renoux",
+  "status": "unchanged",
+  "sources": [],
+  "notes": "Proper name, invariable; already used in scadrial.json."
  }
 }

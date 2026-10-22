@@ -1910,5 +1910,147 @@
       "Aon"
     ],
     "source": "Tress of the Emerald Sea"
+  },
+  {
+    "id": "cosmere-081",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "In Elantris, what does Hoid help Sarene do?",
+    "a": "Smuggle weapons into Elantris",
+    "wrong": [
+      "Spy on the Derethi priests",
+      "Hide from the palace guards",
+      "Forge royal documents"
+    ],
+    "explain": "Late in the novel, Hoid quietly helps Sarene get weapons into the city of Elantris.",
+    "terms": [
+      "Hoid",
+      "Elantris",
+      "Sarene",
+      "Derethi"
+    ],
+    "source": "Elantris, ch. 58; Postscript (tenth-anniversary edition)"
+  },
+  {
+    "id": "cosmere-082",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "When Hoid appears in Elantris to help Sarene, how is he disguised?",
+    "a": "Wrapped in bandages",
+    "wrong": [
+      "In a gyorn's red armor",
+      "In a palace guard's uniform",
+      "In a Korathi priest's robes"
+    ],
+    "explain": "Hoid hides his face under bandages while he quietly aids Sarene.",
+    "terms": [
+      "Hoid",
+      "Elantris",
+      "Sarene",
+      "gyorn",
+      "Korathi"
+    ],
+    "source": "Elantris, ch. 58; Postscript (tenth-anniversary edition)"
+  },
+  {
+    "id": "cosmere-083",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "final-empire",
+    "q": "Which of these characters belongs to Mistborn: The Final Empire rather than to Elantris?",
+    "a": "Clubs",
+    "wrong": [
+      "Mareshe",
+      "Ahan",
+      "Lukel"
+    ],
+    "explain": "Clubs is the Smoker and carpenter of the thieving crew; Mareshe, Ahan and Lukel are characters from Elantris.",
+    "terms": [
+      "Clubs",
+      "Mareshe",
+      "Ahan",
+      "Lukel",
+      "Mistborn: The Final Empire",
+      "Elantris",
+      "Smoker"
+    ],
+    "source": "Mistborn: The Final Empire"
+  },
+  {
+    "id": "cosmere-084",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "final-empire",
+    "q": "Which of these titles belongs to the Steel Ministry of The Final Empire rather than to the Derethi hierarchy of Elantris?",
+    "a": "Obligator",
+    "wrong": [
+      "Arteth",
+      "Grador",
+      "Odiv"
+    ],
+    "explain": "Obligators are the priests of the Steel Ministry; arteth, grador and odiv are positions in the Derethi chain of command.",
+    "terms": [
+      "Steel Ministry",
+      "The Final Empire",
+      "Derethi",
+      "Elantris",
+      "Obligator",
+      "Arteth",
+      "Grador",
+      "Odiv"
+    ],
+    "source": "Mistborn: The Final Empire"
+  },
+  {
+    "id": "cosmere-085",
+    "category": "cosmere",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "Which of these characters belongs to Elantris rather than to Mistborn: The Final Empire?",
+    "a": "Eondel",
+    "wrong": [
+      "Dockson",
+      "Camon",
+      "Ham"
+    ],
+    "explain": "Eondel is an Arelene noble and soldier who allies with Sarene; Dockson, Camon and Ham are characters from The Final Empire.",
+    "terms": [
+      "Eondel",
+      "Dockson",
+      "Camon",
+      "Ham",
+      "Elantris",
+      "Mistborn: The Final Empire",
+      "Arelene",
+      "Sarene",
+      "The Final Empire"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "cosmere-086",
+    "category": "cosmere",
+    "difficulty": 2,
+    "work": "final-empire",
+    "q": "Which of these places appears in Mistborn: The Final Empire rather than in Elantris?",
+    "a": "Fellise",
+    "wrong": [
+      "Ake",
+      "Ato",
+      "Toa"
+    ],
+    "explain": "Fellise is the small town outside the imperial capital where the Renoux mansion stands; Ake, Ato and Toa are the outer cities around Elantris.",
+    "terms": [
+      "Fellise",
+      "Ake",
+      "Ato",
+      "Toa",
+      "Mistborn: The Final Empire",
+      "Elantris",
+      "Renoux"
+    ],
+    "source": "Mistborn: The Final Empire"
   }
 ]

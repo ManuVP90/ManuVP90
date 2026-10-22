@@ -6,7 +6,7 @@
 import { h, svg } from '../dom.js';
 import { ICONS } from '../icons.js';
 import { t, num } from '../i18n.js';
-import { app, go, screen, topBar, makePool, recordAnswer, recordLifeline, updateStats, getStats, setBack, confirmDialog, levelPicker, levelBadge, noQuestionsBanner, filterIsEmpty, noteMissed, unlockAchievement } from '../core.js';
+import { app, go, screen, topBar, makePool, recordAnswer, recordLifeline, updateStats, getStats, setBack, confirmDialog, levelPicker, levelBadge, noQuestionsBanner, filterIsEmpty, noteMissed, unlockAchievement, actionButton } from '../core.js';
 import * as store from '../storage.js';
 import { CATEGORIES, LEVEL_IDS, QUICK_LENGTH, TIMER_SECONDS, fullLifelines, levelOrDefault } from '../config.js';
 import { quickPlan, shuffledOrder } from '../data.js';
@@ -154,8 +154,8 @@ function introView() {
       legacy),
     levelPicker(level, (l) => { level = l; showBest(); }),
     h('div', { class: 'sticky-actions' },
-      h('button', {
-        type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '', disabled: empty,
+      actionButton({
+        class: 'btn btn-primary btn-block quick-start', 'data-autofocus': '', disabled: empty,
         onclick: () => { fx.tap(); go('quick', { start: level }); },
       }, svg(ICONS.play), t('quick.start'))));
 }
@@ -197,7 +197,7 @@ export function quickScreen(params = {}) {
       return screen('quick-empty', topBar(t('quick.title')),
         noQuestionsBanner(),
         h('p', { class: 'muted center' }, t('quick.emptySaved', { n: saved.index + 1, total: saved.total })),
-        h('div', { class: 'stack-actions' }, h('button', { type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '', onclick: () => go('home') }, t('common.home'))));
+        h('div', { class: 'stack-actions' }, actionButton({ class: 'btn btn-primary btn-block', 'data-autofocus': '', onclick: () => go('home') }, t('common.home'))));
     }
     if (!run.seen.includes(q.id)) run.seen.push(q.id);
     run.current = { id: q.id, order: shuffledOrder(), fx: emptyFx(), clock: newClock() };
@@ -294,8 +294,8 @@ function resultView() {
       h('p', { class: 'muted quick-best' }, t('quick.bestLevel', { level: t(`level.${run.level}`), n: num(best) }))),
     reviewSection(run.missed || []),
     h('div', { class: 'stack-actions' },
-      h('button', { type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '', onclick: leave(() => go('quick', { restart: true })) }, svg(ICONS.refresh), t('common.playAgain')),
-      h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: leave(() => go('home')) }, t('common.home'))));
+      actionButton({ class: 'btn btn-primary btn-block quick-again', 'data-autofocus': '', onclick: leave(() => go('quick', { restart: true })) }, svg(ICONS.refresh), t('common.playAgain')),
+      actionButton({ class: 'btn btn-ghost btn-block quick-home', onclick: leave(() => go('home')) }, t('common.home'))));
   if (run.record && !run.restored) requestAnimationFrame(() => { confetti(el, 60); fx.victory(); });
   return el;
 }

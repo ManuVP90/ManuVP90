@@ -2185,19 +2185,20 @@
     "es": "obligador",
     "fr": "obligateur",
     "de": "Obligator",
-    "it": "obbligatore",
+    "it": "Obbligatore",
     "status": {
       "es": "unverified",
       "fr": "community",
       "de": "community",
-      "it": "unverified"
+      "it": "community"
     },
-    "notes": "[es] Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass. [de] Confirmed. pl. Obligatoren. [es] Translator recall of Nova (El imperio final). Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [de] pl. Obligatoren. [audit] fr: downgraded from official to community (beta round 4, m8): no source on record from the published fr edition (wiki/fan/internal references only).",
+    "notes": "[es] Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass. [de] Confirmed. pl. Obligatoren. [es] Translator recall of Nova (El imperio final). Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [de] pl. Obligatoren. [audit] fr: downgraded from official to community (beta round 4, m8): no source on record from the published fr edition (wiki/fan/internal references only). [it] m. (l’Obbligatore, gli Obbligatori). Already used in scadrial and cosmere-063; Mondadori text not checked directly.",
     "sources": [
       "https://es.coppermind.net/wiki/Ministerio_del_Acero",
       "glossary (status official)",
       "https://cosmere.fr/scadrial/livres/fils-des-brumes-l-empire-ultime (annotations: Ministère d'Acier, obligateurs)",
-      "https://kosmeer.fandom.com/de/wiki/Obligator"
+      "https://kosmeer.fandom.com/de/wiki/Obligator",
+      "it.coppermind.net \"Culto d’Acciaio\" page (search snippets)"
     ]
   },
   "kandra": {
@@ -4158,7 +4159,7 @@
       "de": "community",
       "it": "community"
     },
-    "notes": "es: es.coppermind uses \"honorspren\" (Nova form not confirmed; may be \"spren del honor\"). fr: \"sprène d'honneur\" (fr.wikipedia table). it: \"Onorespren\". [es] Spot-check OK: kept untranslated. [fr] Glossary official form kept (not independently re-verified). [de] Confirmed. der/das Sprengsel; pl. die Ehrensprengsel. [it] m. invariable. [audit] es: downgraded from official to community (beta round 4, m8): no source on record from the published es edition (wiki/fan/internal references only). [audit] fr: downgraded from official to community (beta round 4, m8): no source on record from the published fr edition (wiki/fan/internal references only). [audit] it: downgraded from official to community (beta round 4, m8): no source on record from the published it edition (wiki/fan/internal references only).",
+    "notes": "es: es.coppermind uses \"honorspren\" (Nova form not confirmed; may be \"spren del honor\"). fr: \"sprène d'honneur\" (fr.wikipedia table). it: \"Onorespren\". [es] Spot-check OK: kept untranslated. [fr] Glossary official form kept (not independently re-verified). [de] Confirmed. der/das Sprengsel; pl. die Ehrensprengsel. [it] m. invariable. [audit] es: downgraded from official to community (beta round 4, m8): no source on record from the published es edition (wiki/fan/internal references only). [audit] fr: downgraded from official to community (beta round 4, m8): no source on record from the published fr edition (wiki/fan/internal references only). [audit] it: downgraded from official to community (beta round 4, m8): no source on record from the published it edition (wiki/fan/internal references only). [es] Kept untranslated. Status aligned with the beta round 4 audit (community): no Nova text found online (searches 2026-10 returned only en/it Coppermind and the Nova blurb, which names Syl but not the term). Gender varies per spren (Syl, Phendorana f.; Notum m.): avoid article/adjective agreement in questions where honorspren names are options (roshar-074/075).",
     "sources": [
       "https://es.coppermind.net/wiki/Orden_de_los_Corredores_del_Viento",
       "https://fr.wikipedia.org/wiki/Les_Archives_de_Roshar",
@@ -7874,11 +7875,12 @@
       "de": "official",
       "it": "unchanged"
     },
-    "notes": "es: LA Shaod (feminine). de: may be \"Schaod\" if sh->sch applied - unverified. [es] Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass. [de] German reviews keep \"Shaod\" -> Piper/Brammertz translation does NOT respell sh->sch. [audit] es: downgraded from official to community (beta round 4, m8): no source on record from the published es edition (wiki/fan/internal references only).",
+    "notes": "es: LA Shaod (feminine). de: may be \"Schaod\" if sh->sch applied - unverified. [es] Kept as in glossary; consistent with translator recall of the Nova editions; not confirmed online in this pass. [de] German reviews keep \"Shaod\" -> Piper/Brammertz translation does NOT respell sh->sch. [audit] es: downgraded from official to community (beta round 4, m8): no source on record from the published es edition (wiki/fan/internal references only). [es] Feminine: «la Shaod». All es questions unified to the feminine (sel-020, sel-066, sel-067, sel-069 fixed from «el/del Shaod»). Status aligned with the beta round 4 audit (community); Nova text not confirmed online.",
     "sources": [
       "https://es.coppermind.net/wiki/La_Shaod",
       "glossary (status official)",
-      "https://www.buechertreff.de/details/12057-brandon-sanderson-elantris/"
+      "https://www.buechertreff.de/details/12057-brandon-sanderson-elantris/",
+      "glossary (es note: LA Shaod, feminine)"
     ]
   },
   "Reod": {
@@ -8955,10 +8957,12 @@
       "es": "unverified",
       "fr": "unverified",
       "de": "unverified",
-      "it": "unverified"
+      "it": "community"
     },
-    "notes": "Derethi high priest. [es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] No French source found in searches; glossary form kept as best guess. [de] Kept glossary form; not independently verified in this pass (search snippets only).",
-    "sources": []
+    "notes": "Derethi high priest. [es] Kept glossary value; translator recall of the Nova editions; not confirmed online in this pass. [fr] No French source found in searches; glossary form kept as best guess. [de] Kept glossary form; not independently verified in this pass (search snippets only). [it] m., invariable (il gyorn, i gyorn). Already used in sel-003, sel-061, sel-063.",
+    "sources": [
+      "it.coppermind.net (search snippet) \"Gyorn Hrathen\""
+    ]
   },
   "Forgery": {
     "es": "Forja",
@@ -12314,12 +12318,13 @@
     "status": {
       "es": "unchanged",
       "fr": "unchanged",
-      "de": "unchanged",
+      "de": "unverified",
       "it": "unchanged"
     },
-    "notes": "Proper name, kept as in English in the published editions.",
+    "notes": "Proper name, kept as in English in the published editions. [de] Glossary form kept (place names in Kinder des Nebels are not respelled); no German snippet found via WebSearch.",
     "sources": [
-      "https://coppermind.net"
+      "https://coppermind.net",
+      "https://coppermind.net/wiki/Fellise"
     ]
   },
   "Miles": {
@@ -16471,7 +16476,7 @@
       "de": "unverified",
       "it": "unverified"
     },
-    "notes": "[es] No Spanish form found; kept as in English (golden rule fallback). Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Derethi rank, kept (pl. -s). [de] Kosmeer wiki shows Derethi ranks (Arteth, Grad...) unchanged. [it] Form as used in content/it (beta round 4 fill); not checked against the Mondadori/Fanucci edition.",
+    "notes": "[es] No Spanish form found; kept as in English (golden rule fallback). Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Derethi rank, kept (pl. -s). [de] Kosmeer wiki shows Derethi ranks (Arteth, Grad...) unchanged. [it] Form as used in content/it (beta round 4 fill); not checked against the Mondadori/Fanucci edition. [it] Derethi rank; no Italian form found, kept English (already used in sel-061/062).",
     "sources": [
       "https://kosmeer.fandom.com/de/wiki/Dilaf"
     ],
@@ -16487,7 +16492,7 @@
       "de": "unverified",
       "it": "unverified"
     },
-    "notes": "[es] No Spanish form found; kept as in English (golden rule fallback). Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Derethi rank, kept (pl. -s). [de] Kosmeer wiki shows Derethi ranks (Arteth, Grad...) unchanged. [it] Form as used in content/it (beta round 4 fill); not checked against the Mondadori/Fanucci edition.",
+    "notes": "[es] No Spanish form found; kept as in English (golden rule fallback). Not attested online in this pass (shared web-search budget exhausted before this term); translator choice following Nova conventions. Needs QA. [fr] Derethi rank, kept (pl. -s). [de] Kosmeer wiki shows Derethi ranks (Arteth, Grad...) unchanged. [it] Form as used in content/it (beta round 4 fill); not checked against the Mondadori/Fanucci edition. [it] Derethi rank; no Italian form found, kept English (already used in sel-061/062).",
     "sources": [
       "https://kosmeer.fandom.com/de/wiki/Dilaf"
     ],
@@ -18279,5 +18284,32 @@
       "https://www.droemer-knaur.de/buch/brandon-sanderson-yumi-and-the-nightmare-painter-9783426562840",
       "https://www.mondadori.it/"
     ]
+  },
+  "odiv": {
+    "status": {
+      "es": "unchanged",
+      "fr": "unchanged",
+      "de": "unverified",
+      "it": "unverified"
+    },
+    "notes": "[es] Derethi rank (cosmere-084). No Spanish form found; kept as in English (golden rule fallback), lowercase like arteth/grador. Needs QA against Nova Elantris. [fr] Derethi rank (Dilaf is Hrathen’s odiv), kept like arteth/grador; no French source found in searches. [de] Derethi rank; kept unchanged like Arteth/Grador (kosmeer wiki keeps Derethi ranks). No German attestation of Odiv itself found via WebSearch. [it] Derethi rank (Dilaf is Hrathen’s odiv); no Italian form found, kept English.",
+    "sources": [
+      "https://coppermind.net/wiki/Odiv (Derethi rank)",
+      "https://kosmeer.fandom.com/de/wiki/Dilaf"
+    ],
+    "es": "odiv",
+    "fr": "odiv",
+    "de": "Odiv",
+    "it": "odiv"
+  },
+  "Renoux": {
+    "status": {
+      "fr": "unchanged",
+      "it": "unchanged"
+    },
+    "notes": "[fr] Lord Renoux (Final Empire); already used unchanged in fr content. [it] Proper name, invariable; already used in scadrial.json.",
+    "sources": [],
+    "fr": "Renoux",
+    "it": "Renoux"
   }
 }

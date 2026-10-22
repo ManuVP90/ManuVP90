@@ -187,9 +187,12 @@ export class Pool {
     // question of the category was asked are they recycled, never the one asked last if there is
     // any other.
     const [lo, hi] = levelRange(level);
+    // Outside the level the nearest difficulty comes first, the harder one on ties (beta 5, item 7:
+    // Easy falls back to 2, then 3, then 4, as its description says).
     const near = Object.fromEntries(Object.entries(fresh).filter(([d]) => d >= lo && d <= hi));
     if (Object.keys(near).length || Object.keys(fresh).length) {
-      const d = nearestDifficulty(weightedPick(weights), Object.keys(near).length ? near : fresh, weights);
+      const inside = Object.keys(near).length > 0;
+      const d = nearestDifficulty(weightedPick(weights), inside ? near : fresh, weights, !inside);
       return d ? this.draw(cat, (q) => q.d === d) : null;
     }
     const lastId = list.length > 1 ? (this.used[cat] || []).at(-1) : undefined;
@@ -218,7 +221,7 @@ export class Pool {
     const [lo, hi] = levelRange(level);
     const tally = (list) => list.reduce((o, q) => { o[q.d] = (o[q.d] || 0) + 1; return o; }, {});
     const inRange = cands.filter((q) => q.d >= lo && q.d <= hi);
-    const d = nearestDifficulty(weightedPick(weights), tally(this.notRecent(inRange.length ? inRange : cands)), weights);
+    const d = nearestDifficulty(weightedPick(weights), tally(this.notRecent(inRange.length ? inRange : cands)), weights, !inRange.length);
     return this.draw(cat, (q) => q.d === d && !seen.has(q.id));
   }
 

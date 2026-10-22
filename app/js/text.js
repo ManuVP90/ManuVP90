@@ -16,8 +16,21 @@ export function initialOf(name, fallback = '?') {
   return first ? first.toLocaleUpperCase() : fallback;
 }
 
+/** Longest player name, in graphemes (an emoji or a flag counts as one). */
+export const NAME_MAX = 24;
+
+/**
+ * `str` cut to at most `max` graphemes, nothing else changed (spaces kept, for live typing).
+ * Beta 5, item 12: the name field has no UTF-16 `maxlength`, which cut emoji before 24 characters.
+ */
+export function limitGraphemes(str, max = NAME_MAX) {
+  const s = String(str ?? '');
+  const g = graphemes(s);
+  return g.length <= max ? s : g.slice(0, max).join('');
+}
+
 /** Removes lone surrogates (e.g. left by a maxlength cut) and caps the length in graphemes. */
-export function cleanName(name, max = 24) {
+export function cleanName(name, max = NAME_MAX) {
   const s = String(name ?? '').replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/g, '');
   return graphemes(s.trim()).slice(0, max).join('').trim();
 }

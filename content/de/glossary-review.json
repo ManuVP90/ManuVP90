@@ -4603,5 +4603,21 @@
   "status": "unchanged",
   "sources": [],
   "notes": "Masculine: «der Dor» (den/dem/des Dor), used consistently in sel-049, sel-050, cosmere files (beta round 4, m11). Gender not verified against the Heyne Elantris text."
+ },
+ "Odiv": {
+  "de": "Odiv",
+  "status": "unverified",
+  "sources": [
+   "https://kosmeer.fandom.com/de/wiki/Dilaf"
+  ],
+  "notes": "Derethi rank; kept unchanged like Arteth/Grador (kosmeer wiki keeps Derethi ranks). No German attestation of Odiv itself found via WebSearch."
+ },
+ "Fellise": {
+  "de": "Fellise",
+  "status": "unverified",
+  "sources": [
+   "https://coppermind.net/wiki/Fellise"
+  ],
+  "notes": "Glossary form kept (place names in Kinder des Nebels are not respelled); no German snippet found via WebSearch."
  }
 }

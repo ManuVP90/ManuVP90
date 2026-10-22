@@ -3,7 +3,7 @@
 import { h, svg } from '../dom.js';
 import { ICONS, gemSvg } from '../icons.js';
 import { t, num } from '../i18n.js';
-import { go, screen, topBar, makePool, recordAnswer, catStyle, toast, getMissed, noteMissed, clearMissed, unlockAchievement } from '../core.js';
+import { go, screen, topBar, makePool, recordAnswer, catStyle, toast, getMissed, noteMissed, clearMissed, unlockAchievement, actionButton } from '../core.js';
 import { CATEGORIES, DIFFICULTIES } from '../config.js';
 import { nearestDifficulty, pick } from '../data.js';
 import { questionView } from '../components/question.js';
@@ -24,7 +24,7 @@ export function practiceSetupScreen() {
   const missed = missedIn(pool);
   if (sel.cat === MISSED ? !missed.length : (sel.cat !== 'all' && !available.includes(sel.cat))) sel.cat = 'all';
   const countEl = h('p', { class: 'muted center', 'aria-live': 'polite' });
-  const startBtn = h('button', { type: 'button', class: 'btn btn-primary btn-block', onclick: start }, svg(ICONS.play), t('practice.start'));
+  const startBtn = actionButton({ class: 'btn btn-primary btn-block practice-start', onclick: start }, svg(ICONS.play), t('practice.start'));
 
   const noteEl = h('p', { class: 'banner banner-warn practice-note', role: 'status', hidden: true });
 
@@ -143,7 +143,7 @@ export function practiceScreen() {
   const leftEl = missedMode ? h('span', { class: 'missed-left' }, t('practice.missedLeft', { n: num(missedIn(pool).length) })) : null;
   const end = () => go('practice-setup');
   return screen(`question practice${missedMode ? ' practice-missed-run' : ''}`,
-    topBar(missedMode ? t('practice.missedTitle') : t('practice.title'), { back: end, right: h('button', { type: 'button', class: 'btn btn-small btn-ghost', onclick: end }, t('practice.end')) }),
+    topBar(missedMode ? t('practice.missedTitle') : t('practice.title'), { back: end, right: actionButton({ class: 'btn btn-small btn-ghost practice-end', onclick: end }, t('practice.end')) }),
     questionView({
       question: q,
       mode: missedMode ? 'practice-missed' : 'practice',

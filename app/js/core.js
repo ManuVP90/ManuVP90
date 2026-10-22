@@ -3,10 +3,10 @@ import { h, svg } from './dom.js';
 import { ICONS, gemSvg } from './icons.js';
 import { t } from './i18n.js';
 import * as store from './storage.js';
-import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LANGS, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, RECENT_MAX, MISSED_MAX, SEEN_MAX, QUICK_MAX_SCORE, levelOrDefault } from './config.js';
+import { CATEGORIES, CAT_COLORS, CAT_INK, DIFFICULTIES, LANGS, LEVEL_IDS, LIFELINES, DEFAULT_LEVEL, RECENT_MAX, MISSED_MAX, SEEN_MAX, QUICK_MAX_SCORE, INPUT_GUARD_MS, levelOrDefault } from './config.js';
 import { ACHIEVEMENTS, sanitizeAchievements, newlyEarned } from './achievements.js';
 import { sanitizeDaily } from './daily.js';
-import { addId, removeId, cleanIds, cleanIdMap } from './progress.js';
+import { addId, removeId, cleanIds, cleanIdMap, mergeIdMaps } from './progress.js';
 import { Pool } from './data.js';
 import { setFxPrefs, fx } from './fx.js';
 
@@ -129,20 +129,36 @@ function loadRecent() {
   const list = isObj(r) && Array.isArray(r[recentLang()]) ? r[recentLang()] : [];
   return [...new Set(list.filter((id) => typeof id === 'string'))].slice(-RECENT_MAX);
 }
-/** Remembers that question `id` was shown (most recent last). */
-export function noteSeen(id) {
+/**
+ * Remembers that question `id` was shown (most recent last). `discover: false` (group games,
+ * beta 5 decision 1) keeps it out of the collection: only the repeat-avoiding ring learns it.
+ */
+export function noteSeen(id, { discover = true } = {}) {
+  ensureSeen();
   const r = store.load('recent', null);
   const all = isObj(r) ? r : {};
   const list = loadRecent().filter((x) => x !== id);
   list.push(id);
   all[recentLang()] = list.slice(-RECENT_MAX);
   store.save('recent', all);
-  noteDiscovered(id);
+  if (discover) noteDiscovered(id);
 }
 
 // ---------- discovered questions (collection progress) ----------
-// Per language (`seen` key, { es: [...] }): every question id ever shown, capped at SEEN_MAX.
-// The recently-seen ring (kept since 1.4.0) is merged in, so players from before 1.6.0 keep theirs.
+// Per language (`seen` key, { es: [...] }): every question id shown in a personal game (not in
+// group games, beta 5 decision 1), capped at SEEN_MAX. Players from before 1.6.0 have only the
+// recently-seen ring (kept since 1.4.0): it seeds `seen` once, the first time `seen` is needed and
+// missing. From then on the ring isn't merged any more, since group games also feed it.
+function ensureSeen({ write = true } = {}) {
+  if (store.hasRaw('seen') && isObj(store.load('seen', null))) return;
+  // Nothing stored at all (new player, data just cleared): only noteSeen creates the key, right
+  // before it writes the ring, so a ring without `seen` always comes from before 1.6.0.
+  if (!write && !store.hasRaw('recent')) return;
+  mergeRecentIntoSeen();
+}
+function mergeRecentIntoSeen() {
+  store.save('seen', mergeIdMaps(store.load('seen', null), store.load('recent', null), LANGS, SEEN_MAX));
+}
 function noteDiscovered(id) {
   const all = loadIdMap('seen');
   const list = cleanIds(all[recentLang()], SEEN_MAX);
@@ -152,7 +168,8 @@ function noteDiscovered(id) {
 }
 /** Ids of the questions discovered in the active question language. */
 export function getDiscovered() {
-  return new Set([...cleanIds(loadIdMap('seen')[recentLang()], SEEN_MAX), ...loadRecent()]);
+  ensureSeen({ write: false });
+  return new Set(cleanIds(loadIdMap('seen')[recentLang()], SEEN_MAX));
 }
 /**
  * Collection progress over `questions` minus the works in `disabledWorks`: how many were discovered,
@@ -249,8 +266,9 @@ function nextAnnouncement() {
   const id = achQueue.shift();
   const def = ACHIEVEMENTS.find((x) => x.id === id);
   const close = () => { clearTimeout(achTimer); achEl?.remove(); achEl = null; setTimeout(nextAnnouncement, 250); };
-  // Not clickable (pointer-events: none): it sits over the top bar and must never swallow a tap.
-  achEl = h('div', { class: 'ach-toast', role: 'status', 'aria-live': 'polite', dataset: { ach: id } },
+  // Beta 5: it starts right of the Back button (never covers it) and a tap on it closes it.
+  achEl = h('div', { class: 'ach-toast', role: 'status', 'aria-live': 'polite', dataset: { ach: id },
+    onclick: (e) => { e.stopPropagation(); close(); } },
     h('span', { class: 'ach-toast-gem', 'aria-hidden': 'true', html: gemSvg(def.gem, { size: 34 }) }),
     h('span', { class: 'ach-toast-text' },
       h('span', { class: 'ach-toast-label' }, t('ach.unlocked')),
@@ -292,6 +310,7 @@ export function importData(d) {
   if (isObj(d.missed)) store.save('missed', cleanIdMap(d.missed, LANGS, MISSED_MAX));
   if (isObj(d.recent)) store.save('recent', cleanIdMap(d.recent, LANGS, RECENT_MAX));
   if (isObj(d.seen)) store.save('seen', cleanIdMap(d.seen, LANGS, SEEN_MAX));
+  else if (isObj(d.recent)) mergeRecentIntoSeen(); // a backup from before 1.6.0: its ring was the collection
   if (isObj(d.achievements)) store.save('achievements', sanitizeAchievements(d.achievements));
   if (isObj(d.daily)) {
     // Today's challenge in progress (if any) stays: a backup never holds one.
@@ -326,19 +345,22 @@ export function isQuestionBusy() { return questionBusy; }
 export function whenIdle(fn) { if (questionBusy) idleQueue.push(fn); else fn(); }
 
 /** Recency tracker for a Pool: rank(id) is -1 when not seen lately, higher = seen more recently. */
-function recentTracker() {
+function recentTracker(discover = true) {
   const list = loadRecent();
   const rank = new Map(list.map((id, i) => [id, i]));
   let top = list.length;
   return {
     rank: (id) => (rank.has(id) ? rank.get(id) : -1),
-    add: (id) => { rank.set(id, top++); noteSeen(id); },
+    add: (id) => { rank.set(id, top++); noteSeen(id, { discover }); },
   };
 }
 
-/** A pool over the loaded questions respecting the spoiler filter. */
-export function makePool(used = app.sessionUsed) {
-  return new Pool(app.questions, app.settings.disabledWorks, used, recentTracker());
+/**
+ * A pool over the loaded questions respecting the spoiler filter. `discover: false` (group games)
+ * draws still avoid recent questions but don't add to the collection.
+ */
+export function makePool(used = app.sessionUsed, { discover = true } = {}) {
+  return new Pool(app.questions, app.settings.disabledWorks, used, recentTracker(discover));
 }
 
 /** True when the spoiler filter leaves no question at all. */
@@ -393,6 +415,10 @@ export function go(name, params = {}) {
   renderFailures = 0;
   el.classList.add('screen-enter');
   root.replaceChildren(el);
+  // Input guard (beta 5, item 1): a screen reached from another one ignores taps on its guarded
+  // actions for INPUT_GUARD_MS, so the second tap of a double tap never lands on them. Not at
+  // boot (no tap led there).
+  if (current) armScreenGuard(el);
   current = { name, params };
   window.scrollTo(0, 0);
   const focusTarget = el.querySelector('[data-autofocus]') || el.querySelector('h1');
@@ -423,6 +449,36 @@ window.addEventListener('popstate', () => {
     fn();
   } else go('home');
 });
+
+// ---------- input guard for freshly painted screens (beta 5, item 1) ----------
+let paintedAt = -Infinity;
+let guardTimer = null;
+function armScreenGuard(el) {
+  paintedAt = performance.now();
+  clearTimeout(guardTimer);
+  el.classList.add('input-guard');
+  guardTimer = setTimeout(() => el.classList.remove('input-guard'), INPUT_GUARD_MS);
+}
+/** True while the screen on display was painted less than INPUT_GUARD_MS ago (performance.now()). */
+export function screenIsFresh() { return performance.now() - paintedAt < INPUT_GUARD_MS; }
+/**
+ * Click handler for a screen's main action: ignored while the screen is fresh, and (with `once`)
+ * it runs a single time, so two clicks on a button that changes the screen act once. When the
+ * handler leaves the button on screen (e.g. it only showed a toast) the button works again.
+ */
+export function guardTap(fn, { once = true } = {}) {
+  let busy = false;
+  return (e) => {
+    if (screenIsFresh() || busy) return;
+    const btn = e?.currentTarget;
+    if (once) busy = true;
+    try { fn(e); } finally { if (once && btn && document.contains(btn)) busy = false; }
+  };
+}
+/** A `<button>` whose click is guarded (see guardTap); `once: false` for actions that stay on screen. */
+export function actionButton({ once = true, onclick, class: cls = '', ...attrs }, ...children) {
+  return h('button', { type: 'button', ...attrs, class: `${cls} tap-guard`.trim(), onclick: guardTap(onclick, { once }) }, ...children);
+}
 
 // ---------- UI building blocks ----------
 export function iconButton(icon, label, onclick, cls = '') {

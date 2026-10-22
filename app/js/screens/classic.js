@@ -4,11 +4,11 @@ import { ICONS, gemSvg } from '../icons.js';
 import { t, num, getLang } from '../i18n.js';
 import {
   app, go, screen, topBar, iconButton, toggle, toast, makePool, recordAnswer, recordLifeline,
-  updateStats, catStyle, setBack, onCleanup, levelPicker, levelBadge, confirmDialog, noQuestionsBanner, filterIsEmpty, noteMissed, unlockAchievement,
+  updateStats, catStyle, setBack, onCleanup, levelPicker, levelBadge, confirmDialog, noQuestionsBanner, filterIsEmpty, noteMissed, unlockAchievement, actionButton,
 } from '../core.js';
 import * as store from '../storage.js';
 import { CATEGORIES, MIN_PLAYERS, MAX_PLAYERS, MAX_STREAK, LEVELS, levelOrDefault, fullLifelines } from '../config.js';
-import { cleanName, initialOf } from '../text.js';
+import { cleanName, initialOf, limitGraphemes, NAME_MAX } from '../text.js';
 import { newClassicGame, isValidState, migrateState, applyAnswer, startPhase, isInfused, allInfused, infusedCount, emptyPlayerStats, isGroupGame, clockLeft, isClosingRound } from '../game.js';
 import { shuffledOrder } from '../data.js';
 import { fx, confetti } from '../fx.js';
@@ -81,7 +81,7 @@ export function setupScreen(params = {}) {
   let level = levelOrDefault(params.level ?? app.settings.level);
   // Full round (lead decision 3): on by default; only meaningful with 2+ players.
   let fullRound = params.fullRound ?? true;
-  const fullRoundCard = h('section', { class: 'card setup-fullround' },
+  const fullRoundCard = h('section', { class: 'card rows-card setup-fullround' },
     toggle(t('setup.fullRound'), fullRound, (v) => { fullRound = v; }, { hint: t('setup.fullRoundHint') }));
 
   const list = h('ol', { class: 'setup-players' });
@@ -107,10 +107,13 @@ export function setupScreen(params = {}) {
     list.replaceChildren(...players.map((p, i) => {
       const inputId = `pname-${i}`;
       const input = h('input', {
-        id: inputId, type: 'text', class: 'text-input', value: p.name, maxlength: '24', autocomplete: 'off',
+        // No `maxlength` (it counts UTF-16 units and cut emoji early): the cap is NAME_MAX graphemes.
+        id: inputId, type: 'text', class: 'text-input', value: p.name, autocomplete: 'off',
         autocapitalize: 'words', enterkeyhint: 'next', placeholder: t('setup.namePlaceholder', { n: i + 1 }),
         oninput: (e) => {
-          p.name = e.target.value;
+          const v = limitGraphemes(e.target.value, NAME_MAX);
+          if (v !== e.target.value) e.target.value = v;
+          p.name = v;
           // Live avatar initial while typing (the number when the name is empty).
           const ini = input.closest('.setup-player')?.querySelector('.avatar-initial');
           if (ini) ini.textContent = initialOf(p.name, String(i + 1));
@@ -162,11 +165,11 @@ export function setupScreen(params = {}) {
       h('div', { class: 'stepper', role: 'group', 'aria-labelledby': 'pcount' }, minus, countLabel, plus)),
     list,
     levelPicker(level, (l) => { level = l; }),
-    h('section', { class: 'card' }, toggle(t('setup.timer'), timer, (v) => { timer = v; }, { hint: t('setup.timerHint') }),
+    h('section', { class: 'card rows-card setup-timer' }, toggle(t('setup.timer'), timer, (v) => { timer = v; }, { hint: t('setup.timerHint') }),
       h('p', { class: 'muted setup-timer-note' }, t('setup.timerPause'))),
     fullRoundCard,
     h('div', { class: 'sticky-actions' },
-      h('button', { type: 'button', class: 'btn btn-primary btn-block', onclick: start, disabled: empty }, svg(ICONS.play), t('setup.start'))),
+      actionButton({ class: 'btn btn-primary btn-block setup-start', onclick: start, disabled: empty }, svg(ICONS.play), t('setup.start'))),
   );
 }
 
@@ -177,7 +180,7 @@ function ensureState() {
   const before = JSON.stringify([state.categories, state.phase, state.resume]);
   // Respect the current spoiler filter: drop categories that no longer have questions, except
   // the one of a question already drawn (it stays pending, see questionPhase).
-  const available = makePool(state.used).categories();
+  const available = gamePool().categories();
   if (available.length) {
     const kept = state.categories.filter((c) => available.includes(c) || c === state.pending?.cat);
     state.categories = kept.length ? kept : available;
@@ -204,6 +207,8 @@ function ensureState() {
 }
 
 const cur = () => state.players[state.current];
+/** The game's pool. Group games don't add to the device owner's collection (beta 5, decision 1). */
+const gamePool = () => makePool(state.used, { discover: !isGroupGame(state) });
 let liveQuestion = null; // the question card on screen (classic), to know if its timer is running
 
 /**
@@ -254,7 +259,7 @@ function noQuestionsView() {
     noQuestionsBanner(),
     h('p', { class: 'muted center' }, t('classic.emptySaved')),
     h('div', { class: 'stack-actions' },
-      h('button', { type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '', onclick: leave }, t('common.home'))));
+      actionButton({ class: 'btn btn-primary btn-block', 'data-autofocus': '', onclick: leave, once: false }, t('common.home'))));
 }
 
 export function classicScreen(params = {}) {
@@ -263,7 +268,7 @@ export function classicScreen(params = {}) {
   if (params.resume) applyResume();
   if (activeSince === null) activeSince = performance.now();
   setBack(leave);
-  if (!state.pending && state.phase !== 'won' && !makePool(state.used).categories().length) return noQuestionsView();
+  if (!state.pending && state.phase !== 'won' && !gamePool().categories().length) return noQuestionsView();
   switch (state.phase) {
     case 'handoff': return handoffView();
     case 'spin': return spinView();
@@ -318,8 +323,8 @@ function handoffView() {
       lifelinesLeft(p, 26),
       h('p', { class: 'muted' }, t('turn.noPeek'))),
     h('div', { class: 'sticky-actions' },
-      h('button', {
-        type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '',
+      actionButton({
+        class: 'btn btn-primary btn-block', 'data-autofocus': '',
         onclick: () => {
           fx.tap();
           state.first = false;
@@ -385,8 +390,8 @@ function chooseView() {
   const open = state.categories.filter((c) => !isInfused(cur(), c));
   return screen('choose', gameBar(t('wheel.chooseTitle')),
     h('p', { class: 'lead center' }, t('wheel.chooseHint')),
-    h('div', { class: 'cat-grid' }, (open.length ? open : state.categories).map((c) => h('button', {
-      type: 'button', class: 'cat-choice', ...catStyle(c),
+    h('div', { class: 'cat-grid' }, (open.length ? open : state.categories).map((c) => actionButton({
+      class: 'cat-choice', ...catStyle(c),
       onclick: () => { fx.tap(); setPending(c, false); save(); go('classic'); },
     }, h('span', { class: 'cat-choice-gem', 'aria-hidden': 'true', html: gemSvg(c, { charges: Math.min(cur().charges[c] || 0, 2), size: 40 }) }),
     h('span', {}, t(`cat.${c}`))))));
@@ -402,11 +407,11 @@ function finalIntroView() {
       gemRow(state, p, 28),
       h('p', { class: 'lead' }, t('classic.finalIntro', { name: p.name }))),
     h('div', { class: 'sticky-actions' },
-      h('button', {
-        type: 'button', class: 'btn btn-primary btn-block btn-final', 'data-autofocus': '',
+      actionButton({
+        class: 'btn btn-primary btn-block btn-final', 'data-autofocus': '',
         onclick: () => {
           fx.tap();
-          const q = makePool(state.used).drawFinal(state.categories, LEVELS[levelOrDefault(state.level)].final);
+          const q = gamePool().drawFinal(state.categories, LEVELS[levelOrDefault(state.level)].final);
           if (!q) { toast(t('errors.noQuestions')); return; }
           state.pending = { id: q.id, cat: q.c, order: shuffledOrder(), final: true };
           state.phase = 'question';
@@ -417,14 +422,14 @@ function finalIntroView() {
 }
 
 function setPending(cat, final) {
-  const q = makePool(state.used).drawLeveled(cat, state.level);
+  const q = gamePool().drawLeveled(cat, state.level);
   if (!q) { state.phase = 'spin'; return; }
   state.pending = { id: q.id, cat, order: shuffledOrder(), final };
   state.phase = 'question';
 }
 
 function questionPhase() {
-  const pool = makePool(state.used);
+  const pool = gamePool();
   // A question already drawn stays pending even if the spoiler filter now hides it: changing the
   // settings must not give a free re-draw (or a fresh timer). Only a question that no longer
   // exists in the data is replaced, and it keeps the time it had left.
@@ -581,8 +586,8 @@ function victoryView() {
       playerStats(winners),
       reviewSection(state.missed || [], 'classic', { group: isGroupGame(state) })),
     h('div', { class: 'stack-actions' },
-      h('button', {
-        type: 'button', class: 'btn btn-primary btn-block', 'data-autofocus': '',
+      actionButton({
+        class: 'btn btn-primary btn-block', 'data-autofocus': '',
         onclick: () => {
           // Same players, colors, timer and level: straight back to a prefilled setup.
           const players = state.players.map((p) => ({ name: p.name, color: p.color }));
@@ -594,7 +599,7 @@ function victoryView() {
           go('classic-setup', { players, timer, level, fullRound });
         },
       }, svg(ICONS.refresh), t('common.playAgain')),
-      h('button', { type: 'button', class: 'btn btn-ghost btn-block', onclick: () => { state = null; activeSince = null; go('home'); } }, t('common.home'))));
+      actionButton({ class: 'btn btn-ghost btn-block', onclick: () => { state = null; activeSince = null; go('home'); } }, t('common.home'))));
   setBack(() => { state = null; activeSince = null; go('home'); });
   requestAnimationFrame(() => { confetti(el); fx.victory(); });
   return el;

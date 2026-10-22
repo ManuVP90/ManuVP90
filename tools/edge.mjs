@@ -12,7 +12,7 @@ import { tmpdir } from 'node:os';
 import { startServer, APP_DIR } from './serve.mjs';
 import { ALL_WORKS } from '../app/js/works.js';
 import { encodeBackup, checksum } from '../app/js/progress.js';
-import { APP_VERSION } from '../app/js/config.js';
+import { APP_VERSION, INPUT_GUARD_MS } from '../app/js/config.js';
 import { dailyPick, addDays, recordDaily, currentStreak, sanitizeDaily, emptyDaily, shareText, DAILY_DIFFS } from '../app/js/daily.js';
 
 // Playwright: a local install first (node_modules at the repo root, as in CI:
@@ -85,6 +85,16 @@ async function open({ locale = 'es-ES', device = 'Pixel 7', viewport = null, see
   if (before) await before(page, context);
   await page.goto(url);
   return { context, page, errors };
+}
+
+/**
+ * Beta 5 (item 1): a screen reached by a tap ignores taps on its main actions for INPUT_GUARD_MS.
+ * With the paused fake clock, time has to move before tapping them.
+ */
+async function tapReady(page, sel) {
+  await page.waitForSelector(sel);
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await page.click(sel);
 }
 
 const results = [];
@@ -216,7 +226,7 @@ await test('corrupt saves never brick the app; only valid saves offer "Continue"
       await page.waitForSelector('.stats');
       assert(!(await leakedText(page)), `${name}: stats show no NaN/undefined`);
       const vals = await page.locator('.tile-value').allTextContents();
-      assert(vals.every((v) => /^(\d[\d.\s]*|—|\d+ %)$/.test(v.trim())), `${name}: stat tiles are numbers (${vals})`);
+      assert(vals.every((v) => /^(\d[\d.\s]*|—|\d+\s?%)$/.test(v.trim())), `${name}: stat tiles are numbers (${vals})`);
     }
     if (name === 'lastPlayers') {
       await page.click('.menu-btn >> nth=0');
@@ -322,7 +332,7 @@ await test('classic timer: runs in real time once revealed (hidden page, Home, r
   assert(!(await page.$('.qcard')), 'resume shows the pass-the-phone screen before the question');
   assert(await text(page, '.handoff-name') === 'Ana', 'handoff names the player whose turn it is');
   await page.clock.runFor(45_000); // never revealed: the handoff before the reveal is the only pause
-  await page.click('.handoff .btn-primary');
+  await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard .timer-num');
   assert(await secs(page) === 30, 'a question never shown starts at 30 s after any time on the handoff');
   await page.clock.runFor(3_500);
@@ -353,7 +363,7 @@ await test('classic timer: runs in real time once revealed (hidden page, Home, r
   await page.click('.menu-continue-classic');
   await page.waitForSelector('.handoff');
   await page.clock.runFor(1_000);
-  await page.click('.handoff .btn-primary');
+  await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard .timer-num');
   assert(await text(page, '.qtext') === q, 'same question after reload');
   assert(await secs(page) === 9, `reload, Home and handoff all count once revealed (${await secs(page)})`);
@@ -368,7 +378,7 @@ await test('classic timer: runs in real time once revealed (hidden page, Home, r
   await leaveClassic(page);
   await page.clock.runFor(3_000);
   await page.click('.menu-continue-classic');
-  await page.click('.handoff .btn-primary');
+  await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard .timer-num');
   const afterHome = await secs(page);
   assert(afterHome >= 5 && afterHome <= 6, `time on Home counted (${afterHome})`);
@@ -382,7 +392,7 @@ await test('classic timer: runs in real time once revealed (hidden page, Home, r
   await leaveClassic(page, 'back');
   await page.clock.runFor(30_000);
   await page.click('.menu-continue-classic');
-  await page.click('.handoff .btn-primary');
+  await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard .continue:not([hidden])');
   assert(await text(page, '.verdict') === T('es', 'question.timeout'), 'time ran out while away: resolves as a timeout');
   await page.click('.qcard .continue');
@@ -395,7 +405,7 @@ await test('classic timer: a question saved at 0 s resolves as a timeout; old de
   save.pending.clock = { remaining: 0 };
   let { page, context } = await use({ clock: true, storage: { classic: JSON.stringify(save) } });
   await page.click('.menu-continue-classic');
-  await page.click('.handoff .btn-primary');
+  await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard .continue:not([hidden])');
   assert(await text(page, '.verdict') === T('es', 'question.timeout'), 'question with no time left resolves as timeout');
   const saved = JSON.parse(await lsGet(page, 'classic'));
@@ -406,7 +416,7 @@ await test('classic timer: a question saved at 0 s resolves as a timeout; old de
   old.pending.clock = { deadline: T0 + 13_000 };
   ({ page, context } = await use({ clock: 'paused', storage: { classic: JSON.stringify(old) } }));
   await page.click('.menu-continue-classic');
-  await page.click('.handoff .btn-primary');
+  await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard .timer-num');
   assert(await text(page, '.timer-num') === '12', `legacy deadline migrated to remaining time (${await text(page, '.timer-num')})`);
 });
@@ -762,7 +772,7 @@ await test('200 % text at 320 px: titles and level badge wrap, lifeline names ne
 await test('B2 quick timer: the quit dialog pauses only while on screen; a reload or hidden page counts', async (use) => {
   const { page } = await use({ clock: 'paused' });
   await page.click('.menu-quick');
-  await page.click('.quick-intro .sticky-actions .btn-primary');
+  await tapReady(page, '.quick-intro .sticky-actions .btn-primary');
   await page.waitForSelector('.quick .qcard .timer-num');
   await page.clock.runFor(5_000);
   await page.goBack();
@@ -794,7 +804,7 @@ await test('B2 spoiler filter: a question already shown stays pending (classic a
   const hideIt = JSON.stringify({ disabledWorks: [q.w] });
   let { page, context } = await use({ clock: 'paused', storage: { classic: JSON.stringify(save), settings: hideIt } });
   await page.click('.menu-continue-classic');
-  await page.click('.handoff .btn-primary');
+  await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard .timer-num');
   assert(await text(page, '.qtext') === q.q, 'classic: same question although its book is now filtered out');
   assert(await text(page, '.timer-num') === '12', 'classic: time left kept (no fresh timer)');
@@ -803,7 +813,7 @@ await test('B2 spoiler filter: a question already shown stays pending (classic a
   // Changing the filter in Settings mid-game (Home → Settings → Continue) changes nothing either.
   ({ page, context } = await use({ clock: 'paused', storage: { classic: JSON.stringify(save) } }));
   await page.click('.menu-continue-classic');
-  await page.click('.handoff .btn-primary');
+  await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard .timer-num');
   await page.click('.topbar-back');
   await page.click('.modal .btn-primary'); // "the time keeps running" (the paused clock doesn't move)
@@ -811,7 +821,7 @@ await test('B2 spoiler filter: a question already shown stays pending (classic a
   await page.click('.spoiler-none');
   await page.click('.topbar .icon-btn');
   await page.click('.menu-continue-classic');
-  await page.click('.handoff .btn-primary');
+  await tapReady(page, '.handoff .btn-primary');
   await page.waitForSelector('.qcard');
   assert(await text(page, '.qtext') === q.q && await text(page, '.timer-num') === '12', 'classic: settings change mid-question gives no re-draw');
   await context.close();
@@ -1454,7 +1464,7 @@ await test('1.5 report: prefilled GitHub issue (id, language, text, options, ver
   await context.setOffline(true);
   const pages = context.pages().length;
   await page.click('.feedback .report-link');
-  await page.waitForFunction((m) => document.getElementById('toast').textContent === m, T('es', 'report.offlineCopied'));
+  await page.waitForFunction((m) => document.querySelector('.feedback .report-status')?.textContent === m, T('es', 'report.offlineCopied'));
   const clip = await page.evaluate(() => navigator.clipboard.readText());
   assert(clip.includes(q.id) && clip.includes(q.q) && clip.includes(q.o[0]), 'clipboard holds the report');
   assert(context.pages().length === pages, 'no tab opened offline');
@@ -2053,11 +2063,13 @@ await test('1.6 collection: X/Y discovered overall, per world and difficulty, re
   const { page } = await use({ storage });
   await page.click('.small-btn >> nth=0');
   await page.waitForSelector('.stats .collection');
-  assert((await text(page, '.col-total strong')) === T('es', 'stats.discovered', { n: 6, total: QS.length }), `overall (${await text(page, '.col-total strong')})`);
+  // Beta 5 (decision 1): once `seen` exists the recent ring isn't merged (group games feed the ring),
+  // so `other`, only in the ring, is not discovered.
+  assert((await text(page, '.col-total strong')) === T('es', 'stats.discovered', { n: 5, total: QS.length }), `overall (${await text(page, '.col-total strong')})`);
   const rTotal = QS.filter((q) => q.c === 'roshar').length;
   assert((await text(page, '.col-world[data-cat="roshar"] .col-value')) === T('es', 'stats.discoveredOf', { n: 3, total: rTotal }), 'roshar row');
   const d = (n) => QS.filter((q) => q.d === n);
-  const seenAll = new Set([...ro, ...se, other]);
+  const seenAll = new Set([...ro, ...se]);
   for (const n of [1, 2, 3, 4]) {
     if (!d(n).length) continue;
     assert((await text(page, `.col-diff[data-d="${n}"] .col-value`)) === T('es', 'stats.discoveredOf', { n: d(n).filter((q) => seenAll.has(q.id)).length, total: d(n).length }), `difficulty ${n} row`);
@@ -2083,7 +2095,7 @@ await test('1.6 collection: X/Y discovered overall, per world and difficulty, re
     const ok = core.importData(JSON.parse(JSON.stringify(d)));
     return { ok, d, seen: core.getDiscovered().size, ach: core.getAchievements(), daily: core.getDaily() };
   });
-  assert(roundTrip.ok && roundTrip.ach.unlocked.polyglot && roundTrip.daily.best === 6 && roundTrip.daily.streak === 4 && roundTrip.seen >= 8, `round trip (${JSON.stringify({ ...roundTrip, d: undefined })})`);
+  assert(roundTrip.ok && roundTrip.ach.unlocked.polyglot && roundTrip.daily.best === 6 && roundTrip.daily.streak === 4 && roundTrip.seen >= 7, `round trip (${JSON.stringify({ ...roundTrip, d: undefined })})`);
   // Spoiler filter: hidden works don't count and their world disappears.
   const fl = await use({ storage: { ...storage, settings: JSON.stringify({ disabledWorks: [...new Set(QS.filter((q) => q.c === 'roshar').map((q) => q.w))] }) } });
   await fl.page.click('.small-btn >> nth=0');
@@ -2115,7 +2127,7 @@ await test('B4 G1: a double tap on "Next"/"Ready" never answers the next questio
   // Quick game, 320×568 like the tester's iPhone SE; time only moves with runFor.
   let { page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 } });
   await page.click('.menu-quick');
-  await page.click('.quick-intro .sticky-actions .btn-primary');
+  await tapReady(page, '.quick-intro .sticky-actions .btn-primary');
   await page.waitForSelector('.quick .qcard.input-guard');
   await page.clock.runFor(400);
   await answer(page, true);
@@ -2140,7 +2152,7 @@ await test('B4 G1: a double tap on "Next"/"Ready" never answers the next questio
   // Daily challenge: the double tap must not spend question 2.
   ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 } }));
   await page.click('.menu-daily');
-  await page.click('.daily-start');
+  await tapReady(page, '.daily-start');
   await page.waitForSelector('.daily .qcard');
   await page.clock.runFor(400);
   await answer(page, true);
@@ -2154,7 +2166,7 @@ await test('B4 G1: a double tap on "Next"/"Ready" never answers the next questio
   // Practice.
   ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 } }));
   await page.click('.menu-btn >> nth=2');
-  await page.click('.practice-setup .sticky-actions .btn-primary');
+  await tapReady(page, '.practice-setup .sticky-actions .btn-primary');
   await page.waitForSelector('.practice .qcard');
   await page.clock.runFor(400);
   await answer(page, true);
@@ -2167,6 +2179,7 @@ await test('B4 G1: a double tap on "Next"/"Ready" never answers the next questio
   ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 }, storage: { classic: JSON.stringify(classicSave()) } }));
   await page.click('.menu-continue-classic');
   await page.waitForSelector('.handoff');
+  await page.clock.runFor(INPUT_GUARD_MS); // the handoff's own guard (beta 5) is not what is tested here
   await doubleTap(page, '.handoff .btn-primary');
   await page.waitForSelector('.classic .qcard, .qcard');
   assert(await unanswered(page), 'classic: the tap after "Ready" did not answer');
@@ -2185,7 +2198,8 @@ await test('B4 M3: the daily challenge of a date at or before the last one playe
   const daily = { v: 1, last: later, streak: 3, best: 3, played: 3, perfect: 0, result: { date: later, lang: 'es', marks, ids: [], filtered: false }, run: null };
   let { page, context } = await use({ clock: true, viewport: { width: 320, height: 568 }, storage: { daily: JSON.stringify(daily) } });
   await page.waitForSelector('.home .menu-daily');
-  assert((await text(page, '.menu-daily .menu-desc')) === T('es', 'home.dailyDone', { n: 4, total: 5, streak: 3 }), 'home: done, streak kept');
+  // Beta 5 (item 13): not "Done today" (that result is from a later date), just "already played".
+  assert((await text(page, '.menu-daily .menu-desc')) === T('es', 'home.dailyLocked'), `home: locked, not "done today" (${await text(page, '.menu-daily .menu-desc')})`);
   await page.click('.menu-daily');
   await page.waitForSelector('.daily-result');
   assert(!(await page.$('.daily-start')), 'no replay with the clock moved back');
@@ -2453,7 +2467,17 @@ await test('2.0 report: "Avisar de un error" + "Copiar informe" (no GitHub neede
     await page.waitForSelector('.feedback .report-copy');
     assert(await text(page, '.feedback .report-link') === T(lang, 'report.link') && await text(page, '.feedback .report-copy') === T(lang, 'report.copy'), `${lang}: labels`);
     await page.click('.feedback .report-copy');
-    await page.waitForFunction((m) => document.getElementById('toast').textContent === m, T(lang, 'report.copied'));
+    // Beta 5: the result is a line under the actions (decision 2: GitHub or whoever maintains the
+    // game), not a toast over the explanation.
+    await page.waitForFunction((m) => document.querySelector('.feedback .report-status:not([hidden])')?.textContent === m, T(lang, 'report.copied'));
+    assert(T(lang, 'report.copied').includes('GitHub'), `${lang}: says where to send it`);
+    assert(!(await page.evaluate(() => document.getElementById('toast').classList.contains('show'))), `${lang}: no toast`);
+    const overlap = await page.evaluate(() => {
+      const a = document.querySelector('.feedback .explain')?.getBoundingClientRect();
+      const b = document.querySelector('.feedback .report-status').getBoundingClientRect();
+      return a ? !(b.top >= a.bottom - 0.5 || b.bottom <= a.top + 0.5) : false;
+    });
+    assert(!overlap, `${lang}: the message doesn't cover the explanation`);
     const clip = await page.evaluate(() => navigator.clipboard.readText());
     const colon = lang === 'fr' ? '\u00a0:' : ':';
     for (const k of ['id', 'language', 'world', 'difficulty', 'mode', 'version', 'question']) assert(clip.includes(`**${T(lang, `report.field.${k}`)}${colon}**`), `${lang}: field ${k} localized`);
@@ -2558,6 +2582,288 @@ await test('2.0 spoiler picker and wildcard: works without questions say so; a s
     await page.clock.runFor(2_600);
     await page.waitForSelector('.question .qcard');
     assert(!(await page.$('.choose')), 'no choice screen');
+    await context.close();
+  }
+});
+
+// ================================================================== Beta 5 findings (docs/BETA-5.md)
+await test('B5 item 1: screen-change buttons are guarded (quick results, classic handoff and victory, daily result, practice) and fire once', async (use) => {
+  const fresh = (page) => page.evaluate(() => !!document.querySelector('.screen.input-guard'));
+  // Quick: a double tap on "Ver resultados" must not start another game from the results screen.
+  const ro = QS.filter((q) => q.c === 'roshar').slice(0, 15).map((q) => q.id);
+  const run = { v: 1, plan: Array(15).fill('roshar'), total: 15, index: 14, score: 1400, correct: 14, level: 'normal', lifelines: { atium: 1, stormlight: 1, breath: 1 }, seen: ro, missed: [],
+    current: { id: ro[14], order: [0, 1, 2, 3], fx: { removed: [], struck: [], armed: false }, clock: { remaining: 30_000 } } };
+  let { page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 }, storage: { quick: JSON.stringify(run) } });
+  await page.click('.menu-continue-quick');
+  await page.waitForSelector('.quick .qcard');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await answer(page, true);
+  assert(await text(page, '.qcard .continue') === T('es', 'quick.seeResults'), 'last question: "Ver resultados"');
+  await doubleTap(page, '.qcard .continue');
+  await page.waitForSelector('.quick-result');
+  assert(await fresh(page), 'the results screen starts guarded');
+  // Real taps where "Jugar otra vez" / "Inicio" are, and programmatic clicks (the JS guard).
+  for (const sel of ['.quick-again', '.quick-home']) {
+    const b = await page.locator(sel).boundingBox();
+    await page.mouse.click(b.x + b.width / 2, b.y + b.height / 2);
+  }
+  await page.evaluate(() => { document.querySelector('.quick-again').click(); document.querySelector('.quick-home').click(); });
+  assert(await page.$('.quick-result') && await lsGet(page, 'quick') === null && await lsGet(page, 'quickResult') !== null, 'still on the results (no new game, record screen kept)');
+  await shot(page, 'e-b5-1-quick-result-after-double-tap');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  assert(!(await fresh(page)), 'guard lifted after INPUT_GUARD_MS');
+  const recent0 = ((await lsJSON(page, 'recent'))?.es || []).length;
+  await page.evaluate(() => { const b = document.querySelector('.quick-again'); b.click(); b.click(); });
+  await page.waitForSelector('.quick .qcard');
+  assert(JSON.parse(await lsGet(page, 'quick')).index === 0, 'then "Jugar otra vez" works');
+  assert(((await lsJSON(page, 'recent'))?.es || []).length === recent0 + 1, 'two clicks on it started one game (one question drawn)');
+  await context.close();
+
+  // Classic: a double tap on "Continuar" must not skip "Pasa el móvil".
+  ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 }, storage: { classic: JSON.stringify(classicSave({ timer: false })) } }));
+  await page.click('.menu-continue-classic');
+  await tapReady(page, '.handoff .btn-primary');
+  await page.waitForSelector('.qcard');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await answer(page, false);
+  await doubleTap(page, '.qcard .continue');
+  await page.waitForSelector('.handoff');
+  assert(await text(page, '.handoff-name') === 'Bea' && !(await page.$('.qcard')), 'the handoff to Bea stays on screen');
+  await page.evaluate(() => document.querySelector('.handoff .btn-primary').click());
+  assert(await page.$('.handoff') && (await lsJSON(page, 'classic')).phase === 'handoff', 'a click while fresh does nothing');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await page.evaluate(() => { const b = document.querySelector('.handoff .btn-primary'); b.click(); b.click(); });
+  assert((await lsJSON(page, 'classic')).phase !== 'handoff', 'after the guard "Empezar mi turno" works (once)');
+  await context.close();
+
+  // Classic victory: the double tap on the final's "Continuar" never lands on "Jugar otra vez".
+  const fq = QS.find((x) => x.d === 3);
+  ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 }, storage: { classic: JSON.stringify(save4({ fullRound: false, timer: false, players: [pl('Ana', 'roshar', allGems()), pl('Bea', 'sel')], pending: { id: fq.id, cat: fq.c, order: [0, 1, 2, 3], final: true } })) } }));
+  await page.click('.menu-continue-classic');
+  await tapReady(page, '.handoff .btn-primary');
+  await page.waitForSelector('.qcard');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await answer(page, true);
+  await doubleTap(page, '.qcard .continue');
+  await page.waitForSelector('.victory');
+  await page.evaluate(() => document.querySelectorAll('.victory .stack-actions .btn').forEach((b) => b.click()));
+  assert(await page.$('.victory') && !(await page.$('.setup')), 'victory screen kept');
+  await context.close();
+
+  // Daily: the double tap on the 5th "Ver resultados" doesn't press the result screen's buttons.
+  ({ page, context } = await use({ clock: 'paused', viewport: { width: 320, height: 568 } }));
+  await page.click('.menu-daily');
+  await tapReady(page, '.daily-start');
+  for (let i = 0; i < 5; i++) {
+    await page.waitForSelector('.daily .qcard .option:not([disabled])');
+    await page.clock.runFor(INPUT_GUARD_MS);
+    await answer(page, true);
+    if (i < 4) await page.click('.daily .continue');
+  }
+  await doubleTap(page, '.daily .continue');
+  await page.waitForSelector('.daily-result');
+  await page.evaluate(() => document.querySelector('.daily-home').click());
+  assert(await page.$('.daily-result') && await fresh(page), 'daily result kept while fresh');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await page.evaluate(() => document.querySelector('.daily-home').click());
+  await page.waitForSelector('.home');
+  await context.close();
+
+  // Practice: the setup reached from Home ignores a tap on "Empezar" for a moment.
+  ({ page, context } = await use({ clock: 'paused' }));
+  await page.click('.menu-btn >> nth=2');
+  await page.waitForSelector('.practice-setup');
+  await page.evaluate(() => document.querySelector('.practice-start').click());
+  assert(await page.$('.practice-setup') && !(await page.$('.qcard')), 'practice: still on setup');
+  await tapReady(page, '.practice-start');
+  await page.waitForSelector('.practice .qcard');
+  await page.clock.runFor(INPUT_GUARD_MS);
+  await answer(page, true);
+  await page.click('.qcard .continue');
+  await page.evaluate(() => document.querySelector('.practice-end').click());
+  assert(await page.$('.practice .qcard'), 'practice: "Terminar" guarded on the fresh question screen');
+});
+
+await test('B5 item 2: Settings and classic setup at 200 % text and 320 px: no overflow, labels never one letter per line', async (use) => {
+  const check = (page) => page.evaluate(() => {
+    const words = (s) => s.trim().split(/[\s\-‐]+/).filter(Boolean).length; // a hyphen is a fair break
+    const lines = (el) => {
+      const r = document.createRange();
+      const tops = new Set();
+      for (const n of el.childNodes) {
+        if (n.nodeType !== 3 || !n.textContent.trim()) continue;
+        r.selectNodeContents(n);
+        for (const rect of r.getClientRects()) if (rect.width > 0) tops.add(Math.round(rect.top));
+      }
+      return tops.size;
+    };
+    const bad = [...document.querySelectorAll('.row-label, .stepper-card .row-label')].map((el) => {
+      const own = [...el.childNodes].filter((n) => n.nodeType === 3).map((n) => n.textContent).join(' ');
+      return { t: own.trim(), w: words(own), l: lines(el) };
+    }).filter((x) => x.t && x.l > x.w);
+    const out = [...document.querySelectorAll('.screen .card *')].filter((e) => {
+      const r = e.getBoundingClientRect();
+      const c = e.closest('.card').getBoundingClientRect();
+      return r.width > 0 && r.right > c.right + 1;
+    }).map((e) => e.className || e.tagName).slice(0, 5);
+    return { sw: document.documentElement.scrollWidth, bad, out };
+  });
+  for (const [locale, lang] of [['es-ES', 'es'], ['en-GB', 'en'], ['fr-FR', 'fr'], ['de-DE', 'de'], ['it-IT', 'it']]) {
+    const { page, context } = await use({ locale, viewport: { width: 320, height: 640 } });
+    await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+    for (const [btn, scr] of [['.small-btn >> nth=1', '.settings'], ['.menu-btn >> nth=0', '.setup']]) {
+      await page.click(btn);
+      await page.waitForSelector(scr);
+      const m = await check(page);
+      assert(m.sw <= 320 && !m.bad.length && !m.out.length, `${lang} ${scr} at 200 %: ${JSON.stringify(m)}`);
+      if (lang === 'es' || lang === 'de') await shot(page, `e-b5-2-${scr.slice(1)}-${lang}-320-200`);
+      await page.click('.topbar-back');
+      await page.waitForSelector('.home');
+    }
+    // At normal size the language row keeps label and selector on one line.
+    await page.addStyleTag({ content: 'html { font-size: 100% !important; }' });
+    await page.click('.small-btn >> nth=1');
+    await page.waitForSelector('.settings');
+    const same = await page.evaluate(() => { const r = document.querySelector('.settings .row-setting'); return Math.abs(r.querySelector('.row-label').getBoundingClientRect().top - r.querySelector('select').getBoundingClientRect().top) < 20; });
+    assert(same, `${lang}: language row on one line at 100 %`);
+    assert((await check(page)).bad.length === 0, `${lang}: no broken labels at 100 %`);
+    await context.close();
+  }
+});
+
+await test('B5 item 3: last round — failing the final and the 3rd hit infusing the last gem promise no next turn', async (use) => {
+  const fq = QS.find((x) => x.d === 3);
+  // Ana answered the final right; Bea (all gems) and Cy play the closing round. Bea fails her final.
+  const players = [pl('Ana', 'roshar', allGems()), pl('Bea', 'sel', allGems()), pl('Cy', 'nalthis')];
+  let { page, context } = await use({ storage: { classic: JSON.stringify(save4({ players, current: 1, starter: 0, winners: [0], roundLeft: [2], missed: [], pending: { id: fq.id, cat: fq.c, order: [0, 1, 2, 3], final: true } })) } });
+  await page.click('.menu-continue-classic');
+  await page.click('.handoff .btn-primary');
+  await answer(page, false);
+  await page.waitForSelector('.feedback-extra');
+  let lines = (await page.locator('.feedback-extra .outcome').allTextContents()).map((x) => x.trim());
+  assert(lines.includes(T('es', 'classic.finalFailLast')) && !lines.includes(T('es', 'classic.finalFail')), `final failed in the last round (${lines})`);
+  assert(lines.includes(T('es', 'classic.passTurn', { name: 'Cy' })), `the turn passes to Cy (${lines})`);
+  await shot(page, 'e-b5-3-final-fail-last');
+  await context.close();
+  // Same closing round: Bea's 3rd right answer in a row infuses her last gem.
+  const qc = QS.find((x) => x.c === 'cosmere' && x.d <= 2);
+  const bea = pl('Bea', 'sel', { ...allGems(), cosmere: 1 });
+  ({ page, context } = await use({ storage: { classic: JSON.stringify(save4({ players: [pl('Ana', 'roshar', allGems()), bea, pl('Cy', 'nalthis')], current: 1, starter: 0, winners: [0], roundLeft: [2], streak: 2, missed: [], pending: { id: qc.id, cat: 'cosmere', order: [0, 1, 2, 3], final: false } })) } }));
+  await page.click('.menu-continue-classic');
+  await page.click('.handoff .btn-primary');
+  await answer(page, true);
+  await page.waitForSelector('.feedback-extra');
+  lines = (await page.locator('.feedback-extra .outcome').allTextContents()).map((x) => x.trim());
+  assert(lines.includes(T('es', 'classic.lastChanceGone')) && !lines.includes(T('es', 'classic.allInfusedNext')), `last gem in the last round: no final next turn (${lines})`);
+  assert(lines.includes(T('es', 'classic.streakPass', { n: 3, name: 'Cy' })), `streak passes to Cy (${lines})`);
+  await shot(page, 'e-b5-3-last-chance-gone');
+  for (const l of LANGS) for (const k of ['finalFailLast', 'lastChanceGone']) assert(T(l, `classic.${k}`)?.length > 10, `${l}: classic.${k}`);
+});
+
+await test('B5 item 6 (decision 1): group games don’t feed the collection or Compendio; solo games do', async (use) => {
+  const cos = QS.filter((q) => q.c === 'cosmere').map((q) => q.id);
+  const [missing, ...rest] = cos;
+  const storage = (players) => ({
+    seen: JSON.stringify({ es: rest }), recent: JSON.stringify({ es: rest.slice(-150) }),
+    classic: JSON.stringify(classicSave({ players, phase: 'choose', pending: null, categories: ['cosmere', 'sel'], timer: false })),
+  });
+  const ana = { name: 'Ana', color: 'roshar', charges: {}, lifelines: { atium: 1, stormlight: 1, breath: 1 } };
+  const bea = { name: 'Bea', color: 'sel', charges: {}, lifelines: { atium: 1, stormlight: 1, breath: 1 } };
+  for (const group of [true, false]) {
+    // All but one Cosmere question discovered, and every other one seen lately: the draw takes the missing one.
+    const { page, context } = await use({ storage: { ...storage(group ? [ana, bea] : [ana]), ...(group ? {} : { recent: JSON.stringify({ es: rest.slice(-150) }) }) } });
+    await page.click('.menu-continue-classic');
+    if (group) await page.click('.handoff .btn-primary');
+    await page.click('.cat-choice[style*="cosmere"], .cat-choice >> nth=0');
+    await page.waitForSelector('.qcard .option');
+    const pend = (await lsJSON(page, 'classic')).pending;
+    assert(pend.cat === 'cosmere', 'a Cosmere question');
+    const seen = (await lsJSON(page, 'seen')).es;
+    const recent = (await lsJSON(page, 'recent')).es;
+    assert(recent.at(-1) === pend.id, `${group ? 'group' : 'solo'}: the ring learns it (repeats avoided either way)`);
+    assert(seen.includes(pend.id) === !group, `${group ? 'group: not discovered' : 'solo: discovered'} (${pend.id})`);
+    await answer(page, true);
+    await page.waitForSelector('.feedback');
+    const unlocked = (await lsJSON(page, 'achievements'))?.unlocked || {};
+    assert(pend.id === missing, `the draw took the undiscovered question (${pend.id})`);
+    assert(!!unlocked.compendium === !group, `${group ? 'group: no' : 'solo:'} Compendio (${JSON.stringify(unlocked)})`);
+    if (group) {
+      await page.click('.qcard .continue');
+      await page.click('.topbar-back');
+      await page.click('.small-btn >> nth=0');
+      await page.waitForSelector('.stats .collection');
+      assert(await text(page, '.collection .col-world[data-cat="cosmere"] .col-value') === T('es', 'stats.discoveredOf', { n: rest.length, total: cos.length }), 'Stats: the collection did not grow');
+      assert(await text(page, '.stats-group-note') === T('es', 'stats.groupNote'), 'the note says so');
+      for (const l of LANGS) assert(/colecci|collection|Sammlung|collezione/i.test(T(l, 'stats.groupNote')) && /colecci|collection|Sammlung|collezione/i.test(T(l, 'victory.groupNote')), `${l}: notes mention the collection`);
+    }
+    await context.close();
+  }
+});
+
+await test('B5 items 7–9, 12, 13 + suggestions: texts, percent, name field, achievement notice, DE "Problem melden"', async (use) => {
+  // 7: Easy says harder ones come when easy ones run out.
+  for (const [l, re] of [['es', /más difícil/], ['en', /harder/], ['fr', /plus difficiles/], ['de', /schwerere/], ['it', /più difficile/]]) assert(re.test(T(l, 'level.easyDesc')), `${l}: easyDesc`);
+  // 9: French UI strings don't assume a man; suggestion: German "Problem melden"; decision 2: where to send the copy.
+  const frAll = JSON.stringify(strings.fr);
+  for (const bad of ['Êtes-vous sûr', 'une fois connecté', 'Jouez seul']) assert(!frAll.includes(bad), `fr: no "${bad}"`);
+  assert(T('fr', 'settings.resetConfirm').endsWith('Voulez-vous vraiment tout effacer ?') && T('fr', 'report.offlineFailed').endsWith('quand vous serez en ligne.'), 'fr: neutral wording');
+  assert(T('de', 'report.link') === 'Problem melden', 'de: "Problem melden" (not "Fehler", which is also "Meine Fehler")');
+  // 8: Stats percent follows the language (fr "{n} %" with a no-break space, it "{n}%") and never splits.
+  const ids = QS.slice(0, 49).map((q) => q.id);
+  for (const [locale, lang] of [['fr-FR', 'fr'], ['it-IT', 'it']]) {
+    const { page, context } = await use({ locale, viewport: { width: 320, height: 640 }, storage: { seen: JSON.stringify({ [lang]: ids }), stats: JSON.stringify({ cats: { roshar: { a: 3, c: 2 } } }) } });
+    await page.click('.small-btn >> nth=0');
+    await page.waitForSelector('.stats .collection');
+    const total = JSON.parse(readFileSync(join(APP_DIR, 'data', `questions.${lang}.json`), 'utf8')).length;
+    const n = Math.round((49 / total) * 100);
+    assert(await text(page, '.col-pct') === `· ${T(lang, 'victory.percent', { n })}`, `${lang}: collection percent (${await text(page, '.col-pct')})`);
+    assert(await page.evaluate(() => document.querySelector('.col-pct').getClientRects().length) === 1, `${lang}: "· n %" on one line`);
+    const tiles = await page.locator('.tile-value').allTextContents();
+    assert(tiles.includes(T(lang, 'victory.percent', { n: 67 })), `${lang}: accuracy tile (${tiles})`);
+    await context.close();
+  }
+  // 12: the name field has no UTF-16 maxlength; 24 graphemes, emoji whole.
+  let { page, context } = await use({ viewport: { width: 390, height: 844 } });
+  await page.click('.menu-btn >> nth=0');
+  await page.waitForSelector('.setup #pname-0');
+  assert(await page.getAttribute('#pname-0', 'maxlength') === null, 'no maxlength');
+  const family = '👨‍👩‍👧‍👦';
+  const name = `Ana ${family}${'🇪🇸'.repeat(8)}`;
+  await page.fill('#pname-0', name);
+  assert(await page.inputValue('#pname-0') === name, 'a 13-grapheme name with emoji is kept whole');
+  await page.fill('#pname-0', '🙂'.repeat(30));
+  assert(await page.inputValue('#pname-0') === '🙂'.repeat(24), 'capped at 24 graphemes');
+  await page.fill('#pname-0', name);
+  await page.click('.setup-start');
+  await page.waitForSelector('.handoff');
+  assert((await lsJSON(page, 'classic')).players[0].name === name, 'saved whole');
+  await context.close();
+  // 13: Home with the clock moved back after today's challenge.
+  const day = await (await use({ clock: true })).page.evaluate(async () => (await import('./js/daily.js')).dateKey());
+  const marks = CATS.slice(0, 5).map((c) => ({ c, ok: true }));
+  const daily = (date) => JSON.stringify({ v: 1, last: date, streak: 2, best: 2, played: 2, perfect: 0, result: { date, lang: 'es', marks, ids: [], filtered: false }, run: null });
+  ({ page, context } = await use({ clock: true, storage: { daily: daily(addDays(day, 1)) } }));
+  await page.waitForSelector('.home .menu-daily');
+  assert(await text(page, '.menu-daily .menu-desc') === T('es', 'home.dailyLocked'), `clock back: no "Hecho hoy" (${await text(page, '.menu-daily .menu-desc')})`);
+  await context.close();
+  ({ page, context } = await use({ clock: true, storage: { daily: daily(day) } }));
+  assert(await text(page, '.menu-daily .menu-desc') === T('es', 'home.dailyDone', { n: 5, total: 5, streak: 2 }), 'today: "Hecho hoy"');
+  await context.close();
+  // Suggestion: the achievement notice never covers the Back button, and a tap closes it.
+  for (const width of [320, 390]) {
+    ({ page, context } = await use({ clock: 'paused', viewport: { width, height: 700 } }));
+    await page.emulateMedia({ reducedMotion: 'reduce' }); // the screenshot shows the notice, not its entry animation
+    await page.click('.small-btn >> nth=0');
+    await page.waitForSelector('.stats');
+    await page.evaluate(async () => (await import('./js/core.js')).unlockAchievement('answered100'));
+    await page.waitForSelector('.ach-toast');
+    const [a, b] = await page.evaluate(() => [document.querySelector('.ach-toast'), document.querySelector('.topbar-back')].map((e) => { const r = e.getBoundingClientRect(); return { l: r.left, r: r.right, t: r.top, b: r.bottom }; }));
+    assert(a.l >= b.r || a.t >= b.b, `${width}: notice clear of Back (${JSON.stringify([a, b])})`);
+    await shot(page, `e-b5-ach-toast-${width}`);
+    await page.click('.ach-toast');
+    await page.waitForSelector('.ach-toast', { state: 'detached' });
+    await page.click('.topbar-back');
+    await page.waitForSelector('.home');
     await context.close();
   }
 });

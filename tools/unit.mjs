@@ -27,7 +27,8 @@ import {
   STATE_VERSION, newClassicGame, migrateState, isValidState, applyAnswer, isValidFx, isValidClock, isValidLifelines,
   clockLeft, migrateClock, allInfused, isInfused, startPhase, isGroupGame, roundRest, isClosingRound,
 } from '../app/js/game.js';
-import { graphemes, initialOf, cleanName } from '../app/js/text.js';
+import { graphemes, initialOf, cleanName, limitGraphemes, NAME_MAX } from '../app/js/text.js';
+import { mergeIdMaps } from '../app/js/progress.js';
 import { ALL_WORKS, WORK_TITLES, workTitle } from '../app/js/works.js';
 import { matchLang } from '../app/js/i18n.js';
 
@@ -979,6 +980,36 @@ describe('stored data through the app loaders (stubbed storage)', () => {
       assert.equal(has('classic'), false);
     }
   });
+  // storage.js keeps a memory copy too, so keys are removed through it.
+  const drop = async (...keys) => { const store = await import('../app/js/storage.js'); for (const k of keys) store.remove(k); };
+  test('beta 5 decision 1: group-game draws avoid recent questions but never join the collection', async () => {
+    await drop('recent', 'seen');
+    core.app.questions = makeQuestions({ sel: { 1: 4 } });
+    core.app.settings.disabledWorks = [];
+    seed(71);
+    const solo = core.makePool({}).draw('sel');
+    const group = core.makePool({}, { discover: false }).draw('sel');
+    assert.notEqual(group.id, solo.id, 'the group draw still avoids the recent one');
+    const found = core.getDiscovered();
+    assert.ok(found.has(solo.id), 'solo draw discovered');
+    assert.ok(!found.has(group.id), 'group draw not discovered');
+    assert.deepEqual(Object.values(JSON.parse(mem.get(PREFIX + 'recent')))[0], [solo.id, group.id], 'both in the recent ring');
+    assert.equal(core.collection([]).seen, 1, 'collection counts only the solo question');
+    core.app.questions = [];
+  });
+  test('beta 5: players from before 1.6.0 (recent ring, no `seen`) keep it as their collection, once', async () => {
+    await drop('recent', 'seen');
+    core.app.questions = makeQuestions({ sel: { 1: 4 } });
+    put('recent', { en: ['sel-d1-0', 'sel-d1-1'] });
+    assert.deepEqual([...core.getDiscovered()].sort(), ['sel-d1-0', 'sel-d1-1'], 'seeded from the ring');
+    assert.ok(has('seen'), 'written once');
+    core.noteSeen('sel-d1-2', { discover: false });
+    assert.equal(core.getDiscovered().size, 2, 'later ring entries (group games) are not merged');
+    // A backup from before 1.6.0 (no `seen`) brings its ring into the collection.
+    assert.ok(core.importData({ recent: { en: ['sel-d1-3'] } }));
+    assert.ok(core.getDiscovered().has('sel-d1-3'));
+    core.app.questions = [];
+  });
 });
 
 process.on('exit', () => { Math.random = realRandom; });
@@ -1072,5 +1103,39 @@ describe('beta 5: closing round messages', () => {
     s.fullRound = false;
     assert.equal(isClosingRound(s), false, 'no full round option');
     assert.equal(isClosingRound(null), false);
+  });
+});
+
+describe('beta 5: names, Easy fallback, collection merge', () => {
+  test('item 12: player names are capped at 24 graphemes, emoji never cut in half', () => {
+    assert.equal(NAME_MAX, 24);
+    const family = '👨‍👩‍👧‍👦'; // 11 UTF-16 units, one grapheme
+    const name = `Ana ${family}${'🇪🇸'.repeat(10)}`;
+    assert.ok(name.length > 24, 'longer than a UTF-16 maxlength of 24');
+    assert.equal(limitGraphemes(name), name, '4 + 1 + 10 = 15 graphemes: kept whole');
+    assert.equal(cleanName(name), name);
+    const long = `${'🙂'.repeat(20)}${family}${family}${'x'.repeat(5)}`;
+    const cut = limitGraphemes(long);
+    assert.equal(graphemes(cut).length, 24);
+    assert.ok(cut.endsWith(`${family}${family}xx`), 'whole emoji kept, the cut falls after them');
+    assert.equal(limitGraphemes('Ana  '), 'Ana  ', 'live typing keeps trailing spaces');
+    assert.equal(cleanName(`  ${'é'.repeat(30)}  `), 'é'.repeat(24));
+  });
+  test('item 7: Easy with 1 and 2 used up takes the nearest harder difficulty first (3 before 4)', () => {
+    for (const s of [1, 2, 3, 4, 5, 6]) {
+      seed(s);
+      const pool = new Pool(makeQuestions({ cosmere: { 1: 1, 3: 2, 4: 2 } }));
+      const ds = Array.from({ length: 5 }, () => pool.drawLeveled('cosmere', 'easy').d);
+      assert.deepEqual(ds, [1, 3, 3, 4, 4], `seed ${s}`);
+      seed(s);
+      const quickPool = new Pool(makeQuestions({ cosmere: { 1: 1, 3: 1, 4: 1 } }));
+      const seen = new Set(['cosmere-d1-0']);
+      assert.equal(quickPool.drawUnseen('cosmere', 'easy', seen).d, 3, `quick seed ${s}: 3 before 4`);
+    }
+  });
+  test('mergeIdMaps: adds the extra ids per language, keeps the base, cleans and caps', () => {
+    const out = mergeIdMaps({ es: ['a', 'b'], xx: ['z'] }, { es: ['b', 'c', 5], en: ['d'] }, ['es', 'en'], 3);
+    assert.deepEqual(out, { es: ['c', 'a', 'b'], en: ['d'] });
+    assert.deepEqual(mergeIdMaps(null, 'x', ['es']), {});
   });
 });

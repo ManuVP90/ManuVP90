@@ -2,7 +2,7 @@
 import { h, svg } from '../dom.js';
 import { ICONS } from '../icons.js';
 import { t, num, getLang } from '../i18n.js';
-import { app, catStyle, catPill, toast } from '../core.js';
+import { app, catStyle, catPill } from '../core.js';
 import { APP_VERSION } from '../config.js';
 import { buildReport } from '../report.js';
 
@@ -47,19 +47,23 @@ function reportFor(q, mode) {
  */
 export function reportLink(q, mode = '') {
   const rep = reportFor(q, mode);
+  // What happened goes in a line under the two actions, not in a toast: a toast covered the
+  // explanation for a few seconds (beta 5); this one stays until the next question.
+  const status = h('span', { class: 'report-status', role: 'status', 'aria-live': 'polite', hidden: true });
+  const say = (msg) => { status.textContent = msg; status.hidden = false; };
   const link = h('a', {
     class: 'report-link', href: rep.url, target: '_blank', rel: 'noopener noreferrer',
     onclick: async (e) => {
       if (navigator.onLine !== false) return; // online: the link opens the issue form
       e.preventDefault();
-      toast((await copyText(rep.text)) ? t('report.offlineCopied') : t('report.offlineFailed'));
+      say((await copyText(rep.text)) ? t('report.offlineCopied') : t('report.offlineFailed'));
     },
   }, svg(ICONS.flag), h('span', {}, t('report.link')));
   const copy = h('button', {
     type: 'button', class: 'report-copy',
-    onclick: async () => { toast((await copyText(rep.text)) ? t('report.copied') : t('report.copyFailed')); },
+    onclick: async () => { say((await copyText(rep.text)) ? t('report.copied') : t('report.copyFailed')); },
   }, svg(ICONS.copy), h('span', {}, t('report.copy')));
-  return h('span', { class: 'report-actions' }, link, copy);
+  return h('span', { class: 'report-actions' }, link, copy, status);
 }
 
 /** One missed question: category, text, right answer and explanation. */
