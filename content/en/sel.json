@@ -1,0 +1,1786 @@
+[
+  {
+    "id": "sel-001",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "Who is Raoden's father?",
+    "a": "Iadon",
+    "wrong": [
+      "Eventeo",
+      "Telrii",
+      "Roial"
+    ],
+    "explain": "Iadon, a former merchant, became King of Arelon after the Reod.",
+    "terms": [
+      "Raoden",
+      "Iadon",
+      "Eventeo",
+      "Telrii",
+      "Roial",
+      "Arelon",
+      "Reod"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-002",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "Which kingdom is Princess Sarene from?",
+    "a": "Teod",
+    "wrong": [
+      "Fjorden",
+      "Duladel",
+      "JinDo"
+    ],
+    "explain": "Sarene, daughter of King Eventeo, comes to Arelon to marry Prince Raoden.",
+    "terms": [
+      "Sarene",
+      "Teod",
+      "Fjorden",
+      "Duladel",
+      "JinDo",
+      "Eventeo",
+      "Arelon",
+      "Raoden"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-003",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "From which nation does the gyorn Hrathen come?",
+    "a": "Fjorden",
+    "wrong": [
+      "Teod",
+      "Arelon",
+      "Duladel"
+    ],
+    "explain": "Hrathen is sent from Fjorden to convert Arelon before it is too late.",
+    "terms": [
+      "gyorn",
+      "Hrathen",
+      "Fjorden",
+      "Teod",
+      "Arelon",
+      "Duladel"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-004",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "Which religion does Hrathen preach in Arelon?",
+    "a": "Shu-Dereth",
+    "wrong": [
+      "Shu-Korath",
+      "Shu-Keseg",
+      "Jeskeri Mysteries"
+    ],
+    "explain": "Hrathen tries to turn the Arelenes away from Shu-Korath and towards Shu-Dereth.",
+    "terms": [
+      "Hrathen",
+      "Arelon",
+      "Shu-Dereth",
+      "Shu-Korath",
+      "Shu-Keseg",
+      "Jeskeri Mysteries",
+      "Arelene"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-005",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "Galladon, Raoden's first friend in Elantris, comes from which country?",
+    "a": "Duladel",
+    "wrong": [
+      "Teod",
+      "JinDo",
+      "Fjorden"
+    ],
+    "explain": "Galladon is a Dula who was taken by the Shaod and thrown into Elantris.",
+    "terms": [
+      "Galladon",
+      "Raoden",
+      "Elantris",
+      "Duladel",
+      "Teod",
+      "JinDo",
+      "Fjorden",
+      "Dula",
+      "Shaod"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-006",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "What is the name of Sarene's seon?",
+    "a": "Ashe",
+    "wrong": [
+      "Ien",
+      "Daa",
+      "Ehe"
+    ],
+    "explain": "Ashe is Sarene's loyal seon and one of her most trusted advisers.",
+    "terms": [
+      "Sarene",
+      "seon",
+      "Ashe",
+      "Ien",
+      "Daa",
+      "Ehe"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-007",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "What is the transformation that turns ordinary people into Elantrians called?",
+    "a": "The Shaod",
+    "wrong": [
+      "The Reod",
+      "The Dor",
+      "The Hoed"
+    ],
+    "explain": "Before the Reod, the Shaod made people godlike; afterwards it left them cursed.",
+    "terms": [
+      "Elantrian",
+      "Shaod",
+      "Reod",
+      "Dor",
+      "Hoed"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-008",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "How many years before the novel did the Reod bring Elantris down?",
+    "a": "Ten",
+    "wrong": [
+      "Five",
+      "Twenty",
+      "Fifty"
+    ],
+    "explain": "Elantris has lain in ruin for a decade when Raoden is thrown into it.",
+    "terms": [
+      "Elantris",
+      "Reod",
+      "Raoden"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-009",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "What alias does Raoden use inside Elantris to hide his identity?",
+    "a": "Spirit",
+    "wrong": [
+      "Hope",
+      "Light",
+      "Power"
+    ],
+    "explain": "The name comes from Aon Rao, the Aon in Raoden's own name, which means spirit.",
+    "terms": [
+      "Raoden",
+      "Elantris",
+      "Aon Rao",
+      "Aon"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-010",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "After the Reod, what happens to a cut an Elantrian receives?",
+    "a": "It never heals",
+    "wrong": [
+      "It heals instantly",
+      "It turns to stone",
+      "It glows with light"
+    ],
+    "explain": "Elantrians' hearts no longer beat, and every wound keeps hurting forever.",
+    "terms": [
+      "Reod",
+      "Elantrian"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-011",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "What is the magic of drawing Aons in the air called?",
+    "a": "AonDor",
+    "wrong": [
+      "Forgery",
+      "Bloodsealing",
+      "ChayShan"
+    ],
+    "explain": "AonDor drew its power from the Dor and stopped working after the Reod.",
+    "terms": [
+      "Aon",
+      "AonDor",
+      "Forgery",
+      "Bloodsealing",
+      "ChayShan",
+      "Dor",
+      "Reod"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-012",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "Who is Sarene's uncle, whose family welcomes her in Arelon?",
+    "a": "Kiin",
+    "wrong": [
+      "Shuden",
+      "Ahan",
+      "Eondel"
+    ],
+    "explain": "Kiin is the brother of Sarene's father, King Eventeo, and a superb cook.",
+    "terms": [
+      "Sarene",
+      "Kiin",
+      "Shuden",
+      "Ahan",
+      "Eondel",
+      "Eventeo",
+      "Arelon"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-013",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "What does Raoden give the Elantrians to help them endure their constant pain?",
+    "a": "Work to keep them busy",
+    "wrong": [
+      "Medicine smuggled from outside",
+      "Daily prayers",
+      "Extra food from the city outside"
+    ],
+    "explain": "Raoden realizes that keeping busy helps the Elantrians bear their pain.",
+    "terms": [
+      "Raoden",
+      "Elantrian"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-014",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "Which sport is Sarene highly skilled at?",
+    "a": "Fencing",
+    "wrong": [
+      "Archery",
+      "Wrestling",
+      "Horse racing"
+    ],
+    "explain": "Sarene is an expert fencer and even teaches the noblewomen of the court to fence.",
+    "terms": [
+      "Sarene"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-015",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "elantris",
+    "q": "Who becomes King of Arelon at the end of Elantris?",
+    "a": "Raoden",
+    "wrong": [
+      "Telrii",
+      "Roial",
+      "Eondel"
+    ],
+    "explain": "Restored as a true Elantrian, Raoden takes the throne with Sarene at his side.",
+    "terms": [
+      "Arelon",
+      "Elantris",
+      "Raoden",
+      "Telrii",
+      "Roial",
+      "Eondel",
+      "Elantrian",
+      "Sarene"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-016",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "How long does the Wyrn give Hrathen to convert Arelon before his empire destroys it?",
+    "a": "Three months",
+    "wrong": [
+      "One month",
+      "One year",
+      "Ten days"
+    ],
+    "explain": "Hrathen knows Arelon will be invaded if he fails within that deadline.",
+    "terms": [
+      "Wyrn",
+      "Hrathen",
+      "Arelon"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-017",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "From which city does King Iadon rule Arelon after the Reod?",
+    "a": "Kae",
+    "wrong": [
+      "Ake",
+      "Ato",
+      "Toa"
+    ],
+    "explain": "Kae is one of the four cities around Elantris; the others were abandoned after the Reod.",
+    "terms": [
+      "Iadon",
+      "Arelon",
+      "Reod",
+      "Kae",
+      "Ake",
+      "Ato",
+      "Toa",
+      "Elantris"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-018",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "What effect does Aon Daa produce when drawn by an Elantrian?",
+    "a": "A burst of destructive power",
+    "wrong": [
+      "Instant travel",
+      "Healing",
+      "A light without heat"
+    ],
+    "explain": "Aon Daa means power or energy and was the Elantrians' preferred weapon.",
+    "terms": [
+      "Aon Daa",
+      "Elantrian"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-019",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "What are Elantrians called who are overwhelmed by pain and can only moan?",
+    "a": "Hoed",
+    "wrong": [
+      "Skaze",
+      "Dakhor",
+      "Seons"
+    ],
+    "explain": "Their wounds never heal, so pain accumulates until the Elantrian's mind gives way.",
+    "terms": [
+      "Elantrian",
+      "Hoed",
+      "Skaze",
+      "Dakhor",
+      "seon"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-020",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "How does Hrathen stage a fake 'cure' after he is thrown into Elantris?",
+    "a": "He drinks a potion that mimics the Shaod",
+    "wrong": [
+      "He forges a soulstamp",
+      "He bribes the guards",
+      "He draws an Aon"
+    ],
+    "explain": "He secretly drinks a potion that mimics the Shaod's symptoms, then takes its antidote and claims Jaddeth cured him.",
+    "terms": [
+      "Hrathen",
+      "Elantris",
+      "Jaddeth",
+      "Aon",
+      "Shaod"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-021",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "What is the Derethi priest Dilaf secretly?",
+    "a": "A Dakhor monk",
+    "wrong": [
+      "An Elantrian",
+      "A Teo spy",
+      "A Korathi priest"
+    ],
+    "explain": "Dilaf's bones were reshaped in the Dakhor monastery, granting him dark powers.",
+    "terms": [
+      "Derethi",
+      "Dilaf",
+      "Dakhor",
+      "Elantrian",
+      "Teo",
+      "Korathi"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-022",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "Which country is the baron Shuden from?",
+    "a": "JinDo",
+    "wrong": [
+      "Fjorden",
+      "Duladel",
+      "Teod"
+    ],
+    "explain": "Shuden is a skilled practitioner of the JinDo martial art ChayShan.",
+    "terms": [
+      "Shuden",
+      "JinDo",
+      "Fjorden",
+      "Duladel",
+      "Teod",
+      "ChayShan"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-023",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "What event broke the magic of the Elantrians and caused the Reod?",
+    "a": "An earthquake",
+    "wrong": [
+      "A curse from Jaddeth",
+      "A Dakhor ritual",
+      "A war with Fjorden"
+    ],
+    "explain": "The resulting chasm changed the land of Arelon, which the Aons are tied to, so every Aon needed a new line.",
+    "terms": [
+      "Reod",
+      "Jaddeth",
+      "Dakhor",
+      "Fjorden",
+      "Arelon",
+      "Aon",
+      "Elantrians"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-024",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "Who is the god worshipped by the followers of Shu-Dereth?",
+    "a": "Jaddeth",
+    "wrong": [
+      "Domi",
+      "Dor",
+      "Keseg"
+    ],
+    "explain": "The Derethi believe Jaddeth will rise from beneath the earth once all people are united.",
+    "terms": [
+      "Shu-Dereth",
+      "Jaddeth",
+      "Domi",
+      "Dor",
+      "Keseg",
+      "Derethi"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-025",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "Why is Sarene considered Raoden's widow despite never meeting him?",
+    "a": "Their marriage contract",
+    "wrong": [
+      "A Derethi ritual",
+      "An order from Iadon",
+      "A Korathi prophecy"
+    ],
+    "explain": "The treaty stated that if either betrothed died, the marriage would count as binding.",
+    "terms": [
+      "Sarene",
+      "Raoden",
+      "Derethi",
+      "Iadon",
+      "Korathi"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-026",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "elantris",
+    "q": "What is the name of Raoden's seon, which goes mad after Raoden's transformation?",
+    "a": "Ien",
+    "wrong": [
+      "Ashe",
+      "Rao",
+      "Ati"
+    ],
+    "explain": "A seon whose master becomes an Elantrian after the Reod goes mad.",
+    "terms": [
+      "Raoden",
+      "seon",
+      "Ien",
+      "Ashe",
+      "Rao",
+      "Ati",
+      "Elantrian",
+      "Reod"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-027",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "What does Aon Ien do when drawn by an Elantrian?",
+    "a": "Heals",
+    "wrong": [
+      "Gives light",
+      "Teleports",
+      "Creates fire"
+    ],
+    "explain": "Healing with Aon Ien required modifiers specifying which part of the body to mend.",
+    "terms": [
+      "Aon Ien",
+      "Elantrian"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-028",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "Which secret cult did King Iadon practise, sacrificing his own staff?",
+    "a": "The Jeskeri Mysteries",
+    "wrong": [
+      "The Dakhor monastery",
+      "Shu-Keseg",
+      "Shu-Korath"
+    ],
+    "explain": "After Sarene exposed him, Iadon was arrested and took his own life in prison.",
+    "terms": [
+      "Iadon",
+      "Jeskeri Mysteries",
+      "Dakhor",
+      "Shu-Keseg",
+      "Shu-Korath",
+      "Sarene"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-029",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "Which nobleman was Sarene about to marry when she was cast into Elantris?",
+    "a": "Roial",
+    "wrong": [
+      "Telrii",
+      "Shuden",
+      "Ahan"
+    ],
+    "explain": "On the wedding day she appeared to be taken by the Shaod (really another dose of Hrathen's potion), and Telrii took the throne.",
+    "terms": [
+      "Roial",
+      "Telrii",
+      "Shuden",
+      "Ahan",
+      "Sarene",
+      "Elantris",
+      "Hrathen",
+      "Shaod"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-030",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "From which older religion do both Shu-Dereth and Shu-Korath derive?",
+    "a": "Shu-Keseg",
+    "wrong": [
+      "The Jeskeri Mysteries",
+      "Jesker",
+      "ChayShan"
+    ],
+    "explain": "Shu-Keseg originated in JinDo and taught the unity of all mankind.",
+    "terms": [
+      "Shu-Dereth",
+      "Shu-Korath",
+      "Shu-Keseg",
+      "Jeskeri Mysteries",
+      "Jesker",
+      "ChayShan",
+      "JinDo"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-031",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "Before coming to Arelon, Hrathen had instigated a revolution in which country?",
+    "a": "Duladel",
+    "wrong": [
+      "Teod",
+      "JinDo",
+      "Fjorden"
+    ],
+    "explain": "The bloodshed in Duladel haunted Hrathen and shaped his doubts about Wyrn's plans.",
+    "terms": [
+      "Arelon",
+      "Hrathen",
+      "Duladel",
+      "Teod",
+      "JinDo",
+      "Fjorden",
+      "Wyrn"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-032",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "Which member of Sarene's uncle's family has been secretly hidden as an Elantrian?",
+    "a": "Adien",
+    "wrong": [
+      "Lukel",
+      "Daorn",
+      "Kaise"
+    ],
+    "explain": "His parents hid Adien's transformation so he would not be thrown into Elantris.",
+    "terms": [
+      "Elantrian",
+      "Adien",
+      "Lukel",
+      "Daorn",
+      "Kaise",
+      "Elantris",
+      "Sarene"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-033",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "emperors-soul",
+    "q": "What kind of Selish magic does Shai practise?",
+    "a": "Forgery",
+    "wrong": [
+      "AonDor",
+      "Bloodsealing",
+      "ChayShan"
+    ],
+    "explain": "Shai is considered one of the best Forgers in the Rose Empire.",
+    "terms": [
+      "Shai",
+      "Forgery",
+      "AonDor",
+      "Bloodsealing",
+      "ChayShan",
+      "Forger",
+      "Rose Empire"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-034",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "emperors-soul",
+    "q": "Whose soul must Shai recreate in The Emperor's Soul?",
+    "a": "Ashravan",
+    "wrong": [
+      "Gaotona",
+      "Frava",
+      "Zu"
+    ],
+    "explain": "Assassins left Emperor Ashravan alive but with his mind destroyed.",
+    "terms": [
+      "Shai",
+      "Ashravan",
+      "Gaotona",
+      "Frava",
+      "Zu"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-035",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "emperors-soul",
+    "q": "Which elderly arbiter slowly comes to respect Shai's art?",
+    "a": "Gaotona",
+    "wrong": [
+      "Frava",
+      "Zu",
+      "Ashravan"
+    ],
+    "explain": "Unlike the other arbiters, Gaotona comes to see Shai's craft as a true art.",
+    "terms": [
+      "Gaotona",
+      "Shai",
+      "Frava",
+      "Zu",
+      "Ashravan"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-036",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "emperors-soul",
+    "q": "In The Emperor's Soul, how many days does Shai have to create the emperor's new soul?",
+    "a": "One hundred",
+    "wrong": [
+      "Thirty",
+      "Forty-nine",
+      "Three hundred"
+    ],
+    "explain": "The emperor's absence is hidden behind a hundred-day mourning period for his late wife.",
+    "terms": [
+      "The Emperor's Soul",
+      "Shai"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-037",
+    "category": "sel",
+    "difficulty": 1,
+    "work": "emperors-soul",
+    "q": "What does a Forger change with a soulstamp?",
+    "a": "An object's history",
+    "wrong": [
+      "An object's color",
+      "A person's memories of it",
+      "Its owner's luck"
+    ],
+    "explain": "A Forgery holds only if the rewritten past is plausible for the object.",
+    "terms": [
+      "Forger",
+      "soulstamp",
+      "Forgery"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-038",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "emperors-soul",
+    "q": "What was Shai caught trying to steal?",
+    "a": "The Moon Scepter",
+    "wrong": [
+      "The emperor's crown",
+      "A soulstamp",
+      "The Imperial seal"
+    ],
+    "explain": "A trusted accomplice betrayed her, swapping her copy back for the real scepter.",
+    "terms": [
+      "Shai",
+      "Moon Scepter",
+      "soulstamp"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-039",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "emperors-soul",
+    "q": "How long a mourning period do the arbiters have to hide the emperor's state?",
+    "a": "100 days",
+    "wrong": [
+      "30 days",
+      "1 year",
+      "10 days"
+    ],
+    "explain": "If Ashravan did not reappear in time, his faction would lose power.",
+    "terms": [
+      "Ashravan"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-040",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "emperors-soul",
+    "q": "To which faction do Ashravan and his arbiters belong?",
+    "a": "The Heritage Faction",
+    "wrong": [
+      "The Glory Faction",
+      "The Strikers",
+      "The Bloodsealers"
+    ],
+    "explain": "The faction depends on the emperor's survival to keep ruling the empire.",
+    "terms": [
+      "Ashravan",
+      "Heritage Faction",
+      "Glory Faction",
+      "Striker",
+      "Bloodsealer"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-041",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "emperors-soul",
+    "q": "Which ambitious arbiter is the most powerful of the emperor's councillors?",
+    "a": "Frava",
+    "wrong": [
+      "Gaotona",
+      "Zu",
+      "Shai"
+    ],
+    "explain": "Frava secretly intends to control the restored emperor and to be rid of Shai.",
+    "terms": [
+      "Frava",
+      "Gaotona",
+      "Zu",
+      "Shai"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-042",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "emperors-soul",
+    "q": "Who is the captain of the guard who threatens to kill Shai one day?",
+    "a": "Zu",
+    "wrong": [
+      "Gaotona",
+      "Frava",
+      "Ashravan"
+    ],
+    "explain": "Zu is a Striker who personally escorts Shai to the arbiters.",
+    "terms": [
+      "Zu",
+      "Shai",
+      "Gaotona",
+      "Frava",
+      "Ashravan",
+      "Striker"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-043",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "emperors-soul",
+    "q": "What do Bloodsealers use as ink in their stamps?",
+    "a": "Human blood",
+    "wrong": [
+      "Squid ink",
+      "Molten metal",
+      "Breath"
+    ],
+    "explain": "With it, a Bloodsealer can animate skeletons to hunt down a target.",
+    "terms": [
+      "Bloodsealer"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-044",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "emperors-soul",
+    "q": "What does an Essence Mark rewrite?",
+    "a": "The user's own soul",
+    "wrong": [
+      "A building's past",
+      "An Aon's meaning",
+      "A seon's memory"
+    ],
+    "explain": "Shai uses Essence Marks to briefly gain skills she does not normally have.",
+    "terms": [
+      "Essence Mark",
+      "Aon",
+      "seon",
+      "Shai"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-045",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "emperors-soul",
+    "q": "Which major award did The Emperor's Soul win in 2013?",
+    "a": "Hugo Award",
+    "wrong": [
+      "Nebula Award",
+      "World Fantasy Award",
+      "Locus Award"
+    ],
+    "explain": "It won the Hugo for Best Novella.",
+    "terms": [
+      "Hugo Award",
+      "Nebula Award",
+      "World Fantasy Award",
+      "Locus Award"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-046",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "emperors-soul",
+    "q": "Which rival faction is blamed for the attempt on Ashravan's life?",
+    "a": "The Glory Faction",
+    "wrong": [
+      "The Heritage Faction",
+      "The Strikers",
+      "The Bloodsealers"
+    ],
+    "explain": "An emperor's death would favour the Glory Faction's bid for the succession.",
+    "terms": [
+      "Ashravan",
+      "Glory Faction",
+      "Heritage Faction",
+      "Striker",
+      "Bloodsealer"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-047",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "emperors-soul",
+    "q": "Which people of the Rose Empire does Shai belong to?",
+    "a": "MaiPon",
+    "wrong": [
+      "Dzhamar",
+      "Fjordell",
+      "Dula"
+    ],
+    "explain": "Shai is a MaiPon, one of the peoples living within the Rose Empire.",
+    "terms": [
+      "Rose Empire",
+      "Shai",
+      "MaiPon",
+      "Dzhamar",
+      "Fjordell",
+      "Dula"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-048",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "hope-of-elantris",
+    "q": "Who is the protagonist of The Hope of Elantris?",
+    "a": "Matisse",
+    "wrong": [
+      "Karata",
+      "Kaise",
+      "Opais"
+    ],
+    "explain": "Matisse protects the children of New Elantris on the night of the Dakhor attack.",
+    "terms": [
+      "Matisse",
+      "Karata",
+      "Kaise",
+      "Opais",
+      "New Elantris",
+      "Dakhor"
+    ],
+    "source": "The Hope of Elantris"
+  },
+  {
+    "id": "sel-049",
+    "category": "sel",
+    "difficulty": 2,
+    "work": "arcanum",
+    "q": "Which Shard Splintered the two Shards whose power is trapped around Sel?",
+    "a": "Odium",
+    "wrong": [
+      "Ambition",
+      "Honor",
+      "Ruin"
+    ],
+    "explain": "Odium struck them down long ago, and their scattered power now fuels the Dor.",
+    "terms": [
+      "Shard",
+      "Sel",
+      "Odium",
+      "Ambition",
+      "Honor",
+      "Ruin",
+      "Dor"
+    ],
+    "source": "Arcanum Unbounded, Selish system essay"
+  },
+  {
+    "id": "sel-050",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "arcanum",
+    "q": "What is the Dor, the power behind Selish magic?",
+    "a": "The trapped power of two Shards",
+    "wrong": [
+      "The soul of Adonalsium",
+      "A Splinter of Odium",
+      "A gift of Jaddeth"
+    ],
+    "explain": "The Investiture of two Splintered Shards is trapped in Sel's Cognitive Realm, where it forms the Dor.",
+    "terms": [
+      "Dor",
+      "Shard",
+      "Adonalsium",
+      "Splinter",
+      "Odium",
+      "Jaddeth",
+      "Investiture",
+      "Sel",
+      "Cognitive Realm",
+      "Splintered"
+    ],
+    "source": "Arcanum Unbounded, Selish system essay"
+  },
+  {
+    "id": "sel-051",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "How does Hrathen secretly communicate with the Wyrn from Arelon?",
+    "a": "Through a hidden seon",
+    "wrong": [
+      "Through a Dakhor messenger",
+      "Through Aon Tia",
+      "Through a Bloodsealed stamp"
+    ],
+    "explain": "Like every gyorn, Hrathen was secretly given a seon by the Wyrn, even though seons are Elantrian creations.",
+    "terms": [
+      "Hrathen",
+      "Wyrn",
+      "Arelon",
+      "seon",
+      "Dakhor",
+      "Aon Tia",
+      "Bloodsealed",
+      "gyorn",
+      "Elantrian"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-052",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "Who kills the Derethi priest Dilaf in the climax of Elantris?",
+    "a": "Hrathen",
+    "wrong": [
+      "Raoden",
+      "Eondel",
+      "Galladon"
+    ],
+    "explain": "Hrathen kills Dilaf to save Sarene before succumbing to his own wounds.",
+    "terms": [
+      "Dilaf",
+      "Elantris",
+      "Hrathen",
+      "Raoden",
+      "Eondel",
+      "Galladon",
+      "Derethi",
+      "Sarene"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-053",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "Where inside Elantris does Aanden's gang make its home?",
+    "a": "The university",
+    "wrong": [
+      "The Royal Palace",
+      "The city gates",
+      "The marketplace"
+    ],
+    "explain": "Aanden set up his court in the university because Karata's gang held the palace.",
+    "terms": [
+      "Elantris",
+      "Aanden",
+      "Karata"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-054",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "Who dies protecting Raoden while he adds the Chasm Line to Elantris?",
+    "a": "Karata",
+    "wrong": [
+      "Galladon",
+      "Daora",
+      "Mareshe"
+    ],
+    "explain": "Karata is beheaded fighting the Fjordell soldiers who try to stop Raoden, moments before Elantris is restored.",
+    "terms": [
+      "Raoden",
+      "Chasm Line",
+      "Elantris",
+      "Karata",
+      "Galladon",
+      "Daora",
+      "Mareshe",
+      "Fjordell"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-055",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "What did Raoden have to add to the Aons to make Elantris's magic work again?",
+    "a": "A line representing the chasm",
+    "wrong": [
+      "A circle around each Aon",
+      "A second Aon overlapping it",
+      "A dot at the center of each Aon"
+    ],
+    "explain": "The Reod changed the very land the Aons mirror, so every Aon needed a new line for it.",
+    "terms": [
+      "Raoden",
+      "Aon",
+      "Reod",
+      "Elantris"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-056",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "emperors-soul",
+    "q": "Once Shai's soulstamp restores the emperor, how often must it be applied?",
+    "a": "Every day",
+    "wrong": [
+      "Once a month",
+      "Once a year",
+      "Never again"
+    ],
+    "explain": "The Forged soul does not take permanently, so the emperor must be restamped each day.",
+    "terms": [
+      "Shai"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-057",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "emperors-soul",
+    "q": "Who betrayed Shai during the theft that got her arrested?",
+    "a": "The Imperial Fool",
+    "wrong": [
+      "Captain Zu",
+      "Arbiter Gaotona",
+      "The Bloodsealer"
+    ],
+    "explain": "The Imperial Fool swapped her copy back for the original and gave Shai up to the palace guards.",
+    "terms": [
+      "Shai",
+      "Imperial Fool",
+      "Zu",
+      "Gaotona",
+      "Bloodsealer"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-058",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "What is the name of the kindly Korathi priest in Kae who advises Sarene?",
+    "a": "Omin",
+    "wrong": [
+      "Dilaf",
+      "Fjon",
+      "Hrathen"
+    ],
+    "explain": "Father Omin, the absent-minded Korathi priest of Kae, explains the Widow's Trial to Sarene and officiates her weddings.",
+    "terms": [
+      "Korathi",
+      "Kae",
+      "Sarene",
+      "Omin",
+      "Dilaf",
+      "Fjon",
+      "Hrathen",
+      "Widow's Trial"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-059",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "elantris",
+    "q": "From which country does Jalla, the wife of Lukel, come?",
+    "a": "Svorden",
+    "wrong": [
+      "Hrovell",
+      "JinDo",
+      "Duladel"
+    ],
+    "explain": "Jalla is Svordish; she met Lukel while they were both studying at the Svordish university.",
+    "terms": [
+      "Jalla",
+      "Lukel",
+      "Svorden",
+      "Hrovell",
+      "JinDo",
+      "Duladel",
+      "Svordish"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-060",
+    "category": "sel",
+    "difficulty": 3,
+    "work": "emperors-soul",
+    "q": "From which region of the Rose Empire does the art of Bloodsealing come?",
+    "a": "Dzhamar",
+    "wrong": [
+      "MaiPon",
+      "Mulla'dil",
+      "Teullu"
+    ],
+    "explain": "Bloodsealing is a Dzhamarian art, and the Strikers find it repugnant.",
+    "terms": [
+      "Rose Empire",
+      "Bloodsealing",
+      "Dzhamar",
+      "MaiPon",
+      "Mulla'dil",
+      "Teullu",
+      "Dzhamarian",
+      "Strikers"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-061",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "In the Derethi hierarchy, which rank sits directly below gyorn?",
+    "a": "Ragnat",
+    "wrong": [
+      "Grador",
+      "Arteth",
+      "Dorven"
+    ],
+    "explain": "A ragnat usually oversees a whole region of Derethi worshippers.",
+    "terms": [
+      "Derethi",
+      "gyorn",
+      "ragnat",
+      "grador",
+      "arteth",
+      "dorven"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-062",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "What is the lowest rank of Derethi priest?",
+    "a": "Dorven",
+    "wrong": [
+      "Arteth",
+      "Grador",
+      "Ragnat"
+    ],
+    "explain": "Dorven are the lowest Derethi priests and officially serve the gradors.",
+    "terms": [
+      "Derethi",
+      "dorven",
+      "arteth",
+      "grador",
+      "ragnat"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-063",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "How many gyorns are there in the Fjordell Empire?",
+    "a": "Twenty",
+    "wrong": [
+      "Ten",
+      "Twelve",
+      "Forty"
+    ],
+    "explain": "There are only twenty gyorns, and in nations that follow Shu-Dereth even kings bow to them.",
+    "terms": [
+      "gyorn",
+      "Fjordell",
+      "Shu-Dereth"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-064",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "Which Derethi monastery is known for training assassins?",
+    "a": "Rathbore",
+    "wrong": [
+      "Fjeldor",
+      "Dakhor",
+      "Ghajan"
+    ],
+    "explain": "Rathbore trains assassins, Fjeldor trains spies and Dakhor trains its bone-twisted warriors.",
+    "terms": [
+      "Derethi",
+      "Rathbore",
+      "Fjeldor",
+      "Dakhor",
+      "Ghajan"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-065",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "What physical trace did Hrathen keep from his early training as a monk?",
+    "a": "A nearly indestructible bone in his forearm",
+    "wrong": [
+      "An Aon carved into his chest",
+      "A soulstamp mark on his neck",
+      "Eyes that see in darkness"
+    ],
+    "explain": "He left that monastery for another, but one altered forearm bone remained, giving him great strength.",
+    "terms": [
+      "Hrathen",
+      "Aon"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-066",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "Which country does Forton, the potion-maker who supplies Hrathen, come from?",
+    "a": "Hrovell",
+    "wrong": [
+      "Svorden",
+      "JinDo",
+      "Teod"
+    ],
+    "explain": "Forton is a Hrovell apothecary whose potions, including the one that mimics the Shaod, Hrathen relies on.",
+    "terms": [
+      "Forton",
+      "Hrathen",
+      "Hrovell",
+      "Svorden",
+      "JinDo",
+      "Teod",
+      "Shaod"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-067",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "Aanden calls himself a baron, but what was he before the Shaod?",
+    "a": "A sculptor",
+    "wrong": [
+      "A merchant",
+      "A Korathi priest",
+      "A soldier"
+    ],
+    "explain": "Aanden was really a sculptor named Taan, and he returns to sculpting after joining New Elantris.",
+    "terms": [
+      "Aanden",
+      "Shaod",
+      "Korathi",
+      "Taan",
+      "New Elantris"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-068",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "hope-of-elantris",
+    "q": "In The Hope of Elantris, roughly how many children live together in the children's home of New Elantris?",
+    "a": "About fifty",
+    "wrong": [
+      "About a dozen",
+      "About twenty",
+      "About two hundred"
+    ],
+    "explain": "Matisse helps look after the fifty or so children who live there.",
+    "terms": [
+      "The Hope of Elantris",
+      "New Elantris",
+      "Matisse"
+    ],
+    "source": "The Hope of Elantris"
+  },
+  {
+    "id": "sel-069",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "hope-of-elantris",
+    "q": "In The Hope of Elantris, who is the adoptive father of the story's young heroine?",
+    "a": "Dashe",
+    "wrong": [
+      "Galladon",
+      "Aanden",
+      "Mareshe"
+    ],
+    "explain": "Dashe, Karata's second in command, brought her to Karata's palace after the Shaod took her.",
+    "terms": [
+      "The Hope of Elantris",
+      "Dashe",
+      "Galladon",
+      "Aanden",
+      "Mareshe",
+      "Karata",
+      "Shaod"
+    ],
+    "source": "The Hope of Elantris"
+  },
+  {
+    "id": "sel-070",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "hope-of-elantris",
+    "q": "In The Hope of Elantris, which Aon is drawn to lure and blind the pursuing soldiers?",
+    "a": "Ashe",
+    "wrong": [
+      "Daa",
+      "Ehe",
+      "Tia"
+    ],
+    "explain": "Aon Ashe creates light, which the young heroine uses first as a lure and then to dazzle the soldiers.",
+    "terms": [
+      "Aon",
+      "Ashe",
+      "Daa",
+      "Ehe",
+      "Tia",
+      "The Hope of Elantris"
+    ],
+    "source": "The Hope of Elantris"
+  },
+  {
+    "id": "sel-071",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "Which Aon did Elantrians use to travel instantly from place to place?",
+    "a": "Tia",
+    "wrong": [
+      "Rao",
+      "Omi",
+      "Ehe"
+    ],
+    "explain": "Aon Tia is the Aon of travel, used for instant transportation before the Reod.",
+    "terms": [
+      "Aon",
+      "Elantrian",
+      "Tia",
+      "Rao",
+      "Omi",
+      "Ehe",
+      "Reod"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-072",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "Which Aon serves as the symbol of Shu-Korath?",
+    "a": "Omi",
+    "wrong": [
+      "Rao",
+      "Ien",
+      "Ashe"
+    ],
+    "explain": "Aon Omi, which means love, is the emblem of Shu-Korath and is carved on its chapels.",
+    "terms": [
+      "Aon",
+      "Omi",
+      "Rao",
+      "Ien",
+      "Ashe",
+      "Shu-Korath"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-073",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "elantris",
+    "q": "The chapel inside Elantris that becomes the heart of New Elantris originally belonged to which religion?",
+    "a": "Shu-Korath",
+    "wrong": [
+      "Shu-Dereth",
+      "Shu-Keseg",
+      "The Jeskeri Mysteries"
+    ],
+    "explain": "The Elantrians built a Korathi chapel inside their city as a gesture of friendship toward Teod.",
+    "terms": [
+      "Elantris",
+      "New Elantris",
+      "Shu-Korath",
+      "Shu-Dereth",
+      "Shu-Keseg",
+      "Jeskeri Mysteries",
+      "Elantrian",
+      "Korathi",
+      "Teod"
+    ],
+    "source": "Elantris"
+  },
+  {
+    "id": "sel-074",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "emperors-soul",
+    "q": "How many factions make up the government of the Rose Empire?",
+    "a": "Eighty",
+    "wrong": [
+      "Twenty",
+      "Forty",
+      "One hundred twenty"
+    ],
+    "explain": "Each of the eighty factions, such as Heritage and Glory, is led by five arbiters.",
+    "terms": [
+      "Rose Empire",
+      "Heritage Faction",
+      "Glory Faction"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-075",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "emperors-soul",
+    "q": "The Strikers descend from which people, absorbed long ago by the Rose Empire?",
+    "a": "Mulla'dil",
+    "wrong": [
+      "Dzhamar",
+      "Teullu",
+      "MaiPon"
+    ],
+    "explain": "The Grands renamed the Mulla'dil 'Strikers' after annexing their mountainous homeland.",
+    "terms": [
+      "Strikers",
+      "Rose Empire",
+      "Mulla'dil",
+      "Dzhamar",
+      "Teullu",
+      "MaiPon",
+      "Grands"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-076",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "emperors-soul",
+    "q": "In the forged past that Shai's Essence Mark Shaizan gives her, which warrior people trained her in martial arts?",
+    "a": "Teullu",
+    "wrong": [
+      "Mulla'dil",
+      "Dzhamar",
+      "MaiPon"
+    ],
+    "explain": "The Shaizan Mark rewrites Shai's past so that she spent years training with the Teullu, masters of the martial arts.",
+    "terms": [
+      "Shai",
+      "Essence Mark",
+      "Shaizan",
+      "Teullu",
+      "Mulla'dil",
+      "Dzhamar",
+      "MaiPon"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-077",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "emperors-soul",
+    "q": "What does Frava offer Shai in an attempt to bribe her?",
+    "a": "Control of the city's smuggling",
+    "wrong": [
+      "A seat among the arbiters",
+      "Her own Forgery workshop",
+      "A pardon for all MaiPon"
+    ],
+    "explain": "On Day Seventeen, Frava tries to win Shai over with control of the city's smuggling operations.",
+    "terms": [
+      "Frava",
+      "Shai",
+      "Forgery",
+      "MaiPon"
+    ],
+    "source": "The Emperor's Soul, Day Seventeen"
+  },
+  {
+    "id": "sel-078",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "emperors-soul",
+    "q": "How many Essence Marks had Shai created for herself?",
+    "a": "Five",
+    "wrong": [
+      "Two",
+      "Three",
+      "Ten"
+    ],
+    "explain": "Shai's Essence Marks took years of work to create; each rewrites her past to give her different skills, such as Shaizan's fighting ability.",
+    "terms": [
+      "Essence Mark",
+      "Shai",
+      "Shaizan"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-079",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "emperors-soul",
+    "q": "Forgers prefer soulstone for their stamps. How is it hardened after carving?",
+    "a": "With a flame",
+    "wrong": [
+      "With squid ink",
+      "By soaking it in blood",
+      "By leaving it in moonlight"
+    ],
+    "explain": "Soulstone is soft and easy to carve in its natural state, then hardened by heating it.",
+    "terms": [
+      "Forger",
+      "soulstone"
+    ],
+    "source": "The Emperor's Soul"
+  },
+  {
+    "id": "sel-080",
+    "category": "sel",
+    "difficulty": 4,
+    "work": "arcanum",
+    "q": "How many moons orbit Sel?",
+    "a": "One",
+    "wrong": [
+      "None",
+      "Two",
+      "Three"
+    ],
+    "explain": "Sel has a single blue-white moon, Oem.",
+    "terms": [
+      "Sel",
+      "Oem"
+    ],
+    "source": "Arcanum Unbounded, The Selish System"
+  }
+]

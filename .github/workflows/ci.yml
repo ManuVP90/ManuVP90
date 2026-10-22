@@ -1,0 +1,89 @@
+# Tests on every push and pull request. pages.yml deploys main only after this workflow succeeds.
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PLAYWRIGHT_VERSION: 1.56.1 # keep in sync with the version used locally (npm ls -g playwright)
+  SMOKE_DIR: /tmp/cosmere-smoke
+  EDGE_DIR: /tmp/cosmere-edge
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # the CACHE_VERSION check compares with the previous commit / PR base
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate content
+        run: node tools/build.mjs --check
+
+      - name: Terminology report (informative, never fails)
+        run: |
+          node tools/check-terms.mjs > /tmp/check-terms.txt 2> /tmp/check-terms-summary.txt || true
+          cat /tmp/check-terms-summary.txt
+          {
+            echo '### Terminology (tools/check-terms.mjs)'
+            echo '```'
+            cat /tmp/check-terms-summary.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: App shell checks (service worker, i18n, manifest, works)
+        env:
+          # Shell files changed since the PR base / previous push need a new CACHE_VERSION.
+          CHECK_BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+        run: node tools/check-app.mjs
+
+      - name: Unit tests
+        run: node tools/unit.mjs
+
+      - name: Regenerate app/data from content (what Pages publishes)
+        run: |
+          node tools/build.mjs
+          if ! git diff --quiet -- app/data; then
+            echo "::warning title=app/data out of date::app/data/ differs from what content/ generates. Pages publishes the regenerated data; run node tools/build.mjs and commit app/data."
+          fi
+
+      - name: Install Playwright + Chromium
+        run: |
+          npm install --no-save --no-package-lock --no-audit --no-fund "playwright@${PLAYWRIGHT_VERSION}"
+          npx playwright install --with-deps chromium
+
+      - name: Smoke test (Playwright)
+        run: node tools/smoke.mjs
+        env:
+          SCREENSHOT_DIR: ${{ env.SMOKE_DIR }}
+
+      - name: Edge-case tests (Playwright)
+        if: ${{ !cancelled() }}
+        run: node tools/edge.mjs
+        env:
+          SCREENSHOT_DIR: ${{ env.EDGE_DIR }}
+
+      - name: Upload screenshots
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-${{ github.run_number }}
+          path: |
+            ${{ env.SMOKE_DIR }}
+            ${{ env.EDGE_DIR }}
+          if-no-files-found: ignore
+          retention-days: 14

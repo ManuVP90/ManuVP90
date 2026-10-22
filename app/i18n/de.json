@@ -1,0 +1,516 @@
+{
+  "app": {
+    "title": "Kosmeer-Quiz",
+    "tagline": "Wie gut kennst du das Kosmeer?"
+  },
+  "common": {
+    "back": "Zurück",
+    "home": "Startseite",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "continue": "Weiter",
+    "next": "Nächste Frage",
+    "loading": "Wird geladen …",
+    "playAgain": "Nochmal spielen",
+    "openSettings": "Einstellungen öffnen",
+    "labelled": "{label}: {text}"
+  },
+  "home": {
+    "continue": "Spiel fortsetzen",
+    "continueDesc": "Laufendes Spiel: {players}",
+    "classic": "Klassisches Spiel",
+    "classicDesc": "1–6 Spieler · lade alle sechs Edelsteine auf",
+    "quick": "Schnelles Spiel",
+    "quickDesc": "15 Fragen gegen die Uhr",
+    "practice": "Üben",
+    "practiceDesc": "Wähle eine Welt und einen Schwierigkeitsgrad",
+    "stats": "Statistik",
+    "settings": "Einstellungen",
+    "about": "Info",
+    "continueQuick": "Schnelles Spiel fortsetzen",
+    "continueQuickDesc": "Frage {n} von {total} · {score} Punkte",
+    "newGameConfirmClassic": "Wenn du ein neues Spiel startest, wird das laufende klassische Spiel verworfen. Fortfahren?",
+    "newGameConfirmQuick": "Wenn du ein neues Spiel startest, wird das laufende schnelle Spiel verworfen. Fortfahren?",
+    "newGameYes": "Neues Spiel starten",
+    "newGameNo": "Zurück",
+    "daily": "Tägliche Herausforderung",
+    "dailyDesc": "5 Fragen, heute für alle gleich",
+    "dailyStreak": "Tage in Folge: {n} · nicht abreißen lassen!",
+    "dailyRun": "Läuft: Frage {n} von {total}",
+    "dailyContinue": "Tägliche Herausforderung fortsetzen",
+    "dailyDone": "Heute erledigt: {n}/{total} · Serie {streak}",
+    "achievements": "Erfolge",
+    "dailyLocked": "Du hast die letzte Herausforderung schon gespielt",
+    "classicDescFiltered": "1–6 Spieler · lade alle deine Edelsteine auf",
+    "continueTurn": "{name} ist dran · {players}"
+  },
+  "cat": {
+    "roshar": "Roschar",
+    "scadrial": "Scadrial",
+    "sel": "Sel",
+    "nalthis": "Nalthis",
+    "otros": "Andere Welten",
+    "cosmere": "Das Kosmeer"
+  },
+  "gem": {
+    "roshar": "Saphir",
+    "scadrial": "Rubin",
+    "sel": "Smaragd",
+    "nalthis": "Heliodor",
+    "otros": "Amethyst",
+    "cosmere": "Diamant"
+  },
+  "difficulty": {
+    "1": "Leicht",
+    "2": "Mittel",
+    "3": "Schwer",
+    "4": "Experte",
+    "label": "Schwierigkeit: {level}"
+  },
+  "level": {
+    "title": "Schwierigkeitsstufe",
+    "easy": "Leicht",
+    "normal": "Normal",
+    "hard": "Schwer",
+    "expert": "Experte",
+    "easyDesc": "Vor allem leichte Fragen (wenn sie ausgehen, auch schwerere).",
+    "normalDesc": "Eine Mischung aus leichten und mittleren Fragen, dazu ein paar schwere.",
+    "hardDesc": "Mittlere, schwere und Expertenfragen.",
+    "expertDesc": "Nur schwere und Expertenfragen – für alle, die die Bücher mehrmals gelesen haben.",
+    "badge": "Stufe: {level}"
+  },
+  "lifeline": {
+    "title": "Hilfen",
+    "help": "So funktionieren die Hilfen",
+    "rules": "Jeder Spieler hat pro Spiel jede Hilfe einmal (auch im schnellen Spiel). Bei der Finalfrage und beim Üben gibt es keine Hilfen, und Atium und Sturmlicht lassen sich bei derselben Frage nicht kombinieren.",
+    "used": "Schon benutzt: {name}",
+    "atium": {
+      "name": "Atium",
+      "desc": "Entfernt zwei falsche Antworten.",
+      "long": "Verbrenne Atium und blicke in die Zukunft: Zwei falsche Antworten verschwinden.",
+      "done": "Atium: Zwei falsche Antworten wurden entfernt.",
+      "removed": "{option} (durch Atium entfernt)"
+    },
+    "stormlight": {
+      "name": "Sturmlicht",
+      "desc": "Vor dem Antworten aktivieren: Liegst du falsch, darfst du noch einmal wählen.",
+      "long": "Aktiviere es vor dem Antworten. Wählst du eine falsche Antwort, wird sie markiert und du darfst noch einmal wählen – die richtige wird nicht verraten. Die Zeit läuft weiter. Benutzt du Hauch, während es aktiv ist, bleibt es bei der neuen Frage aktiv.",
+      "armed": "Sturmlicht aktiv: Liegst du falsch, darfst du noch einmal wählen.",
+      "saved": "Das Sturmlicht heilt dich! Die war es nicht – wähle eine andere Antwort.",
+      "struck": "{option} (falsch)"
+    },
+    "breath": {
+      "name": "Hauch",
+      "desc": "Tauscht die Frage gegen eine andere aus derselben Welt mit gleicher Schwierigkeit.",
+      "long": "Tauscht die Frage gegen eine andere aus derselben Welt mit gleicher Schwierigkeit. Ist keine mehr übrig, kannst du ihn nicht einsetzen.",
+      "none": "Keine andere Frage aus derselben Welt mit gleicher Schwierigkeit."
+    },
+    "noCombo": "Atium und Sturmlicht lassen sich bei derselben Frage nicht kombinieren."
+  },
+  "setup": {
+    "title": "Neues Spiel",
+    "playerCount": "Spieler",
+    "player": "Spieler {n}",
+    "namePlaceholder": "Spieler {n}",
+    "color": "Edelsteinfarbe",
+    "timer": "30-Sekunden-Timer",
+    "timerHint": "Läuft die Zeit ab, zählt die Antwort als falsch. Die Zeit einer Frage läuft weiter, auch wenn du die App verlässt.",
+    "start": "Spiel starten",
+    "fewer": "Spieler entfernen",
+    "more": "Spieler hinzufügen",
+    "timerPause": "Ohne Timer kannst du jederzeit pausieren.",
+    "fullRound": "Runde zu Ende spielen",
+    "fullRoundHint": "Beantwortet jemand die Finalfrage richtig, sind die übrigen Spieler dieser Runde noch einmal dran; wer die Finalfrage ebenfalls richtig beantwortet, teilt sich den Sieg. So haben alle gleich viele Züge."
+  },
+  "turn": {
+    "passTo": "Gib das Handy weiter an",
+    "ready": "Ich bin bereit",
+    "noPeek": "Alle anderen: nicht spicken!",
+    "turnOf": "Am Zug: {name}",
+    "starts": "Es beginnt: {name}",
+    "lastTurn": "Letzte Runde. Finalfrage richtig beantwortet: {names}. Das ist dein letzter Zug: Beantworte die Finalfrage auch richtig, dann teilt ihr euch den Sieg.",
+    "clockRunning": "Diese Frage wurde schon angezeigt und ihre Zeit ist weitergelaufen: noch {s} s.",
+    "clockOut": "Diese Frage wurde schon angezeigt und ihre Zeit ist abgelaufen."
+  },
+  "wheel": {
+    "label": "Kategorienrad",
+    "spin": "Drehen",
+    "tapToSpin": "Tippe auf das Rad, um es zu drehen",
+    "spinning": "Das Rad dreht sich …",
+    "wildcard": "Joker",
+    "landed": "{category}!",
+    "chooseTitle": "Joker!",
+    "chooseHint": "Wähle eine beliebige Welt",
+    "infusedPick": "Edelstein schon aufgeladen: {category}. Wähle eine andere Welt!",
+    "wildcardOnly": "Joker! Nur noch eine Welt übrig: {category}",
+    "infusedOnly": "Edelstein schon aufgeladen. Nur noch eine Welt übrig: {category}"
+  },
+  "question": {
+    "correct": "Richtig!",
+    "incorrect": "Falsch",
+    "timeout": "Die Zeit ist um!",
+    "answerWas": "Die richtige Antwort war: {answer}",
+    "secondsLeft": "Noch {s} Sekunden",
+    "final": "Finalfrage",
+    "progress": "Frage {n} von {total}"
+  },
+  "classic": {
+    "charge": "+1 Ladung: {category} ({n}/2)",
+    "infused": "Edelstein aufgeladen: {category}",
+    "alreadyInfused": "Edelstein schon aufgeladen: {category}. Keine weitere Ladung.",
+    "allInfused": "Alle Edelsteine aufgeladen! Als Nächstes: die Finalfrage.",
+    "spinAgain": "Dreh noch einmal!",
+    "passTurn": "{name} ist jetzt an der Reihe.",
+    "soloMiss": "Daneben! Dreh noch einmal.",
+    "finalFail": "Diesmal nicht. In deinem nächsten Zug bekommst du erneut die Finalfrage.",
+    "finalTitle": "Finalfrage",
+    "finalIntro": "{name}, alle deine Edelsteine sind aufgeladen. Beantworte diese Frage richtig, um zu gewinnen!",
+    "finalReady": "Los geht’s",
+    "leave": "Spiel verlassen (Fortschritt wird gespeichert)",
+    "board": "Spieler",
+    "gemCount": "{n} von {total} Edelsteinen aufgeladen",
+    "gem0": "{category}: keine Ladung",
+    "gem1": "{category}: 1 Ladung",
+    "gem2": "{category}: aufgeladen",
+    "streakPass": "{n} richtige Antworten in Folge! Jetzt ist {name} am Zug.",
+    "allInfusedNext": "Alle Edelsteine aufgeladen! In deinem nächsten Zug kommt die Finalfrage.",
+    "leaveTimerTitle": "Spiel verlassen?",
+    "leaveTimerBody": "Wenn du gehst, läuft die Zeit der Frage weiter.",
+    "leaveTimerYes": "Verlassen",
+    "leaveTimerNo": "Weiterspielen",
+    "emptySaved": "Das Spiel ist gespeichert: Du kannst es fortsetzen, sobald du mehr Werke auswählst.",
+    "finalRoundOn": "Finalfrage richtig! Die übrigen Spieler dieser Runde sind noch dran: Wer die Finalfrage ebenfalls richtig beantwortet, teilt sich den Sieg.",
+    "finalShare": "Finalfrage richtig! Du teilst dir den Sieg.",
+    "roundOver": "Die Runde ist vorbei.",
+    "finalDone": "Finalfrage richtig beantwortet",
+    "finalFailLast": "Diesmal nicht – und das war deine letzte Chance: Die Runde endet ohne weiteren Zug für dich.",
+    "lastChanceGone": "Alle Edelsteine aufgeladen! Aber die Runde endet jetzt: Du bekommst keinen weiteren Zug."
+  },
+  "victory": {
+    "title": "{name} gewinnt!",
+    "subtitle": "Alle Edelsteine aufgeladen und die Finalfrage gemeistert.",
+    "answered": "Gestellte Fragen: {n}",
+    "statsTitle": "Spielübersicht",
+    "correct": "Richtig",
+    "correctOf": "{n}/{total}",
+    "accuracy": "Trefferquote",
+    "percent": "{n} %",
+    "lifelines": "Benutzte Hilfen",
+    "gems": "Edelsteine",
+    "duration": "Dauer: {time}",
+    "titleShared": "Geteilter Sieg: {names}!",
+    "subtitleShared": "Finalfrage in derselben Runde richtig beantwortet.",
+    "groupNote": "Gruppenspiel: Es zählt nicht für die persönliche Statistik, die Sammlung, Fehler oder Erfolge (Gruppenerfolge schon)."
+  },
+  "quick": {
+    "title": "Schnelles Spiel",
+    "score": "Punkte",
+    "best": "Bestleistung",
+    "points": "+{n} Punkte",
+    "result": "{score} Punkte",
+    "correctCount": "{n} von {total} richtig",
+    "newRecord": "Neuer Rekord!",
+    "finished": "Ergebnis",
+    "seeResults": "Ergebnis anzeigen",
+    "intro": "{n} Fragen aus allen Welten, je {s} Sekunden. Je schneller du antwortest, desto mehr Punkte gibt es. Die Zeit läuft weiter, auch wenn du die App verlässt.",
+    "introLifelines": "Du hast jede Hilfe einmal: Atium, Sturmlicht und Hauch.",
+    "start": "Los geht’s",
+    "quitTitle": "Schnelles Spiel beenden?",
+    "quitBody": "Deine Punkte aus diesem Spiel gehen verloren.",
+    "quitYes": "Spiel beenden",
+    "quitNo": "Weiterspielen",
+    "emptySaved": "Das Spiel ist gespeichert (Frage {n} von {total}): Du kannst es fortsetzen, sobald du mehr Werke auswählst.",
+    "bestLevel": "Bestleistung ({level}): {n}",
+    "noBestLevel": "Noch kein Rekord auf Stufe {level}.",
+    "bestLegacy": "Rekord aus früheren Versionen (alle Stufen): {n}",
+    "introFiltered": "{n} Fragen aus deinen Welten, je {s} Sekunden. Je schneller du antwortest, desto mehr Punkte gibt es. Die Zeit läuft weiter, auch wenn du die App verlässt."
+  },
+  "practice": {
+    "title": "Üben",
+    "category": "Welt",
+    "all": "Alle Welten",
+    "difficulty": "Schwierigkeit",
+    "any": "Alle",
+    "available": "Verfügbare Fragen: {n}",
+    "start": "Üben starten",
+    "end": "Beenden",
+    "tally": "{correct} von {total} richtig",
+    "fallback": "Hier gibt es noch keine Fragen der Stufe {level}: Du übst mit Fragen der Stufe {fallback}.",
+    "empty": "Hier gibt es noch keine Fragen der Stufe {level}.",
+    "noneFilter": "Keine Fragen verfügbar: Der Spoilerfilter lässt kein Werk mit Fragen übrig. Wähle in den Einstellungen mehr Werke aus.",
+    "allSeen": "Du hast alle verfügbaren Fragen gesehen; ab jetzt wiederholen sie sich.",
+    "missed": "Meine Fehler ({n})",
+    "missedLabel": "Wiederholen",
+    "missedHint": "Nur Fragen, die du falsch beantwortet hast. Beantwortest du eine richtig, verschwindet sie aus der Liste.",
+    "missedNone": "Hier erscheinen die Fragen, die du in irgendeinem Modus falsch beantwortest.",
+    "missedAvailable": "Fehler zum Wiederholen: {n}",
+    "missedTitle": "Meine Fehler",
+    "missedLeft": "Übrig: {n}",
+    "missedCleared": "Aus deinen Fehlern entfernt.",
+    "missedDone": "Du hast alle deine Fehler wiederholt!"
+  },
+  "stats": {
+    "title": "Statistik",
+    "classicGames": "Gewonnene klassische Spiele",
+    "quickGames": "Schnelle Spiele",
+    "bestQuick": "Rekord im schnellen Spiel",
+    "answered": "Beantwortete Fragen",
+    "accuracy": "Trefferquote",
+    "byCategory": "Trefferquote nach Welt",
+    "none": "Noch keine Antworten. Auf geht’s!",
+    "of": "{correct} von {total}",
+    "lifelines": "Benutzte Hilfen",
+    "recordsByLevel": "Rekorde im schnellen Spiel nach Stufe",
+    "collection": "Sammlung",
+    "discovered": "{n}/{total} Fragen entdeckt",
+    "discoveredOf": "{n}/{total}",
+    "collectionFiltered": "Es zählen nur die im Spoilerfilter angehakten Werke.",
+    "byDifficulty": "Nach Schwierigkeit",
+    "groupGames": "Gruppenspiele",
+    "groupNote": "Klassische Spiele mit 2 oder mehr Spielern werden getrennt als Gruppenspiele gezählt: Sie zählen nicht für deine Antworten, deine Sammlung, „Meine Fehler“ oder deine persönlichen Erfolge."
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "theme": "Design",
+    "dark": "Dunkel",
+    "light": "Hell",
+    "sound": "Soundeffekte",
+    "vibration": "Vibration",
+    "vibrationUnsupported": "Auf diesem Gerät nicht verfügbar",
+    "timer": "Timer standardmäßig an",
+    "spoilers": "Spoilerfilter",
+    "spoilersHint": "Hake die Werke an, die du gelesen hast. Es erscheinen nur Fragen dazu.",
+    "selected": "{n} von {total} Werken ausgewählt",
+    "all": "Alle auswählen",
+    "none": "Keine auswählen",
+    "data": "Daten",
+    "reset": "Alle Daten löschen",
+    "resetConfirm": "Damit werden Statistik, Rekorde, gespeichertes Spiel und Einstellungen gelöscht. Bist du sicher?",
+    "resetDone": "Alle Daten wurden gelöscht.",
+    "storageWarning": "Speicher nicht verfügbar: Einstellungen und Fortschritt gehen beim Schließen der App verloren.",
+    "resetNo": "Nicht löschen",
+    "backup": "Sicherung",
+    "backupHint": "Speichere deine Statistiken, Rekorde, Fehler und Einstellungen als Code, um sie auf ein anderes Gerät zu übertragen oder wiederherzustellen. Laufende Spiele sind nicht enthalten.",
+    "backupExport": "Fortschritt exportieren",
+    "backupCode": "Code deines Fortschritts",
+    "backupCopy": "Code kopieren",
+    "backupCopied": "Code kopiert. Bewahre ihn gut auf.",
+    "backupCopyFailed": "Kopieren nicht möglich: Markiere den Code und kopiere ihn von Hand.",
+    "backupPaste": "Importieren: Code hier einfügen",
+    "backupImport": "Fortschritt importieren",
+    "backupNo": "Nicht importieren",
+    "backupConfirmTitle": "Diesen Fortschritt importieren?",
+    "backupConfirm": "Deine aktuellen Statistiken, Rekorde, Fehler und Einstellungen werden durch die aus dem Code ersetzt. Laufende Spiele bleiben unverändert.",
+    "backupDone": "Fortschritt importiert.",
+    "backupError": {
+      "empty": "Füge zuerst einen Code ein.",
+      "format": "Dieser Code ist ungültig. Prüfe, ob du ihn vollständig kopiert hast.",
+      "checksum": "Der Code ist unvollständig oder beschädigt. Kopiere ihn erneut.",
+      "version": "Dieser Code stammt aus einer anderen Version der App und kann nicht importiert werden.",
+      "unsupported": "Dieser Browser kann den Code nicht lesen. Aktualisiere ihn oder nimm einen anderen."
+    },
+    "noQuestionsYet": "noch keine Fragen"
+  },
+  "about": {
+    "title": "Info",
+    "body": "Ein Quizspiel über die Welten von Brandon Sandersons Kosmeer. Spiel allein oder reich das Handy unter Freunden herum.",
+    "howTo": "So wird gespielt",
+    "rule1": "Dreh das Rad und beantworte eine Frage zu der Welt, auf der es stehen bleibt.",
+    "rule2": "Richtige Antwort: Du erhältst eine Ladung für diese Welt und drehst noch einmal. Falsche Antwort: Der nächste Spieler ist dran.",
+    "rule3": "Zwei Ladungen laden einen Edelstein auf. Mit dem Joker wählst du die Welt selbst.",
+    "rule4": "Lade alle Edelsteine auf und beantworte dann die Finalfrage richtig, um zu gewinnen.",
+    "offline": "Funktioniert nach dem ersten Laden auch offline. Alle Daten bleiben auf diesem Gerät.",
+    "disclaimer": "Inoffizielles Fanprojekt, das weder mit Brandon Sanderson noch mit Dragonsteel verbunden ist und von ihnen nicht unterstützt wird. Das Kosmeer und alle zugehörigen Namen gehören ihren jeweiligen Inhabern.",
+    "version": "Version {v}",
+    "levels": "Schwierigkeitsstufen",
+    "levelsFinal": "Die Finalfrage im klassischen Spiel ist bei Leicht mittelschwer, bei Normal schwer und bei Schwer und Experte eine Expertenfrage.",
+    "lifelines": "Hilfen",
+    "rule5": "Wer beginnt, wird ausgelost. Nach 3 richtigen Antworten in Folge ist trotzdem der nächste Spieler dran; allein gibt es keine Grenze.",
+    "rule6": "Landet das Rad auf einem Edelstein, den du schon aufgeladen hast, wählst du eine andere Welt.",
+    "intro": "Einführung ansehen",
+    "rule7": "Beantwortest du die Finalfrage falsch, ist der nächste Spieler dran, und in deinem nächsten Zug versuchst du es mit einer anderen Frage erneut.",
+    "rule8": "Mit Timer hast du 30 Sekunden pro Frage; läuft die Zeit ab, zählt die Antwort als falsch. Sobald eine Frage angezeigt wird, läuft ihre Zeit weiter, auch wenn du die App verlässt.",
+    "rule9": "Runde zu Ende spielen (ab 2 Spielern, standardmäßig an): Beantwortet jemand die Finalfrage richtig, sind die übrigen Spieler dieser Runde noch dran, und wer sie auch richtig beantwortet, teilt sich den Sieg.",
+    "rule10": "Spiele mit 2 oder mehr Spielern zählen als Gruppenspiele und nicht für deine persönliche Statistik."
+  },
+  "errors": {
+    "load": "Die Fragen konnten nicht geladen werden. Prüfe deine Verbindung und lade die Seite neu.",
+    "noQuestions": "Mit dem aktuellen Spoilerfilter sind keine Fragen verfügbar.",
+    "fallback": "Die Fragen sind in dieser Sprache noch nicht verfügbar und werden auf Englisch angezeigt.",
+    "emptyFilter": "Mit dem aktuellen Spoilerfilter gibt es keine Fragen. Wähle in den Einstellungen die Bücher aus, die du gelesen hast."
+  },
+  "boot": {
+    "title": "Etwas ist schiefgelaufen",
+    "body": "Die App konnte nicht starten. Möglicherweise sind die gespeicherten Daten beschädigt; sie zu löschen behebt das meistens (das laufende Spiel, die Einstellungen und die Statistik gehen verloren).",
+    "reset": "Daten löschen und neu starten",
+    "retry": "Erneut versuchen",
+    "confirm": "App-Daten löschen? Das laufende Spiel, die Einstellungen und die Statistik gehen verloren.",
+    "confirmYes": "Ja, löschen und neu starten",
+    "cancel": "Nicht löschen"
+  },
+  "onboarding": {
+    "label": "Einführung",
+    "step": "Schritt {n} von {total}",
+    "skip": "Überspringen",
+    "next": "Weiter",
+    "welcome": "Willkommen",
+    "readTitle": "Was hast du gelesen?",
+    "readHint": "Hake die Bücher an, die du gelesen hast – dann kommen nur Fragen dazu. Du kannst das jederzeit in den Einstellungen ändern.",
+    "all": "Alles",
+    "none": "Nichts",
+    "noneWarn": "Ohne angehakte Bücher gibt es keine Fragen.",
+    "rulesTitle": "So wird gespielt",
+    "ruleWheel": "Dreh das Rad: Es bestimmt, aus welcher Welt die Frage kommt. Beim Joker wählst du selbst.",
+    "ruleGems": "Jede richtige Antwort lädt den Edelstein dieser Welt; zwei Ladungen laden ihn ganz auf. Lade alle auf und beantworte die Finalfrage, um zu gewinnen.",
+    "ruleLifelines": "Pro Spiel hast du drei Hilfen: Atium entfernt zwei falsche Antworten, Sturmlicht lässt dich neu wählen und Hauch tauscht die Frage aus.",
+    "startTitle": "Alles bereit!",
+    "startBody": "Spiel allein oder gib das Handy weiter. Diese Einführung findest du jederzeit unter „Info“.",
+    "start": "Los geht’s",
+    "showWorks": "Bücher anzeigen: {world}",
+    "readAll": "Ich habe alles gelesen",
+    "orPick": "Oder wähle nur aus, was du gelesen hast:",
+    "pickOne": "Wähle mindestens ein Werk aus, um weiterzumachen.",
+    "skippedNoFilter": "Kein Spoilerfilter: Du bekommst Fragen zu allen Büchern. Das kannst du in den Einstellungen ändern."
+  },
+  "report": {
+    "link": "Problem melden",
+    "describe": "Was ist falsch? (Antwort, Name, Übersetzung, Spoiler …)",
+    "offlineCopied": "Du bist offline: Die Meldung wurde in die Zwischenablage kopiert, damit du sie später senden kannst.",
+    "offlineFailed": "Du bist offline und die Meldung konnte nicht kopiert werden. Versuch es wieder, wenn du online bist.",
+    "copy": "Meldung kopieren",
+    "copied": "Meldung kopiert. Füge sie auf GitHub ein oder schick sie an die Person, die das Spiel betreut.",
+    "copyFailed": "Die Meldung konnte nicht kopiert werden.",
+    "field": {
+      "id": "ID",
+      "language": "Sprache",
+      "world": "Welt",
+      "difficulty": "Schwierigkeit",
+      "mode": "Modus",
+      "version": "Version",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    }
+  },
+  "review": {
+    "title": "Fehler ansehen ({n})",
+    "hint": "Die Fragen, die du in diesem Spiel falsch beantwortet hast, mit der richtigen Antwort. Üben kannst du sie unter Üben → Meine Fehler.",
+    "answer": "Richtige Antwort: {answer}",
+    "none": "Keine Fehler in diesem Spiel!",
+    "hintGroup": "Die in diesem Spiel falsch beantworteten Fragen mit der richtigen Antwort. Gruppenspiele werden nicht in „Meine Fehler“ gespeichert."
+  },
+  "update": {
+    "available": "Neue Version verfügbar",
+    "action": "Aktualisieren",
+    "later": "Später",
+    "updating": "Wird aktualisiert …"
+  },
+  "daily": {
+    "title": "Tägliche Herausforderung",
+    "intro": "{n} Fragen mit gemischtem Schwierigkeitsgrad, je {s} Sekunden. Heute sind sie für alle gleich, die in deiner Sprache spielen.",
+    "once": "Ein Versuch pro Tag. Komm jeden Tag wieder, um deine Serie zu halten.",
+    "start": "Herausforderung starten",
+    "streak": "Tage in Folge: {n}",
+    "noStreak": "Noch keine Serie",
+    "best": "Beste Serie: {n}",
+    "filterNote": "Dein Spoilerfilter blendet einige Fragen aus: Deine Herausforderung wird nur aus den aktiven Fragen gewählt und kann daher von der anderer Spieler abweichen.",
+    "leaveTitle": "Tägliche Herausforderung verlassen?",
+    "marksLabel": "{n} von {total} richtig",
+    "result": "{n} von {total} richtig",
+    "comeBack": "Morgen gibt es eine neue Herausforderung.",
+    "share": "Ergebnis teilen",
+    "sharePreview": "Text zum Teilen",
+    "shareStreak": "Tage in Folge: {n}",
+    "shareFiltered": "(mit Spoilerfilter)",
+    "copied": "Ergebnis in die Zwischenablage kopiert.",
+    "copyFailed": "Das Ergebnis konnte nicht kopiert werden.",
+    "clockBack": "Das Datum deines Geräts liegt vor dem deiner letzten Herausforderung, deshalb kann sie nicht erneut gespielt werden. Nächste Herausforderung: {date}."
+  },
+  "ach": {
+    "title": "Erfolge",
+    "count": "{n} von {total} Erfolgen",
+    "local": "Nur auf diesem Gerät gespeichert (und in deiner Sicherung).",
+    "unlocked": "Erfolg freigeschaltet!",
+    "unlockedOn": "Erreicht am {date}",
+    "locked": "Gesperrt",
+    "progress": "{n}/{total}",
+    "firstWin": {
+      "name": "Erster Sieg",
+      "desc": "Gewinne ein klassisches Einzelspiel."
+    },
+    "radiant": {
+      "name": "Strahlender",
+      "desc": "Gewinne 5 klassische Einzelspiele."
+    },
+    "fullTable": {
+      "name": "Volle Runde",
+      "desc": "Gewinne ein klassisches Spiel mit 6 Spielern."
+    },
+    "flawless": {
+      "name": "Sechs Edelsteine ohne Fehler",
+      "desc": "Lade in einem klassischen Einzelspiel alle sechs Edelsteine auf, ohne eine einzige Frage falsch zu beantworten."
+    },
+    "expertPure": {
+      "name": "Ohne Hilfe",
+      "desc": "Gewinne ein klassisches Einzelspiel auf Experte, ohne eine Hilfe zu nutzen."
+    },
+    "quickPerfect": {
+      "name": "Perfektes Spiel",
+      "desc": "Beantworte alle 15 Fragen eines schnellen Spiels richtig."
+    },
+    "quickScore": {
+      "name": "Gegen die Uhr",
+      "desc": "Erreiche {n} Punkte in einem schnellen Spiel."
+    },
+    "allWorlds": {
+      "name": "Von Welt zu Welt",
+      "desc": "Beantworte mindestens eine Frage aus jeder Welt richtig."
+    },
+    "answered100": {
+      "name": "Hundert Fragen",
+      "desc": "Beantworte 100 Fragen in beliebigen Modi."
+    },
+    "allLifelines": {
+      "name": "Alle drei Hilfen",
+      "desc": "Nutze jede Hilfe mindestens einmal: Atium, Sturmlicht und Hauch."
+    },
+    "stormlightSave": {
+      "name": "Vom Sturmlicht gerettet",
+      "desc": "Wähle mit aktivem Sturmlicht eine falsche Antwort und triff im zweiten Versuch die richtige."
+    },
+    "compendium": {
+      "name": "Kompendium",
+      "desc": "Entdecke alle Fragen einer Welt."
+    },
+    "halfCosmere": {
+      "name": "Das halbe Kosmeer",
+      "desc": "Entdecke die Hälfte aller Fragen."
+    },
+    "polyglot": {
+      "name": "Polyglott",
+      "desc": "Spiele in 3 Sprachen."
+    },
+    "dailyFirst": {
+      "name": "Herausforderung gemeistert",
+      "desc": "Schließe eine tägliche Herausforderung ab."
+    },
+    "dailyPerfect": {
+      "name": "Perfekter Tag",
+      "desc": "Beantworte alle 5 Fragen einer täglichen Herausforderung richtig."
+    },
+    "dailyStreak3": {
+      "name": "Beständigkeit",
+      "desc": "Schließe die tägliche Herausforderung 3 Tage in Folge ab."
+    },
+    "dailyStreak10": {
+      "name": "Zehn Tage in Folge",
+      "desc": "Schließe die tägliche Herausforderung 10 Tage in Folge ab."
+    },
+    "missedClear": {
+      "name": "Reine Weste",
+      "desc": "Wiederhole beim Üben alle deine Fehler, bis die Liste leer ist."
+    },
+    "groupNote": "Gruppenspiele zählen nur für Gruppenerfolge wie „Volle Runde“.",
+    "blocked": "Mit deinem aktuellen Spoilerfilter nicht erreichbar."
+  }
+}

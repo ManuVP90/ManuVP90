@@ -1,0 +1,992 @@
+[
+ {
+  "id": "scadrial-001",
+  "q": "Quale personaggio è noto come il Sopravvissuto di Hathsin?",
+  "a": "Kelsier",
+  "wrong": [
+   "Dockson",
+   "Marsh",
+   "Breeze"
+  ],
+  "explain": "Kelsier si guadagnò il titolo fuggendo dai Pozzi di Hathsin, dove i prigionieri del Lord Reggente estraevano atium."
+ },
+ {
+  "id": "scadrial-002",
+  "q": "Bruciando quale metallo un allomante può spingere i metalli vicini?",
+  "a": "Acciaio",
+  "wrong": [
+   "Ferro",
+   "Stagno",
+   "Ottone"
+  ],
+  "explain": "I Repulsori spingono con l’acciaio per scagliare monete o lanciarsi in aria."
+ },
+ {
+  "id": "scadrial-003",
+  "q": "Che cosa potenzia in un allomante bruciare peltro?",
+  "a": "Forza fisica e resistenza",
+  "wrong": [
+   "I sensi",
+   "Le emozioni altrui",
+   "La rapidità di pensiero"
+  ],
+  "explain": "I Lottatori bruciano peltro per combattere e sopportare ferite che fermerebbero chiunque altro."
+ },
+ {
+  "id": "scadrial-004",
+  "q": "Come si chiama il fratello maggiore di Vin, che l’ha cresciuta per strada?",
+  "a": "Reen",
+  "wrong": [
+   "Camon",
+   "Ulef",
+   "Elend"
+  ],
+  "explain": "Reen le insegnò a non fidarsi di nessuno, una lezione che Vin fatica a disimparare."
+ },
+ {
+  "id": "scadrial-005",
+  "q": "Qual è la capitale dell’Ultimo Impero?",
+  "a": "Luthadel",
+  "wrong": [
+   "Fadrex",
+   "Fellise",
+   "Tathingdwen"
+  ],
+  "explain": "A Luthadel si trovano le Grandi Casate e il palazzo del Lord Reggente."
+ },
+ {
+  "id": "scadrial-006",
+  "q": "Come si chiamano i servitori del Lord Reggente con chiodi di metallo conficcati negli occhi?",
+  "a": "Inquisitori d’Acciaio",
+  "wrong": [
+   "Obbligatori",
+   "Kandra",
+   "Custodi"
+  ],
+  "explain": "Nonostante i chiodi conficcati negli occhi, gli Inquisitori riescono comunque a vedere."
+ },
+ {
+  "id": "scadrial-007",
+  "q": "A quale casata nobile appartiene Elend?",
+  "a": "Casata Venture",
+  "wrong": [
+   "Casata Renoux",
+   "Casata Lekal",
+   "Casata Hasting"
+  ],
+  "explain": "La Casata Venture era una delle Grandi Casate più potenti di Luthadel."
+ },
+ {
+  "id": "scadrial-008",
+  "q": "Sazed è un Custode di quale popolo?",
+  "a": "Terris",
+  "wrong": [
+   "Skaa",
+   "Khlenni",
+   "Malwish"
+  ],
+  "explain": "I Custodi di Terris sono feruchemisti che conservano i ricordi di religioni e saperi perduti."
+ },
+ {
+  "id": "scadrial-009",
+  "q": "Di che colore è la pelle di un koloss?",
+  "a": "Blu",
+  "wrong": [
+   "Grigia",
+   "Rossa",
+   "Verde"
+  ],
+  "explain": "La pelle blu di un koloss non cresce con il corpo, quindi si tende e si lacera man mano che la creatura ingrandisce."
+ },
+ {
+  "id": "scadrial-010",
+  "q": "Quale membro della banda di Kelsier è un Sedatore?",
+  "a": "Breeze",
+  "wrong": [
+   "Ham",
+   "Clubs",
+   "Dockson"
+  ],
+  "explain": "Breeze brucia ottone per calmare e indirizzare le emozioni di chi lo circonda."
+ },
+ {
+  "id": "scadrial-011",
+  "q": "Bruciando quale metallo un allomante vede qualche secondo nel futuro?",
+  "a": "Atium",
+  "wrong": [
+   "Oro",
+   "Electrum",
+   "Bronzo"
+  ],
+  "explain": "L’atium mostra le ombre di ciò che le persone stanno per fare, rendendo quasi imbattibile chi lo usa."
+ },
+ {
+  "id": "scadrial-012",
+  "q": "Come si chiamano gli oggetti di metallo in cui i feruchemisti immagazzinano attributi?",
+  "a": "Mentimetallo",
+  "wrong": [
+   "Chiodi",
+   "Perle di atium",
+   "Medaglioni"
+  ],
+  "explain": "Sazed porta mentimetallo a forma di bracciali, anelli e orecchini per conservare ricordi, peso e altro."
+ },
+ {
+  "id": "scadrial-013",
+  "q": "Chi libera Rovina al Pozzo dell’Ascensione?",
+  "a": "Vin",
+  "wrong": [
+   "Elend",
+   "Sazed",
+   "Zane"
+  ],
+  "explain": "Rovina ingannò Vin, che rilasciò il potere del Pozzo invece di prenderlo, liberandolo dalla sua prigione."
+ },
+ {
+  "id": "scadrial-014",
+  "q": "Chi diventa Armonia alla fine de «Il campione delle ere»?",
+  "a": "Sazed",
+  "wrong": [
+   "Vin",
+   "Elend",
+   "Spook"
+  ],
+  "explain": "Assumendo sia Rovina sia Preservazione, Sazed diventa il detentore del Frammento chiamato Armonia."
+ },
+ {
+  "id": "scadrial-015",
+  "q": "Chi ha regalato a Vin l’orecchino che porta sempre?",
+  "a": "Sua madre",
+  "wrong": [
+   "Reen",
+   "Kelsier",
+   "Elend"
+  ],
+  "explain": "L’orecchino era in realtà un chiodo emalurgico che permetteva a Rovina di sussurrare a Vin."
+ },
+ {
+  "id": "scadrial-016",
+  "q": "Qual era il vero nome del Lord Reggente?",
+  "a": "Rashek",
+  "wrong": [
+   "Alendi",
+   "Kwaan",
+   "Gemmel"
+  ],
+  "explain": "Rashek era un portatore terrisiano che al Pozzo dell’Ascensione prese il potere per sé."
+ },
+ {
+  "id": "scadrial-017",
+  "q": "Quale kandra uccise segretamente il kandra che accompagnava Vin e ne prese il posto?",
+  "a": "TenSoon",
+  "wrong": [
+   "MeLaan",
+   "KanPaar",
+   "VenDell"
+  ],
+  "explain": "Zane ordinò a TenSoon di uccidere il kandra di Vin e di prenderne il posto per spiarla."
+ },
+ {
+  "id": "scadrial-018",
+  "q": "I kandra imitano le persone digerendo un cadavere e usandone che cosa?",
+  "a": "Le ossa",
+  "wrong": [
+   "Il sangue",
+   "I capelli",
+   "I denti"
+  ],
+  "explain": "Un kandra ricostruisce la carne attorno allo scheletro, copiando l’aspetto della persona."
+ },
+ {
+  "id": "scadrial-019",
+  "q": "Dove si trovava davvero il Pozzo dell’Ascensione?",
+  "a": "Sotto Luthadel",
+  "wrong": [
+   "Sulle Montagne di Terris",
+   "Sotto Fadrex",
+   "Nei Pozzi di Hathsin"
+  ],
+  "explain": "Tutti lo cercavano sulle Montagne di Terris, ma si trovava in una caverna sotto la capitale."
+ },
+ {
+  "id": "scadrial-020",
+  "q": "Quale metallo divino può trasformare una persona comune in un Mistborn?",
+  "a": "Lerasium",
+  "wrong": [
+   "Atium",
+   "Harmonium",
+   "Electrum"
+  ],
+  "explain": "Il lerasium è la forma metallica del potere di Preservazione."
+ },
+ {
+  "id": "scadrial-021",
+  "q": "Come si chiamava la moglie del Sopravvissuto, morta nei Pozzi di Hathsin?",
+  "a": "Mare",
+  "wrong": [
+   "Shan",
+   "Tindwyl",
+   "Valette"
+  ],
+  "explain": "Mare, una Percettrice, fu imprigionata nei Pozzi insieme al marito e lì morì."
+ },
+ {
+  "id": "scadrial-022",
+  "q": "Come si chiama un Misting che può bruciare solo il ferro?",
+  "a": "Attrattore",
+  "wrong": [
+   "Repulsore",
+   "Cercatore",
+   "Percettore"
+  ],
+  "explain": "Un Attrattore tira i metalli verso di sé, o tira sé stesso verso di loro."
+ },
+ {
+  "id": "scadrial-023",
+  "q": "Se un allomante brucia duralluminio insieme a un altro metallo, che cosa succede a quel metallo?",
+  "a": "Brucia tutto in un colpo",
+  "wrong": [
+   "Dura il doppio",
+   "Diventa invisibile ai Cercatori",
+   "Guarisce chi lo usa"
+  ],
+  "explain": "Vin usa le vampate di duralluminio per ottenere scariche di potere enormi ma brevissime."
+ },
+ {
+  "id": "scadrial-024",
+  "q": "Che cosa rivela bruciare il malatium, l’Undicesimo Metallo?",
+  "a": "Il passato di una persona",
+  "wrong": [
+   "Il futuro di una persona",
+   "Le emozioni di una persona",
+   "I metalli nascosti"
+  ],
+  "explain": "Vin lo bruciò sul Lord Reggente e intravide l’uomo che era stato."
+ },
+ {
+  "id": "scadrial-025",
+  "q": "Come si chiama il palazzo del Lord Reggente nella capitale dell’impero?",
+  "a": "Kredik Shaw",
+  "wrong": [
+   "Fortezza Venture",
+   "Fortezza Hasting",
+   "Conventicolo di Seran"
+  ],
+  "explain": "Il nome significa «la Collina delle Mille Guglie»."
+ },
+ {
+  "id": "scadrial-026",
+  "q": "Quale donna terrisiana insegna a Elend a comportarsi da re?",
+  "a": "Tindwyl",
+  "wrong": [
+   "Allrianne",
+   "Shan Elariel",
+   "Kliss"
+  ],
+  "explain": "Tindwyl è una Custode affascinata dai grandi condottieri della storia."
+ },
+ {
+  "id": "scadrial-027",
+  "q": "Quale signore della guerra, padre di Elend, assedia Luthadel?",
+  "a": "Straff Venture",
+  "wrong": [
+   "Ashweather Cett",
+   "Jastes Lekal",
+   "Ferson Penrod"
+  ],
+  "explain": "Straff era uno dei vari signori della guerra che circondarono Luthadel contemporaneamente."
+ },
+ {
+  "id": "scadrial-028",
+  "q": "Chi era l’uomo creduto il Campione delle Ere, di cui il Lord Reggente rubò il posto?",
+  "a": "Alendi",
+  "wrong": [
+   "Kwaan",
+   "Rashek",
+   "Gemmel"
+  ],
+  "explain": "Il suo stesso portatore terrisiano uccise Alendi durante il viaggio verso il Pozzo e prese il potere per sé."
+ },
+ {
+  "id": "scadrial-029",
+  "q": "Che effetto ha su un allomante bruciare alluminio?",
+  "a": "Svuota le sue riserve di metallo",
+  "wrong": [
+   "Gli fa percepire la Feruchemia",
+   "Raddoppia le sue spinte",
+   "Gli mostra il suo passato"
+  ],
+  "explain": "Gli Inquisitori usavano l’alluminio per privare dei poteri gli allomanti catturati."
+ },
+ {
+  "id": "scadrial-030",
+  "q": "Da quali creature vengono creati i kandra?",
+  "a": "Spettri della nebbia",
+  "wrong": [
+   "Koloss",
+   "Spiriti della nebbia",
+   "Inquisitori d’Acciaio"
+  ],
+  "explain": "I kandra sono spettri della nebbia resi senzienti da chiodi emalurgici chiamati Benedizioni."
+ },
+ {
+  "id": "scadrial-031",
+  "q": "In quale città si svolge la maggior parte de «La legge delle lande»?",
+  "a": "Elendel",
+  "wrong": [
+   "Luthadel",
+   "Fadrex",
+   "Nuova Seran"
+  ],
+  "explain": "Elendel è la capitale del Bacino di Elendel e porta il nome di Elend Venture."
+ },
+ {
+  "id": "scadrial-032",
+  "q": "Per quale abilità è famoso Wayne?",
+  "a": "Accenti e travestimenti",
+  "wrong": [
+   "Lancio di coltelli",
+   "Scasso di serrature",
+   "Uso delle pistole"
+  ],
+  "explain": "Wayne colleziona cappelli e altri oggetti che lo aiutano a calarsi in un nuovo personaggio."
+ },
+ {
+  "id": "scadrial-033",
+  "q": "Con quale donna si fidanza Wax ne «La legge delle lande»?",
+  "a": "Steris",
+  "wrong": [
+   "Marasi",
+   "Ranette",
+   "MeLaan"
+  ],
+  "explain": "Steris affronta il fidanzamento come un affare, con tanto di contratto dettagliato."
+ },
+ {
+  "id": "scadrial-034",
+  "q": "Quale religione della seconda era venera il capobanda che ispirò la rivolta skaa contro il Lord Reggente?",
+  "a": "Il sopravvissutismo",
+  "wrong": [
+   "Il pathianesimo",
+   "Il Culto d’Acciaio",
+   "Il trellismo"
+  ],
+  "explain": "I sopravvissutisti venerano il Sopravvissuto come il martire la cui morte portò alla caduta del Lord Reggente."
+ },
+ {
+  "id": "scadrial-035",
+  "q": "Di chi si dice che le Fasce del lutto fossero i mentimetallo?",
+  "a": "Del Lord Reggente",
+  "wrong": [
+   "Di Kelsier",
+   "Di Sazed",
+   "Di Vin"
+  ],
+  "explain": "La leggenda dice che potessero conferire tutti i poteri del Lord Reggente a chi le indossava."
+ },
+ {
+  "id": "scadrial-036",
+  "q": "La storia di quale personaggio dopo la morte viene narrata in «Storia segreta»?",
+  "a": "Kelsier",
+  "wrong": [
+   "Vin",
+   "Elend",
+   "Marsh"
+  ],
+  "explain": "Kelsier si rifiutò di andarsene e continuò ad agire dietro le quinte della prima era."
+ },
+ {
+  "id": "scadrial-037",
+  "q": "Chi è l’uomo noto come Signor Abito?",
+  "a": "Edwarn Ladrian",
+  "wrong": [
+   "Miles Hundredlives",
+   "Telsin Ladrian",
+   "Lord Harms"
+  ],
+  "explain": "Il Signor Abito, l’uomo dietro Miles e gli Evanescenti, è lo zio di Wax."
+ },
+ {
+  "id": "scadrial-038",
+  "q": "Chi si rivela essere l’assassino noto come Salassa?",
+  "a": "Lessie",
+  "wrong": [
+   "Steris",
+   "MeLaan",
+   "Telsin"
+  ],
+  "explain": "L’amata Lessie di Wax era sempre stata la kandra Paalm."
+ },
+ {
+  "id": "scadrial-039",
+  "q": "Che cosa indossano i seguaci del Sentiero mentre pregano?",
+  "a": "Un orecchino",
+  "wrong": [
+   "Un bracciale",
+   "Un cappello",
+   "Un velo"
+  ],
+  "explain": "Wax, che è pathiano, tocca spesso il suo orecchino quando prega o riflette."
+ },
+ {
+  "id": "scadrial-040",
+  "q": "Quale armaiola, vecchia amica di Wax e Wayne, costruisce le loro armi?",
+  "a": "Ranette",
+  "wrong": [
+   "Steris",
+   "Marasi",
+   "MeLaan"
+  ],
+  "explain": "Ranette ha minacciato di sparare a Wayne a vista, e più di una volta l’ha fatto davvero."
+ },
+ {
+  "id": "scadrial-041",
+  "q": "Quale metallo usa Wax come feruchemista per cambiare il proprio peso?",
+  "a": "Ferro",
+  "wrong": [
+   "Acciaio",
+   "Peltro",
+   "Stagno"
+  ],
+  "explain": "Wax è un duomante, Repulsore e Scrematore, e combina le due abilità per volare."
+ },
+ {
+  "id": "scadrial-042",
+  "q": "Nella seconda era, quale personaggio della prima era è venerato come la Guerriera Ascendente?",
+  "a": "Vin",
+  "wrong": [
+   "Tindwyl",
+   "Allrianne",
+   "Mare"
+  ],
+  "explain": "Nella seconda era Elend è l’Ultimo Imperatore e Spook è il Lord Mistborn."
+ },
+ {
+  "id": "scadrial-043",
+  "q": "Quale personaggio principale muore ne «Il metallo perduto»?",
+  "a": "Wayne",
+  "wrong": [
+   "Wax",
+   "Marasi",
+   "Steris"
+  ],
+  "explain": "Wayne sacrifica la vita per fermare la bomba dell’Ordine, una perdita pesantissima per Wax e Marasi."
+ },
+ {
+  "id": "scadrial-044",
+  "q": "Con quale nome conoscono i kandra gli abitanti di Elendel?",
+  "a": "Immortali Senza Volto",
+  "wrong": [
+   "Cercatori",
+   "Sopravvissutisti",
+   "Ascendenti"
+  ],
+  "explain": "Per la maggior parte degli abitanti di Elendel i kandra sono servitori semileggendari di Armonia."
+ },
+ {
+  "id": "scadrial-045",
+  "q": "Quale dio serve l’Ordine?",
+  "a": "Trell",
+  "wrong": [
+   "Rovina",
+   "Sazed",
+   "Preservazione"
+  ],
+  "explain": "I capi dell’Ordine venerano Trell, un antico dio di Scadrial, e lavorano contro i piani di Armonia."
+ },
+ {
+  "id": "scadrial-046",
+  "q": "A quale popolo del sud appartiene il pilota Allik?",
+  "a": "Malwish",
+  "wrong": [
+   "Terris",
+   "Khlenni",
+   "Sangue di koloss"
+  ],
+  "explain": "Come gli altri Malwish, Allik nasconde il volto dietro una maschera."
+ },
+ {
+  "id": "scadrial-047",
+  "q": "Ne «L’undicesimo metallo», chi addestra Kelsier all’Allomanzia?",
+  "a": "Gemmel",
+  "wrong": [
+   "Dockson",
+   "Sazed",
+   "Marsh"
+  ],
+  "explain": "Gemmel è un Mistborn eccentrico, all’apparenza folle."
+ },
+ {
+  "id": "scadrial-048",
+  "q": "Chi è l’amministratore terrisiano che cura le storie dell’allomante Jak?",
+  "a": "Handerwym",
+  "wrong": [
+   "Sazed",
+   "Tindwyl",
+   "Rashek"
+  ],
+  "explain": "Le note a piè di pagina di Handerwym mettono educatamente in dubbio le affermazioni più assurde di Jak."
+ },
+ {
+  "id": "scadrial-049",
+  "q": "Che cosa usano gli scadriani del sud per permettere a chiunque di accedere alla Feruchemia?",
+  "a": "Medaglioni",
+  "wrong": [
+   "Orecchini",
+   "Chiodi",
+   "Fiale"
+  ],
+  "explain": "I medaglioni sono mentimetallo senza chiave, utilizzabili anche da chi non ha poteri."
+ },
+ {
+  "id": "scadrial-050",
+  "q": "Quale personaggio della prima era è noto nella seconda come Occhi di Ferro?",
+  "a": "Marsh",
+  "wrong": [
+   "Spook",
+   "TenSoon",
+   "Elend"
+  ],
+  "explain": "Marsh serve ancora Armonia secoli dopo ed è temuto come una figura leggendaria."
+ },
+ {
+  "id": "scadrial-051",
+  "q": "Come si chiamava Spook prima che Kelsier gli desse il soprannome?",
+  "a": "Lestibournes",
+  "wrong": [
+   "Cladent",
+   "Hammond",
+   "Ladrian"
+  ],
+  "explain": "Kelsier ribattezzò «Spook» il giovane Lestibournes poco dopo il suo ingresso nella banda."
+ },
+ {
+  "id": "scadrial-052",
+  "q": "Chi governa Fadrex quando l’esercito di Elend la assedia ne «Il campione delle ere»?",
+  "a": "Aradan Yomen",
+  "wrong": [
+   "Quellion",
+   "Ashweather Cett",
+   "Ferson Penrod"
+  ],
+  "explain": "Yomen, un Obbligatore che è segretamente un Veggente dell’atium, si proclamò re dopo che Cett era partito per Luthadel."
+ },
+ {
+  "id": "scadrial-053",
+  "q": "Che tipo di Misting è Marasi?",
+  "a": "Temporeggiatore",
+  "wrong": [
+   "Traslatore",
+   "Offuscatore",
+   "Cercatore"
+  ],
+  "explain": "Marasi brucia cadmio per rallentare il tempo in una bolla attorno a sé, un potere che considera quasi inutile."
+ },
+ {
+  "id": "scadrial-054",
+  "q": "Quale metallo brucia Wayne come Traslatore?",
+  "a": "Cerrobend",
+  "wrong": [
+   "Cadmio",
+   "Cromo",
+   "Electrum"
+  ],
+  "explain": "Bruciare cerrobend permette a Wayne di accelerare il tempo in una bolla attorno a sé."
+ },
+ {
+  "id": "scadrial-055",
+  "q": "Chi interpreta Lord Renoux, il presunto zio di Vin, ne «L’ultimo impero»?",
+  "a": "OreSeur",
+  "wrong": [
+   "TenSoon",
+   "Dockson",
+   "Kelsier"
+  ],
+  "explain": "OreSeur, un kandra assoldato da Kelsier, indossava le ossa di Lord Renoux mentre Vin si fingeva Valette Renoux."
+ },
+ {
+  "id": "scadrial-056",
+  "q": "Le epigrafi dei capitoli de «Il pozzo dell’ascensione» riportano le parole di quale uomo?",
+  "a": "Kwaan",
+  "wrong": [
+   "Alendi",
+   "Sazed",
+   "Rashek"
+  ],
+  "explain": "Provengono dall’iscrizione che Kwaan lasciò prima di morire, trovata da Sazed nel Conventicolo di Seran."
+ },
+ {
+  "id": "scadrial-057",
+  "q": "Chi era il capo della ribellione skaa che assoldò la banda di Kelsier?",
+  "a": "Yeden",
+  "wrong": [
+   "Demoux",
+   "Goradel",
+   "Camon"
+  ],
+  "explain": "In seguito Yeden lanciò l’esercito ribelle contro la guarnigione di Holstep troppo presto, e morì quando fu annientato."
+ },
+ {
+  "id": "scadrial-058",
+  "q": "Quale città era la sede del Sinodo dei Custodi?",
+  "a": "Tathingdwen",
+  "wrong": [
+   "Urteau",
+   "Fellise",
+   "Fadrex"
+  ],
+  "explain": "I Custodi vi tornavano periodicamente per aggiornare i ricordi nei loro mentimetallo di rame, finché Inquisitori e koloss non la diedero alle fiamme."
+ },
+ {
+  "id": "scadrial-059",
+  "q": "In quale cittadina delle Lande Wax manteneva l’ordine prima di tornare in città?",
+  "a": "Weathering",
+  "wrong": [
+   "Bilming",
+   "Nuova Seran",
+   "Fadrex"
+  ],
+  "explain": "Wax, Wayne, Lessie e vicesceriffi come Barl mantenevano l’ordine a Weathering e dintorni."
+ },
+ {
+  "id": "scadrial-060",
+  "q": "Come si chiama lo strano metallo legato al dio Trell?",
+  "a": "Trellium",
+  "wrong": [
+   "Harmonium",
+   "Malatium",
+   "Lerasium"
+  ],
+  "explain": "Trellium e harmonium si respingono, e forzarli insieme può scatenare un’esplosione devastante."
+ },
+ {
+  "id": "scadrial-061",
+  "q": "A quale Generazione dei kandra appartiene TenSoon?",
+  "a": "La Terza",
+  "wrong": [
+   "La Prima",
+   "La Seconda",
+   "La Quinta"
+  ],
+  "explain": "Come kandra della Terza Generazione, TenSoon è più anziano della maggior parte del suo popolo, ma sottoposto alla Seconda Generazione, che governa."
+ },
+ {
+  "id": "scadrial-062",
+  "q": "Quale Benedizione dei kandra conferisce maggiore forza?",
+  "a": "La Benedizione della Potenza",
+  "wrong": [
+   "La Benedizione della Presenza",
+   "La Benedizione della Consapevolezza",
+   "La Benedizione della Stabilità"
+  ],
+  "explain": "TenSoon fu creato con la Benedizione della Presenza e in seguito ottenne anche la Benedizione della Potenza."
+ },
+ {
+  "id": "scadrial-063",
+  "q": "Nell’iscrizione citata nelle epigrafi de «Il pozzo dell’ascensione», l’autore si definisce filosofo, studioso e che cos’altro?",
+  "a": "Traditore",
+  "wrong": [
+   "Profeta",
+   "Eroe",
+   "Custode"
+  ],
+  "explain": "Fu il primo a proclamare il Campione delle Ere, e in seguito lo tradì per fermarne la missione."
+ },
+ {
+  "id": "scadrial-064",
+  "q": "Su che cosa incise il suo ultimo resoconto l’autore delle epigrafi de «Il pozzo dell’ascensione»?",
+  "a": "Una lastra d’acciaio",
+  "wrong": [
+   "Un muro di pietra",
+   "Un rotolo di pergamena",
+   "Una tavoletta d’argilla"
+  ],
+  "explain": "Scrisse sull’acciaio perché, come dice lui stesso, non ci si può fidare di nulla che non sia fissato nel metallo."
+ },
+ {
+  "id": "scadrial-065",
+  "q": "Chi si scopre essere il padre di Vin?",
+  "a": "Tevidian",
+  "wrong": [
+   "Kar",
+   "Tresting",
+   "Straff Venture"
+  ],
+  "explain": "Tevidian era il Lord Prelano del Culto d’Acciaio; il Lord Reggente lasciò che gli Inquisitori lo uccidessero quando la verità venne a galla."
+ },
+ {
+  "id": "scadrial-066",
+  "q": "Secondo il diario che Vin legge ne «L’ultimo impero», quale membro del gruppo del suo autore fu pugnalato da uno spirito della nebbia?",
+  "a": "Fedik",
+  "wrong": [
+   "Rashek",
+   "Kwaan",
+   "Gemmel"
+  ],
+  "explain": "Fedik sopravvisse all’attacco, e Rashek diffuse la voce che l’aggressore fosse stato l’autore stesso del diario."
+ },
+ {
+  "id": "scadrial-067",
+  "q": "Miles Hundredlives è un duomante con lo stesso metallo nell’Allomanzia e nella Feruchemia. Quale?",
+  "a": "Oro",
+  "wrong": [
+   "Peltro",
+   "Cerrobend",
+   "Ferro"
+  ],
+  "explain": "Bruciando e attingendo oro insieme, Miles ne moltiplica il potere e guarisce quasi ogni ferita in un istante."
+ },
+ {
+  "id": "scadrial-068",
+  "q": "Nel prologo de «La legge delle lande», a quale fuorilegge danno la caccia Wax e Lessie a Feltrel?",
+  "a": "Tan il Sanguinario",
+  "wrong": [
+   "Miles Hundredlives",
+   "Signor Abito",
+   "Salassa"
+  ],
+  "explain": "Tan trascinò Lessie sulla traiettoria del proiettile di Wax, che poi lo uccise."
+ },
+ {
+  "id": "scadrial-069",
+  "q": "Con quale altro nome è noto l’harmonium su Scadrial?",
+  "a": "Ettmetal",
+  "wrong": [
+   "Trellium",
+   "Malatium",
+   "Duralluminio"
+  ],
+  "explain": "L’harmonium è il metallo divino di Armonia e reagisce violentemente con l’acqua."
+ },
+ {
+  "id": "scadrial-070",
+  "q": "Che cosa immagazzina un feruchemista nel cadmio?",
+  "a": "Il respiro",
+  "wrong": [
+   "La fortuna",
+   "La determinazione",
+   "L’identità"
+  ],
+  "explain": "Mentre immagazzina il feruchemista iperventila, e in seguito può restare a lungo senza bisogno di respirare."
+ },
+ {
+  "id": "scadrial-071",
+  "q": "Secondo l’Ars Arcanum, che cosa ruba un chiodo emalurgico di peltro?",
+  "a": "I poteri feruchemici fisici",
+  "wrong": [
+   "I poteri allomantici fisici",
+   "La forza umana",
+   "I sensi umani"
+  ],
+  "explain": "I chiodi d’acciaio rubano i poteri allomantici fisici, quelli di ferro la forza e quelli di stagno i sensi."
+ },
+ {
+  "id": "scadrial-072",
+  "q": "Quale potere allomantico ottenne Quellion, il Cittadino di Urteau, da un chiodo emalurgico nascosto?",
+  "a": "Quello di un Cercatore",
+  "wrong": [
+   "Quello di un Sedatore",
+   "Quello di un Istigatore",
+   "Quello di un Lottatore"
+  ],
+  "explain": "Quellion usava un chiodo di bronzo per scovare gli allomanti da ricattare e costringere a lavorare per lui."
+ },
+ {
+  "id": "scadrial-073",
+  "q": "Quanti chiodi emalurgici servono per creare un koloss?",
+  "a": "Quattro",
+  "wrong": [
+   "Due",
+   "Tre",
+   "Sette"
+  ],
+  "explain": "I chiodi vengono presi da quattro persone e conficcati in una quinta, che diventa il koloss."
+ },
+ {
+  "id": "scadrial-074",
+  "q": "Come si chiama un Misting che brucia electrum?",
+  "a": "Oracle",
+  "wrong": [
+   "Augur",
+   "Leecher",
+   "Nicroburst"
+  ],
+  "explain": "Un Oracle vede i propri possibili futuri, qualche secondo in anticipo."
+ },
+ {
+  "id": "scadrial-075",
+  "q": "Come si chiama un feruchemista che immagazzina velocità mentale nello zinco?",
+  "a": "Sparker",
+  "wrong": [
+   "Windwhisper",
+   "Firesoul",
+   "Sentry"
+  ],
+  "explain": "Uno Sparker può poi attingere a quello zinco per pensare molto più in fretta del normale."
+ },
+ {
+  "id": "scadrial-076",
+  "q": "Ne «L’ultimo impero», quanto accettò di pagare alla banda di Kelsier la ribellione skaa?",
+  "a": "Trentamila boxing",
+  "wrong": [
+   "Diecimila boxing",
+   "Tremila boxing",
+   "Centomila boxing"
+  ],
+  "explain": "Metà andava pagata in anticipo e metà a lavoro concluso; i ribelli avevano messo da parte la somma per anni."
+ },
+ {
+  "id": "scadrial-077",
+  "q": "Ne «L’undicesimo metallo», quale nobile Mistborn affronta e uccide Kelsier nella sua fortezza a Mantiz?",
+  "a": "Lord Shezler",
+  "wrong": [
+   "Lord Tresting",
+   "Lord Hasting",
+   "Lord Tekiel"
+  ],
+  "explain": "Kelsier prese il taccuino di Antillius Shezler, pieno di ricerche su un possibile undicesimo metallo."
+ },
+ {
+  "id": "scadrial-078",
+  "q": "Ne «L’allomante Jak e le fosse di Eltania», che cosa contiene in realtà il Tesoro del Sopravvissuto?",
+  "a": "Chiodi di koloss",
+  "wrong": [
+   "Perle di atium",
+   "Una perla di lerasium",
+   "Le Fasce del lutto"
+  ],
+  "explain": "Jak si tuffò nelle fosse e riportò su un forziere pieno di chiodi di koloss; il forziere stesso si rivelò fatto di alluminio."
+ },
+ {
+  "id": "scadrial-079",
+  "q": "In «Storia segreta», che cosa impedisce al protagonista di passare nell’Aldilà dopo la morte?",
+  "a": "Il potere del Pozzo dell’Ascensione",
+  "wrong": [
+   "Un chiodo emalurgico",
+   "L’orecchino di Vin",
+   "I mentimetallo di Sazed"
+  ],
+  "explain": "Indusse Preservazione a rivelare che il Pozzo era vicino, e il suo potere lo trattenne come ombra cognitiva."
+ },
+ {
+  "id": "scadrial-080",
+  "q": "Quale Cantone del Culto d’Acciaio aveva sede nel Conventicolo di Seran?",
+  "a": "Il Cantone dell’Inquisizione",
+  "wrong": [
+   "Il Cantone dell’Ortodossia",
+   "Il Cantone delle Risorse",
+   "Il Cantone delle Finanze"
+  ],
+  "explain": "Il Conventicolo era la fortezza degli Inquisitori, e l’iscrizione d’acciaio citata nelle epigrafi si trovava nelle sue profondità."
+ },
+ {
+  "id": "scadrial-081",
+  "q": "Ne «Le fasce del lutto», su che tipo di mezzo viaggiavano Allik e i suoi compagni?",
+  "a": "Un’aeronave",
+  "wrong": [
+   "Un piroscafo",
+   "Un treno",
+   "Un sottomarino"
+  ],
+  "explain": "La Brunstell, un’aeronave del sud, precipitò durante una tempesta e fu catturata dall’Ordine."
+ },
+ {
+  "id": "scadrial-082",
+  "q": "Ne «Il metallo perduto», quale membro della famiglia di Wax guida l’Ordine?",
+  "a": "Sua sorella, Telsin",
+  "wrong": [
+   "Suo zio, Edwarn",
+   "Sua moglie, Steris",
+   "Suo suocero, Lord Harms"
+  ],
+  "explain": "Telsin è tra i capi dell’Ordine e trama contro Elendel, mettendosi contro il fratello."
+ },
+ {
+  "id": "scadrial-083",
+  "q": "Ne «Il metallo perduto», che cosa cerca di far entrare l’Ordine a Elendel via nave?",
+  "a": "Una bomba devastante",
+  "wrong": [
+   "Un esercito di koloss",
+   "Una peste letale",
+   "Una scorta di atium"
+  ],
+  "explain": "Wax e Wayne scoprono che la bomba non è nella base dell’Ordine, ma a bordo di una nave diretta in città."
+ },
+ {
+  "id": "scadrial-084",
+  "q": "Ne «Le ombre residue», quale governante è stato ucciso in segreto da Salassa, che poi lo ha impersonato per fomentare disordini a Elendel?",
+  "a": "Replar Innate",
+  "wrong": [
+   "Winsting Innate",
+   "Lord Harms",
+   "Edwarn Ladrian"
+  ],
+  "explain": "Salassa indossava il volto del governatore per aizzare i lavoratori della città contro chi li governava, e uccise anche Winsting, fratello del governatore."
+ },
+ {
+  "id": "scadrial-085",
+  "q": "Secondo Brandon Sanderson, quale kandra diede a Wax il suo orecchino?",
+  "a": "MeLaan",
+  "wrong": [
+   "TenSoon",
+   "VenDell",
+   "KanPaar"
+  ],
+  "explain": "Sanderson lo rivelò durante un firmacopie nel 2011: MeLaan glielo aveva consegnato di persona anni prima che Wax tornasse a Elendel."
+ },
+ {
+  "id": "scadrial-086",
+  "q": "Alla fine de «Le fasce del lutto», a chi vengono affidate le Fasce, come propone Steris?",
+  "a": "Ai kandra",
+  "wrong": [
+   "A Wax",
+   "All’Ordine",
+   "Al governatore di Elendel"
+  ],
+  "explain": "Il compromesso di Steris tiene le Fasce lontane sia da Elendel sia dai popoli del sud."
+ },
+ {
+  "id": "scadrial-087",
+  "q": "Ne «Le fasce del lutto», con quale titolo gli scadriani del sud ricordano la figura giunta da loro dopo la Morte di Ghiaccio?",
+  "a": "Il Sovrano",
+  "wrong": [
+   "La Guerriera Ascendente",
+   "L’Ultimo Imperatore",
+   "Il Campione delle Ere"
+  ],
+  "explain": "Secondo i popoli del sud, il Sovrano giunse ad aiutarli a sopravvivere al freddo dopo la Morte di Ghiaccio."
+ },
+ {
+  "id": "scadrial-088",
+  "q": "Ne «Il metallo perduto», la figlia di Wax e Steris porta lo stesso nome di quale personaggio dell’era 1?",
+  "a": "Tindwyl",
+  "wrong": [
+   "Allrianne",
+   "Valette",
+   "Mare"
+  ],
+  "explain": "Wax e Steris hanno due figli piccoli, Maxillium e Tindwyl."
+ },
+ {
+  "id": "scadrial-089",
+  "q": "Ne «Le fasce del lutto», in quale città Marasi e MeLaan trovano Allik prigioniero nel complesso dell’Ordine?",
+  "a": "Dulsing",
+  "wrong": [
+   "Bilming",
+   "Nuova Seran",
+   "Feltrel"
+  ],
+  "explain": "L’Ordine teneva Allik e il relitto della sua aeronave, la Brunstell, nel suo complesso di Dulsing."
+ },
+ {
+  "id": "scadrial-090",
+  "q": "Ne «Le ombre residue», con che cosa spara Wax a Salassa perché Armonia possa riprenderne il controllo?",
+  "a": "Con un proiettile ricavato dal suo orecchino",
+  "wrong": [
+   "Con un proiettile dalla punta di alluminio",
+   "Con un proiettile fuso nell’atium",
+   "Con un proiettile pieno di duralluminio liquido"
+  ],
+  "explain": "Il metallo emalurgico permise ad Armonia di raggiungere la mente di Salassa, che però scelse di morire piuttosto che sottomettersi."
+ }
+]

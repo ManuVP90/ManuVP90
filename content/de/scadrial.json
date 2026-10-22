@@ -1,0 +1,992 @@
+[
+ {
+  "id": "scadrial-001",
+  "q": "Welche Figur ist als Überlebender von Hathsin bekannt?",
+  "a": "Kelsier",
+  "wrong": [
+   "Dockson",
+   "Marsch",
+   "Weher"
+  ],
+  "explain": "Kelsier erhielt den Titel, weil er aus den Gruben von Hathsin entkam, wo die Gefangenen des Obersten Herrschers Atium abbauten."
+ },
+ {
+  "id": "scadrial-002",
+  "q": "Welches Metall muss ein Allomant verbrennen, um gegen Metalle in der Nähe zu drücken?",
+  "a": "Stahl",
+  "wrong": [
+   "Eisen",
+   "Zinn",
+   "Messing"
+  ],
+  "explain": "Münzwerfer drücken mit Stahl Münzen von sich weg oder katapultieren sich selbst durch die Luft."
+ },
+ {
+  "id": "scadrial-003",
+  "q": "Was verstärkt das Verbrennen von Weißblech bei einem Allomanten?",
+  "a": "Körperkraft und Ausdauer",
+  "wrong": [
+   "Die Sinne",
+   "Die Gefühle anderer",
+   "Die Denkgeschwindigkeit"
+  ],
+  "explain": "Schläger, auch Weißblecharme genannt, verbrennen Weißblech, um zu kämpfen und Wunden zu überstehen, die andere niederstrecken würden."
+ },
+ {
+  "id": "scadrial-004",
+  "q": "Wie heißt Vins älterer Bruder, der sie auf der Straße großzog?",
+  "a": "Reen",
+  "wrong": [
+   "Camon",
+   "Ulef",
+   "Elant"
+  ],
+  "explain": "Reen brachte Vin bei, niemandem zu trauen – eine Lektion, die sie nur mühsam wieder verlernt."
+ },
+ {
+  "id": "scadrial-005",
+  "q": "Wie heißt die Hauptstadt des Letzten Reiches?",
+  "a": "Luthadel",
+  "wrong": [
+   "Fadrex",
+   "Fellise",
+   "Tathingdwen"
+  ],
+  "explain": "In Luthadel stehen die Festungen der Großen Häuser und der Palast des Obersten Herrschers."
+ },
+ {
+  "id": "scadrial-006",
+  "q": "Wie heißen die Diener des Obersten Herrschers, denen Metallstacheln durch die Augen getrieben wurden?",
+  "a": "Stahlinquisitoren",
+  "wrong": [
+   "Obligatoren",
+   "Kandra",
+   "Bewahrer"
+  ],
+  "explain": "Trotz der Stacheln, die ihnen durch die Augen getrieben wurden, können die Inquisitoren sehen."
+ },
+ {
+  "id": "scadrial-007",
+  "q": "Zu welchem Adelshaus gehört Elant?",
+  "a": "Haus Wager",
+  "wrong": [
+   "Haus Renoux",
+   "Haus Lekal",
+   "Haus Hasting"
+  ],
+  "explain": "Haus Wager war eines der mächtigsten Großen Häuser von Luthadel."
+ },
+ {
+  "id": "scadrial-008",
+  "q": "Sazed ist ein Bewahrer. Aus welchem Volk stammt er?",
+  "a": "Terris",
+  "wrong": [
+   "Skaa",
+   "Khlenni",
+   "Malwisch"
+  ],
+  "explain": "Die Bewahrer von Terris sind Ferrochemiker, die Erinnerungen an verlorene Religionen und altes Wissen speichern."
+ },
+ {
+  "id": "scadrial-009",
+  "q": "Welche Hautfarbe hat ein Koloss?",
+  "a": "Blau",
+  "wrong": [
+   "Grau",
+   "Rot",
+   "Grün"
+  ],
+  "explain": "Die blaue Haut eines Kolosses wächst nicht mit, deshalb dehnt und reißt sie, während das Wesen größer wird."
+ },
+ {
+  "id": "scadrial-010",
+  "q": "Welches Mitglied von Kelsiers Bande ist ein Besänftiger?",
+  "a": "Weher",
+  "wrong": [
+   "Hamm",
+   "Keuler",
+   "Dockson"
+  ],
+  "explain": "Weher verbrennt Messing, um die Gefühle seiner Mitmenschen zu dämpfen und sanft zu lenken."
+ },
+ {
+  "id": "scadrial-011",
+  "q": "Welches Metall lässt einen Allomanten ein paar Sekunden in die Zukunft sehen?",
+  "a": "Atium",
+  "wrong": [
+   "Gold",
+   "Elektrum",
+   "Bronze"
+  ],
+  "explain": "Atium zeigt Schatten dessen, was andere gleich tun werden, und macht seinen Nutzer im Kampf fast unbesiegbar."
+ },
+ {
+  "id": "scadrial-012",
+  "q": "Wie heißen die Metallgegenstände, in denen Ferrochemiker Eigenschaften speichern?",
+  "a": "Metallgeister",
+  "wrong": [
+   "Stacheln",
+   "Atiumperlen",
+   "Medaillons"
+  ],
+  "explain": "Sazed trägt Metallgeister als Armschienen, Ringe und Ohrringe, um Erinnerungen, Gewicht und mehr zu speichern."
+ },
+ {
+  "id": "scadrial-013",
+  "q": "Wer befreit Ruin an der Quelle der Erhebung?",
+  "a": "Vin",
+  "wrong": [
+   "Elant",
+   "Sazed",
+   "Zane"
+  ],
+  "explain": "Ruin täuschte Vin, sodass sie die Macht der Quelle freigab, statt sie zu nehmen – und ihn so aus seinem Gefängnis befreite."
+ },
+ {
+  "id": "scadrial-014",
+  "q": "Wer wird am Ende von „Held aller Zeiten“ zum Einträchtigen?",
+  "a": "Sazed",
+  "wrong": [
+   "Vin",
+   "Elant",
+   "Spuki"
+  ],
+  "explain": "Indem Sazed Ruin und Bewahr zugleich aufnimmt, wird er zum Träger der Scherbe, die der Einträchtige genannt wird."
+ },
+ {
+  "id": "scadrial-015",
+  "q": "Wer schenkte Vin den Ohrring, den sie immer trägt?",
+  "a": "Ihre Mutter",
+  "wrong": [
+   "Reen",
+   "Kelsier",
+   "Elant"
+  ],
+  "explain": "Der Ohrring war in Wahrheit ein hämalurgischer Stachel, durch den Ruin Vin zuflüstern konnte."
+ },
+ {
+  "id": "scadrial-016",
+  "q": "Wie lautete der wahre Name des Obersten Herrschers?",
+  "a": "Raschek",
+  "wrong": [
+   "Alendi",
+   "Kwaan",
+   "Gemmel"
+  ],
+  "explain": "Raschek war ein terrisischer Träger, der die Macht an der Quelle der Erhebung für sich selbst nahm."
+ },
+ {
+  "id": "scadrial-017",
+  "q": "Welcher Kandra tötete heimlich Vins Kandra-Begleiter und nahm seinen Platz ein?",
+  "a": "TenSoon",
+  "wrong": [
+   "MeLaan",
+   "KanPaar",
+   "VenDell"
+  ],
+  "explain": "Zane befahl TenSoon, Vins Kandra zu töten und dessen Platz einzunehmen, um sie auszuspionieren."
+ },
+ {
+  "id": "scadrial-018",
+  "q": "Was verwenden Kandra von einer verdauten Leiche, um einen Menschen nachzuahmen?",
+  "a": "Die Knochen",
+  "wrong": [
+   "Das Blut",
+   "Die Haare",
+   "Die Zähne"
+  ],
+  "explain": "Ein Kandra formt das Fleisch um das Skelett herum nach und kopiert so das Aussehen des Menschen."
+ },
+ {
+  "id": "scadrial-019",
+  "q": "Wo wurde die Quelle der Erhebung schließlich gefunden?",
+  "a": "Unter Luthadel",
+  "wrong": [
+   "In den Terris-Bergen",
+   "Unter Fadrex",
+   "In den Gruben von Hathsin"
+  ],
+  "explain": "Alle suchten sie in den Terris-Bergen, doch sie lag in einer Höhle unter der Hauptstadt."
+ },
+ {
+  "id": "scadrial-020",
+  "q": "Welches Göttermetall kann einen gewöhnlichen Menschen zum Nebelgeborenen machen?",
+  "a": "Lerasium",
+  "wrong": [
+   "Atium",
+   "Harmonium",
+   "Elektrum"
+  ],
+  "explain": "Lerasium ist die Metallgestalt von Bewahrs Macht."
+ },
+ {
+  "id": "scadrial-021",
+  "q": "Wie hieß die Frau des Überlebenden, die in den Gruben von Hathsin starb?",
+  "a": "Mare",
+  "wrong": [
+   "Shan",
+   "Tindwyl",
+   "Valette"
+  ],
+  "explain": "Mare, ein Zinnauge, war mit ihrem Mann in den Gruben gefangen und starb dort."
+ },
+ {
+  "id": "scadrial-022",
+  "q": "Wie nennt man einen Nebeling, der nur Eisen verbrennen kann?",
+  "a": "Eisenzieher",
+  "wrong": [
+   "Münzwerfer",
+   "Sucher",
+   "Zinnauge"
+  ],
+  "explain": "Ein Eisenzieher zieht an Metallen – er holt sie zu sich heran oder sich selbst zu ihnen hin."
+ },
+ {
+  "id": "scadrial-023",
+  "q": "Was passiert mit einem Metall, wenn ein Allomant es zusammen mit Duralumin verbrennt?",
+  "a": "Es verbrennt auf einen Schlag",
+  "wrong": [
+   "Es hält doppelt so lange",
+   "Suchern bleibt es verborgen",
+   "Es heilt den Nutzer"
+  ],
+  "explain": "Vin nutzt Duralumin-Schübe für gewaltige, kurzlebige Machtausbrüche."
+ },
+ {
+  "id": "scadrial-024",
+  "q": "Was enthüllt das Verbrennen von Malatium, dem Elften Metall?",
+  "a": "Das frühere Ich eines Menschen",
+  "wrong": [
+   "Die Zukunft eines Menschen",
+   "Die Gefühle eines Menschen",
+   "Verborgene Metalle"
+  ],
+  "explain": "Vin verbrannte es beim Obersten Herrscher und erblickte den Mann, der er einst gewesen war."
+ },
+ {
+  "id": "scadrial-025",
+  "q": "Wie heißt der Palast des Obersten Herrschers in der Hauptstadt des Reiches?",
+  "a": "Kredik Shaw",
+  "wrong": [
+   "Festung Wager",
+   "Festung Hasting",
+   "Konventikel von Seran"
+  ],
+  "explain": "Der Name bedeutet „Hügel der tausend Türme“."
+ },
+ {
+  "id": "scadrial-026",
+  "q": "Welche Terriserin bringt Elant bei, sich wie ein König zu verhalten?",
+  "a": "Tindwyl",
+  "wrong": [
+   "Allrianne",
+   "Shan Elariel",
+   "Kliss"
+  ],
+  "explain": "Tindwyl ist eine Bewahrerin, die von großen Herrschern der Geschichte fasziniert ist."
+ },
+ {
+  "id": "scadrial-027",
+  "q": "Welcher Kriegsherr, Elants eigener Vater, belagert Luthadel?",
+  "a": "Straff Wager",
+  "wrong": [
+   "Aschwetter Cett",
+   "Jastes Lekal",
+   "Ferson Penrod"
+  ],
+  "explain": "Straff war einer von mehreren Kriegsherren, die Luthadel gleichzeitig umzingelten."
+ },
+ {
+  "id": "scadrial-028",
+  "q": "Wer galt als Held aller Zeiten, dessen Platz der Oberste Herrscher stahl?",
+  "a": "Alendi",
+  "wrong": [
+   "Kwaan",
+   "Raschek",
+   "Gemmel"
+  ],
+  "explain": "Alendis eigener terrisischer Träger tötete ihn auf dem Weg zur Quelle und nahm die Macht selbst an sich."
+ },
+ {
+  "id": "scadrial-029",
+  "q": "Was bewirkt das Verbrennen von Aluminium bei einem Allomanten?",
+  "a": "Es leert seine Metallreserven",
+  "wrong": [
+   "Es lässt ihn Ferrochemie spüren",
+   "Es verdoppelt seine Stöße",
+   "Es zeigt ihm sein früheres Ich"
+  ],
+  "explain": "Inquisitoren nutzten Aluminium, um gefangenen Allomanten ihre Kräfte zu nehmen."
+ },
+ {
+  "id": "scadrial-030",
+  "q": "Aus welchen Wesen werden Kandra erschaffen?",
+  "a": "Aus Nebelgeistern",
+  "wrong": [
+   "Aus Kolossen",
+   "Aus Nebelwesen",
+   "Aus Stahlinquisitoren"
+  ],
+  "explain": "Kandra sind Nebelgeister, denen hämalurgische Stacheln, die sogenannten Segen, Bewusstsein verleihen."
+ },
+ {
+  "id": "scadrial-031",
+  "q": "In welcher Stadt spielt der Großteil von „Hüter des Gesetzes“?",
+  "a": "Elantel",
+  "wrong": [
+   "Luthadel",
+   "Fadrex",
+   "Neu-Seran"
+  ],
+  "explain": "Elantel ist die Hauptstadt des Elantel-Beckens und nach Elant Wager benannt."
+ },
+ {
+  "id": "scadrial-032",
+  "q": "Wofür ist Wayne berühmt?",
+  "a": "Akzente und Verkleidungen",
+  "wrong": [
+   "Messerwerfen",
+   "Schlösserknacken",
+   "Pistolen"
+  ],
+  "explain": "Wayne sammelt Hüte und andere Dinge, die ihm helfen, in eine neue Rolle zu schlüpfen."
+ },
+ {
+  "id": "scadrial-033",
+  "q": "Mit welcher Frau verlobt sich Wax in „Hüter des Gesetzes“?",
+  "a": "Steris",
+  "wrong": [
+   "Marasi",
+   "Ranette",
+   "MeLaan"
+  ],
+  "explain": "Steris geht die Verlobung wie ein Geschäft an – samt ausführlichem Vertrag."
+ },
+ {
+  "id": "scadrial-034",
+  "q": "Welche Religion des zweiten Zeitalters verehrt den Bandenanführer, der den Aufstand der Skaa gegen den Obersten Herrscher entfachte?",
+  "a": "Der Überlebendenkult",
+  "wrong": [
+   "Der Pathianismus",
+   "Das Stahlministerium",
+   "Der Trellismus"
+  ],
+  "explain": "Ihre Anhänger verehren den Überlebenden als Märtyrer, dessen Tod den Sturz des Obersten Herrschers auslöste."
+ },
+ {
+  "id": "scadrial-035",
+  "q": "Von wem sollen die Bänder der Trauer als Metallgeister stammen?",
+  "a": "Vom Obersten Herrscher",
+  "wrong": [
+   "Von Kelsier",
+   "Von Sazed",
+   "Von Vin"
+  ],
+  "explain": "Der Legende nach verleihen sie ihrem Träger sämtliche Kräfte des Obersten Herrschers."
+ },
+ {
+  "id": "scadrial-036",
+  "q": "Wessen Geschichte nach dem Tod erzählt „Mistborn: Secret History“?",
+  "a": "Kelsiers",
+  "wrong": [
+   "Vins",
+   "Elants",
+   "Marschs"
+  ],
+  "explain": "Kelsier weigerte sich weiterzuziehen und wirkte im ersten Zeitalter weiter im Verborgenen."
+ },
+ {
+  "id": "scadrial-037",
+  "q": "Wer ist der Mann, der als Herr Anzug bekannt ist?",
+  "a": "Edwarn Ladrian",
+  "wrong": [
+   "Miles Hundredlives",
+   "Telsin Ladrian",
+   "Lord Harms"
+  ],
+  "explain": "Herr Anzug, der Drahtzieher hinter Miles und den Verschwindern, ist Wax’ eigener Onkel."
+ },
+ {
+  "id": "scadrial-038",
+  "q": "Wer entpuppt sich als der Mörder namens Bluter?",
+  "a": "Lessie",
+  "wrong": [
+   "Steris",
+   "MeLaan",
+   "Telsin"
+  ],
+  "explain": "Wax’ geliebte Lessie war die ganze Zeit über die Kandra Paalm gewesen."
+ },
+ {
+  "id": "scadrial-039",
+  "q": "Was tragen die Anhänger des Pfades, wenn sie beten?",
+  "a": "Einen Ohrring",
+  "wrong": [
+   "Ein Armband",
+   "Einen Hut",
+   "Einen Schleier"
+  ],
+  "explain": "Wax, ein Pathianer, berührt oft seinen Ohrring, wenn er betet oder nachdenkt."
+ },
+ {
+  "id": "scadrial-040",
+  "q": "Welche Waffenschmiedin, eine alte Freundin von Wax und Wayne, baut ihnen Waffen?",
+  "a": "Ranette",
+  "wrong": [
+   "Steris",
+   "Marasi",
+   "MeLaan"
+  ],
+  "explain": "Ranette hat gedroht, Wayne auf der Stelle zu erschießen – und hat tatsächlich schon mehr als einmal auf ihn geschossen."
+ },
+ {
+  "id": "scadrial-041",
+  "q": "Mit welchem Metall verändert Wax als Ferrochemiker sein Gewicht?",
+  "a": "Eisen",
+  "wrong": [
+   "Stahl",
+   "Weißblech",
+   "Zinn"
+  ],
+  "explain": "Wax ist ein Zwillingsgeborener – Münzwerfer und Abschöpfer –, und er kombiniert beides, um zu fliegen."
+ },
+ {
+  "id": "scadrial-042",
+  "q": "Welche Figur des ersten Zeitalters wird im zweiten als Aufgestiegene Kriegerin verehrt?",
+  "a": "Vin",
+  "wrong": [
+   "Tindwyl",
+   "Allrianne",
+   "Mare"
+  ],
+  "explain": "Im zweiten Zeitalter ist Elant der Letzte Kaiser und Spuki der Oberste Nebelgeborene."
+ },
+ {
+  "id": "scadrial-043",
+  "q": "Welche Hauptfigur stirbt in „Metall der Götter“?",
+  "a": "Wayne",
+  "wrong": [
+   "Wax",
+   "Marasi",
+   "Steris"
+  ],
+  "explain": "Wayne opfert sein Leben, um die Bombe des Kreises aufzuhalten – ein schwerer Verlust für Wax und Marasi."
+ },
+ {
+  "id": "scadrial-044",
+  "q": "Unter welchem Namen kennen die Menschen in Elantel die Kandra?",
+  "a": "Gesichtslose Unsterbliche",
+  "wrong": [
+   "Sucher",
+   "Überlebendenanhänger",
+   "Aufgestiegene"
+  ],
+  "explain": "Die meisten Menschen in Elantel halten die Kandra für halb mythische Diener des Einträchtigen."
+ },
+ {
+  "id": "scadrial-045",
+  "q": "Welchem Gott dient der Kreis?",
+  "a": "Trell",
+  "wrong": [
+   "Ruin",
+   "Sazed",
+   "Bewahr"
+  ],
+  "explain": "Die Anführer des Kreises verehren Trell, einen alten Gott Scadrials, und arbeiten gegen die Pläne des Einträchtigen."
+ },
+ {
+  "id": "scadrial-046",
+  "q": "Aus welchem Volk im Süden stammt der Pilot Allik?",
+  "a": "Malwisch",
+  "wrong": [
+   "Terris",
+   "Khlenni",
+   "Koloss-Blütige"
+  ],
+  "explain": "Wie andere Malwisch verbirgt Allik sein Gesicht hinter einer Maske."
+ },
+ {
+  "id": "scadrial-047",
+  "q": "Wer bildet Kelsier in „The Eleventh Metal“ in Allomantie aus?",
+  "a": "Gemmel",
+  "wrong": [
+   "Dockson",
+   "Sazed",
+   "Marsch"
+  ],
+  "explain": "Gemmel ist ein exzentrischer, scheinbar verrückter Nebelgeborener."
+ },
+ {
+  "id": "scadrial-048",
+  "q": "Wer aus Terris gibt die Geschichten von Allomant Jak heraus?",
+  "a": "Handerwym",
+  "wrong": [
+   "Sazed",
+   "Tindwyl",
+   "Raschek"
+  ],
+  "explain": "Handerwyms Fußnoten ziehen Jaks wildeste Behauptungen höflich in Zweifel."
+ },
+ {
+  "id": "scadrial-049",
+  "q": "Womit ermöglichen die Scadrianer im Süden jedem den Zugriff auf Ferrochemie?",
+  "a": "Mit Medaillons",
+  "wrong": [
+   "Mit Ohrringen",
+   "Mit Stacheln",
+   "Mit Phiolen"
+  ],
+  "explain": "Die Medaillons sind ungeschlüsselte Metallgeister, die auch Menschen ohne eigene Kräfte nutzen können."
+ },
+ {
+  "id": "scadrial-050",
+  "q": "Welche Figur des ersten Zeitalters ist im zweiten als Eisenauge bekannt?",
+  "a": "Marsch",
+  "wrong": [
+   "Spuki",
+   "TenSoon",
+   "Elant"
+  ],
+  "explain": "Marsch dient dem Einträchtigen noch Jahrhunderte später und wird als Gestalt aus Legenden gefürchtet."
+ },
+ {
+  "id": "scadrial-051",
+  "q": "Welchen Namen trug Spuki, bevor Kelsier ihm seinen Spitznamen gab?",
+  "a": "Lestiborner",
+  "wrong": [
+   "Cladent",
+   "Hammond",
+   "Ladrian"
+  ],
+  "explain": "Kelsier taufte den jungen Lestiborner kurz nach dessen Eintritt in die Bande „Spuki“."
+ },
+ {
+  "id": "scadrial-052",
+  "q": "Wer herrscht über Fadrex, als Elants Armee die Stadt in „Held aller Zeiten“ belagert?",
+  "a": "Aradan Yomen",
+  "wrong": [
+   "Quellion",
+   "Aschwetter Cett",
+   "Ferson Penrod"
+  ],
+  "explain": "Yomen, ein Obligator und insgeheim ein Atium-Seher, machte sich zum König, nachdem Cett nach Luthadel aufgebrochen war."
+ },
+ {
+  "id": "scadrial-053",
+  "q": "Welche allomantische Fähigkeit besitzt Marasi?",
+  "a": "Die eines Pulsers",
+  "wrong": [
+   "Die eines Gleiters",
+   "Die eines Rauchers",
+   "Die eines Suchers"
+  ],
+  "explain": "Marasi verbrennt Kadmium, um die Zeit in einer Blase um sich herum zu verlangsamen – eine Kraft, die sie für nahezu nutzlos hält."
+ },
+ {
+  "id": "scadrial-054",
+  "q": "Welches Metall verbrennt Wayne als Gleiter?",
+  "a": "Biegmetall",
+  "wrong": [
+   "Kadmium",
+   "Chrom",
+   "Elektrum"
+  ],
+  "explain": "Durch das Verbrennen von Biegmetall beschleunigt Wayne die Zeit in einer Blase um sich herum."
+ },
+ {
+  "id": "scadrial-055",
+  "q": "Wer spielt in „Kinder des Nebels“ Lord Renoux, Vins angeblichen Onkel?",
+  "a": "OreSeur",
+  "wrong": [
+   "TenSoon",
+   "Dockson",
+   "Kelsier"
+  ],
+  "explain": "OreSeur, ein von Kelsier angeheuerter Kandra, trug Lord Renoux’ Knochen, während Vin sich als Valette Renoux ausgab."
+ },
+ {
+  "id": "scadrial-056",
+  "q": "Die Kapitelmottos von „Krieger des Feuers“ geben die Worte welches Mannes wieder?",
+  "a": "Kwaan",
+  "wrong": [
+   "Alendi",
+   "Sazed",
+   "Raschek"
+  ],
+  "explain": "Sie stammen aus der Inschrift, die Kwaan vor seinem Tod hinterließ und die Sazed im Konventikel von Seran fand."
+ },
+ {
+  "id": "scadrial-057",
+  "q": "Wer führte die Skaa-Rebellion an, die Kelsiers Bande anheuerte?",
+  "a": "Yeden",
+  "wrong": [
+   "Demoux",
+   "Goradel",
+   "Camon"
+  ],
+  "explain": "Yeden führte das Rebellenheer später zu früh gegen die Garnison von Holschrit und starb, als es vernichtet wurde."
+ },
+ {
+  "id": "scadrial-058",
+  "q": "Welche Stadt war Sitz der Synode der Bewahrer?",
+  "a": "Tathingdwen",
+  "wrong": [
+   "Urteau",
+   "Fellise",
+   "Fadrex"
+  ],
+  "explain": "Die Bewahrer kehrten regelmäßig dorthin zurück, um ihre Kupfergeister abzugleichen, bis Inquisitoren und Kolosse die Stadt niederbrannten."
+ },
+ {
+  "id": "scadrial-059",
+  "q": "In welcher Stadt der Einöde sorgte Wax für Recht und Ordnung, bevor er in die Großstadt zurückkehrte?",
+  "a": "Weathering",
+  "wrong": [
+   "Bilming",
+   "Neu-Seran",
+   "Fadrex"
+  ],
+  "explain": "Wax, Wayne, Lessie und Hilfssheriffs wie Barl hielten in Weathering und Umgebung Ordnung."
+ },
+ {
+  "id": "scadrial-060",
+  "q": "Wie heißt das seltsame Metall, das mit dem Gott Trell verbunden ist?",
+  "a": "Trellium",
+  "wrong": [
+   "Harmonium",
+   "Malatium",
+   "Lerasium"
+  ],
+  "explain": "Trellium und Harmonium stoßen einander ab; zwingt man sie zusammen, kann es zu einer verheerenden Explosion kommen."
+ },
+ {
+  "id": "scadrial-061",
+  "q": "Zu welcher Kandra-Generation gehört TenSoon?",
+  "a": "Zur dritten",
+  "wrong": [
+   "Zur ersten",
+   "Zur zweiten",
+   "Zur fünften"
+  ],
+  "explain": "Als Kandra der Dritten Generation ist TenSoon älter als die meisten seines Volkes, steht aber unter der herrschenden Zweiten Generation."
+ },
+ {
+  "id": "scadrial-062",
+  "q": "Welcher Kandra-Segen verleiht seinem Träger größere Kraft?",
+  "a": "Der Segen der Stärke",
+  "wrong": [
+   "Der Segen der Präsenz",
+   "Der Segen der Wahrnehmung",
+   "Der Segen der Stabilität"
+  ],
+  "explain": "TenSoon wurde mit dem Segen der Präsenz erschaffen und erhielt später zusätzlich den Segen der Stärke."
+ },
+ {
+  "id": "scadrial-063",
+  "q": "In der Inschrift, die in den Kapitelmottos von „Krieger des Feuers“ zitiert wird, nennt sich ihr Verfasser einen Philosophen, einen Gelehrten und was noch?",
+  "a": "Einen Verräter",
+  "wrong": [
+   "Einen Propheten",
+   "Einen Helden",
+   "Einen Bewahrer"
+  ],
+  "explain": "Er hatte zuerst den Helden aller Zeiten ausgerufen und ihn später verraten, um seine Suche zu beenden."
+ },
+ {
+  "id": "scadrial-064",
+  "q": "Worauf hielt der Verfasser der Kapitelmottos von „Krieger des Feuers“ seinen letzten Bericht fest?",
+  "a": "Auf einer Stahlplatte",
+  "wrong": [
+   "Auf einer Steinmauer",
+   "Auf einer Pergamentrolle",
+   "Auf einer Tontafel"
+  ],
+  "explain": "Er schrieb in Stahl, denn wie er sagt, kann man nichts trauen, was nicht in Metall festgehalten ist."
+ },
+ {
+  "id": "scadrial-065",
+  "q": "Wer stellte sich als Vins Vater heraus?",
+  "a": "Tevidian",
+  "wrong": [
+   "Kar",
+   "Tresting",
+   "Straff Wager"
+  ],
+  "explain": "Tevidian war der Hochprälan des Stahlministeriums; der Oberste Herrscher ließ ihn von den Inquisitoren töten, als die Wahrheit ans Licht kam."
+ },
+ {
+  "id": "scadrial-066",
+  "q": "Welcher Gefährte des Verfassers wurde laut dem Logbuch, das Vin in „Kinder des Nebels“ liest, von einem Nebelwesen niedergestochen?",
+  "a": "Fedik",
+  "wrong": [
+   "Raschek",
+   "Kwaan",
+   "Gemmel"
+  ],
+  "explain": "Fedik überlebte den Angriff, und Raschek streute das Gerücht, der Verfasser des Logbuchs selbst sei der Angreifer gewesen."
+ },
+ {
+  "id": "scadrial-067",
+  "q": "Miles Hundredlives ist ein Zwillingsgeborener mit demselben Metall in Allomantie und Ferrochemie. Welches?",
+  "a": "Gold",
+  "wrong": [
+   "Weißblech",
+   "Biegmetall",
+   "Eisen"
+  ],
+  "explain": "Als Augur und Blutmacher kann Miles sein Gold doppelt nutzen und fast jede Wunde im Nu heilen."
+ },
+ {
+  "id": "scadrial-068",
+  "q": "Welchen Gesetzlosen jagen Wax und Lessie im Prolog von „Hüter des Gesetzes“ in Feltrel?",
+  "a": "Bloody Tan",
+  "wrong": [
+   "Miles Hundredlives",
+   "Herr Anzug",
+   "Bluter"
+  ],
+  "explain": "Tan zog Lessie in die Schussbahn von Wax’ Kugel, und Wax erschoss ihn."
+ },
+ {
+  "id": "scadrial-069",
+  "q": "Unter welchem anderen Namen ist Harmonium auf Scadrial bekannt?",
+  "a": "Ettmetall",
+  "wrong": [
+   "Trellium",
+   "Malatium",
+   "Duralumin"
+  ],
+  "explain": "Harmonium ist das Göttermetall des Einträchtigen; es reagiert heftig mit Wasser."
+ },
+ {
+  "id": "scadrial-070",
+  "q": "Was speichert ein Ferrochemiker in Kadmium?",
+  "a": "Atem",
+  "wrong": [
+   "Glück",
+   "Entschlossenheit",
+   "Identität"
+  ],
+  "explain": "Beim Speichern hyperventiliert der Ferrochemiker und kann später lange Zeit ohne zu atmen auskommen."
+ },
+ {
+  "id": "scadrial-071",
+  "q": "Was stiehlt laut der Ars Arcanum ein hämalurgischer Stachel aus Weißblech?",
+  "a": "Körperliche ferrochemische Kräfte",
+  "wrong": [
+   "Körperliche allomantische Kräfte",
+   "Menschliche Stärke",
+   "Menschliche Sinne"
+  ],
+  "explain": "Stahlstacheln stehlen körperliche allomantische Kräfte, Eisen stiehlt Stärke und Zinn die Sinne."
+ },
+ {
+  "id": "scadrial-072",
+  "q": "Welche allomantische Fähigkeit erlangte Quellion, der Bürger von Urteau, durch einen verborgenen hämalurgischen Stachel?",
+  "a": "Die eines Suchers",
+  "wrong": [
+   "Die eines Besänftigers",
+   "Die eines Aufwieglers",
+   "Die eines Schlägers"
+  ],
+  "explain": "Quellion nutzte einen Bronzestachel, um Allomanten aufzuspüren, die er erpressen konnte, für ihn zu arbeiten."
+ },
+ {
+  "id": "scadrial-073",
+  "q": "Wie viele hämalurgische Stacheln braucht man, um einen Koloss zu erschaffen?",
+  "a": "Vier",
+  "wrong": [
+   "Zwei",
+   "Drei",
+   "Sieben"
+  ],
+  "explain": "Die Stacheln werden vier Menschen entnommen und einem fünften eingesetzt, der zum Koloss wird."
+ },
+ {
+  "id": "scadrial-074",
+  "q": "Wie nennt man einen Nebeling, der Elektrum verbrennt?",
+  "a": "Ein Orakel",
+  "wrong": [
+   "Ein Augur",
+   "Ein Egel",
+   "Ein Nicroburst"
+  ],
+  "explain": "Ein Orakel sieht mögliche eigene Zukünfte einige Sekunden voraus."
+ },
+ {
+  "id": "scadrial-075",
+  "q": "Wie nennt man einen Ferrochemiker, der in Zink Denkgeschwindigkeit speichert?",
+  "a": "Ein Sparker",
+  "wrong": [
+   "Ein Windwhisper",
+   "Ein Firesoul",
+   "Ein Sentry"
+  ],
+  "explain": "Ein Sparker kann das Zink später anzapfen, um weit schneller als gewöhnlich zu denken."
+ },
+ {
+  "id": "scadrial-076",
+  "q": "Wie viel wollte die Skaa-Rebellion in „Kinder des Nebels“ Kelsiers Bande zahlen?",
+  "a": "Dreißigtausend Boxings",
+  "wrong": [
+   "Zehntausend Boxings",
+   "Dreitausend Boxings",
+   "Hunderttausend Boxings"
+  ],
+  "explain": "Die Hälfte sollte im Voraus gezahlt werden, die andere nach getaner Arbeit; die Rebellen hatten jahrelang dafür gespart."
+ },
+ {
+  "id": "scadrial-077",
+  "q": "Welchen adligen Nebelgeborenen bekämpft und tötet Kelsier in „The Eleventh Metal“ in dessen Festung in Mantiz?",
+  "a": "Lord Shezler",
+  "wrong": [
+   "Lord Tresting",
+   "Lord Hasting",
+   "Lord Tekiel"
+  ],
+  "explain": "Kelsier nahm Antillius Shezlers Notizbuch an sich, voller Forschungen zu einem möglichen elften Metall."
+ },
+ {
+  "id": "scadrial-078",
+  "q": "Was enthält in „Allomancer Jak and the Pits of Eltania“ der Schatz des Überlebenden?",
+  "a": "Koloss-Stacheln",
+  "wrong": [
+   "Atiumperlen",
+   "Eine Perle Lerasium",
+   "Die Bänder der Trauer"
+  ],
+  "explain": "Jak tauchte in die Gruben und holte eine Truhe voller Koloss-Stacheln herauf; die Truhe selbst bestand aus Aluminium."
+ },
+ {
+  "id": "scadrial-079",
+  "q": "Was hindert den Protagonisten von „Mistborn: Secret History“ nach seinem Tod daran, ins Jenseits überzugehen?",
+  "a": "Die Macht der Quelle der Erhebung",
+  "wrong": [
+   "Ein hämalurgischer Stachel",
+   "Vins Ohrring",
+   "Sazeds Kupfergeister"
+  ],
+  "explain": "Er brachte Bewahr mit einer List dazu, zu verraten, dass die Quelle nahe war, und ihre Macht hielt ihn als kognitiven Schatten fest."
+ },
+ {
+  "id": "scadrial-080",
+  "q": "Welchem Amt des Stahlministeriums gehörte das Konventikel von Seran?",
+  "a": "Dem Amt für Inquisition",
+  "wrong": [
+   "Dem Amt für Orthodoxie",
+   "Dem Amt für Ressourcen",
+   "Dem Amt für Finanzwesen"
+  ],
+  "explain": "Das Konventikel war die Festung der Inquisitoren; in seinen Tiefen lag die stählerne Inschrift aus den Kapitelmottos."
+ },
+ {
+  "id": "scadrial-081",
+  "q": "In was für einem Fahrzeug waren Allik und seine Kameraden in „Bänder der Trauer“ unterwegs?",
+  "a": "In einem Luftschiff",
+  "wrong": [
+   "In einem Dampfschiff",
+   "In einem Eisenbahnzug",
+   "In einem U-Boot"
+  ],
+  "explain": "Die Brunstell, ein Luftschiff aus dem Süden, stürzte in einem Sturm ab und fiel dem Kreis in die Hände."
+ },
+ {
+  "id": "scadrial-082",
+  "q": "Welches Mitglied von Wax’ Familie führt in „Metall der Götter“ den Kreis an?",
+  "a": "Seine Schwester Telsin",
+  "wrong": [
+   "Sein Onkel Edwarn",
+   "Seine Frau Steris",
+   "Sein Schwiegervater Lord Harms"
+  ],
+  "explain": "Telsin gehört zu den Anführern des Kreises und schmiedet Pläne gegen Elantel, was sie zur Gegenspielerin ihres Bruders macht."
+ },
+ {
+  "id": "scadrial-083",
+  "q": "Was versucht der Kreis in „Metall der Götter“ per Schiff nach Elantel zu bringen?",
+  "a": "Eine verheerende Bombe",
+  "wrong": [
+   "Ein Heer von Koloss",
+   "Eine tödliche Seuche",
+   "Einen Atiumschatz"
+  ],
+  "explain": "Wax und Wayne finden heraus, dass die Bombe nicht im Stützpunkt des Kreises ist, sondern an Bord eines Schiffes auf dem Weg in die Stadt."
+ },
+ {
+  "id": "scadrial-084",
+  "q": "Welchen Machthaber hat Bluter in „Schatten über Elantel“ heimlich getötet und verkörpert, um in Elantel Unruhe zu stiften?",
+  "a": "Replar Innate",
+  "wrong": [
+   "Winsting Innate",
+   "Lord Harms",
+   "Edwarn Ladrian"
+  ],
+  "explain": "Bluter trug das Gesicht des Gouverneurs, um die Arbeiter der Stadt gegen ihre Herrscher aufzubringen, und ermordete auch dessen Bruder Winsting."
+ },
+ {
+  "id": "scadrial-085",
+  "q": "Wer von den Kandra gab Wax laut Brandon Sanderson seinen Ohrring?",
+  "a": "MeLaan",
+  "wrong": [
+   "TenSoon",
+   "VenDell",
+   "KanPaar"
+  ],
+  "explain": "Sanderson verriet es 2011 bei einer Signierstunde: MeLaan hatte ihn Wax persönlich überreicht, Jahre bevor er nach Elantel zurückkehrte."
+ },
+ {
+  "id": "scadrial-086",
+  "q": "Wer erhält am Ende von „Bänder der Trauer“ auf Steris’ Vorschlag die Bänder?",
+  "a": "Die Kandra",
+  "wrong": [
+   "Wax",
+   "Der Kreis",
+   "Der Gouverneur von Elantel"
+  ],
+  "explain": "Durch Steris’ Kompromiss gelangen die Bänder weder in die Hände Elantels noch in die der Südländer."
+ },
+ {
+  "id": "scadrial-087",
+  "q": "Unter welchem Titel erinnern sich die südlichen Scadrianer in „Bänder der Trauer“ an die Gestalt, die nach dem Eistod zu ihnen kam?",
+  "a": "Der Souverän",
+  "wrong": [
+   "Die Aufgestiegene Kriegerin",
+   "Der Letzte Kaiser",
+   "Der Held aller Zeiten"
+  ],
+  "explain": "Laut den Südländern kam der Souverän, um ihnen zu helfen, die Kälte nach dem Eistod zu überleben."
+ },
+ {
+  "id": "scadrial-088",
+  "q": "Mit welcher Figur des ersten Zeitalters teilt die Tochter von Wax und Steris in „Metall der Götter“ ihren Namen?",
+  "a": "Tindwyl",
+  "wrong": [
+   "Allrianne",
+   "Valette",
+   "Mare"
+  ],
+  "explain": "Wax und Steris haben zwei kleine Kinder, Maxillium und Tindwyl."
+ },
+ {
+  "id": "scadrial-089",
+  "q": "In welcher Stadt finden Marasi und MeLaan in „Bänder der Trauer“ Allik als Gefangenen auf dem Anwesen des Kreises?",
+  "a": "Dulsing",
+  "wrong": [
+   "Bilming",
+   "Neu-Seran",
+   "Feltrel"
+  ],
+  "explain": "Der Kreis hielt Allik und das Wrack seines Luftschiffs, der Brunstell, auf seinem Anwesen in Dulsing fest."
+ },
+ {
+  "id": "scadrial-090",
+  "q": "Womit schießt Wax in „Schatten über Elantel“ auf Bluter, damit der Einträchtige wieder die Kontrolle über sie erlangen kann?",
+  "a": "Mit einer Kugel aus seinem Ohrring",
+  "wrong": [
+   "Mit einer Kugel mit Aluminiumspitze",
+   "Mit einer Kugel aus Atium",
+   "Mit einer Kugel voll flüssigem Duralumin"
+  ],
+  "explain": "Das hämalurgische Metall ließ den Einträchtigen Bluters Geist erreichen, doch sie zog den Tod der Unterwerfung vor."
+ }
+]

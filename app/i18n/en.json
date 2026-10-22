@@ -1,0 +1,516 @@
+{
+  "app": {
+    "title": "Cosmere Trivia",
+    "tagline": "How well do you know the Cosmere?"
+  },
+  "common": {
+    "back": "Back",
+    "home": "Home",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "continue": "Continue",
+    "next": "Next question",
+    "loading": "Loading…",
+    "playAgain": "Play again",
+    "openSettings": "Open settings",
+    "labelled": "{label}: {text}"
+  },
+  "home": {
+    "continue": "Continue game",
+    "continueDesc": "In progress: {players}",
+    "classic": "Classic game",
+    "classicDesc": "1–6 players · infuse all six gems",
+    "quick": "Quick game",
+    "quickDesc": "15 questions against the clock",
+    "practice": "Practice",
+    "practiceDesc": "Pick a world and a difficulty",
+    "stats": "Stats",
+    "settings": "Settings",
+    "about": "About",
+    "continueQuick": "Continue quick game",
+    "continueQuickDesc": "Question {n} of {total} · {score} points",
+    "newGameConfirmClassic": "Starting a new game will discard the classic game in progress. Continue?",
+    "newGameConfirmQuick": "Starting a new game will discard the quick game in progress. Continue?",
+    "newGameYes": "Start a new one",
+    "newGameNo": "Go back",
+    "daily": "Daily challenge",
+    "dailyDesc": "5 questions, the same for everyone today",
+    "dailyStreak": "Days in a row: {n} · keep it going!",
+    "dailyRun": "In progress: question {n} of {total}",
+    "dailyContinue": "Continue daily challenge",
+    "dailyDone": "Done today: {n}/{total} · streak {streak}",
+    "achievements": "Achievements",
+    "dailyLocked": "You have already played the latest challenge",
+    "classicDescFiltered": "1–6 players · infuse all your gems",
+    "continueTurn": "{name}’s turn · {players}"
+  },
+  "cat": {
+    "roshar": "Roshar",
+    "scadrial": "Scadrial",
+    "sel": "Sel",
+    "nalthis": "Nalthis",
+    "otros": "Other Worlds",
+    "cosmere": "The Cosmere"
+  },
+  "gem": {
+    "roshar": "Sapphire",
+    "scadrial": "Ruby",
+    "sel": "Emerald",
+    "nalthis": "Heliodor",
+    "otros": "Amethyst",
+    "cosmere": "Diamond"
+  },
+  "difficulty": {
+    "1": "Easy",
+    "2": "Medium",
+    "3": "Hard",
+    "4": "Expert",
+    "label": "Difficulty: {level}"
+  },
+  "level": {
+    "title": "Difficulty level",
+    "easy": "Easy",
+    "normal": "Normal",
+    "hard": "Hard",
+    "expert": "Expert",
+    "easyDesc": "Mostly easy questions (a few harder ones if they run out).",
+    "normalDesc": "A mix of easy and medium questions, with a few hard ones.",
+    "hardDesc": "Medium, hard and expert questions.",
+    "expertDesc": "Hard and expert questions only, for rereaders.",
+    "badge": "Level: {level}"
+  },
+  "lifeline": {
+    "title": "Lifelines",
+    "help": "How lifelines work",
+    "rules": "Each player gets one of each per game (quick games too). They can’t be used on the final question or in practice, and Atium and Stormlight can’t be combined on the same question.",
+    "used": "Already used: {name}",
+    "atium": {
+      "name": "Atium",
+      "desc": "Removes two wrong answers.",
+      "long": "Burn atium and glimpse the future: two wrong answers are removed.",
+      "done": "Atium: two wrong answers removed.",
+      "removed": "{option} (removed by atium)"
+    },
+    "stormlight": {
+      "name": "Stormlight",
+      "desc": "Activate before answering: if you miss, choose again.",
+      "long": "Activate it before answering. If you pick a wrong answer, it is marked and you choose again; the right one isn’t revealed. The clock keeps running. If you use Breath while it’s active, it stays active on the new question.",
+      "armed": "Stormlight active: if you miss, you can choose again.",
+      "saved": "Stormlight heals you! Not that one: pick another answer.",
+      "struck": "{option} (wrong)"
+    },
+    "breath": {
+      "name": "Breath",
+      "desc": "Swaps the question for another from the same world and difficulty.",
+      "long": "Swaps the question for another one from the same world and difficulty. If there’s none left, it can’t be used.",
+      "none": "No other question from the same world and difficulty."
+    },
+    "noCombo": "Atium and Stormlight can’t be combined on the same question."
+  },
+  "setup": {
+    "title": "New game",
+    "playerCount": "Players",
+    "player": "Player {n}",
+    "namePlaceholder": "Player {n}",
+    "color": "Gem color",
+    "timer": "30-second timer",
+    "timerHint": "Running out of time counts as a wrong answer. A question’s time keeps running even if you leave the app.",
+    "start": "Start game",
+    "fewer": "Remove a player",
+    "more": "Add a player",
+    "timerPause": "Turn the timer off to pause whenever you like.",
+    "fullRound": "Full round",
+    "fullRoundHint": "If someone answers the final question right, the players still to play in that round take their turn; anyone else who gets the final right shares the victory. Everyone gets the same number of turns."
+  },
+  "turn": {
+    "passTo": "Pass the phone to",
+    "ready": "I’m ready",
+    "noPeek": "Everyone else: no peeking!",
+    "turnOf": "{name}’s turn",
+    "starts": "First up: {name}",
+    "lastTurn": "Last round. Final question answered right by: {names}. This is your last turn: get the final right too and you share the victory.",
+    "clockRunning": "This question was already on screen and its time kept running: {s} s left.",
+    "clockOut": "This question was already on screen and its time has run out."
+  },
+  "wheel": {
+    "label": "Category wheel",
+    "spin": "Spin",
+    "tapToSpin": "Tap the wheel to spin",
+    "spinning": "Spinning…",
+    "wildcard": "Wildcard",
+    "landed": "{category}!",
+    "chooseTitle": "Wildcard!",
+    "chooseHint": "Choose any world",
+    "infusedPick": "Gem already infused: {category}. Pick another world!",
+    "wildcardOnly": "Wildcard! Only one world left: {category}",
+    "infusedOnly": "Gem already infused. Only one world left: {category}"
+  },
+  "question": {
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "timeout": "Time’s up!",
+    "answerWas": "The correct answer was: {answer}",
+    "secondsLeft": "{s} seconds left",
+    "final": "Final question",
+    "progress": "Question {n} of {total}"
+  },
+  "classic": {
+    "charge": "+1 charge · {category} ({n}/2)",
+    "infused": "Gem infused: {category}",
+    "alreadyInfused": "Gem already infused: {category}. No extra charge.",
+    "allInfused": "All gems infused! Next up: the final question.",
+    "spinAgain": "Spin again!",
+    "passTurn": "Turn passes to {name}.",
+    "soloMiss": "Missed! Spin again.",
+    "finalFail": "Not this time. You’ll face the final question again on your next turn.",
+    "finalTitle": "Final question",
+    "finalIntro": "{name}, all your gems are infused. Answer this question correctly to win!",
+    "finalReady": "Bring it on",
+    "leave": "Leave game (progress is saved)",
+    "board": "Players",
+    "gemCount": "{n} of {total} gems infused",
+    "gem0": "{category}: no charges",
+    "gem1": "{category}: 1 charge",
+    "gem2": "{category}: infused",
+    "streakPass": "{n} right in a row! The turn passes to {name}.",
+    "allInfusedNext": "All gems infused! You’ll face the final question on your next turn.",
+    "leaveTimerTitle": "Leave the game?",
+    "leaveTimerBody": "If you leave, the question’s time keeps running.",
+    "leaveTimerYes": "Leave",
+    "leaveTimerNo": "Keep playing",
+    "emptySaved": "The game is saved: you can continue it once you select more books.",
+    "finalRoundOn": "Final question answered! The players still to play in this round take their turn: anyone who also gets it right shares the victory.",
+    "finalShare": "Final question answered! You share the victory.",
+    "roundOver": "The round is over.",
+    "finalDone": "final question answered",
+    "finalFailLast": "Not this time, and it was your last chance: the round ends without another turn for you.",
+    "lastChanceGone": "All gems infused! But the round is closing: you won’t get another turn."
+  },
+  "victory": {
+    "title": "{name} wins!",
+    "subtitle": "Every gem infused and the final question answered.",
+    "answered": "Questions asked: {n}",
+    "statsTitle": "Game summary",
+    "correct": "Correct",
+    "correctOf": "{n}/{total}",
+    "accuracy": "Accuracy",
+    "percent": "{n}%",
+    "lifelines": "Lifelines used",
+    "gems": "Gems",
+    "duration": "Duration: {time}",
+    "titleShared": "Shared victory: {names}!",
+    "subtitleShared": "Final question answered in the same round.",
+    "groupNote": "Group game: it doesn’t count towards personal stats, the collection, mistakes or achievements (group achievements do count)."
+  },
+  "quick": {
+    "title": "Quick game",
+    "score": "Score",
+    "best": "Best score",
+    "points": "+{n} points",
+    "result": "{score} points",
+    "correctCount": "{n} of {total} correct",
+    "newRecord": "New record!",
+    "finished": "Results",
+    "seeResults": "See results",
+    "intro": "{n} questions from every world, {s} seconds each. The faster you answer, the more points you score. The clock keeps running even if you leave the app.",
+    "introLifelines": "You get one of each lifeline: Atium, Stormlight and Breath.",
+    "start": "Start",
+    "quitTitle": "Quit this quick game?",
+    "quitBody": "Your score for this game will be lost.",
+    "quitYes": "Quit game",
+    "quitNo": "Keep playing",
+    "emptySaved": "The game is saved (question {n} of {total}): you can continue it once you select more books.",
+    "bestLevel": "Best score ({level}): {n}",
+    "noBestLevel": "No record yet on {level}.",
+    "bestLegacy": "Record from earlier versions (all levels): {n}",
+    "introFiltered": "{n} questions from your worlds, {s} seconds each. The faster you answer, the more points you score. The clock keeps running even if you leave the app."
+  },
+  "practice": {
+    "title": "Practice",
+    "category": "World",
+    "all": "All worlds",
+    "difficulty": "Difficulty",
+    "any": "Any",
+    "available": "Questions available: {n}",
+    "start": "Start practice",
+    "end": "Finish",
+    "tally": "{correct} of {total} correct",
+    "fallback": "No {level} questions here yet: you’ll practice with {fallback} ones.",
+    "empty": "No {level} questions here yet.",
+    "noneFilter": "No questions available: the spoiler filter leaves no works with questions. Select more works in Settings.",
+    "allSeen": "You’ve seen every available question; they’ll start repeating now.",
+    "missed": "My mistakes ({n})",
+    "missedLabel": "Review",
+    "missedHint": "Only questions you got wrong. Answer one right and it leaves the list.",
+    "missedNone": "Questions you miss in any mode will show up here.",
+    "missedAvailable": "Mistakes to review: {n}",
+    "missedTitle": "My mistakes",
+    "missedLeft": "Left: {n}",
+    "missedCleared": "Removed from your mistakes.",
+    "missedDone": "You’ve cleared all your mistakes!"
+  },
+  "stats": {
+    "title": "Stats",
+    "classicGames": "Classic games won",
+    "quickGames": "Quick games",
+    "bestQuick": "Best quick score",
+    "answered": "Questions answered",
+    "accuracy": "Accuracy",
+    "byCategory": "Accuracy by world",
+    "none": "No answers yet. Go play!",
+    "of": "{correct} of {total}",
+    "lifelines": "Lifelines used",
+    "recordsByLevel": "Quick game records by level",
+    "collection": "Collection",
+    "discovered": "{n}/{total} questions discovered",
+    "discoveredOf": "{n}/{total}",
+    "collectionFiltered": "Only the works ticked in the spoiler filter count.",
+    "byDifficulty": "By difficulty",
+    "groupGames": "Group games",
+    "groupNote": "Classic games with 2 or more players are counted apart, as group games: they don’t add to your answers, your collection, “My mistakes” or your personal achievements."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "sound": "Sound effects",
+    "vibration": "Vibration",
+    "vibrationUnsupported": "Not supported on this device",
+    "timer": "Timer on by default",
+    "spoilers": "Spoiler filter",
+    "spoilersHint": "Tick the works you’ve read. Only questions about them will appear.",
+    "selected": "{n} of {total} works selected",
+    "all": "Select all",
+    "none": "Select none",
+    "data": "Data",
+    "reset": "Reset all data",
+    "resetConfirm": "This deletes your stats, records, saved game and settings. Are you sure?",
+    "resetDone": "All data has been reset.",
+    "storageWarning": "Storage isn’t available, so settings and progress won’t be kept after closing the app.",
+    "resetNo": "Keep my data",
+    "backup": "Backup",
+    "backupHint": "Save your stats, records, mistakes and settings as a code to move them to another device or restore them. Games in progress are not included.",
+    "backupExport": "Export progress",
+    "backupCode": "Your progress code",
+    "backupCopy": "Copy code",
+    "backupCopied": "Code copied. Keep it somewhere safe.",
+    "backupCopyFailed": "Couldn’t copy: select the code and copy it by hand.",
+    "backupPaste": "Import: paste a code here",
+    "backupImport": "Import progress",
+    "backupNo": "Don’t import",
+    "backupConfirmTitle": "Import this progress?",
+    "backupConfirm": "Your current stats, records, mistakes and settings will be replaced by the ones in the code. Games in progress stay as they are.",
+    "backupDone": "Progress imported.",
+    "backupError": {
+      "empty": "Paste a code first.",
+      "format": "That code isn’t valid. Check that you copied all of it.",
+      "checksum": "The code is incomplete or damaged. Copy it again.",
+      "version": "This code comes from another version of the app and can’t be imported.",
+      "unsupported": "This browser can’t read the code. Update it or use another one."
+    },
+    "noQuestionsYet": "no questions yet"
+  },
+  "about": {
+    "title": "About",
+    "body": "A trivia game about the worlds of Brandon Sanderson’s Cosmere. Play solo or pass the phone around with friends.",
+    "howTo": "How to play",
+    "rule1": "Spin the wheel and answer a question about the world it lands on.",
+    "rule2": "Right answer: you earn a charge in that world and spin again. Wrong answer: the turn passes to the next player.",
+    "rule3": "Two charges infuse a gem. The wildcard lets you pick the world.",
+    "rule4": "Infuse every gem, then answer the final question to win.",
+    "offline": "Works offline once loaded. Everything is stored on this device only.",
+    "disclaimer": "Unofficial fan project, not affiliated with or endorsed by Brandon Sanderson or Dragonsteel. The Cosmere and all related names belong to their respective owners.",
+    "version": "Version {v}",
+    "levels": "Difficulty levels",
+    "levelsFinal": "The classic game’s final question is medium on Easy, hard on Normal and expert on Hard and Expert.",
+    "lifelines": "Lifelines",
+    "rule5": "A random draw decides who starts. After 3 right answers in a row, the turn passes to the next player anyway; playing solo there is no limit.",
+    "rule6": "If the wheel lands on a gem you’ve already infused, you choose another world.",
+    "intro": "Show the introduction",
+    "rule7": "If you miss the final question, the turn passes and you’ll try again, with another question, on your next turn.",
+    "rule8": "With the timer on you have 30 seconds per question; running out counts as a wrong answer. Once a question is shown, its time keeps running even if you leave the app.",
+    "rule9": "Full round (2 or more players, on by default): if someone answers the final right, the players still to play in that round take their turn, and anyone who also gets it right shares the victory.",
+    "rule10": "Games with 2 or more players count as group games and don’t add to your personal stats."
+  },
+  "errors": {
+    "load": "Couldn’t load the questions. Check your connection and reload.",
+    "noQuestions": "No questions available with your current spoiler filter.",
+    "fallback": "Questions aren’t available in this language yet, so they’re shown in English.",
+    "emptyFilter": "Your spoiler filter leaves no questions. Select the books you’ve read in Settings."
+  },
+  "boot": {
+    "title": "Something went wrong",
+    "body": "The app couldn’t start. The saved data may be damaged: clearing it usually fixes this (you’ll lose the game in progress, your settings and stats).",
+    "reset": "Clear data and restart",
+    "retry": "Try again",
+    "confirm": "Clear the app’s data? You’ll lose the game in progress, your settings and stats.",
+    "confirmYes": "Yes, clear and restart",
+    "cancel": "Keep my data"
+  },
+  "onboarding": {
+    "label": "Introduction",
+    "step": "Step {n} of {total}",
+    "skip": "Skip",
+    "next": "Next",
+    "welcome": "Welcome",
+    "readTitle": "What have you read?",
+    "readHint": "Tick the books you’ve read and you’ll only get questions about them. You can change this any time in Settings.",
+    "all": "All",
+    "none": "None",
+    "noneWarn": "With no books ticked there won’t be any questions.",
+    "rulesTitle": "How to play",
+    "ruleWheel": "Spin the wheel: it picks the world of your question. On the wildcard, you choose.",
+    "ruleGems": "Each right answer charges that world’s gem; two charges infuse it. Infuse them all and answer the final question to win.",
+    "ruleLifelines": "You get three lifelines per game: Atium removes two wrong answers, Stormlight lets you pick again and Breath swaps the question.",
+    "startTitle": "All set!",
+    "startBody": "Play solo or pass the phone around. You can see this introduction again from “About”.",
+    "start": "Start playing",
+    "showWorks": "Show books: {world}",
+    "readAll": "I’ve read everything",
+    "orPick": "Or select only what you’ve read:",
+    "pickOne": "Select at least one book to continue.",
+    "skippedNoFilter": "No spoiler filter: you will get questions from every book. You can change this in Settings."
+  },
+  "report": {
+    "link": "Report a mistake",
+    "describe": "What is wrong? (answer, name, translation, spoiler…)",
+    "offlineCopied": "You’re offline: the report was copied to the clipboard so you can send it later.",
+    "offlineFailed": "You’re offline and the report couldn’t be copied. Try again when you’re online.",
+    "copy": "Copy report",
+    "copied": "Report copied. Paste it on GitHub or send it to whoever maintains the game.",
+    "copyFailed": "The report couldn’t be copied.",
+    "field": {
+      "id": "ID",
+      "language": "Language",
+      "world": "World",
+      "difficulty": "Difficulty",
+      "mode": "Mode",
+      "version": "Version",
+      "question": "Question",
+      "explanation": "Explanation"
+    }
+  },
+  "review": {
+    "title": "Review mistakes ({n})",
+    "hint": "The questions you missed in this game, with the right answer. Practise them again in Practice → My mistakes.",
+    "answer": "Right answer: {answer}",
+    "none": "No mistakes in this game!",
+    "hintGroup": "The questions missed in this game, with the right answer. Group games aren’t saved to “My mistakes”."
+  },
+  "update": {
+    "available": "New version available",
+    "action": "Update",
+    "later": "Later",
+    "updating": "Updating…"
+  },
+  "daily": {
+    "title": "Daily challenge",
+    "intro": "{n} questions of mixed difficulty, {s} seconds each. Today they are the same for everyone playing in your language.",
+    "once": "One attempt per day. Come back every day to keep your streak.",
+    "start": "Start the challenge",
+    "streak": "Days in a row: {n}",
+    "noStreak": "No streak yet",
+    "best": "Best streak: {n}",
+    "filterNote": "Your spoiler filter hides some questions: your challenge is picked only from the ones you have on, so it may differ from other players’.",
+    "leaveTitle": "Leave the daily challenge?",
+    "marksLabel": "{n} of {total} correct",
+    "result": "{n} of {total} correct",
+    "comeBack": "A new challenge arrives tomorrow.",
+    "share": "Share result",
+    "sharePreview": "Text to share",
+    "shareStreak": "Days in a row: {n}",
+    "shareFiltered": "(spoiler filter on)",
+    "copied": "Result copied to the clipboard.",
+    "copyFailed": "The result could not be copied.",
+    "clockBack": "Your device’s date is earlier than your last challenge’s, so it can’t be played again. Next challenge: {date}."
+  },
+  "ach": {
+    "title": "Achievements",
+    "count": "{n} of {total} achievements",
+    "local": "Kept only on this device (and in your backup).",
+    "unlocked": "Achievement unlocked!",
+    "unlockedOn": "Earned on {date}",
+    "locked": "Locked",
+    "progress": "{n}/{total}",
+    "firstWin": {
+      "name": "First victory",
+      "desc": "Win a solo classic game."
+    },
+    "radiant": {
+      "name": "Radiant",
+      "desc": "Win 5 solo classic games."
+    },
+    "fullTable": {
+      "name": "Full table",
+      "desc": "Win a classic game with 6 players."
+    },
+    "flawless": {
+      "name": "Six gems, no misses",
+      "desc": "Infuse all six gems in a solo classic game without missing a single question."
+    },
+    "expertPure": {
+      "name": "No help needed",
+      "desc": "Win a solo classic game on Expert without using any lifeline."
+    },
+    "quickPerfect": {
+      "name": "Perfect game",
+      "desc": "Answer all 15 questions of a quick game correctly."
+    },
+    "quickScore": {
+      "name": "Against the clock",
+      "desc": "Score {n} points in a quick game."
+    },
+    "allWorlds": {
+      "name": "World after world",
+      "desc": "Answer at least one question from every world correctly."
+    },
+    "answered100": {
+      "name": "A hundred questions",
+      "desc": "Answer 100 questions in any mode."
+    },
+    "allLifelines": {
+      "name": "All three lifelines",
+      "desc": "Use each lifeline at least once: Atium, Stormlight and Breath."
+    },
+    "stormlightSave": {
+      "name": "Saved by Stormlight",
+      "desc": "Miss with Stormlight on and get it right on the second try."
+    },
+    "compendium": {
+      "name": "Compendium",
+      "desc": "Discover every question of one world."
+    },
+    "halfCosmere": {
+      "name": "Half the Cosmere",
+      "desc": "Discover half of all the questions."
+    },
+    "polyglot": {
+      "name": "Polyglot",
+      "desc": "Play in 3 languages."
+    },
+    "dailyFirst": {
+      "name": "Challenge met",
+      "desc": "Complete a daily challenge."
+    },
+    "dailyPerfect": {
+      "name": "Perfect day",
+      "desc": "Answer all 5 questions of a daily challenge correctly."
+    },
+    "dailyStreak3": {
+      "name": "Persistence",
+      "desc": "Complete the daily challenge 3 days in a row."
+    },
+    "dailyStreak10": {
+      "name": "Ten days in a row",
+      "desc": "Complete the daily challenge 10 days in a row."
+    },
+    "missedClear": {
+      "name": "Clean slate",
+      "desc": "Review all your mistakes in Practice until the list is empty."
+    },
+    "groupNote": "Group games only count towards group achievements, such as “Full table”.",
+    "blocked": "Not reachable with your current spoiler filter."
+  }
+}

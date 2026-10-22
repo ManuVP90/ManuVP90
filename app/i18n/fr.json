@@ -1,0 +1,516 @@
+{
+  "app": {
+    "title": "Quiz du Cosmère",
+    "tagline": "Connaissez-vous vraiment le Cosmère ?"
+  },
+  "common": {
+    "back": "Retour",
+    "home": "Accueil",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "continue": "Continuer",
+    "next": "Question suivante",
+    "loading": "Chargement…",
+    "playAgain": "Rejouer",
+    "openSettings": "Ouvrir les réglages",
+    "labelled": "{label} : {text}"
+  },
+  "home": {
+    "continue": "Reprendre la partie",
+    "continueDesc": "En cours : {players}",
+    "classic": "Partie classique",
+    "classicDesc": "1 à 6 joueurs · infusez les six gemmes",
+    "quick": "Partie rapide",
+    "quickDesc": "15 questions contre la montre",
+    "practice": "Entraînement",
+    "practiceDesc": "Choisissez un monde et une difficulté",
+    "stats": "Statistiques",
+    "settings": "Réglages",
+    "about": "À propos",
+    "continueQuick": "Reprendre la partie rapide",
+    "continueQuickDesc": "Question {n} sur {total} · {score} points",
+    "newGameConfirmClassic": "Commencer une nouvelle partie effacera la partie classique en cours. Continuer ?",
+    "newGameConfirmQuick": "Commencer une nouvelle partie effacera la partie rapide en cours. Continuer ?",
+    "newGameYes": "En commencer une nouvelle",
+    "newGameNo": "Revenir",
+    "daily": "Défi du jour",
+    "dailyDesc": "5 questions, les mêmes pour tous aujourd’hui",
+    "dailyStreak": "Jours d’affilée : {n} · ne perdez pas la série !",
+    "dailyRun": "En cours : question {n} sur {total}",
+    "dailyContinue": "Reprendre le défi du jour",
+    "dailyDone": "Fait aujourd’hui : {n}/{total} · série de {streak}",
+    "achievements": "Succès",
+    "dailyLocked": "Vous avez déjà joué le dernier défi",
+    "classicDescFiltered": "1 à 6 joueurs · infusez toutes vos gemmes",
+    "continueTurn": "Au tour de {name} · {players}"
+  },
+  "cat": {
+    "roshar": "Roshar",
+    "scadrial": "Scadrial",
+    "sel": "Sel",
+    "nalthis": "Nalthis",
+    "otros": "Autres mondes",
+    "cosmere": "Le Cosmère"
+  },
+  "gem": {
+    "roshar": "Saphir",
+    "scadrial": "Rubis",
+    "sel": "Émeraude",
+    "nalthis": "Héliodore",
+    "otros": "Améthyste",
+    "cosmere": "Diamant"
+  },
+  "difficulty": {
+    "1": "Facile",
+    "2": "Moyenne",
+    "3": "Difficile",
+    "4": "Expert",
+    "label": "Difficulté : {level}"
+  },
+  "level": {
+    "title": "Niveau de difficulté",
+    "easy": "Facile",
+    "normal": "Normal",
+    "hard": "Difficile",
+    "expert": "Expert",
+    "easyDesc": "Surtout des questions faciles (quelques-unes plus difficiles si elles sont épuisées).",
+    "normalDesc": "Un mélange de questions faciles et moyennes, avec quelques difficiles.",
+    "hardDesc": "Des questions moyennes, difficiles et de niveau expert.",
+    "expertDesc": "Uniquement des questions difficiles et de niveau expert, pour ceux qui relisent.",
+    "badge": "Niveau : {level}"
+  },
+  "lifeline": {
+    "title": "Aides",
+    "help": "Comment fonctionnent les aides",
+    "rules": "Chaque joueur dispose d’une aide de chaque type par partie (partie rapide comprise). Elles ne peuvent servir ni pour la question finale ni en entraînement, et l’Atium et la Fulgiflamme ne se combinent pas sur la même question.",
+    "used": "Vous avez déjà utilisé {name}",
+    "atium": {
+      "name": "Atium",
+      "desc": "Élimine deux mauvaises réponses.",
+      "long": "Brûlez de l’Atium et entrevoyez l’avenir : deux mauvaises réponses sont éliminées.",
+      "done": "Atium : deux mauvaises réponses éliminées.",
+      "removed": "{option} (éliminée par l’Atium)"
+    },
+    "stormlight": {
+      "name": "Fulgiflamme",
+      "desc": "À activer avant de répondre : si vous vous trompez, vous choisissez à nouveau.",
+      "long": "Activez-la avant de répondre. Si vous choisissez une mauvaise réponse, elle est marquée et vous choisissez à nouveau, sans que la bonne soit révélée. Le chrono continue de tourner. Si vous utilisez le Souffle pendant qu’elle est active, elle reste active sur la nouvelle question.",
+      "armed": "Fulgiflamme active : si vous vous trompez, vous pourrez choisir à nouveau.",
+      "saved": "La Fulgiflamme vous guérit ! Ce n’était pas celle-là : choisissez une autre réponse.",
+      "struck": "{option} (incorrecte)"
+    },
+    "breath": {
+      "name": "Souffle",
+      "desc": "Remplace la question par une autre du même monde et de même difficulté.",
+      "long": "Remplace la question par une autre du même monde et de même difficulté. S’il n’en reste aucune, il ne peut pas être utilisé.",
+      "none": "Aucune autre question du même monde et de même difficulté."
+    },
+    "noCombo": "L’Atium et la Fulgiflamme ne peuvent pas être combinés sur la même question."
+  },
+  "setup": {
+    "title": "Nouvelle partie",
+    "playerCount": "Joueurs",
+    "player": "Joueur {n}",
+    "namePlaceholder": "Joueur {n}",
+    "color": "Couleur de gemme",
+    "timer": "Chrono de 30 secondes",
+    "timerHint": "Si le temps est écoulé, la réponse compte comme fausse. Le temps d’une question continue de s’écouler même si vous quittez l’application.",
+    "start": "Lancer la partie",
+    "fewer": "Retirer un joueur",
+    "more": "Ajouter un joueur",
+    "timerPause": "Sans chrono, vous pouvez faire une pause quand vous voulez.",
+    "fullRound": "Manche complète",
+    "fullRoundHint": "Si quelqu’un réussit la question finale, les joueurs qui n’ont pas encore joué dans cette manche jouent leur tour ; ceux qui réussissent aussi la finale partagent la victoire. Chacun a ainsi le même nombre de tours."
+  },
+  "turn": {
+    "passTo": "Passez le téléphone à",
+    "ready": "C’est parti !",
+    "noPeek": "Les autres, on ne regarde pas !",
+    "turnOf": "Au tour de {name}",
+    "starts": "Commence : {name}",
+    "lastTurn": "Dernière manche. Question finale réussie par : {names}. C’est votre dernier tour : réussissez aussi la finale pour partager la victoire.",
+    "clockRunning": "Cette question était déjà affichée et son temps a continué de s’écouler : il reste {s} s.",
+    "clockOut": "Cette question était déjà affichée et son temps est écoulé."
+  },
+  "wheel": {
+    "label": "Roue des catégories",
+    "spin": "Tourner",
+    "tapToSpin": "Touchez la roue pour la faire tourner",
+    "spinning": "La roue tourne…",
+    "wildcard": "Joker",
+    "landed": "{category} !",
+    "chooseTitle": "Joker !",
+    "chooseHint": "Choisissez le monde que vous voulez",
+    "infusedPick": "Gemme déjà infusée : {category}. Choisissez un autre monde !",
+    "wildcardOnly": "Joker ! Il ne vous reste qu’un monde : {category}",
+    "infusedOnly": "Gemme déjà infusée. Il ne vous reste qu’un monde : {category}"
+  },
+  "question": {
+    "correct": "Bonne réponse !",
+    "incorrect": "Mauvaise réponse",
+    "timeout": "Temps écoulé !",
+    "answerWas": "La bonne réponse était : {answer}",
+    "secondsLeft": "Encore {s} secondes",
+    "final": "Question finale",
+    "progress": "Question {n} sur {total}"
+  },
+  "classic": {
+    "charge": "+1 charge · {category} ({n}/2)",
+    "infused": "Gemme infusée : {category}",
+    "alreadyInfused": "Gemme déjà infusée : {category}. Pas de charge supplémentaire.",
+    "allInfused": "Toutes les gemmes sont infusées ! Prochaine étape : la question finale.",
+    "spinAgain": "Tournez encore !",
+    "passTurn": "Au tour de {name}.",
+    "soloMiss": "Raté ! Tournez encore.",
+    "finalFail": "Pas cette fois. Vous retenterez la question finale à votre prochain tour.",
+    "finalTitle": "Question finale",
+    "finalIntro": "{name}, toutes vos gemmes sont infusées. Répondez correctement pour gagner !",
+    "finalReady": "Allons-y",
+    "leave": "Quitter la partie (la progression est sauvegardée)",
+    "board": "Joueurs",
+    "gemCount": "{n} gemmes infusées sur {total}",
+    "gem0": "{category} : aucune charge",
+    "gem1": "{category} : 1 charge",
+    "gem2": "{category} : infusée",
+    "streakPass": "{n} bonnes réponses d’affilée ! La main passe à {name}.",
+    "allInfusedNext": "Toutes les gemmes sont infusées ! Vous affronterez la question finale à votre prochain tour.",
+    "leaveTimerTitle": "Quitter la partie ?",
+    "leaveTimerBody": "Si vous quittez, le temps de la question continue de s’écouler.",
+    "leaveTimerYes": "Quitter",
+    "leaveTimerNo": "Continuer à jouer",
+    "emptySaved": "La partie est sauvegardée : vous pourrez la reprendre en cochant d’autres œuvres.",
+    "finalRoundOn": "Question finale réussie ! Les joueurs qui n’ont pas encore joué dans cette manche jouent leur tour : ceux qui la réussissent aussi partageront la victoire.",
+    "finalShare": "Question finale réussie ! Vous partagez la victoire.",
+    "roundOver": "La manche est terminée.",
+    "finalDone": "question finale réussie",
+    "finalFailLast": "Pas cette fois, et c’était votre dernière chance : la manche se termine sans autre tour pour vous.",
+    "lastChanceGone": "Toutes les gemmes sont infusées ! Mais la manche se termine : vous n’aurez pas d’autre tour."
+  },
+  "victory": {
+    "title": "{name} a gagné !",
+    "subtitle": "Toutes les gemmes infusées et la question finale réussie.",
+    "answered": "Questions posées : {n}",
+    "statsTitle": "Résumé de la partie",
+    "correct": "Bonnes réponses",
+    "correctOf": "{n}/{total}",
+    "accuracy": "Précision",
+    "percent": "{n} %",
+    "lifelines": "Aides utilisées",
+    "gems": "Gemmes",
+    "duration": "Durée : {time}",
+    "titleShared": "Victoire partagée : {names} !",
+    "subtitleShared": "Question finale réussie dans la même manche.",
+    "groupNote": "Partie en groupe : elle ne compte ni dans les statistiques, ni dans la collection, ni dans les erreurs, ni dans les succès personnels (les succès de groupe, si)."
+  },
+  "quick": {
+    "title": "Partie rapide",
+    "score": "Score",
+    "best": "Meilleur score",
+    "points": "+{n} points",
+    "result": "{score} points",
+    "correctCount": "{n} bonnes réponses sur {total}",
+    "newRecord": "Nouveau record !",
+    "finished": "Résultats",
+    "seeResults": "Voir les résultats",
+    "intro": "{n} questions sur tous les mondes, {s} secondes chacune. Plus vous répondez vite, plus vous marquez de points. Le chrono continue même si vous quittez l’application.",
+    "introLifelines": "Vous disposez d’une aide de chaque type : Atium, Fulgiflamme et Souffle.",
+    "start": "Commencer",
+    "quitTitle": "Abandonner la partie rapide ?",
+    "quitBody": "Le score de cette partie sera perdu.",
+    "quitYes": "Abandonner",
+    "quitNo": "Continuer à jouer",
+    "emptySaved": "La partie est sauvegardée (question {n} sur {total}) : vous pourrez la reprendre en cochant d’autres œuvres.",
+    "bestLevel": "Meilleur score ({level}) : {n}",
+    "noBestLevel": "Pas encore de record en niveau {level}.",
+    "bestLegacy": "Record des versions précédentes (tous niveaux) : {n}",
+    "introFiltered": "{n} questions sur vos mondes, {s} secondes chacune. Plus vous répondez vite, plus vous marquez de points. Le chrono continue même si vous quittez l’application."
+  },
+  "practice": {
+    "title": "Entraînement",
+    "category": "Monde",
+    "all": "Tous les mondes",
+    "difficulty": "Difficulté",
+    "any": "Toutes",
+    "available": "Questions disponibles : {n}",
+    "start": "Commencer",
+    "end": "Terminer",
+    "tally": "{correct} sur {total}",
+    "fallback": "Pas encore de questions de difficulté {level} ici : vous vous entraînerez avec celles de difficulté {fallback}.",
+    "empty": "Pas encore de questions de difficulté {level} ici.",
+    "noneFilter": "Aucune question disponible : le filtre anti-spoilers ne laisse aucune œuvre avec des questions. Cochez plus d’œuvres dans les Réglages.",
+    "allSeen": "Vous avez vu toutes les questions disponibles ; elles vont maintenant se répéter.",
+    "missed": "Mes erreurs ({n})",
+    "missedLabel": "Révision",
+    "missedHint": "Uniquement les questions manquées. Une bonne réponse les retire de la liste.",
+    "missedNone": "Les questions manquées dans n’importe quel mode apparaîtront ici.",
+    "missedAvailable": "Erreurs à revoir : {n}",
+    "missedTitle": "Mes erreurs",
+    "missedLeft": "Restantes : {n}",
+    "missedCleared": "Retirée de vos erreurs.",
+    "missedDone": "Vous avez revu toutes vos erreurs !"
+  },
+  "stats": {
+    "title": "Statistiques",
+    "classicGames": "Parties classiques gagnées",
+    "quickGames": "Parties rapides",
+    "bestQuick": "Record en partie rapide",
+    "answered": "Questions répondues",
+    "accuracy": "Réussite",
+    "byCategory": "Réussite par monde",
+    "none": "Aucune réponse pour l’instant. À vous de jouer !",
+    "of": "{correct} sur {total}",
+    "lifelines": "Aides utilisées",
+    "recordsByLevel": "Records en partie rapide par niveau",
+    "collection": "Collection",
+    "discovered": "{n}/{total} questions découvertes",
+    "discoveredOf": "{n}/{total}",
+    "collectionFiltered": "Seules comptent les œuvres cochées dans le filtre anti-spoilers.",
+    "byDifficulty": "Par difficulté",
+    "groupGames": "Parties en groupe",
+    "groupNote": "Les parties classiques à 2 joueurs ou plus sont comptées à part, comme parties en groupe : elles ne s’ajoutent ni à vos réponses, ni à votre collection, ni à « Mes erreurs », ni à vos succès personnels."
+  },
+  "settings": {
+    "title": "Réglages",
+    "language": "Langue",
+    "theme": "Thème",
+    "dark": "Sombre",
+    "light": "Clair",
+    "sound": "Effets sonores",
+    "vibration": "Vibration",
+    "vibrationUnsupported": "Non disponible sur cet appareil",
+    "timer": "Chrono activé par défaut",
+    "spoilers": "Filtre anti-spoilers",
+    "spoilersHint": "Cochez les œuvres que vous avez lues. Seules les questions qui les concernent apparaîtront.",
+    "selected": "{n} œuvres sélectionnées sur {total}",
+    "all": "Tout cocher",
+    "none": "Tout décocher",
+    "data": "Données",
+    "reset": "Effacer toutes les données",
+    "resetConfirm": "Vos statistiques, records, partie sauvegardée et réglages seront supprimés. Voulez-vous vraiment tout effacer ?",
+    "resetDone": "Toutes les données ont été effacées.",
+    "storageWarning": "Le stockage n’est pas disponible : les réglages et la progression ne seront pas conservés après la fermeture.",
+    "resetNo": "Ne rien effacer",
+    "backup": "Sauvegarde",
+    "backupHint": "Enregistrez vos statistiques, records, erreurs et réglages dans un code pour les transférer sur un autre appareil ou les restaurer. Les parties en cours ne sont pas incluses.",
+    "backupExport": "Exporter la progression",
+    "backupCode": "Code de votre progression",
+    "backupCopy": "Copier le code",
+    "backupCopied": "Code copié. Conservez-le en lieu sûr.",
+    "backupCopyFailed": "Copie impossible : sélectionnez le code et copiez-le à la main.",
+    "backupPaste": "Importer : collez un code ici",
+    "backupImport": "Importer la progression",
+    "backupNo": "Ne pas importer",
+    "backupConfirmTitle": "Importer cette progression ?",
+    "backupConfirm": "Vos statistiques, records, erreurs et réglages actuels seront remplacés par ceux du code. Les parties en cours ne changent pas.",
+    "backupDone": "Progression importée.",
+    "backupError": {
+      "empty": "Collez d’abord un code.",
+      "format": "Ce code n’est pas valide. Vérifiez que vous l’avez copié en entier.",
+      "checksum": "Le code est incomplet ou abîmé. Copiez-le à nouveau.",
+      "version": "Ce code provient d’une autre version de l’application et ne peut pas être importé.",
+      "unsupported": "Ce navigateur ne peut pas lire le code. Mettez-le à jour ou utilisez-en un autre."
+    },
+    "noQuestionsYet": "pas encore de questions"
+  },
+  "about": {
+    "title": "À propos",
+    "body": "Un jeu de quiz sur les mondes du Cosmère de Brandon Sanderson. Jouez en solo ou faites passer le téléphone entre amis.",
+    "howTo": "Règles du jeu",
+    "rule1": "Faites tourner la roue et répondez à une question sur le monde désigné.",
+    "rule2": "Bonne réponse : vous gagnez une charge de ce monde et vous rejouez. Mauvaise réponse : la main passe au joueur suivant.",
+    "rule3": "Deux charges infusent une gemme. Le joker vous permet de choisir le monde.",
+    "rule4": "Infusez toutes les gemmes, puis réussissez la question finale pour gagner.",
+    "offline": "Fonctionne hors ligne une fois chargé. Tout est enregistré uniquement sur cet appareil.",
+    "disclaimer": "Projet de fans non officiel, sans lien avec Brandon Sanderson ni Dragonsteel et non approuvé par eux. Le Cosmère et tous les noms associés appartiennent à leurs propriétaires respectifs.",
+    "version": "Version {v}",
+    "levels": "Niveaux de difficulté",
+    "levelsFinal": "La question finale de la partie classique est moyenne en Facile, difficile en Normal et de niveau expert en Difficile et Expert.",
+    "lifelines": "Aides",
+    "rule5": "Un tirage au sort désigne qui commence. Après 3 bonnes réponses d’affilée, la main passe au joueur suivant, même en cas de bonne réponse ; en solo, il n’y a pas de limite.",
+    "rule6": "Si la roue s’arrête sur une gemme que vous avez déjà infusée, vous choisissez un autre monde.",
+    "intro": "Revoir l’introduction",
+    "rule7": "Si vous ratez la question finale, la main passe et vous la retenterez, avec une autre question, à votre prochain tour.",
+    "rule8": "Avec le chrono, vous avez 30 secondes par question ; si le temps est écoulé, la réponse compte comme fausse. Une fois la question affichée, son temps continue de s’écouler même si vous quittez l’application.",
+    "rule9": "Manche complète (à partir de 2 joueurs, activée par défaut) : si quelqu’un réussit la finale, les joueurs qui n’ont pas encore joué dans cette manche jouent leur tour, et ceux qui la réussissent aussi partagent la victoire.",
+    "rule10": "Les parties à 2 joueurs ou plus comptent comme parties en groupe et ne s’ajoutent pas à vos statistiques personnelles."
+  },
+  "errors": {
+    "load": "Impossible de charger les questions. Vérifiez votre connexion et rechargez la page.",
+    "noQuestions": "Aucune question disponible avec le filtre anti-spoilers actuel.",
+    "fallback": "Les questions ne sont pas encore disponibles dans cette langue : elles s’affichent en anglais.",
+    "emptyFilter": "Avec le filtre anti-spoilers actuel, il n’y a aucune question. Cochez dans les Réglages les livres que vous avez lus."
+  },
+  "boot": {
+    "title": "Un problème est survenu",
+    "body": "L’application n’a pas pu démarrer. Les données enregistrées sont peut-être endommagées : les effacer règle généralement le problème (la partie en cours, les réglages et les statistiques seront perdus).",
+    "reset": "Effacer les données et redémarrer",
+    "retry": "Réessayer",
+    "confirm": "Effacer les données de l’application ? La partie en cours, les réglages et les statistiques seront perdus.",
+    "confirmYes": "Oui, effacer et redémarrer",
+    "cancel": "Ne rien effacer"
+  },
+  "onboarding": {
+    "label": "Introduction",
+    "step": "Étape {n} sur {total}",
+    "skip": "Passer",
+    "next": "Suivant",
+    "welcome": "Bienvenue",
+    "readTitle": "Qu’avez-vous lu ?",
+    "readHint": "Cochez les livres que vous avez lus et vous n’aurez que des questions sur ceux-ci. Vous pourrez le modifier à tout moment dans les Réglages.",
+    "all": "Tout",
+    "none": "Rien",
+    "noneWarn": "Sans aucun livre coché, il n’y aura pas de questions.",
+    "rulesTitle": "Comment jouer",
+    "ruleWheel": "Faites tourner la roue : elle choisit le monde de la question. Sur le joker, c’est vous qui choisissez.",
+    "ruleGems": "Chaque bonne réponse charge la gemme de ce monde ; deux charges l’infusent. Infusez-les toutes et réussissez la question finale pour gagner.",
+    "ruleLifelines": "Vous avez trois aides par partie : l’Atium élimine deux mauvaises réponses, la Fulgiflamme vous laisse choisir à nouveau et le Souffle change la question.",
+    "startTitle": "C’est parti !",
+    "startBody": "Jouez en solo ou faites passer le téléphone. Vous pourrez revoir cette introduction depuis « À propos ».",
+    "start": "Commencer à jouer",
+    "showWorks": "Afficher les livres : {world}",
+    "readAll": "J’ai tout lu",
+    "orPick": "Ou cochez seulement ce que vous avez lu :",
+    "pickOne": "Cochez au moins une œuvre pour continuer.",
+    "skippedNoFilter": "Aucun filtre anti-spoilers : vous aurez des questions sur tous les livres. Vous pouvez le modifier dans les Paramètres."
+  },
+  "report": {
+    "link": "Signaler une erreur",
+    "describe": "Qu’est-ce qui ne va pas ? (réponse, nom, traduction, spoiler…)",
+    "offlineCopied": "Vous êtes hors ligne : le signalement a été copié dans le presse-papiers pour l’envoyer plus tard.",
+    "offlineFailed": "Vous êtes hors ligne et le signalement n’a pas pu être copié. Réessayez quand vous serez en ligne.",
+    "copy": "Copier le signalement",
+    "copied": "Signalement copié. Collez-le sur GitHub ou envoyez-le à la personne qui gère le jeu.",
+    "copyFailed": "Impossible de copier le signalement.",
+    "field": {
+      "id": "ID",
+      "language": "Langue",
+      "world": "Monde",
+      "difficulty": "Difficulté",
+      "mode": "Mode",
+      "version": "Version",
+      "question": "Question",
+      "explanation": "Explication"
+    }
+  },
+  "review": {
+    "title": "Revoir les erreurs ({n})",
+    "hint": "Les questions manquées dans cette partie, avec la bonne réponse. Revoyez-les dans Entraînement → Mes erreurs.",
+    "answer": "Bonne réponse : {answer}",
+    "none": "Aucune erreur dans cette partie !",
+    "hintGroup": "Les questions manquées dans cette partie, avec la bonne réponse. Les parties en groupe ne sont pas enregistrées dans « Mes erreurs »."
+  },
+  "update": {
+    "available": "Nouvelle version disponible",
+    "action": "Mettre à jour",
+    "later": "Plus tard",
+    "updating": "Mise à jour…"
+  },
+  "daily": {
+    "title": "Défi du jour",
+    "intro": "{n} questions de difficulté variée, {s} secondes chacune. Aujourd’hui, ce sont les mêmes pour tous ceux qui jouent dans votre langue.",
+    "once": "Un seul essai par jour. Revenez chaque jour pour garder votre série.",
+    "start": "Commencer le défi",
+    "streak": "Jours d’affilée : {n}",
+    "noStreak": "Pas encore de série",
+    "best": "Meilleure série : {n}",
+    "filterNote": "Votre filtre anti-spoilers masque certaines questions : votre défi est tiré uniquement parmi celles qui restent actives, il peut donc différer de celui des autres joueurs.",
+    "leaveTitle": "Quitter le défi du jour ?",
+    "marksLabel": "{n} bonnes réponses sur {total}",
+    "result": "{n} bonnes réponses sur {total}",
+    "comeBack": "Un nouveau défi vous attend demain.",
+    "share": "Partager le résultat",
+    "sharePreview": "Texte à partager",
+    "shareStreak": "Jours d’affilée : {n}",
+    "shareFiltered": "(filtre anti-spoilers actif)",
+    "copied": "Résultat copié dans le presse-papiers.",
+    "copyFailed": "Impossible de copier le résultat.",
+    "clockBack": "La date de votre appareil est antérieure à celle de votre dernier défi : il ne peut pas être rejoué. Prochain défi : {date}."
+  },
+  "ach": {
+    "title": "Succès",
+    "count": "{n} succès sur {total}",
+    "local": "Conservés uniquement sur cet appareil (et dans votre sauvegarde).",
+    "unlocked": "Succès débloqué !",
+    "unlockedOn": "Obtenu le {date}",
+    "locked": "Verrouillé",
+    "progress": "{n}/{total}",
+    "firstWin": {
+      "name": "Première victoire",
+      "desc": "Gagnez une partie classique en solo."
+    },
+    "radiant": {
+      "name": "Radieux",
+      "desc": "Gagnez 5 parties classiques en solo."
+    },
+    "fullTable": {
+      "name": "Table complète",
+      "desc": "Gagnez une partie classique à 6 joueurs."
+    },
+    "flawless": {
+      "name": "Six gemmes sans faute",
+      "desc": "Infusez les six gemmes d’une partie classique en solo sans rater une seule question."
+    },
+    "expertPure": {
+      "name": "Sans aide",
+      "desc": "Gagnez une partie classique en solo au niveau Expert sans utiliser d’aide."
+    },
+    "quickPerfect": {
+      "name": "Partie parfaite",
+      "desc": "Répondez juste aux 15 questions d’une partie rapide."
+    },
+    "quickScore": {
+      "name": "Contre la montre",
+      "desc": "Marquez {n} points dans une partie rapide."
+    },
+    "allWorlds": {
+      "name": "De monde en monde",
+      "desc": "Répondez juste à au moins une question de chaque monde."
+    },
+    "answered100": {
+      "name": "Cent questions",
+      "desc": "Répondez à 100 questions, tous modes confondus."
+    },
+    "allLifelines": {
+      "name": "Les trois aides",
+      "desc": "Utilisez chaque aide au moins une fois : Atium, Fulgiflamme et Souffle."
+    },
+    "stormlightSave": {
+      "name": "Sauvé par la Fulgiflamme",
+      "desc": "Trompez-vous avec la Fulgiflamme active, puis trouvez la bonne réponse au second essai."
+    },
+    "compendium": {
+      "name": "Compendium",
+      "desc": "Découvrez toutes les questions d’un monde."
+    },
+    "halfCosmere": {
+      "name": "La moitié du Cosmère",
+      "desc": "Découvrez la moitié de toutes les questions."
+    },
+    "polyglot": {
+      "name": "Polyglotte",
+      "desc": "Jouez dans 3 langues."
+    },
+    "dailyFirst": {
+      "name": "Défi relevé",
+      "desc": "Terminez un défi du jour."
+    },
+    "dailyPerfect": {
+      "name": "Journée parfaite",
+      "desc": "Répondez juste aux 5 questions d’un défi du jour."
+    },
+    "dailyStreak3": {
+      "name": "Persévérance",
+      "desc": "Terminez le défi du jour 3 jours d’affilée."
+    },
+    "dailyStreak10": {
+      "name": "Dix jours d’affilée",
+      "desc": "Terminez le défi du jour 10 jours d’affilée."
+    },
+    "missedClear": {
+      "name": "Ardoise effacée",
+      "desc": "Révisez toutes vos erreurs en Entraînement jusqu’à vider la liste."
+    },
+    "groupNote": "Les parties en groupe ne comptent que pour les succès de groupe, comme « Table complète ».",
+    "blocked": "Impossible à obtenir avec votre filtre anti-spoilers actuel."
+  }
+}
