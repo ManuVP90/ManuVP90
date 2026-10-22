@@ -29,7 +29,7 @@ Source: GitHub Actions*). Ábrela en el móvil y usa *Añadir a pantalla de inic
 - **Práctica**: eliges mundo y dificultad, con explicación de cada respuesta.
 - **Reto diario**: 5 preguntas (dificultad 1–3, con temporizador) iguales para todos los que juegan
   ese día en el mismo idioma; un intento al día, racha de días seguidos y resultado para compartir
-  con cuadrados del color de cada gema (sin spoilers). Funciona sin conexión. Si tu filtro de
+  con ✅/❌ por pregunta (sin spoilers). Funciona sin conexión. Si tu filtro de
   spoilers oculta preguntas, el reto se elige entre las que tienes activas (puede no coincidir con
   el de otros, y la app lo avisa).
 - **Logros**: 19 logros locales (ganar una partida, seis gemas sin fallar, Experto sin ayudas,
@@ -47,9 +47,9 @@ Source: GitHub Actions*). Ábrela en el móvil y usa *Añadir a pantalla de inic
 | Sel | 80 |
 | Nalthis | 60 |
 | Otros mundos | 80 |
-| El Cosmere | 80 |
+| El Cosmere | 86 |
 
-490 preguntas por idioma, 4 niveles de dificultad (fácil, media, difícil y experto), incluidas 20 de
+496 preguntas por idioma, 4 niveles de dificultad (fácil, media, difícil y experto), incluidas 20 de
 *Viento y verdad* y 10 más de la era 2 de *Nacidos de la bruma*. Cada pregunta está etiquetada con el libro más tardío que hace falta para
 conocer la respuesta. En los mundos-planeta, las cuatro opciones son siempre del mismo planeta.
 
