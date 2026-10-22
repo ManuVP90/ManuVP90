@@ -4,7 +4,7 @@
 // A new version installs in the background and waits: the page offers "New version available ·
 // Update" (js/update.js) and sends 'skip-waiting' when the player taps it, so the app never swaps
 // versions in the middle of a question.
-const CACHE_VERSION = 'v19';
+const CACHE_VERSION = 'v20';
 const CACHE = `cosmere-trivia-${CACHE_VERSION}`;
 
 const SHELL = [
@@ -102,7 +102,10 @@ self.addEventListener('fetch', (event) => {
     const key = isNav ? 'index.html' : req;
     const cached = await cache.match(key, { ignoreSearch: isNav });
     const network = fetch(req).then((res) => {
-      if (res && res.ok && res.type === 'basic') cache.put(isNav ? 'index.html' : req, res.clone());
+      // A navigation is only cached as the shell when it really returned HTML (opening the icon or a
+      // data file in a tab must not replace index.html for offline starts).
+      const html = (res && res.headers.get('content-type') || '').startsWith('text/html');
+      if (res && res.ok && res.type === 'basic' && (!isNav || html)) cache.put(isNav ? 'index.html' : req, res.clone());
       return res;
     }).catch(() => null);
     if (cached) {

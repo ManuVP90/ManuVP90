@@ -458,7 +458,8 @@ describe('save validation and migration (classic)', () => {
   test('clockLeft deducts time away, never gives time back', () => {
     const now = 1_000_000;
     assert.equal(clockLeft({ remaining: 20000, savedAt: now - 5000 }, now), 15000);
-    assert.equal(clockLeft({ remaining: 20000, savedAt: now + 5000 }, now), 20000, 'clock moved backwards');
+    assert.equal(clockLeft({ remaining: 20000, savedAt: now + 5000 }, now), 0, 'clock moved back across a reload: timed out, never time back (beta 6b N2)');
+    assert.equal(clockLeft({ remaining: 20000, savedAt: now + 1500 }, now), 20000, 'small NTP correction tolerated');
     assert.equal(clockLeft({ remaining: 3000, savedAt: now - 60000 }, now), 0);
     assert.equal(clockLeft({ remaining: 7000, savedAt: null }, now), 7000, 'paused');
     assert.equal(clockLeft(null, now), TIMER_MS);
@@ -1175,7 +1176,7 @@ describe('Beta 6 (2.0.2)', () => {
     // Another page session (a reload): only the wall time, never a stale monotonic value.
     const other = { ...c, sid: 'other-session' };
     assert.equal(clockLeft(other, wall + 4_000, 999_999), 21_000);
-    assert.equal(clockLeft(other, wall - 60_000, 999_999), 25_000);
+    assert.equal(clockLeft(other, wall - 60_000, 999_999), 0, 'clock back across a reload: timed out (beta 6b N2)');
     // Paused: no stamp, time kept.
     const paused = stampClock({ ...c }, false);
     assert.equal(paused.savedAt, null);

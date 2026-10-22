@@ -1123,7 +1123,7 @@ const LL = () => ({ atium: 1, stormlight: 1, breath: 1 });
 const quickRun = (over = {}) => ({ v: 1, plan: Array(15).fill('roshar'), total: 15, index: 3, score: 300, correct: 3, level: 'normal', lifelines: LL(), seen: [], current: null, ...over });
 
 // ------------------------------------------------------------------ B3-1. timer decision: engine + copy
-await test('B3 timer: clockLeft deducts away time (negative/NaN → 0, never below 0); setup and leave copy in 5 languages', async (use) => {
+await test('B3 timer: clockLeft deducts away time (clock back across a load → timed out, NaN → no deduction, never below 0); setup and leave copy in 5 languages', async (use) => {
   const { page } = await use({});
   await page.waitForSelector('.home');
   const r = await page.evaluate(async () => {
@@ -1131,14 +1131,14 @@ await test('B3 timer: clockLeft deducts away time (negative/NaN → 0, never bel
     const now = 1_000_000;
     return [
       g.clockLeft({ remaining: 20_000, savedAt: now - 5_000 }, now), // away 5 s
-      g.clockLeft({ remaining: 20_000, savedAt: now + 60_000 }, now), // clock moved back: nothing given back
+      g.clockLeft({ remaining: 20_000, savedAt: now + 60_000 }, now), // clock moved back across a load: timed out (beta 6b N2)
       g.clockLeft({ remaining: 20_000, savedAt: NaN }, now),
       g.clockLeft({ remaining: 20_000, savedAt: now - 99_000 }, now), // capped at 0
       g.clockLeft({ remaining: 20_000, savedAt: null }, now), // paused / not revealed
       g.clockLeft({ remaining: 20_000, savedAt: now - 5_000 }, NaN),
     ];
   });
-  assert(JSON.stringify(r) === JSON.stringify([15_000, 20_000, 20_000, 0, 20_000, 20_000]), `clockLeft (${r})`);
+  assert(JSON.stringify(r) === JSON.stringify([15_000, 0, 20_000, 0, 20_000, 20_000]), `clockLeft (${r})`);
   for (const lang of LANGS) {
     for (const k of ['classic.leaveTimerTitle', 'classic.leaveTimerBody', 'classic.leaveTimerYes', 'classic.leaveTimerNo', 'setup.timerPause']) assert(T(lang, k), `${lang}: ${k}`);
   }
@@ -3101,6 +3101,27 @@ await test('B6 item 5: es reset text, de closing-round texts, no line starting w
       await context.close();
     }
   }
+});
+
+// ------------------------------------------------------------------ 2.0.3 (beta 6b)
+await test('B6b N1: opening a non-HTML file in the tab never replaces the offline shell', async (use) => {
+  const { page, context } = await use({ swAllowed: true });
+  await page.waitForSelector('.home');
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await page.reload();
+  await page.waitForSelector('.home');
+  await page.waitForFunction(() => !!navigator.serviceWorker.controller);
+  // Another tab of the same app opens the files directly (its own broken-page noise is not checked).
+  const other = await context.newPage();
+  for (const path of ['icons/icon.svg', 'manifest.webmanifest', 'data/questions.es.json']) {
+    await other.goto(new URL(path, BASE).href);
+    await other.waitForTimeout(300); // let the worker finish its background cache write
+  }
+  await other.close();
+  await context.setOffline(true);
+  await page.goto(BASE);
+  await page.waitForSelector('.home', { timeout: 10000 });
+  await context.setOffline(false);
 });
 
 await browser.close();

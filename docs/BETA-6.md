@@ -48,3 +48,14 @@ Contenido:
 - Se lanza la 2.0.x. Los hallazgos 1–9 se corrigen antes de publicar (2.0.2) porque son baratos;
   no requieren otra ronda completa: basta con las pruebas automáticas y una regresión de Ignacio.
 - La partición con guion en alemán (3) se verificará en un Android real tras publicar.
+
+## Regresión 2.0.2 (Ignacio)
+Nota **9**: los nueve hallazgos de la ronda 6 están corregidos; recomienda publicar. Nuevos y ya
+corregidos en la 2.0.3:
+- N1: abrir en una pestaña un archivo que no es HTML (icono, manifiesto, datos) sustituía la app en la
+  caché sin conexión (`sw.js`). Ahora solo se guarda como app una respuesta HTML.
+- N2: atrasar el reloj y recargar devolvía el tiempo de una pregunta revelada. Ahora, si tras una
+  recarga el reloj marca antes de lo guardado (más de 2 s), la pregunta cuenta como agotada.
+- N3: la explicación de cosmere-082 nombraba a Ashe, respuesta de sel-006: quitado en los 5 idiomas.
+- N4 (sugerencia, no aplicada): cuatro preguntas d1–2 con la plantilla «¿de cuál de los dos
+  libros?». Se mantienen: son datos distintos y sirven a quien empieza.

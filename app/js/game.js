@@ -116,12 +116,19 @@ export function stampClock(c, running = true, now = Date.now(), mono = monoNow()
  * stop, still counts by the wall clock). Another session (a reload): the wall time only. A
  * negative or unreadable elapsed time counts as 0.
  */
+/** Small backwards clock corrections (NTP) tolerated before a saved clock counts as tampered. */
+export const CLOCK_SLACK_MS = 2000;
 export function clockLeft(c, now = Date.now(), mono = monoNow()) {
   if (!isObj(c) || !isInt(c.remaining, 0, TIMER_MS)) return TIMER_MS;
   if (typeof c.savedAt !== 'number') return c.remaining;
   const pos = (n) => (Number.isFinite(n) && n > 0 ? n : 0);
+  const sameLoad = c.sid === SESSION_ID && typeof c.mono === 'number';
+  // From another page load the system clock is all we have: if it now reads earlier than the save
+  // (clock moved back, or a save stamped in the future), the time away is unknown, so the question
+  // counts as timed out rather than handing the time back (beta 6b, N2).
+  if (!sameLoad && now < c.savedAt - CLOCK_SLACK_MS) return 0;
   let away = pos(now - c.savedAt);
-  if (c.sid === SESSION_ID && typeof c.mono === 'number') away = Math.max(away, pos(mono - c.mono));
+  if (sameLoad) away = Math.max(away, pos(mono - c.mono));
   return Math.max(0, Math.round(c.remaining - away));
 }
 export const isValidLifelines = (l) => isObj(l) && LIFELINES.every((k) => isInt(l[k], 0, 1));
